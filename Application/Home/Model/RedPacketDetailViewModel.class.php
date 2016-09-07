@@ -26,6 +26,7 @@ class RedPacketDetailViewModel extends ViewModel {
 			'money'=>'redpacket_money',
 			'number',
 			'distribution',
+			'overtime',
 			'lasttime'=>'redpacket_lasttime',
 			'createtime'=>'redpacket_createtime',
 			'_on'=>'Redpacket.id=Receiver.redpacket',

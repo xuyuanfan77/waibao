@@ -1,0 +1,1930 @@
+[ 2016-09-07T10:12:57+08:00 ] ::1 /waibao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.093750s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+
+[ 2016-09-07T10:13:54+08:00 ] ::1 /waibao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+
+[ 2016-09-07T10:13:57+08:00 ] ::1 /waibao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+
+[ 2016-09-07T10:18:58+08:00 ] ::1 /waibao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007813s ]
+
+[ 2016-09-07T10:18:59+08:00 ] ::1 /waibao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-07T10:19:38+08:00 ] ::1 /waibao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007812s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-07T10:20:44+08:00 ] ::1 /waibao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007813s ]
+NOTIC: [8] Undefined index: page D:\wamp\www\waibao\Application\Home\Controller\IndexController.class.php 第 7 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.023437s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.023437s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.140625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.140625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.023438s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2016-09-07T10:21:00+08:00 ] ::1 /waibao/index.php/Home/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007812s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.6094s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'xuyuanfan' AND `password` = '123' LIMIT 1   [ RunTime:0.1094s ]
+SQL: SELECT * FROM `user` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0547s ]
+SQL: SELECT * FROM `redpacket`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.148438s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.148438s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007812s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007813s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007813s ]
+
+[ 2016-09-07T10:21:04+08:00 ] ::1 /waibao/index.php/Home/Index/index/page/publish.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.007813s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.007813s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-07T10:21:16+08:00 ] ::1 /waibao/index.php/Home/Index/redPacket/redPacketId/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007813s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `receiver` [ RunTime:0.0547s ]
+SQL: SELECT * FROM `receiver` WHERE `receiver` = 4 AND `redpacket` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `redpacket` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0078s ]
+SQL: SELECT * FROM `redpacket` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `redpacket` SET `id`='6',`publisher`='4',`username`='xuyuanfan',`money`='6',`number`='1',`distribution`='1',`lasttime`='2016-09-07 10:21:16',`createtime`='2016-09-05 16:15:51' WHERE `id` = 6 [ RunTime:0.1484s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `receiver` (`receiver`,`redpacket`,`money`,`createtime`) VALUES ('4','6','6','2016-09-07 10:21:16') [ RunTime:0.0391s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `user` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `user` SET `id`='4',`username`='xuyuanfan',`password`='123',`money`='12',`createtime`='2016-09-06 11:13:23' WHERE `id` = 4 [ RunTime:0.0625s ]
+SQL: SELECT * FROM `user` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0078s ]
+SQL: SELECT User.id AS user_id,User.username AS username,User.password AS password,User.money AS user_money,User.createtime AS user_createtime,Receiver.id AS receiver_id,Receiver.receiver AS receiver,Receiver.redpacket AS redpacket,Receiver.money AS receiver_money,Receiver.createtime AS receiver_createtime,Redpacket.id AS redpacket_id,Redpacket.publisher AS publisher,Redpacket.money AS redpacket_money,Redpacket.number AS number,Redpacket.distribution AS distribution,Redpacket.lasttime AS redpacket_lasttime,Redpacket.createtime AS redpacket_createtime FROM user User RIGHT JOIN receiver Receiver ON User.id=Receiver.receiver LEFT JOIN redpacket Redpacket ON Redpacket.id=Receiver.redpacket WHERE Receiver.redpacket = '6'  [ RunTime:0.0234s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070313s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007812s ]
+
+[ 2016-09-07T10:21:22+08:00 ] ::1 /waibao/index.php/Home/Index/redPacket/redPacketId/9.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007813s ]
+SQL: SHOW COLUMNS FROM `receiver` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `receiver` WHERE `receiver` = 4 AND `redpacket` = 9 LIMIT 1   [ RunTime:0.0078s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `redpacket` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `redpacket` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `redpacket` SET `id`='9',`publisher`='2',`username`='xuyuanfan1',`money`='13.33',`number`='7',`distribution`='2',`lasttime`='2016-09-07 10:21:22',`createtime`='2016-09-05 16:36:13' WHERE `id` = 9 [ RunTime:0.0547s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `receiver` (`receiver`,`redpacket`,`money`,`createtime`) VALUES ('4','9','2.67','2016-09-07 10:21:22') [ RunTime:0.0469s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `user` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `user` SET `id`='4',`username`='xuyuanfan',`password`='123',`money`='14.67',`createtime`='2016-09-06 11:13:23' WHERE `id` = 4 [ RunTime:0.0391s ]
+SQL: SELECT * FROM `user` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT User.id AS user_id,User.username AS username,User.password AS password,User.money AS user_money,User.createtime AS user_createtime,Receiver.id AS receiver_id,Receiver.receiver AS receiver,Receiver.redpacket AS redpacket,Receiver.money AS receiver_money,Receiver.createtime AS receiver_createtime,Redpacket.id AS redpacket_id,Redpacket.publisher AS publisher,Redpacket.money AS redpacket_money,Redpacket.number AS number,Redpacket.distribution AS distribution,Redpacket.lasttime AS redpacket_lasttime,Redpacket.createtime AS redpacket_createtime FROM user User RIGHT JOIN receiver Receiver ON User.id=Receiver.receiver LEFT JOIN redpacket Redpacket ON Redpacket.id=Receiver.redpacket WHERE Receiver.redpacket = '9'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.007812s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054687s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054687s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-07T10:21:35+08:00 ] ::1 /waibao/index.php/Home/Index/redPacket/redPacketId/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007813s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `receiver` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `receiver` WHERE `receiver` = 4 AND `redpacket` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `redpacket` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0078s ]
+SQL: SELECT * FROM `redpacket` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `redpacket` SET `id`='10',`publisher`='2',`username`='xuyuanfan1',`money`='16',`number`='7',`distribution`='2',`lasttime`='2016-09-07 10:21:34',`createtime`='2016-09-05 16:44:39' WHERE `id` = 10 [ RunTime:0.0547s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `receiver` (`receiver`,`redpacket`,`money`,`createtime`) VALUES ('4','10','0','2016-09-07 10:21:34') [ RunTime:0.0703s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `user` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `user` SET `id`='4',`username`='xuyuanfan',`password`='123',`money`='14.67',`createtime`='2016-09-06 11:13:23' WHERE `id` = 4 [ RunTime:0.0859s ]
+SQL: SELECT * FROM `user` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT User.id AS user_id,User.username AS username,User.password AS password,User.money AS user_money,User.createtime AS user_createtime,Receiver.id AS receiver_id,Receiver.receiver AS receiver,Receiver.redpacket AS redpacket,Receiver.money AS receiver_money,Receiver.createtime AS receiver_createtime,Redpacket.id AS redpacket_id,Redpacket.publisher AS publisher,Redpacket.money AS redpacket_money,Redpacket.number AS number,Redpacket.distribution AS distribution,Redpacket.lasttime AS redpacket_lasttime,Redpacket.createtime AS redpacket_createtime FROM user User RIGHT JOIN receiver Receiver ON User.id=Receiver.receiver LEFT JOIN redpacket Redpacket ON Redpacket.id=Receiver.redpacket WHERE Receiver.redpacket = '10'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007812s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007813s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007813s ]
+
+[ 2016-09-07T10:23:52+08:00 ] ::1 /waibao/index.php/Home/Index/redPacket/redPacketId/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005860s ]
+SQL: SHOW COLUMNS FROM `receiver` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `receiver` WHERE `receiver` = 4 AND `redpacket` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `redpacket` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `redpacket` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `redpacket` SET `id`='8',`publisher`='3',`username`='xuyuanfan2',`money`='10',`number`='5',`distribution`='1',`lasttime`='2016-09-07 10:23:52',`createtime`='2016-09-05 16:26:23' WHERE `id` = 8 [ RunTime:0.0635s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `receiver` (`receiver`,`redpacket`,`money`,`createtime`) VALUES ('4','8','2','2016-09-07 10:23:52') [ RunTime:0.0303s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `user` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `user` SET `id`='4',`username`='xuyuanfan',`password`='123',`money`='16.67',`createtime`='2016-09-06 11:13:23' WHERE `id` = 4 [ RunTime:0.0400s ]
+SQL: SELECT * FROM `user` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT User.id AS user_id,User.username AS username,User.password AS password,User.money AS user_money,User.createtime AS user_createtime,Receiver.id AS receiver_id,Receiver.receiver AS receiver,Receiver.redpacket AS redpacket,Receiver.money AS receiver_money,Receiver.createtime AS receiver_createtime,Redpacket.id AS redpacket_id,Redpacket.publisher AS publisher,Redpacket.money AS redpacket_money,Redpacket.number AS number,Redpacket.distribution AS distribution,Redpacket.lasttime AS redpacket_lasttime,Redpacket.createtime AS redpacket_createtime FROM user User RIGHT JOIN receiver Receiver ON User.id=Receiver.receiver LEFT JOIN redpacket Redpacket ON Redpacket.id=Receiver.redpacket WHERE Receiver.redpacket = '8'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001953s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052735s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054687s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004883s ]
+
+[ 2016-09-07T10:24:22+08:00 ] ::1 /waibao/index.php/Home/Index/redPacket/redPacketId/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001953s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005859s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `receiver` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `receiver` WHERE `receiver` = 4 AND `redpacket` = 10 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `redpacket` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `user` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT User.id AS user_id,User.username AS username,User.password AS password,User.money AS user_money,User.createtime AS user_createtime,Receiver.id AS receiver_id,Receiver.receiver AS receiver,Receiver.redpacket AS redpacket,Receiver.money AS receiver_money,Receiver.createtime AS receiver_createtime,Redpacket.id AS redpacket_id,Redpacket.publisher AS publisher,Redpacket.money AS redpacket_money,Redpacket.number AS number,Redpacket.distribution AS distribution,Redpacket.lasttime AS redpacket_lasttime,Redpacket.createtime AS redpacket_createtime FROM user User RIGHT JOIN receiver Receiver ON User.id=Receiver.receiver LEFT JOIN redpacket Redpacket ON Redpacket.id=Receiver.redpacket WHERE Receiver.redpacket = '10'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002929s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051758s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052735s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003907s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2016-09-07T10:24:26+08:00 ] ::1 /waibao/index.php/Home/Index/redPacket/redPacketId/11.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003907s ]
+SQL: SHOW COLUMNS FROM `receiver` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `receiver` WHERE `receiver` = 4 AND `redpacket` = 11 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `redpacket` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `redpacket` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `redpacket` SET `id`='11',`publisher`='2',`username`='xuyuanfan1',`money`='16',`number`='7',`distribution`='2',`lasttime`='2016-09-07 10:24:25',`createtime`='2016-09-05 17:32:10' WHERE `id` = 11 [ RunTime:0.0449s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `receiver` (`receiver`,`redpacket`,`money`,`createtime`) VALUES ('4','11','0','2016-09-07 10:24:25') [ RunTime:0.0234s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `user` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `user` SET `id`='4',`username`='xuyuanfan',`password`='123',`money`='16.67',`createtime`='2016-09-06 11:13:23' WHERE `id` = 4 [ RunTime:0.0410s ]
+SQL: SELECT * FROM `user` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT User.id AS user_id,User.username AS username,User.password AS password,User.money AS user_money,User.createtime AS user_createtime,Receiver.id AS receiver_id,Receiver.receiver AS receiver,Receiver.redpacket AS redpacket,Receiver.money AS receiver_money,Receiver.createtime AS receiver_createtime,Redpacket.id AS redpacket_id,Redpacket.publisher AS publisher,Redpacket.money AS redpacket_money,Redpacket.number AS number,Redpacket.distribution AS distribution,Redpacket.lasttime AS redpacket_lasttime,Redpacket.createtime AS redpacket_createtime FROM user User RIGHT JOIN receiver Receiver ON User.id=Receiver.receiver LEFT JOIN redpacket Redpacket ON Redpacket.id=Receiver.redpacket WHERE Receiver.redpacket = '11'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004883s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051758s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053711s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002929s ]
+
+[ 2016-09-07T10:24:42+08:00 ] ::1 /waibao/index.php/Home/Index/redPacket/redPacketId/13.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004883s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+SQL: SHOW COLUMNS FROM `receiver` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `receiver` WHERE `receiver` = 4 AND `redpacket` = 13 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `redpacket` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `redpacket` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `redpacket` SET `id`='13',`publisher`='3',`username`='xuyuanfan2',`money`='11',`number`='10',`distribution`='2',`lasttime`='2016-09-07 10:24:41',`createtime`='2016-09-06 11:14:34' WHERE `id` = 13 [ RunTime:0.0361s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `receiver` (`receiver`,`redpacket`,`money`,`createtime`) VALUES ('4','13','0','2016-09-07 10:24:41') [ RunTime:0.0391s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `user` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `user` SET `id`='4',`username`='xuyuanfan',`password`='123',`money`='16.67',`createtime`='2016-09-06 11:13:23' WHERE `id` = 4 [ RunTime:0.0410s ]
+SQL: SELECT * FROM `user` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT User.id AS user_id,User.username AS username,User.password AS password,User.money AS user_money,User.createtime AS user_createtime,Receiver.id AS receiver_id,Receiver.receiver AS receiver,Receiver.redpacket AS redpacket,Receiver.money AS receiver_money,Receiver.createtime AS receiver_createtime,Redpacket.id AS redpacket_id,Redpacket.publisher AS publisher,Redpacket.money AS redpacket_money,Redpacket.number AS number,Redpacket.distribution AS distribution,Redpacket.lasttime AS redpacket_lasttime,Redpacket.createtime AS redpacket_createtime FROM user User RIGHT JOIN receiver Receiver ON User.id=Receiver.receiver LEFT JOIN redpacket Redpacket ON Redpacket.id=Receiver.redpacket WHERE Receiver.redpacket = '13'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003906s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051757s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053711s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002930s ]
+
+[ 2016-09-07T10:32:14+08:00 ] ::1 /waibao/index.php/Home/Index/redPacketList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005859s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `user` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `redpacket`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001953s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.112304s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.114258s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003907s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001954s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2016-09-07T10:32:15+08:00 ] ::1 /waibao/index.php/Home/Index/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003907s ]
+
+[ 2016-09-07T10:32:16+08:00 ] ::1 /waibao/index.php/Home/Index/index/page/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003906s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041016s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042968s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002930s ]
+
+[ 2016-09-07T10:32:24+08:00 ] ::1 /waibao/index.php/Home/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'xuyuanfan1' AND `password` = '123' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `user` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `redpacket`  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.105469s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.107421s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005859s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003907s ]
+
+[ 2016-09-07T10:32:29+08:00 ] ::1 /waibao/index.php/Home/Index/redPacket/redPacketId/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `receiver` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `receiver` WHERE `receiver` = 2 AND `redpacket` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `redpacket` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `redpacket` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `redpacket` SET `id`='10',`publisher`='2',`username`='xuyuanfan1',`money`='16',`number`='6',`distribution`='2',`lasttime`='2016-09-07 10:32:29',`createtime`='2016-09-05 16:44:39' WHERE `id` = 10 [ RunTime:0.0498s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `receiver` (`receiver`,`redpacket`,`money`,`createtime`) VALUES ('2','10','0','2016-09-07 10:32:29') [ RunTime:0.0488s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `user` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `user` SET `id`='2',`username`='xuyuanfan1',`password`='123',`money`='6',`createtime`='2016-09-06 11:13:17' WHERE `id` = 2 [ RunTime:0.0479s ]
+SQL: SELECT * FROM `user` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT User.id AS user_id,User.username AS username,User.password AS password,User.money AS user_money,User.createtime AS user_createtime,Receiver.id AS receiver_id,Receiver.receiver AS receiver,Receiver.redpacket AS redpacket,Receiver.money AS receiver_money,Receiver.createtime AS receiver_createtime,Redpacket.id AS redpacket_id,Redpacket.publisher AS publisher,Redpacket.money AS redpacket_money,Redpacket.number AS number,Redpacket.distribution AS distribution,Redpacket.lasttime AS redpacket_lasttime,Redpacket.createtime AS redpacket_createtime FROM user User RIGHT JOIN receiver Receiver ON User.id=Receiver.receiver LEFT JOIN redpacket Redpacket ON Redpacket.id=Receiver.redpacket WHERE Receiver.redpacket = '10'  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003906s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005859s ]
+
+[ 2016-09-07T10:38:20+08:00 ] ::1 /waibao/index.php/Home/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006836s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'xuyuanfan1' AND `password` = '123' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `user` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `redpacket`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002929s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.111328s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.113282s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003907s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2016-09-07T10:38:22+08:00 ] ::1 /waibao/index.php/Home/Index/redPacket/redPacketId/11.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003907s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `receiver` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `receiver` WHERE `receiver` = 2 AND `redpacket` = 11 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `redpacket` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `redpacket` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `redpacket` SET `id`='11',`publisher`='2',`username`='xuyuanfan1',`money`='13.03',`number`='6',`distribution`='2',`lasttime`='2016-09-07 10:38:22',`createtime`='2016-09-05 17:32:10' WHERE `id` = 11 [ RunTime:0.0508s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `receiver` (`receiver`,`redpacket`,`money`,`createtime`) VALUES ('2','11','2.97','2016-09-07 10:38:22') [ RunTime:0.0352s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `user` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `user` SET `id`='2',`username`='xuyuanfan1',`password`='123',`money`='8.97',`createtime`='2016-09-06 11:13:17' WHERE `id` = 2 [ RunTime:0.0693s ]
+SQL: SELECT * FROM `user` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT User.id AS user_id,User.username AS username,User.password AS password,User.money AS user_money,User.createtime AS user_createtime,Receiver.id AS receiver_id,Receiver.receiver AS receiver,Receiver.redpacket AS redpacket,Receiver.money AS receiver_money,Receiver.createtime AS receiver_createtime,Redpacket.id AS redpacket_id,Redpacket.publisher AS publisher,Redpacket.money AS redpacket_money,Redpacket.number AS number,Redpacket.distribution AS distribution,Redpacket.lasttime AS redpacket_lasttime,Redpacket.createtime AS redpacket_createtime FROM user User RIGHT JOIN receiver Receiver ON User.id=Receiver.receiver LEFT JOIN redpacket Redpacket ON Redpacket.id=Receiver.redpacket WHERE Receiver.redpacket = '11'  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2016-09-07T10:39:29+08:00 ] ::1 /waibao/index.php/Home/Index/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004882s ]
+
+[ 2016-09-07T10:39:29+08:00 ] ::1 /waibao/index.php/Home/Index/index/page/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042969s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044922s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2016-09-07T10:39:32+08:00 ] ::1 /waibao/index.php/Home/Index/index/page/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003907s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042969s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044922s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005859s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008789s ]
+
+[ 2016-09-07T10:39:46+08:00 ] ::1 /waibao/index.php/Home/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004883s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'xuyuanfan2' AND `password` = '123' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `user` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `redpacket`  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003906s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.118164s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.122070s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002929s ]
+
+[ 2016-09-07T10:40:01+08:00 ] ::1 /waibao/index.php/Home/Index/redPacket/redPacketId/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `receiver` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `receiver` WHERE `receiver` = 3 AND `redpacket` = 10 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `redpacket` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `redpacket` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `redpacket` SET `id`='10',`publisher`='2',`username`='xuyuanfan1',`money`='12.69',`number`='5',`distribution`='2',`lasttime`='2016-09-07 10:40:01',`createtime`='2016-09-05 16:44:39' WHERE `id` = 10 [ RunTime:0.0547s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `receiver` (`receiver`,`redpacket`,`money`,`createtime`) VALUES ('3','10','3.31','2016-09-07 10:40:01') [ RunTime:0.1973s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `user` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `user` SET `id`='3',`username`='xuyuanfan2',`password`='123',`money`='4.31',`createtime`='2016-09-06 11:13:19' WHERE `id` = 3 [ RunTime:0.0391s ]
+SQL: SELECT * FROM `user` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT User.id AS user_id,User.username AS username,User.password AS password,User.money AS user_money,User.createtime AS user_createtime,Receiver.id AS receiver_id,Receiver.receiver AS receiver,Receiver.redpacket AS redpacket,Receiver.money AS receiver_money,Receiver.createtime AS receiver_createtime,Redpacket.id AS redpacket_id,Redpacket.publisher AS publisher,Redpacket.money AS redpacket_money,Redpacket.number AS number,Redpacket.distribution AS distribution,Redpacket.lasttime AS redpacket_lasttime,Redpacket.createtime AS redpacket_createtime FROM user User RIGHT JOIN receiver Receiver ON User.id=Receiver.receiver LEFT JOIN redpacket Redpacket ON Redpacket.id=Receiver.redpacket WHERE Receiver.redpacket = '10'  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002929s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052735s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054687s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003907s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2016-09-07T10:41:37+08:00 ] ::1 /waibao/index.php/Home/Index/redPacketList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003907s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `user` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `redpacket`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001953s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.105469s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.107422s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002930s ]
+
+[ 2016-09-07T10:41:39+08:00 ] ::1 /waibao/index.php/Home/Index/index/page/publish.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003907s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002929s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056641s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058593s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002930s ]
+
+[ 2016-09-07T10:41:48+08:00 ] ::1 /waibao/index.php/Home/Index/publish.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `user` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0068s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `redpacket` (`money`,`number`,`distribution`,`publisher`,`username`,`lasttime`,`createtime`) VALUES ('0.01','2','2','3','xuyuanfan2','2016-09-07 10:41:47','2016-09-07 10:41:47') [ RunTime:0.1982s ]
+SQL: SELECT * FROM `user` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `user` SET `id`='3',`username`='xuyuanfan2',`password`='123',`money`='4.3',`createtime`='2016-09-06 11:13:19' WHERE `id` = 3 [ RunTime:0.0928s ]
+SQL: SELECT * FROM `user` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `redpacket`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.004883s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.006836s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.117188s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.120117s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004882s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004882s ]
+
+[ 2016-09-07T10:41:58+08:00 ] ::1 /waibao/index.php/Home/Index/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+
+[ 2016-09-07T10:41:58+08:00 ] ::1 /waibao/index.php/Home/Index/index/page/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038086s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040040s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004883s ]
+
+[ 2016-09-07T10:42:05+08:00 ] ::1 /waibao/index.php/Home/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'xuyuanfan' AND `password` = '123' LIMIT 1   [ RunTime:0.0059s ]
+SQL: SELECT * FROM `user` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `redpacket`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002930s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005859s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.111328s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005859s ]
+
+[ 2016-09-07T10:42:07+08:00 ] ::1 /waibao/index.php/Home/Index/redPacket/redPacketId/14.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003907s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004882s ]
+SQL: SHOW COLUMNS FROM `receiver` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `receiver` WHERE `receiver` = 4 AND `redpacket` = 14 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `redpacket` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `redpacket` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `redpacket` SET `id`='14',`publisher`='3',`username`='xuyuanfan2',`money`='0.01',`number`='1',`distribution`='2',`lasttime`='2016-09-07 10:42:06',`createtime`='2016-09-07 10:41:47' WHERE `id` = 14 [ RunTime:0.0391s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `receiver` (`receiver`,`redpacket`,`money`,`createtime`) VALUES ('4','14','0','2016-09-07 10:42:06') [ RunTime:0.0488s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `user` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `user` SET `id`='4',`username`='xuyuanfan',`password`='123',`money`='16.67',`createtime`='2016-09-06 11:13:23' WHERE `id` = 4 [ RunTime:0.0498s ]
+SQL: SELECT * FROM `user` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT User.id AS user_id,User.username AS username,User.password AS password,User.money AS user_money,User.createtime AS user_createtime,Receiver.id AS receiver_id,Receiver.receiver AS receiver,Receiver.redpacket AS redpacket,Receiver.money AS receiver_money,Receiver.createtime AS receiver_createtime,Redpacket.id AS redpacket_id,Redpacket.publisher AS publisher,Redpacket.money AS redpacket_money,Redpacket.number AS number,Redpacket.distribution AS distribution,Redpacket.lasttime AS redpacket_lasttime,Redpacket.createtime AS redpacket_createtime FROM user User RIGHT JOIN receiver Receiver ON User.id=Receiver.receiver LEFT JOIN redpacket Redpacket ON Redpacket.id=Receiver.redpacket WHERE Receiver.redpacket = '14'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060547s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004883s ]
+
+[ 2016-09-07T10:42:10+08:00 ] ::1 /waibao/index.php/Home/Index/redPacketList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `user` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `redpacket`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001953s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.119141s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.121094s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003906s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005859s ]
+
+[ 2016-09-07T10:42:11+08:00 ] ::1 /waibao/index.php/Home/Index/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.002930s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007812s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+
+[ 2016-09-07T10:42:12+08:00 ] ::1 /waibao/index.php/Home/Index/index/page/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003906s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036133s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038085s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004883s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002930s ]
+
+[ 2016-09-07T10:42:22+08:00 ] ::1 /waibao/index.php/Home/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003907s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'xuyuanfan1' AND `password` = '123' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `user` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `redpacket`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001953s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003906s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.115234s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.117188s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004883s ]
+
+[ 2016-09-07T10:42:24+08:00 ] ::1 /waibao/index.php/Home/Index/redPacket/redPacketId/14.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+SQL: SHOW COLUMNS FROM `receiver` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `receiver` WHERE `receiver` = 2 AND `redpacket` = 14 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `redpacket` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `redpacket` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `redpacket` SET `id`='14',`publisher`='3',`username`='xuyuanfan2',`money`='0',`number`='0',`distribution`='2',`lasttime`='2016-09-07 10:42:24',`createtime`='2016-09-07 10:41:47' WHERE `id` = 14 [ RunTime:0.0449s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `receiver` (`receiver`,`redpacket`,`money`,`createtime`) VALUES ('2','14','0.01','2016-09-07 10:42:24') [ RunTime:0.0469s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `user` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `user` SET `id`='2',`username`='xuyuanfan1',`password`='123',`money`='8.98',`createtime`='2016-09-06 11:13:17' WHERE `id` = 2 [ RunTime:0.0430s ]
+SQL: SELECT * FROM `user` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT User.id AS user_id,User.username AS username,User.password AS password,User.money AS user_money,User.createtime AS user_createtime,Receiver.id AS receiver_id,Receiver.receiver AS receiver,Receiver.redpacket AS redpacket,Receiver.money AS receiver_money,Receiver.createtime AS receiver_createtime,Redpacket.id AS redpacket_id,Redpacket.publisher AS publisher,Redpacket.money AS redpacket_money,Redpacket.number AS number,Redpacket.distribution AS distribution,Redpacket.lasttime AS redpacket_lasttime,Redpacket.createtime AS redpacket_createtime FROM user User RIGHT JOIN receiver Receiver ON User.id=Receiver.receiver LEFT JOIN redpacket Redpacket ON Redpacket.id=Receiver.redpacket WHERE Receiver.redpacket = '14'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061524s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063476s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005859s ]
+
+[ 2016-09-07T11:02:08+08:00 ] ::1 /waibao/index.php/Home/Index/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.018555s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017578s ]
+
+[ 2016-09-07T11:02:08+08:00 ] ::1 /waibao/index.php/Home/Index/index/page/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004882s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.115234s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.117187s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.019531s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.020508s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010742s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012695s ]
+
+[ 2016-09-07T11:02:19+08:00 ] ::1 /waibao/index.php/Home/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004883s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'xuyuanfan3' AND `password` = '123' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `redpacket`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001953s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003907s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.121094s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.123047s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002930s ]
+
+[ 2016-09-07T11:02:22+08:00 ] ::1 /waibao/index.php/Home/Index/redPacket/redPacketId/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `receiver` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `receiver` WHERE `receiver` = 5 AND `redpacket` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `redpacket` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT User.id AS user_id,User.username AS username,User.password AS password,User.money AS user_money,User.createtime AS user_createtime,Receiver.id AS receiver_id,Receiver.receiver AS receiver,Receiver.redpacket AS redpacket,Receiver.money AS receiver_money,Receiver.createtime AS receiver_createtime,Redpacket.id AS redpacket_id,Redpacket.publisher AS publisher,Redpacket.money AS redpacket_money,Redpacket.number AS number,Redpacket.distribution AS distribution,Redpacket.lasttime AS redpacket_lasttime,Redpacket.createtime AS redpacket_createtime FROM user User RIGHT JOIN receiver Receiver ON User.id=Receiver.receiver LEFT JOIN redpacket Redpacket ON Redpacket.id=Receiver.redpacket WHERE Receiver.redpacket = '1'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070313s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072265s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2016-09-07T11:02:27+08:00 ] ::1 /waibao/index.php/Home/Index/redPacketList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `redpacket`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.119140s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.121094s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004883s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003907s ]
+
+[ 2016-09-07T11:02:28+08:00 ] ::1 /waibao/index.php/Home/Index/redPacket/redPacketId/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008789s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+SQL: SHOW COLUMNS FROM `receiver` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `receiver` WHERE `receiver` = 5 AND `redpacket` = 2 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `redpacket` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT User.id AS user_id,User.username AS username,User.password AS password,User.money AS user_money,User.createtime AS user_createtime,Receiver.id AS receiver_id,Receiver.receiver AS receiver,Receiver.redpacket AS redpacket,Receiver.money AS receiver_money,Receiver.createtime AS receiver_createtime,Redpacket.id AS redpacket_id,Redpacket.publisher AS publisher,Redpacket.money AS redpacket_money,Redpacket.number AS number,Redpacket.distribution AS distribution,Redpacket.lasttime AS redpacket_lasttime,Redpacket.createtime AS redpacket_createtime FROM user User RIGHT JOIN receiver Receiver ON User.id=Receiver.receiver LEFT JOIN redpacket Redpacket ON Redpacket.id=Receiver.redpacket WHERE Receiver.redpacket = '2'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001953s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003906s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064453s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066407s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003907s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002929s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004883s ]
+
+[ 2016-09-07T11:02:30+08:00 ] ::1 /waibao/index.php/Home/Index/redPacketList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004883s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003907s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `redpacket`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001953s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003906s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.113282s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.115234s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004882s ]
+
+[ 2016-09-07T11:02:31+08:00 ] ::1 /waibao/index.php/Home/Index/redPacket/redPacketId/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+SQL: SHOW COLUMNS FROM `receiver` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `receiver` WHERE `receiver` = 5 AND `redpacket` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `redpacket` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT User.id AS user_id,User.username AS username,User.password AS password,User.money AS user_money,User.createtime AS user_createtime,Receiver.id AS receiver_id,Receiver.receiver AS receiver,Receiver.redpacket AS redpacket,Receiver.money AS receiver_money,Receiver.createtime AS receiver_createtime,Redpacket.id AS redpacket_id,Redpacket.publisher AS publisher,Redpacket.money AS redpacket_money,Redpacket.number AS number,Redpacket.distribution AS distribution,Redpacket.lasttime AS redpacket_lasttime,Redpacket.createtime AS redpacket_createtime FROM user User RIGHT JOIN receiver Receiver ON User.id=Receiver.receiver LEFT JOIN redpacket Redpacket ON Redpacket.id=Receiver.redpacket WHERE Receiver.redpacket = '3'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053711s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055664s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001954s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2016-09-07T11:02:33+08:00 ] ::1 /waibao/index.php/Home/Index/redPacketList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `redpacket`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.115234s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.117187s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004883s ]
+
+[ 2016-09-07T11:02:39+08:00 ] ::1 /waibao/index.php/Home/Index/redPacket/redPacketId/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004882s ]
+SQL: SHOW COLUMNS FROM `receiver` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `receiver` WHERE `receiver` = 5 AND `redpacket` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `redpacket` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `redpacket` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `redpacket` SET `id`='5',`publisher`='4',`username`='xuyuanfan',`money`='6',`number`='1',`distribution`='1',`lasttime`='2016-09-07 11:02:38',`createtime`='2016-09-05 16:15:09' WHERE `id` = 5 [ RunTime:0.0410s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `receiver` (`receiver`,`redpacket`,`money`,`createtime`) VALUES ('5','5','6','2016-09-07 11:02:38') [ RunTime:0.0352s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `user` SET `id`='5',`username`='xuyuanfan3',`password`='123',`money`='102',`createtime`='2016-09-06 10:15:58' WHERE `id` = 5 [ RunTime:0.0234s ]
+SQL: SELECT * FROM `user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT User.id AS user_id,User.username AS username,User.password AS password,User.money AS user_money,User.createtime AS user_createtime,Receiver.id AS receiver_id,Receiver.receiver AS receiver,Receiver.redpacket AS redpacket,Receiver.money AS receiver_money,Receiver.createtime AS receiver_createtime,Redpacket.id AS redpacket_id,Redpacket.publisher AS publisher,Redpacket.money AS redpacket_money,Redpacket.number AS number,Redpacket.distribution AS distribution,Redpacket.lasttime AS redpacket_lasttime,Redpacket.createtime AS redpacket_createtime FROM user User RIGHT JOIN receiver Receiver ON User.id=Receiver.receiver LEFT JOIN redpacket Redpacket ON Redpacket.id=Receiver.redpacket WHERE Receiver.redpacket = '5'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051757s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054688s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002929s ]
+
+[ 2016-09-07T11:02:49+08:00 ] ::1 /waibao/index.php/Home/Index/redPacketList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005860s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003907s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `redpacket`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001953s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.110351s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.112305s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004883s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004883s ]
+
+[ 2016-09-07T11:02:52+08:00 ] ::1 /waibao/index.php/Home/Index/redPacket/redPacketId/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `receiver` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `receiver` WHERE `receiver` = 5 AND `redpacket` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `redpacket` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT User.id AS user_id,User.username AS username,User.password AS password,User.money AS user_money,User.createtime AS user_createtime,Receiver.id AS receiver_id,Receiver.receiver AS receiver,Receiver.redpacket AS redpacket,Receiver.money AS receiver_money,Receiver.createtime AS receiver_createtime,Redpacket.id AS redpacket_id,Redpacket.publisher AS publisher,Redpacket.money AS redpacket_money,Redpacket.number AS number,Redpacket.distribution AS distribution,Redpacket.lasttime AS redpacket_lasttime,Redpacket.createtime AS redpacket_createtime FROM user User RIGHT JOIN receiver Receiver ON User.id=Receiver.receiver LEFT JOIN redpacket Redpacket ON Redpacket.id=Receiver.redpacket WHERE Receiver.redpacket = '6'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001953s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003906s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053711s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055664s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003907s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2016-09-07T14:38:14+08:00 ] ::1 /waibao/index.php/Home/Index/redPacketList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.070312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.014648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017578s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0781s ]
+SQL: SELECT * FROM `user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0586s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0176s ]
+SQL: SELECT * FROM `redpacket`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001953s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004882s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.333008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.334961s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.030273s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.032227s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.020508s ]
+INFO: [ app_end ] --END-- [ RunTime:0.021485s ]
+
+[ 2016-09-07T14:38:17+08:00 ] ::1 /waibao/index.php/Home/Index/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.052735s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004882s ]
+
+[ 2016-09-07T14:38:17+08:00 ] ::1 /waibao/index.php/Home/Index/index/page/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003907s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006835s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001953s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003906s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053711s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056640s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003907s ]
+
+[ 2016-09-07T14:38:18+08:00 ] ::1 /waibao/index.php/Home/Index/index/page/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049804s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051758s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003907s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003907s ]
+
+[ 2016-09-07T14:38:38+08:00 ] ::1 /waibao/index.php/Home/Index/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0059s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `user` (`username`,`password`,`money`,`createtime`) VALUES ('xuyuanfan5','123','100','2016-09-07 14:38:38') [ RunTime:0.2607s ]
+
+[ 2016-09-07T14:38:39+08:00 ] ::1 /waibao/index.php/Home/Index/index/page/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005859s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064454s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003907s ]
+
+[ 2016-09-07T14:38:48+08:00 ] ::1 /waibao/index.php/Home/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002929s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0244s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'xuyuanfan5' AND `password` = '123' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0107s ]
+SQL: SELECT * FROM `redpacket`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.132813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.134765s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006836s ]
+
+[ 2016-09-07T14:39:17+08:00 ] ::1 /waibao/index.php/Home/Index/redPacket/redPacketId/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `receiver` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `receiver` WHERE `receiver` = 6 AND `redpacket` = 5 LIMIT 1   [ RunTime:0.0176s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `redpacket` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT User.id AS user_id,User.username AS username,User.password AS password,User.money AS user_money,User.createtime AS user_createtime,Receiver.id AS receiver_id,Receiver.receiver AS receiver,Receiver.redpacket AS redpacket,Receiver.money AS receiver_money,Receiver.createtime AS receiver_createtime,Redpacket.id AS redpacket_id,Redpacket.publisher AS publisher,Redpacket.money AS redpacket_money,Redpacket.number AS number,Redpacket.distribution AS distribution,Redpacket.lasttime AS redpacket_lasttime,Redpacket.createtime AS redpacket_createtime FROM user User RIGHT JOIN receiver Receiver ON User.id=Receiver.receiver LEFT JOIN redpacket Redpacket ON Redpacket.id=Receiver.redpacket WHERE Receiver.redpacket = '5'  [ RunTime:0.0557s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075195s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077148s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.011718s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013672s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003906s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005859s ]
+
+[ 2016-09-07T14:39:23+08:00 ] ::1 /waibao/index.php/Home/Index/redPacketList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003907s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `redpacket`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.119141s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.121094s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003907s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2016-09-07T14:40:02+08:00 ] ::1 /waibao/index.php/Home/Index/redPacket/redPacketId/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `receiver` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `receiver` WHERE `receiver` = 6 AND `redpacket` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `redpacket` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT User.id AS user_id,User.username AS username,User.password AS password,User.money AS user_money,User.createtime AS user_createtime,Receiver.id AS receiver_id,Receiver.receiver AS receiver,Receiver.redpacket AS redpacket,Receiver.money AS receiver_money,Receiver.createtime AS receiver_createtime,Redpacket.id AS redpacket_id,Redpacket.publisher AS publisher,Redpacket.money AS redpacket_money,Redpacket.number AS number,Redpacket.distribution AS distribution,Redpacket.lasttime AS redpacket_lasttime,Redpacket.createtime AS redpacket_createtime FROM user User RIGHT JOIN receiver Receiver ON User.id=Receiver.receiver LEFT JOIN redpacket Redpacket ON Redpacket.id=Receiver.redpacket WHERE Receiver.redpacket = '5'  [ RunTime:0.0010s ]
+ERR: 1062:Duplicata du champ '5' pour la clef 'PRIMARY'
+ [ SQL语句 ] : UPDATE `redpacket` SET `id`='5',`publisher`='4',`username`='xuyuanfan',`money`='0',`number`='0',`distribution`='1',`overtime`='0',`lasttime`='2016-09-07 14:40:02',`createtime`='2016-09-05 16:15:09'
+ERR: 1062:Duplicata du champ '5' pour la clef 'PRIMARY'
+ [ SQL语句 ] : UPDATE `redpacket` SET `id`='5',`publisher`='4',`username`='xuyuanfan',`money`='0',`number`='0',`distribution`='1',`overtime`='0',`lasttime`='2016-09-07 14:40:02',`createtime`='2016-09-05 16:15:09'
+
+[ 2016-09-07T14:46:26+08:00 ] ::1 /waibao/index.php/Home/Index/redPacketList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `redpacket`  [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003907s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.121094s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.122071s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2016-09-07T14:46:29+08:00 ] ::1 /waibao/index.php/Home/Index/redPacket/redPacketId/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `receiver` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `receiver` WHERE `receiver` = 6 AND `redpacket` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `redpacket` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT User.id AS user_id,User.username AS username,User.password AS password,User.money AS user_money,User.createtime AS user_createtime,Receiver.id AS receiver_id,Receiver.receiver AS receiver,Receiver.redpacket AS redpacket,Receiver.money AS receiver_money,Receiver.createtime AS receiver_createtime,Redpacket.id AS redpacket_id,Redpacket.publisher AS publisher,Redpacket.money AS redpacket_money,Redpacket.number AS number,Redpacket.distribution AS distribution,Redpacket.lasttime AS redpacket_lasttime,Redpacket.createtime AS redpacket_createtime FROM user User RIGHT JOIN receiver Receiver ON User.id=Receiver.receiver LEFT JOIN redpacket Redpacket ON Redpacket.id=Receiver.redpacket WHERE Receiver.redpacket = '5'  [ RunTime:0.0010s ]
+SQL: UPDATE `redpacket` SET `id`='5',`publisher`='4',`username`='xuyuanfan',`money`='0',`number`='0',`distribution`='1',`overtime`='0',`lasttime`='2016-09-07 14:46:29',`createtime`='2016-09-05 16:15:09' WHERE `id` = 5 [ RunTime:0.1318s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `receiver` (`receiver`,`redpacket`,`money`,`createtime`) VALUES ('6','5','6','2016-09-07 14:46:29') [ RunTime:0.0576s ]
+SQL: UPDATE `user` SET `id`='6',`username`='xuyuanfan5',`password`='123',`money`='106',`createtime`='2016-09-07 14:38:38' WHERE `id` = 6 [ RunTime:0.0273s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050781s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053711s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002929s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004883s ]
+
+[ 2016-09-07T15:00:41+08:00 ] ::1 /waibao/index.php/Home/Index/redPacketList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `redpacket`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.117188s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.119140s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003907s ]
+
+[ 2016-09-07T15:00:45+08:00 ] ::1 /waibao/index.php/Home/Index/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003907s ]
+
+[ 2016-09-07T15:00:45+08:00 ] ::1 /waibao/index.php/Home/Index/index/page/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002929s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039062s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041016s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002929s ]
+
+[ 2016-09-07T15:00:53+08:00 ] ::1 /waibao/index.php/Home/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002929s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'xuyuanfan5' AND `password` = '123' LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT * FROM `user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `redpacket`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003906s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.107422s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109375s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002930s ]
+
+[ 2016-09-07T15:01:14+08:00 ] ::1 /waibao/index.php/Home/Index/redPacket/redPacketId/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001953s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004883s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004882s ]
+SQL: SHOW COLUMNS FROM `receiver` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `receiver` WHERE `receiver` = 6 AND `redpacket` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `redpacket` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT User.id AS user_id,User.username AS username,User.password AS password,User.money AS user_money,User.createtime AS user_createtime,Receiver.id AS receiver_id,Receiver.receiver AS receiver,Receiver.redpacket AS redpacket,Receiver.money AS receiver_money,Receiver.createtime AS receiver_createtime,Redpacket.id AS redpacket_id,Redpacket.publisher AS publisher,Redpacket.money AS redpacket_money,Redpacket.number AS number,Redpacket.distribution AS distribution,Redpacket.lasttime AS redpacket_lasttime,Redpacket.createtime AS redpacket_createtime FROM user User RIGHT JOIN receiver Receiver ON User.id=Receiver.receiver LEFT JOIN redpacket Redpacket ON Redpacket.id=Receiver.redpacket WHERE Receiver.redpacket = '6'  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `receiver` (`receiver`,`redpacket`,`money`,`createtime`) VALUES ('6','6','0','2016-09-07 15:01:14') [ RunTime:0.0430s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002929s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051758s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053711s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003907s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2016-09-07T15:02:37+08:00 ] ::1 /waibao/index.php/Home/Index/redPacketList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005859s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `redpacket`  [ RunTime:0.0059s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005859s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.118164s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.120117s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002929s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005859s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002929s ]
+
+[ 2016-09-07T15:02:39+08:00 ] ::1 /waibao/index.php/Home/Index/redPacket/redPacketId/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `receiver` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `receiver` WHERE `receiver` = 6 AND `redpacket` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `redpacket` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT User.id AS user_id,User.username AS username,User.password AS password,User.money AS user_money,User.createtime AS user_createtime,Receiver.id AS receiver_id,Receiver.receiver AS receiver,Receiver.redpacket AS redpacket,Receiver.money AS receiver_money,Receiver.createtime AS receiver_createtime,Redpacket.id AS redpacket_id,Redpacket.publisher AS publisher,Redpacket.money AS redpacket_money,Redpacket.number AS number,Redpacket.distribution AS distribution,Redpacket.lasttime AS redpacket_lasttime,Redpacket.createtime AS redpacket_createtime FROM user User RIGHT JOIN receiver Receiver ON User.id=Receiver.receiver LEFT JOIN redpacket Redpacket ON Redpacket.id=Receiver.redpacket WHERE Receiver.redpacket = '6'  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.004883s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.008789s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064453s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066406s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001954s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2016-09-07T15:04:13+08:00 ] ::1 /waibao/index.php/Home/Index/redPacketList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `redpacket`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001953s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.114258s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.117187s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2016-09-07T15:04:27+08:00 ] ::1 /waibao/index.php/Home/Index/redPacket/redPacketId/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `receiver` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `receiver` WHERE `receiver` = 6 AND `redpacket` = 7 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `redpacket` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT User.id AS user_id,User.username AS username,User.password AS password,User.money AS user_money,User.createtime AS user_createtime,Receiver.id AS receiver_id,Receiver.receiver AS receiver,Receiver.redpacket AS redpacket,Receiver.money AS receiver_money,Receiver.createtime AS receiver_createtime,Redpacket.id AS redpacket_id,Redpacket.publisher AS publisher,Redpacket.money AS redpacket_money,Redpacket.number AS number,Redpacket.distribution AS distribution,Redpacket.lasttime AS redpacket_lasttime,Redpacket.createtime AS redpacket_createtime FROM user User RIGHT JOIN receiver Receiver ON User.id=Receiver.receiver LEFT JOIN redpacket Redpacket ON Redpacket.id=Receiver.redpacket WHERE Receiver.redpacket = '7'  [ RunTime:0.0010s ]
+SQL: UPDATE `redpacket` SET `id`='7',`publisher`='4',`username`='xuyuanfan',`money`='102',`number`='102',`distribution`='1',`overtime`='1',`lasttime`='2016-09-07 15:04:27',`createtime`='2016-09-05 16:16:34' WHERE `id` = 7 [ RunTime:0.0342s ]
+SQL: UPDATE `user` SET `id`='6',`username`='xuyuanfan5',`password`='123',`money`='107',`createtime`='2016-09-07 14:38:38' WHERE `id` = 6 [ RunTime:0.0918s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `receiver` (`receiver`,`redpacket`,`money`,`createtime`) VALUES ('6','7','1','2016-09-07 15:04:27') [ RunTime:0.0664s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003906s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057617s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060547s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2016-09-07T15:04:37+08:00 ] ::1 /waibao/index.php/Home/Index/redPacketList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007812s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `redpacket`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.116211s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.118164s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004883s ]
+
+[ 2016-09-07T15:04:39+08:00 ] ::1 /waibao/index.php/Home/Index/redPacket/redPacketId/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `receiver` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `receiver` WHERE `receiver` = 6 AND `redpacket` = 7 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `redpacket` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT User.id AS user_id,User.username AS username,User.password AS password,User.money AS user_money,User.createtime AS user_createtime,Receiver.id AS receiver_id,Receiver.receiver AS receiver,Receiver.redpacket AS redpacket,Receiver.money AS receiver_money,Receiver.createtime AS receiver_createtime,Redpacket.id AS redpacket_id,Redpacket.publisher AS publisher,Redpacket.money AS redpacket_money,Redpacket.number AS number,Redpacket.distribution AS distribution,Redpacket.lasttime AS redpacket_lasttime,Redpacket.createtime AS redpacket_createtime FROM user User RIGHT JOIN receiver Receiver ON User.id=Receiver.receiver LEFT JOIN redpacket Redpacket ON Redpacket.id=Receiver.redpacket WHERE Receiver.redpacket = '7'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059570s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061524s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006836s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005860s ]
+
+[ 2016-09-07T15:05:11+08:00 ] ::1 /waibao/index.php/Home/Index/redPacketList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002929s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `redpacket`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001954s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.117187s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.119141s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006836s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007812s ]
+
+[ 2016-09-07T15:05:24+08:00 ] ::1 /waibao/index.php/Home/Index/redPacket/redPacketId/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `receiver` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `receiver` WHERE `receiver` = 6 AND `redpacket` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `redpacket` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `redpacket` SET `id`='8',`publisher`='3',`username`='xuyuanfan2',`money`='8',`number`='4',`distribution`='1',`overtime`='0',`lasttime`='2016-09-07 15:05:24',`createtime`='2016-09-05 16:26:23' WHERE `id` = 8 [ RunTime:0.0322s ]
+SQL: UPDATE `user` SET `id`='6',`username`='xuyuanfan5',`password`='123',`money`='109',`createtime`='2016-09-07 14:38:38' WHERE `id` = 6 [ RunTime:0.0410s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `receiver` (`receiver`,`redpacket`,`money`,`createtime`) VALUES ('6','8','2','2016-09-07 15:05:24') [ RunTime:0.0459s ]
+SQL: SELECT User.id AS user_id,User.username AS username,User.password AS password,User.money AS user_money,User.createtime AS user_createtime,Receiver.id AS receiver_id,Receiver.receiver AS receiver,Receiver.redpacket AS redpacket,Receiver.money AS receiver_money,Receiver.createtime AS receiver_createtime,Redpacket.id AS redpacket_id,Redpacket.publisher AS publisher,Redpacket.money AS redpacket_money,Redpacket.number AS number,Redpacket.distribution AS distribution,Redpacket.lasttime AS redpacket_lasttime,Redpacket.createtime AS redpacket_createtime FROM user User RIGHT JOIN receiver Receiver ON User.id=Receiver.receiver LEFT JOIN redpacket Redpacket ON Redpacket.id=Receiver.redpacket WHERE Receiver.redpacket = '8'  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001953s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055664s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057617s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004883s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002930s ]
+
+[ 2016-09-07T15:05:31+08:00 ] ::1 /waibao/index.php/Home/Index/redPacketList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `redpacket`  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002929s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.114258s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.116211s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003907s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002930s ]
+
+[ 2016-09-07T15:05:50+08:00 ] ::1 /waibao/index.php/Home/Index/redPacket/redPacketId/9.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003907s ]
+SQL: SHOW COLUMNS FROM `receiver` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `receiver` WHERE `receiver` = 6 AND `redpacket` = 9 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `redpacket` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `redpacket` SET `id`='9',`publisher`='2',`username`='xuyuanfan1',`money`='11.98',`number`='6',`distribution`='2',`overtime`='0',`lasttime`='2016-09-07 15:05:50',`createtime`='2016-09-05 16:36:13' WHERE `id` = 9 [ RunTime:0.0332s ]
+SQL: UPDATE `user` SET `id`='6',`username`='xuyuanfan5',`password`='123',`money`='110.35',`createtime`='2016-09-07 14:38:38' WHERE `id` = 6 [ RunTime:0.0176s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `receiver` (`receiver`,`redpacket`,`money`,`createtime`) VALUES ('6','9','1.35','2016-09-07 15:05:50') [ RunTime:0.0381s ]
+SQL: SELECT User.id AS user_id,User.username AS username,User.password AS password,User.money AS user_money,User.createtime AS user_createtime,Receiver.id AS receiver_id,Receiver.receiver AS receiver,Receiver.redpacket AS redpacket,Receiver.money AS receiver_money,Receiver.createtime AS receiver_createtime,Redpacket.id AS redpacket_id,Redpacket.publisher AS publisher,Redpacket.money AS redpacket_money,Redpacket.number AS number,Redpacket.distribution AS distribution,Redpacket.lasttime AS redpacket_lasttime,Redpacket.createtime AS redpacket_createtime FROM user User RIGHT JOIN receiver Receiver ON User.id=Receiver.receiver LEFT JOIN redpacket Redpacket ON Redpacket.id=Receiver.redpacket WHERE Receiver.redpacket = '9'  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059570s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061523s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002930s ]
+
+[ 2016-09-07T15:05:59+08:00 ] ::1 /waibao/index.php/Home/Index/redPacketList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `redpacket`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003906s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.114258s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.116211s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003907s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004883s ]
+
+[ 2016-09-07T15:06:40+08:00 ] ::1 /waibao/index.php/Home/Index/redPacket/redPacketId/13.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+SQL: SHOW COLUMNS FROM `receiver` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `receiver` WHERE `receiver` = 6 AND `redpacket` = 13 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `redpacket` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `redpacket` SET `id`='13',`publisher`='3',`username`='xuyuanfan2',`money`='9.9',`number`='9',`distribution`='2',`overtime`='0',`lasttime`='2016-09-07 15:06:39',`createtime`='2016-09-06 11:14:34' WHERE `id` = 13 [ RunTime:0.0361s ]
+SQL: UPDATE `user` SET `id`='6',`username`='xuyuanfan5',`password`='123',`money`='111.45',`createtime`='2016-09-07 14:38:38' WHERE `id` = 6 [ RunTime:0.0342s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `receiver` (`receiver`,`redpacket`,`money`,`createtime`) VALUES ('6','13','1.1','2016-09-07 15:06:40') [ RunTime:0.0479s ]
+SQL: SELECT User.id AS user_id,User.username AS username,User.password AS password,User.money AS user_money,User.createtime AS user_createtime,Receiver.id AS receiver_id,Receiver.receiver AS receiver,Receiver.redpacket AS redpacket,Receiver.money AS receiver_money,Receiver.createtime AS receiver_createtime,Redpacket.id AS redpacket_id,Redpacket.publisher AS publisher,Redpacket.money AS redpacket_money,Redpacket.number AS number,Redpacket.distribution AS distribution,Redpacket.lasttime AS redpacket_lasttime,Redpacket.createtime AS redpacket_createtime FROM user User RIGHT JOIN receiver Receiver ON User.id=Receiver.receiver LEFT JOIN redpacket Redpacket ON Redpacket.id=Receiver.redpacket WHERE Receiver.redpacket = '13'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059571s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061523s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004883s ]
+
+[ 2016-09-07T18:17:12+08:00 ] ::1 /waibao/index.php/Home/Index/redPacket/redPacketId/13.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.029297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.021484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.024414s ]
+SQL: SHOW COLUMNS FROM `receiver` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `receiver` WHERE `receiver` = 6 AND `redpacket` = 13 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `redpacket` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT User.id AS user_id,User.username AS username,User.password AS password,User.money AS user_money,User.createtime AS user_createtime,Receiver.id AS receiver_id,Receiver.receiver AS receiver,Receiver.redpacket AS redpacket,Receiver.money AS receiver_money,Receiver.createtime AS receiver_createtime,Redpacket.id AS redpacket_id,Redpacket.publisher AS publisher,Redpacket.money AS redpacket_money,Redpacket.number AS number,Redpacket.distribution AS distribution,Redpacket.overtime AS overtime,Redpacket.lasttime AS redpacket_lasttime,Redpacket.createtime AS redpacket_createtime FROM user User RIGHT JOIN receiver Receiver ON User.id=Receiver.receiver LEFT JOIN redpacket Redpacket ON Redpacket.id=Receiver.redpacket WHERE Receiver.redpacket = '13'  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001953s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.134766s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.137695s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.016601s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.017578s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008789s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010742s ]
+
+[ 2016-09-07T18:17:13+08:00 ] ::1 /waibao/index.php/Home/Index/redPacketList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `redpacket`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001953s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.126953s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.128907s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006836s ]
+
+[ 2016-09-07T18:17:38+08:00 ] ::1 /waibao/index.php/Home/Index/redPacketList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003907s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `redpacket` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `redpacket`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001953s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.097656s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004883s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003906s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005860s ]
+

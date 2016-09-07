@@ -9,7 +9,11 @@
 		<tr><td><a>{$user['username']}</a> <a>{$user['money']}积分</a> <a href="{:U('Index/index', array('page'=>'publish'))}">发红包</a> <a href="{:U('Index/logout')}">退出</a></td></tr>
 		
 		<volist name="redpacketlist" id="redpacket">
-			<tr><td><a>{$redpacket.id}、{$redpacket.username} 于 {$redpacket.createtime} 发了一个红包</a> <a href="{:U('Index/redPacket', array('redPacketId'=>1))}">打开</a></td></tr>
+			    <if condition="($redpacket.overtime eq 1)">
+					<tr><td><a>{$redpacket.id}、此红包已过期，无法领取！</a></td></tr>
+				<else />
+					<tr><td><a>{$redpacket.id}、{$redpacket.username} 于 {$redpacket.createtime} 发了一个红包</a> <a href="{:U('Index/redPacket', array('redPacketId'=>$redpacket['id']))}">打开</a></td></tr>
+				</if>
 		</volist>
 	</table>
 </body>

@@ -6,12 +6,13 @@
 </head>
 <body>
 	<table>
-		<tr><td><a>{$user['username']}</a> <a>{$user['money']}积分</a> <a>返回</a></td></tr>
-		<tr><td><a>你抢了0.01元</a></td></tr>
+		<tr><td><a>{$user['username']}</a> <a>{$user['money']}积分</a> <a href="{:U('Index/redPacketList')}">返回</a></td></tr>
+		<tr><td><a>{$money}</a></td></tr>
 		<tr><td><a>红包记录：</a></td></tr>
-		<tr><td><a>1、李四 于 2016/9/5 11:02 抢了0.01元</a></td></tr>
-		<tr><td><a>2、王五 于 2016/9/5 11:02 抢了0.01元</a></td></tr>
-		<tr><td><a>3、赵六 于 2016/9/5 11:02 抢了0.01元</a></td></tr>
+		
+		<foreach name="redPacketDetail" item="item" key="k" >
+		   <tr><td><a>{$k}、{$item['username']} 于 {$item['receiver_createtime']} 抢了{$item['receiver_money']}元</a></td></tr>
+		</foreach>
 	</table>
 </body>
 </html>

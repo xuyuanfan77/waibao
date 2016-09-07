@@ -42,23 +42,31 @@ class IndexController extends Controller {
 		$this->redirect('Index/index', array('page'=>'login'));
 	}
 	
+	/* 发红包 */
 	public function publish(){
-		$_POST['publisher'] = session('userId');
-		
 		$User = M('User');
 		$condition['id'] = session('userId');
 		$userData = $User->where($condition)->find();
-		$_POST['username'] = $userData['username'];
-		
-		$_POST['lasttime'] = date('Y-m-d H:i:s');
-		$_POST['createtime'] = date('Y-m-d H:i:s');
-		$postData = $_POST;
-		$Redpacket = M('Redpacket');
-		$Redpacket->create($postData);
-		$Redpacket->add();
+		if($userData['money'] >= $_POST['money']) {
+			$_POST['publisher'] = session('userId');
+			$_POST['username'] = $userData['username'];
+			$_POST['lasttime'] = date('Y-m-d H:i:s');
+			$_POST['createtime'] = date('Y-m-d H:i:s');
+			$postData = $_POST;
+			$Redpacket = M('Redpacket');
+
+			if($Redpacket->create($postData)){
+				$result = $Redpacket->add();
+				if($result){
+					$userData['money'] = $userData['money'] - $_POST['money'];
+					$User->where($condition)->save($userData);
+				}
+			}
+		}
 		$this->redPacketList();
 	}
 	
+	/* 红包列表 */
 	public function redPacketList(){
 		$User = M('User');
 		$condition['id'] = session('userId');
@@ -71,16 +79,91 @@ class IndexController extends Controller {
 		$this->display("Index:redPacketList");
 	}
 	
+	/* 抢红包 */
 	public function redPacket(){
+		$probability = 25;											// 抢红包概率
+		$range = 50;												// 红包随机幅度
+		
+		unset($condition);
+		$Receiver = M('Receiver');
+		$condition['receiver'] = session('userId');
+		$condition['redpacket'] = $_GET['redPacketId'];
+		$receiverData = $Receiver->where($condition)->find();
+		
+		unset($condition);
+		$Redpacket = M('Redpacket');
+		$condition['id'] = $_GET['redPacketId'];
+		$redpacketData = $Redpacket->where($condition)->find();
+		
+		unset($condition);
 		$User = M('User');
-		$userCondition['id'] = session('userId');
-		$userData = $User->where($userCondition)->find();
-		$this->assign('user',$userData);
+		$condition['id'] = session('userId');
+		$userData = $User->where($condition)->find();
+		
+		if($redpacketData['money']>0) {
+			if(!$receiverData) {								// 还没抢过的可以抢
+				$curProbability = rand(1,100);
+				// 有25%的几率抢不到红包
+				if($curProbability<=$probability){
+					$moneyper = 0;
+				// 有75%的几率可以抢红包
+				} elseif ($curProbability>$probability && $redpacketData['distribution']==1){			// 平均红包
+					$moneyper = $redpacketData['money']/$redpacketData['number'];
+				} else {																				// 随机红包
+					if($redpacketData['number']==1){
+						$moneyper = $redpacketData['money'];
+					} else {
+						$randnum = array();
+						$randsum = 0;
+						for($i=1;$i<=$redpacketData['number'];$i++){
+							$randnum[$i] = rand(100-$range,100+$range)/100;
+							$randsum = $randsum+$randnum[$i];
+						}
+						$moneyper = $redpacketData['money']/$randsum*$randnum[1];
+					}
+				}
+				
+				if($moneyper>0){
+					$moneyper = round($moneyper ,2);
+					$redpacketData['money'] = $redpacketData['money']-$moneyper;
+					$redpacketData['number'] = $redpacketData['number'] - 1;
+					$redpacketData['lasttime'] = date('Y-m-d H:i:s');
+					unset($condition);
+					$condition['id'] = $_GET['redPacketId'];
+					$Redpacket->where($condition)->save($redpacketData);
 
+					$userData['money'] = $userData['money'] + $moneyper;
+					unset($condition);
+					$condition['id'] = session('userId');
+					$User->where($condition)->save($userData);
+					
+					$money = '你抢了'.$moneyper.'元';
+				} else {
+					$money = '很遗憾！此次没有抢到红包！';
+				}
+
+				$receiver['receiver'] = session('userId');
+				$receiver['redpacket'] = $_GET['redPacketId'];
+				$receiver['money'] = $moneyper;
+				$receiver['createtime'] = date('Y-m-d H:i:s');
+				$Receiver = M('Receiver');
+				$Receiver->create($receiver);
+				$Receiver->add();
+			} else {												// 已经抢过的不能再抢了
+				$money = '你抢了'.$receiverData['money'].'元';
+			}
+		} else {
+			$money = '红包已抢完！';
+		}
+
+		unset($condition);
 		$RedPacketDetail = D('RedPacketDetailView');
-		$redPacketCondition['redpacket'] = $_GET['redPacketId'];
-		$redPacketDetailData = $RedPacketDetail->where($redPacketCondition)->select();
-		$this->assign('redPacketDetail',$redPacketDetailData);
+		$condition['redpacket'] = $_GET['redPacketId'];
+		$redPacketDetailData = $RedPacketDetail->where($condition)->select();
+		
+		$this->assign('user',$userData);							// 用户基础信息
+		$this->assign('money',$money);								// 抢红包结果
+		$this->assign('redPacketDetail',$redPacketDetailData);		// 抢红包记录
 		
 		$this->display("Index:redPacket");
 	}

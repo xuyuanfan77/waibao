@@ -8,7 +8,7 @@
 	<form action="<?php echo U('Index/login');?>" method="post">
 		<table>
 			<tr><td><a>用户名：</a><input type="text" name="username" class="input"/></td></tr>
-			<tr><td><a>密&nbsp&nbsp&nbsp码：</a><input type="password" name="password" class="input"/></td></tr>
+			<tr><td><a>密码：</a><input type="password" name="password" class="input"/></td></tr>
 			<tr><td><input type="submit" name="submit" value="登录"/><a href="<?php echo U('Index/index', array('page'=>'register'));?>">注册</a></td></tr>
 		</table>
 	</form>
