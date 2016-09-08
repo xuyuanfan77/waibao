@@ -12,6 +12,7 @@ class IndexController extends Controller {
 		$this->display($page);
 	}
 	
+	/* 登录 */
 	public function login(){
 		$User = M('User');
 		$condition['username'] = $_POST['username'];
@@ -27,16 +28,19 @@ class IndexController extends Controller {
 		}
 	}
 	
+	/* 注册 */
 	public function register(){
-		$_POST['money'] = 100;
-		$_POST['createtime'] = date('Y-m-d H:i:s');
 		$postData = $_POST;
+		$postData['id'] = uniqid();
+		$postData['money'] = 100000000;
+		$postData['createtime'] = date('Y-m-d H:i:s');
 		$User = M('User');
 		$User->create($postData);
 		$User->add();
 		$this->redirect('Index/index', array('page'=>'login'));
 	}
 	
+	/* 退出 */
 	public function logout(){
 		session('[destroy]');
 		$this->redirect('Index/index', array('page'=>'login'));
@@ -48,22 +52,23 @@ class IndexController extends Controller {
 		$condition['id'] = session('userId');
 		$userData = $User->where($condition)->find();
 		if($userData['money'] >= $_POST['money']) {
-			$_POST['publisher'] = session('userId');
-			$_POST['username'] = $userData['username'];
-			$_POST['lasttime'] = date('Y-m-d H:i:s');
-			$_POST['createtime'] = date('Y-m-d H:i:s');
 			$postData = $_POST;
-			$Redpacket = M('Redpacket');
+			$postData['id'] = uniqid();
+			$postData['publisher'] = session('userId');
+			$postData['username'] = $userData['username'];
+			$postData['lasttime'] = date('Y-m-d H:i:s');
+			$postData['createtime'] = date('Y-m-d H:i:s');
 
+			$Redpacket = M('Redpacket');
 			if($Redpacket->create($postData)){
 				$result = $Redpacket->add();
 				if($result){
 					$userData['money'] = $userData['money'] - $_POST['money'];
-					$User->where($condition)->save($userData);
+					$User->save($userData);
 				}
 			}
 		}
-		$this->redPacketList();
+		$this->success('发红包成功', 'redPacketList', 0);
 	}
 	
 	/* 红包列表 */
@@ -74,7 +79,7 @@ class IndexController extends Controller {
 		$this->assign('user',$userData);
 		
 		$Redpacket = M('Redpacket');
-		$redpacketData = $Redpacket->select();
+		$redpacketData = $Redpacket->order('createtime')->select();
 		$this->assign('redpacketlist',$redpacketData);
 		$this->display("Index:redPacketList");
 	}
@@ -107,41 +112,37 @@ class IndexController extends Controller {
 				if($curProbability<=$probability){
 					$moneyper = 0;
 				// 有75%的几率可以抢红包
-				} elseif ($curProbability>$probability && $redpacketData['distribution']==1){			// 平均红包
-					$moneyper = $redpacketData['money']/$redpacketData['number'];
-				} else {																				// 随机红包
-					if($redpacketData['number']==1){
+				} elseif ($curProbability>$probability && $redpacketData['distribution']==1){	// 平均红包
+					$moneyper = floor($redpacketData['money']/$redpacketData['number']);
+				} else {																		// 随机红包
+					if($redpacketData['number']==1){											// 剩下最后一个红包时
 						$moneyper = $redpacketData['money'];
 					} else {
 						$randnum = array();
 						$randsum = 0;
 						for($i=1;$i<=$redpacketData['number'];$i++){
-							$randnum[$i] = rand(100-$range,100+$range)/100;
+							$randnum[$i] = rand(100-$range,100+$range);
 							$randsum = $randsum+$randnum[$i];
 						}
-						$moneyper = $redpacketData['money']/$randsum*$randnum[1];
+						$moneyper = floor($redpacketData['money']*$randnum[1]/$randsum);
 					}
 				}
 				
 				if($moneyper>0){
-					$moneyper = round($moneyper ,2);
 					$redpacketData['money'] = $redpacketData['money']-$moneyper;
 					$redpacketData['number'] = $redpacketData['number'] - 1;
 					$redpacketData['lasttime'] = date('Y-m-d H:i:s');
-					unset($condition);
-					$condition['id'] = $_GET['redPacketId'];
-					$Redpacket->where($condition)->save($redpacketData);
+					$redpacketData['id'] = $_GET['redPacketId'];
+					$Redpacket->save($redpacketData);
 
 					$userData['money'] = $userData['money'] + $moneyper;
-					unset($condition);
-					$condition['id'] = session('userId');
-					$User->where($condition)->save($userData);
+					$User->save($userData);
 					
 					$money = '你抢了'.$moneyper.'元';
 				} else {
 					$money = '很遗憾！此次没有抢到红包！';
 				}
-
+				$receiver['id'] = uniqid();
 				$receiver['receiver'] = session('userId');
 				$receiver['redpacket'] = $_GET['redPacketId'];
 				$receiver['money'] = $moneyper;
@@ -159,7 +160,7 @@ class IndexController extends Controller {
 		unset($condition);
 		$RedPacketDetail = D('RedPacketDetailView');
 		$condition['redpacket'] = $_GET['redPacketId'];
-		$redPacketDetailData = $RedPacketDetail->where($condition)->select();
+		$redPacketDetailData = $RedPacketDetail->where($condition)->order('receiver_createtime')->select();
 		
 		$this->assign('user',$userData);							// 用户基础信息
 		$this->assign('money',$money);								// 抢红包结果
