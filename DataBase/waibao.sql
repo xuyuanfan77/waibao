@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50617
 File Encoding         : 65001
 
-Date: 2016-09-08 14:54:27
+Date: 2016-09-08 15:37:36
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -20,11 +20,11 @@ SET FOREIGN_KEY_CHECKS=0;
 -- ----------------------------
 DROP TABLE IF EXISTS `receiver`;
 CREATE TABLE `receiver` (
-  `id` char(14) NOT NULL,
-  `receiver` char(14) NOT NULL,
-  `redpacket` char(14) NOT NULL,
-  `money` bigint(20) NOT NULL,
-  `createtime` datetime NOT NULL,
+  `id` char(14) NOT NULL COMMENT 'ID号（唯一标识）',
+  `receiver` char(14) NOT NULL COMMENT '抢红包者ID号',
+  `redpacket` char(14) NOT NULL COMMENT '红包ID号',
+  `money` bigint(20) NOT NULL COMMENT '所抢积分',
+  `createtime` datetime NOT NULL COMMENT '创建时间',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -44,15 +44,15 @@ INSERT INTO `receiver` VALUES ('57d10aeb3fe56', '57d10a4c9abbd', '57d10ad3c52c1'
 -- ----------------------------
 DROP TABLE IF EXISTS `redpacket`;
 CREATE TABLE `redpacket` (
-  `id` char(14) NOT NULL,
-  `publisher` char(14) NOT NULL,
-  `username` varchar(255) NOT NULL,
-  `money` bigint(20) NOT NULL,
-  `number` int(11) NOT NULL,
-  `distribution` tinyint(3) unsigned zerofill NOT NULL,
-  `overtime` tinyint(3) unsigned zerofill NOT NULL,
-  `lasttime` datetime NOT NULL,
-  `createtime` datetime NOT NULL,
+  `id` char(14) NOT NULL COMMENT 'ID号（唯一标识）',
+  `publisher` char(14) NOT NULL COMMENT '发红包者ID号',
+  `username` varchar(255) NOT NULL COMMENT '用户名',
+  `money` bigint(20) NOT NULL COMMENT '红包总积分',
+  `number` int(11) NOT NULL COMMENT '红包个数',
+  `distribution` tinyint(3) unsigned zerofill NOT NULL COMMENT '分配方式（1：平均，2：随机）',
+  `overtime` tinyint(3) unsigned zerofill NOT NULL COMMENT '红包是否超时（0：未超时，1：超时）',
+  `lasttime` datetime NOT NULL COMMENT '最后一次被抢时间',
+  `createtime` datetime NOT NULL COMMENT '创建时间',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -67,11 +67,11 @@ INSERT INTO `redpacket` VALUES ('57d10ad3c52c1', '57d10abaf2f2d', 'xuyuanfan4', 
 -- ----------------------------
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user` (
-  `id` char(14) NOT NULL,
-  `username` varchar(255) NOT NULL,
-  `password` varchar(255) NOT NULL,
-  `money` bigint(20) NOT NULL,
-  `createtime` datetime NOT NULL,
+  `id` char(14) NOT NULL COMMENT 'ID号（唯一标识）',
+  `username` varchar(255) NOT NULL COMMENT '用户名',
+  `password` varchar(255) NOT NULL COMMENT '密码',
+  `money` bigint(20) NOT NULL COMMENT '用户总积分',
+  `createtime` datetime NOT NULL COMMENT '创建时间',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
