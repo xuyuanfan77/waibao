@@ -10,10 +10,48 @@ Target Server Type    : MYSQL
 Target Server Version : 50617
 File Encoding         : 65001
 
-Date: 2016-09-08 15:37:36
+Date: 2016-09-27 16:26:46
 */
 
 SET FOREIGN_KEY_CHECKS=0;
+
+-- ----------------------------
+-- Table structure for lottery
+-- ----------------------------
+DROP TABLE IF EXISTS `lottery`;
+CREATE TABLE `lottery` (
+  `id` char(24) NOT NULL,
+  `lotterytype` tinyint(3) unsigned NOT NULL,
+  `issue` int(10) unsigned NOT NULL,
+  `num1` tinyint(3) unsigned NOT NULL,
+  `num2` tinyint(3) unsigned NOT NULL,
+  `num3` tinyint(3) unsigned NOT NULL,
+  `num4` tinyint(3) unsigned NOT NULL,
+  `num5` tinyint(3) unsigned NOT NULL,
+  `num6` tinyint(3) unsigned NOT NULL,
+  `num7` tinyint(3) unsigned NOT NULL,
+  `num8` tinyint(3) unsigned NOT NULL,
+  `num9` tinyint(3) unsigned NOT NULL,
+  `num10` tinyint(3) unsigned NOT NULL,
+  `num11` tinyint(3) unsigned NOT NULL,
+  `num12` tinyint(3) unsigned NOT NULL,
+  `num13` tinyint(3) unsigned NOT NULL,
+  `num14` tinyint(3) unsigned NOT NULL,
+  `num15` tinyint(3) unsigned NOT NULL,
+  `num16` tinyint(3) unsigned NOT NULL,
+  `num17` tinyint(3) unsigned NOT NULL,
+  `num18` tinyint(3) unsigned NOT NULL,
+  `num19` tinyint(3) unsigned NOT NULL,
+  `num20` tinyint(3) unsigned NOT NULL,
+  `runtime` datetime NOT NULL,
+  `complete` set('no','yes') NOT NULL DEFAULT 'no,yes',
+  `createtime` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of lottery
+-- ----------------------------
 
 -- ----------------------------
 -- Table structure for receiver

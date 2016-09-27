@@ -1,0 +1,910 @@
+[ 2016-09-27T10:26:41+08:00 ] ::1 /waibao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.030274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014648s ]
+NOTIC: [8] Undefined index: page D:\wamp\www\waibao\Application\Home\Controller\IndexController.class.php 第 7 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.024414s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.026368s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.113281s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.116211s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.014649s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.016601s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011719s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013672s ]
+
+[ 2016-09-27T10:26:51+08:00 ] ::1 /waibao/index.php/Home/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004883s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'xuyuanfan1' AND `password` = '123' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-09-27T10:26:52+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.020508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+
+[ 2016-09-27T10:27:34+08:00 ] ::1 /waibao/index.php/Home/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'xuyuanfan1' AND `password` = '123' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-09-27T10:27:35+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : h2 in Entity, line: 350 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : h2 in Entity, line: 381 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : h2 in Entity, line: 387 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : h2 in Entity, line: 393 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : h2 in Entity, line: 410 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : h2 in Entity, line: 423 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : h2 in Entity, line: 350 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : h2 in Entity, line: 381 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : h2 in Entity, line: 387 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : h2 in Entity, line: 393 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : h2 in Entity, line: 410 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : h2 in Entity, line: 423 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001954s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004883s ]
+
+[ 2016-09-27T10:28:51+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003907s ]
+
+[ 2016-09-27T10:32:40+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : h2 in Entity, line: 350 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : h2 in Entity, line: 381 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : h2 in Entity, line: 387 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : h2 in Entity, line: 393 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : h2 in Entity, line: 410 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : h2 in Entity, line: 423 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : h2 in Entity, line: 350 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : h2 in Entity, line: 381 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 382 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : h2 in Entity, line: 387 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : h2 in Entity, line: 393 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : h2 in Entity, line: 410 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : h2 in Entity, line: 423 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003907s ]
+
+[ 2016-09-27T10:59:14+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016602s ]
+
+[ 2016-09-27T10:59:27+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005860s ]
+
+[ 2016-09-27T11:01:38+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006836s ]
+
+[ 2016-09-27T11:01:42+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003907s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005860s ]
+
+[ 2016-09-27T11:03:23+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004882s ]
+
+[ 2016-09-27T11:04:17+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004882s ]
+
+[ 2016-09-27T11:04:54+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003907s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002929s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2016-09-27T11:04:57+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006836s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003907s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003907s ]
+
+[ 2016-09-27T11:06:21+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+
+[ 2016-09-27T11:09:06+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003906s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005859s ]
+
+[ 2016-09-27T11:11:49+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003907s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004883s ]
+
+[ 2016-09-27T11:13:20+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001954s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2016-09-27T11:29:05+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003907s ]
+
+[ 2016-09-27T11:30:12+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004882s ]
+
+[ 2016-09-27T11:30:34+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003907s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002929s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004883s ]
+
+[ 2016-09-27T11:34:19+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002929s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004883s ]
+
+[ 2016-09-27T11:40:17+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006836s ]
+
+[ 2016-09-27T11:49:02+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+NOTIC: [8] iconv(): Wrong charset, conversion from `utf-8' to `curl//IGNORE' is not allowed D:\wamp\www\waibao\vendor\jaeger\querylist\QueryList.php 第 310 行.
+
+[ 2016-09-27T11:49:41+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004882s ]
+NOTIC: [8] iconv(): Wrong charset, conversion from `utf-8' to `curl//IGNORE' is not allowed D:\wamp\www\waibao\vendor\jaeger\querylist\QueryList.php 第 310 行.
+NOTIC: [8] Undefined property: QL\QueryList::$jsonArr D:\wamp\www\waibao\Application\Home\Controller\CollectController.class.php 第 24 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003906s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005860s ]
+
+[ 2016-09-27T12:21:11+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.019531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+NOTIC: [8] iconv(): Wrong charset, conversion from `utf-8' to `curl//IGNORE' is not allowed D:\wamp\www\waibao\vendor\jaeger\querylist\QueryList.php 第 310 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.070313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.073243s ]
+
+[ 2016-09-27T12:22:24+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005859s ]
+
+[ 2016-09-27T12:23:20+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2016-09-27T12:49:10+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003907s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004882s ]
+
+[ 2016-09-27T12:59:45+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003907s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005859s ]
+
+[ 2016-09-27T13:02:29+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004883s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005859s ]
+
+[ 2016-09-27T13:41:32+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.018554s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.029297s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.019531s ]
+INFO: [ app_end ] --END-- [ RunTime:0.021485s ]
+
+[ 2016-09-27T13:46:09+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004882s ]
+NOTIC: [2] DOMDocument::loadHTML(): Attribute type redefined in Entity, line: 94 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Tag header invalid in Entity, line: 176 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Tag hgroup invalid in Entity, line: 182 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 216 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Tag nav invalid in Entity, line: 335 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 343 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 389 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 390 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 391 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 392 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 393 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 394 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 395 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 446 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 447 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 448 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 448 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 449 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 449 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 467 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 468 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 469 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 470 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 489 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 490 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 523 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 524 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 525 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 526 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 560 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 561 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 562 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 626 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Tag section invalid in Entity, line: 645 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Tag nav invalid in Entity, line: 647 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Tag article invalid in Entity, line: 705 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Tag header invalid in Entity, line: 706 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Tag article invalid in Entity, line: 710 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 715 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Tag aside invalid in Entity, line: 804 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 812 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 821 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 822 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Tag footer invalid in Entity, line: 889 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : a in Entity, line: 1009 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : span in Entity, line: 1009 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : a in Entity, line: 1011 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : span in Entity, line: 1011 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : a in Entity, line: 1011 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : span in Entity, line: 1011 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : a in Entity, line: 1016 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : span in Entity, line: 1016 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : a in Entity, line: 1020 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : span in Entity, line: 1020 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : a in Entity, line: 1022 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : span in Entity, line: 1022 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : a in Entity, line: 1022 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : span in Entity, line: 1022 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : td in Entity, line: 1035 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : td in Entity, line: 1036 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : td in Entity, line: 1044 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : td in Entity, line: 1046 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : tr in Entity, line: 1047 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : td in Entity, line: 1049 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : tr in Entity, line: 1049 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005859s ]
+
+[ 2016-09-27T13:49:38+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+NOTIC: [2] DOMDocument::loadHTML(): Attribute type redefined in Entity, line: 94 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Tag header invalid in Entity, line: 176 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Tag hgroup invalid in Entity, line: 182 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 216 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Tag nav invalid in Entity, line: 335 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 343 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 389 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 390 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 391 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 392 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 393 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 394 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 395 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 446 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 447 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 448 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 448 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 449 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 449 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 467 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 468 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 469 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 470 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 489 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 490 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 523 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 524 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 525 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 526 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 560 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 561 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 562 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 626 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Tag section invalid in Entity, line: 645 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Tag nav invalid in Entity, line: 647 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Tag article invalid in Entity, line: 705 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Tag header invalid in Entity, line: 706 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Tag article invalid in Entity, line: 710 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 715 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Tag aside invalid in Entity, line: 804 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 812 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 821 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 822 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Tag footer invalid in Entity, line: 889 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : a in Entity, line: 1009 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : span in Entity, line: 1009 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : a in Entity, line: 1011 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : span in Entity, line: 1011 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : a in Entity, line: 1011 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : span in Entity, line: 1011 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : a in Entity, line: 1016 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : span in Entity, line: 1016 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : a in Entity, line: 1020 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : span in Entity, line: 1020 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : a in Entity, line: 1022 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : span in Entity, line: 1022 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : a in Entity, line: 1022 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : span in Entity, line: 1022 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : td in Entity, line: 1035 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : td in Entity, line: 1036 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : td in Entity, line: 1044 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : td in Entity, line: 1046 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : tr in Entity, line: 1047 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : td in Entity, line: 1049 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : tr in Entity, line: 1049 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004883s ]
+
+[ 2016-09-27T13:49:41+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005860s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+NOTIC: [2] DOMDocument::loadHTML(): Attribute type redefined in Entity, line: 94 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Tag header invalid in Entity, line: 176 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Tag hgroup invalid in Entity, line: 182 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 216 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Tag nav invalid in Entity, line: 335 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 343 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 389 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 390 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 391 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 392 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 393 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 394 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 395 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 446 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 447 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 448 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 448 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 449 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 449 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 467 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 468 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 469 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 470 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 489 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 490 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 523 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 524 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 525 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 526 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 560 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 561 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 562 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 626 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Tag section invalid in Entity, line: 645 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Tag nav invalid in Entity, line: 647 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Tag article invalid in Entity, line: 705 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Tag header invalid in Entity, line: 706 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Tag article invalid in Entity, line: 710 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 715 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Tag aside invalid in Entity, line: 804 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 812 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 821 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 822 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Tag footer invalid in Entity, line: 889 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : a in Entity, line: 1009 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : span in Entity, line: 1009 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : a in Entity, line: 1011 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : span in Entity, line: 1011 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : a in Entity, line: 1011 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : span in Entity, line: 1011 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : a in Entity, line: 1016 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : span in Entity, line: 1016 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : a in Entity, line: 1020 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : span in Entity, line: 1020 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : a in Entity, line: 1022 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : span in Entity, line: 1022 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : a in Entity, line: 1022 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : span in Entity, line: 1022 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : td in Entity, line: 1035 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : td in Entity, line: 1036 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : td in Entity, line: 1044 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : td in Entity, line: 1046 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : tr in Entity, line: 1047 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : td in Entity, line: 1049 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : tr in Entity, line: 1049 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010743s ]
+
+[ 2016-09-27T13:54:03+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003906s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005860s ]
+
+[ 2016-09-27T14:51:43+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005859s ]
+NOTIC: [2] DOMDocument::loadHTML(): Attribute type redefined in Entity, line: 94 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Tag header invalid in Entity, line: 176 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Tag hgroup invalid in Entity, line: 182 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 216 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Tag nav invalid in Entity, line: 335 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 343 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 389 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 390 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 391 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 392 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 393 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 394 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 395 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 446 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 447 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 448 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 448 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 449 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 449 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 467 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 468 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 469 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 470 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 489 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 490 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 523 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 524 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 525 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 526 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 560 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 561 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 562 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 626 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Tag section invalid in Entity, line: 645 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Tag nav invalid in Entity, line: 647 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Tag article invalid in Entity, line: 705 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Tag header invalid in Entity, line: 706 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Tag article invalid in Entity, line: 710 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 715 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Tag aside invalid in Entity, line: 804 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 812 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 821 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): htmlParseEntityRef: expecting ';' in Entity, line: 822 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Tag footer invalid in Entity, line: 889 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : a in Entity, line: 1009 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : span in Entity, line: 1009 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : a in Entity, line: 1011 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : span in Entity, line: 1011 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : a in Entity, line: 1011 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : span in Entity, line: 1011 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : a in Entity, line: 1016 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : span in Entity, line: 1016 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : a in Entity, line: 1020 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : span in Entity, line: 1020 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : a in Entity, line: 1022 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : span in Entity, line: 1022 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : a in Entity, line: 1022 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : span in Entity, line: 1022 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : td in Entity, line: 1035 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : td in Entity, line: 1036 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : td in Entity, line: 1044 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : td in Entity, line: 1046 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : tr in Entity, line: 1047 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : td in Entity, line: 1049 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+NOTIC: [2] DOMDocument::loadHTML(): Unexpected end tag : tr in Entity, line: 1049 D:\wamp\www\waibao\vendor\jaeger\phpquery-single\phpQuery.php 第 328 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005859s ]
+
+[ 2016-09-27T15:07:27+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007813s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-27T15:24:16+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007812s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, function 'issuefun' not found or invalid function name D:\wamp\www\waibao\vendor\jaeger\querylist\QueryList.php 第 234 行.
+NOTIC: [8] Undefined property: QL\QueryList::$jsonArr D:\wamp\www\waibao\Application\Home\Controller\CollectController.class.php 第 44 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-27T15:25:39+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007813s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007813s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, function 'issuefun' not found or invalid function name D:\wamp\www\waibao\vendor\jaeger\querylist\QueryList.php 第 234 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007813s ]
+
+[ 2016-09-27T15:26:09+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.007813s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007813s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007813s ]
+
+[ 2016-09-27T15:26:21+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007812s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, function 'issuefun' not found or invalid function name D:\wamp\www\waibao\vendor\jaeger\querylist\QueryList.php 第 234 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-27T15:26:37+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007813s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, function 'issuefun' not found or invalid function name D:\wamp\www\waibao\vendor\jaeger\querylist\QueryList.php 第 234 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-27T15:26:48+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007813s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007813s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, function 'issuefun' not found or invalid function name D:\wamp\www\waibao\vendor\jaeger\querylist\QueryList.php 第 234 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007813s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007813s ]
+
+[ 2016-09-27T15:27:43+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007813s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-27T15:31:15+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007813s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, function 'issuefun' not found or invalid function name D:\wamp\www\waibao\vendor\jaeger\querylist\QueryList.php 第 234 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007813s ]
+
+[ 2016-09-27T15:33:00+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007813s ]
+
+[ 2016-09-27T15:33:27+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007813s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007812s ]
+
+[ 2016-09-27T15:34:11+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007812s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007812s ]
+
+[ 2016-09-27T15:34:44+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.007812s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007812s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007813s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007813s ]
+
+[ 2016-09-27T15:39:55+08:00 ] ::1 /waibao/index.php/Home/Collect/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004883s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007812s ]
+
