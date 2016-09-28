@@ -1,0 +1,826 @@
+[ 2016-09-28T14:27:37+08:00 ] ::1 /waibao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.070313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+NOTIC: [8] Undefined index: page D:\wamp\www\waibao\Application\Home\Controller\IndexController.class.php 第 7 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.070313s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.070313s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.164062s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.164062s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.023438s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007813s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2016-09-28T14:27:50+08:00 ] ::1 /waibao/index.php/Home/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007812s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007812s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.4297s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'xuyuanfan1' AND `password` = '123' LIMIT 1   [ RunTime:0.0234s ]
+
+[ 2016-09-28T14:27:50+08:00 ] ::1 /waibao/index.php/Home/Trigger/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007812s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Trigger
+
+[ 2016-09-28T14:29:02+08:00 ] ::1 /waibao/index.php/Home/Trigger/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007813s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007813s ]
+NOTIC: [2048] Non-static method Service\Collect::web_collect() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\TriggerController.class.php 第 11 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-28T14:29:02+08:00 ] ::1 /waibao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.007812s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007812s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007812s ]
+NOTIC: [8] Undefined index: page D:\wamp\www\waibao\Application\Home\Controller\IndexController.class.php 第 7 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.007812s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039062s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047852s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002929s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006836s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004883s ]
+
+[ 2016-09-28T14:31:34+08:00 ] ::1 /waibao/index.php/Home/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.028320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.018554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.020508s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0957s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'xuyuanfan1' AND `password` = '123' LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-09-28T14:31:36+08:00 ] ::1 /waibao/index.php/Home/Trigger/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005859s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+NOTIC: [2048] Non-static method Service\Collect::web_collect() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\TriggerController.class.php 第 12 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.039063s ]
+INFO: [ app_end ] --END-- [ RunTime:0.039063s ]
+
+[ 2016-09-28T14:39:08+08:00 ] ::1 /waibao/index.php/Home/Trigger/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.018555s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.017578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.020508s ]
+NOTIC: [2048] Non-static method Service\Collect::json_collect() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\TriggerController.class.php 第 12 行.
+NOTIC: [4096] Argument 2 passed to QL\QueryList::Query() must be of the type array, none given, called in D:\wamp\www\waibao\Application\Home\Controller\collect.php on line 47 and defined D:\wamp\www\waibao\vendor\jaeger\querylist\QueryList.php 第 81 行.
+NOTIC: [8] Undefined variable: rules D:\wamp\www\waibao\vendor\jaeger\querylist\QueryList.php 第 83 行.
+NOTIC: [4096] Argument 2 passed to QL\QueryList::_query() must be of the type array, null given, called in D:\wamp\www\waibao\vendor\jaeger\querylist\QueryList.php on line 83 and defined D:\wamp\www\waibao\vendor\jaeger\querylist\QueryList.php 第 157 行.
+NOTIC: [2] Variable passed to each() is not an array or object D:\wamp\www\waibao\vendor\jaeger\querylist\QueryList.php 第 214 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.053711s ]
+INFO: [ app_end ] --END-- [ RunTime:0.068360s ]
+
+[ 2016-09-28T15:47:08+08:00 ] ::1 /waibao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.031250s ]
+
+[ 2016-09-28T15:47:58+08:00 ] ::1 /waibao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+NOTIC: [8] Undefined index: page D:\wamp\www\waibao\Application\Home\Controller\IndexController.class.php 第 7 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.034179s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.036133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.147461s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.151367s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.012695s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014649s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011718s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013672s ]
+
+[ 2016-09-28T15:48:06+08:00 ] ::1 /waibao/index.php/Home/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.3477s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'xuyuanfan2' AND `password` = '123' LIMIT 1   [ RunTime:0.0527s ]
+
+[ 2016-09-28T15:50:06+08:00 ] ::1 /waibao/index.php/Home/Trigger/start.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+
+[ 2016-09-28T15:50:06+08:00 ] ::1 /waibao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003907s ]
+NOTIC: [8] Undefined index: page D:\wamp\www\waibao\Application\Home\Controller\IndexController.class.php 第 7 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055664s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057617s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005860s ]
+
+[ 2016-09-28T15:50:06+08:00 ] ::1 /waibao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+NOTIC: [8] Undefined index: page D:\wamp\www\waibao\Application\Home\Controller\IndexController.class.php 第 7 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001953s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048828s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049805s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004883s ]
+
+[ 2016-09-28T15:50:06+08:00 ] ::1 /waibao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003907s ]
+NOTIC: [8] Undefined index: page D:\wamp\www\waibao\Application\Home\Controller\IndexController.class.php 第 7 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004883s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045898s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047852s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004882s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2016-09-28T15:51:16+08:00 ] ::1 /waibao/index.php/Home/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0547s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'xuyuanfan1' AND `password` = '123' LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-09-28T15:52:37+08:00 ] ::1 /waibao/index.php/Home/Trigger/start.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+
+[ 2016-09-28T15:52:37+08:00 ] ::1 /waibao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006835s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+NOTIC: [8] Undefined index: page D:\wamp\www\waibao\Application\Home\Controller\IndexController.class.php 第 7 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061524s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064453s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003907s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004882s ]
+
+[ 2016-09-28T16:47:22+08:00 ] ::1 /waibao/index.php/Home/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.019531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+
+[ 2016-09-28T16:48:03+08:00 ] ::1 /waibao/index.php/Home/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003907s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0645s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'xuyuanfan1' AND `password` = '123' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-09-28T16:48:03+08:00 ] ::1 /waibao/index.php/Home/Trigger/trigger.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012696s ]
+INFO: [ app_end ] --END-- [ RunTime:0.014648s ]
+
+[ 2016-09-28T16:49:43+08:00 ] ::1 /waibao/index.php/Home/Trigger/trigger.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2016-09-28T16:50:38+08:00 ] ::1 /waibao/index.php/Home/Trigger/trigger.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005859s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016602s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003907s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005859s ]
+
+[ 2016-09-28T16:51:00+08:00 ] ::1 /waibao/index.php/Home/Trigger/trigger.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007813s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004883s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006836s ]
+
+[ 2016-09-28T16:56:25+08:00 ] ::1 /waibao/index.php/Home/Trigger/trigger.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005860s ]
+NOTIC: [2048] Non-static method Service\Collect::collect() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\TriggerController.class.php 第 19 行.
+ERR: Think\Controller:web_collect方法不存在！
+
+[ 2016-09-28T16:57:49+08:00 ] ::1 /waibao/index.php/Home/Trigger/trigger.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+NOTIC: [2048] Non-static method Service\Collect::collect() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\TriggerController.class.php 第 19 行.
+
+[ 2016-09-28T17:00:18+08:00 ] ::1 /waibao/index.php/Home/Trigger/trigger.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+NOTIC: [2048] Non-static method Service\Collect::collect() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\TriggerController.class.php 第 19 行.
+NOTIC: [2048] Non-static method Service\Collect::web_collect() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\collect.php 第 49 行.
+ERR: Think\Controller:data_check方法不存在！
+
+[ 2016-09-28T17:05:47+08:00 ] ::1 /waibao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002929s ]
+NOTIC: [8] Undefined index: page D:\wamp\www\waibao\Application\Home\Controller\IndexController.class.php 第 7 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.048828s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.049804s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.238282s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.241211s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.035156s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.037110s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011719s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013672s ]
+
+[ 2016-09-28T17:06:30+08:00 ] ::1 /waibao/index.php/Home/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0303s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'xuyuanfan1' AND `password` = '123' LIMIT 1   [ RunTime:0.0244s ]
+
+[ 2016-09-28T17:06:32+08:00 ] ::1 /waibao/index.php/Home/Trigger/trigger.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+NOTIC: [2048] Non-static method Service\Collect::collect() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\TriggerController.class.php 第 19 行.
+NOTIC: [2048] Non-static method Service\Collect::web_collect() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\collect.php 第 49 行.
+NOTIC: [2048] Non-static method Service\Collect::data_check() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\collect.php 第 61 行.
+NOTIC: [2048] Non-static method Service\Collect::data_write() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\collect.php 第 65 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004883s ]
+
+[ 2016-09-28T17:07:47+08:00 ] ::1 /waibao/index.php/Home/Trigger/trigger.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+NOTIC: [2048] Non-static method Service\Collect::collect() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\TriggerController.class.php 第 19 行.
+NOTIC: [2048] Non-static method Service\Collect::web_collect() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\collect.php 第 49 行.
+NOTIC: [2048] Non-static method Service\Collect::data_check() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\collect.php 第 61 行.
+NOTIC: [2048] Non-static method Service\Collect::data_write() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\collect.php 第 65 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001954s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2016-09-28T17:27:28+08:00 ] ::1 /waibao/index.php/Home/Trigger/trigger.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.019532s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017578s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.014649s ]
+INFO: [ app_end ] --END-- [ RunTime:0.016601s ]
+
+[ 2016-09-28T17:27:31+08:00 ] ::1 /waibao/index.php/Home/Trigger/trigger.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2016-09-28T17:27:32+08:00 ] ::1 /waibao/index.php/Home/Trigger/trigger.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004883s ]
+
+[ 2016-09-28T17:27:34+08:00 ] ::1 /waibao/index.php/Home/Trigger/trigger.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004882s ]
+
+[ 2016-09-28T17:27:38+08:00 ] ::1 /waibao/index.php/Home/Trigger/trigger.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2016-09-28T17:27:40+08:00 ] ::1 /waibao/index.php/Home/Trigger/trigger.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004882s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003907s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2016-09-28T17:27:43+08:00 ] ::1 /waibao/index.php/Home/Trigger/trigger.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003907s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004882s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002929s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005859s ]
+
+[ 2016-09-28T17:27:47+08:00 ] ::1 /waibao/index.php/Home/Trigger/trigger.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002929s ]
+
+[ 2016-09-28T17:27:48+08:00 ] ::1 /waibao/index.php/Home/Trigger/trigger.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009766s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011719s ]
+
+[ 2016-09-28T17:27:49+08:00 ] ::1 /waibao/index.php/Home/Trigger/trigger.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004883s ]
+
+[ 2016-09-28T17:27:50+08:00 ] ::1 /waibao/index.php/Home/Trigger/trigger.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004883s ]
+
+[ 2016-09-28T17:27:51+08:00 ] ::1 /waibao/index.php/Home/Trigger/trigger.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001954s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2016-09-28T17:27:53+08:00 ] ::1 /waibao/index.php/Home/Trigger/trigger.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004882s ]
+
+[ 2016-09-28T17:27:55+08:00 ] ::1 /waibao/index.php/Home/Trigger/trigger.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002929s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005859s ]
+
+[ 2016-09-28T17:28:00+08:00 ] ::1 /waibao/index.php/Home/Trigger/trigger.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001954s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004883s ]
+
+[ 2016-09-28T17:28:02+08:00 ] ::1 /waibao/index.php/Home/Trigger/trigger.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006836s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2016-09-28T17:28:03+08:00 ] ::1 /waibao/index.php/Home/Trigger/trigger.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004883s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003907s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001954s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2016-09-28T17:28:05+08:00 ] ::1 /waibao/index.php/Home/Trigger/trigger.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008789s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003906s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005860s ]
+
+[ 2016-09-28T17:28:07+08:00 ] ::1 /waibao/index.php/Home/Trigger/trigger.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004882s ]
+
+[ 2016-09-28T17:28:08+08:00 ] ::1 /waibao/index.php/Home/Trigger/trigger.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003907s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2016-09-28T17:28:09+08:00 ] ::1 /waibao/index.php/Home/Trigger/trigger.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2016-09-28T17:28:10+08:00 ] ::1 /waibao/index.php/Home/Trigger/trigger.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003907s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003907s ]
+
+[ 2016-09-28T17:28:12+08:00 ] ::1 /waibao/index.php/Home/Trigger/trigger.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2016-09-28T17:28:14+08:00 ] ::1 /waibao/index.php/Home/Trigger/trigger.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2016-09-28T17:28:15+08:00 ] ::1 /waibao/index.php/Home/Trigger/trigger.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003907s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004882s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006836s ]
+
+[ 2016-09-28T17:28:43+08:00 ] 127.0.0.1 /waibao/index.php/Home/Trigger/trigger.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004883s ]
+
+[ 2016-09-28T17:29:55+08:00 ] ::1 /waibao/index.php/Home/Trigger/trigger.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018554s ]
+NOTIC: [2048] Non-static method Service\Collect::collect() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\TriggerController.class.php 第 23 行.
+NOTIC: [2048] Non-static method Service\Collect::web_collect() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\collect.php 第 49 行.
+NOTIC: [2048] Non-static method Service\Collect::data_check() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\collect.php 第 61 行.
+NOTIC: [2048] Non-static method Service\Collect::data_write() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\collect.php 第 65 行.
+NOTIC: [2048] Non-static method Service\Collect::collect() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\TriggerController.class.php 第 23 行.
+NOTIC: [2048] Non-static method Service\Collect::web_collect() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\collect.php 第 49 行.
+NOTIC: [2048] Non-static method Service\Collect::data_check() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\collect.php 第 61 行.
+NOTIC: [2048] Non-static method Service\Collect::data_write() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\collect.php 第 65 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2016-09-28T17:30:11+08:00 ] ::1 /waibao/index.php/Home/Trigger/trigger.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001954s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+NOTIC: [2048] Non-static method Service\Collect::collect() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\TriggerController.class.php 第 23 行.
+NOTIC: [2048] Non-static method Service\Collect::web_collect() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\collect.php 第 49 行.
+NOTIC: [2048] Non-static method Service\Collect::data_check() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\collect.php 第 61 行.
+NOTIC: [2048] Non-static method Service\Collect::data_write() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\collect.php 第 65 行.
+NOTIC: [2048] Non-static method Service\Collect::collect() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\TriggerController.class.php 第 23 行.
+NOTIC: [2048] Non-static method Service\Collect::web_collect() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\collect.php 第 49 行.
+NOTIC: [2048] Non-static method Service\Collect::data_check() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\collect.php 第 61 行.
+NOTIC: [2048] Non-static method Service\Collect::data_write() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\collect.php 第 65 行.
+NOTIC: [2048] Non-static method Service\Collect::collect() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\TriggerController.class.php 第 23 行.
+NOTIC: [2048] Non-static method Service\Collect::json_collect() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\collect.php 第 52 行.
+NOTIC: [4096] Argument 2 passed to QL\QueryList::Query() must be of the type array, none given, called in D:\wamp\www\waibao\Application\Home\Controller\collect.php on line 22 and defined D:\wamp\www\waibao\vendor\jaeger\querylist\QueryList.php 第 81 行.
+NOTIC: [8] Undefined variable: rules D:\wamp\www\waibao\vendor\jaeger\querylist\QueryList.php 第 83 行.
+NOTIC: [4096] Argument 2 passed to QL\QueryList::_query() must be of the type array, null given, called in D:\wamp\www\waibao\vendor\jaeger\querylist\QueryList.php on line 83 and defined D:\wamp\www\waibao\vendor\jaeger\querylist\QueryList.php 第 157 行.
+NOTIC: [2] Variable passed to each() is not an array or object D:\wamp\www\waibao\vendor\jaeger\querylist\QueryList.php 第 214 行.
+NOTIC: [2048] Non-static method Service\Collect::data_check() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\collect.php 第 61 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005859s ]
+
+[ 2016-09-28T17:53:25+08:00 ] 127.0.0.1 /waibao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+NOTIC: [8] Undefined index: page D:\wamp\www\waibao\Application\Home\Controller\IndexController.class.php 第 7 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001953s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003906s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.272461s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.274414s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.011719s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013671s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.037109s ]
+INFO: [ app_end ] --END-- [ RunTime:0.039062s ]
+
+[ 2016-09-28T17:53:50+08:00 ] 127.0.0.1 /waibao/index.php/Home/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.019531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.023437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.027344s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0566s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'xuyuanfan1' AND `password` = '123' LIMIT 1   [ RunTime:0.0039s ]
+
+[ 2016-09-28T17:53:54+08:00 ] 127.0.0.1 /waibao/index.php/Home/Trigger/trigger.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+NOTIC: [2048] Non-static method Service\Collect::collect() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\TriggerController.class.php 第 22 行.
+NOTIC: [2048] Non-static method Service\Collect::web_collect() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\collect.php 第 48 行.
+NOTIC: [2048] Non-static method Service\Collect::data_check() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\collect.php 第 60 行.
+NOTIC: [2048] Non-static method Service\Collect::data_write() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\collect.php 第 64 行.
+NOTIC: [2048] Non-static method Service\Collect::collect() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\TriggerController.class.php 第 22 行.
+NOTIC: [2048] Non-static method Service\Collect::web_collect() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\collect.php 第 48 行.
+NOTIC: [2048] Non-static method Service\Collect::data_check() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\collect.php 第 60 行.
+NOTIC: [2048] Non-static method Service\Collect::data_write() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\collect.php 第 64 行.
+NOTIC: [2048] Non-static method Service\Collect::collect() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\TriggerController.class.php 第 22 行.
+NOTIC: [2048] Non-static method Service\Collect::json_collect() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\collect.php 第 51 行.
+NOTIC: [4096] Argument 2 passed to QL\QueryList::Query() must be of the type array, none given, called in D:\wamp\www\waibao\Application\Home\Controller\collect.php on line 22 and defined D:\wamp\www\waibao\vendor\jaeger\querylist\QueryList.php 第 81 行.
+NOTIC: [8] Undefined variable: rules D:\wamp\www\waibao\vendor\jaeger\querylist\QueryList.php 第 83 行.
+NOTIC: [4096] Argument 2 passed to QL\QueryList::_query() must be of the type array, null given, called in D:\wamp\www\waibao\vendor\jaeger\querylist\QueryList.php on line 83 and defined D:\wamp\www\waibao\vendor\jaeger\querylist\QueryList.php 第 157 行.
+NOTIC: [2] Variable passed to each() is not an array or object D:\wamp\www\waibao\vendor\jaeger\querylist\QueryList.php 第 214 行.
+NOTIC: [2048] Non-static method Service\Collect::data_check() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\collect.php 第 60 行.
+NOTIC: [2048] Non-static method Service\Collect::data_write() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\collect.php 第 64 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.016601s ]
+INFO: [ app_end ] --END-- [ RunTime:0.019532s ]
+
+[ 2016-09-28T17:56:55+08:00 ] ::1 /waibao/index.php/Home/Trigger/trigger.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007813s ]
+NOTIC: [2048] Non-static method Service\Collect::collect() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\TriggerController.class.php 第 22 行.
+NOTIC: [2048] Non-static method Service\Collect::web_collect() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\collect.php 第 44 行.
+NOTIC: [2048] Non-static method Service\Collect::data_check() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\collect.php 第 56 行.
+NOTIC: [2048] Non-static method Service\Collect::data_write() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\collect.php 第 60 行.
+NOTIC: [2048] Non-static method Service\Collect::collect() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\TriggerController.class.php 第 22 行.
+NOTIC: [2048] Non-static method Service\Collect::web_collect() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\collect.php 第 44 行.
+NOTIC: [2048] Non-static method Service\Collect::data_check() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\collect.php 第 56 行.
+NOTIC: [2048] Non-static method Service\Collect::data_write() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\collect.php 第 60 行.
+NOTIC: [2048] Non-static method Service\Collect::collect() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\TriggerController.class.php 第 22 行.
+NOTIC: [2048] Non-static method Service\Collect::json_collect() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\collect.php 第 47 行.
+NOTIC: [4096] Argument 2 passed to QL\QueryList::Query() must be of the type array, none given, called in D:\wamp\www\waibao\Application\Home\Controller\collect.php on line 18 and defined D:\wamp\www\waibao\vendor\jaeger\querylist\QueryList.php 第 81 行.
+NOTIC: [8] Undefined variable: rules D:\wamp\www\waibao\vendor\jaeger\querylist\QueryList.php 第 83 行.
+NOTIC: [4096] Argument 2 passed to QL\QueryList::_query() must be of the type array, null given, called in D:\wamp\www\waibao\vendor\jaeger\querylist\QueryList.php on line 83 and defined D:\wamp\www\waibao\vendor\jaeger\querylist\QueryList.php 第 157 行.
+NOTIC: [2] Variable passed to each() is not an array or object D:\wamp\www\waibao\vendor\jaeger\querylist\QueryList.php 第 214 行.
+NOTIC: [2048] Non-static method Service\Collect::data_check() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\collect.php 第 56 行.
+NOTIC: [2048] Non-static method Service\Collect::data_write() should not be called statically, assuming $this from incompatible context D:\wamp\www\waibao\Application\Home\Controller\collect.php 第 60 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004883s ]
+
