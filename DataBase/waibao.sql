@@ -10,13 +10,13 @@ Target Server Type    : MYSQL
 Target Server Version : 50617
 File Encoding         : 65001
 
-Date: 2016-09-29 18:01:06
+Date: 2016-09-29 23:10:35
 */
 
 SET FOREIGN_KEY_CHECKS=0;
 
 -- ----------------------------
--- Table structure for game
+-- Table structure for `game`
 -- ----------------------------
 DROP TABLE IF EXISTS `game`;
 CREATE TABLE `game` (
@@ -26,7 +26,8 @@ CREATE TABLE `game` (
   `num1` tinyint(4) unsigned NOT NULL,
   `num2` tinyint(4) unsigned DEFAULT NULL,
   `num3` tinyint(4) unsigned DEFAULT NULL,
-  `odds0` float unsigned DEFAULT NULL,
+  `oddsnum` tinyint(4) unsigned NOT NULL,
+  `odds0` float unsigned NOT NULL,
   `odds1` float unsigned DEFAULT NULL,
   `odds2` float unsigned DEFAULT NULL,
   `odds3` float unsigned DEFAULT NULL,
@@ -69,7 +70,7 @@ CREATE TABLE `game` (
 -- ----------------------------
 
 -- ----------------------------
--- Table structure for lottery
+-- Table structure for `lottery`
 -- ----------------------------
 DROP TABLE IF EXISTS `lottery`;
 CREATE TABLE `lottery` (
@@ -121,9 +122,11 @@ INSERT INTO `lottery` VALUES ('57ece13ee612e', '北京PK10', '578438', '10', '4'
 INSERT INTO `lottery` VALUES ('57ece2cb044aa', '北京快乐8', '783868', '73', '8', '58', '74', '29', '48', '12', '79', '47', '56', '27', '76', '50', '53', '26', '75', '61', '38', '6', '52', '2016-09-29 17:45:00', '2016-09-29 17:45:47');
 INSERT INTO `lottery` VALUES ('57ece2ccda643', '北京PK10', '578439', '2', '7', '8', '4', '9', '3', '6', '5', '10', '1', null, null, null, null, null, null, null, null, null, null, '2016-09-29 17:42:00', '2016-09-29 17:45:48');
 INSERT INTO `lottery` VALUES ('57ece3663ccbf', '北京PK10', '578440', '10', '4', '1', '2', '6', '8', '9', '3', '5', '7', null, null, null, null, null, null, null, null, null, null, '2016-09-29 17:47:00', '2016-09-29 17:48:22');
+INSERT INTO `lottery` VALUES ('57ed02b66b282', '北京快乐8', '783895', '15', '63', '72', '27', '31', '16', '77', '29', '62', '26', '76', '35', '51', '25', '73', '68', '28', '11', '45', '70', '2016-09-29 20:00:00', '2016-09-29 20:01:58');
+INSERT INTO `lottery` VALUES ('57ed02b8274f4', '北京PK10', '578466', '5', '2', '1', '3', '9', '10', '8', '4', '7', '6', null, null, null, null, null, null, null, null, null, null, '2016-09-29 19:57:00', '2016-09-29 20:02:00');
 
 -- ----------------------------
--- Table structure for receiver
+-- Table structure for `receiver`
 -- ----------------------------
 DROP TABLE IF EXISTS `receiver`;
 CREATE TABLE `receiver` (
@@ -147,7 +150,7 @@ INSERT INTO `receiver` VALUES ('57d10ad875104', '57d10abaf2f2d', '57d10ad3c52c1'
 INSERT INTO `receiver` VALUES ('57d10aeb3fe56', '57d10a4c9abbd', '57d10ad3c52c1', '18', '2016-09-08 14:53:31');
 
 -- ----------------------------
--- Table structure for redpacket
+-- Table structure for `redpacket`
 -- ----------------------------
 DROP TABLE IF EXISTS `redpacket`;
 CREATE TABLE `redpacket` (
@@ -170,7 +173,7 @@ INSERT INTO `redpacket` VALUES ('57d10a61003d0', '57d10a4c9abbd', 'xuyuanfan1', 
 INSERT INTO `redpacket` VALUES ('57d10ad3c52c1', '57d10abaf2f2d', 'xuyuanfan4', '48', '1', '002', '000', '2016-09-08 14:53:31', '2016-09-08 14:53:07');
 
 -- ----------------------------
--- Table structure for user
+-- Table structure for `user`
 -- ----------------------------
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user` (
@@ -192,7 +195,7 @@ INSERT INTO `user` VALUES ('57d10a9ba983f', 'xuyuanfan3', '123', '100000007', '2
 INSERT INTO `user` VALUES ('57d10abaf2f2d', 'xuyuanfan4', '123', '99999941', '2016-09-08 14:52:42');
 
 -- ----------------------------
--- Procedure structure for overtimeCheck
+-- Procedure structure for `overtimeCheck`
 -- ----------------------------
 DROP PROCEDURE IF EXISTS `overtimeCheck`;
 DELIMITER ;;
@@ -222,7 +225,7 @@ END
 DELIMITER ;
 
 -- ----------------------------
--- Event structure for overtimeCheck
+-- Event structure for `overtimeCheck`
 -- ----------------------------
 DROP EVENT IF EXISTS `overtimeCheck`;
 DELIMITER ;;

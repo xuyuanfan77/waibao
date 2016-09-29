@@ -2,8 +2,10 @@
 namespace Home\Controller;
 
 require 'collect.php';
+require 'transform.php';
 use Think\Controller;
 use Service\Collect;
+use Service\Transform;
 
 header("Content-Type: text/html;charset=utf-8");
 
@@ -26,9 +28,18 @@ class TriggerController extends Controller {
 				dump($value['name']);
 			}
 		}
-		dump($_SESSION);
+		
 		
 		// 循环所有转换配置，不需要转换即放弃
+		$config = C('transform');
+		foreach ($config as $value) {
+			$lotteryId = $_SESSION['newdata'][$value['lotteryname']];
+			if($lotteryId){
+				Transform::transform($lotteryId,$value);
+			}
+		}
+		
+		dump($_SESSION);
 		unset($_SESSION['newdata']);
 	}
 }
