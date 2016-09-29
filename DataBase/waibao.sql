@@ -10,41 +10,93 @@ Target Server Type    : MYSQL
 Target Server Version : 50617
 File Encoding         : 65001
 
-Date: 2016-09-27 16:26:46
+Date: 2016-09-29 18:01:06
 */
 
 SET FOREIGN_KEY_CHECKS=0;
+
+-- ----------------------------
+-- Table structure for game
+-- ----------------------------
+DROP TABLE IF EXISTS `game`;
+CREATE TABLE `game` (
+  `id` char(13) NOT NULL,
+  `lotteryname` char(20) NOT NULL,
+  `name` char(20) NOT NULL,
+  `num1` tinyint(4) unsigned NOT NULL,
+  `num2` tinyint(4) unsigned DEFAULT NULL,
+  `num3` tinyint(4) unsigned DEFAULT NULL,
+  `odds0` float unsigned DEFAULT NULL,
+  `odds1` float unsigned DEFAULT NULL,
+  `odds2` float unsigned DEFAULT NULL,
+  `odds3` float unsigned DEFAULT NULL,
+  `odds4` float unsigned DEFAULT NULL,
+  `odds5` float unsigned DEFAULT NULL,
+  `odds6` float unsigned DEFAULT NULL,
+  `odds7` float unsigned DEFAULT NULL,
+  `odds8` float unsigned DEFAULT NULL,
+  `odds9` float unsigned DEFAULT NULL,
+  `odds10` float DEFAULT NULL,
+  `odds11` float unsigned DEFAULT NULL,
+  `odds12` float unsigned DEFAULT NULL,
+  `odds13` float unsigned DEFAULT NULL,
+  `odds14` float unsigned DEFAULT NULL,
+  `odds15` float unsigned DEFAULT NULL,
+  `odds16` float unsigned DEFAULT NULL,
+  `odds17` float unsigned DEFAULT NULL,
+  `odds18` float unsigned DEFAULT NULL,
+  `odds19` float unsigned DEFAULT NULL,
+  `odds20` float unsigned DEFAULT NULL,
+  `odds21` float unsigned DEFAULT NULL,
+  `odds22` float unsigned DEFAULT NULL,
+  `odds23` float unsigned DEFAULT NULL,
+  `odds24` float unsigned DEFAULT NULL,
+  `odds25` float unsigned DEFAULT NULL,
+  `odds26` float unsigned DEFAULT NULL,
+  `odds27` float unsigned DEFAULT NULL,
+  `issue` int(11) unsigned DEFAULT NULL,
+  `peoplenum` bigint(20) unsigned DEFAULT NULL,
+  `jackpot` bigint(20) unsigned DEFAULT NULL,
+  `deadline` datetime DEFAULT NULL,
+  `runtime` datetime DEFAULT NULL,
+  `statu` tinyint(3) unsigned DEFAULT '0' COMMENT '0、竞猜，1、封盘，2、开奖',
+  `createtime` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of game
+-- ----------------------------
 
 -- ----------------------------
 -- Table structure for lottery
 -- ----------------------------
 DROP TABLE IF EXISTS `lottery`;
 CREATE TABLE `lottery` (
-  `id` char(24) NOT NULL,
-  `lotterytype` tinyint(3) unsigned NOT NULL,
+  `id` char(13) NOT NULL,
+  `name` char(20) NOT NULL,
   `issue` int(10) unsigned NOT NULL,
   `num1` tinyint(3) unsigned NOT NULL,
-  `num2` tinyint(3) unsigned NOT NULL,
-  `num3` tinyint(3) unsigned NOT NULL,
-  `num4` tinyint(3) unsigned NOT NULL,
-  `num5` tinyint(3) unsigned NOT NULL,
-  `num6` tinyint(3) unsigned NOT NULL,
-  `num7` tinyint(3) unsigned NOT NULL,
-  `num8` tinyint(3) unsigned NOT NULL,
-  `num9` tinyint(3) unsigned NOT NULL,
-  `num10` tinyint(3) unsigned NOT NULL,
-  `num11` tinyint(3) unsigned NOT NULL,
-  `num12` tinyint(3) unsigned NOT NULL,
-  `num13` tinyint(3) unsigned NOT NULL,
-  `num14` tinyint(3) unsigned NOT NULL,
-  `num15` tinyint(3) unsigned NOT NULL,
-  `num16` tinyint(3) unsigned NOT NULL,
-  `num17` tinyint(3) unsigned NOT NULL,
-  `num18` tinyint(3) unsigned NOT NULL,
-  `num19` tinyint(3) unsigned NOT NULL,
-  `num20` tinyint(3) unsigned NOT NULL,
+  `num2` tinyint(3) unsigned DEFAULT NULL,
+  `num3` tinyint(3) unsigned DEFAULT NULL,
+  `num4` tinyint(3) unsigned DEFAULT NULL,
+  `num5` tinyint(3) unsigned DEFAULT NULL,
+  `num6` tinyint(3) unsigned DEFAULT NULL,
+  `num7` tinyint(3) unsigned DEFAULT NULL,
+  `num8` tinyint(3) unsigned DEFAULT NULL,
+  `num9` tinyint(3) unsigned DEFAULT NULL,
+  `num10` tinyint(3) unsigned DEFAULT NULL,
+  `num11` tinyint(3) unsigned DEFAULT NULL,
+  `num12` tinyint(3) unsigned DEFAULT NULL,
+  `num13` tinyint(3) unsigned DEFAULT NULL,
+  `num14` tinyint(3) unsigned DEFAULT NULL,
+  `num15` tinyint(3) unsigned DEFAULT NULL,
+  `num16` tinyint(3) unsigned DEFAULT NULL,
+  `num17` tinyint(3) unsigned DEFAULT NULL,
+  `num18` tinyint(3) unsigned DEFAULT NULL,
+  `num19` tinyint(3) unsigned DEFAULT NULL,
+  `num20` tinyint(3) unsigned DEFAULT NULL,
   `runtime` datetime NOT NULL,
-  `complete` set('no','yes') NOT NULL DEFAULT 'no,yes',
   `createtime` datetime NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -52,6 +104,23 @@ CREATE TABLE `lottery` (
 -- ----------------------------
 -- Records of lottery
 -- ----------------------------
+INSERT INTO `lottery` VALUES ('57ec88d4016e3', '北京快乐8', '783791', '52', '32', '79', '17', '33', '26', '61', '53', '16', '58', '44', '11', '31', '55', '65', '22', '49', '38', '74', '25', '2016-09-29 11:20:00', '2016-09-29 11:21:56');
+INSERT INTO `lottery` VALUES ('57ec88d56516e', '北京PK10', '578362', '1', '3', '6', '5', '2', '4', '7', '10', '8', '9', null, null, null, null, null, null, null, null, null, null, '2016-09-29 11:17:00', '2016-09-29 11:21:57');
+INSERT INTO `lottery` VALUES ('57ec8c5e1a76e', '北京快乐8', '783794', '4', '36', '53', '8', '45', '62', '23', '30', '14', '68', '27', '44', '20', '67', '31', '42', '18', '63', '48', '26', '2016-09-29 11:35:00', '2016-09-29 11:37:02');
+INSERT INTO `lottery` VALUES ('57ec8c6006ea0', '北京PK10', '578365', '3', '6', '5', '9', '10', '4', '8', '7', '2', '1', null, null, null, null, null, null, null, null, null, null, '2016-09-29 11:32:00', '2016-09-29 11:37:04');
+INSERT INTO `lottery` VALUES ('57ec9832a299f', '北京快乐8', '783804', '30', '63', '15', '32', '20', '52', '45', '14', '47', '37', '5', '22', '46', '53', '16', '41', '33', '54', '17', '43', '2016-09-29 12:25:00', '2016-09-29 12:27:30');
+INSERT INTO `lottery` VALUES ('57ec99150a408', '北京快乐8', '783805', '66', '24', '30', '10', '61', '50', '17', '1', '26', '53', '3', '43', '57', '14', '23', '8', '74', '22', '41', '13', '2016-09-29 12:30:00', '2016-09-29 12:31:17');
+INSERT INTO `lottery` VALUES ('57ec9915bc96c', '北京PK10', '578376', '5', '3', '1', '9', '8', '10', '2', '6', '7', '4', null, null, null, null, null, null, null, null, null, null, '2016-09-29 12:27:00', '2016-09-29 12:31:17');
+INSERT INTO `lottery` VALUES ('57ec99a03ae3a', '北京PK10', '578377', '7', '10', '3', '6', '4', '9', '8', '1', '2', '5', null, null, null, null, null, null, null, null, null, null, '2016-09-29 12:32:00', '2016-09-29 12:33:36');
+INSERT INTO `lottery` VALUES ('57ec9b2fcb5ef', '北京快乐8', '783806', '20', '45', '39', '78', '21', '47', '31', '80', '17', '35', '24', '69', '52', '9', '65', '43', '1', '30', '59', '73', '2016-09-29 12:35:00', '2016-09-29 12:40:15');
+INSERT INTO `lottery` VALUES ('57ec9b31188e9', '北京PK10', '578378', '1', '5', '10', '7', '9', '2', '8', '6', '3', '4', null, null, null, null, null, null, null, null, null, null, '2016-09-29 12:37:00', '2016-09-29 12:40:17');
+INSERT INTO `lottery` VALUES ('57ecaabb998aa', '北京PK10', '578391', '9', '10', '4', '5', '7', '3', '2', '8', '6', '1', null, null, null, null, null, null, null, null, null, null, '2016-09-29 11:27:00', '2016-09-29 13:46:35');
+INSERT INTO `lottery` VALUES ('57ece09b40d99', '北京快乐8', '783866', '13', '75', '55', '18', '1', '34', '60', '5', '47', '66', '15', '26', '12', '80', '20', '40', '14', '79', '29', '37', '2016-09-29 17:35:00', '2016-09-29 17:36:27');
+INSERT INTO `lottery` VALUES ('57ece09c9d1e2', '北京PK10', '578437', '10', '4', '6', '2', '8', '5', '3', '9', '7', '1', null, null, null, null, null, null, null, null, null, null, '2016-09-29 17:32:00', '2016-09-29 17:36:28');
+INSERT INTO `lottery` VALUES ('57ece13ee612e', '北京PK10', '578438', '10', '4', '2', '1', '8', '7', '6', '5', '9', '3', null, null, null, null, null, null, null, null, null, null, '2016-09-29 17:37:00', '2016-09-29 17:39:10');
+INSERT INTO `lottery` VALUES ('57ece2cb044aa', '北京快乐8', '783868', '73', '8', '58', '74', '29', '48', '12', '79', '47', '56', '27', '76', '50', '53', '26', '75', '61', '38', '6', '52', '2016-09-29 17:45:00', '2016-09-29 17:45:47');
+INSERT INTO `lottery` VALUES ('57ece2ccda643', '北京PK10', '578439', '2', '7', '8', '4', '9', '3', '6', '5', '10', '1', null, null, null, null, null, null, null, null, null, null, '2016-09-29 17:42:00', '2016-09-29 17:45:48');
+INSERT INTO `lottery` VALUES ('57ece3663ccbf', '北京PK10', '578440', '10', '4', '1', '2', '6', '8', '9', '3', '5', '7', null, null, null, null, null, null, null, null, null, null, '2016-09-29 17:47:00', '2016-09-29 17:48:22');
 
 -- ----------------------------
 -- Table structure for receiver

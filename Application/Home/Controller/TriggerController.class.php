@@ -19,12 +19,16 @@ class TriggerController extends Controller {
 		foreach ($config as $value) {
 			$curtime = date("H:i:s");
 			if($curtime>=$value['period_begin'] && $curtime<=$value['period_end']){
-				$hadNewData = Collect::collect($value);
+				$lotteryId = Collect::collect($value);
+				if($lotteryId){
+					$_SESSION['newdata'][$value['name']] = $lotteryId;
+				}
 				dump($value['name']);
-				dump($hadNewData);
 			}
 		}
+		dump($_SESSION);
 		
 		// 循环所有转换配置，不需要转换即放弃
+		unset($_SESSION['newdata']);
 	}
 }
