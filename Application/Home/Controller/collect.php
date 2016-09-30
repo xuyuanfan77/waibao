@@ -7,6 +7,42 @@ use QL\QueryList;
 header("Content-Type: text/html;charset=utf-8");
 
 class Collect {
+	// 检测是否时间段合法
+	public function period_check($config){
+		$curtime = date("H:i:s");
+		if($curtime>=$config['period_begin'] && $curtime<=$config['period_end']){
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	// 检测是否新数据
+	public function data_check($config){
+		switch ($config['type'])
+		{
+			case 1:
+				$newData = Collect::web_collect($config['page'],$config['rules'],$config['range']);
+				break;
+			case 2:
+				$newData = Collect::json_collect($config['page']);
+				break;
+			case 3:
+				$newData = Collect::produce_collect();
+				break;
+			default:
+				break;
+		}
+		if($newData){
+			$lotteryName = $config['name'];
+			$oldData = $_SESSION[$lotteryName];
+			if($oldData['issue']!=$newData['issue']){
+				return $newData;
+			}
+		}	
+		return false;
+	}
+	
 	// 对网页数据采集
 	public function web_collect($page,$rules,$range){
 		$data = QueryList::Query($page,$rules,$range)->data;
@@ -25,15 +61,6 @@ class Collect {
 		
 	}
 	
-	// 检测是否新数据
-	public function data_check($data,$config){
-		if($_SESSION['lastissue'][$config['name']]!=$data['issue']){
-			return true;
-		} else {
-			return false;
-		}
-	}
-	
 	// 数据写入数据库
 	public function data_write($data,$config){
 		$lotteryData['id'] = uniqid();
@@ -47,38 +74,9 @@ class Collect {
 		$Lottery = M('Lottery');
 		if ($Lottery->create($lotteryData)){
 			$Lottery->add();
-			$_SESSION['lastissue'][$config['name']]=$lotteryData['issue'];
-			return $lotteryData['id'];
+			return $lotteryData;
 		} else {
-			return null;
-		}
-	}
-	
-	// 采集数据
-	public function collect($config) {
-		// 根据不同的采集类型进行采集
-		switch ($config['type'])
-		{
-			case 1:
-				$data = Collect::web_collect($config['page'],$config['rules'],$config['range']);
-				break;
-			case 2:
-				$data = Collect::json_collect($config['page']);
-				break;
-			case 3:
-				$data = Collect::produce_collect();
-				break;
-			default:
-				echo "No number between 1 and 3";
-		}
-		// 检测采集回来是否是新数据
-		if($data){
-			$isNewData = Collect::data_check($data,$config);
-			// 如果是新数据就写入数据库
-			if($isNewData){
-				$lotteryId = Collect::data_write($data,$config);
-			}			
-			return $lotteryId;
+			return false;
 		}
 	}
 }

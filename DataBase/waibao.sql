@@ -10,67 +10,76 @@ Target Server Type    : MYSQL
 Target Server Version : 50617
 File Encoding         : 65001
 
-Date: 2016-09-29 23:10:35
+Date: 2016-09-30 17:17:52
 */
 
 SET FOREIGN_KEY_CHECKS=0;
 
 -- ----------------------------
--- Table structure for `game`
+-- Table structure for game
 -- ----------------------------
 DROP TABLE IF EXISTS `game`;
 CREATE TABLE `game` (
   `id` char(13) NOT NULL,
-  `lotteryname` char(20) NOT NULL,
   `name` char(20) NOT NULL,
-  `num1` tinyint(4) unsigned NOT NULL,
+  `lotteryname` char(20) NOT NULL,
+  `issue` int(11) unsigned NOT NULL,
+  `num1` tinyint(4) unsigned DEFAULT NULL,
   `num2` tinyint(4) unsigned DEFAULT NULL,
   `num3` tinyint(4) unsigned DEFAULT NULL,
-  `oddsnum` tinyint(4) unsigned NOT NULL,
-  `odds0` float unsigned NOT NULL,
-  `odds1` float unsigned DEFAULT NULL,
-  `odds2` float unsigned DEFAULT NULL,
-  `odds3` float unsigned DEFAULT NULL,
-  `odds4` float unsigned DEFAULT NULL,
-  `odds5` float unsigned DEFAULT NULL,
-  `odds6` float unsigned DEFAULT NULL,
-  `odds7` float unsigned DEFAULT NULL,
-  `odds8` float unsigned DEFAULT NULL,
-  `odds9` float unsigned DEFAULT NULL,
-  `odds10` float DEFAULT NULL,
-  `odds11` float unsigned DEFAULT NULL,
-  `odds12` float unsigned DEFAULT NULL,
-  `odds13` float unsigned DEFAULT NULL,
-  `odds14` float unsigned DEFAULT NULL,
-  `odds15` float unsigned DEFAULT NULL,
-  `odds16` float unsigned DEFAULT NULL,
-  `odds17` float unsigned DEFAULT NULL,
-  `odds18` float unsigned DEFAULT NULL,
-  `odds19` float unsigned DEFAULT NULL,
-  `odds20` float unsigned DEFAULT NULL,
-  `odds21` float unsigned DEFAULT NULL,
-  `odds22` float unsigned DEFAULT NULL,
-  `odds23` float unsigned DEFAULT NULL,
-  `odds24` float unsigned DEFAULT NULL,
-  `odds25` float unsigned DEFAULT NULL,
-  `odds26` float unsigned DEFAULT NULL,
-  `odds27` float unsigned DEFAULT NULL,
-  `issue` int(11) unsigned DEFAULT NULL,
-  `peoplenum` bigint(20) unsigned DEFAULT NULL,
-  `jackpot` bigint(20) unsigned DEFAULT NULL,
-  `deadline` datetime DEFAULT NULL,
-  `runtime` datetime DEFAULT NULL,
-  `statu` tinyint(3) unsigned DEFAULT '0' COMMENT '0、竞猜，1、封盘，2、开奖',
-  `createtime` datetime DEFAULT NULL,
+  `odds0` float unsigned NOT NULL DEFAULT '1',
+  `odds1` float unsigned NOT NULL DEFAULT '1',
+  `odds2` float unsigned NOT NULL DEFAULT '1',
+  `odds3` float unsigned NOT NULL DEFAULT '1',
+  `odds4` float unsigned NOT NULL DEFAULT '1',
+  `odds5` float unsigned NOT NULL DEFAULT '1',
+  `odds6` float unsigned NOT NULL DEFAULT '1',
+  `odds7` float unsigned NOT NULL DEFAULT '1',
+  `odds8` float unsigned NOT NULL DEFAULT '1',
+  `odds9` float unsigned NOT NULL DEFAULT '1',
+  `odds10` float NOT NULL DEFAULT '1',
+  `odds11` float unsigned NOT NULL DEFAULT '1',
+  `odds12` float unsigned NOT NULL DEFAULT '1',
+  `odds13` float unsigned NOT NULL DEFAULT '1',
+  `odds14` float unsigned NOT NULL DEFAULT '1',
+  `odds15` float unsigned NOT NULL DEFAULT '1',
+  `odds16` float unsigned NOT NULL DEFAULT '1',
+  `odds17` float unsigned NOT NULL DEFAULT '1',
+  `odds18` float unsigned NOT NULL DEFAULT '1',
+  `odds19` float unsigned NOT NULL DEFAULT '1',
+  `odds20` float unsigned NOT NULL DEFAULT '1',
+  `odds21` float unsigned NOT NULL DEFAULT '1',
+  `odds22` float unsigned NOT NULL DEFAULT '1',
+  `odds23` float unsigned NOT NULL DEFAULT '1',
+  `odds24` float unsigned NOT NULL DEFAULT '1',
+  `odds25` float unsigned NOT NULL DEFAULT '1',
+  `odds26` float unsigned NOT NULL DEFAULT '1',
+  `odds27` float unsigned NOT NULL DEFAULT '1',
+  `peoplenum` bigint(20) unsigned NOT NULL DEFAULT '0',
+  `jackpot` bigint(20) unsigned NOT NULL DEFAULT '0',
+  `deadline` datetime NOT NULL,
+  `runtime` datetime NOT NULL,
+  `statu` tinyint(3) unsigned NOT NULL DEFAULT '0' COMMENT '0、竞猜，1、封盘，2、开奖',
+  `createtime` datetime NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of game
 -- ----------------------------
+INSERT INTO `game` VALUES ('57ee27307de29', 'PC28', '北京快乐8', '784035', '1', '2', '2', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '0', '0', '2016-09-30 16:44:00', '2016-09-30 16:46:00', '2', '2016-09-30 16:49:52');
+INSERT INTO `game` VALUES ('57ee2730a4fc5', 'PC28', '北京快乐8', '784036', '9', '7', '2', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '0', '0', '2016-09-30 16:49:00', '2016-09-30 16:51:00', '1', '2016-09-30 16:49:52');
+INSERT INTO `game` VALUES ('57ee2730bc59c', 'PC28', '北京快乐8', '784037', null, null, null, '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '0', '0', '2016-09-30 16:54:00', '2016-09-30 16:56:00', '0', '2016-09-30 16:49:52');
+INSERT INTO `game` VALUES ('57ee2730e2055', 'PC28', '北京快乐8', '784038', '3', '6', '4', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '0', '0', '2016-09-30 16:59:00', '2016-09-30 17:01:00', '1', '2016-09-30 16:49:52');
+INSERT INTO `game` VALUES ('57ee27af68e77', 'PC28', '北京快乐8', '784039', '1', '2', '2', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '0', '0', '2016-09-30 17:04:00', '2016-09-30 17:06:00', '1', '2016-09-30 16:51:59');
+INSERT INTO `game` VALUES ('57ee29e99f808', 'PC28', '北京快乐8', '784040', '1', '5', '4', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '0', '0', '2016-09-30 17:02:00', '2016-09-30 17:04:00', '1', '2016-09-30 17:01:29');
+INSERT INTO `game` VALUES ('57ee29e9abe65', 'PC28', '北京快乐8', '784041', '9', '4', '0', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '0', '0', '2016-09-30 17:07:00', '2016-09-30 17:09:00', '1', '2016-09-30 17:01:29');
+INSERT INTO `game` VALUES ('57ee2b38ea9a9', 'PC28', '北京快乐8', '784042', null, null, null, '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '0', '0', '2016-09-30 17:19:00', '2016-09-30 17:21:00', '0', '2016-09-30 17:07:04');
+INSERT INTO `game` VALUES ('57ee2c6125ab8', 'PC28', '北京快乐8', '784043', null, null, null, '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '0', '0', '2016-09-30 17:24:00', '2016-09-30 17:26:00', '0', '2016-09-30 17:12:01');
+INSERT INTO `game` VALUES ('57ee2d8fd59f8', 'PC28', '北京快乐8', '784044', null, null, null, '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '0', '0', '2016-09-30 17:29:00', '2016-09-30 17:31:00', '0', '2016-09-30 17:17:03');
 
 -- ----------------------------
--- Table structure for `lottery`
+-- Table structure for lottery
 -- ----------------------------
 DROP TABLE IF EXISTS `lottery`;
 CREATE TABLE `lottery` (
@@ -105,28 +114,24 @@ CREATE TABLE `lottery` (
 -- ----------------------------
 -- Records of lottery
 -- ----------------------------
-INSERT INTO `lottery` VALUES ('57ec88d4016e3', '北京快乐8', '783791', '52', '32', '79', '17', '33', '26', '61', '53', '16', '58', '44', '11', '31', '55', '65', '22', '49', '38', '74', '25', '2016-09-29 11:20:00', '2016-09-29 11:21:56');
-INSERT INTO `lottery` VALUES ('57ec88d56516e', '北京PK10', '578362', '1', '3', '6', '5', '2', '4', '7', '10', '8', '9', null, null, null, null, null, null, null, null, null, null, '2016-09-29 11:17:00', '2016-09-29 11:21:57');
-INSERT INTO `lottery` VALUES ('57ec8c5e1a76e', '北京快乐8', '783794', '4', '36', '53', '8', '45', '62', '23', '30', '14', '68', '27', '44', '20', '67', '31', '42', '18', '63', '48', '26', '2016-09-29 11:35:00', '2016-09-29 11:37:02');
-INSERT INTO `lottery` VALUES ('57ec8c6006ea0', '北京PK10', '578365', '3', '6', '5', '9', '10', '4', '8', '7', '2', '1', null, null, null, null, null, null, null, null, null, null, '2016-09-29 11:32:00', '2016-09-29 11:37:04');
-INSERT INTO `lottery` VALUES ('57ec9832a299f', '北京快乐8', '783804', '30', '63', '15', '32', '20', '52', '45', '14', '47', '37', '5', '22', '46', '53', '16', '41', '33', '54', '17', '43', '2016-09-29 12:25:00', '2016-09-29 12:27:30');
-INSERT INTO `lottery` VALUES ('57ec99150a408', '北京快乐8', '783805', '66', '24', '30', '10', '61', '50', '17', '1', '26', '53', '3', '43', '57', '14', '23', '8', '74', '22', '41', '13', '2016-09-29 12:30:00', '2016-09-29 12:31:17');
-INSERT INTO `lottery` VALUES ('57ec9915bc96c', '北京PK10', '578376', '5', '3', '1', '9', '8', '10', '2', '6', '7', '4', null, null, null, null, null, null, null, null, null, null, '2016-09-29 12:27:00', '2016-09-29 12:31:17');
-INSERT INTO `lottery` VALUES ('57ec99a03ae3a', '北京PK10', '578377', '7', '10', '3', '6', '4', '9', '8', '1', '2', '5', null, null, null, null, null, null, null, null, null, null, '2016-09-29 12:32:00', '2016-09-29 12:33:36');
-INSERT INTO `lottery` VALUES ('57ec9b2fcb5ef', '北京快乐8', '783806', '20', '45', '39', '78', '21', '47', '31', '80', '17', '35', '24', '69', '52', '9', '65', '43', '1', '30', '59', '73', '2016-09-29 12:35:00', '2016-09-29 12:40:15');
-INSERT INTO `lottery` VALUES ('57ec9b31188e9', '北京PK10', '578378', '1', '5', '10', '7', '9', '2', '8', '6', '3', '4', null, null, null, null, null, null, null, null, null, null, '2016-09-29 12:37:00', '2016-09-29 12:40:17');
-INSERT INTO `lottery` VALUES ('57ecaabb998aa', '北京PK10', '578391', '9', '10', '4', '5', '7', '3', '2', '8', '6', '1', null, null, null, null, null, null, null, null, null, null, '2016-09-29 11:27:00', '2016-09-29 13:46:35');
-INSERT INTO `lottery` VALUES ('57ece09b40d99', '北京快乐8', '783866', '13', '75', '55', '18', '1', '34', '60', '5', '47', '66', '15', '26', '12', '80', '20', '40', '14', '79', '29', '37', '2016-09-29 17:35:00', '2016-09-29 17:36:27');
-INSERT INTO `lottery` VALUES ('57ece09c9d1e2', '北京PK10', '578437', '10', '4', '6', '2', '8', '5', '3', '9', '7', '1', null, null, null, null, null, null, null, null, null, null, '2016-09-29 17:32:00', '2016-09-29 17:36:28');
-INSERT INTO `lottery` VALUES ('57ece13ee612e', '北京PK10', '578438', '10', '4', '2', '1', '8', '7', '6', '5', '9', '3', null, null, null, null, null, null, null, null, null, null, '2016-09-29 17:37:00', '2016-09-29 17:39:10');
-INSERT INTO `lottery` VALUES ('57ece2cb044aa', '北京快乐8', '783868', '73', '8', '58', '74', '29', '48', '12', '79', '47', '56', '27', '76', '50', '53', '26', '75', '61', '38', '6', '52', '2016-09-29 17:45:00', '2016-09-29 17:45:47');
-INSERT INTO `lottery` VALUES ('57ece2ccda643', '北京PK10', '578439', '2', '7', '8', '4', '9', '3', '6', '5', '10', '1', null, null, null, null, null, null, null, null, null, null, '2016-09-29 17:42:00', '2016-09-29 17:45:48');
-INSERT INTO `lottery` VALUES ('57ece3663ccbf', '北京PK10', '578440', '10', '4', '1', '2', '6', '8', '9', '3', '5', '7', null, null, null, null, null, null, null, null, null, null, '2016-09-29 17:47:00', '2016-09-29 17:48:22');
-INSERT INTO `lottery` VALUES ('57ed02b66b282', '北京快乐8', '783895', '15', '63', '72', '27', '31', '16', '77', '29', '62', '26', '76', '35', '51', '25', '73', '68', '28', '11', '45', '70', '2016-09-29 20:00:00', '2016-09-29 20:01:58');
-INSERT INTO `lottery` VALUES ('57ed02b8274f4', '北京PK10', '578466', '5', '2', '1', '3', '9', '10', '8', '4', '7', '6', null, null, null, null, null, null, null, null, null, null, '2016-09-29 19:57:00', '2016-09-29 20:02:00');
+INSERT INTO `lottery` VALUES ('57ee272f1312d', '北京快乐8', '784035', '5', '56', '40', '2', '29', '49', '61', '18', '41', '37', '66', '19', '42', '31', '73', '12', '34', '20', '58', '47', '2016-09-30 16:45:00', '2016-09-30 16:49:51');
+INSERT INTO `lottery` VALUES ('57ee2730487ab', '北京PK10', '578607', '8', '10', '6', '1', '4', '3', '7', '9', '2', '5', null, null, null, null, null, null, null, null, null, null, '2016-09-30 16:47:00', '2016-09-30 16:49:52');
+INSERT INTO `lottery` VALUES ('57ee27ae2d0fa', '北京快乐8', '784036', '18', '33', '5', '80', '31', '52', '16', '74', '42', '50', '6', '69', '61', '19', '1', '46', '62', '3', '60', '63', '2016-09-30 16:50:00', '2016-09-30 16:51:58');
+INSERT INTO `lottery` VALUES ('57ee2875d023b', '北京PK10', '578608', '9', '3', '6', '8', '1', '4', '5', '2', '10', '7', null, null, null, null, null, null, null, null, null, null, '2016-09-30 16:52:00', '2016-09-30 16:55:17');
+INSERT INTO `lottery` VALUES ('57ee28c87bfa4', '北京快乐8', '784037', '77', '7', '34', '16', '58', '53', '4', '57', '46', '1', '26', '55', '62', '9', '48', '37', '75', '11', '52', '30', '2016-09-30 16:55:00', '2016-09-30 16:56:40');
+INSERT INTO `lottery` VALUES ('57ee29e868e77', '北京快乐8', '784038', '18', '75', '34', '45', '17', '74', '61', '22', '4', '44', '69', '6', '58', '73', '19', '32', '14', '78', '25', '47', '2016-09-30 16:53:00', '2016-09-30 17:01:28');
+INSERT INTO `lottery` VALUES ('57ee29e95d75c', '北京PK10', '578609', '2', '5', '8', '6', '4', '7', '10', '9', '1', '3', null, null, null, null, null, null, null, null, null, null, '2016-09-30 16:57:00', '2016-09-30 17:01:29');
+INSERT INTO `lottery` VALUES ('57ee2a55c3bdd', '北京快乐8', '784038', '18', '75', '34', '45', '17', '74', '61', '22', '4', '44', '69', '6', '58', '73', '19', '32', '14', '78', '25', '47', '2016-09-30 17:00:00', '2016-09-30 17:03:17');
+INSERT INTO `lottery` VALUES ('57ee2a5ab2935', '北京PK10', '578609', '2', '5', '8', '6', '4', '7', '10', '9', '1', '3', null, null, null, null, null, null, null, null, null, null, '2016-09-30 16:57:00', '2016-09-30 17:03:22');
+INSERT INTO `lottery` VALUES ('57ee2b3671b9c', '北京快乐8', '784039', '41', '38', '78', '22', '45', '27', '80', '3', '29', '25', '73', '62', '2', '68', '40', '1', '26', '65', '76', '5', '2016-09-30 17:05:00', '2016-09-30 17:07:02');
+INSERT INTO `lottery` VALUES ('57ee2b38c3bdd', '北京PK10', '578610', '1', '6', '4', '7', '9', '3', '8', '10', '2', '5', null, null, null, null, null, null, null, null, null, null, '2016-09-30 17:02:00', '2016-09-30 17:07:04');
+INSERT INTO `lottery` VALUES ('57ee2c605d38b', '北京快乐8', '784040', '51', '69', '13', '34', '30', '74', '16', '37', '24', '75', '6', '27', '21', '68', '47', '5', '60', '33', '1', '22', '2016-09-30 17:10:00', '2016-09-30 17:12:00');
+INSERT INTO `lottery` VALUES ('57ee2c60f2b5c', '北京PK10', '578611', '8', '10', '6', '1', '9', '2', '7', '3', '5', '4', null, null, null, null, null, null, null, null, null, null, '2016-09-30 17:07:00', '2016-09-30 17:12:01');
+INSERT INTO `lottery` VALUES ('57ee2ce93d460', '北京PK10', '578612', '5', '8', '9', '1', '4', '7', '6', '2', '3', '10', null, null, null, null, null, null, null, null, null, null, '2016-09-30 17:12:00', '2016-09-30 17:14:17');
+INSERT INTO `lottery` VALUES ('57ee2d8e8a0b5', '北京快乐8', '784041', '37', '56', '14', '48', '63', '21', '30', '15', '75', '29', '45', '20', '72', '33', '38', '19', '69', '49', '27', '12', '2016-09-30 17:15:00', '2016-09-30 17:17:02');
 
 -- ----------------------------
--- Table structure for `receiver`
+-- Table structure for receiver
 -- ----------------------------
 DROP TABLE IF EXISTS `receiver`;
 CREATE TABLE `receiver` (
@@ -150,7 +155,7 @@ INSERT INTO `receiver` VALUES ('57d10ad875104', '57d10abaf2f2d', '57d10ad3c52c1'
 INSERT INTO `receiver` VALUES ('57d10aeb3fe56', '57d10a4c9abbd', '57d10ad3c52c1', '18', '2016-09-08 14:53:31');
 
 -- ----------------------------
--- Table structure for `redpacket`
+-- Table structure for redpacket
 -- ----------------------------
 DROP TABLE IF EXISTS `redpacket`;
 CREATE TABLE `redpacket` (
@@ -173,7 +178,7 @@ INSERT INTO `redpacket` VALUES ('57d10a61003d0', '57d10a4c9abbd', 'xuyuanfan1', 
 INSERT INTO `redpacket` VALUES ('57d10ad3c52c1', '57d10abaf2f2d', 'xuyuanfan4', '48', '1', '002', '000', '2016-09-08 14:53:31', '2016-09-08 14:53:07');
 
 -- ----------------------------
--- Table structure for `user`
+-- Table structure for user
 -- ----------------------------
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user` (
@@ -195,7 +200,7 @@ INSERT INTO `user` VALUES ('57d10a9ba983f', 'xuyuanfan3', '123', '100000007', '2
 INSERT INTO `user` VALUES ('57d10abaf2f2d', 'xuyuanfan4', '123', '99999941', '2016-09-08 14:52:42');
 
 -- ----------------------------
--- Procedure structure for `overtimeCheck`
+-- Procedure structure for overtimeCheck
 -- ----------------------------
 DROP PROCEDURE IF EXISTS `overtimeCheck`;
 DELIMITER ;;
@@ -225,7 +230,7 @@ END
 DELIMITER ;
 
 -- ----------------------------
--- Event structure for `overtimeCheck`
+-- Event structure for overtimeCheck
 -- ----------------------------
 DROP EVENT IF EXISTS `overtimeCheck`;
 DELIMITER ;;
