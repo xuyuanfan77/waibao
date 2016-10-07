@@ -12,8 +12,8 @@ return array(
 				'runtime' => array('td:eq(3)','text'),
 			),
 			'range'=>'.lott_cont table tr:eq(1)',
-			'period_begin'=>'00:28:00',
-			'period_end'=>'20:53:31',
+			'period_begin'=>'00:00:00',
+			'period_end'=>'23:59:59',
 		),
 		'北京PK10'=>array(
 			'type'=>'1',
@@ -25,8 +25,8 @@ return array(
 				'runtime' => array('td:eq(2)','text'),
 			),
 			'range'=>'.lott_cont table tr:eq(1)',
-			'period_begin'=>'00:29:00',
-			'period_end'=>'20:53:31',
+			'period_begin'=>'00:00:00',
+			'period_end'=>'23:59:59',
 		),
 		/*'koreakuaile8'=>array(
 			'type'=>'2',
