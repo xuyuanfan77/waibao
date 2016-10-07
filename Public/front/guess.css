@@ -1,0 +1,159 @@
+.guess-box {
+	margin: 20px 0 0px;
+	background: #f5f5f5;
+}
+
+.guess-box table {
+	width: 100%;
+	background: #fff;
+}
+
+.guess-box th,
+.guess-box td {
+	height: 38px;
+	line-height: 38px;
+	color: #545454;
+	text-align: center;
+	font-size: 14px;
+	border: 1px solid #e0e0e0;
+}
+
+.guess-box th {
+	color: #333;
+	background: #f2f2f2;
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#ffffff',endColorStr='#f2f2f2',gradientType='0');
+	background: -webkit-linear-gradient(#ffffff, #f2f2f2);
+	background: -o-linear-gradient(#ffffff, #f2f2f2);
+	background: linear-gradient(#ffffff, #f2f2f2);
+}
+
+.guess-box td.td-rg {
+	padding-right: 24px;
+	text-align: right;
+}
+
+
+/*  竞猜 按钮  */
+.guess-box .go-jc {
+	display: inline-block;
+	width: 50px;
+	height: 24px;
+	color: #fff;
+	text-align: center;
+	line-height: 24px;
+	text-decoration: none;
+}
+
+.guess-box .jc-js28 {
+	background: url(js28_icon.png) no-repeat 0 -66px;
+}
+
+.guess-box .jc-js28:hover {
+	background-position: 0 -90px;
+}
+
+.guess-box .jc-pc28 {
+	background: url(pc28_icon.png) no-repeat 0 -66px;
+}
+
+.guess-box .jc-pc28:hover {
+	background-position: 0 -90px;
+}
+
+.guess-box .jc-js11 {
+	background: url(js11_icon.png) no-repeat 0 -50px;
+}
+
+.guess-box .jc-js11:hover {
+	background-position: 0 -74px;
+}
+
+.guess-box .jc-fk36 {
+	background: url(fk36_icon.png) no-repeat 0 -160px;
+}
+
+.guess-box .jc-fk36:hover {
+	background-position: 0 -184px;
+}
+
+.guess-box .jc-fk28 {
+	background: url(fk36_icon.png) no-repeat 0 -160px;
+}
+
+.guess-box .jc-fk28:hover {
+	background-position: 0 -184px;
+}
+
+.guess-box .jc-fksc {
+	background: url(fksc_icon.png) no-repeat 0 -274px;
+}
+
+.guess-box .jc-fksc:hover {
+	background-position: 0 -298px;
+}
+
+.guess-box .jc-jnd28 {
+	background: url(pc28_icon.png?v=1.0) no-repeat 0 -241px;
+}
+
+.guess-box .jc-jnd28:hover {
+	background-position: 0 -265px;
+}
+
+.guess-box .jc-jnd16 {
+	background: url(pc28_icon.png?v=1.0) no-repeat 0 -391px;
+}
+
+.guess-box .jc-jnd16:hover {
+	background-position: 0 -415px;
+}
+
+.guess-box .jc-js16 {
+	background: url(pc28_icon.png?v=1.0) no-repeat 0 -391px;
+}
+
+.guess-box .jc-js16:hover {
+	background-position: 0 -415px;
+}
+
+.guess-box span.red {
+	color: #ff5256;
+}
+
+.guess-box span.green {
+	color: #468418;
+}
+
+.guess-box a {
+	color: #545454;
+}
+
+.guess-box .go-yz,
+.guess-box .go-ta {
+	color: #999;
+}
+
+.guess-box tr:hover {
+	background: #fff7e9;
+}
+
+.guess-box tr:hover td {
+	color: #ff696c;
+}
+
+/*疯狂赛车 flash 框*/
+.flash-box {
+	position: relative;
+	width: 1000px;
+	height: 386px;
+	margin: 15px 0 0 0;
+	background: url(flash_bg.png) no-repeat 0 0;
+}
+
+.flash-box .awardVideo {
+	width: 570px;
+	height: 372px;
+	position: absolute;
+	top: 10px;
+	left: 220px;
+}
