@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50617
 File Encoding         : 65001
 
-Date: 2016-09-30 17:17:52
+Date: 2016-10-08 15:18:12
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -79,6 +79,50 @@ INSERT INTO `game` VALUES ('57ee2c6125ab8', 'PC28', '北京快乐8', '784043', n
 INSERT INTO `game` VALUES ('57ee2d8fd59f8', 'PC28', '北京快乐8', '784044', null, null, null, '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '0', '0', '2016-09-30 17:29:00', '2016-09-30 17:31:00', '0', '2016-09-30 17:17:03');
 
 -- ----------------------------
+-- Table structure for guess
+-- ----------------------------
+DROP TABLE IF EXISTS `guess`;
+CREATE TABLE `guess` (
+  `id` char(13) NOT NULL,
+  `userid` char(13) NOT NULL,
+  `gameid` char(13) NOT NULL,
+  `money0` int(10) unsigned DEFAULT NULL,
+  `money1` int(10) unsigned DEFAULT NULL,
+  `money2` int(10) unsigned DEFAULT NULL,
+  `money3` int(10) unsigned DEFAULT NULL,
+  `money4` int(10) unsigned DEFAULT NULL,
+  `money5` int(10) unsigned DEFAULT NULL,
+  `money6` int(10) unsigned DEFAULT NULL,
+  `money7` int(10) unsigned DEFAULT NULL,
+  `money8` int(10) unsigned DEFAULT NULL,
+  `money9` int(10) unsigned DEFAULT NULL,
+  `money10` int(10) unsigned DEFAULT NULL,
+  `money11` int(10) unsigned DEFAULT NULL,
+  `money12` int(10) unsigned DEFAULT NULL,
+  `money13` int(10) unsigned DEFAULT NULL,
+  `money14` int(10) unsigned DEFAULT NULL,
+  `money15` int(10) unsigned DEFAULT NULL,
+  `money16` int(10) unsigned DEFAULT NULL,
+  `money17` int(10) unsigned DEFAULT NULL,
+  `money18` int(10) unsigned DEFAULT NULL,
+  `money19` int(10) unsigned DEFAULT NULL,
+  `money20` int(10) unsigned DEFAULT NULL,
+  `money21` int(10) unsigned DEFAULT NULL,
+  `money22` int(10) unsigned DEFAULT NULL,
+  `money23` int(10) unsigned DEFAULT NULL,
+  `money24` int(10) unsigned DEFAULT NULL,
+  `money25` int(10) unsigned DEFAULT NULL,
+  `money26` int(10) unsigned DEFAULT NULL,
+  `money27` int(10) unsigned DEFAULT NULL,
+  `createtime` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of guess
+-- ----------------------------
+
+-- ----------------------------
 -- Table structure for lottery
 -- ----------------------------
 DROP TABLE IF EXISTS `lottery`;
@@ -129,6 +173,7 @@ INSERT INTO `lottery` VALUES ('57ee2c605d38b', '北京快乐8', '784040', '51', 
 INSERT INTO `lottery` VALUES ('57ee2c60f2b5c', '北京PK10', '578611', '8', '10', '6', '1', '9', '2', '7', '3', '5', '4', null, null, null, null, null, null, null, null, null, null, '2016-09-30 17:07:00', '2016-09-30 17:12:01');
 INSERT INTO `lottery` VALUES ('57ee2ce93d460', '北京PK10', '578612', '5', '8', '9', '1', '4', '7', '6', '2', '3', '10', null, null, null, null, null, null, null, null, null, null, '2016-09-30 17:12:00', '2016-09-30 17:14:17');
 INSERT INTO `lottery` VALUES ('57ee2d8e8a0b5', '北京快乐8', '784041', '37', '56', '14', '48', '63', '21', '30', '15', '75', '29', '45', '20', '72', '33', '38', '19', '69', '49', '27', '12', '2016-09-30 17:15:00', '2016-09-30 17:17:02');
+INSERT INTO `lottery` VALUES ('57ee2e136422c', '北京PK10', '578613', '4', '1', '9', '2', '10', '7', '3', '5', '8', '6', null, null, null, null, null, null, null, null, null, null, '2016-09-30 17:17:00', '2016-09-30 17:19:15');
 
 -- ----------------------------
 -- Table structure for receiver
@@ -185,7 +230,7 @@ CREATE TABLE `user` (
   `id` char(14) NOT NULL COMMENT 'ID号（唯一标识）',
   `username` varchar(255) NOT NULL COMMENT '用户名',
   `password` varchar(255) NOT NULL COMMENT '密码',
-  `money` bigint(20) NOT NULL COMMENT '用户总积分',
+  `money` bigint(20) unsigned NOT NULL COMMENT '用户总积分',
   `createtime` datetime NOT NULL COMMENT '创建时间',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;

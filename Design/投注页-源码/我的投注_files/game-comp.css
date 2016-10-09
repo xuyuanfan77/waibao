@@ -8,7 +8,7 @@
 	top: 50%;
 	left: 50%;
 	margin: -205px 0 0 520px;
-	background: url(enter-bank.png);
+	background: url(../../img/index/enter-bank.png);
 	z-index: 1000;
 }
 
@@ -35,23 +35,23 @@
 }
 
 .js28-box .js28-num .js-ball {
-	background: url(js28_icon.png) no-repeat 0 0;
+	background: url(../../img/js28_icon.png) no-repeat 0 0;
 }
 
 .pc28-box .pc28-num .js-ball {
-	background: url(pc28_icon.png?v=1.0) no-repeat 0 0;
+	background: url(../../img/pc28_icon.png?v=1.0) no-repeat 0 0;
 }
 
 .fk28-box .fk28-num .js-ball {
-	background: url(fk28_icon.png?v=1.0) no-repeat 0 0;
+	background: url(../../img/fk28_icon.png?v=1.0) no-repeat 0 0;
 }
 
 .jnd28-box .jnd28-num .js-ball {
-	background: url(pc28_icon.png?v=1.0) no-repeat 0 -200px;
+	background: url(../../img/pc28_icon.png?v=1.0) no-repeat 0 -200px;
 }
 
 .jnd16-box .jnd16-num .js-ball {
-	background: url(pc28_icon.png?v=1.0) no-repeat 0 -350px;
+	background: url(../../img/pc28_icon.png?v=1.0) no-repeat 0 -350px;
 }
 
 .jnd28-box .js-ball,
@@ -73,31 +73,31 @@
 }
 
 .js28-box .js-ball {
-	background: url(js28_icon.png) no-repeat 0 -16px;
+	background: url(../../img/js28_icon.png) no-repeat 0 -16px;
 }
 
 .pc28-box .js-ball {
-	background: url(pc28_icon.png?v=1.0) no-repeat 0 -16px;
+	background: url(../../img/pc28_icon.png?v=1.0) no-repeat 0 -16px;
 }
 
 .fk28-box .js-ball {
-	background: url(fk28_icon.png?v=1.0) no-repeat 0 -16px;
+	background: url(../../img/fk28_icon.png?v=1.0) no-repeat 0 -16px;
 }
 
 .js11-box .js-ball {
-	background: url(js11_icon.png) no-repeat 0 0;
+	background: url(../../img/js11_icon.png) no-repeat 0 0;
 }
 
 .jnd28-box .js-ball {
-	background: url(pc28_icon.png?v=1.0) no-repeat 0 -216px;
+	background: url(../../img/pc28_icon.png?v=1.0) no-repeat 0 -216px;
 }
 
 .jnd16-box .js-ball {
-	background: url(pc28_icon.png?v=1.0) no-repeat 0 -366px;
+	background: url(../../img/pc28_icon.png?v=1.0) no-repeat 0 -366px;
 }
 
 .js16-box .js-ball {
-	background: url(pc28_icon.png?v=1.0) no-repeat 0 -366px;
+	background: url(../../img/pc28_icon.png?v=1.0) no-repeat 0 -366px;
 }
 
 /*疯狂赛车 的 车 */
@@ -106,7 +106,7 @@
 	width: 67px;
 	height: 22px;
 	vertical-align: middle;
-	background: url(fksc_icon.png) no-repeat;
+	background: url(../../img/fksc_icon.png) no-repeat;
 	*display: inline;
 	*zoom: 1;
 }
@@ -166,7 +166,7 @@
 	width: 16px;
 	height: 16px;
 	vertical-align: middle;
-	background: url(fksc_icon.png) no-repeat;
+	background: url(../../img/fksc_icon.png) no-repeat;
 	*display: inline;
 	*zoom: 1;
 }
@@ -216,7 +216,7 @@
 	display: inline-block;
 	width: 25px;
 	height: 25px;
-	background: url(fk36_icon.png) no-repeat;
+	background: url(../../img/fk36_icon.png) no-repeat;
 	vertical-align: middle;
 	margin: 0 3px 0 1px;
 	*display: inline;
@@ -255,7 +255,7 @@
 	height: 30px;
 	margin: 0 2px;
 	vertical-align: middle;
-	background: url(dice.png) no-repeat;
+	background: url(../../img/dice.png) no-repeat;
 	*display: inline;
 	*zoom: 1;
 }
@@ -306,35 +306,35 @@
 }
 
 .js28-box .qus-js28 {
-	background: url(js28_icon.png) no-repeat 0 -41px;
+	background: url(../../img/js28_icon.png) no-repeat 0 -41px;
 }
 
 .pc28-box .qus-pc28{
-	background: url(pc28_icon.png?v=1.0) no-repeat 0 -41px;
+	background: url(../../img/pc28_icon.png?v=1.0) no-repeat 0 -41px;
 }
 
 .js11-box .qus-js11 {
-	background: url(js11_icon.png) no-repeat 0 -25px;
+	background: url(../../img/js11_icon.png) no-repeat 0 -25px;
 }
 
 .fk36-box .qus-fk36 {
-	background: url(fk36_icon.png) no-repeat 0 -135px;
+	background: url(../../img/fk36_icon.png) no-repeat 0 -135px;
 }
 
 .fk28-box .qus-fk28 {
-	background: url(fk28_icon.png) no-repeat 0 -41px;
+	background: url(../../img/fk28_icon.png) no-repeat 0 -41px;
 }
 
 .jnd28-box .qus-jnd28 {
-	background: url(pc28_icon.png?v=1.0) no-repeat 0 -41px;
+	background: url(../../img/pc28_icon.png?v=1.0) no-repeat 0 -41px;
 }
 
 .jnd16-box .qus-jnd16 {
-	background: url(pc28_icon.png?v=1.0) no-repeat 0 -41px;
+	background: url(../../img/pc28_icon.png?v=1.0) no-repeat 0 -41px;
 }
 
 .js16-box .qus-js16 {
-	background: url(pc28_icon.png?v=1.0) no-repeat 0 -41px;
+	background: url(../../img/pc28_icon.png?v=1.0) no-repeat 0 -41px;
 }
 
 .fksc-box .qus-fksc {
@@ -346,7 +346,7 @@
 	color: #fff;
 	margin: 0 3px;
 	vertical-align: middle;
-	background: url(fksc_icon.png) no-repeat 0 -252px;
+	background: url(../../img/fksc_icon.png) no-repeat 0 -252px;
 	*display: inline;
 	*zoom: 1;
 }
@@ -358,7 +358,7 @@
 	height: 10px;
 	vertical-align: middle;
 	margin: 0 2px;
-	background: url(fk36_icon.png) no-repeat 0 -125px;
+	background: url(../../img/fk36_icon.png) no-repeat 0 -125px;
 	*display: inline;
 	*zoom: 1;
 }
@@ -407,7 +407,7 @@
 	display: block;
 	width: 129px;
 	height: 92px;
-	background: url('game_nav_bg.png?v=1.0') no-repeat 0 0;
+	background: url('../../img/game_nav_bg.png?v=1.0') no-repeat 0 0;
 	border-right: 1px solid #e0e0e0;
 }
 
@@ -593,7 +593,7 @@
 	display: block;
 	width: 54px;
 	height: 54px;
-	background: url('zhanghu_logo.png') no-repeat 0 0;
+	background: url('../../img/zhanghu_logo.png') no-repeat 0 0;
 	position: absolute;
 	left: 66px;
 	top: 9px;
@@ -620,7 +620,7 @@
 	display: block;
 	width: 13px;
 	height: 7px;
-	background: url('icon.png') no-repeat 0 -190px;
+	background: url('../../img/icon.png') no-repeat 0 -190px;
 	position: absolute;
 	top: -1px;
 	left: 77px;
@@ -642,7 +642,7 @@
 	display: block;
 	width: 15px;
 	height: 11px;
-	background: url('ingot.png') no-repeat 0 0;
+	background: url('../../img/ingot.png') no-repeat 0 0;
 	float: left;
 	margin: 5px 0 0 3px;
 }
@@ -651,7 +651,7 @@
 	display: block;
 	width: 12px;
 	height: 11px;
-	background: url('kdou.png') no-repeat 0 0;
+	background: url('../../img/kdou.png') no-repeat 0 0;
 	float: left;
 	margin: 5px 0 0 3px;
 }
@@ -854,7 +854,7 @@
 	height: 14px;
 	line-height: 14px;
 	padding: 0 10px;
-	border-right: 0px solid #fff;
+	border-right: 1px solid #fff;
 	float: left;
 }
 
@@ -866,7 +866,7 @@
 	display: block;
 	width: 66px;
 	height: 15px;
-	background: url('icon_02.png?v=1.0') no-repeat 0 -808px;
+	background: url('../../img/icon_02.png?v=1.0') no-repeat 0 -808px;
 	float: left;
 }
 
@@ -927,7 +927,7 @@
 	display: block;
 	width: 51px;
 	height: 52px;
-	background: url('icon_02.png?v=1.0') no-repeat 0 0;
+	background: url('../../img/icon_02.png?v=1.0') no-repeat 0 0;
 	float: left;
 	margin: 12px 0 0 15px;
 }
@@ -1068,32 +1068,32 @@
 }
 
 .kaijiang-pc28 .kaijiang-time-text .now-jieguo {
-	background: url('icon_02.png?v=1.0') no-repeat 0 0;
+	background: url('../../img/icon_02.png?v=1.0') no-repeat 0 0;
 	background-position: 0 -624px;
 }
 
 .kaijiang-js28 .kaijiang-time-text .now-jieguo {
-	background: url('icon_02.png?v=1.0') no-repeat 0 0;
+	background: url('../../img/icon_02.png?v=1.0') no-repeat 0 0;
 	background-position: 0 -649px;
 }
 
 .kaijiang-fk28 .kaijiang-time-text .now-jieguo {
-	background: url('fk28_icon.png?v=1.0') no-repeat 0 0;
+	background: url('../../img/fk28_icon.png?v=1.0') no-repeat 0 0;
 	background-position: 0 -16px;
 }
 
 .kaijiang-jnd28 .kaijiang-time-text .now-jieguo {
-	background: url('icon_02.png?v=1.0') no-repeat 0 0;
+	background: url('../../img/icon_02.png?v=1.0') no-repeat 0 0;
 	background-position: 0 -1055px;
 }
 
 .kaijiang-jnd16 .kaijiang-time-text .now-jieguo {
-	background: url('icon_02.png?v=1.0') no-repeat 0 0;
+	background: url('../../img/icon_02.png?v=1.0') no-repeat 0 0;
 	background-position: 0 -1080px;
 }
 
 .kaijiang-js16 .kaijiang-time-text .now-jieguo {
-	background: url('icon_02.png?v=1.0') no-repeat 0 0;
+	background: url('../../img/icon_02.png?v=1.0') no-repeat 0 0;
 	background-position: 0 -1080px;
 }
 
@@ -1114,7 +1114,7 @@
 	display: block;
 	width: 60px;
 	height: 26px;
-	background: url('icon_02.png?v=1.0') no-repeat 0 -294px;
+	background: url('../../img/icon_02.png?v=1.0') no-repeat 0 -294px;
 	margin: 25px 0 0 22px;
 	float: left;
 }
@@ -1164,7 +1164,7 @@
 	display: block;
 	width: 26px;
 	height: 26px;
-	background: url('icon_02.png?v=1.0') no-repeat 0 0;
+	background: url('../../img/icon_02.png?v=1.0') no-repeat 0 0;
 	float: left;
 	margin: 25px 0 0 4px;
 }
@@ -1213,7 +1213,7 @@
 	display: block;
 	width: 26px;
 	height: 27px;
-	background: url('icon_02.png?v=1.0') no-repeat 0 -589px;
+	background: url('../../img/icon_02.png?v=1.0') no-repeat 0 -589px;
 	float: left;
 	margin: 25px 0 0 15px;
 }
@@ -1265,7 +1265,7 @@
 	display: inline-block;
 	width: 25px;
 	height: 25px;
-	background: url('icon_02.png?v=1.0') no-repeat 0 -624px;
+	background: url('../../img/icon_02.png?v=1.0') no-repeat 0 -624px;
 	color: #fff;
 	text-align: center;
 }
@@ -1289,7 +1289,7 @@
 }
 
 .yingli-jl-fk28 .yingli-jl-list .result-now {
-	background: url('fk28_icon.png') no-repeat 0 -16px;
+	background: url('../../img/fk28_icon.png') no-repeat 0 -16px;
 }
 
 .yingli-jl-js28 {
@@ -1313,7 +1313,6 @@
 }
 
 /*页码*/
-/*
 .list-page-box {
 	height: 23px;
 	text-align: center;
@@ -1360,61 +1359,8 @@
 	border-color: #f2f2f2;
 	color: #999;
 	background: #fff;
-}*/
-
-/*页码*/
-.list-page-box {
-	height: 23px;
-	text-align: center;
-	margin: 36px 0 0;
 }
 
-.list-page-box .prev,
-.list-page-box .next,
-.list-page-box .current,
-.list-page-box .num {
-	display: inline-block;
-	height: 21px;
-	line-height: 21px;
-	text-align: center;
-	border: 1px solid #e0e0e0;
-	padding: 0 6px 0 5px;
-	margin-right: 6px;
-	background: #fff;
-	color: #ff696c;
-	*display: inline;
-	*zoom: 1;
-}
-
-.list-page-box .prev:hover,
-.list-page-box .next:hover,
-.list-page-box .num:hover {
-	text-decoration: none;
-	border-color: #ff696c;
-	background: #fff3f4;
-}
-
-.list-page-box .current,
-.list-page-box .current:hover {
-	border-color: #ff696c;
-	background: #ff696c;
-	color: #fff;
-}
-
-.list-page-box .shenglue {
-	height: 23px;
-	line-height: 23px;
-	color: #e86368;
-	font-weight: bold;
-	margin: 0 6px 0 0;
-}
-
-.list-page-box .btn-gray,
-.list-page-box .btn-gray:hover {
-	border-color: #f2f2f2;
-	color: #999;
-	background: #fff;
-}
 
 
 /*************弹窗******************/
@@ -1459,7 +1405,7 @@
 	width: 16px;
 	height: 16px;
 	margin: 20px 0 0 0;
-	background: url('close_fc.png') no-repeat 0 0;
+	background: url('../../img/close_fc.png') no-repeat 0 0;
 }
 
 .fuceng-box .fc-ttl-box .fc-close:hover {

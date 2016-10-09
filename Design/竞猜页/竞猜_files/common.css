@@ -92,7 +92,7 @@ fieldset, img { border: none; vertical-align: top;}
     width: 12px;
     height: 11px;
     margin: 0 0 0 2px;
-    background: url(kdou.png) no-repeat 0 0;
+    background: url(../../img/kdou.png) no-repeat 0 0;
     *display: inline;
     *zoom: 1;
     vertical-align: middle;
@@ -104,7 +104,7 @@ fieldset, img { border: none; vertical-align: top;}
     width: 16px;
     height: 14px;
     margin: 0 0 0 2px;
-    background: url(kdou1.png) no-repeat 0 0;
+    background: url(../../img/kdou1.png) no-repeat 0 0;
     *display: inline;
     *zoom: 1;
     vertical-align: middle;
@@ -116,7 +116,7 @@ fieldset, img { border: none; vertical-align: top;}
     width: 17px;
     height: 11px;
     margin: 0 0 0 2px;
-    background: url(quan.png) no-repeat 0 0;
+    background: url(../../img/quan.png) no-repeat 0 0;
     *display: inline;
     *zoom: 1;
     vertical-align: middle;
@@ -127,7 +127,7 @@ fieldset, img { border: none; vertical-align: top;}
     width: 15px;
     height: 11px;
     margin: 0 0 0 2px;
-    background: url(ingot.png) no-repeat 0 0;
+    background: url(../../img/ingot.png) no-repeat 0 0;
     *display: inline;
     *zoom: 1;
     vertical-align: middle;
@@ -257,7 +257,7 @@ fieldset, img { border: none; vertical-align: top;}
 	display: block;
 	width: 9px;
 	height: 5px;
-	background: url('icon.png') no-repeat 0 -5px;
+	background: url('../../img/icon.png') no-repeat 0 -5px;
 	position: absolute;
 	right: 9px;
 	top: 12px;
@@ -330,7 +330,7 @@ fieldset, img { border: none; vertical-align: top;}
 	position: absolute;
 	right: -100px;
 	bottom: 0;
-	background: url(dati_enter.gif) no-repeat 0 0;
+	background: url(../../img/dati_enter.gif) no-repeat 0 0;
 }
 
 
@@ -338,7 +338,7 @@ fieldset, img { border: none; vertical-align: top;}
 
 .footer-box {
 	width: 100%;
-	height: 100px;
+	height: 188px;
 	background: #eee;
 	padding: 40px 0 0 0;
 }
@@ -388,7 +388,7 @@ fieldset, img { border: none; vertical-align: top;}
 	display: inline-block;
 	width: 22px;
 	height: 22px;
-	background: url(wen_bg.png) no-repeat 0 0;
+	background: url(../../img/wen_bg.png) no-repeat 0 0;
 	*display: inline;
 	*zoom: 1;
 	vertical-align: top;
@@ -429,7 +429,7 @@ fieldset, img { border: none; vertical-align: top;}
 	display: block;
 	width: 800px;
 	height: 120px;
-	background: url('404.png') no-repeat 0 0;
+	background: url('../../img/404.png') no-repeat 0 0;
 	margin: 0 0 0 88px;
 }
 
@@ -456,7 +456,7 @@ fieldset, img { border: none; vertical-align: top;}
 	display: inline-block;
 	width: 35px;
 	height: 13px;
-	background: url('vip_icon.png') no-repeat 0 0;
+	background: url('../../img/vip_icon.png') no-repeat 0 0;
 	*display: inline;
 	*zoom: 1;
 	margin: 0 0 0 5px;
@@ -567,7 +567,7 @@ fieldset, img { border: none; vertical-align: top;}
 	display: inline-block;
 	width: 18px;
 	height: 18px;
-	background: url('vip_icon.png') no-repeat 0 0;
+	background: url('../../img/vip_icon.png') no-repeat 0 0;
 	*display: inline;
 	*zoom: 1;
 	vertical-align: middle;
@@ -642,7 +642,7 @@ fieldset, img { border: none; vertical-align: top;}
 	display: block;
 	width: 25px;
 	height: 22px;
-	background: url('index_icons.png') no-repeat 0 -175px;
+	background: url('../../img/index_icons.png') no-repeat 0 -175px;
 	margin: 6px 0 0 5px;
 }
 
@@ -660,7 +660,7 @@ fieldset, img { border: none; vertical-align: top;}
 	display: block;
 	width: 14px;
 	height: 15px;
-	background: url('index_icons.png') no-repeat 0 0;
+	background: url('../../img/index_icons.png') no-repeat 0 0;
 	margin: 8px 0 0 10px;
 }
 
@@ -774,7 +774,7 @@ fieldset, img { border: none; vertical-align: top;}
 	width: 16px;
 	height: 16px;
 	margin: 20px 0 0 0;
-	background: url('close_fc.png') no-repeat 0 0;
+	background: url('../../img/close_fc.png') no-repeat 0 0;
 }
 
 .fuceng-common-box .fuceng-box  .fc-ttl-box .fc-close:hover {
@@ -890,7 +890,7 @@ fieldset, img { border: none; vertical-align: top;}
    	width: 980px;
    	margin: 0 auto;
     overflow: hidden;
-    background: url(laba.gif) no-repeat center left;
+    background: url(../../img/laba.gif) no-repeat center left;
     padding-left: 20px;
     position: relative;
 }

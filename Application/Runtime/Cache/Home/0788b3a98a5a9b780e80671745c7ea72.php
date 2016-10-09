@@ -27,7 +27,7 @@
             <div class="width-1000">
 				<form action="http://game3799.com/Account/LogOff" id="logoutFormTop" method="post">
 					<p class="site-nav-con">
-						你好，<span class="user-name-color">远航之帆</span>元宝：0<span class="ingot"></span><a class="ingot-c">充</a>金豆：0<span class="kdou"></span><a class="kdou-c">兑</a><a class="login-out" href="javascript:document.getElementById(&#39;logoutFormTop&#39;).submit()">[退出]</a>
+						你好，<span class="user-name-color"><?php echo ($userData['username']); ?></span>元宝：0<span class="ingot"></span><a class="ingot-c">充</a>金豆：<?php echo ($userData['money']); ?><span class="kdou"></span><a class="kdou-c">兑</a><a class="login-out" href="<?php echo U('Index/index', array('page'=>'login'));?>">[退出]</a>
 						<a class="site-nav-list" href="http://game3799.com/Home/Desktop">保存到桌面</a>
 						<a class="site-nav-list bor-r J_shoucang" href="http://game3799.com/Lucky28/index#">收藏本站</a>
 					</p>
@@ -91,7 +91,7 @@
                             <a target="_blank" class="chong-url">充</a>
                     </p>
                     <p class="my-yuanbao-box">
-                        <span class="my-yuanbao-text">金豆：0</span>
+                        <span class="my-yuanbao-text">金豆：<?php echo ($userData['money']); ?></span>
                         <span class="jindou-logo"></span>
                         <a class="dui-url">兑</a>
                     </p>
@@ -106,12 +106,6 @@
                     </p>
                 </div>
             </div>
-
-            
-
-
-
-
 
 <!-- 公正提示 -->
 <div class="kaijiang-box kaijiang-pc28">
@@ -182,7 +176,7 @@
 						<td>-</td><?php endif; ?>
 					<?php if($data['statu'] == 2): ?><td><a class="go-ta">已开奖</a></td>
 					<?php else: ?>
-						<td><a class="go-jc jc-pc28">竞猜</a></td><?php endif; ?>
+						<td><a href="<?php echo U('Guess/index', array('issue'=>$data['issue']));?>" class="go-jc jc-pc28">竞猜</a></td><?php endif; ?>
 				</tr><?php endforeach; endif; ?>  
 		</tbody>
 	</table>
