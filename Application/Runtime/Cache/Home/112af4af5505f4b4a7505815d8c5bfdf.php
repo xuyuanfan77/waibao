@@ -20,6 +20,50 @@
 		<link rel="stylesheet" href="/waibao/Public/front/touzhu-new.css">
 		<link rel="stylesheet" href="/waibao/Public/front/touzhu-pc28.css">
 		<link rel="icon" type="image/png" href="http://image.game3799.com/19dou/img/favicon.png">
+		<script type="text/javascript">
+        var nub = new Array(1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 63, 69, 73, 75, 75, 73, 69, 63, 55, 45, 36, 28, 21, 15, 10, 6, 3, 1);
+        var nub1 = new Array(1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 63, 69, 73, 75, 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 63, 69, 73, 75);
+        var mode = new Array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27],//全包
+                             [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27],//单
+                             [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26],//双
+                             [14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27],//大
+                             [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],//小
+                             [10, 11, 12, 13, 14, 15, 16, 17],//中
+                             [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27],//边
+                             [15, 17, 19, 21, 23, 25, 27],//大单
+                             [1, 3, 5, 7, 9, 11, 13],//小单
+                             [14, 16, 18, 20, 22, 24, 26],//大双
+                             [0, 2, 4, 6, 8, 10, 12],//小双
+                             [18, 19, 20, 21, 22, 23, 24, 25, 26, 27],//大边
+                             [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],//小边
+                             [1, 3, 5, 7, 9, 19, 21, 23, 25, 27],//单边
+                             [0, 2, 4, 6, 8, 18, 20, 22, 24, 26],//双边
+                             [0, 10, 20],//0尾
+                             [1, 11, 21],//1尾
+                             [2, 12, 22],//2尾
+                             [3, 13, 23],//3尾
+                             [4, 14, 24],//4尾
+                             [0, 1, 2, 3, 4, 10, 11, 12, 13, 14, 20, 21, 22, 23, 24],//小尾
+                             [5, 15, 25],//5尾
+                             [6, 16, 26],//6尾
+                             [7, 17, 27],//7尾
+                             [8, 18],//8尾
+                             [9, 19],//9尾
+                             [5, 6, 7, 8, 9, 15, 16, 17, 18, 19, 25, 26, 27],//大尾
+                             [0, 3, 6, 9, 12, 15, 18, 21, 24, 27],//3余0
+                             [1, 4, 7, 10, 13, 16, 19, 22, 25],//3余1
+                             [2, 5, 8, 11, 14, 17, 20, 23, 26],//3余2
+                             [0, 4, 8, 12, 16, 20, 24],//4余0
+                             [1, 5, 9, 13, 17, 21, 25],//4余1
+                             [2, 6, 10, 14, 18, 22, 26],//4余2
+                             [3, 7, 11, 15, 19, 23, 27],//4余3
+                             [0, 5, 10, 15, 20, 25],//5余0
+                             [1, 6, 11, 16, 21, 26],//5余1
+                             [2, 7, 12, 17, 22, 27],//5余2
+                             [3, 8, 13, 18, 23],//5余3
+                             [4, 9, 14, 19, 24]//5余4
+                             );
+		</script>
 
 	</head>
 	<body>
@@ -27,7 +71,7 @@
             <div class="width-1000">
 				<form action="http://game3799.com/Account/LogOff" id="logoutFormTop" method="post">
 					<p class="site-nav-con">
-						你好，<span class="user-name-color">远航之帆</span>元宝：0<span class="ingot"></span><a class="ingot-c">充</a>金豆：0<span class="kdou"></span><a class="kdou-c">兑</a><a class="login-out" href="javascript:document.getElementById(&#39;logoutFormTop&#39;).submit()">[退出]</a>
+						你好，<span class="user-name-color"><?php echo ($userData['username']); ?></span>元宝：0<span class="ingot"></span><a class="ingot-c">充</a>金豆：<?php echo ($userData['money']); ?><span class="kdou"></span><a class="kdou-c">兑</a><a class="login-out" href="javascript:document.getElementById(&#39;logoutFormTop&#39;).submit()">[退出]</a>
 						<a class="site-nav-list" href="http://game3799.com/Home/Desktop">保存到桌面</a>
 						<a class="site-nav-list bor-r J_shoucang" href="http://game3799.com/Lucky28/index#">收藏本站</a>
 					</p>
@@ -42,7 +86,7 @@
 						<li class="game-nav-list selected">
 							<div class="game-logo-box game-logo-pc28">
 								<span class="top-jt"></span>
-								<a class="game-img" href="#"></a>
+								<a class="game-img" href="<?php echo U('Num/index');?>"></a>
 							</div>
 						</li>
 						<li class="game-nav-list ">
@@ -91,7 +135,7 @@
 								<a target="_blank" class="chong-url">充</a>
 						</p>
 						<p class="my-yuanbao-box">
-							<span class="my-yuanbao-text">金豆：0</span>
+							<span class="my-yuanbao-text">金豆：<?php echo ($userData['money']); ?></span>
 							<span class="jindou-logo"></span>
 							<a class="dui-url">兑</a>
 						</p>
@@ -154,7 +198,7 @@
 						<a href="javascript:void(0);" class="double_insert">5倍</a>
 						<a href="javascript:void(0);" class="double_insert">10倍</a>
 						<a href="javascript:void(0);" class="double_insert mode_lottery" attr="0">全包</a>
-						<a href="javascript:void(0);" class="double_insert J_suohaBtn" data-val="0">梭哈</a>
+						<a href="javascript:void(0);" class="double_insert J_suohaBtn" data-val="<?php echo ($userData['money']); ?>">梭哈</a>
 						<p class="total_md">
 							<strong>
 								<label>总投注金豆：</label>
@@ -166,7 +210,33 @@
 
 					<div class="across clear-fix" id="panel">
 						<div class="across_par1 ">
-							<?php $__FOR_START_29460__=0;$__FOR_END_29460__=10;for($i=$__FOR_START_29460__;$i < $__FOR_END_29460__;$i+=1){ ?><div class="across_par1_no clear-fix">
+							<?php $__FOR_START_8770__=0;$__FOR_END_8770__=10;for($i=$__FOR_START_8770__;$i < $__FOR_END_8770__;$i+=1){ ?><div class="across_par1_no clear-fix">
+									<div class="across_par1_no_left">
+											<div id="click_number<?php echo ($i); ?>" class="click_number no_left_bg" style="cursor: pointer;"><?php echo ($i); ?></div>
+									</div>
+									<div style="display: none;">
+										<input name="checkboxd" id="checkboxd<?php echo ($i); ?>" value="checkbox" type="checkbox">
+									</div>
+									<div class="across_par1_no_right">
+										<p>
+											<input class="downhhhh input_modou_txt_null" name="mdp_coin" id="txt<?php echo ($i); ?>" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" maxlength="15" type="text">
+											<a style="display: none;" class="sack_02" href="javascript:void(0);" onclick="clear_input('txt<?php echo ($i); ?>',this);" id="clear_this_val<?php echo ($i); ?>"></a>
+											<span style="display: none;" id="peilv<?php echo ($i); ?>">
+												<label>×</label>
+												<a href="javascript:void(0);" class="multiple" id="<?php echo ($i); ?>" val="0.1">.1</a>
+												<a href="javascript:void(0);" id="<?php echo ($i); ?>" val="0.5" class="multiple">.5</a>
+												<a href="javascript:void(0);" id="<?php echo ($i); ?>" val="2" class="multiple">2</a>
+												<a href="javascript:void(0);" id="<?php echo ($i); ?>" val="10" class="multiple">10</a>
+											</span>
+										</p>
+										<p>
+											当前赔率:<span class="color_02" id="this_lottery_odds<?php echo ($i); ?>"><?php echo ($gameOdds[$i]); ?></span>| 上期赔率:<span id="last_lottery_odds<?php echo ($i); ?>"><?php echo ($preGameOdds[$i]); ?></span>
+										</p>
+									</div>
+								</div><?php } ?>
+						</div>
+						<div class="across_par1 ">
+							<?php $__FOR_START_25171__=10;$__FOR_END_25171__=18;for($i=$__FOR_START_25171__;$i < $__FOR_END_25171__;$i+=1){ ?><div class="across_par1_no clear-fix">
 									<div class="across_par1_no_left">
 											<div id="click_number<?php echo ($i); ?>" class="click_number no_left_bg" style="cursor: pointer;"><?php echo ($i); ?></div>
 									</div>
@@ -184,25 +254,7 @@
 								</div><?php } ?>
 						</div>
 						<div class="across_par1 ">
-							<?php $__FOR_START_18365__=10;$__FOR_END_18365__=18;for($i=$__FOR_START_18365__;$i < $__FOR_END_18365__;$i+=1){ ?><div class="across_par1_no clear-fix">
-									<div class="across_par1_no_left">
-											<div id="click_number<?php echo ($i); ?>" class="click_number no_left_bg" style="cursor: pointer;"><?php echo ($i); ?></div>
-									</div>
-									<div style="display: none;">
-										<input name="checkboxd" id="checkboxd<?php echo ($i); ?>" value="checkbox" type="checkbox">
-									</div>
-									<div class="across_par1_no_right">
-										<p>
-											<input class="downhhhh input_modou_txt_null" name="mdp_coin" id="txt<?php echo ($i); ?>" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" maxlength="15" type="text"><a style="display: none;" class="sack_02" href="javascript:void(0);" onclick="clear_input('txt<?php echo ($i); ?>',this);" id="clear_this_val<?php echo ($i); ?>"></a><span style="display: none;" id="peilv<?php echo ($i); ?>"><label>×</label><a href="javascript:void(0);" class="multiple" id="<?php echo ($i); ?>" val="0.1">.1</a><a href="javascript:void(0);" id="<?php echo ($i); ?>" val="0.5" class="multiple">.5</a><a href="javascript:void(0);" id="<?php echo ($i); ?>" val="2" class="multiple">2</a><a href="javascript:void(0);" id="<?php echo ($i); ?>" val="10" class="multiple">10</a></span>
-										</p>
-										<p>
-											当前赔率:<span class="color_02" id="this_lottery_odds<?php echo ($i); ?>"><?php echo ($gameOdds[$i]); ?></span>| 上期赔率:<span id="last_lottery_odds<?php echo ($i); ?>"><?php echo ($preGameOdds[$i]); ?></span>
-										</p>
-									</div>
-								</div><?php } ?>
-						</div>
-						<div class="across_par1 ">
-							<?php $__FOR_START_20914__=18;$__FOR_END_20914__=28;for($i=$__FOR_START_20914__;$i < $__FOR_END_20914__;$i+=1){ ?><div class="across_par1_no clear-fix">
+							<?php $__FOR_START_22416__=18;$__FOR_END_22416__=28;for($i=$__FOR_START_22416__;$i < $__FOR_END_22416__;$i+=1){ ?><div class="across_par1_no clear-fix">
 									<div class="across_par1_no_left">
 											<div id="click_number<?php echo ($i); ?>" class="click_number no_left_bg" style="cursor: pointer;"><?php echo ($i); ?></div>
 									</div>
@@ -222,7 +274,7 @@
 						<div class="across_par2">
 							<p class="color_03" align="center">我的总投注金豆</p>
 							<p align="center"><strong><span id="total_md_lottery2">0</span></strong><span class="jindou-logo"></span></p>
-							<p><a href="javascript:void(0);" data-pid="785452" data-url="../Bet" class="suer_insert J_TZBtn">确认投注</a></p>
+							<p><a href="javascript:void(0);" data-pid="<?php echo ($issueNum); ?>" data-url="/waibao/index.php/Home/Guess/guess" class="suer_insert J_TZBtn">确认投注</a></p>
 						</div>
 					</div>
 				</div>

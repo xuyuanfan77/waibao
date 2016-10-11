@@ -126,7 +126,7 @@ $(".shuaxin-btn,.shuaxin-btn-close").click(function(e){
 	}
 
 	var z = $(".J_ServerTime"),
-		serverTime_url = z.attr("data-url");
+	serverTime_url = z.attr("data-url");
     if (z.length > 0){
     	var timeAnim;
     	var _time = function(hour,min,sec){
@@ -323,7 +323,7 @@ $(".fc-main-box").delegate("#J_touzhuBtn","click",function(e){
 		_pid = $(".suer_insert").attr("data-pid"),
 		_id = $("#rwnum").attr("data-id"),
 		all_val = sum_val();
-	    _val = parseInt($("#total_md_lottery2").text());
+	    _val = _zuhe($("#total_md_lottery2").text());
 
 	if(_val > 0 ){
 		if(touzhu_key == 1){

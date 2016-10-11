@@ -42,7 +42,7 @@
                     <li class="game-nav-list selected">
                         <div class="game-logo-box game-logo-pc28">
                             <span class="top-jt"></span>
-                            <a class="game-img" href="#"></a>
+                            <a class="game-img" href="<?php echo U('Num/index');?>"></a>
                         </div>
                     </li>
                     <li class="game-nav-list ">
@@ -118,22 +118,22 @@
     </div>
         <div class="kaijiang-time-box">
             <div class="J_kjTimeBox">
-                <p class="kaijiang-time-text mar-t">距离第 <b><?php echo ($tipData['issue']+1); ?></b> 期竞猜截止还有 <b class="J_jcTime" data-lasttime="97">42</b> 秒 开奖还有 <b class="J_kjTime" data-lasttime="197">142</b> 秒 </p>
+                <p class="kaijiang-time-text mar-t">距离第 <b><?php echo ($tipData['issue']+1); ?></b> 期竞猜截止还有 <b class="J_jcTime" data-lasttime="<?php echo ($tipData['deadlinecd']); ?>"><?php echo ($tipData['deadlinecd']); ?></b> 秒 开奖还有 <b class="J_kjTime" data-lasttime="<?php echo ($tipData['runtimecd']); ?>"><?php echo ($tipData['runtimecd']); ?></b> 秒 </p>
                     <p class="kaijiang-time-text">
                         第<strong><?php echo ($tipData["issue"]); ?></strong>期开奖结果：<?php echo ($tipData["num1"]); ?>+<?php echo ($tipData["num2"]); ?>+<?php echo ($tipData["num3"]); ?>=<span class="now-jieguo"><?php echo ($tipData['num1']+$tipData['num2']+$tipData['num3']); ?></span>
                             <a target="_blank" href="http://www.bwlc.gov.cn/bulletin/keno.html">[官方查询]</a>
                         <a href="http://game3799.com/lucky28/guide">[游戏帮助]</a>
                     </p>
             </div>
-            <p class="kaijiang-time-text line-h J_kjIng" style="display: none">第<b>785252</b>期正在开奖中！</p>
+            <p class="kaijiang-time-text line-h J_kjIng" style="display: none">第<b><?php echo ($tipData['issue']+1); ?></b>期正在开奖中！</p>
         </div>
     <div class="server-time-box">
-        <a class="shengyin-ts shengyin-ts-close" href="http://game3799.com/Lucky28/index#"></a>
-        <a class="shuaxin-btn" data-index="1" href="http://game3799.com/Lucky28/index#"></a>
+        <a class="shengyin-ts shengyin-ts-close" href="#"></a>
+        <a class="shuaxin-btn" data-index="1" href="#"></a>
         <span class="time-logo"></span>
         <div class="server-time">
             <p class="time-text">服务器时间</p>
-            <p class="J_ServerTime time-text color-red" data-url="/Home/GetServerTime">13:42:47</p>
+            <p class="J_ServerTime time-text color-red" data-url="/waibao/index.php/Home/Num/getServerTime"></p>
         </div>
     </div>
 </div>

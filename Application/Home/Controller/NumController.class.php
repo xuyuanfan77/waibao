@@ -14,9 +14,16 @@ class NumController extends Controller {
 	//初始化提示
 	private function initTip() {
 		$Game = M('Game');
-		$condition['name'] = array('eq','PC28');
-		$condition['statu'] = array('eq',2);
-		$tipData = $Game->where($condition)->order('issue desc')->find();
+		$condition1['name'] = array('eq','PC28');
+		$condition1['statu'] = array('eq',2);
+		$tipData = $Game->where($condition1)->order('issue desc')->find();
+		//$this->assign('tipData',$tipData);
+
+		$condition2['name'] = array('eq','PC28');
+		$condition2['issue'] = array('eq',$tipData['issue']+1);
+		$nextIssueData = $Game->where($condition2)->find();
+		$tipData['deadlinecd'] = 30;//strtotime($nextIssueData['deadline'])-strtotime(date('Y-m-d H:i:s'));
+		$tipData['runtimecd'] = 60;//strtotime($nextIssueData['runtime'])-strtotime(date('Y-m-d H:i:s'));
 		$this->assign('tipData',$tipData);
 	}
 	
@@ -62,5 +69,12 @@ class NumController extends Controller {
 		} else {
 			$this->redirect('Index/index', array('page'=>'login'));
 		}
+	}
+	
+	public function getServerTime() {
+		$data['hour'] = date('H');
+		$data['min'] = date('i');
+		$data['sec'] = date('s');
+		$this->ajaxReturn($data);
 	}
 }
