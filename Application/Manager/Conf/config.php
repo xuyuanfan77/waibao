@@ -61,9 +61,64 @@ return array(
 			'name'=>'PC28',
 			'lotteryname'=>'北京快乐8',
 			'handle'=>function($arg){
-				$data['num1'] = ($arg['num1']+$arg['num2']+$arg['num3']+$arg['num4']+$arg['num5']+$arg['num6'])%10;
-				$data['num2'] = ($arg['num7']+$arg['num8']+$arg['num9']+$arg['num10']+$arg['num11']+$arg['num12'])%10;
-				$data['num3'] = ($arg['num13']+$arg['num14']+$arg['num15']+$arg['num16']+$arg['num17']+$arg['num18'])%10;
+				for($index=1;$index<=20;$index++){
+					$number[$index-1]=$arg['num'.$index];
+				}
+				sort($number);
+				$data['num1'] = ($number[0]+$number[1]+$number[2]+$number[3]+$number[4]+$number[5])%10;
+				$data['num2'] = ($number[6]+$number[7]+$number[8]+$number[9]+$number[10]+$number[11])%10;
+				$data['num3'] = ($number[12]+$number[13]+$number[14]+$number[15]+$number[16]+$number[17])%10;
+				return $data;
+			},
+			'water'=>'30',
+			'interval'=>300,
+			'aheadissue'=>3,
+			'aheaddeadline'=>60,
+			'delayruntime'=>60,
+		),
+		'极速28'=>array(
+			'name'=>'极速28',
+			'lotteryname'=>'韩国快乐8',
+			'handle'=>function($arg){
+				for($index=1;$index<=20;$index++){
+					$number[$index-1]=$arg['num'.$index];
+				}
+				sort($number);
+				$data['num1'] = ($number[0]+$number[1]+$number[2]+$number[3]+$number[4]+$number[5])%10;
+				$data['num2'] = ($number[6]+$number[7]+$number[8]+$number[9]+$number[10]+$number[11])%10;
+				$data['num3'] = ($number[12]+$number[13]+$number[14]+$number[15]+$number[16]+$number[17])%10;
+				return $data;
+			},
+			'water'=>'30',
+			'interval'=>90,
+			'aheadissue'=>3,
+			'aheaddeadline'=>60,
+			'delayruntime'=>60,
+		),
+		'极速16'=>array(
+			'name'=>'极速16',
+			'lotteryname'=>'韩国快乐8',
+			'handle'=>function($arg){
+				for($index=1;$index<=20;$index++){
+					$number[$index-1]=$arg['num'.$index];
+				}
+				sort($number);
+				$data['num1'] = ($number[0]+$number[1]+$number[2]+$number[3]+$number[4]+$number[5])%6+1;
+				$data['num2'] = ($number[6]+$number[7]+$number[8]+$number[9]+$number[10]+$number[11])%6+1;
+				$data['num3'] = ($number[12]+$number[13]+$number[14]+$number[15]+$number[16]+$number[17])%6+1;
+				return $data;
+			},
+			'water'=>'30',
+			'interval'=>90,
+			'aheadissue'=>3,
+			'aheaddeadline'=>60,
+			'delayruntime'=>60,
+		),
+		'疯狂赛车'=>array(
+			'name'=>'疯狂赛车',
+			'lotteryname'=>'北京PK10',
+			'handle'=>function($arg){
+				$data['num1'] = $arg['num1'];;
 				return $data;
 			},
 			'water'=>'30',

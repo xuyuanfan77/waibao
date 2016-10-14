@@ -13,12 +13,12 @@ class TriggerController extends Controller {
 	private $cacheData;
 	
     public function index(){
-		ignore_user_abort();//关闭浏览器后，继续执行php代码
-		set_time_limit(0);//程序执行时间无限制
-		$sleep_time = 15;//多长时间执行一次
+		ignore_user_abort();			//关闭浏览器后，继续执行php代码
+		set_time_limit(0);			//程序执行时间无限制
+		$sleep_time = 15;				//多长时间执行一次
 		while(true){
 			$this->trigger();
-			sleep($sleep_time);//等待时间，进行下一次操作。
+			sleep($sleep_time);		//等待时间，进行下一次操作。
 		}
 		exit();
 	}
@@ -51,8 +51,10 @@ class TriggerController extends Controller {
 			if($data && $flag){
 				Transform::transform($data,$config);
 				Transform::prewrite($data,$config);
-				$this->cacheData[$config['lotteryname']]['flag'] = false;
 			}
+		}
+		foreach ($transformConfig as $config) {
+			$this->cacheData[$config['lotteryname']]['flag'] = false;
 		}
 	}
 }

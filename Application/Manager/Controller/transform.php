@@ -4,16 +4,6 @@ namespace Service;
 header("Content-Type: text/html;charset=utf-8");
 
 class Transform {
-	// 转换公式
-	public function transform_num($gamename,$lotteryData){
-		if($gamename == 'PC28'){
-			$num['num1'] = ($lotteryData['num1']+$lotteryData['num2']+$lotteryData['num3']+$lotteryData['num4']+$lotteryData['num5']+$lotteryData['num6'])%10;
-			$num['num2'] = ($lotteryData['num7']+$lotteryData['num8']+$lotteryData['num9']+$lotteryData['num10']+$lotteryData['num11']+$lotteryData['num12'])%10;
-			$num['num3'] = ($lotteryData['num13']+$lotteryData['num14']+$lotteryData['num15']+$lotteryData['num16']+$lotteryData['num17']+$lotteryData['num18'])%10;
-		}
-		return $num;
-	}
-	
 	// 写入已开奖的游戏数据
 	public function transform($data,$config){		
 		$Game = M('Game');
@@ -24,7 +14,7 @@ class Transform {
 		if($gameData) {
 		// 更新
 			$readyData['id'] = $gameData['id'];
-			$num = $config['handle']($data);//Transform::transform_num($config['name'],$data);
+			$num = $config['handle']($data);
 			foreach ($num as $index=>$value) {
 				$readyData[$index] = $value;
 			}
@@ -38,7 +28,7 @@ class Transform {
 			$readyData['lotteryname'] = $config['lotteryname'];
 			$readyData['name'] = $config['name'];
 			
-			$num = $config['handle']($data);//Transform::transform_num($config['name'],$data);
+			$num = $config['handle']($data);
 			foreach ($num as $index=>$value) {
 				$readyData[$index] = $value;
 			}

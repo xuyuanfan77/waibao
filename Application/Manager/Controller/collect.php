@@ -1,9 +1,6 @@
 <?php
 namespace Service;
 
-require 'vendor/autoload.php';
-use QL\QueryList;
-
 header("Content-Type: text/html;charset=utf-8");
 
 class Collect {
