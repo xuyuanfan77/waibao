@@ -22,9 +22,12 @@ class Collect {
 		switch ($config['type'])
 		{
 			case 1:
-				$newData = Collect::web_collect($config);
+				//$newData = Collect::web_collect($config['page'],$config['rules'],$config['range']);
 				break;
 			case 2:
+				$newData = Collect::json_collect($config['page']);
+				break;
+			case 3:
 				$newData = Collect::produce_collect();
 				break;
 			default:
@@ -41,23 +44,16 @@ class Collect {
 	}
 	
 	// 对网页数据采集
-	public function web_collect($config){
-		$ch = curl_init($config['page']);
-		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-		curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 10);
-		curl_setopt($ch, CURLOPT_TIMEOUT, 10);
-		curl_setopt($ch, CURLOPT_HEADER, 0);
-		$respone = curl_exec($ch);
-		curl_close($ch);
-		
-		$respone = substr($respone,$config['range_begin'],$config['range_lenght']);
-		preg_match($config['rules'],$respone,$content);
-		if(!empty($content)){
-			$data = $config['handle']($content);
-			return $data;
-		}else{
-			return false;
-		}
+	public function web_collect($page,$rules,$range){
+		$data = QueryList::Query($page,$rules,$range)->data;
+		return $data[0];
+	}
+	
+	// 对json数据采集
+	public function json_collect($page){
+		$json = QueryList::Query($page)->html;
+		$data = json_decode($json);
+		return $data[0];
 	}
 	
 	// 自动生成数据

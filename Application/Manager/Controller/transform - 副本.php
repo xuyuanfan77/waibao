@@ -24,7 +24,7 @@ class Transform {
 		if($gameData) {
 		// 更新
 			$readyData['id'] = $gameData['id'];
-			$num = $config['handle']($data);//Transform::transform_num($config['name'],$data);
+			$num = Transform::transform_num($config['name'],$data);
 			foreach ($num as $index=>$value) {
 				$readyData[$index] = $value;
 			}
@@ -38,7 +38,7 @@ class Transform {
 			$readyData['lotteryname'] = $config['lotteryname'];
 			$readyData['name'] = $config['name'];
 			
-			$num = $config['handle']($data);//Transform::transform_num($config['name'],$data);
+			$num = Transform::transform_num($config['name'],$data);
 			foreach ($num as $index=>$value) {
 				$readyData[$index] = $value;
 			}

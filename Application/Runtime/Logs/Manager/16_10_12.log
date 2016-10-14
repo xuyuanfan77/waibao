@@ -1107,3 +1107,547 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
 INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
 
+[ 2016-10-12T16:58:38+08:00 ] ::1 /waibao/index.php/Manager/Trigger/trigger
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000598s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000971s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001253s ]
+NOTIC: [8192] Non-static method Service\Collect::period_check() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 29 行.
+NOTIC: [8192] Non-static method Service\Collect::data_check() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 31 行.
+NOTIC: [8192] Non-static method Service\Collect::web_collect() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 25 行.
+NOTIC: [8] Undefined index: 北京快乐8 D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 38 行.
+NOTIC: [8192] Non-static method Service\Collect::data_write() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `lottery` [ RunTime:0.0073s ]
+NOTIC: [8] Undefined index: validate D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `lottery` (`id`,`name`,`issue`,`num1`,`num2`,`num3`,`num4`,`num5`,`num6`,`num7`,`num8`,`num9`,`num10`,`num11`,`num12`,`num13`,`num14`,`num15`,`num16`,`num17`,`num18`,`num19`,`num20`,`runtime`,`createtime`) VALUES ('57fdfb245b2fd','北京快乐8','786185','75','13','64','29','77','11','46','16','70','66','6','68','48','2','20','67','72','12','50','47','2016-10-12 16:55','2016-10-12 16:58:12') [ RunTime:0.0558s ]
+NOTIC: [8192] Non-static method Service\Collect::period_check() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 29 行.
+NOTIC: [8192] Non-static method Service\Collect::data_check() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 31 行.
+NOTIC: [8192] Non-static method Service\Collect::web_collect() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 25 行.
+NOTIC: [8] Undefined index: 北京PK10 D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 38 行.
+NOTIC: [8192] Non-static method Service\Collect::data_write() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 10 D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 70 行.
+NOTIC: [8] Undefined offset: 11 D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 70 行.
+NOTIC: [8] Undefined offset: 12 D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 70 行.
+NOTIC: [8] Undefined offset: 13 D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 70 行.
+NOTIC: [8] Undefined offset: 14 D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 70 行.
+NOTIC: [8] Undefined offset: 15 D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 70 行.
+NOTIC: [8] Undefined offset: 16 D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 70 行.
+NOTIC: [8] Undefined offset: 17 D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 70 行.
+NOTIC: [8] Undefined offset: 18 D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 70 行.
+NOTIC: [8] Undefined offset: 19 D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 70 行.
+NOTIC: [8] Undefined index: validate D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `lottery` (`id`,`name`,`issue`,`num1`,`num2`,`num3`,`num4`,`num5`,`num6`,`num7`,`num8`,`num9`,`num10`,`num11`,`num12`,`num13`,`num14`,`num15`,`num16`,`num17`,`num18`,`num19`,`num20`,`runtime`,`createtime`) VALUES ('57fdfb3e30c91','北京PK10','580757','2','1','6','5','8','7','9','4','3','10',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2016-10-12 16:57','2016-10-12 16:58:38') [ RunTime:0.0543s ]
+NOTIC: [8192] Non-static method Service\Transform::transform() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0449s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `issue` = '786185' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8192] Non-static method Service\Transform::transform_num() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\transform.php 第 41 行.
+NOTIC: [8] Undefined index: validate D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `game` (`id`,`lotteryname`,`name`,`num1`,`num2`,`num3`,`issue`,`peoplenum`,`jackpot`,`deadline`,`runtime`,`statu`,`createtime`) VALUES ('57fdfb3e4ae92','北京快乐8','PC28','9','2','1','786185','0','0','2016-10-12 16:54:00','2016-10-12 16:56:00','2','2016-10-12 16:58:38') [ RunTime:0.0144s ]
+NOTIC: [8192] Non-static method Service\Transform::prewrite() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 51 行.
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `issue` = 786186 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: validate D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `game` (`id`,`lotteryname`,`name`,`issue`,`peoplenum`,`jackpot`,`deadline`,`runtime`,`statu`,`createtime`) VALUES ('57fdfb3e4f0cd','北京快乐8','PC28','786186','0','0','2016-10-12 16:59:00','2016-10-12 17:01:00','0','2016-10-12 16:58:38') [ RunTime:0.0229s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `issue` = 786187 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: validate D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `game` (`id`,`lotteryname`,`name`,`issue`,`peoplenum`,`jackpot`,`deadline`,`runtime`,`statu`,`createtime`) VALUES ('57fdfb3e5548d','北京快乐8','PC28','786187','0','0','2016-10-12 17:04:00','2016-10-12 17:06:00','0','2016-10-12 16:58:38') [ RunTime:0.0415s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `issue` = 786188 LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: validate D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `game` (`id`,`lotteryname`,`name`,`issue`,`peoplenum`,`jackpot`,`deadline`,`runtime`,`statu`,`createtime`) VALUES ('57fdfb3e6039c','北京快乐8','PC28','786188','0','0','2016-10-12 17:09:00','2016-10-12 17:11:00','0','2016-10-12 16:58:38') [ RunTime:0.0404s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000707s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000854s ]
+
+[ 2016-10-12T17:00:53+08:00 ] ::1 /waibao/index.php/Manager/Trigger/trigger
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000692s ]
+NOTIC: [8192] Non-static method Service\Collect::period_check() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 29 行.
+NOTIC: [8192] Non-static method Service\Collect::data_check() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 31 行.
+NOTIC: [8192] Non-static method Service\Collect::web_collect() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 25 行.
+NOTIC: [8192] Non-static method Service\Collect::period_check() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 29 行.
+NOTIC: [8192] Non-static method Service\Collect::data_check() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 31 行.
+NOTIC: [8192] Non-static method Service\Collect::web_collect() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 25 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001078s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001321s ]
+
+[ 2016-10-12T17:01:45+08:00 ] ::1 /waibao/index.php/Manager/Trigger/trigger
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+NOTIC: [8192] Non-static method Service\Collect::period_check() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 29 行.
+NOTIC: [8192] Non-static method Service\Collect::data_check() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 31 行.
+NOTIC: [8192] Non-static method Service\Collect::web_collect() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 25 行.
+NOTIC: [8192] Non-static method Service\Collect::data_write() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `lottery` [ RunTime:0.0016s ]
+NOTIC: [8] Undefined index: validate D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `lottery` (`id`,`name`,`issue`,`num1`,`num2`,`num3`,`num4`,`num5`,`num6`,`num7`,`num8`,`num9`,`num10`,`num11`,`num12`,`num13`,`num14`,`num15`,`num16`,`num17`,`num18`,`num19`,`num20`,`runtime`,`createtime`) VALUES ('57fdfbef9e7d1','北京快乐8','786186','20','71','59','27','4','34','64','8','57','69','25','29','10','77','28','46','21','74','30','40','2016-10-12 17:00','2016-10-12 17:01:35') [ RunTime:0.0584s ]
+NOTIC: [8192] Non-static method Service\Collect::period_check() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 29 行.
+NOTIC: [8192] Non-static method Service\Collect::data_check() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 31 行.
+NOTIC: [8192] Non-static method Service\Collect::web_collect() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 25 行.
+NOTIC: [8192] Non-static method Service\Transform::transform() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `issue` = '786186' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8192] Non-static method Service\Transform::transform_num() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\transform.php 第 27 行.
+SQL: UPDATE `game` SET `num1`='5',`num2`='2',`num3`='6',`statu`='1' WHERE `id` = '57fdfb3e4f0cd' [ RunTime:0.0572s ]
+NOTIC: [8192] Non-static method Service\Transform::prewrite() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 51 行.
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `issue` = 786187 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `issue` = 786188 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `issue` = 786189 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: validate D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `game` (`id`,`lotteryname`,`name`,`issue`,`peoplenum`,`jackpot`,`deadline`,`runtime`,`statu`,`createtime`) VALUES ('57fdfbf96c134','北京快乐8','PC28','786189','0','0','2016-10-12 17:14:00','2016-10-12 17:16:00','0','2016-10-12 17:01:45') [ RunTime:0.0403s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002242s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002835s ]
+
+[ 2016-10-12T17:04:24+08:00 ] ::1 /waibao/index.php/Manager/Trigger/trigger
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000499s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000723s ]
+NOTIC: [8192] Non-static method Service\Collect::period_check() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 29 行.
+NOTIC: [8192] Non-static method Service\Collect::data_check() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 31 行.
+NOTIC: [8192] Non-static method Service\Collect::web_collect() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 25 行.
+NOTIC: [8192] Non-static method Service\Collect::period_check() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 29 行.
+NOTIC: [8192] Non-static method Service\Collect::data_check() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 31 行.
+NOTIC: [8192] Non-static method Service\Collect::web_collect() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 25 行.
+NOTIC: [8192] Non-static method Service\Collect::data_write() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 10 D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 70 行.
+NOTIC: [8] Undefined offset: 11 D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 70 行.
+NOTIC: [8] Undefined offset: 12 D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 70 行.
+NOTIC: [8] Undefined offset: 13 D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 70 行.
+NOTIC: [8] Undefined offset: 14 D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 70 行.
+NOTIC: [8] Undefined offset: 15 D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 70 行.
+NOTIC: [8] Undefined offset: 16 D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 70 行.
+NOTIC: [8] Undefined offset: 17 D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 70 行.
+NOTIC: [8] Undefined offset: 18 D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 70 行.
+NOTIC: [8] Undefined offset: 19 D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 70 行.
+SQL: SHOW COLUMNS FROM `lottery` [ RunTime:0.0046s ]
+NOTIC: [8] Undefined index: validate D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `lottery` (`id`,`name`,`issue`,`num1`,`num2`,`num3`,`num4`,`num5`,`num6`,`num7`,`num8`,`num9`,`num10`,`num11`,`num12`,`num13`,`num14`,`num15`,`num16`,`num17`,`num18`,`num19`,`num20`,`runtime`,`createtime`) VALUES ('57fdfc983260d','北京PK10','580758','8','3','2','1','4','6','7','5','9','10',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2016-10-12 17:02','2016-10-12 17:04:24') [ RunTime:0.1145s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000684s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000845s ]
+
+[ 2016-10-12T17:06:50+08:00 ] ::1 /waibao/index.php/Manager/Trigger/trigger
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000695s ]
+NOTIC: [8192] Non-static method Service\Collect::period_check() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 29 行.
+NOTIC: [8192] Non-static method Service\Collect::data_check() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 31 行.
+NOTIC: [8192] Non-static method Service\Collect::web_collect() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 25 行.
+NOTIC: [8192] Non-static method Service\Collect::data_write() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `lottery` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `lottery` (`id`,`name`,`issue`,`num1`,`num2`,`num3`,`num4`,`num5`,`num6`,`num7`,`num8`,`num9`,`num10`,`num11`,`num12`,`num13`,`num14`,`num15`,`num16`,`num17`,`num18`,`num19`,`num20`,`runtime`,`createtime`) VALUES ('57fdfd277555a','北京快乐8','786187','37','65','77','20','52','46','79','24','59','38','80','18','45','34','74','62','3','69','49','1','2016-10-12 17:05','2016-10-12 17:06:47') [ RunTime:0.0471s ]
+NOTIC: [8192] Non-static method Service\Collect::period_check() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 29 行.
+NOTIC: [8192] Non-static method Service\Collect::data_check() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 31 行.
+NOTIC: [8192] Non-static method Service\Collect::web_collect() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 25 行.
+NOTIC: [8192] Non-static method Service\Transform::transform() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 51 行.
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `issue` = '786187' LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8192] Non-static method Service\Transform::transform_num() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\transform.php 第 27 行.
+SQL: UPDATE `game` SET `num1`='7',`num2`='8',`num3`='7',`statu`='1' WHERE `id` = '57fdfb3e5548d' [ RunTime:0.0566s ]
+NOTIC: [8192] Non-static method Service\Transform::prewrite() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 52 行.
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `issue` = 786188 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `issue` = 786189 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `issue` = 786190 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `game` (`id`,`lotteryname`,`name`,`issue`,`peoplenum`,`jackpot`,`deadline`,`runtime`,`statu`,`createtime`) VALUES ('57fdfd2a81eed','北京快乐8','PC28','786190','0','0','2016-10-12 17:19:00','2016-10-12 17:21:00','0','2016-10-12 17:06:50') [ RunTime:0.0229s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002074s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002512s ]
+
+[ 2016-10-12T17:16:40+08:00 ] ::1 /waibao/index.php/Manager/Trigger/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000938s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000790s ]
+NOTIC: [8192] Non-static method Service\Collect::period_check() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 30 行.
+NOTIC: [8192] Non-static method Service\Collect::data_check() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 32 行.
+NOTIC: [8192] Non-static method Service\Collect::web_collect() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 25 行.
+NOTIC: [8192] Non-static method Service\Collect::data_write() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `lottery` [ RunTime:0.0058s ]
+NOTIC: [8] Undefined index: validate D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `lottery` (`id`,`name`,`issue`,`num1`,`num2`,`num3`,`num4`,`num5`,`num6`,`num7`,`num8`,`num9`,`num10`,`num11`,`num12`,`num13`,`num14`,`num15`,`num16`,`num17`,`num18`,`num19`,`num20`,`runtime`,`createtime`) VALUES ('57fdff3a59d4d','北京快乐8','786189','66','62','4','65','51','2','42','64','70','20','57','49','72','30','59','43','73','18','46','34','2016-10-12 17:15','2016-10-12 17:15:38') [ RunTime:0.0610s ]
+NOTIC: [8192] Non-static method Service\Collect::period_check() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 30 行.
+NOTIC: [8192] Non-static method Service\Collect::data_check() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 32 行.
+NOTIC: [8192] Non-static method Service\Collect::web_collect() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 25 行.
+NOTIC: [8192] Non-static method Service\Collect::data_write() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 10 D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 70 行.
+NOTIC: [8] Undefined offset: 11 D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 70 行.
+NOTIC: [8] Undefined offset: 12 D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 70 行.
+NOTIC: [8] Undefined offset: 13 D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 70 行.
+NOTIC: [8] Undefined offset: 14 D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 70 行.
+NOTIC: [8] Undefined offset: 15 D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 70 行.
+NOTIC: [8] Undefined offset: 16 D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 70 行.
+NOTIC: [8] Undefined offset: 17 D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 70 行.
+NOTIC: [8] Undefined offset: 18 D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 70 行.
+NOTIC: [8] Undefined offset: 19 D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 70 行.
+NOTIC: [8] Undefined index: validate D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `lottery` (`id`,`name`,`issue`,`num1`,`num2`,`num3`,`num4`,`num5`,`num6`,`num7`,`num8`,`num9`,`num10`,`num11`,`num12`,`num13`,`num14`,`num15`,`num16`,`num17`,`num18`,`num19`,`num20`,`runtime`,`createtime`) VALUES ('57fdff3aeef2c','北京PK10','580760','4','1','3','7','5','2','6','10','8','9',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2016-10-12 17:12','2016-10-12 17:15:38') [ RunTime:0.0309s ]
+NOTIC: [8192] Non-static method Service\Transform::transform() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0445s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `issue` = '786189' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8192] Non-static method Service\Transform::transform_num() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\transform.php 第 27 行.
+SQL: UPDATE `game` SET `num1`='0',`num2`='2',`num3`='5',`statu`='1' WHERE `id` = '57fdfbf96c134' [ RunTime:0.0161s ]
+NOTIC: [8192] Non-static method Service\Transform::prewrite() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 53 行.
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `issue` = 786190 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `issue` = 786191 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: validate D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `game` (`id`,`lotteryname`,`name`,`issue`,`peoplenum`,`jackpot`,`deadline`,`runtime`,`statu`,`createtime`) VALUES ('57fdff3b131d8','北京快乐8','PC28','786191','0','0','2016-10-12 17:24:00','2016-10-12 17:26:00','0','2016-10-12 17:15:39') [ RunTime:0.0211s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `issue` = 786192 LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `game` (`id`,`lotteryname`,`name`,`issue`,`peoplenum`,`jackpot`,`deadline`,`runtime`,`statu`,`createtime`) VALUES ('57fdff3b18e7b','北京快乐8','PC28','786192','0','0','2016-10-12 17:29:00','2016-10-12 17:31:00','0','2016-10-12 17:15:39') [ RunTime:0.0200s ]
+NOTIC: [8192] Non-static method Service\Collect::period_check() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 30 行.
+NOTIC: [8192] Non-static method Service\Collect::data_check() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 32 行.
+NOTIC: [8192] Non-static method Service\Collect::web_collect() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 25 行.
+NOTIC: [8192] Non-static method Service\Collect::period_check() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 30 行.
+NOTIC: [8192] Non-static method Service\Collect::data_check() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 32 行.
+NOTIC: [8192] Non-static method Service\Collect::web_collect() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 25 行.
+
+[ 2016-10-12T17:16:57+08:00 ] ::1 /waibao/index.php/Manager/Trigger/trigger
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000747s ]
+NOTIC: [8192] Non-static method Service\Collect::period_check() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 30 行.
+NOTIC: [8192] Non-static method Service\Collect::data_check() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 32 行.
+NOTIC: [8192] Non-static method Service\Collect::web_collect() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 25 行.
+NOTIC: [8192] Non-static method Service\Collect::period_check() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 30 行.
+NOTIC: [8192] Non-static method Service\Collect::data_check() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 32 行.
+NOTIC: [8192] Non-static method Service\Collect::web_collect() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 25 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000928s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001162s ]
+
+[ 2016-10-12T17:38:47+08:00 ] ::1 /waibao/index.php/Manager/Trigger/trigger
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000834s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001093s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001394s ]
+NOTIC: [8192] Non-static method Service\Collect::period_check() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 30 行.
+NOTIC: [8192] Non-static method Service\Collect::data_check() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 32 行.
+NOTIC: [8192] Non-static method Service\Collect::web_collect() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 25 行.
+NOTIC: [8] Undefined index: 北京快乐8 D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 38 行.
+NOTIC: [8192] Non-static method Service\Collect::data_write() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `lottery` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: validate D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `lottery` (`id`,`name`,`issue`,`num1`,`num2`,`num3`,`num4`,`num5`,`num6`,`num7`,`num8`,`num9`,`num10`,`num11`,`num12`,`num13`,`num14`,`num15`,`num16`,`num17`,`num18`,`num19`,`num20`,`runtime`,`createtime`) VALUES ('57fe04a65a1ab','北京快乐8','786193','67','7','42','39','68','26','44','30','70','6','33','27','63','46','4','56','40','2','28','50','2016-10-12 17:35','2016-10-12 17:38:46') [ RunTime:0.0561s ]
+NOTIC: [8192] Non-static method Service\Collect::period_check() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 30 行.
+NOTIC: [8192] Non-static method Service\Collect::data_check() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 32 行.
+NOTIC: [8192] Non-static method Service\Collect::web_collect() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 25 行.
+NOTIC: [8] Undefined index: 北京PK10 D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 38 行.
+NOTIC: [8192] Non-static method Service\Collect::data_write() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 10 D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 70 行.
+NOTIC: [8] Undefined offset: 11 D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 70 行.
+NOTIC: [8] Undefined offset: 12 D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 70 行.
+NOTIC: [8] Undefined offset: 13 D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 70 行.
+NOTIC: [8] Undefined offset: 14 D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 70 行.
+NOTIC: [8] Undefined offset: 15 D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 70 行.
+NOTIC: [8] Undefined offset: 16 D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 70 行.
+NOTIC: [8] Undefined offset: 17 D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 70 行.
+NOTIC: [8] Undefined offset: 18 D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 70 行.
+NOTIC: [8] Undefined offset: 19 D:\wamp64\www\waibao\Application\Manager\Controller\collect.php 第 70 行.
+NOTIC: [8] Undefined index: validate D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `lottery` (`id`,`name`,`issue`,`num1`,`num2`,`num3`,`num4`,`num5`,`num6`,`num7`,`num8`,`num9`,`num10`,`num11`,`num12`,`num13`,`num14`,`num15`,`num16`,`num17`,`num18`,`num19`,`num20`,`runtime`,`createtime`) VALUES ('57fe04a703e41','北京PK10','580765','6','5','7','9','10','1','8','3','2','4',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2016-10-12 17:37','2016-10-12 17:38:47') [ RunTime:0.0530s ]
+NOTIC: [8192] Non-static method Service\Transform::transform() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0448s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `issue` = '786193' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8192] Non-static method Service\Transform::transform_num() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\transform.php 第 41 行.
+NOTIC: [8] Undefined index: validate D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `game` (`id`,`lotteryname`,`name`,`num1`,`num2`,`num3`,`issue`,`peoplenum`,`jackpot`,`deadline`,`runtime`,`statu`,`createtime`) VALUES ('57fe04a71e09a','北京快乐8','PC28','9','0','1','786193','0','0','2016-10-12 17:34:00','2016-10-12 17:36:00','2','2016-10-12 17:38:47') [ RunTime:0.0148s ]
+NOTIC: [8192] Non-static method Service\Transform::prewrite() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 53 行.
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `issue` = 786194 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: validate D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `game` (`id`,`lotteryname`,`name`,`issue`,`peoplenum`,`jackpot`,`deadline`,`runtime`,`statu`,`createtime`) VALUES ('57fe04a72246a','北京快乐8','PC28','786194','0','0','2016-10-12 17:39:00','2016-10-12 17:41:00','0','2016-10-12 17:38:47') [ RunTime:0.0229s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `issue` = 786195 LIMIT 1   [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: validate D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `game` (`id`,`lotteryname`,`name`,`issue`,`peoplenum`,`jackpot`,`deadline`,`runtime`,`statu`,`createtime`) VALUES ('57fe04a728d92','北京快乐8','PC28','786195','0','0','2016-10-12 17:44:00','2016-10-12 17:46:00','0','2016-10-12 17:38:47') [ RunTime:0.0263s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `issue` = 786196 LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: validate D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `game` (`id`,`lotteryname`,`name`,`issue`,`peoplenum`,`jackpot`,`deadline`,`runtime`,`statu`,`createtime`) VALUES ('57fe04a730a03','北京快乐8','PC28','786196','0','0','2016-10-12 17:49:00','2016-10-12 17:51:00','0','2016-10-12 17:38:47') [ RunTime:0.0623s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000688s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000853s ]
+
+[ 2016-10-12T17:39:57+08:00 ] ::1 /waibao/index.php/Manager/Trigger/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000793s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000795s ]
+
+[ 2016-10-12T17:41:30+08:00 ] ::1 /waibao/index.php/Manager/Trigger/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002999s ]
+
+[ 2016-10-12T17:43:03+08:00 ] ::1 /waibao/index.php/Manager/Trigger/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000690s ]
+
+[ 2016-10-12T17:45:47+08:00 ] ::1 /waibao/index.php/Manager/Trigger/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000728s ]
+
+[ 2016-10-12T17:47:30+08:00 ] ::1 /waibao/index.php/Manager/Trigger/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000614s ]
+
+[ 2016-10-12T17:57:43+08:00 ] ::1 /waibao/index.php/Manager/Trigger/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.016891s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.019963s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.020141s ]
+
+[ 2016-10-12T17:58:48+08:00 ] ::1 /waibao/index.php/Manager/Trigger/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000628s ]
+
+[ 2016-10-12T18:02:10+08:00 ] ::1 /waibao/index.php/Manager/Trigger/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002575s ]
+
+[ 2016-10-12T18:02:18+08:00 ] ::1 /waibao/index.php/Manager/Trigger/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+
+[ 2016-10-12T18:02:19+08:00 ] ::1 /waibao/index.php/Manager/Trigger/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000587s ]
+
+[ 2016-10-12T18:02:20+08:00 ] ::1 /waibao/index.php/Manager/Trigger/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000713s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000507s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000651s ]
+
+[ 2016-10-12T18:02:22+08:00 ] ::1 /waibao/index.php/Manager/Trigger/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000585s ]
+
+[ 2016-10-12T18:02:23+08:00 ] ::1 /waibao/index.php/Manager/Trigger/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001010s ]
+
+[ 2016-10-12T18:02:23+08:00 ] ::1 /waibao/index.php/Manager/Trigger/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000692s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000617s ]
+
+[ 2016-10-12T18:02:24+08:00 ] ::1 /waibao/index.php/Manager/Trigger/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000880s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001107s ]
+
+[ 2016-10-12T18:02:25+08:00 ] ::1 /waibao/index.php/Manager/Trigger/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000737s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000830s ]
+
+[ 2016-10-12T18:02:25+08:00 ] ::1 /waibao/index.php/Manager/Trigger/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000683s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000782s ]
+
+[ 2016-10-12T18:02:25+08:00 ] ::1 /waibao/index.php/Manager/Trigger/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000586s ]
+
+[ 2016-10-12T18:02:26+08:00 ] ::1 /waibao/index.php/Manager/Trigger/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000596s ]
+
+[ 2016-10-12T18:02:27+08:00 ] ::1 /waibao/index.php/Manager/Trigger/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000985s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+
+[ 2016-10-12T18:02:27+08:00 ] ::1 /waibao/index.php/Manager/Trigger/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000583s ]
+
+[ 2016-10-12T18:02:27+08:00 ] ::1 /waibao/index.php/Manager/Trigger/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000595s ]
+
+[ 2016-10-12T18:02:27+08:00 ] ::1 /waibao/index.php/Manager/Trigger/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000587s ]
+
+[ 2016-10-12T18:02:28+08:00 ] ::1 /waibao/index.php/Manager/Trigger/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000676s ]
+
+[ 2016-10-12T18:02:28+08:00 ] ::1 /waibao/index.php/Manager/Trigger/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000593s ]
+
+[ 2016-10-12T18:02:28+08:00 ] ::1 /waibao/index.php/Manager/Trigger/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000597s ]
+
+[ 2016-10-12T18:02:28+08:00 ] ::1 /waibao/index.php/Manager/Trigger/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000646s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+
+[ 2016-10-12T18:02:28+08:00 ] ::1 /waibao/index.php/Manager/Trigger/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000770s ]
+
+[ 2016-10-12T18:02:29+08:00 ] ::1 /waibao/index.php/Manager/Trigger/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000826s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000823s ]
+
+[ 2016-10-12T18:02:29+08:00 ] ::1 /waibao/index.php/Manager/Trigger/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000598s ]
+
