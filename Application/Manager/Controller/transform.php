@@ -4,7 +4,36 @@ namespace Service;
 header("Content-Type: text/html;charset=utf-8");
 
 class Transform {
-	// 写入已开奖的游戏数据
+	// 计算号码开奖的游戏数据
+	public function calculate($data,$config){		
+		$Game = M('Game');
+		unset($condition);
+		$condition['name'] = array('eq',$config['name']);
+		$condition['issue'] = array('eq',$data['issue']);
+		$gameData = $Game->where($condition)->find();
+		
+		if($gameData) {
+			$gameData['statu'] = 2;
+			$Game->save($gameData);
+			
+			$gameNum = $gameData['num1']+$gameData['num2']+$gameData['num3'];
+			$gameOdds = round($gameData['jackpot']/$gameData['money'.$gameNum],2);
+			$Guess = M("Guess");
+			unset($condition);
+			$condition['gamename'] = array('eq',$config['name']);
+			$condition['gameissue'] = array('eq',$data['issue']);
+			$condition['money'.$gameNum] = array('neq',0);
+			$guessData = $Guess->where($condition)->select();
+			if($guessData){
+				foreach ($guessData as $key=>$value) {
+					$value['output'] = $value['money'.$gameNum]*$gameOdds;
+					$Guess->save($value);
+				}
+			}
+		}
+	}
+	
+	// 写入已经开奖的游戏数据
 	public function transform($data,$config){		
 		$Game = M('Game');
 		$condition['name'] = array('eq',$config['name']);
@@ -19,7 +48,7 @@ class Transform {
 				$readyData[$index] = $value;
 			}
 			if($gameData['statu']==0){
-				$readyData['statu'] = 1;
+				$readyData['statu'] = 2;
 			}
 			$Game->save($readyData);
 		} else {
@@ -48,7 +77,7 @@ class Transform {
 		}
 	}
 	
-	// 写入未开奖的游戏数据
+	// 写入尚未开奖的游戏数据
 	public function prewrite($data,$config){
 		$Game = M('Game');
 		$condition['name'] = array('eq',$config['name']);

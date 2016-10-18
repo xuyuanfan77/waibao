@@ -174,9 +174,11 @@
 					<?php if($data['statu'] == 2): ?><td><span class="green">0</span><i class="kdou"></i></td>
 					<?php else: ?>
 						<td>-</td><?php endif; ?>
-					<?php if($data['statu'] == 2): ?><td><a class="go-ta">已开奖</a></td>
+					<?php if($data['statu'] == 0): ?><td><a href="<?php echo U('Guess/index', array('issue'=>$data['issue']));?>" class="go-jc jc-pc28">竞猜</a></td>
+					<?php elseif($data['statu'] == 1): ?>
+						<td><a class="go-ta">正在开奖</a></td>
 					<?php else: ?>
-						<td><a href="<?php echo U('Guess/index', array('issue'=>$data['issue']));?>" class="go-jc jc-pc28">竞猜</a></td><?php endif; ?>
+						<td><a class="go-ta">已开奖</a></td><?php endif; ?>
 				</tr><?php endforeach; endif; ?>  
 		</tbody>
 	</table>

@@ -33,6 +33,11 @@ class NumController extends Controller {
 		$pageNum = $this->getPageNum();
 		$condition['name'] = array('eq','PC28');
 		$gameData = $Game->where($condition)->page($pageNum .',20')->order('issue desc')->select();
+		foreach ($gameData as $key=>$value) {
+			if($value['statu']==2 && $value['runtime'] > date('Y-m-d H:i:s')){
+				$gameData[$key]['statu']=1;
+			}
+		}
 		$this->assign('gameData',$gameData);
 	}
 	

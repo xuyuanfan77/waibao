@@ -50,6 +50,7 @@ class TriggerController extends Controller {
 			$flag = $this->cacheData[$config['lotteryname']]['flag'];
 			if($data && $flag){
 				Transform::transform($data,$config);
+				Transform::calculate($data,$config);
 				Transform::prewrite($data,$config);
 			}
 		}

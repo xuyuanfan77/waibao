@@ -210,7 +210,7 @@
 
 					<div class="across clear-fix" id="panel">
 						<div class="across_par1 ">
-							<?php $__FOR_START_4572__=0;$__FOR_END_4572__=10;for($i=$__FOR_START_4572__;$i < $__FOR_END_4572__;$i+=1){ ?><div class="across_par1_no clear-fix">
+							<?php $__FOR_START_13543__=0;$__FOR_END_13543__=10;for($i=$__FOR_START_13543__;$i < $__FOR_END_13543__;$i+=1){ ?><div class="across_par1_no clear-fix">
 									<div class="across_par1_no_left">
 											<div id="click_number<?php echo ($i); ?>" class="click_number no_left_bg" style="cursor: pointer;"><?php echo ($i); ?></div>
 									</div>
@@ -236,7 +236,7 @@
 								</div><?php } ?>
 						</div>
 						<div class="across_par1 ">
-							<?php $__FOR_START_21221__=10;$__FOR_END_21221__=18;for($i=$__FOR_START_21221__;$i < $__FOR_END_21221__;$i+=1){ ?><div class="across_par1_no clear-fix">
+							<?php $__FOR_START_6292__=10;$__FOR_END_6292__=18;for($i=$__FOR_START_6292__;$i < $__FOR_END_6292__;$i+=1){ ?><div class="across_par1_no clear-fix">
 									<div class="across_par1_no_left">
 											<div id="click_number<?php echo ($i); ?>" class="click_number no_left_bg" style="cursor: pointer;"><?php echo ($i); ?></div>
 									</div>
@@ -254,7 +254,7 @@
 								</div><?php } ?>
 						</div>
 						<div class="across_par1 ">
-							<?php $__FOR_START_16826__=18;$__FOR_END_16826__=28;for($i=$__FOR_START_16826__;$i < $__FOR_END_16826__;$i+=1){ ?><div class="across_par1_no clear-fix">
+							<?php $__FOR_START_16189__=18;$__FOR_END_16189__=28;for($i=$__FOR_START_16189__;$i < $__FOR_END_16189__;$i+=1){ ?><div class="across_par1_no clear-fix">
 									<div class="across_par1_no_left">
 											<div id="click_number<?php echo ($i); ?>" class="click_number no_left_bg" style="cursor: pointer;"><?php echo ($i); ?></div>
 									</div>

@@ -181,10 +181,12 @@
 					<else />
 						<td>-</td>
 					</if>
-					<if condition="$data['statu'] eq 2">
-						<td><a class="go-ta">已开奖</a></td>
-					<else />
+					<if condition="$data['statu'] eq 0">
 						<td><a href="{:U('Guess/index', array('issue'=>$data['issue']))}" class="go-jc jc-pc28">竞猜</a></td>
+					<elseif condition="$data['statu'] eq 1"/>
+						<td><a class="go-ta">正在开奖</a></td>
+					<else />
+						<td><a class="go-ta">已开奖</a></td>
 					</if>
 				</tr>
 			</foreach>  
