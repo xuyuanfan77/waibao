@@ -162,14 +162,14 @@
 					</div>
 						<div class="kaijiang-time-box">
 							<div class="J_kjTimeBox">
-								<p class="kaijiang-time-text mar-t">距离第 <b><?php echo ($tipData['issue']+1); ?></b> 期竞猜截止还有 <b class="J_jcTime" data-lasttime="97">42</b> 秒 开奖还有 <b class="J_kjTime" data-lasttime="197">142</b> 秒 </p>
+								<p class="kaijiang-time-text mar-t">距离第 <b><?php echo ($tipData['issue']+1); ?></b> 期竞猜截止还有 <b class="J_jcTime" data-lasttime="<?php echo ($tipData['deadlinecd']); ?>"><?php echo ($tipData['deadlinecd']); ?></b> 秒 开奖还有 <b class="J_kjTime" data-lasttime="<?php echo ($tipData['runtimecd']); ?>"><?php echo ($tipData['runtimecd']); ?></b> 秒 </p>
 									<p class="kaijiang-time-text">
 										第<strong><?php echo ($tipData["issue"]); ?></strong>期开奖结果：<?php echo ($tipData["num1"]); ?>+<?php echo ($tipData["num2"]); ?>+<?php echo ($tipData["num3"]); ?>=<span class="now-jieguo"><?php echo ($tipData['num1']+$tipData['num2']+$tipData['num3']); ?></span>
 											<a target="_blank" href="http://www.bwlc.gov.cn/bulletin/keno.html">[官方查询]</a>
 										<a href="http://game3799.com/lucky28/guide">[游戏帮助]</a>
 									</p>
 							</div>
-							<p class="kaijiang-time-text line-h J_kjIng" style="display: none">第<b>785252</b>期正在开奖中！</p>
+							<p class="kaijiang-time-text line-h J_kjIng" style="display: none">第<b><?php echo ($tipData['issue']+1); ?></b>期正在开奖中！</p>
 						</div>
 					<div class="server-time-box">
 						<a class="shengyin-ts shengyin-ts-close" href="http://game3799.com/Lucky28/index#"></a>
@@ -210,7 +210,7 @@
 
 					<div class="across clear-fix" id="panel">
 						<div class="across_par1 ">
-							<?php $__FOR_START_13543__=0;$__FOR_END_13543__=10;for($i=$__FOR_START_13543__;$i < $__FOR_END_13543__;$i+=1){ ?><div class="across_par1_no clear-fix">
+							<?php $__FOR_START_32304__=0;$__FOR_END_32304__=10;for($i=$__FOR_START_32304__;$i < $__FOR_END_32304__;$i+=1){ ?><div class="across_par1_no clear-fix">
 									<div class="across_par1_no_left">
 											<div id="click_number<?php echo ($i); ?>" class="click_number no_left_bg" style="cursor: pointer;"><?php echo ($i); ?></div>
 									</div>
@@ -236,7 +236,7 @@
 								</div><?php } ?>
 						</div>
 						<div class="across_par1 ">
-							<?php $__FOR_START_6292__=10;$__FOR_END_6292__=18;for($i=$__FOR_START_6292__;$i < $__FOR_END_6292__;$i+=1){ ?><div class="across_par1_no clear-fix">
+							<?php $__FOR_START_2729__=10;$__FOR_END_2729__=18;for($i=$__FOR_START_2729__;$i < $__FOR_END_2729__;$i+=1){ ?><div class="across_par1_no clear-fix">
 									<div class="across_par1_no_left">
 											<div id="click_number<?php echo ($i); ?>" class="click_number no_left_bg" style="cursor: pointer;"><?php echo ($i); ?></div>
 									</div>
@@ -254,7 +254,7 @@
 								</div><?php } ?>
 						</div>
 						<div class="across_par1 ">
-							<?php $__FOR_START_16189__=18;$__FOR_END_16189__=28;for($i=$__FOR_START_16189__;$i < $__FOR_END_16189__;$i+=1){ ?><div class="across_par1_no clear-fix">
+							<?php $__FOR_START_14382__=18;$__FOR_END_14382__=28;for($i=$__FOR_START_14382__;$i < $__FOR_END_14382__;$i+=1){ ?><div class="across_par1_no clear-fix">
 									<div class="across_par1_no_left">
 											<div id="click_number<?php echo ($i); ?>" class="click_number no_left_bg" style="cursor: pointer;"><?php echo ($i); ?></div>
 									</div>

@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50714
 File Encoding         : 65001
 
-Date: 2016-10-18 17:21:31
+Date: 2016-10-20 15:51:35
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -215,11 +215,11 @@ CREATE TABLE `user` (
 -- ----------------------------
 -- Records of user
 -- ----------------------------
-INSERT INTO `user` VALUES ('57d1049d88231', 'xuyuanfan11', '123', '100000000', '2016-09-08 14:26:37');
-INSERT INTO `user` VALUES ('57d10a4c9abbd', 'xuyuanfan1', '123', '99858200', '2016-09-08 14:50:52');
+INSERT INTO `user` VALUES ('57d1049d88231', 'xuyuanfan5', '123', '100000000', '2016-09-08 14:26:37');
+INSERT INTO `user` VALUES ('57d10a4c9abbd', 'xuyuanfan1', '123', '100000000', '2016-09-08 14:50:52');
 INSERT INTO `user` VALUES ('57d10a83b5acc', 'xuyuanfan2', '123', '100000000', '2016-09-08 14:51:47');
-INSERT INTO `user` VALUES ('57d10a9ba983f', 'xuyuanfan3', '123', '100000007', '2016-09-08 14:52:11');
-INSERT INTO `user` VALUES ('57d10abaf2f2d', 'xuyuanfan4', '123', '79992000', '2016-09-08 14:52:42');
+INSERT INTO `user` VALUES ('57d10a9ba983f', 'xuyuanfan3', '123', '100000000', '2016-09-08 14:52:11');
+INSERT INTO `user` VALUES ('57d10abaf2f2d', 'xuyuanfan4', '123', '100000000', '2016-09-08 14:52:42');
 INSERT INTO `user` VALUES ('5800e148ab58f', 'root', '123456', '100000000', '2016-10-14 21:44:40');
 
 -- ----------------------------

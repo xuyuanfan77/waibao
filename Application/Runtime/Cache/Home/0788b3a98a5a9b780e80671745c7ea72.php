@@ -102,7 +102,7 @@
                 <div class="two-nav-head">
                     <a class="head-list sel-color"><strong>PC28首页</strong></a>
                     <p class="my-touzhu-box clear-fix">
-                        <a class="my-touzhu-list " href="http://game3799.com/lucky28/mybetstat/1/pages/1">我的投注</a>  
+                        <a class="my-touzhu-list " href="<?php echo U('Record/index');?>">我的投注</a>  
                     </p>
                 </div>
             </div>
@@ -163,19 +163,21 @@
 					<td><?php echo ($data["issue"]); ?></td>
 					<td><?php echo ($data["runtime"]); ?></td>
 					<?php if($data['statu'] == 0): ?><td><span class="js-qus qus-pc28"></span></td>
-					<?php elseif($data['statu'] == 2): ?>
+					<?php elseif($data['statu'] == 3): ?>
 						<td><?php echo ($data["num1"]); ?>+<?php echo ($data["num2"]); ?>+<?php echo ($data["num3"]); ?>=<span class="js-ball b-pc28"><?php echo ($data['num1']+$data['num2']+$data['num3']); ?></span><a target="&#39;_blank&#39;" href="http://game3799.com/lucky28/verification/785251" class="go-yz">验证</a></td>
 					<?php else: ?>
 						<td><span class="js-qus qus-pc28"></span></td><?php endif; ?>
 					<td><?php echo ($data["jackpot"]); ?><i class="kdou"></i></td>
-					<?php if($data['statu'] == 2): ?><td><?php echo ($data["peoplenum"]); ?></td>
+					<?php if($data['statu'] == 3): ?><td><?php echo ($data["peoplenum"]); ?></td>
 					<?php else: ?>
 						<td>-</td><?php endif; ?>
-					<?php if($data['statu'] == 2): ?><td><span class="green">0</span><i class="kdou"></i></td>
+					<?php if($data['statu'] == 3): ?><td><span class="green">0</span><i class="kdou"></i></td>
 					<?php else: ?>
 						<td>-</td><?php endif; ?>
 					<?php if($data['statu'] == 0): ?><td><a href="<?php echo U('Guess/index', array('issue'=>$data['issue']));?>" class="go-jc jc-pc28">竞猜</a></td>
 					<?php elseif($data['statu'] == 1): ?>
+						<td><a class="go-ta">截止竞猜</a></td>
+					<?php elseif($data['statu'] == 2): ?>
 						<td><a class="go-ta">正在开奖</a></td>
 					<?php else: ?>
 						<td><a class="go-ta">已开奖</a></td><?php endif; ?>

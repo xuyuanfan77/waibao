@@ -13,7 +13,7 @@ class Transform {
 		$gameData = $Game->where($condition)->find();
 		
 		if($gameData) {
-			$gameData['statu'] = 2;
+			$gameData['statu'] = 3;
 			$Game->save($gameData);
 			
 			$gameNum = $gameData['num1']+$gameData['num2']+$gameData['num3'];
@@ -28,6 +28,17 @@ class Transform {
 				foreach ($guessData as $key=>$value) {
 					$value['output'] = $value['money'.$gameNum]*$gameOdds;
 					$Guess->save($value);
+					
+					$User = M('User');
+					unset($condition);
+					$condition['id'] = array('eq',$value['userid']);
+					$userData = $User->where($condition)->find();
+					//dump($condition);
+					if($userData){
+						$userData['money']=$userData['money']+$value['output'];
+						//dump($userData);
+						$User->save($userData);
+					}
 				}
 			}
 		}
@@ -48,7 +59,7 @@ class Transform {
 				$readyData[$index] = $value;
 			}
 			if($gameData['statu']==0){
-				$readyData['statu'] = 2;
+				$readyData['statu'] = 3;
 			}
 			$Game->save($readyData);
 		} else {
@@ -68,7 +79,7 @@ class Transform {
 			$runtime = strtotime($data['runtime']);
 			$readyData['deadline'] = date('Y-m-d H:i:s',strtotime('-'.$config['aheaddeadline'].' seconds',$runtime));
 			$readyData['runtime'] = date('Y-m-d H:i:s',strtotime('+'.$config['delayruntime'].' seconds',$runtime));
-			$readyData['statu'] = 2;
+			$readyData['statu'] = 3;
 			$readyData['createtime'] = date('Y-m-d H:i:s');
 			
 			if ($Game->create($readyData)){

@@ -15,25 +15,28 @@
         }
     </script>
 
-    <link rel="stylesheet" href="__PUBLIC__/front/game-comp.css">
+	<link rel="stylesheet" href="__PUBLIC__/front/game-comp.css">
     <link rel="stylesheet" href="__PUBLIC__/front/guess.css">
+	<link rel="stylesheet" href="__PUBLIC__/front/mybet.css">
+    <script src="__PUBLIC__/front/highcharts.js"></script>
+    <script src="__PUBLIC__/front/exporting.js"></script>
     <link rel="icon" type="image/png" href="http://image.game3799.com/19dou/img/favicon.png">
 
 
 </head>
 <body>
 
-        <div class="site-nav">
-            <div class="width-1000">
-				<form action="http://game3799.com/Account/LogOff" id="logoutFormTop" method="post">
-					<p class="site-nav-con">
-						你好，<span class="user-name-color">{$userData['username']}</span>元宝：0<span class="ingot"></span><a class="ingot-c">充</a>金豆：{$userData['money']}<span class="kdou"></span><a class="kdou-c">兑</a><a class="login-out" href="{:U('Index/index', array('page'=>'login'))}">[退出]</a>
-						<a class="site-nav-list" href="http://game3799.com/Home/Desktop">保存到桌面</a>
-						<a class="site-nav-list bor-r J_shoucang" href="http://game3799.com/Lucky28/index#">收藏本站</a>
-					</p>
-				</form>
-			</div>
-        </div>
+	<div class="site-nav">
+		<div class="width-1000">
+			<form action="http://game3799.com/Account/LogOff" id="logoutFormTop" method="post">
+				<p class="site-nav-con">
+					你好，<span class="user-name-color">{$userData['username']}</span>元宝：0<span class="ingot"></span><a class="ingot-c">充</a>金豆：{$userData['money']}<span class="kdou"></span><a class="kdou-c">兑</a><a class="login-out" href="{:U('Index/index', array('page'=>'login'))}">[退出]</a>
+					<a class="site-nav-list" href="http://game3799.com/Home/Desktop">保存到桌面</a>
+					<a class="site-nav-list bor-r J_shoucang" href="http://game3799.com/Lucky28/index#">收藏本站</a>
+				</p>
+			</form>
+		</div>
+	</div>
     <div class="main">
         <div class="width-1000 clear-fix">
             <!-- 导航  start	 -->
@@ -139,69 +142,61 @@
 </div>
 <!-- 公正提示 -->
 
-
-
 <!-- 导航  end	 -->
 
 <!-- 内容  start	-->
-
-<div class="guess-box pc28-box">
-    <table>
-        <tbody>
-			<tr>
-				<th>游戏期号</th>
-				<th>开奖时间</th>
-				<th>开奖号码</th>
-				
-				<th>奖池总额</th>
-				<th>中奖人数</th>
-				<th>盈亏</th>
-				<th>参与</th>
-			</tr>
-
-			<foreach name="gameData" item="data" >
-				<tr>
-					<td>{$data.issue}</td>
-					<td>{$data.runtime}</td>
-					<if condition="$data['statu'] eq 0">
-						<td><span class="js-qus qus-pc28"></span></td>
-					<elseif condition="$data['statu'] eq 3"/>
-						<td>{$data.num1}+{$data.num2}+{$data.num3}=<span class="js-ball b-pc28">{$data['num1']+$data['num2']+$data['num3']}</span><a target="&#39;_blank&#39;" href="http://game3799.com/lucky28/verification/785251" class="go-yz">验证</a></td>
-					<else />
-						<td><span class="js-qus qus-pc28"></span></td>
-					</if>
-					<td>{$data.jackpot}<i class="kdou"></i></td>
-					<if condition="$data['statu'] eq 3">
-						<td>{$data.peoplenum}</td>
-					<else />
-						<td>-</td>
-					</if>
-					<if condition="$data['statu'] eq 3">
-						<td><span class="green">0</span><i class="kdou"></i></td>
-					<else />
-						<td>-</td>
-					</if>
-					<if condition="$data['statu'] eq 0">
-						<td><a href="{:U('Guess/index', array('issue'=>$data['issue']))}" class="go-jc jc-pc28">竞猜</a></td>
-					<elseif condition="$data['statu'] eq 1"/>
-						<td><a class="go-ta">截止竞猜</a></td>
-					<elseif condition="$data['statu'] eq 2"/>
-						<td><a class="go-ta">正在开奖</a></td>
-					<else />
-						<td><a class="go-ta">已开奖</a></td>
-					</if>
-				</tr>
-			</foreach>  
-		</tbody>
-	</table>
+<div class="td-box">
+    <div class="bet-ttlbox clear-fix">
+        <h2 class="bt-h2">我的投注</h2>
+        <a href="{:U('Num/index')}" class="bt-a">继续竞猜 &gt;</a>
+    </div>
 </div>
+    <div class="array-box pc28-box">
+        <div class="amain-box" id="amain" data-url="/lucky28/automodel">
+            <table>
+                <tbody>
+					<tr>
+						<th>期号</th>
+						<th>开奖时间</th>
+						<th>竞猜结果</th>
+						<th>投入金豆</th>
+						<th>获得金豆</th>
+						<th>该期盈亏</th>
+						<!--th>操作</th-->
+					</tr>
+					<foreach name="guessData" item="data" >
+						<tr>
+							<td>{$data.gameissue}</td>
+							<td>{$data.runtime}</td>
+							<td>{$data.num1}+{$data.num2}+{$data.num3}={$data['num1']+$data['num2']+$data['num3']}</td>
+							<td>{$data.input}</td>
+							<td>{$data.output}</td>
+							<td>{$data['output']-$data['input']}</td>
+						</tr>
+					</foreach> 
+				</tbody>
+			</table>
+        </div>
+    </div>
 <!-- 内容  end	 -->
-
-    <div class="list-page-box clear-fix">
+	<div class="list-page-box clear-fix">
 		{$pageShow}
     </div>
 
-<div id="sound_bet" style="display: none"></div>
+
+	<div id="sound_bet" style="display: none"></div>
+
+	<div class="fuceng-html-box">
+		<div class="fuceng-box">
+			<div class="fc-ttl-box clear-fix">
+				<h6 class="ttl-sp">提示信息</h6>
+				<a href="#" class="fc-close J_closefc"></a>
+			</div>
+			<div class="fc-main-box">
+			</div>
+		</div>
+	</div>
+
 
         </div>
     </div>
@@ -258,7 +253,7 @@
     </style>
    
     <script src="__PUBLIC__/front/common.js"></script>
-    <script src="__PUBLIC__/front/touzhu.js"></script>
+    <script src="__PUBLIC__/front/mybet.js"></script>
     <script src="__PUBLIC__/front/swfobject.js"></script>
 </body>
 </html>

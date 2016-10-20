@@ -237,15 +237,19 @@ $(document).ready(function(){
 				}
 				$(".J_kjTimeBox").hide();
 				$(".J_kjIng").show();
-
-				if(reload_num == 0){
-					setTimeout(function(){
-						window.location.reload();
-					},15000);
-					setTimeout(function(){
-						window.location.reload();
-					},70000);
-				}
+					
+				setTimeout(function(){
+					window.location.reload();
+				},5000);
+				
+				//if(reload_num == 0){
+				//	setTimeout(function(){
+				//		window.location.reload();
+				//	},15000);
+				//	setTimeout(function(){
+				//		window.location.reload();
+				//	},70000);
+				//}
 			}
 		}
 		_cDown1();

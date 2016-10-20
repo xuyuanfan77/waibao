@@ -2,7 +2,8 @@
 namespace Home\Controller;
 use Think\Controller;
 header("Content-Type: text/html;charset=utf-8");
-class NumController extends Controller {
+class RecordController extends Controller {
+
 	//初始化用户数据
 	private function initUser() {
 		$User = M('User');
@@ -38,20 +39,14 @@ class NumController extends Controller {
 	
 	//初始化内容
 	private function initContent() {
-		$Game = M('Game');
+		$Guess = D('GuessView');
+		unset($condition);
+		$condition['userid'] = array('eq',session('userId'));
+		$condition['gamename'] = array('eq','PC28');
+		$condition['statu'] = array('eq',3);
 		$pageNum = $this->getPageNum();
-		$condition['name'] = array('eq','PC28');
-		$gameData = $Game->where($condition)->page($pageNum .',20')->order('issue desc')->select();
-		foreach ($gameData as $key=>$value) {
-			if($value['statu']==0){
-				if($value['runtime'] < date('Y-m-d H:i:s')){
-					$gameData[$key]['statu']=2;
-				}elseif($value['deadline'] < date('Y-m-d H:i:s')){
-					$gameData[$key]['statu']=1;
-				}
-			}
-		}
-		$this->assign('gameData',$gameData);
+		$guessData = $Guess->where($condition)->page($pageNum .',10')->order('gameissue desc')->select();
+		$this->assign('guessData',$guessData);
 	}
 	
 	//获取页数
@@ -66,10 +61,12 @@ class NumController extends Controller {
 	
 	//初始化分页
 	private function initPage() {
-		$Game = M('Game');
-		$condition['name'] = array('eq','PC28');
-		$gameCount = $Game->where($condition)->count();
-		$Page = new \Think\Page($gameCount,20);
+		$Guess = D('GuessView');
+		$condition['userid'] = array('eq',session('userId'));
+		$condition['gamename'] = array('eq','PC28');
+		$condition['statu'] = array('eq',3);
+		$guessCount = $Guess->where($condition)->count();
+		$Page = new \Think\Page($guessCount,10);
 		foreach($condition as $key=>$val) {
 			$Page->parameter[$key] = urlencode($val);
 		}

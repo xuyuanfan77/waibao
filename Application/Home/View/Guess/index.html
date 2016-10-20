@@ -162,14 +162,14 @@
 					</div>
 						<div class="kaijiang-time-box">
 							<div class="J_kjTimeBox">
-								<p class="kaijiang-time-text mar-t">距离第 <b>{$tipData['issue']+1}</b> 期竞猜截止还有 <b class="J_jcTime" data-lasttime="97">42</b> 秒 开奖还有 <b class="J_kjTime" data-lasttime="197">142</b> 秒 </p>
+								<p class="kaijiang-time-text mar-t">距离第 <b>{$tipData['issue']+1}</b> 期竞猜截止还有 <b class="J_jcTime" data-lasttime="{$tipData['deadlinecd']}">{$tipData['deadlinecd']}</b> 秒 开奖还有 <b class="J_kjTime" data-lasttime="{$tipData['runtimecd']}">{$tipData['runtimecd']}</b> 秒 </p>
 									<p class="kaijiang-time-text">
 										第<strong>{$tipData.issue}</strong>期开奖结果：{$tipData.num1}+{$tipData.num2}+{$tipData.num3}=<span class="now-jieguo">{$tipData['num1']+$tipData['num2']+$tipData['num3']}</span>
 											<a target="_blank" href="http://www.bwlc.gov.cn/bulletin/keno.html">[官方查询]</a>
 										<a href="http://game3799.com/lucky28/guide">[游戏帮助]</a>
 									</p>
 							</div>
-							<p class="kaijiang-time-text line-h J_kjIng" style="display: none">第<b>785252</b>期正在开奖中！</p>
+							<p class="kaijiang-time-text line-h J_kjIng" style="display: none">第<b>{$tipData['issue']+1}</b>期正在开奖中！</p>
 						</div>
 					<div class="server-time-box">
 						<a class="shengyin-ts shengyin-ts-close" href="http://game3799.com/Lucky28/index#"></a>
