@@ -3,6 +3,16 @@ namespace Home\Controller;
 use Think\Controller;
 header("Content-Type: text/html;charset=utf-8");
 class GuessController extends Controller {
+	//获取游戏类型
+	private function getGameStyle() {
+		if($_GET['game']) {
+			$gameStyle = $_GET['game'];
+		} else {
+			$gameStyle = 'pc28';
+		}
+		return $gameStyle;
+	}
+	
 	//初始化用户数据
 	private function initUser() {
 		$User = M('User');
@@ -14,11 +24,11 @@ class GuessController extends Controller {
 	//初始化提示
 	private function initTip() {
 		$Game = M('Game');
-		$condition1['name'] = array('eq','PC28');
+		$condition1['name'] = array('eq',$this->getGameStyle());
 		$condition1['statu'] = array('eq',3);
 		$tipData = $Game->where($condition1)->order('issue desc')->find();
 		
-		$condition2['name'] = array('eq','PC28');
+		$condition2['name'] = array('eq',$this->getGameStyle());
 		$condition2['issue'] = array('eq',$tipData['issue']+1);
 		$nextIssueData = $Game->where($condition2)->find();
 		$deadlinecd = strtotime($nextIssueData['deadline'])-strtotime(date('Y-m-d H:i:s'));
@@ -39,7 +49,7 @@ class GuessController extends Controller {
 	//初始化内容
 	private function initContent() {
 		$Game = M('Game');
-		$condition['name'] = array('eq','PC28');
+		$condition['name'] = array('eq',$this->getGameStyle());
 		$condition['issue'] = array('eq',$_GET['issue']);
 		$gameData = $Game->where($condition)->find();
 		for($index=0;$index<=27;$index++) {
@@ -52,7 +62,7 @@ class GuessController extends Controller {
 		}
 		$this->assign('gameOdds',$gameOdds);
 		
-		$condition['name'] = array('eq','PC28');
+		$condition['name'] = array('eq',$this->getGameStyle());
 		$condition['issue'] = array('eq',$_GET['issue']-1);
 		$preGameData = $Game->where($condition)->find();
 		for($index=0;$index<=27;$index++) {
@@ -73,7 +83,7 @@ class GuessController extends Controller {
 			$this->initUser();
 			$this->initTip();
 			$this->initContent();
-			$this->display();
+			$this->display('Guess:'.$this->getGameStyle());
 		} else {
 			$this->redirect('Index/index', array('page'=>'login'));
 		}
@@ -84,7 +94,7 @@ class GuessController extends Controller {
 		//检测游戏是否过期
 		$Game = M("Game");
 		unset($condition);
-		$condition['name'] = 'PC28';
+		$condition['name'] = $_POST['game_style'];
 		$condition['issue'] = $_POST['period_no'];
 		$condition['statu'] = 3;
 		$gameData = $Game->where($condition)->find();
@@ -112,7 +122,7 @@ class GuessController extends Controller {
 		$Guess = M('Guess');
 		$guessData['id'] = uniqid();
 		$guessData['userid'] = session('userId');
-		$guessData['gamename'] = 'PC28';
+		$guessData['gamename'] = $_POST['game_style'];
 		$guessData['gameissue'] = $_POST['period_no'];
 		$bet_num = explode(',',$_POST['bet_num']);
 		for($index=0;$index<28;$index++) {
@@ -127,7 +137,7 @@ class GuessController extends Controller {
 		//修改游戏表
 		$Game = M("Game");																	//修改每个数字的下注
 		unset($condition);
-		$condition['name'] = 'PC28';
+		$condition['name'] = $_POST['game_style'];
 		$condition['issue'] = $_POST['period_no'];
 		$gameData = $Game->where($condition)->find();
 		$bet_num = explode(',',$_POST['bet_num']);
@@ -138,7 +148,7 @@ class GuessController extends Controller {
 		$Guess = M("Guess");																//修改总人数
 		unset($condition);
 		$condition['userid'] = session('userId');
-		$condition['gamename'] = 'PC28';
+		$condition['gamename'] = $_POST['game_style'];
 		$condition['gameissue'] = $_POST['period_no'];
 		$guessData = $Guess->where($condition)->select();
 		if(count($guessData)==1){
@@ -150,7 +160,7 @@ class GuessController extends Controller {
 
 		$data['code_num'] = 1;
 		$data['msg'] = '投注成功！';
-		$data['reload_url'] = U('Num/index');
+		$data['reload_url'] = U('Num/index', array('game'=>$_POST['game_style']));
 		$this->ajaxReturn($data);
 	}
 }

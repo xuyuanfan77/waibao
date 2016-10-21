@@ -150,50 +150,8 @@
         <h2 class="bt-h2">我的投注</h2>
         <a href="<?php echo U('Num/index');?>" class="bt-a">继续竞猜 &gt;</a>
     </div>
-    <!--div class="trend-box clear-fix"-->
-        <!-- 投注 走势 strat -->
-        <!--div id="container" class="trend-lf" data-bet="[['10-01','10-02','10-03','10-04','10-05','10-06','10-07'],['0','0','0','0','0','0','0']]" data-highcharts-chart="0"><div class="highcharts-container" id="highcharts-0" style="position: relative; overflow: hidden; width: 657px; height: 190px; text-align: left; line-height: normal; z-index: 0; left: 0.5px; top: 0px;"><svg version="1.1" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="657" height="190"><desc>Created with Highcharts 4.1.3</desc><defs><clipPath id="highcharts-1"><rect x="0" y="0" width="563" height="142"></rect></clipPath></defs><rect x="0" y="0" width="657" height="190" strokeWidth="0" fill="#FFFFFF" class=" highcharts-background"></rect><path fill="none" d="M 35 81.5 L 598 81.5" stroke="#808080" stroke-width="1"></path><g class="highcharts-button" style="cursor:default;" stroke-linecap="round" transform="translate(623,10)"><title>Chart context menu</title><rect x="0.5" y="0.5" width="24" height="22" strokeWidth="1" fill="white" stroke="none" stroke-width="1" rx="2" ry="2"></rect><path fill="#E0E0E0" d="M 6 6.5 L 20 6.5 M 6 11.5 L 20 11.5 M 6 16.5 L 20 16.5" stroke="#666" stroke-width="3" zIndex="1"></path><text x="0" zIndex="1" style="color:black;fill:black;" y="12"></text></g><g class="highcharts-grid" zIndex="1"></g><g class="highcharts-grid" zIndex="1"><path fill="none" d="M 35 81.5 L 598 81.5" stroke="#D8D8D8" stroke-width="1" zIndex="1" opacity="1"></path></g><g class="highcharts-axis" zIndex="2"><path fill="none" d="M 114.5 152 L 114.5 162" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 195.5 152 L 195.5 162" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 275.5 152 L 275.5 162" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 356.5 152 L 356.5 162" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 436.5 152 L 436.5 162" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 517.5 152 L 517.5 162" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 598.5 152 L 598.5 162" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 34.5 152 L 34.5 162" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 35 152.5 L 598 152.5" stroke="#C0D0E0" stroke-width="1" zIndex="7" visibility="visible"></path></g><g class="highcharts-axis" zIndex="2"></g><g class="highcharts-series-group" zIndex="3"><g class="highcharts-series" visibility="visible" zIndex="0.1" transform="translate(35,10) scale(1 1)" clip-path="url(#highcharts-1)"><path fill="none" d="M 40.214285714285715 71 L 120.64285714285714 71 L 201.07142857142858 71 L 281.5 71 L 361.92857142857144 71 L 442.3571428571429 71 L 522.7857142857142 71" stroke="#7cb5ec" stroke-width="2" zIndex="1" stroke-linejoin="round" stroke-linecap="round"></path><path fill="none" d="M 30.214285714285715 71 L 40.214285714285715 71 L 120.64285714285714 71 L 201.07142857142858 71 L 281.5 71 L 361.92857142857144 71 L 442.3571428571429 71 L 522.7857142857142 71 L 532.7857142857142 71" stroke-linejoin="round" visibility="visible" stroke="rgba(192,192,192,0.0001)" stroke-width="22" zIndex="2" class=" highcharts-tracker" style=""></path></g><g class="highcharts-markers highcharts-tracker" visibility="visible" zIndex="0.1" transform="translate(35,10) scale(1 1)" clip-path="url(#highcharts-2)" style=""><path fill="#7cb5ec" d="M 522 67 C 527.328 67 527.328 75 522 75 C 516.672 75 516.672 67 522 67 Z"></path><path fill="#7cb5ec" d="M 442 67 C 447.328 67 447.328 75 442 75 C 436.672 75 436.672 67 442 67 Z"></path><path fill="#7cb5ec" d="M 361 67 C 366.328 67 366.328 75 361 75 C 355.672 75 355.672 67 361 67 Z"></path><path fill="#7cb5ec" d="M 281 67 C 286.328 67 286.328 75 281 75 C 275.672 75 275.672 67 281 67 Z"></path><path fill="#7cb5ec" d="M 201 67 C 206.328 67 206.328 75 201 75 C 195.672 75 195.672 67 201 67 Z"></path><path fill="#7cb5ec" d="M 120 67 C 125.328 67 125.328 75 120 75 C 114.672 75 114.672 67 120 67 Z"></path><path fill="#7cb5ec" d="M 40 67 C 45.328 67 45.328 75 40 75 C 34.672 75 34.672 67 40 67 Z"></path></g></g><text x="309" text-anchor="middle" class="highcharts-title" zIndex="4" style="color:#333333;font-size:18px;fill:#333333;width:593px;" y="24"></text><g class="highcharts-legend" zIndex="7" transform="translate(610,87)"><g zIndex="1"><g><g class="highcharts-legend-item" zIndex="1" transform="translate(8,3)"><path fill="none" d="M 0 11 L 16 11" stroke="#7cb5ec" stroke-width="2"></path><path fill="#7cb5ec" d="M 8 7 C 13.328 7 13.328 15 8 15 C 2.6719999999999997 15 2.6719999999999997 7 8 7 Z"></path><text x="21" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start" zIndex="2" y="15">盈余</text></g></g></g></g><g class="highcharts-axis-labels highcharts-xaxis-labels" zIndex="7"><text x="75.21428571428572" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:74px;text-overflow:clip;" text-anchor="middle" transform="translate(0,0)" y="171" opacity="1">10-01</text><text x="155.64285714285714" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:74px;text-overflow:clip;" text-anchor="middle" transform="translate(0,0)" y="171" opacity="1">10-02</text><text x="236.0714285714286" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:74px;text-overflow:clip;" text-anchor="middle" transform="translate(0,0)" y="171" opacity="1">10-03</text><text x="316.5" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:74px;text-overflow:clip;" text-anchor="middle" transform="translate(0,0)" y="171" opacity="1">10-04</text><text x="396.92857142857144" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:74px;text-overflow:clip;" text-anchor="middle" transform="translate(0,0)" y="171" opacity="1">10-05</text><text x="477.35714285714295" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:74px;text-overflow:clip;" text-anchor="middle" transform="translate(0,0)" y="171" opacity="1">10-06</text><text x="557.7857142857143" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:74px;text-overflow:clip;" text-anchor="middle" transform="translate(0,0)" y="171" opacity="1">10-07</text></g><g class="highcharts-axis-labels highcharts-yaxis-labels" zIndex="7"><text x="20" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:207px;text-overflow:clip;" text-anchor="end" transform="translate(0,0)" y="85" opacity="1">0</text></g><g class="highcharts-tooltip" zIndex="8" style="cursor:default;padding:0;white-space:nowrap;" transform="translate(0,-9999)"><path fill="none" d="M 3 0 L 13 0 C 16 0 16 0 16 3 L 16 13 C 16 16 16 16 13 16 L 3 16 C 0 16 0 16 0 13 L 0 3 C 0 0 0 0 3 0" isShadow="true" stroke="black" stroke-opacity="0.049999999999999996" stroke-width="5" transform="translate(1, 1)"></path><path fill="none" d="M 3 0 L 13 0 C 16 0 16 0 16 3 L 16 13 C 16 16 16 16 13 16 L 3 16 C 0 16 0 16 0 13 L 0 3 C 0 0 0 0 3 0" isShadow="true" stroke="black" stroke-opacity="0.09999999999999999" stroke-width="3" transform="translate(1, 1)"></path><path fill="none" d="M 3 0 L 13 0 C 16 0 16 0 16 3 L 16 13 C 16 16 16 16 13 16 L 3 16 C 0 16 0 16 0 13 L 0 3 C 0 0 0 0 3 0" isShadow="true" stroke="black" stroke-opacity="0.15" stroke-width="1" transform="translate(1, 1)"></path><path fill="rgba(249, 249, 249, .85)" d="M 3 0 L 13 0 C 16 0 16 0 16 3 L 16 13 C 16 16 16 16 13 16 L 3 16 C 0 16 0 16 0 13 L 0 3 C 0 0 0 0 3 0"></path><text x="8" zIndex="1" style="font-size:12px;color:#333333;fill:#333333;" y="20"></text></g><text x="647" text-anchor="end" zIndex="8" style="cursor:pointer;color:#909090;font-size:9px;fill:#909090;" y="185"></text></svg></div></div-->
-        <!-- 投注 走势 end -->
-        <!--div class="trend-rg">
-            <div class="ttl-box clear-fix">
-                <div class="int-imgbox">
-                    <img src="%E6%88%91%E7%9A%84%E6%8A%95%E6%B3%A8_files/face0.png" alt="" width="38px" height="38px">
-                </div>
-                <div class="user-box">
-                    <span class="username">远航之帆</span>
-                    <span class="userid">ID:9490376</span>
-                </div>
-                <div class="wealth-box">
-                    <p class="wt-p">元宝：<strong>0 </strong><i class="ingot"></i><a href="http://game3799.com/Member/Recharge" class="wt-a a-blue">充</a></p>
-                    <p class="wt-p">金豆：<strong>0 </strong><i class="kdou"></i><a href="http://game3799.com/Member/IngotExchange" class="wt-a a-pink">兑</a></p>
-                </div>
-            </div>
-
-            <div class="count-box">
-                    <p class="count-p">今日盈亏：<span class="green">0</span><i class="kdou"></i></p>
-                <p class="count-p">今日胜率：0.0%</p>
-                    <p class="count-p">昨日盈亏：<span class="green">0</span><i class="kdou"></i></p> 
-                                    <p class="count-p">上周盈亏：<span class="green">0</span><i class="kdou"></i></p>
-
-                <p class="count-p">竞猜期数：0</p>
-                
-            </div>
-        </div>
-    </div-->
 </div>
     <div class="array-box pc28-box">
-        <!--div class="arr-ttlbox pc28">
-            <div class="box-a on">
-                <a href="http://game3799.com/lucky28/MyBetStat/1/pages/1" class="rrl-a">按期显示</a>
-                <i class="tri"></i>
-            </div>
-            <i class="shu"></i>
-            <div class="box-a box-asp">
-                <a href="http://game3799.com/lucky28/MyBetStat/2/pages/1" class="rrl-a">按日显示</a>
-                <i class="tri"></i>
-            </div>
-        </div-->
-
         <div class="amain-box" id="amain" data-url="/lucky28/automodel">
             <table>
                 <tbody>
@@ -224,18 +182,18 @@
     </div>
 
 
-<div id="sound_bet" style="display: none"></div>
+	<div id="sound_bet" style="display: none"></div>
 
-<div class="fuceng-html-box">
-    <div class="fuceng-box">
-        <div class="fc-ttl-box clear-fix">
-            <h6 class="ttl-sp">提示信息</h6>
-            <a href="#" class="fc-close J_closefc"></a>
-        </div>
-        <div class="fc-main-box">
-        </div>
-    </div>
-</div>
+	<div class="fuceng-html-box">
+		<div class="fuceng-box">
+			<div class="fc-ttl-box clear-fix">
+				<h6 class="ttl-sp">提示信息</h6>
+				<a href="#" class="fc-close J_closefc"></a>
+			</div>
+			<div class="fc-main-box">
+			</div>
+		</div>
+	</div>
 
 
         </div>

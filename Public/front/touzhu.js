@@ -324,9 +324,10 @@ $(".fc-main-box").delegate("#J_touzhuBtn","click",function(e){
 	e.preventDefault();
 
 	var	_url = $(".suer_insert").attr("data-url"),
-		_pid = $(".suer_insert").attr("data-pid"),
+		_issue = $(".suer_insert").attr("data-issue"),
+		_game = $(".suer_insert").attr("data-game"),
 		_id = $("#rwnum").attr("data-id"),
-		all_val = sum_val();
+		all_val = sum_val(),
 	    _val = _zuhe($("#total_md_lottery2").text());
 
 	if(_val > 0 ){
@@ -336,7 +337,7 @@ $(".fc-main-box").delegate("#J_touzhuBtn","click",function(e){
 				url: _url,
 				dataType: "json",
 				type: "post",
-				data: {total:_val,bet_num:all_val,period_no:_pid,race_id:_id},
+				data: {game_style:_game,total:_val,bet_num:all_val,period_no:_issue,race_id:_id},
 				success: function(data){
 
 					if(data.code_num <= 10001){

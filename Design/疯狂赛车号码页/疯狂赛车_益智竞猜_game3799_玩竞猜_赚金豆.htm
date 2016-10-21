@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <link rel="stylesheet" href="%E7%96%AF%E7%8B%82%E8%B5%9B%E8%BD%A6_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/common.css">
+    <script src="%E7%96%AF%E7%8B%82%E8%B5%9B%E8%BD%A6_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/jquery-1.js"></script>
+    <script src="%E7%96%AF%E7%8B%82%E8%B5%9B%E8%BD%A6_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/slide.js"></script>
+    <title>疯狂赛车_益智竞猜_game3799|玩竞猜_赚金豆</title>
+    <script>
+        var global = {
+            live: "http://image.game3799.com/19dou/js"
+        }
+    </script>
+
+    <link rel="stylesheet" href="%E7%96%AF%E7%8B%82%E8%B5%9B%E8%BD%A6_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/game-comp.css">
+    <link rel="stylesheet" href="%E7%96%AF%E7%8B%82%E8%B5%9B%E8%BD%A6_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/guess.css">
+    <link rel="icon" type="image/png" href="http://image.game3799.com/19dou/img/favicon.png">
+
+
+</head>
+<body>
+
+        <div class="site-nav">
+            <div class="width-1000">
+<form action="/Account/LogOff" id="logoutFormTop" method="post">                    <p class="site-nav-con">
+                        你好，<span class="user-name-color">远航之帆</span>元宝：0<span class="ingot"></span><a class="ingot-c" href="http://www.game3799.com/Member/Recharge">充</a>金豆：0<span class="kdou"></span><a href="http://www.game3799.com/Member/IngotExchange" class="kdou-c">兑</a><a class="login-out" href="javascript:document.getElementById('logoutFormTop').submit()">[退出]</a>
+                        <a class="site-nav-list" href="http://www.game3799.com/Home/Desktop">保存到桌面</a>
+                        <a class="site-nav-list bor-r J_shoucang" href="#">收藏本站</a>
+                    </p>
+</form>            </div>
+        </div>
+        <div class="dou-nav">
+            <div class="width-1000 clear-fix">
+                <h1 class="logo-box"><a href="http://www.game3799.com/home/index" class="logo-a">
+                    <img alt="" src="%E7%96%AF%E7%8B%82%E8%B5%9B%E8%BD%A6_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/logo.png" height="98" width="134"></a></h1>
+                <ul class="dou-nav-ul">
+                    <li class=""><a href="http://www.game3799.com/home/index" class="dou-nav-list">首页</a></li>
+                    
+                    <li class=""><a href="http://www.game3799.com/home/download" class="dou-nav-list">下载中心</a></li>
+                    <li class="select"><span class="top-img">
+                        <img src="%E7%96%AF%E7%8B%82%E8%B5%9B%E8%BD%A6_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/hot.gif" alt="" height="12" width="21"></span><a href="http://www.game3799.com/crazy28/index" class="dou-nav-list">益智竞猜</a></li>
+                    
+                    <li class=""><a href="http://www.game3799.com/Member" class="dou-nav-list">账户中心</a></li>
+                    <li class=""><a href="http://www.game3799.com/friend" class="dou-nav-list">推荐好友</a></li>
+                    <li class=""><a href="http://www.game3799.com/vip" class="dou-nav-list">VIP</a></li>
+                    <li class=""><a href="http://www.game3799.com/agent/index" class="dou-nav-list">合作商家</a></li>
+                    <li class=""><a href="http://www.game3799.com/pay/index" class="dou-nav-list">充值中心</a></li>
+                </ul>
+                <a href="#" class="all-game">全部游戏<span class="game-jt"></span></a>
+                <div class="game-box">
+                    <div class="game-type-list clear-fix">
+                        <strong class="game-type-title">休闲棋牌:</strong>
+                        <ul class="game-type-ul">
+                            <li><a href="http://www.game3799.com/Home/Download" class="game-type-list">
+                                <img alt="" src="%E7%96%AF%E7%8B%82%E8%B5%9B%E8%BD%A6_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/er.png" height="16" width="16"><span>二人牛牛</span></a></li>
+                            
+                            <li><a href="http://www.game3799.com/Home/Download" class="game-type-list">
+                                <img alt="" src="%E7%96%AF%E7%8B%82%E8%B5%9B%E8%BD%A6_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/yu.png" height="16" width="16"><span>李逵劈鱼</span></a></li>
+                            <li><a href="http://www.game3799.com/Home/Download" class="game-type-list">
+                                <img alt="" src="%E7%96%AF%E7%8B%82%E8%B5%9B%E8%BD%A6_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/tong.png" height="16" width="16"><span>通比牛牛</span></a></li>
+                            
+                            <li><a href="http://www.game3799.com/Home/Download" class="game-type-list">
+                                <img alt="" src="%E7%96%AF%E7%8B%82%E8%B5%9B%E8%BD%A6_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/dou.png" height="16" width="16"><span>斗地主</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="game-type-list clear-fix">
+                        <strong class="game-type-title">益智竞猜:</strong>
+                        <ul class="game-type-ul">
+                            <li><a href="http://www.game3799.com/Lucky28" class="game-type-list">
+                                <img alt="" src="%E7%96%AF%E7%8B%82%E8%B5%9B%E8%BD%A6_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/pc28s.png" height="16" width="16"><span>PC28</span></a></li>
+                            <li><a href="http://www.game3799.com/Speed28" class="game-type-list">
+                                <img alt="" src="%E7%96%AF%E7%8B%82%E8%B5%9B%E8%BD%A6_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/speed28s.png" height="16" width="16"><span>极速28</span></a></li>
+                            <li><a href="http://www.game3799.com/Crazy28" class="game-type-list">
+                                <img alt="" src="%E7%96%AF%E7%8B%82%E8%B5%9B%E8%BD%A6_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/crazy28s.png" height="16" width="16"><span>疯狂28</span></a></li>
+                            <li><a href="http://www.game3799.com/CrazyCar" class="game-type-list">
+                                <img alt="" src="%E7%96%AF%E7%8B%82%E8%B5%9B%E8%BD%A6_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/crazycars.png" height="16" width="16"><span>疯狂赛车</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="main">
+            <div class="gonggao-box">
+                <div class="lb-slide">
+                    <div class="bd">
+                        <div class="tempWrap" style="overflow:hidden; position:relative; width:696px"><ul style="width: 1740px; position: relative; overflow: hidden; padding: 0px; margin: 0px; left: -205px;"><li class="clone" style="float: left; width: 174px;"><a href="http://www.game3799.com/News/NewsDetail/71" class="li-a" target="_blank">官方充值加送20%</a></li>
+                                <li style="float: left; width: 174px;"><a href="http://www.game3799.com/News/NewsDetail/81" class="li-a" target="_blank">国庆三重礼豪豪豪！</a></li>
+                                <li style="float: left; width: 174px;"><a href="http://www.game3799.com/News/NewsDetail/78" class="li-a" target="_blank">卡奖时自动投注公告</a></li>
+                                <li style="float: left; width: 174px;"><a href="http://www.game3799.com/News/NewsDetail/76" class="li-a" target="_blank">9月官充加送20%</a></li>
+                                <li style="float: left; width: 174px;"><a href="http://www.game3799.com/News/NewsDetail/72" class="li-a" target="_blank">部分用户无法登录解决方案</a></li>
+                                <li style="float: left; width: 174px;"><a href="http://www.game3799.com/News/NewsDetail/71" class="li-a" target="_blank">官方充值加送20%</a></li>
+                        <li class="clone" style="float: left; width: 174px;"><a href="http://www.game3799.com/News/NewsDetail/81" class="li-a" target="_blank">国庆三重礼豪豪豪！</a></li><li class="clone" style="float: left; width: 174px;"><a href="http://www.game3799.com/News/NewsDetail/78" class="li-a" target="_blank">卡奖时自动投注公告</a></li><li class="clone" style="float: left; width: 174px;"><a href="http://www.game3799.com/News/NewsDetail/76" class="li-a" target="_blank">9月官充加送20%</a></li><li class="clone" style="float: left; width: 174px;"><a href="http://www.game3799.com/News/NewsDetail/72" class="li-a" target="_blank">部分用户无法登录解决方案</a></li></ul></div>
+                    </div>
+                </div>
+            </div>
+        <div class="width-1000 clear-fix">
+
+            <a class="game-banner" target="_blank" href="http://www.game3799.com/Act/TopAward/Pages/1">
+                <img src="%E7%96%AF%E7%8B%82%E8%B5%9B%E8%BD%A6_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/201608091043ebb4d629a4b44d.jpg" alt="">
+            </a>
+            
+            <!-- 导航  start	 -->
+            <div class="game-nav-box clear-fix">
+                <ul class="game-nav">
+                    <li class="game-nav-list ">
+                        <div class="game-logo-box game-logo-pc28">
+                            <span class="top-jt"></span>
+                            <a class="game-img" href="http://www.game3799.com/Lucky28/index"></a>
+                        </div>
+                    </li>
+                    <li class="game-nav-list ">
+                        <div class="game-logo-box game-logo-js28">
+                            <span class="top-jt"></span>
+                            <a class="game-img" href="http://www.game3799.com/Speed28/index"></a>
+                        </div>
+                    </li>
+                     <li class="game-nav-list ">
+                        <div class="game-logo-box game-logo-jnd16">
+                            <span class="top-jt"></span>
+                            <a class="game-img" href="http://www.game3799.com/Speed16/index"></a>
+                        </div>
+                    </li>
+                    
+                    <li class="game-nav-list ">
+                        <div class="game-logo-box game-logo-fk28">
+                            <span class="top-jt"></span>
+                            <a class="game-img" href="http://www.game3799.com/Crazy28/index"></a>
+                        </div>
+                    </li>
+                    <li class="game-nav-list selected">
+                        <div class="game-logo-box game-logo-fksc">
+                            <span class="top-jt"></span>
+                            <a class="game-img" href="http://www.game3799.com/CrazyCar/index"></a>
+                        </div>
+                    </li>
+                    <li class="game-nav-list ">
+                        <div class="game-logo-box game-logo-jnd28">
+                            <span class="top-jt"></span>
+                            <a class="game-img" href="http://www.game3799.com/Canada28/index"></a>
+                        </div>
+                    </li>
+                    
+                   
+                </ul>
+                <div class="my-account">
+                    <span class="my-account-logo"></span>
+                    <span class="my-account-text">我的账户</span>
+                    <div class="fenge-box">
+                        <span class="jt-01"></span>
+                    </div>
+                    <p class="my-yuanbao-box">
+                        <span class="my-yuanbao-text">元宝：0</span>
+                        <span class="yuanbao-logo"></span>
+                            <a target="_blank" class="chong-url" href="http://www.game3799.com/Member/Recharge">充</a>
+                    </p>
+                    <p class="my-yuanbao-box">
+                        <span class="my-yuanbao-text">金豆：0</span>
+                        <span class="jindou-logo"></span>
+                        <a class="dui-url" href="http://www.game3799.com/Member/IngotExchange">兑</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="fksc-nav-box game-two-nav">
+                <div class="two-nav-head">
+                    <a class="head-list sel-color" href="http://www.game3799.com/crazycar/index"><strong>疯狂赛车首页</strong></a>
+                    <a class="head-list " href="http://www.game3799.com/crazycar/trend">号码走势</a>
+                    <a class="head-list " href="http://www.game3799.com/crazycar/guide">游戏帮助</a>
+                    <a class="head-list" href="http://www.game3799.com/Home/TopWinners">牛人榜</a>
+                    <a class="head-list J_jiujidou" data-url="/Home/PostGetRelief" href="#">领取救济豆</a>
+                    <a class="head-list zbs-style" href="http://www.game3799.com/Act/TopAward/Pages/1"><span class="zbs-bg"></span><span class="zbs-text">每日争霸赛</span></a>
+                    <p class="my-touzhu-box clear-fix">
+                        <a class="my-touzhu-list " href="http://www.game3799.com/crazycar/mybetstat/1/pages/1">我的投注</a>
+                        <a class="my-touzhu-list " href="http://www.game3799.com/crazycar/automodel">投注模式编辑</a>
+                            <a class="my-touzhu-list bor-r  " href="http://www.game3799.com/crazycar/EditModel">自动投注</a>     
+
+                    </p>
+                </div>
+            </div>
+
+            
+
+
+
+
+
+
+<!-- 公正提示 -->
+<div class="kaijiang-box kaijiang-fksc">
+    <div class="chengxin-box">
+        <span class="chengxin-logo"></span>
+        <div class="chengxin-text-box">
+            <p class="chengxin-text-01">疯狂赛车开奖采用北京PK10第三方数据</p>
+            <p class="chengxin-text-02">公平公正  无法作弊</p>
+        </div>
+    </div>
+        <div class="kaijiang-time-box fksc-box">
+            <div class="J_kjTimeBox">
+                <p class="kaijiang-time-text mar-t">距离第 <b>582336</b> 期竞猜截止还有 <b class="J_jcTime" data-lasttime="0">0</b> 秒 开奖还有 <b class="J_kjTime" data-lasttime="140">97</b> 秒 </p>
+                    <p class="kaijiang-time-text">
+                        第<strong>582335</strong>期开奖结果：<span class="fk-car car8"></span>
+                            <a target="_blank" href="http://www.bwlc.net/bulletin/trax.html">[官方查询]</a>
+                        <a href="http://www.game3799.com/CrazyCar/guide">[游戏帮助]</a>
+                    </p>
+            </div>
+            <p class="kaijiang-time-text line-h J_kjIng" style="display: none">第<b>582336</b>期正在开奖中！</p>
+        </div>
+    <div class="server-time-box">
+        <a class="shengyin-ts shengyin-ts-close" href="#"></a>
+        <a class="shuaxin-btn shuaxin-btn-close" data-index="1" href="#"></a>
+        <span class="time-logo"></span>
+        <div class="server-time">
+            <p class="time-text">服务器时间</p>
+            <p class="J_ServerTime time-text color-red" data-url="/Home/GetServerTime">14:16:52</p>
+        </div>
+    </div>
+</div>
+<!-- 公正提示 -->
+
+
+<!-- 导航  end	 -->
+
+<!-- 内容  start	-->
+<div class="flash-box" style="display: none">
+    <div class="awardVideo">
+        <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" height="372" width="570">
+            <param name="movie" value="http://www.bjfcdt.gov.cn/pk10/game/swf/awardpk10.swf">
+            <param name="quality" value="high">
+            <param name="wmode" value="transparent">
+            <embed src="%E7%96%AF%E7%8B%82%E8%B5%9B%E8%BD%A6_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/awardpk10.htm" flashvars="ServerName=www.bjfcdt.gov.cn&amp;IsPk10Mic=undefined&amp;TimeOut=10000&amp;RandValue1=16000&amp;RandValue2=1000" quality="high" bgcolor="#ffffff" name="PK10TV" allowscriptaccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" wmode="transparent" height="373" width="570" align="middle">
+        </object>
+
+    </div>
+</div>
+<div class="guess-box fksc-box">
+    <table>
+        <tbody><tr>
+            <th>游戏期号</th>
+            <th>开奖时间</th>
+            <th>开奖号码</th>
+            <th>奖池总额</th>
+            <th>中奖人数</th>
+            <th>盈亏</th>
+            <th>参与</th>
+        </tr>
+            <tr>
+                <td>582339</td>
+                <td>10-21 14:33:00</td>
+                    <td><span class="qus-fksc"></span></td>
+                    <td>5,000,000,000<i class="kdou"></i></td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td><a href="http://www.game3799.com/CrazyCar/bet/582339" class="go-jc jc-fksc">竞猜</a></td>
+            </tr>   
+            <tr>
+                <td>582338</td>
+                <td>10-21 14:28:00</td>
+                    <td><span class="qus-fksc"></span></td>
+                    <td>5,000,000,000<i class="kdou"></i></td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td><a href="http://www.game3799.com/CrazyCar/bet/582338" class="go-jc jc-fksc">竞猜</a></td>
+            </tr>   
+            <tr>
+                <td>582337</td>
+                <td>10-21 14:23:00</td>
+                    <td><span class="qus-fksc"></span></td>
+                    <td>5,000,000,000<i class="kdou"></i></td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td><a href="http://www.game3799.com/CrazyCar/bet/582337" class="go-jc jc-fksc">竞猜</a></td>
+            </tr>   
+            <tr>
+                <td>582336</td>
+                <td>10-21 14:18:00</td>
+                    <td><span class="qus-fksc"></span></td>
+                    <td>5,011,115,275<i class="kdou"></i></td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>停止投注</td>
+            </tr>   
+            <tr>
+                <td>582335</td>
+                <td>10-21 14:13:00</td>
+                    <td>
+                        <i class="fk-num8"></i>
+                        <i class="fk-num10"></i>
+                        <i class="fk-num9"></i>
+                        <i class="fk-num2"></i>
+                        <i class="fk-num5"></i>
+                        <i class="fk-num7"></i>
+                        <i class="fk-num1"></i>
+                        <i class="fk-num6"></i>
+                        <i class="fk-num3"></i>
+                        <i class="fk-num4"></i>
+                        =<span class="fk-car car8"></span><a target="'_blank'" href="http://www.game3799.com/crazycar/verification/582335" class="go-yz">验证</a>
+                    </td>
+                    <td>5,002,067,775<i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/CrazyCar/winners/582335/pages/1">32</a></td>
+                    <td><span class="green">0</span><i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/CrazyCar/mybet/582335" class="go-ta">已开奖</a></td>
+            </tr>   
+            <tr>
+                <td>582334</td>
+                <td>10-21 14:08:00</td>
+                    <td>
+                        <i class="fk-num8"></i>
+                        <i class="fk-num7"></i>
+                        <i class="fk-num4"></i>
+                        <i class="fk-num9"></i>
+                        <i class="fk-num1"></i>
+                        <i class="fk-num5"></i>
+                        <i class="fk-num10"></i>
+                        <i class="fk-num2"></i>
+                        <i class="fk-num6"></i>
+                        <i class="fk-num3"></i>
+                        =<span class="fk-car car8"></span><a target="'_blank'" href="http://www.game3799.com/crazycar/verification/582334" class="go-yz">验证</a>
+                    </td>
+                    <td>5,002,960,275<i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/CrazyCar/winners/582334/pages/1">32</a></td>
+                    <td><span class="green">0</span><i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/CrazyCar/mybet/582334" class="go-ta">已开奖</a></td>
+            </tr>   
+            <tr>
+                <td>582333</td>
+                <td>10-21 14:03:00</td>
+                    <td>
+                        <i class="fk-num7"></i>
+                        <i class="fk-num3"></i>
+                        <i class="fk-num5"></i>
+                        <i class="fk-num10"></i>
+                        <i class="fk-num2"></i>
+                        <i class="fk-num4"></i>
+                        <i class="fk-num6"></i>
+                        <i class="fk-num1"></i>
+                        <i class="fk-num8"></i>
+                        <i class="fk-num9"></i>
+                        =<span class="fk-car car7"></span><a target="'_blank'" href="http://www.game3799.com/crazycar/verification/582333" class="go-yz">验证</a>
+                    </td>
+                    <td>5,002,055,280<i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/CrazyCar/winners/582333/pages/1">33</a></td>
+                    <td><span class="green">0</span><i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/CrazyCar/mybet/582333" class="go-ta">已开奖</a></td>
+            </tr>   
+            <tr>
+                <td>582332</td>
+                <td>10-21 13:58:00</td>
+                    <td>
+                        <i class="fk-num4"></i>
+                        <i class="fk-num7"></i>
+                        <i class="fk-num8"></i>
+                        <i class="fk-num6"></i>
+                        <i class="fk-num10"></i>
+                        <i class="fk-num2"></i>
+                        <i class="fk-num5"></i>
+                        <i class="fk-num3"></i>
+                        <i class="fk-num1"></i>
+                        <i class="fk-num9"></i>
+                        =<span class="fk-car car4"></span><a target="'_blank'" href="http://www.game3799.com/crazycar/verification/582332" class="go-yz">验证</a>
+                    </td>
+                    <td>5,002,045,275<i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/CrazyCar/winners/582332/pages/1">36</a></td>
+                    <td><span class="green">0</span><i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/CrazyCar/mybet/582332" class="go-ta">已开奖</a></td>
+            </tr>   
+            <tr>
+                <td>582331</td>
+                <td>10-21 13:53:00</td>
+                    <td>
+                        <i class="fk-num7"></i>
+                        <i class="fk-num10"></i>
+                        <i class="fk-num9"></i>
+                        <i class="fk-num5"></i>
+                        <i class="fk-num4"></i>
+                        <i class="fk-num6"></i>
+                        <i class="fk-num1"></i>
+                        <i class="fk-num3"></i>
+                        <i class="fk-num8"></i>
+                        <i class="fk-num2"></i>
+                        =<span class="fk-car car7"></span><a target="'_blank'" href="http://www.game3799.com/crazycar/verification/582331" class="go-yz">验证</a>
+                    </td>
+                    <td>5,002,395,200<i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/CrazyCar/winners/582331/pages/1">34</a></td>
+                    <td><span class="green">0</span><i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/CrazyCar/mybet/582331" class="go-ta">已开奖</a></td>
+            </tr>   
+            <tr>
+                <td>582330</td>
+                <td>10-21 13:48:00</td>
+                    <td>
+                        <i class="fk-num5"></i>
+                        <i class="fk-num7"></i>
+                        <i class="fk-num4"></i>
+                        <i class="fk-num9"></i>
+                        <i class="fk-num1"></i>
+                        <i class="fk-num2"></i>
+                        <i class="fk-num6"></i>
+                        <i class="fk-num10"></i>
+                        <i class="fk-num3"></i>
+                        <i class="fk-num8"></i>
+                        =<span class="fk-car car5"></span><a target="'_blank'" href="http://www.game3799.com/crazycar/verification/582330" class="go-yz">验证</a>
+                    </td>
+                    <td>5,014,964,955<i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/CrazyCar/winners/582330/pages/1">37</a></td>
+                    <td><span class="green">0</span><i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/CrazyCar/mybet/582330" class="go-ta">已开奖</a></td>
+            </tr>   
+            <tr>
+                <td>582329</td>
+                <td>10-21 13:43:00</td>
+                    <td>
+                        <i class="fk-num10"></i>
+                        <i class="fk-num4"></i>
+                        <i class="fk-num1"></i>
+                        <i class="fk-num8"></i>
+                        <i class="fk-num3"></i>
+                        <i class="fk-num9"></i>
+                        <i class="fk-num6"></i>
+                        <i class="fk-num5"></i>
+                        <i class="fk-num7"></i>
+                        <i class="fk-num2"></i>
+                        =<span class="fk-car car10"></span><a target="'_blank'" href="http://www.game3799.com/crazycar/verification/582329" class="go-yz">验证</a>
+                    </td>
+                    <td>5,005,265,120<i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/CrazyCar/winners/582329/pages/1">27</a></td>
+                    <td><span class="green">0</span><i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/CrazyCar/mybet/582329" class="go-ta">已开奖</a></td>
+            </tr>   
+            <tr>
+                <td>582328</td>
+                <td>10-21 13:38:00</td>
+                    <td>
+                        <i class="fk-num1"></i>
+                        <i class="fk-num5"></i>
+                        <i class="fk-num6"></i>
+                        <i class="fk-num4"></i>
+                        <i class="fk-num7"></i>
+                        <i class="fk-num3"></i>
+                        <i class="fk-num2"></i>
+                        <i class="fk-num9"></i>
+                        <i class="fk-num8"></i>
+                        <i class="fk-num10"></i>
+                        =<span class="fk-car car1"></span><a target="'_blank'" href="http://www.game3799.com/crazycar/verification/582328" class="go-yz">验证</a>
+                    </td>
+                    <td>5,013,565,275<i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/CrazyCar/winners/582328/pages/1">29</a></td>
+                    <td><span class="green">0</span><i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/CrazyCar/mybet/582328" class="go-ta">已开奖</a></td>
+            </tr>   
+            <tr>
+                <td>582327</td>
+                <td>10-21 13:33:00</td>
+                    <td>
+                        <i class="fk-num9"></i>
+                        <i class="fk-num6"></i>
+                        <i class="fk-num2"></i>
+                        <i class="fk-num1"></i>
+                        <i class="fk-num5"></i>
+                        <i class="fk-num7"></i>
+                        <i class="fk-num10"></i>
+                        <i class="fk-num3"></i>
+                        <i class="fk-num8"></i>
+                        <i class="fk-num4"></i>
+                        =<span class="fk-car car9"></span><a target="'_blank'" href="http://www.game3799.com/crazycar/verification/582327" class="go-yz">验证</a>
+                    </td>
+                    <td>5,004,954,185<i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/CrazyCar/winners/582327/pages/1">30</a></td>
+                    <td><span class="green">0</span><i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/CrazyCar/mybet/582327" class="go-ta">已开奖</a></td>
+            </tr>   
+            <tr>
+                <td>582326</td>
+                <td>10-21 13:28:00</td>
+                    <td>
+                        <i class="fk-num4"></i>
+                        <i class="fk-num10"></i>
+                        <i class="fk-num2"></i>
+                        <i class="fk-num8"></i>
+                        <i class="fk-num6"></i>
+                        <i class="fk-num7"></i>
+                        <i class="fk-num5"></i>
+                        <i class="fk-num9"></i>
+                        <i class="fk-num1"></i>
+                        <i class="fk-num3"></i>
+                        =<span class="fk-car car4"></span><a target="'_blank'" href="http://www.game3799.com/crazycar/verification/582326" class="go-yz">验证</a>
+                    </td>
+                    <td>5,003,605,325<i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/CrazyCar/winners/582326/pages/1">37</a></td>
+                    <td><span class="green">0</span><i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/CrazyCar/mybet/582326" class="go-ta">已开奖</a></td>
+            </tr>   
+            <tr>
+                <td>582325</td>
+                <td>10-21 13:23:00</td>
+                    <td>
+                        <i class="fk-num2"></i>
+                        <i class="fk-num8"></i>
+                        <i class="fk-num7"></i>
+                        <i class="fk-num5"></i>
+                        <i class="fk-num4"></i>
+                        <i class="fk-num1"></i>
+                        <i class="fk-num9"></i>
+                        <i class="fk-num3"></i>
+                        <i class="fk-num6"></i>
+                        <i class="fk-num10"></i>
+                        =<span class="fk-car car2"></span><a target="'_blank'" href="http://www.game3799.com/crazycar/verification/582325" class="go-yz">验证</a>
+                    </td>
+                    <td>5,002,645,295<i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/CrazyCar/winners/582325/pages/1">31</a></td>
+                    <td><span class="green">0</span><i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/CrazyCar/mybet/582325" class="go-ta">已开奖</a></td>
+            </tr>   
+            <tr>
+                <td>582324</td>
+                <td>10-21 13:18:00</td>
+                    <td>
+                        <i class="fk-num3"></i>
+                        <i class="fk-num2"></i>
+                        <i class="fk-num6"></i>
+                        <i class="fk-num4"></i>
+                        <i class="fk-num10"></i>
+                        <i class="fk-num7"></i>
+                        <i class="fk-num8"></i>
+                        <i class="fk-num5"></i>
+                        <i class="fk-num1"></i>
+                        <i class="fk-num9"></i>
+                        =<span class="fk-car car3"></span><a target="'_blank'" href="http://www.game3799.com/crazycar/verification/582324" class="go-yz">验证</a>
+                    </td>
+                    <td>5,004,205,280<i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/CrazyCar/winners/582324/pages/1">30</a></td>
+                    <td><span class="green">0</span><i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/CrazyCar/mybet/582324" class="go-ta">已开奖</a></td>
+            </tr>   
+            <tr>
+                <td>582323</td>
+                <td>10-21 13:13:00</td>
+                    <td>
+                        <i class="fk-num5"></i>
+                        <i class="fk-num2"></i>
+                        <i class="fk-num7"></i>
+                        <i class="fk-num8"></i>
+                        <i class="fk-num6"></i>
+                        <i class="fk-num10"></i>
+                        <i class="fk-num3"></i>
+                        <i class="fk-num4"></i>
+                        <i class="fk-num9"></i>
+                        <i class="fk-num1"></i>
+                        =<span class="fk-car car5"></span><a target="'_blank'" href="http://www.game3799.com/crazycar/verification/582323" class="go-yz">验证</a>
+                    </td>
+                    <td>5,003,393,395<i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/CrazyCar/winners/582323/pages/1">37</a></td>
+                    <td><span class="green">0</span><i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/CrazyCar/mybet/582323" class="go-ta">已开奖</a></td>
+            </tr>   
+            <tr>
+                <td>582322</td>
+                <td>10-21 13:08:00</td>
+                    <td>
+                        <i class="fk-num10"></i>
+                        <i class="fk-num6"></i>
+                        <i class="fk-num9"></i>
+                        <i class="fk-num3"></i>
+                        <i class="fk-num8"></i>
+                        <i class="fk-num4"></i>
+                        <i class="fk-num7"></i>
+                        <i class="fk-num5"></i>
+                        <i class="fk-num1"></i>
+                        <i class="fk-num2"></i>
+                        =<span class="fk-car car10"></span><a target="'_blank'" href="http://www.game3799.com/crazycar/verification/582322" class="go-yz">验证</a>
+                    </td>
+                    <td>5,003,615,280<i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/CrazyCar/winners/582322/pages/1">27</a></td>
+                    <td><span class="green">0</span><i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/CrazyCar/mybet/582322" class="go-ta">已开奖</a></td>
+            </tr>   
+            <tr>
+                <td>582321</td>
+                <td>10-21 13:03:00</td>
+                    <td>
+                        <i class="fk-num2"></i>
+                        <i class="fk-num4"></i>
+                        <i class="fk-num7"></i>
+                        <i class="fk-num8"></i>
+                        <i class="fk-num5"></i>
+                        <i class="fk-num3"></i>
+                        <i class="fk-num10"></i>
+                        <i class="fk-num9"></i>
+                        <i class="fk-num1"></i>
+                        <i class="fk-num6"></i>
+                        =<span class="fk-car car2"></span><a target="'_blank'" href="http://www.game3799.com/crazycar/verification/582321" class="go-yz">验证</a>
+                    </td>
+                    <td>5,004,095,275<i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/CrazyCar/winners/582321/pages/1">32</a></td>
+                    <td><span class="green">0</span><i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/CrazyCar/mybet/582321" class="go-ta">已开奖</a></td>
+            </tr>   
+            <tr>
+                <td>582320</td>
+                <td>10-21 12:58:00</td>
+                    <td>
+                        <i class="fk-num6"></i>
+                        <i class="fk-num1"></i>
+                        <i class="fk-num4"></i>
+                        <i class="fk-num3"></i>
+                        <i class="fk-num8"></i>
+                        <i class="fk-num5"></i>
+                        <i class="fk-num7"></i>
+                        <i class="fk-num10"></i>
+                        <i class="fk-num2"></i>
+                        <i class="fk-num9"></i>
+                        =<span class="fk-car car6"></span><a target="'_blank'" href="http://www.game3799.com/crazycar/verification/582320" class="go-yz">验证</a>
+                    </td>
+                    <td>5,002,780,275<i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/CrazyCar/winners/582320/pages/1">37</a></td>
+                    <td><span class="green">0</span><i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/CrazyCar/mybet/582320" class="go-ta">已开奖</a></td>
+            </tr>   
+    </tbody></table>
+</div>
+<!-- 内容  end	 -->
+
+    <div class="list-page-box clear-fix">
+                        <a class="page-btn selected" href="http://www.game3799.com/CrazyCar/index/pages/1">1</a>
+            <a class="page-btn" href="http://www.game3799.com/CrazyCar/index/pages/2">2</a>
+            <a class="page-btn" href="http://www.game3799.com/CrazyCar/index/pages/3">3</a>
+            <a class="page-btn" href="http://www.game3799.com/CrazyCar/index/pages/4">4</a>
+                <span class="shenglue">...</span>
+                <a class="page-btn" href="http://www.game3799.com/CrazyCar/index/pages/50">50</a>
+
+            <a class="page-btn" href="http://www.game3799.com/CrazyCar/index/pages/2">下一页</a>
+
+    </div>
+
+
+<div id="sound_bet" style="display: none"></div>
+
+        </div>
+    </div>
+    
+    <div class="fuceng-html-box suoha-html-box">
+    </div>
+
+        <div class="footer-box">
+            <div class="width-1000">
+                <p class="about-us">
+                    <a href="http://www.game3799.com/Home/Download" class="company-list">3799游戏中心</a>
+                    <a href="http://www.game3799.com/Home/About" class="company-list">关于我们</a>
+                    <a href="http://www.game3799.com/Home/Contact" class="company-list bor-r">联系我们</a>
+                </p>
+                <p class="text-01">3799游戏中心 版权所有</p>
+                <p class="text-01">
+                    <a target="_blank" style="color:red;" href="http://www.game3799.com/Home/SafetyResponsibilityBook">安全责任书</a>|
+                    <a target="_blank" href="http://www.miitbeian.gov.cn/">浙ICP备16015333号-1</a>|杭州傲游网络科技有限公司</p>
+                <p class="text-02 mar-t">申明：游戏中使用到的游戏币等均为游戏道具，不具有任何财产性功能，只限用户本人在游戏中使用。</p>
+                <p class="text-02">健康游戏忠告：抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防受骗上当 适度游戏益脑 沉迷游戏伤身 合理安排时间 享受健康生活</p>
+            </div>
+        </div> 
+    <div class="black-cover"></div>
+    <div class="kefu-box kefu-box-01">
+        <div class="kefu-little-box">
+            <span class="kefu-top-logo"></span>
+            <span class="kefu-text">在线客服</span>
+            <span class="kefu-jt jt-left"></span>
+        </div>
+        <div class="kefu-big-box">
+            <div class="kefu-list-box">
+                <span class="title">在线客服</span>
+                <div class="kefu-list">
+                    <a target="_blank" href="http://crm2.qq.com/page/portalpage/wpa.php?uin=800171736&amp;aty=0&amp;a=0&amp;curl=&amp;ty=1">
+                        <img src="%E7%96%AF%E7%8B%82%E8%B5%9B%E8%BD%A6_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/pa.gif" alt="点击这里给我发消息" title="点击这里给我发消息" border="0"></a>
+                    <span class="qq-text">客服QQ</span>
+                </div>
+                <div class="kefu-list">
+                    <a target="_blank" href="http://crm2.qq.com/page/portalpage/wpa.php?uin=800171736&amp;aty=0&amp;a=0&amp;curl=&amp;ty=1">
+                        <img src="%E7%96%AF%E7%8B%82%E8%B5%9B%E8%BD%A6_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/pa.gif" alt="点击这里给我发消息" title="点击这里给我发消息" border="0"></a>
+                    <span class="qq-text">客服QQ</span>
+                </div>
+                <div class="kefu-list">
+                    <a target="_blank" href="http://crm2.qq.com/page/portalpage/wpa.php?uin=800171736&amp;aty=0&amp;a=0&amp;curl=&amp;ty=1">
+                        <img src="%E7%96%AF%E7%8B%82%E8%B5%9B%E8%BD%A6_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/pa.gif" alt="点击这里给我发消息" title="点击这里给我发消息" border="0"></a>
+                    <span class="qq-text">客服QQ</span>
+                </div>
+                <div class="qq-qun">
+                    <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=06957eaabeaaf7a35b8f8f129be63b05b1a3448398034a4b71e2de0d3f7947a2">
+                        <img src="%E7%96%AF%E7%8B%82%E8%B5%9B%E8%BD%A6_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/group.png" alt="game3799棋牌官方群" title="game3799棋牌官方群" border="0"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="fuceng-common-box">
+            <div class="fuceng-box">
+                <div class="fc-ttl-box clear-fix">
+                    <h6 class="ttl-sp">提示信息</h6>
+                    <a href="#" class="fc-close J_closefc"></a>
+                </div>
+                <div class="fc-main-box">
+                </div>
+            </div>
+        </div>
+    <style type="text/css">
+        #bw {
+            position: absolute;
+            width: 324px;
+            height: 308px;
+            top: 0px;
+            left: 0px;
+            z-index: 9999;
+            cursor: pointer;
+            display: none;
+        }
+
+        .blueWC {
+            background: url(http://test123img.73dou.com/3799/abw/black.png) left no-repeat;
+            background-position: 1px 42px;
+        }
+
+        .whiteWC {
+            background: url(http://test123img.73dou.com/3799/abw/white.png) left no-repeat;
+            background-position: 1px 42px;
+        }
+
+        .no {
+            background: url(http://test123img.73dou.com/3799/abw/no.png) left no-repeat;
+        }
+
+        .yes {
+            background: url(http://test123img.73dou.com/3799/abw/yes.png) left no-repeat;
+        }
+    </style>
+   
+    <script src="%E7%96%AF%E7%8B%82%E8%B5%9B%E8%BD%A6_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/common.js"></script>
+    
+    <script src="%E7%96%AF%E7%8B%82%E8%B5%9B%E8%BD%A6_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/touzhu.js"></script>
+    <script src="%E7%96%AF%E7%8B%82%E8%B5%9B%E8%BD%A6_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/swfobject.js"></script>
+
+    <div style="display: none">
+        <script src="%E7%96%AF%E7%8B%82%E8%B5%9B%E8%BD%A6_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/q_stat.php" language="JavaScript"></script><script src="%E7%96%AF%E7%8B%82%E8%B5%9B%E8%BD%A6_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/core.php" charset="utf-8" type="text/javascript"></script><a href="http://quanjing.cnzz.com/" target="_blank" title="全景统计">全景统计</a>
+    </div>
+    
+
+
+</body></html>

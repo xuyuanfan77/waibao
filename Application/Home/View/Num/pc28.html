@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>益智竞猜游戏</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        
+        <script src="__PUBLIC__/front/jquery-1.11.1.min.js"></script>
+        <script src="__PUBLIC__/front/slide.js"></script>
+		<link rel="stylesheet" href="__PUBLIC__/front/common.css">
+        <link rel="stylesheet" href="__PUBLIC__/front/game-comp.css">
+        <link rel="stylesheet" href="__PUBLIC__/front/guess.css">
+    </head>
+    
+    <body>
+        <div class="site-nav">
+            <div class="width-1000">
+                <form action="http://game3799.com/Account/LogOff" id="logoutFormTop" method="post">
+                    <p class="site-nav-con">
+                        你好，
+                        <span class="user-name-color">{$userData['username']}</span>
+                        元宝：0
+                        <span class="ingot"></span>
+                        <a class="ingot-c">充</a>
+                        金豆：{$userData['money']}
+                        <span class="kdou"></span>
+                        <a class="kdou-c">兑</a>
+                        <a class="login-out" href="{:U('Index/index', array('page'=>'login'))}">[退出]</a>
+                        <a class="site-nav-list" href="#">保存到桌面</a>
+                        <a class="site-nav-list bor-r J_shoucang" href="#">收藏本站</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+        <div class="main">
+            <div class="width-1000 clear-fix">
+                <!-- 导航 start -->
+                <div class="game-nav-box clear-fix">
+                    <ul class="game-nav">
+                        <li class="game-nav-list selected">
+                            <div class="game-logo-box game-logo-pc28">
+                                <span class="top-jt"></span>
+                                <a class="game-img" href="{:U('Num/index', array('game'=>'pc28'))}"></a>
+                            </div>
+                        </li>
+                        <li class="game-nav-list ">
+                            <div class="game-logo-box game-logo-js28">
+                                <span class="top-jt"></span>
+                                <a class="game-img" href="{:U('Num/index', array('game'=>'js28'))}"></a>
+                            </div>
+                        </li>
+                        <li class="game-nav-list ">
+                            <div class="game-logo-box game-logo-jnd16">
+                                <span class="top-jt"></span>
+                                <a class="game-img" href="{:U('Num/index', array('game'=>'js16'))}"></a>
+                            </div>
+                        </li>
+                        <li class="game-nav-list ">
+                            <div class="game-logo-box game-logo-fk28">
+                                <span class="top-jt"></span>
+                                <a class="game-img" href="{:U('Num/index', array('game'=>'fk28'))}"></a>
+                            </div>
+                        </li>
+                        <li class="game-nav-list ">
+                            <div class="game-logo-box game-logo-fksc">
+                                <span class="top-jt"></span>
+                                <a class="game-img" href="{:U('Num/index', array('game'=>'fksc'))}"></a>
+                            </div>
+                        </li>
+                        <li class="game-nav-list ">
+                            <div class="game-logo-box game-logo-jnd28">
+                                <span class="top-jt"></span>
+                                <a class="game-img" href="#"></a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="my-account">
+                        <span class="my-account-logo"></span>
+                        <span class="my-account-text">我的账户</span>
+                        <div class="fenge-box"><span class="jt-01"></span></div>
+                        <p class="my-yuanbao-box">
+                            <span class="my-yuanbao-text">元宝：0</span>
+                            <span class="yuanbao-logo"></span>
+                            <a target="_blank" class="chong-url">充</a>
+                        </p>
+                        <p class="my-yuanbao-box">
+                            <span class="my-yuanbao-text">金豆：{$userData['money']}</span><span class="jindou-logo"></span>
+                            <a class="dui-url">兑</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="pc28-nav-box game-two-nav">
+                    <div class="two-nav-head">
+                        <a class="head-list sel-color"><strong>PC28首页</strong></a>
+                        <p class="my-touzhu-box clear-fix">
+                            <a class="my-touzhu-list " href="{:U('Record/index', array('game'=>'pc28'))}">我的投注</a>
+                        </p>
+                    </div>
+                </div>
+                <!-- 公正提示 -->
+                <div class="kaijiang-box kaijiang-pc28">
+                    <div class="chengxin-box">
+                        <span class="chengxin-logo"></span>
+                        <div class="chengxin-text-box">
+                            <p class="chengxin-text-01">PC28开奖采用北京快乐8第三方数据</p>
+                            <p class="chengxin-text-02">公平公正 无法作弊</p>
+                        </div>
+                    </div>
+                    <div class="kaijiang-time-box">
+                        <div class="J_kjTimeBox">
+                            <p class="kaijiang-time-text mar-t">
+                                距离第
+                                <b>{$tipData['issue']+1}</b>
+                                期竞猜截止还有
+                                <b class="J_jcTime" data-lasttime="{$tipData['deadlinecd']}">{$tipData['deadlinecd']}</b>
+                                秒 开奖还有
+                                <b class="J_kjTime" data-lasttime="{$tipData['runtimecd']}">{$tipData['runtimecd']}</b>
+                                秒
+                            </p>
+                            <p class="kaijiang-time-text">
+                                第
+                                <strong>{$tipData.issue}</strong>
+                                期开奖结果：{$tipData.num1}+{$tipData.num2}+{$tipData.num3}=
+                                <span class="now-jieguo">{$tipData['num1']+$tipData['num2']+$tipData['num3']}</span>
+                                <a target="_blank" href="http://www.bwlc.gov.cn/bulletin/keno.html">[官方查询]</a>
+                                <a href="http://game3799.com/lucky28/guide">[游戏帮助]</a>
+                            </p>
+                        </div>
+                        <p class="kaijiang-time-text line-h J_kjIng" style="display: none">
+                            第
+                            <b>{$tipData['issue']+1}</b>
+                            期正在开奖中！
+                        </p>
+                    </div>
+                    <div class="server-time-box">
+                        <a class="shengyin-ts shengyin-ts-close" href="#"></a>
+                        <a class="shuaxin-btn" data-index="1" href="#"></a>
+                        <span class="time-logo"></span>
+                        <div class="server-time">
+                            <p class="time-text">服务器时间</p>
+                            <p class="J_ServerTime time-text color-red" data-url="/waibao/index.php/Home/Num/getServerTime"></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 公正提示 -->
+                <!-- 导航 end -->
+                <!-- 内容 start -->
+                <div class="guess-box pc28-box">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>游戏期号</th>
+                                <th>开奖时间</th>
+                                <th>开奖号码</th>
+                                <th>奖池总额</th>
+                                <th>中奖人数</th>
+                                <th>盈亏</th>
+                                <th>参与</th>
+                            </tr>
+                            <foreach name="gameData" item="data">
+                                <tr>
+                                    <td>{$data.issue}</td>
+                                    <td>{$data.runtime}</td>
+                                    <if condition="$data['statu'] eq 0">
+                                        <td><span class="js-qus qus-pc28"></span></td>
+                                    <elseif condition="$data['statu'] eq 3" />
+                                        <td>
+											{$data.num1}+{$data.num2}+{$data.num3}=
+											<span class="js-ball b-pc28">{$data['num1']+$data['num2']+$data['num3']}</span>
+                                            <a target="&#39;_blank&#39;" href="http://game3799.com/lucky28/verification/785251" class="go-yz">验证</a>
+                                        </td>
+                                    <else />
+                                        <td><span class="js-qus qus-pc28"></span></td>
+                                    </if>
+                                    <td>{$data.jackpot}<i class="kdou"></i></td>
+                                    <if condition="$data['statu'] eq 3">
+                                        <td>{$data.peoplenum}</td>
+                                    <else />
+                                        <td>-</td>
+                                    </if>
+                                    <if condition="$data['statu'] eq 3">
+                                        <td><span class="green">0</span><i class="kdou"></i></td>
+                                    <else />
+                                        <td>-</td>
+                                    </if>
+                                    <if condition="$data['statu'] eq 0">
+                                        <td><a href="{:U('Guess/index', array('game'=>'pc28', 'issue'=>$data['issue']))}" class="go-jc jc-pc28">竞猜</a></td>
+                                    <elseif condition="$data['statu'] eq 1" />
+                                        <td><a class="go-ta">截止竞猜</a></td>
+                                    <elseif condition="$data['statu'] eq 2" />
+                                        <td><a class="go-ta">正在开奖</a></td>
+                                    <else />
+                                        <td><a class="go-ta">已开奖</a></td>
+                                    </if>
+                                </tr>
+                            </foreach>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- 内容 end -->
+                <div class="list-page-box clear-fix">
+                    {$pageShow}
+                </div>
+                <div id="sound_bet" style="display: none"></div>
+            </div>
+        </div>
+        <div class="fuceng-html-box suoha-html-box"></div>
+        <div class="footer-box">
+            <div class="width-1000">
+                <p class="text-02 mar-t">申明：游戏中使用到的游戏币等均为游戏道具，不具有任何财产性功能，只限用户本人在游戏中使用。</p>
+                <p class="text-02">健康游戏忠告：抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防受骗上当 适度游戏益脑 沉迷游戏伤身 合理安排时间 享受健康生活</p>
+            </div>
+        </div>
+        <script src="__PUBLIC__/front/common.js"></script>
+		<script src="__PUBLIC__/front/touzhu.js"></script>
+        <script src="__PUBLIC__/front/swfobject.js"></script>
+    </body>
+</html>

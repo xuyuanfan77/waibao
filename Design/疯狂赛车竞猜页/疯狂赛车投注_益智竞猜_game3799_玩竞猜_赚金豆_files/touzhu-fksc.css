@@ -1,0 +1,112 @@
+.new_betting_form_left_cap a.sel {
+	background: #ff71a4;
+	width: 468px;
+	text-align: left;
+	padding: 0 0 0 10px;
+}
+
+.new_betting_simple_model a.a1 {
+	color: #85a1fd;
+}
+
+.new_betting_simple_model a.a2 {
+	color: #f24e89;
+}
+
+.new_betting_form_right_cap {
+	background: #ff71a4;
+}
+
+.new_betting_from_name a.a3 {
+	border-color: #f24e89;
+	color: #f24e89;
+}
+
+.new_betting_from_name li:hover a.a3 {
+	background: #f24e89;
+	color: #fff;
+}
+
+.new_betting_from_name a.del-moshi {
+	border-color: #f24e89;
+	color: #f24e89;
+}
+
+.new_betting_from_name .selected a.a3 {
+	background: #ff71a4;
+	color: #fff;
+}
+
+.insert_par1 {
+	color: #f24e89;
+}
+
+.double_insert:hover {
+	color: #f24e89;
+}
+
+.insert_par1 .total_md #total_md_lottery {
+	color: #f24e89;
+}
+
+.insert_par1 .total_md_btn {
+	background: #f24e89;
+}
+
+.the_odds:hover {
+	border-color: #f24e89;
+	color: #f24e89;
+}
+
+.suer_insert {
+	background: #f37fa9;
+}
+
+.suer_insert:hover {
+	background: #f24e89;
+	text-decoration: none;
+}
+
+.across_par2 p strong {
+	color: #f24e89;
+}
+
+
+.multiple:hover {
+	background: #f24e89;
+	text-decoration: none;
+}
+
+.standard_bg1:hover {
+	color: #f24e89;
+	text-decoration: none;
+	border-color: #f24e89;
+}
+
+.across {
+	height: 430px;
+}
+
+.standard_bg2 {
+	color: #f24e89;
+	border-color: #f24e89;
+}
+
+.no_left_bg_02 {
+	width: 66px;
+	height: 22px;
+}
+
+.across_par2 .mode_save {
+	background: #ff71a4;
+	border-color: #ff71a4;
+}
+
+.across_par2 .mode_save_anthor {
+	background: #b188fc;
+	border-color: #b188fc;
+	margin: 0 0 0 10px;
+}
+
+
+

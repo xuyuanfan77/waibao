@@ -21939,3 +21939,958 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000560s ]
 
+[ 2016-10-20T15:53:48+08:00 ] ::1 /waibao/index.php/Home/Num/index/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000606s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `user` WHERE `id` = '57d10a4c9abbd' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `statu` = 3 ORDER BY issue desc LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `issue` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' ORDER BY issue desc LIMIT 40,20   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `game` WHERE `name` = 'PC28' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] urlencode() expects parameter 1 to be string, array given D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 74 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000237s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000499s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 121 行.
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num1 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num2 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num3 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num1 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num2 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num3 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058150s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058331s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000833s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001102s ]
+
+[ 2016-10-20T15:53:48+08:00 ] ::1 /waibao/index.php/Home/Num/getServerTime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000136s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000957s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001233s ]
+
+[ 2016-10-20T15:53:54+08:00 ] ::1 /waibao/index.php/Home/Num/index/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000649s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001067s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `user` WHERE `id` = '57d10a4c9abbd' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `statu` = 3 ORDER BY issue desc LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `issue` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' ORDER BY issue desc LIMIT 40,20   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `game` WHERE `name` = 'PC28' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] urlencode() expects parameter 1 to be string, array given D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 74 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000298s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 121 行.
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num1 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num2 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num3 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num1 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num2 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num3 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045765s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045902s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000786s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001039s ]
+
+[ 2016-10-20T15:53:54+08:00 ] ::1 /waibao/index.php/Home/Num/getServerTime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000635s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000570s ]
+
+[ 2016-10-20T15:53:59+08:00 ] ::1 /waibao/index.php/Home/Num/index/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000872s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `user` WHERE `id` = '57d10a4c9abbd' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `statu` = 3 ORDER BY issue desc LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `issue` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' ORDER BY issue desc LIMIT 40,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `game` WHERE `name` = 'PC28' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] urlencode() expects parameter 1 to be string, array given D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 74 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000295s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 121 行.
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num1 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num2 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num3 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num1 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num2 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num3 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047207s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047344s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000803s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001066s ]
+
+[ 2016-10-20T15:53:59+08:00 ] ::1 /waibao/index.php/Home/Num/getServerTime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000599s ]
+
+[ 2016-10-20T15:54:04+08:00 ] ::1 /waibao/index.php/Home/Num/index/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000891s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000951s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `user` WHERE `id` = '57d10a4c9abbd' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `statu` = 3 ORDER BY issue desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `issue` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' ORDER BY issue desc LIMIT 40,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `game` WHERE `name` = 'PC28' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] urlencode() expects parameter 1 to be string, array given D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 74 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000286s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 121 行.
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num1 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num2 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num3 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num1 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num2 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num3 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047891s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048026s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000701s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000912s ]
+
+[ 2016-10-20T15:54:04+08:00 ] ::1 /waibao/index.php/Home/Num/getServerTime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000822s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000986s ]
+
+[ 2016-10-20T15:54:10+08:00 ] ::1 /waibao/index.php/Home/Num/index/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000875s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001741s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `user` WHERE `id` = '57d10a4c9abbd' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `statu` = 3 ORDER BY issue desc LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `issue` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' ORDER BY issue desc LIMIT 40,20   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `game` WHERE `name` = 'PC28' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] urlencode() expects parameter 1 to be string, array given D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 74 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 121 行.
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num1 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num2 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num3 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num1 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num2 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num3 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046116s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046253s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000843s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001127s ]
+
+[ 2016-10-20T15:54:10+08:00 ] ::1 /waibao/index.php/Home/Num/getServerTime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000568s ]
+
+[ 2016-10-20T15:54:15+08:00 ] ::1 /waibao/index.php/Home/Num/index/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000714s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000926s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `user` WHERE `id` = '57d10a4c9abbd' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `statu` = 3 ORDER BY issue desc LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `issue` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' ORDER BY issue desc LIMIT 40,20   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `game` WHERE `name` = 'PC28' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] urlencode() expects parameter 1 to be string, array given D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 74 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000263s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 121 行.
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num1 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num2 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num3 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num1 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num2 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num3 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044699s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000837s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001128s ]
+
+[ 2016-10-20T15:54:15+08:00 ] ::1 /waibao/index.php/Home/Num/getServerTime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000790s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000750s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000964s ]
+
+[ 2016-10-20T15:54:20+08:00 ] ::1 /waibao/index.php/Home/Num/index/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000772s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000633s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `user` WHERE `id` = '57d10a4c9abbd' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `statu` = 3 ORDER BY issue desc LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `issue` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' ORDER BY issue desc LIMIT 40,20   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `game` WHERE `name` = 'PC28' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] urlencode() expects parameter 1 to be string, array given D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 74 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000277s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 121 行.
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num1 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num2 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num3 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num1 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num2 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num3 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046087s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046222s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000778s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001031s ]
+
+[ 2016-10-20T15:54:20+08:00 ] ::1 /waibao/index.php/Home/Num/getServerTime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000619s ]
+
+[ 2016-10-20T15:54:26+08:00 ] ::1 /waibao/index.php/Home/Num/index/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000866s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `user` WHERE `id` = '57d10a4c9abbd' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `statu` = 3 ORDER BY issue desc LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `issue` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' ORDER BY issue desc LIMIT 40,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `game` WHERE `name` = 'PC28' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] urlencode() expects parameter 1 to be string, array given D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 74 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000233s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000494s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 121 行.
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num1 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num2 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num3 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num1 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num2 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num3 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075155s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075734s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000836s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001094s ]
+
+[ 2016-10-20T15:54:26+08:00 ] ::1 /waibao/index.php/Home/Num/getServerTime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000809s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000943s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001174s ]
+
+[ 2016-10-20T15:54:31+08:00 ] ::1 /waibao/index.php/Home/Num/index/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000668s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000670s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `user` WHERE `id` = '57d10a4c9abbd' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `statu` = 3 ORDER BY issue desc LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `issue` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' ORDER BY issue desc LIMIT 40,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `game` WHERE `name` = 'PC28' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] urlencode() expects parameter 1 to be string, array given D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 74 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000228s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000523s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 121 行.
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num1 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num2 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num3 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num1 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num2 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num3 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073122s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073308s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000519s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000670s ]
+
+[ 2016-10-20T15:54:31+08:00 ] ::1 /waibao/index.php/Home/Num/getServerTime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000725s ]
+
+[ 2016-10-20T15:54:37+08:00 ] ::1 /waibao/index.php/Home/Num/index/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000678s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `user` WHERE `id` = '57d10a4c9abbd' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `statu` = 3 ORDER BY issue desc LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `issue` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' ORDER BY issue desc LIMIT 40,20   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `game` WHERE `name` = 'PC28' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] urlencode() expects parameter 1 to be string, array given D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 74 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000314s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 121 行.
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num1 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num2 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num3 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num1 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num2 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num3 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066140s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066536s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000806s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001068s ]
+
+[ 2016-10-20T15:54:37+08:00 ] ::1 /waibao/index.php/Home/Num/getServerTime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000649s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000836s ]
+
+[ 2016-10-20T15:54:42+08:00 ] ::1 /waibao/index.php/Home/Num/index/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000742s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000993s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `user` WHERE `id` = '57d10a4c9abbd' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `statu` = 3 ORDER BY issue desc LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `issue` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' ORDER BY issue desc LIMIT 40,20   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `game` WHERE `name` = 'PC28' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] urlencode() expects parameter 1 to be string, array given D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 74 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000274s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 121 行.
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num1 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num2 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num3 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num1 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num2 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num3 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052104s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052278s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000796s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001065s ]
+
+[ 2016-10-20T15:54:42+08:00 ] ::1 /waibao/index.php/Home/Num/getServerTime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000744s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000913s ]
+
+[ 2016-10-20T15:54:47+08:00 ] ::1 /waibao/index.php/Home/Num/index/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000602s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `user` WHERE `id` = '57d10a4c9abbd' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `statu` = 3 ORDER BY issue desc LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `issue` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' ORDER BY issue desc LIMIT 40,20   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `game` WHERE `name` = 'PC28' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] urlencode() expects parameter 1 to be string, array given D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 74 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000283s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 121 行.
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num1 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num2 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num3 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num1 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num2 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num3 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046712s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046868s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000868s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001133s ]
+
+[ 2016-10-20T15:54:48+08:00 ] ::1 /waibao/index.php/Home/Num/getServerTime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000552s ]
+
+[ 2016-10-20T15:54:53+08:00 ] ::1 /waibao/index.php/Home/Num/index/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000586s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `user` WHERE `id` = '57d10a4c9abbd' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `statu` = 3 ORDER BY issue desc LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `issue` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' ORDER BY issue desc LIMIT 40,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `game` WHERE `name` = 'PC28' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] urlencode() expects parameter 1 to be string, array given D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 74 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000289s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 121 行.
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num1 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num2 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num3 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num1 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num2 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num3 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048841s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048977s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000788s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001076s ]
+
+[ 2016-10-20T15:54:53+08:00 ] ::1 /waibao/index.php/Home/Num/getServerTime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000804s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000811s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001023s ]
+
+[ 2016-10-20T15:54:58+08:00 ] ::1 /waibao/index.php/Home/Num/index/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000725s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `id` = '57d10a4c9abbd' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `statu` = 3 ORDER BY issue desc LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `issue` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' ORDER BY issue desc LIMIT 40,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `game` WHERE `name` = 'PC28' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] urlencode() expects parameter 1 to be string, array given D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 74 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000311s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 121 行.
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num1 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num2 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num3 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num1 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num2 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num3 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045755s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045890s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000781s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001048s ]
+
+[ 2016-10-20T15:54:59+08:00 ] ::1 /waibao/index.php/Home/Num/getServerTime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000582s ]
+
+[ 2016-10-20T15:55:04+08:00 ] ::1 /waibao/index.php/Home/Num/index/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000595s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000807s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `user` WHERE `id` = '57d10a4c9abbd' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `statu` = 3 ORDER BY issue desc LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `issue` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' ORDER BY issue desc LIMIT 40,20   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `game` WHERE `name` = 'PC28' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] urlencode() expects parameter 1 to be string, array given D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 74 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000273s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 121 行.
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num1 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num2 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num3 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num1 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num2 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num3 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044696s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044832s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000916s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001198s ]
+
+[ 2016-10-20T15:55:04+08:00 ] ::1 /waibao/index.php/Home/Num/getServerTime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000564s ]
+
+[ 2016-10-20T15:55:09+08:00 ] ::1 /waibao/index.php/Home/Num/index/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000820s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001181s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001440s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `id` = '57d10a4c9abbd' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `statu` = 3 ORDER BY issue desc LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `issue` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' ORDER BY issue desc LIMIT 40,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `game` WHERE `name` = 'PC28' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] urlencode() expects parameter 1 to be string, array given D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 74 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000223s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000460s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 121 行.
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num1 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num2 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num3 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num1 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num2 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num3 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048069s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048223s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000571s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000984s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001348s ]
+
+[ 2016-10-20T15:55:09+08:00 ] ::1 /waibao/index.php/Home/Num/getServerTime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000728s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000881s ]
+
+[ 2016-10-20T15:55:15+08:00 ] ::1 /waibao/index.php/Home/Num/index/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000924s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000742s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000924s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `id` = '57d10a4c9abbd' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `statu` = 3 ORDER BY issue desc LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `issue` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' ORDER BY issue desc LIMIT 40,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `game` WHERE `name` = 'PC28' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] urlencode() expects parameter 1 to be string, array given D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 74 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000268s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 121 行.
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num1 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num2 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num3 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num1 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num2 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num3 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046177s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046326s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000466s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000954s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001207s ]
+
+[ 2016-10-20T15:55:15+08:00 ] ::1 /waibao/index.php/Home/Num/getServerTime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000643s ]
+
+[ 2016-10-20T15:55:20+08:00 ] ::1 /waibao/index.php/Home/Num/index/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000310s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000880s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001167s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `user` WHERE `id` = '57d10a4c9abbd' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `statu` = 3 ORDER BY issue desc LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `issue` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' ORDER BY issue desc LIMIT 40,20   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `game` WHERE `name` = 'PC28' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] urlencode() expects parameter 1 to be string, array given D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 74 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000237s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001068s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 121 行.
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num1 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num2 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num3 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num1 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num2 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num3 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.097028s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.097178s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003396s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003650s ]
+
+[ 2016-10-20T15:55:20+08:00 ] ::1 /waibao/index.php/Home/Num/getServerTime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000974s ]
+
+[ 2016-10-20T15:55:26+08:00 ] ::1 /waibao/index.php/Home/Num/index/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000652s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `id` = '57d10a4c9abbd' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `statu` = 3 ORDER BY issue desc LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `issue` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' ORDER BY issue desc LIMIT 40,20   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `game` WHERE `name` = 'PC28' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] urlencode() expects parameter 1 to be string, array given D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 74 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000265s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 121 行.
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num1 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num2 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num3 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num1 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num2 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num3 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045410s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045576s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000877s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001137s ]
+
+[ 2016-10-20T15:55:26+08:00 ] ::1 /waibao/index.php/Home/Num/getServerTime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000573s ]
+
+[ 2016-10-20T15:55:31+08:00 ] ::1 /waibao/index.php/Home/Num/index/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000761s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `user` WHERE `id` = '57d10a4c9abbd' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `statu` = 3 ORDER BY issue desc LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `issue` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' ORDER BY issue desc LIMIT 40,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `game` WHERE `name` = 'PC28' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] urlencode() expects parameter 1 to be string, array given D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 74 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000264s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 121 行.
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num1 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num2 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num3 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num1 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num2 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num3 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046766s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046912s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001079s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001340s ]
+
+[ 2016-10-20T15:55:31+08:00 ] ::1 /waibao/index.php/Home/Num/getServerTime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000914s ]
+
+[ 2016-10-20T15:55:37+08:00 ] ::1 /waibao/index.php/Home/Num/index/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000599s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `user` WHERE `id` = '57d10a4c9abbd' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `statu` = 3 ORDER BY issue desc LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' AND `issue` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'PC28' ORDER BY issue desc LIMIT 40,20   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `game` WHERE `name` = 'PC28' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] urlencode() expects parameter 1 to be string, array given D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 74 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000217s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000461s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 121 行.
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num1 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num2 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num3 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num1 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num2 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: num3 D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 123 行.
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Runtime\Cache\Home\0788b3a98a5a9b780e80671745c7ea72.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075520s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075753s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000820s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001090s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000926s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001454s ]
+
+[ 2016-10-20T15:55:37+08:00 ] ::1 /waibao/index.php/Home/Num/getServerTime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+
+[ 2016-10-20T15:55:44+08:00 ] ::1 /waibao/index.php/Home/Num/index/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+ERR: SQLSTATE[HY000] [2002] ����Ŀ�����������ܾ����޷����ӡ�
+
+

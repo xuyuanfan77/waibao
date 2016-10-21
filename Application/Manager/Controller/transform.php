@@ -33,10 +33,8 @@ class Transform {
 					unset($condition);
 					$condition['id'] = array('eq',$value['userid']);
 					$userData = $User->where($condition)->find();
-					//dump($condition);
 					if($userData){
 						$userData['money']=$userData['money']+$value['output'];
-						//dump($userData);
 						$User->save($userData);
 					}
 				}

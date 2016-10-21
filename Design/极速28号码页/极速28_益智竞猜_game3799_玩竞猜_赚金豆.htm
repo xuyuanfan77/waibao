@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <link rel="stylesheet" href="%E6%9E%81%E9%80%9F28_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/common.css">
+    <script src="%E6%9E%81%E9%80%9F28_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/jquery-1.js"></script>
+    <script src="%E6%9E%81%E9%80%9F28_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/slide.js"></script>
+    <title>极速28_益智竞猜_game3799|玩竞猜_赚金豆</title>
+    <script>
+        var global = {
+            live: "http://image.game3799.com/19dou/js"
+        }
+    </script>
+
+    <link rel="stylesheet" href="%E6%9E%81%E9%80%9F28_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/game-comp.css">
+    <link rel="stylesheet" href="%E6%9E%81%E9%80%9F28_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/guess.css">
+    <link rel="icon" type="image/png" href="http://image.game3799.com/19dou/img/favicon.png">
+
+
+</head>
+<body>
+
+        <div class="site-nav">
+            <div class="width-1000">
+<form action="/Account/LogOff" id="logoutFormTop" method="post">                    <p class="site-nav-con">
+                        你好，<span class="user-name-color">远航之帆</span>元宝：0<span class="ingot"></span><a class="ingot-c" href="http://www.game3799.com/Member/Recharge">充</a>金豆：0<span class="kdou"></span><a href="http://www.game3799.com/Member/IngotExchange" class="kdou-c">兑</a><a class="login-out" href="javascript:document.getElementById('logoutFormTop').submit()">[退出]</a>
+                        <a class="site-nav-list" href="http://www.game3799.com/Home/Desktop">保存到桌面</a>
+                        <a class="site-nav-list bor-r J_shoucang" href="#">收藏本站</a>
+                    </p>
+</form>            </div>
+        </div>
+        <div class="dou-nav">
+            <div class="width-1000 clear-fix">
+                <h1 class="logo-box"><a href="http://www.game3799.com/home/index" class="logo-a">
+                    <img alt="" src="%E6%9E%81%E9%80%9F28_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/logo.png" height="98" width="134"></a></h1>
+                <ul class="dou-nav-ul">
+                    <li class=""><a href="http://www.game3799.com/home/index" class="dou-nav-list">首页</a></li>
+                    
+                    <li class=""><a href="http://www.game3799.com/home/download" class="dou-nav-list">下载中心</a></li>
+                    <li class="select"><span class="top-img">
+                        <img src="%E6%9E%81%E9%80%9F28_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/hot.gif" alt="" height="12" width="21"></span><a href="http://www.game3799.com/crazy28/index" class="dou-nav-list">益智竞猜</a></li>
+                    
+                    <li class=""><a href="http://www.game3799.com/Member" class="dou-nav-list">账户中心</a></li>
+                    <li class=""><a href="http://www.game3799.com/friend" class="dou-nav-list">推荐好友</a></li>
+                    <li class=""><a href="http://www.game3799.com/vip" class="dou-nav-list">VIP</a></li>
+                    <li class=""><a href="http://www.game3799.com/agent/index" class="dou-nav-list">合作商家</a></li>
+                    <li class=""><a href="http://www.game3799.com/pay/index" class="dou-nav-list">充值中心</a></li>
+                </ul>
+                <a href="#" class="all-game">全部游戏<span class="game-jt"></span></a>
+                <div class="game-box">
+                    <div class="game-type-list clear-fix">
+                        <strong class="game-type-title">休闲棋牌:</strong>
+                        <ul class="game-type-ul">
+                            <li><a href="http://www.game3799.com/Home/Download" class="game-type-list">
+                                <img alt="" src="%E6%9E%81%E9%80%9F28_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/er.png" height="16" width="16"><span>二人牛牛</span></a></li>
+                            
+                            <li><a href="http://www.game3799.com/Home/Download" class="game-type-list">
+                                <img alt="" src="%E6%9E%81%E9%80%9F28_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/yu.png" height="16" width="16"><span>李逵劈鱼</span></a></li>
+                            <li><a href="http://www.game3799.com/Home/Download" class="game-type-list">
+                                <img alt="" src="%E6%9E%81%E9%80%9F28_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/tong.png" height="16" width="16"><span>通比牛牛</span></a></li>
+                            
+                            <li><a href="http://www.game3799.com/Home/Download" class="game-type-list">
+                                <img alt="" src="%E6%9E%81%E9%80%9F28_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/dou.png" height="16" width="16"><span>斗地主</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="game-type-list clear-fix">
+                        <strong class="game-type-title">益智竞猜:</strong>
+                        <ul class="game-type-ul">
+                            <li><a href="http://www.game3799.com/Lucky28" class="game-type-list">
+                                <img alt="" src="%E6%9E%81%E9%80%9F28_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/pc28s.png" height="16" width="16"><span>PC28</span></a></li>
+                            <li><a href="http://www.game3799.com/Speed28" class="game-type-list">
+                                <img alt="" src="%E6%9E%81%E9%80%9F28_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/speed28s.png" height="16" width="16"><span>极速28</span></a></li>
+                            <li><a href="http://www.game3799.com/Crazy28" class="game-type-list">
+                                <img alt="" src="%E6%9E%81%E9%80%9F28_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/crazy28s.png" height="16" width="16"><span>疯狂28</span></a></li>
+                            <li><a href="http://www.game3799.com/CrazyCar" class="game-type-list">
+                                <img alt="" src="%E6%9E%81%E9%80%9F28_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/crazycars.png" height="16" width="16"><span>疯狂赛车</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="main">
+            <div class="gonggao-box">
+                <div class="lb-slide">
+                    <div class="bd">
+                        <div class="tempWrap" style="overflow:hidden; position:relative; width:696px"><ul style="width: 1740px; position: relative; overflow: hidden; padding: 0px; margin: 0px; left: -697px;"><li class="clone" style="float: left; width: 174px;"><a href="http://www.game3799.com/News/NewsDetail/71" class="li-a" target="_blank">官方充值加送20%</a></li>
+                                <li style="float: left; width: 174px;"><a href="http://www.game3799.com/News/NewsDetail/81" class="li-a" target="_blank">国庆三重礼豪豪豪！</a></li>
+                                <li style="float: left; width: 174px;"><a href="http://www.game3799.com/News/NewsDetail/78" class="li-a" target="_blank">卡奖时自动投注公告</a></li>
+                                <li style="float: left; width: 174px;"><a href="http://www.game3799.com/News/NewsDetail/76" class="li-a" target="_blank">9月官充加送20%</a></li>
+                                <li style="float: left; width: 174px;"><a href="http://www.game3799.com/News/NewsDetail/72" class="li-a" target="_blank">部分用户无法登录解决方案</a></li>
+                                <li style="float: left; width: 174px;"><a href="http://www.game3799.com/News/NewsDetail/71" class="li-a" target="_blank">官方充值加送20%</a></li>
+                        <li class="clone" style="float: left; width: 174px;"><a href="http://www.game3799.com/News/NewsDetail/81" class="li-a" target="_blank">国庆三重礼豪豪豪！</a></li><li class="clone" style="float: left; width: 174px;"><a href="http://www.game3799.com/News/NewsDetail/78" class="li-a" target="_blank">卡奖时自动投注公告</a></li><li class="clone" style="float: left; width: 174px;"><a href="http://www.game3799.com/News/NewsDetail/76" class="li-a" target="_blank">9月官充加送20%</a></li><li class="clone" style="float: left; width: 174px;"><a href="http://www.game3799.com/News/NewsDetail/72" class="li-a" target="_blank">部分用户无法登录解决方案</a></li></ul></div>
+                    </div>
+                </div>
+            </div>
+        <div class="width-1000 clear-fix">
+
+            <a class="game-banner" target="_blank" href="http://www.game3799.com/Act/TopAward/Pages/1">
+                <img src="%E6%9E%81%E9%80%9F28_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/201608091043ebb4d629a4b44d.jpg" alt="">
+            </a>
+            
+            <!-- 导航  start	 -->
+            <div class="game-nav-box clear-fix">
+                <ul class="game-nav">
+                    <li class="game-nav-list ">
+                        <div class="game-logo-box game-logo-pc28">
+                            <span class="top-jt"></span>
+                            <a class="game-img" href="http://www.game3799.com/Lucky28/index"></a>
+                        </div>
+                    </li>
+                    <li class="game-nav-list selected">
+                        <div class="game-logo-box game-logo-js28">
+                            <span class="top-jt"></span>
+                            <a class="game-img" href="http://www.game3799.com/Speed28/index"></a>
+                        </div>
+                    </li>
+                     <li class="game-nav-list ">
+                        <div class="game-logo-box game-logo-jnd16">
+                            <span class="top-jt"></span>
+                            <a class="game-img" href="http://www.game3799.com/Speed16/index"></a>
+                        </div>
+                    </li>
+                    
+                    <li class="game-nav-list ">
+                        <div class="game-logo-box game-logo-fk28">
+                            <span class="top-jt"></span>
+                            <a class="game-img" href="http://www.game3799.com/Crazy28/index"></a>
+                        </div>
+                    </li>
+                    <li class="game-nav-list ">
+                        <div class="game-logo-box game-logo-fksc">
+                            <span class="top-jt"></span>
+                            <a class="game-img" href="http://www.game3799.com/CrazyCar/index"></a>
+                        </div>
+                    </li>
+                    <li class="game-nav-list ">
+                        <div class="game-logo-box game-logo-jnd28">
+                            <span class="top-jt"></span>
+                            <a class="game-img" href="http://www.game3799.com/Canada28/index"></a>
+                        </div>
+                    </li>
+                    
+                   
+                </ul>
+                <div class="my-account">
+                    <span class="my-account-logo"></span>
+                    <span class="my-account-text">我的账户</span>
+                    <div class="fenge-box">
+                        <span class="jt-01"></span>
+                    </div>
+                    <p class="my-yuanbao-box">
+                        <span class="my-yuanbao-text">元宝：0</span>
+                        <span class="yuanbao-logo"></span>
+                            <a target="_blank" class="chong-url" href="http://www.game3799.com/Member/Recharge">充</a>
+                    </p>
+                    <p class="my-yuanbao-box">
+                        <span class="my-yuanbao-text">金豆：0</span>
+                        <span class="jindou-logo"></span>
+                        <a class="dui-url" href="http://www.game3799.com/Member/IngotExchange">兑</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="js28-nav-box  game-two-nav">
+                <div class="two-nav-head">
+                    <a class="head-list sel-color" href="http://www.game3799.com/speed28/index"><strong>极速28首页</strong></a>
+                    <a class="head-list " href="http://www.game3799.com/speed28/trend">号码走势</a>
+                    <a class="head-list " href="http://www.game3799.com/speed28/guide">游戏帮助</a>
+                    <a class="head-list" href="http://www.game3799.com/Home/TopWinners">牛人榜</a>
+                    <a class="head-list J_jiujidou" data-url="/Home/PostGetRelief" href="#">领取救济豆</a>
+                    <a class="head-list zbs-style" href="http://www.game3799.com/Act/TopAward/Pages/1"><span class="zbs-bg"></span><span class="zbs-text">每日争霸赛</span></a>
+                    <p class="my-touzhu-box clear-fix">
+                        <a class="my-touzhu-list " href="http://www.game3799.com/speed28/mybetstat/1/pages/1">我的投注</a>
+                        <a class="my-touzhu-list " href="http://www.game3799.com/speed28/automodel">投注模式编辑</a>
+                            <a class="my-touzhu-list bor-r  " href="http://www.game3799.com/speed28/EditModel">自动投注</a>     
+
+                    </p>
+                </div>
+            </div>
+
+            
+
+
+
+
+
+<!-- 公正提示 -->
+<div class="kaijiang-box kaijiang-js28">
+    <div class="chengxin-box">
+        <span class="chengxin-logo"></span>
+        <div class="chengxin-text-box">
+            <p class="chengxin-text-01">极速28开奖采用新韩国第三方数据</p>
+            <p class="chengxin-text-02">公平公正  无法作弊</p>
+        </div>
+    </div>
+        <div class="kaijiang-time-box">
+            <div class="J_kjTimeBox">
+                <p class="kaijiang-time-text mar-t">距离第 <b>130149</b> 期竞猜截止还有 <b class="J_jcTime" data-lasttime="70">0</b> 秒 开奖还有 <b class="J_kjTime" data-lasttime="90">19</b> 秒 </p>
+                    <p class="kaijiang-time-text">
+                        第<strong>130148</strong>期开奖结果：4+3+3=<span class="now-jieguo">10</span>
+                            <a target="_blank" href="http://www.tlotto.kr/">[官方查询]</a>
+                        <a href="http://www.game3799.com/Speed28/guide">[游戏帮助]</a>
+                    </p>
+            </div>
+            <p class="kaijiang-time-text line-h J_kjIng" style="display: none">第<b>130149</b>期正在开奖中！</p>
+        </div>
+    <div class="server-time-box">
+        <a class="shengyin-ts shengyin-ts-close" href="#"></a>
+        <a class="shuaxin-btn shuaxin-btn-close" data-index="1" href="#"></a>
+        <span class="time-logo"></span>
+        <div class="server-time">
+            <p class="time-text">服务器时间</p>
+            <p class="J_ServerTime time-text color-red" data-url="/Home/GetServerTime">09:41:51</p>
+        </div>
+    </div>
+</div>
+<!-- 公正提示 -->
+
+
+
+<!-- 导航  end	 -->
+
+<!-- 内容  start	-->
+
+<div class="guess-box js28-box">
+    <table>
+        <tbody><tr>
+            <th>游戏期号</th>
+            <th>开奖时间</th>
+            <th>开奖号码</th>
+            
+            <th>奖池总额</th>
+            <th>中奖人数</th>
+            <th>盈亏</th>
+            <th>参与</th>
+        </tr>
+            <tr>
+                <td>130152</td>
+                <td>10-21 09:46:40</td>
+                    <td><span class="js-qus qus-js28"></span></td>
+                    <td>6,000,000,000<i class="kdou"></i></td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td><a href="http://www.game3799.com/Speed28/bet/130152" class="go-jc jc-js28">竞猜</a></td>
+            </tr>   
+            <tr>
+                <td>130151</td>
+                <td>10-21 09:45:10</td>
+                    <td><span class="js-qus qus-js28"></span></td>
+                    <td>6,000,000,000<i class="kdou"></i></td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td><a href="http://www.game3799.com/Speed28/bet/130151" class="go-jc jc-js28">竞猜</a></td>
+            </tr>   
+            <tr>
+                <td>130150</td>
+                <td>10-21 09:43:40</td>
+                    <td><span class="js-qus qus-js28"></span></td>
+                    <td>6,000,000,000<i class="kdou"></i></td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td><a href="http://www.game3799.com/Speed28/bet/130150" class="go-jc jc-js28">竞猜</a></td>
+            </tr>   
+            <tr>
+                <td>130149</td>
+                <td>10-21 09:42:10</td>
+                    <td><span class="js-qus qus-js28"></span></td>
+                    <td>6,010,422,642<i class="kdou"></i></td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td><a href="http://www.game3799.com/Speed28/bet/130149" class="go-jc jc-js28">竞猜</a></td>
+            </tr>   
+            <tr>
+                <td>130148</td>
+                <td>10-21 09:40:40</td>
+                    <td>4+3+3=<span class="js-ball b-js28">10</span>
+                            <a target="_blank" href="http://www.tlotto.kr/" class="go-yz">验证</a>
+                    </td>
+                    <td>6,063,533,409<i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/Speed28/winners/130148/pages/1">67</a></td>
+                    <td><span class="green">0</span><i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/Speed28/mybet/130148" class="go-ta">已开奖</a></td>
+            </tr>   
+            <tr>
+                <td>130147</td>
+                <td>10-21 09:39:10</td>
+                    <td>7+0+8=<span class="js-ball b-js28">15</span>
+                            <a target="_blank" href="http://www.tlotto.kr/" class="go-yz">验证</a>
+                    </td>
+                    <td>6,061,851,521<i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/Speed28/winners/130147/pages/1">69</a></td>
+                    <td><span class="green">0</span><i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/Speed28/mybet/130147" class="go-ta">已开奖</a></td>
+            </tr>   
+            <tr>
+                <td>130146</td>
+                <td>10-21 09:37:40</td>
+                    <td>1+9+4=<span class="js-ball b-js28">14</span>
+                            <a target="_blank" href="http://www.tlotto.kr/" class="go-yz">验证</a>
+                    </td>
+                    <td>6,027,078,724<i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/Speed28/winners/130146/pages/1">58</a></td>
+                    <td><span class="green">0</span><i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/Speed28/mybet/130146" class="go-ta">已开奖</a></td>
+            </tr>   
+            <tr>
+                <td>130145</td>
+                <td>10-21 09:36:10</td>
+                    <td>2+2+9=<span class="js-ball b-js28">13</span>
+                            <a target="_blank" href="http://www.tlotto.kr/" class="go-yz">验证</a>
+                    </td>
+                    <td>6,033,233,058<i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/Speed28/winners/130145/pages/1">63</a></td>
+                    <td><span class="green">0</span><i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/Speed28/mybet/130145" class="go-ta">已开奖</a></td>
+            </tr>   
+            <tr>
+                <td>130144</td>
+                <td>10-21 09:34:40</td>
+                    <td>4+7+5=<span class="js-ball b-js28">16</span>
+                            <a target="_blank" href="http://www.tlotto.kr/" class="go-yz">验证</a>
+                    </td>
+                    <td>6,032,365,807<i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/Speed28/winners/130144/pages/1">57</a></td>
+                    <td><span class="green">0</span><i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/Speed28/mybet/130144" class="go-ta">已开奖</a></td>
+            </tr>   
+            <tr>
+                <td>130143</td>
+                <td>10-21 09:33:10</td>
+                    <td>6+0+1=<span class="js-ball b-js28">7</span>
+                            <a target="_blank" href="http://www.tlotto.kr/" class="go-yz">验证</a>
+                    </td>
+                    <td>6,034,932,343<i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/Speed28/winners/130143/pages/1">51</a></td>
+                    <td><span class="green">0</span><i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/Speed28/mybet/130143" class="go-ta">已开奖</a></td>
+            </tr>   
+            <tr>
+                <td>130142</td>
+                <td>10-21 09:31:40</td>
+                    <td>5+4+8=<span class="js-ball b-js28">17</span>
+                            <a target="_blank" href="http://www.tlotto.kr/" class="go-yz">验证</a>
+                    </td>
+                    <td>6,086,469,753<i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/Speed28/winners/130142/pages/1">52</a></td>
+                    <td><span class="green">0</span><i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/Speed28/mybet/130142" class="go-ta">已开奖</a></td>
+            </tr>   
+            <tr>
+                <td>130141</td>
+                <td>10-21 09:30:10</td>
+                    <td>7+6+8=<span class="js-ball b-js28">21</span>
+                            <a target="_blank" href="http://www.tlotto.kr/" class="go-yz">验证</a>
+                    </td>
+                    <td>6,043,477,105<i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/Speed28/winners/130141/pages/1">46</a></td>
+                    <td><span class="green">0</span><i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/Speed28/mybet/130141" class="go-ta">已开奖</a></td>
+            </tr>   
+            <tr>
+                <td>130140</td>
+                <td>10-21 09:28:40</td>
+                    <td>5+5+1=<span class="js-ball b-js28">11</span>
+                            <a target="_blank" href="http://www.tlotto.kr/" class="go-yz">验证</a>
+                    </td>
+                    <td>6,039,222,177<i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/Speed28/winners/130140/pages/1">57</a></td>
+                    <td><span class="green">0</span><i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/Speed28/mybet/130140" class="go-ta">已开奖</a></td>
+            </tr>   
+            <tr>
+                <td>130139</td>
+                <td>10-21 09:27:10</td>
+                    <td>0+2+5=<span class="js-ball b-js28">7</span>
+                            <a target="_blank" href="http://www.tlotto.kr/" class="go-yz">验证</a>
+                    </td>
+                    <td>6,034,918,461<i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/Speed28/winners/130139/pages/1">57</a></td>
+                    <td><span class="green">0</span><i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/Speed28/mybet/130139" class="go-ta">已开奖</a></td>
+            </tr>   
+            <tr>
+                <td>130138</td>
+                <td>10-21 09:25:40</td>
+                    <td>9+2+7=<span class="js-ball b-js28">18</span>
+                            <a target="_blank" href="http://www.tlotto.kr/" class="go-yz">验证</a>
+                    </td>
+                    <td>6,048,929,516<i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/Speed28/winners/130138/pages/1">65</a></td>
+                    <td><span class="green">0</span><i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/Speed28/mybet/130138" class="go-ta">已开奖</a></td>
+            </tr>   
+            <tr>
+                <td>130137</td>
+                <td>10-21 09:24:10</td>
+                    <td>0+6+4=<span class="js-ball b-js28">10</span>
+                            <a target="_blank" href="http://www.tlotto.kr/" class="go-yz">验证</a>
+                    </td>
+                    <td>6,061,675,547<i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/Speed28/winners/130137/pages/1">68</a></td>
+                    <td><span class="green">0</span><i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/Speed28/mybet/130137" class="go-ta">已开奖</a></td>
+            </tr>   
+            <tr>
+                <td>130136</td>
+                <td>10-21 09:22:40</td>
+                    <td>1+5+3=<span class="js-ball b-js28">9</span>
+                            <a target="_blank" href="http://www.tlotto.kr/" class="go-yz">验证</a>
+                    </td>
+                    <td>6,060,278,191<i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/Speed28/winners/130136/pages/1">69</a></td>
+                    <td><span class="green">0</span><i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/Speed28/mybet/130136" class="go-ta">已开奖</a></td>
+            </tr>   
+            <tr>
+                <td>130135</td>
+                <td>10-21 09:21:10</td>
+                    <td>0+8+3=<span class="js-ball b-js28">11</span>
+                            <a target="_blank" href="http://www.tlotto.kr/" class="go-yz">验证</a>
+                    </td>
+                    <td>6,043,167,469<i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/Speed28/winners/130135/pages/1">54</a></td>
+                    <td><span class="green">0</span><i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/Speed28/mybet/130135" class="go-ta">已开奖</a></td>
+            </tr>   
+            <tr>
+                <td>130134</td>
+                <td>10-21 09:19:40</td>
+                    <td>4+1+1=<span class="js-ball b-js28">6</span>
+                            <a target="_blank" href="http://www.tlotto.kr/" class="go-yz">验证</a>
+                    </td>
+                    <td>6,048,220,866<i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/Speed28/winners/130134/pages/1">63</a></td>
+                    <td><span class="green">0</span><i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/Speed28/mybet/130134" class="go-ta">已开奖</a></td>
+            </tr>   
+            <tr>
+                <td>130133</td>
+                <td>10-21 09:18:10</td>
+                    <td>4+7+1=<span class="js-ball b-js28">12</span>
+                            <a target="_blank" href="http://www.tlotto.kr/" class="go-yz">验证</a>
+                    </td>
+                    <td>6,062,623,126<i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/Speed28/winners/130133/pages/1">63</a></td>
+                    <td><span class="green">0</span><i class="kdou"></i></td>
+                    <td><a href="http://www.game3799.com/Speed28/mybet/130133" class="go-ta">已开奖</a></td>
+            </tr>   
+    </tbody></table>
+</div>
+<!-- 内容  end	 -->
+
+    <div class="list-page-box clear-fix">
+                        <a class="page-btn selected" href="http://www.game3799.com/Speed28/index/pages/1">1</a>
+            <a class="page-btn" href="http://www.game3799.com/Speed28/index/pages/2">2</a>
+            <a class="page-btn" href="http://www.game3799.com/Speed28/index/pages/3">3</a>
+            <a class="page-btn" href="http://www.game3799.com/Speed28/index/pages/4">4</a>
+                <span class="shenglue">...</span>
+                <a class="page-btn" href="http://www.game3799.com/Speed28/index/pages/50">50</a>
+
+            <a class="page-btn" href="http://www.game3799.com/Speed28/index/pages/2">下一页</a>
+
+    </div>
+
+
+<div id="sound_bet" style="display: none"></div>
+
+        </div>
+    </div>
+    
+    <div class="fuceng-html-box suoha-html-box">
+    </div>
+
+        <div class="footer-box">
+            <div class="width-1000">
+                <p class="about-us">
+                    <a href="http://www.game3799.com/Home/Download" class="company-list">3799游戏中心</a>
+                    <a href="http://www.game3799.com/Home/About" class="company-list">关于我们</a>
+                    <a href="http://www.game3799.com/Home/Contact" class="company-list bor-r">联系我们</a>
+                </p>
+                <p class="text-01">3799游戏中心 版权所有</p>
+                <p class="text-01">
+                    <a target="_blank" style="color:red;" href="http://www.game3799.com/Home/SafetyResponsibilityBook">安全责任书</a>|
+                    <a target="_blank" href="http://www.miitbeian.gov.cn/">浙ICP备16015333号-1</a>|杭州傲游网络科技有限公司</p>
+                <p class="text-02 mar-t">申明：游戏中使用到的游戏币等均为游戏道具，不具有任何财产性功能，只限用户本人在游戏中使用。</p>
+                <p class="text-02">健康游戏忠告：抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防受骗上当 适度游戏益脑 沉迷游戏伤身 合理安排时间 享受健康生活</p>
+            </div>
+        </div> 
+    <div class="black-cover"></div>
+    <div class="kefu-box kefu-box-01">
+        <div class="kefu-little-box">
+            <span class="kefu-top-logo"></span>
+            <span class="kefu-text">在线客服</span>
+            <span class="kefu-jt jt-left"></span>
+        </div>
+        <div class="kefu-big-box">
+            <div class="kefu-list-box">
+                <span class="title">在线客服</span>
+                <div class="kefu-list">
+                    <a target="_blank" href="http://crm2.qq.com/page/portalpage/wpa.php?uin=800171736&amp;aty=0&amp;a=0&amp;curl=&amp;ty=1">
+                        <img src="%E6%9E%81%E9%80%9F28_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/pa.gif" alt="点击这里给我发消息" title="点击这里给我发消息" border="0"></a>
+                    <span class="qq-text">客服QQ</span>
+                </div>
+                <div class="kefu-list">
+                    <a target="_blank" href="http://crm2.qq.com/page/portalpage/wpa.php?uin=800171736&amp;aty=0&amp;a=0&amp;curl=&amp;ty=1">
+                        <img src="%E6%9E%81%E9%80%9F28_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/pa.gif" alt="点击这里给我发消息" title="点击这里给我发消息" border="0"></a>
+                    <span class="qq-text">客服QQ</span>
+                </div>
+                <div class="kefu-list">
+                    <a target="_blank" href="http://crm2.qq.com/page/portalpage/wpa.php?uin=800171736&amp;aty=0&amp;a=0&amp;curl=&amp;ty=1">
+                        <img src="%E6%9E%81%E9%80%9F28_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/pa.gif" alt="点击这里给我发消息" title="点击这里给我发消息" border="0"></a>
+                    <span class="qq-text">客服QQ</span>
+                </div>
+                <div class="qq-qun">
+                    <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=06957eaabeaaf7a35b8f8f129be63b05b1a3448398034a4b71e2de0d3f7947a2">
+                        <img src="%E6%9E%81%E9%80%9F28_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/group.png" alt="game3799棋牌官方群" title="game3799棋牌官方群" border="0"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="fuceng-common-box">
+            <div class="fuceng-box">
+                <div class="fc-ttl-box clear-fix">
+                    <h6 class="ttl-sp">提示信息</h6>
+                    <a href="#" class="fc-close J_closefc"></a>
+                </div>
+                <div class="fc-main-box">
+                </div>
+            </div>
+        </div>
+    <style type="text/css">
+        #bw {
+            position: absolute;
+            width: 324px;
+            height: 308px;
+            top: 0px;
+            left: 0px;
+            z-index: 9999;
+            cursor: pointer;
+            display: none;
+        }
+
+        .blueWC {
+            background: url(http://test123img.73dou.com/3799/abw/black.png) left no-repeat;
+            background-position: 1px 42px;
+        }
+
+        .whiteWC {
+            background: url(http://test123img.73dou.com/3799/abw/white.png) left no-repeat;
+            background-position: 1px 42px;
+        }
+
+        .no {
+            background: url(http://test123img.73dou.com/3799/abw/no.png) left no-repeat;
+        }
+
+        .yes {
+            background: url(http://test123img.73dou.com/3799/abw/yes.png) left no-repeat;
+        }
+    </style>
+   
+    <script src="%E6%9E%81%E9%80%9F28_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/common.js"></script>
+    
+    <script src="%E6%9E%81%E9%80%9F28_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/touzhu.js"></script>
+    <script src="%E6%9E%81%E9%80%9F28_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/swfobject.js"></script>
+
+    <div style="display: none">
+        <script src="%E6%9E%81%E9%80%9F28_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/q_stat.php" language="JavaScript"></script><script src="%E6%9E%81%E9%80%9F28_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/core.php" charset="utf-8" type="text/javascript"></script><a href="http://quanjing.cnzz.com/" target="_blank" title="全景统计">全景统计</a>
+    </div>
+    
+
+
+</body></html>

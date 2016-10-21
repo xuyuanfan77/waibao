@@ -57,8 +57,8 @@ return array(
 	
 	// 转换配置
 	'transform'=>array(
-		'PC28'=>array(
-			'name'=>'PC28',
+		'pc28'=>array(
+			'name'=>'pc28',
 			'lotteryname'=>'北京快乐8',
 			'handle'=>function($arg){
 				for($index=1;$index<=20;$index++){
@@ -76,8 +76,8 @@ return array(
 			'aheaddeadline'=>60,
 			'delayruntime'=>60,
 		),
-		'极速28'=>array(
-			'name'=>'极速28',
+		'js28'=>array(
+			'name'=>'js28',
 			'lotteryname'=>'韩国快乐8',
 			'handle'=>function($arg){
 				for($index=1;$index<=20;$index++){
@@ -95,8 +95,8 @@ return array(
 			'aheaddeadline'=>60,
 			'delayruntime'=>60,
 		),
-		'极速16'=>array(
-			'name'=>'极速16',
+		'js16'=>array(
+			'name'=>'js16',
 			'lotteryname'=>'韩国快乐8',
 			'handle'=>function($arg){
 				for($index=1;$index<=20;$index++){
@@ -114,8 +114,8 @@ return array(
 			'aheaddeadline'=>60,
 			'delayruntime'=>60,
 		),
-		'疯狂赛车'=>array(
-			'name'=>'疯狂赛车',
+		'fksc'=>array(
+			'name'=>'fksc',
 			'lotteryname'=>'北京PK10',
 			'handle'=>function($arg){
 				$data['num1'] = $arg['num1'];;

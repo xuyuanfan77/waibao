@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <link rel="stylesheet" href="%E6%9E%81%E9%80%9F16%E6%8A%95%E6%B3%A8_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/common.css">
+    <script src="%E6%9E%81%E9%80%9F16%E6%8A%95%E6%B3%A8_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/jquery-1.js"></script>
+    <script src="%E6%9E%81%E9%80%9F16%E6%8A%95%E6%B3%A8_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/slide.js"></script>
+    <title>极速16投注_益智竞猜_game3799|玩竞猜_赚金豆</title>
+    <script>
+        var global = {
+            live: "http://image.game3799.com/19dou/js"
+        }
+    </script>
+
+    <link rel="stylesheet" href="%E6%9E%81%E9%80%9F16%E6%8A%95%E6%B3%A8_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/game-comp.css">
+    <link rel="stylesheet" href="%E6%9E%81%E9%80%9F16%E6%8A%95%E6%B3%A8_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/touzhu-new.css">
+    <link rel="stylesheet" href="%E6%9E%81%E9%80%9F16%E6%8A%95%E6%B3%A8_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/touzhu-js16.css">
+    <script type="text/javascript">
+        var nub = new Array(0, 0, 0, 1, 3, 6, 10, 15, 21, 25, 27, 27, 25, 21, 15, 10, 6, 3, 1);
+        var nub1 = new Array(0, 0, 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 63);
+        var mode = new Array([3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18],//全包
+                             [3, 5, 7, 9, 11, 13, 15, 17],//单
+                             [4, 6, 8, 10, 12, 14, 16, 18],//双
+                             [11, 12, 13, 14, 15, 16, 17, 18],//大
+                             [3, 4, 5, 6, 7, 8, 9, 10],//小
+                             [9, 10, 11, 12,8, 13, ],//中
+                             [3, 4, 5, 6, 7,14, 15, 16, 17, 18],//边
+                             [11, 13, 15, 17],//大单
+                             [3, 5, 7, 9],//小单
+                             [12, 14, 16, 18],//大双
+                             [4, 6, 8, 10],//小双
+                             [14, 15, 16, 17, 18],//大边
+                             [3, 4, 5, 6, 7],//小边
+                             [3, 5, 7, 15, 17],//单边
+                             [4, 6, 14, 16, 18],//双边
+                             [10],//0尾
+                             [11],//1尾
+                             [12],//2尾
+                             [3, 13],//3尾
+                             [4, 14],//4尾
+                             [3, 4, 5, 10, 11, 12, 13, 14],//小尾
+                             [5, 15],//5尾
+                             [6, 16],//6尾
+                             [7, 17],//7尾
+                             [8, 18],//8尾
+                             [9],//9尾
+                             [5, 6, 7, 8, 9, 15, 16, 17, 18],//大尾
+                             [3, 6, 9, 12, 15, 18],//3余0
+                             [4, 7, 10, 13, 16],//3余1
+                             [5, 8, 11, 14, 17],//3余2
+                             [4, 8, 12, 16],//4余0
+                             [5, 9, 13, 17],//4余1
+                             [6, 10, 14, 18],//4余2
+                             [7, 11, 15],//4余3
+                             [5, 10, 15],//5余0
+                             [6, 11, 16],//5余1
+                             [7, 12, 17],//5余2
+                             [8, 13, 18],//5余3
+                             [9, 14]//5余4
+                             );
+    </script>
+    <link rel="icon" type="image/png" href="http://image.game3799.com/19dou/img/favicon.png">
+
+
+</head>
+<body>
+
+        <div class="site-nav">
+            <div class="width-1000">
+<form action="/Account/LogOff" id="logoutFormTop" method="post">                    <p class="site-nav-con">
+                        你好，<span class="user-name-color">远航之帆</span>元宝：0<span class="ingot"></span><a class="ingot-c" href="http://www.game3799.com/Member/Recharge">充</a>金豆：0<span class="kdou"></span><a href="http://www.game3799.com/Member/IngotExchange" class="kdou-c">兑</a><a class="login-out" href="javascript:document.getElementById('logoutFormTop').submit()">[退出]</a>
+                        <a class="site-nav-list" href="http://www.game3799.com/Home/Desktop">保存到桌面</a>
+                        <a class="site-nav-list bor-r J_shoucang" href="#">收藏本站</a>
+                    </p>
+</form>            </div>
+        </div>
+        <div class="dou-nav">
+            <div class="width-1000 clear-fix">
+                <h1 class="logo-box"><a href="http://www.game3799.com/home/index" class="logo-a">
+                    <img alt="" src="%E6%9E%81%E9%80%9F16%E6%8A%95%E6%B3%A8_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/logo.png" height="98" width="134"></a></h1>
+                <ul class="dou-nav-ul">
+                    <li class=""><a href="http://www.game3799.com/home/index" class="dou-nav-list">首页</a></li>
+                    
+                    <li class=""><a href="http://www.game3799.com/home/download" class="dou-nav-list">下载中心</a></li>
+                    <li class="select"><span class="top-img">
+                        <img src="%E6%9E%81%E9%80%9F16%E6%8A%95%E6%B3%A8_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/hot.gif" alt="" height="12" width="21"></span><a href="http://www.game3799.com/crazy28/index" class="dou-nav-list">益智竞猜</a></li>
+                    
+                    <li class=""><a href="http://www.game3799.com/Member" class="dou-nav-list">账户中心</a></li>
+                    <li class=""><a href="http://www.game3799.com/friend" class="dou-nav-list">推荐好友</a></li>
+                    <li class=""><a href="http://www.game3799.com/vip" class="dou-nav-list">VIP</a></li>
+                    <li class=""><a href="http://www.game3799.com/agent/index" class="dou-nav-list">合作商家</a></li>
+                    <li class=""><a href="http://www.game3799.com/pay/index" class="dou-nav-list">充值中心</a></li>
+                </ul>
+                <a href="#" class="all-game">全部游戏<span class="game-jt"></span></a>
+                <div class="game-box">
+                    <div class="game-type-list clear-fix">
+                        <strong class="game-type-title">休闲棋牌:</strong>
+                        <ul class="game-type-ul">
+                            <li><a href="http://www.game3799.com/Home/Download" class="game-type-list">
+                                <img alt="" src="%E6%9E%81%E9%80%9F16%E6%8A%95%E6%B3%A8_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/er.png" height="16" width="16"><span>二人牛牛</span></a></li>
+                            
+                            <li><a href="http://www.game3799.com/Home/Download" class="game-type-list">
+                                <img alt="" src="%E6%9E%81%E9%80%9F16%E6%8A%95%E6%B3%A8_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/yu.png" height="16" width="16"><span>李逵劈鱼</span></a></li>
+                            <li><a href="http://www.game3799.com/Home/Download" class="game-type-list">
+                                <img alt="" src="%E6%9E%81%E9%80%9F16%E6%8A%95%E6%B3%A8_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/tong.png" height="16" width="16"><span>通比牛牛</span></a></li>
+                            
+                            <li><a href="http://www.game3799.com/Home/Download" class="game-type-list">
+                                <img alt="" src="%E6%9E%81%E9%80%9F16%E6%8A%95%E6%B3%A8_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/dou.png" height="16" width="16"><span>斗地主</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="game-type-list clear-fix">
+                        <strong class="game-type-title">益智竞猜:</strong>
+                        <ul class="game-type-ul">
+                            <li><a href="http://www.game3799.com/Lucky28" class="game-type-list">
+                                <img alt="" src="%E6%9E%81%E9%80%9F16%E6%8A%95%E6%B3%A8_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/pc28s.png" height="16" width="16"><span>PC28</span></a></li>
+                            <li><a href="http://www.game3799.com/Speed28" class="game-type-list">
+                                <img alt="" src="%E6%9E%81%E9%80%9F16%E6%8A%95%E6%B3%A8_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/speed28s.png" height="16" width="16"><span>极速28</span></a></li>
+                            <li><a href="http://www.game3799.com/Crazy28" class="game-type-list">
+                                <img alt="" src="%E6%9E%81%E9%80%9F16%E6%8A%95%E6%B3%A8_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/crazy28s.png" height="16" width="16"><span>疯狂28</span></a></li>
+                            <li><a href="http://www.game3799.com/CrazyCar" class="game-type-list">
+                                <img alt="" src="%E6%9E%81%E9%80%9F16%E6%8A%95%E6%B3%A8_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/crazycars.png" height="16" width="16"><span>疯狂赛车</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="main">
+            <div class="gonggao-box">
+                <div class="lb-slide">
+                    <div class="bd">
+                        <div class="tempWrap" style="overflow:hidden; position:relative; width:696px"><ul style="width: 1740px; position: relative; overflow: hidden; padding: 0px; margin: 0px; left: -365px;"><li class="clone" style="float: left; width: 174px;"><a href="http://www.game3799.com/News/NewsDetail/71" class="li-a" target="_blank">官方充值加送20%</a></li>
+                                <li style="float: left; width: 174px;"><a href="http://www.game3799.com/News/NewsDetail/81" class="li-a" target="_blank">国庆三重礼豪豪豪！</a></li>
+                                <li style="float: left; width: 174px;"><a href="http://www.game3799.com/News/NewsDetail/78" class="li-a" target="_blank">卡奖时自动投注公告</a></li>
+                                <li style="float: left; width: 174px;"><a href="http://www.game3799.com/News/NewsDetail/76" class="li-a" target="_blank">9月官充加送20%</a></li>
+                                <li style="float: left; width: 174px;"><a href="http://www.game3799.com/News/NewsDetail/72" class="li-a" target="_blank">部分用户无法登录解决方案</a></li>
+                                <li style="float: left; width: 174px;"><a href="http://www.game3799.com/News/NewsDetail/71" class="li-a" target="_blank">官方充值加送20%</a></li>
+                        <li class="clone" style="float: left; width: 174px;"><a href="http://www.game3799.com/News/NewsDetail/81" class="li-a" target="_blank">国庆三重礼豪豪豪！</a></li><li class="clone" style="float: left; width: 174px;"><a href="http://www.game3799.com/News/NewsDetail/78" class="li-a" target="_blank">卡奖时自动投注公告</a></li><li class="clone" style="float: left; width: 174px;"><a href="http://www.game3799.com/News/NewsDetail/76" class="li-a" target="_blank">9月官充加送20%</a></li><li class="clone" style="float: left; width: 174px;"><a href="http://www.game3799.com/News/NewsDetail/72" class="li-a" target="_blank">部分用户无法登录解决方案</a></li></ul></div>
+                    </div>
+                </div>
+            </div>
+        <div class="width-1000 clear-fix">
+
+            <a class="game-banner" target="_blank" href="http://www.game3799.com/Act/TopAward/Pages/1">
+                <img src="%E6%9E%81%E9%80%9F16%E6%8A%95%E6%B3%A8_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/201608091043ebb4d629a4b44d.jpg" alt="">
+            </a>
+            
+            <!-- 导航  start	 -->
+            <div class="game-nav-box clear-fix">
+                <ul class="game-nav">
+                    <li class="game-nav-list ">
+                        <div class="game-logo-box game-logo-pc28">
+                            <span class="top-jt"></span>
+                            <a class="game-img" href="http://www.game3799.com/Lucky28/index"></a>
+                        </div>
+                    </li>
+                    <li class="game-nav-list ">
+                        <div class="game-logo-box game-logo-js28">
+                            <span class="top-jt"></span>
+                            <a class="game-img" href="http://www.game3799.com/Speed28/index"></a>
+                        </div>
+                    </li>
+                     <li class="game-nav-list selected">
+                        <div class="game-logo-box game-logo-jnd16">
+                            <span class="top-jt"></span>
+                            <a class="game-img" href="http://www.game3799.com/Speed16/index"></a>
+                        </div>
+                    </li>
+                    
+                    <li class="game-nav-list ">
+                        <div class="game-logo-box game-logo-fk28">
+                            <span class="top-jt"></span>
+                            <a class="game-img" href="http://www.game3799.com/Crazy28/index"></a>
+                        </div>
+                    </li>
+                    <li class="game-nav-list ">
+                        <div class="game-logo-box game-logo-fksc">
+                            <span class="top-jt"></span>
+                            <a class="game-img" href="http://www.game3799.com/CrazyCar/index"></a>
+                        </div>
+                    </li>
+                    <li class="game-nav-list ">
+                        <div class="game-logo-box game-logo-jnd28">
+                            <span class="top-jt"></span>
+                            <a class="game-img" href="http://www.game3799.com/Canada28/index"></a>
+                        </div>
+                    </li>
+                    
+                   
+                </ul>
+                <div class="my-account">
+                    <span class="my-account-logo"></span>
+                    <span class="my-account-text">我的账户</span>
+                    <div class="fenge-box">
+                        <span class="jt-01"></span>
+                    </div>
+                    <p class="my-yuanbao-box">
+                        <span class="my-yuanbao-text">元宝：0</span>
+                        <span class="yuanbao-logo"></span>
+                            <a target="_blank" class="chong-url" href="http://www.game3799.com/Member/Recharge">充</a>
+                    </p>
+                    <p class="my-yuanbao-box">
+                        <span class="my-yuanbao-text">金豆：0</span>
+                        <span class="jindou-logo"></span>
+                        <a class="dui-url" href="http://www.game3799.com/Member/IngotExchange">兑</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="js16-nav-box game-two-nav">
+                <div class="two-nav-head">
+                    <a class="head-list " href="http://www.game3799.com/speed16/index"><strong>极速16首页</strong></a>
+                    <a class="head-list " href="http://www.game3799.com/speed16/trend">号码走势</a>
+                    <a class="head-list " href="http://www.game3799.com/speed16/guide">游戏帮助</a>
+                    <a class="head-list" href="http://www.game3799.com/Home/TopWinners">牛人榜</a>
+                    <a class="head-list J_jiujidou" data-url="/Home/PostGetRelief" href="#">领取救济豆</a>
+                    <a class="head-list zbs-style" href="http://www.game3799.com/Act/TopAward/Pages/1"><span class="zbs-bg"></span><span class="zbs-text">每日争霸赛</span></a>
+                    <p class="my-touzhu-box clear-fix">
+                        <a class="my-touzhu-list " href="http://www.game3799.com/speed16/mybetstat/1/pages/1">我的投注</a>
+                        <a class="my-touzhu-list " href="http://www.game3799.com/speed16/automodel">投注模式编辑</a>
+                            <a class="my-touzhu-list bor-r  " href="http://www.game3799.com/speed16/EditModel">自动投注</a>     
+
+                    </p>
+                </div>
+            </div>
+
+            
+
+
+<!-- 公正提示 -->
+<div class="kaijiang-box kaijiang-jnd16">
+    <div class="chengxin-box">
+        <span class="chengxin-logo"></span>
+        <div class="chengxin-text-box">
+            <p class="chengxin-text-01">极速16开奖采用新韩国第三方数据</p>
+            <p class="chengxin-text-02">公平公正  无法作弊</p>
+        </div>
+    </div>
+        <div class="kaijiang-time-box">
+            <div class="J_kjTimeBox">
+                <p class="kaijiang-time-text mar-t">距离第 <b>130440</b> 期竞猜截止还有 <b class="J_jcTime" data-lasttime="50">39</b> 秒 开奖还有 <b class="J_kjTime" data-lasttime="70">59</b> 秒 </p>
+                    <p class="kaijiang-time-text">
+                        第<strong>130439</strong>期开奖结果：5+1+6=<span class="now-jieguo">12</span>
+                            <a target="_blank" href="http://www.tlotto.kr/">[官方查询]</a>
+                        <a href="http://www.game3799.com/Speed16/guide">[游戏帮助]</a>
+                    </p>
+            </div>
+            <p class="kaijiang-time-text line-h J_kjIng" style="display: none">第<b>130440</b>期正在开奖中！</p>
+        </div>
+    <div class="server-time-box">
+        <a class="shengyin-ts shengyin-ts-close" href="#"></a>
+        <a class="shuaxin-btn shuaxin-btn-close" href="#"></a>
+        <span class="time-logo"></span>
+        <div class="server-time">
+            <p class="time-text">服务器时间</p>
+            <p class="J_ServerTime time-text color-red" data-url="/Home/GetServerTime">16:57:41</p>
+        </div>
+    </div>
+</div>
+<!-- 公正提示 -->
+
+<!-- 导航  end	 -->
+
+<!-- 导航  end	 -->
+
+<!-- 内容  start	-->
+<div class="new_betting_form">
+    <div class="new_betting_form_left">
+        <div class="new_betting_form_left_cap">
+            <a id="m_a0" class="sel" onclick="modes_easy_all(0)">简易模式</a><a id="m_a1" onclick="modes_easy_all(1)">标准模式</a>
+        </div>
+        <!--简易模式-->
+        <div id="modes_easy" class="new_betting_simple_model">
+            <p>
+                <a href="javascript:void(0);" attr="3" class="a1 mode_lottery1">压大<span>(11到18)</span></a>
+                <a href="javascript:void(0);" attr="4" style="cursor: pointer" class="a1 mode_lottery1">压小<span>(3到10)</span></a>
+            </p>
+            <p>
+                <a href="javascript:void(0);" attr="1" class="a2 mode_lottery1">单<br>
+                    <span>奇数3.5.7…17</span></a>
+                <a href="javascript:void(0);" attr="2" class="a2 mode_lottery1">双<br>
+                    <span>偶数4.6.8…18</span></a>
+                <a href="javascript:void(0);" attr="5" class="a2 mode_lottery1">中<br>
+                    <span>8到13</span></a>
+                <a href="javascript:void(0);" attr="6" class="a2 mode_lottery1">边<br>
+                    <span>3-7到14-18</span></a>
+            </p>
+        </div>
+        <!--标准模式-->
+        <div id="modes_all" class="new_standard" style="display: none;">
+            <a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="0">全包</a>
+            <a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="1">单</a>
+            <a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="7">大单</a>
+            <a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="8">小单</a>
+            <a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="13">单边</a>
+            <a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="2">双</a>
+            <a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="9">大双</a>
+            <a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="10">小双</a>
+            <a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="14">双边</a>
+            <a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="3">大</a>
+            <a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="4">小</a>
+            <a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="5">中</a>
+            <a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="6">边</a>
+            <a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="11">大边</a>
+            <a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="12">小边</a>
+            <a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="15">0尾</a>
+            <a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="16">1尾</a>
+            <a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="17">2尾</a>
+            <a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="18">3尾</a>
+            <a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="19">4尾</a>
+            <a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="21">5尾</a>
+            <a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="22">6尾</a>
+            <a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="23">7尾</a>
+            <a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="24">8尾</a>
+            <a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="25">9尾</a>
+            <a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="20">小尾</a>
+            <a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="26">大尾</a>
+            <a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="27">3余0</a>
+            <a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="28">3余1</a>
+            <a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="29">3余2</a>
+            <a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="30">4余0</a>
+            <a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="31">4余1</a>
+            <a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="32">4余2</a>
+            <a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="33">4余3</a>
+            <a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="34">5余0</a>
+            <a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="35">5余1</a>
+            <a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="36">5余2</a>
+            <a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="37">5余3</a>
+            <a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="38">5余4</a>
+            <a href="javascript:void(0);" class="standard_bg1 mode_lottery">清空</a>
+        </div>
+    </div>
+    <div class="new_betting_form_right">
+        <div class="new_betting_form_right_cap">自定义模式<a id="add_mode" class="a1" href="http://www.game3799.com/speed16/automodel">+添加新模式</a></div>
+
+        <div class="new_betting_from_name">
+            <ul id="my_modes_name clear-fix">
+
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="luck_insert">
+    <!--加倍和赔率-->
+    <div class="insert_par1">
+        <span class="jiazhu">加注</span>
+        <a href="javascript:void(0);" class="double_insert">0.5倍</a>
+        <a href="javascript:void(0);" class="double_insert">0.8倍</a>
+        <a href="javascript:void(0);" class="double_insert">1.2倍</a>
+        <a href="javascript:void(0);" class="double_insert">1.5倍</a>
+        <a href="javascript:void(0);" class="double_insert">2倍</a>
+        <a href="javascript:void(0);" class="double_insert">5倍</a>
+        <a href="javascript:void(0);" class="double_insert">10倍</a>
+        <a href="javascript:void(0);" class="double_insert mode_lottery" attr="0">全包</a>
+        <a href="javascript:void(0);" class="double_insert J_suohaBtn" data-val="0">梭哈</a>
+        <!--  <p class="total_md"><strong><label>总投注金豆：</label> <span id="total_md_lottery">10,000,000</span></strong></p>
+        <a href="javascript:void(0);" class="total_md_btn" onclick="comform();return false;">确认投注</a> -->
+        <p class="moshi-edit">当前正在编辑 | <a data-key="0" id="modes_name_2">新模式</a></p>
+        <a href="javascript:void(0);" data-url="/Speed16/BetCurRate" class="the_odds touzhu1 J_refresh_odds">刷新赔率</a>
+        <a href="javascript:void(0);" data-url="/Speed16/GetLastBet" class="the_odds touzhu1 J_last_lottery">上期投注</a>
+        <a href="javascript:void(0);" class="the_odds touzhu2">反选</a>
+        <a href="javascript:void(0);" class="the_odds touzhu2">清除</a>
+    </div>
+
+    <div class="across clear-fix" id="panel">
+        <div class="across_par1 ">
+                <div class="across_par1_no clear-fix">
+                    <div class="across_par1_no_left">
+                            <div id="click_number3" class="click_number no_left_bg" style="cursor: pointer;">3</div>
+                    </div>
+                    <div style="display: none;">
+                        <input name="checkboxd" id="checkboxd3" value="checkbox" type="checkbox">
+                    </div>
+                    <div class="across_par1_no_right">
+                        <p>
+                            <input class="downhhhh input_modou_txt_null" name="mdp_coin" id="txt3" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" maxlength="15" type="text"><a style="display: none;" class="sack_02" href="javascript:void(0);" onclick="clear_input('txt3',this);" id="clear_this_val3"></a><span style="display: none;" id="peilv3"><label>×</label><a href="javascript:void(0);" class="multiple" id="3" val="0.1">.1</a><a href="javascript:void(0);" id="3" val="0.5" class="multiple">.5</a><a href="javascript:void(0);" id="3" val="2" class="multiple">2</a><a href="javascript:void(0);" id="3" val="10" class="multiple">10</a></span>
+                        </p>
+                        <p>当前赔率:<span class="color_02" id="this_lottery_odds3">215.5</span> | 上期赔率:<span id="last_lottery_odds3">216.57</span></p>
+                    </div>
+                </div>
+                <div class="across_par1_no clear-fix">
+                    <div class="across_par1_no_left">
+                            <div id="click_number4" class="click_number no_left_bg" style="cursor: pointer;">4</div>
+                    </div>
+                    <div style="display: none;">
+                        <input name="checkboxd" id="checkboxd4" value="checkbox" type="checkbox">
+                    </div>
+                    <div class="across_par1_no_right">
+                        <p>
+                            <input class="downhhhh input_modou_txt_null" name="mdp_coin" id="txt4" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" maxlength="15" type="text"><a style="display: none;" class="sack_02" href="javascript:void(0);" onclick="clear_input('txt4',this);" id="clear_this_val4"></a><span style="display: none;" id="peilv4"><label>×</label><a href="javascript:void(0);" class="multiple" id="4" val="0.1">.1</a><a href="javascript:void(0);" id="4" val="0.5" class="multiple">.5</a><a href="javascript:void(0);" id="4" val="2" class="multiple">2</a><a href="javascript:void(0);" id="4" val="10" class="multiple">10</a></span>
+                        </p>
+                        <p>当前赔率:<span class="color_02" id="this_lottery_odds4">71.83</span> | 上期赔率:<span id="last_lottery_odds4">72.55</span></p>
+                    </div>
+                </div>
+                <div class="across_par1_no clear-fix">
+                    <div class="across_par1_no_left">
+                            <div id="click_number5" class="click_number no_left_bg" style="cursor: pointer;">5</div>
+                    </div>
+                    <div style="display: none;">
+                        <input name="checkboxd" id="checkboxd5" value="checkbox" type="checkbox">
+                    </div>
+                    <div class="across_par1_no_right">
+                        <p>
+                            <input class="downhhhh input_modou_txt_null" name="mdp_coin" id="txt5" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" maxlength="15" type="text"><a style="display: none;" class="sack_02" href="javascript:void(0);" onclick="clear_input('txt5',this);" id="clear_this_val5"></a><span style="display: none;" id="peilv5"><label>×</label><a href="javascript:void(0);" class="multiple" id="5" val="0.1">.1</a><a href="javascript:void(0);" id="5" val="0.5" class="multiple">.5</a><a href="javascript:void(0);" id="5" val="2" class="multiple">2</a><a href="javascript:void(0);" id="5" val="10" class="multiple">10</a></span>
+                        </p>
+                        <p>当前赔率:<span class="color_02" id="this_lottery_odds5">35.91</span> | 上期赔率:<span id="last_lottery_odds5">36.14</span></p>
+                    </div>
+                </div>
+                <div class="across_par1_no clear-fix">
+                    <div class="across_par1_no_left">
+                            <div id="click_number6" class="click_number no_left_bg" style="cursor: pointer;">6</div>
+                    </div>
+                    <div style="display: none;">
+                        <input name="checkboxd" id="checkboxd6" value="checkbox" type="checkbox">
+                    </div>
+                    <div class="across_par1_no_right">
+                        <p>
+                            <input class="downhhhh input_modou_txt_null" name="mdp_coin" id="txt6" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" maxlength="15" type="text"><a style="display: none;" class="sack_02" href="javascript:void(0);" onclick="clear_input('txt6',this);" id="clear_this_val6"></a><span style="display: none;" id="peilv6"><label>×</label><a href="javascript:void(0);" class="multiple" id="6" val="0.1">.1</a><a href="javascript:void(0);" id="6" val="0.5" class="multiple">.5</a><a href="javascript:void(0);" id="6" val="2" class="multiple">2</a><a href="javascript:void(0);" id="6" val="10" class="multiple">10</a></span>
+                        </p>
+                        <p>当前赔率:<span class="color_02" id="this_lottery_odds6">21.55</span> | 上期赔率:<span id="last_lottery_odds6">21.68</span></p>
+                    </div>
+                </div>
+                <div class="across_par1_no clear-fix">
+                    <div class="across_par1_no_left">
+                            <div id="click_number7" class="click_number no_left_bg" style="cursor: pointer;">7</div>
+                    </div>
+                    <div style="display: none;">
+                        <input name="checkboxd" id="checkboxd7" value="checkbox" type="checkbox">
+                    </div>
+                    <div class="across_par1_no_right">
+                        <p>
+                            <input class="downhhhh input_modou_txt_null" name="mdp_coin" id="txt7" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" maxlength="15" type="text"><a style="display: none;" class="sack_02" href="javascript:void(0);" onclick="clear_input('txt7',this);" id="clear_this_val7"></a><span style="display: none;" id="peilv7"><label>×</label><a href="javascript:void(0);" class="multiple" id="7" val="0.1">.1</a><a href="javascript:void(0);" id="7" val="0.5" class="multiple">.5</a><a href="javascript:void(0);" id="7" val="2" class="multiple">2</a><a href="javascript:void(0);" id="7" val="10" class="multiple">10</a></span>
+                        </p>
+                        <p>当前赔率:<span class="color_02" id="this_lottery_odds7">14.36</span> | 上期赔率:<span id="last_lottery_odds7">14.45</span></p>
+                    </div>
+                </div>
+                <div class="across_par1_no clear-fix">
+                    <div class="across_par1_no_left">
+                            <div id="click_number8" class="click_number no_left_bg" style="cursor: pointer;">8</div>
+                    </div>
+                    <div style="display: none;">
+                        <input name="checkboxd" id="checkboxd8" value="checkbox" type="checkbox">
+                    </div>
+                    <div class="across_par1_no_right">
+                        <p>
+                            <input class="downhhhh input_modou_txt_null" name="mdp_coin" id="txt8" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" maxlength="15" type="text"><a style="display: none;" class="sack_02" href="javascript:void(0);" onclick="clear_input('txt8',this);" id="clear_this_val8"></a><span style="display: none;" id="peilv8"><label>×</label><a href="javascript:void(0);" class="multiple" id="8" val="0.1">.1</a><a href="javascript:void(0);" id="8" val="0.5" class="multiple">.5</a><a href="javascript:void(0);" id="8" val="2" class="multiple">2</a><a href="javascript:void(0);" id="8" val="10" class="multiple">10</a></span>
+                        </p>
+                        <p>当前赔率:<span class="color_02" id="this_lottery_odds8">10.26</span> | 上期赔率:<span id="last_lottery_odds8">10.32</span></p>
+                    </div>
+                </div>
+        </div>
+        <div class="across_par1 ">
+                <div class="across_par1_no clear-fix">
+                    <div class="across_par1_no_left">
+                            <div id="click_number9" class="click_number no_left_bg" style="cursor: pointer;">9</div>
+                    </div>
+                    <div style="display: none;">
+                        <input name="checkboxd" id="checkboxd9" value="checkbox" type="checkbox">
+                    </div>
+                    <div class="across_par1_no_right">
+                        <p>
+                            <input class="downhhhh input_modou_txt_null" name="mdp_coin" id="txt9" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" maxlength="15" type="text"><a style="display: none;" class="sack_02" href="javascript:void(0);" onclick="clear_input('txt9',this);" id="clear_this_val9"></a><span style="display: none;" id="peilv9"><label>×</label><a href="javascript:void(0);" class="multiple" id="9" val="0.1">.1</a><a href="javascript:void(0);" id="9" val="0.5" class="multiple">.5</a><a href="javascript:void(0);" id="9" val="2" class="multiple">2</a><a href="javascript:void(0);" id="9" val="10" class="multiple">10</a></span>
+                        </p>
+                        <p>当前赔率:<span class="color_02" id="this_lottery_odds9">8.61</span> | 上期赔率:<span id="last_lottery_odds9">8.67</span></p>
+                    </div>
+                </div>
+                <div class="across_par1_no clear-fix">
+                    <div class="across_par1_no_left">
+                            <div id="click_number10" class="click_number no_left_bg" style="cursor: pointer;">10</div>
+                    </div>
+                    <div style="display: none;">
+                        <input name="checkboxd" id="checkboxd10" value="checkbox" type="checkbox">
+                    </div>
+                    <div class="across_par1_no_right">
+                        <p>
+                            <input class="downhhhh input_modou_txt_null" name="mdp_coin" id="txt10" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" maxlength="15" type="text"><a style="display: none;" class="sack_02" href="javascript:void(0);" onclick="clear_input('txt10',this);" id="clear_this_val10"></a><span style="display: none;" id="peilv10"><label>×</label><a href="javascript:void(0);" class="multiple" id="10" val="0.1">.1</a><a href="javascript:void(0);" id="10" val="0.5" class="multiple">.5</a><a href="javascript:void(0);" id="10" val="2" class="multiple">2</a><a href="javascript:void(0);" id="10" val="10" class="multiple">10</a></span>
+                        </p>
+                        <p>当前赔率:<span class="color_02" id="this_lottery_odds10">7.98</span> | 上期赔率:<span id="last_lottery_odds10">8.06</span></p>
+                    </div>
+                </div>
+                <div class="across_par1_no clear-fix">
+                    <div class="across_par1_no_left">
+                            <div id="click_number11" class="click_number no_left_bg" style="cursor: pointer;">11</div>
+                    </div>
+                    <div style="display: none;">
+                        <input name="checkboxd" id="checkboxd11" value="checkbox" type="checkbox">
+                    </div>
+                    <div class="across_par1_no_right">
+                        <p>
+                            <input class="downhhhh input_modou_txt_null" name="mdp_coin" id="txt11" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" maxlength="15" type="text"><a style="display: none;" class="sack_02" href="javascript:void(0);" onclick="clear_input('txt11',this);" id="clear_this_val11"></a><span style="display: none;" id="peilv11"><label>×</label><a href="javascript:void(0);" class="multiple" id="11" val="0.1">.1</a><a href="javascript:void(0);" id="11" val="0.5" class="multiple">.5</a><a href="javascript:void(0);" id="11" val="2" class="multiple">2</a><a href="javascript:void(0);" id="11" val="10" class="multiple">10</a></span>
+                        </p>
+                        <p>当前赔率:<span class="color_02" id="this_lottery_odds11">7.98</span> | 上期赔率:<span id="last_lottery_odds11">7.99</span></p>
+                    </div>
+                </div>
+                <div class="across_par1_no clear-fix">
+                    <div class="across_par1_no_left">
+                            <div id="click_number12" class="click_number no_left_bg" style="cursor: pointer;">12</div>
+                    </div>
+                    <div style="display: none;">
+                        <input name="checkboxd" id="checkboxd12" value="checkbox" type="checkbox">
+                    </div>
+                    <div class="across_par1_no_right">
+                        <p>
+                            <input class="downhhhh input_modou_txt_null" name="mdp_coin" id="txt12" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" maxlength="15" type="text"><a style="display: none;" class="sack_02" href="javascript:void(0);" onclick="clear_input('txt12',this);" id="clear_this_val12"></a><span style="display: none;" id="peilv12"><label>×</label><a href="javascript:void(0);" class="multiple" id="12" val="0.1">.1</a><a href="javascript:void(0);" id="12" val="0.5" class="multiple">.5</a><a href="javascript:void(0);" id="12" val="2" class="multiple">2</a><a href="javascript:void(0);" id="12" val="10" class="multiple">10</a></span>
+                        </p>
+                        <p>当前赔率:<span class="color_02" id="this_lottery_odds12">8.61</span> | 上期赔率:<span id="last_lottery_odds12">8.62</span></p>
+                    </div>
+                </div>
+
+        </div>
+        <div class="across_par1 ">
+                <div class="across_par1_no clear-fix">
+                    <div class="across_par1_no_left">
+                            <div id="click_number13" class="click_number no_left_bg" style="cursor: pointer;">13</div>
+                    </div>
+                    <div style="display: none;">
+                        <input name="checkboxd" id="checkboxd13" value="checkbox" type="checkbox">
+                    </div>
+                    <div class="across_par1_no_right">
+                        <p>
+                            <input class="downhhhh input_modou_txt_null" name="mdp_coin" id="txt13" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" maxlength="15" type="text"><a style="display: none;" class="sack_02" href="javascript:void(0);" onclick="clear_input('txt13',this);" id="clear_this_val13"></a><span style="display: none;" id="peilv13"><label>×</label><a href="javascript:void(0);" class="multiple" id="13" val="0.1">.1</a><a href="javascript:void(0);" id="13" val="0.5" class="multiple">.5</a><a href="javascript:void(0);" id="13" val="2" class="multiple">2</a><a href="javascript:void(0);" id="13" val="10" class="multiple">10</a></span>
+                        </p>
+                        <p>当前赔率:<span class="color_02" id="this_lottery_odds13">10.26</span> | 上期赔率:<span id="last_lottery_odds13">10.17</span></p>
+                    </div>
+                </div>
+                <div class="across_par1_no clear-fix">
+                    <div class="across_par1_no_left">
+                            <div id="click_number14" class="click_number no_left_bg" style="cursor: pointer;">14</div>
+                    </div>
+                    <div style="display: none;">
+                        <input name="checkboxd" id="checkboxd14" value="checkbox" type="checkbox">
+                    </div>
+                    <div class="across_par1_no_right">
+                        <p>
+                            <input class="downhhhh input_modou_txt_null" name="mdp_coin" id="txt14" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" maxlength="15" type="text"><a style="display: none;" class="sack_02" href="javascript:void(0);" onclick="clear_input('txt14',this);" id="clear_this_val14"></a><span style="display: none;" id="peilv14"><label>×</label><a href="javascript:void(0);" class="multiple" id="14" val="0.1">.1</a><a href="javascript:void(0);" id="14" val="0.5" class="multiple">.5</a><a href="javascript:void(0);" id="14" val="2" class="multiple">2</a><a href="javascript:void(0);" id="14" val="10" class="multiple">10</a></span>
+                        </p>
+                        <p>当前赔率:<span class="color_02" id="this_lottery_odds14">14.36</span> | 上期赔率:<span id="last_lottery_odds14">14.1</span></p>
+                    </div>
+                </div>
+                <div class="across_par1_no clear-fix">
+                    <div class="across_par1_no_left">
+                            <div id="click_number15" class="click_number no_left_bg" style="cursor: pointer;">15</div>
+                    </div>
+                    <div style="display: none;">
+                        <input name="checkboxd" id="checkboxd15" value="checkbox" type="checkbox">
+                    </div>
+                    <div class="across_par1_no_right">
+                        <p>
+                            <input class="downhhhh input_modou_txt_null" name="mdp_coin" id="txt15" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" maxlength="15" type="text"><a style="display: none;" class="sack_02" href="javascript:void(0);" onclick="clear_input('txt15',this);" id="clear_this_val15"></a><span style="display: none;" id="peilv15"><label>×</label><a href="javascript:void(0);" class="multiple" id="15" val="0.1">.1</a><a href="javascript:void(0);" id="15" val="0.5" class="multiple">.5</a><a href="javascript:void(0);" id="15" val="2" class="multiple">2</a><a href="javascript:void(0);" id="15" val="10" class="multiple">10</a></span>
+                        </p>
+                        <p>当前赔率:<span class="color_02" id="this_lottery_odds15">21.55</span> | 上期赔率:<span id="last_lottery_odds15">21.17</span></p>
+                    </div>
+                </div>
+                <div class="across_par1_no clear-fix">
+                    <div class="across_par1_no_left">
+                            <div id="click_number16" class="click_number no_left_bg" style="cursor: pointer;">16</div>
+                    </div>
+                    <div style="display: none;">
+                        <input name="checkboxd" id="checkboxd16" value="checkbox" type="checkbox">
+                    </div>
+                    <div class="across_par1_no_right">
+                        <p>
+                            <input class="downhhhh input_modou_txt_null" name="mdp_coin" id="txt16" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" maxlength="15" type="text"><a style="display: none;" class="sack_02" href="javascript:void(0);" onclick="clear_input('txt16',this);" id="clear_this_val16"></a><span style="display: none;" id="peilv16"><label>×</label><a href="javascript:void(0);" class="multiple" id="16" val="0.1">.1</a><a href="javascript:void(0);" id="16" val="0.5" class="multiple">.5</a><a href="javascript:void(0);" id="16" val="2" class="multiple">2</a><a href="javascript:void(0);" id="16" val="10" class="multiple">10</a></span>
+                        </p>
+                        <p>当前赔率:<span class="color_02" id="this_lottery_odds16">35.91</span> | 上期赔率:<span id="last_lottery_odds16">35.21</span></p>
+                    </div>
+                </div>
+                <div class="across_par1_no clear-fix">
+                    <div class="across_par1_no_left">
+                            <div id="click_number17" class="click_number no_left_bg" style="cursor: pointer;">17</div>
+                    </div>
+                    <div style="display: none;">
+                        <input name="checkboxd" id="checkboxd17" value="checkbox" type="checkbox">
+                    </div>
+                    <div class="across_par1_no_right">
+                        <p>
+                            <input class="downhhhh input_modou_txt_null" name="mdp_coin" id="txt17" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" maxlength="15" type="text"><a style="display: none;" class="sack_02" href="javascript:void(0);" onclick="clear_input('txt17',this);" id="clear_this_val17"></a><span style="display: none;" id="peilv17"><label>×</label><a href="javascript:void(0);" class="multiple" id="17" val="0.1">.1</a><a href="javascript:void(0);" id="17" val="0.5" class="multiple">.5</a><a href="javascript:void(0);" id="17" val="2" class="multiple">2</a><a href="javascript:void(0);" id="17" val="10" class="multiple">10</a></span>
+                        </p>
+                        <p>当前赔率:<span class="color_02" id="this_lottery_odds17">71.83</span> | 上期赔率:<span id="last_lottery_odds17">70.29</span></p>
+                    </div>
+                </div>
+                <div class="across_par1_no clear-fix">
+                    <div class="across_par1_no_left">
+                            <div id="click_number18" class="click_number no_left_bg" style="cursor: pointer;">18</div>
+                    </div>
+                    <div style="display: none;">
+                        <input name="checkboxd" id="checkboxd18" value="checkbox" type="checkbox">
+                    </div>
+                    <div class="across_par1_no_right">
+                        <p>
+                            <input class="downhhhh input_modou_txt_null" name="mdp_coin" id="txt18" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" maxlength="15" type="text"><a style="display: none;" class="sack_02" href="javascript:void(0);" onclick="clear_input('txt18',this);" id="clear_this_val18"></a><span style="display: none;" id="peilv18"><label>×</label><a href="javascript:void(0);" class="multiple" id="18" val="0.1">.1</a><a href="javascript:void(0);" id="18" val="0.5" class="multiple">.5</a><a href="javascript:void(0);" id="18" val="2" class="multiple">2</a><a href="javascript:void(0);" id="18" val="10" class="multiple">10</a></span>
+                        </p>
+                        <p>当前赔率:<span class="color_02" id="this_lottery_odds18">215.5</span> | 上期赔率:<span id="last_lottery_odds18">212.18</span></p>
+                    </div>
+                </div>
+        </div>
+        <div class="across_par2">
+            <p class="color_03" align="center">我的总投注金豆</p>
+            <p align="center"><strong><span id="total_md_lottery2">0</span></strong><span class="jindou-logo"></span></p>
+             <p><a href="javascript:void(0);" data-pid="130443" data-url="../Bet" class="suer_insert J_TZBtn">确认投注</a></p> 
+            
+        </div>
+    </div>
+</div>
+
+<!-- 内容  end	 -->
+<div id="sound_bet" style="display: none"></div>
+<!-- 浮层弹窗 -->
+<div class="fuceng-html-box1">
+    <div class="fuceng-box-01">
+        <div class="fc-ttl-box clear-fix">
+            <h6 class="ttl-sp">提示信息</h6>
+            <a href="#" class="fc-close J_closefc"></a>
+        </div>
+        <div class="fc-main-box">
+        </div>
+    </div>
+</div>
+<div class="fuceng-html-box1">
+    <div class="fuceng-box">
+        <div class="fc-ttl-box clear-fix">
+            <h6 class="ttl-sp">提示信息</h6>
+            <a href="#" class="fc-close J_closefc"></a>
+        </div>
+        <div class="fc-main-box">
+        </div>
+    </div>
+</div>
+<div class="fuceng-html-box suoha-html-box">
+</div>
+
+        </div>
+    </div>
+    
+    <div class="fuceng-html-box suoha-html-box">
+    </div>
+
+        <div class="footer-box">
+            <div class="width-1000">
+                <p class="about-us">
+                    <a href="http://www.game3799.com/Home/Download" class="company-list">3799游戏中心</a>
+                    <a href="http://www.game3799.com/Home/About" class="company-list">关于我们</a>
+                    <a href="http://www.game3799.com/Home/Contact" class="company-list bor-r">联系我们</a>
+                </p>
+                <p class="text-01">3799游戏中心 版权所有</p>
+                <p class="text-01">
+                    <a target="_blank" style="color:red;" href="http://www.game3799.com/Home/SafetyResponsibilityBook">安全责任书</a>|
+                    <a target="_blank" href="http://www.miitbeian.gov.cn/">浙ICP备16015333号-1</a>|杭州傲游网络科技有限公司</p>
+                <p class="text-02 mar-t">申明：游戏中使用到的游戏币等均为游戏道具，不具有任何财产性功能，只限用户本人在游戏中使用。</p>
+                <p class="text-02">健康游戏忠告：抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防受骗上当 适度游戏益脑 沉迷游戏伤身 合理安排时间 享受健康生活</p>
+            </div>
+        </div> 
+    <div class="black-cover"></div>
+    <div class="kefu-box kefu-box-01">
+        <div class="kefu-little-box">
+            <span class="kefu-top-logo"></span>
+            <span class="kefu-text">在线客服</span>
+            <span class="kefu-jt jt-left"></span>
+        </div>
+        <div class="kefu-big-box">
+            <div class="kefu-list-box">
+                <span class="title">在线客服</span>
+                <div class="kefu-list">
+                    <a target="_blank" href="http://crm2.qq.com/page/portalpage/wpa.php?uin=800171736&amp;aty=0&amp;a=0&amp;curl=&amp;ty=1">
+                        <img src="%E6%9E%81%E9%80%9F16%E6%8A%95%E6%B3%A8_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/pa.gif" alt="点击这里给我发消息" title="点击这里给我发消息" border="0"></a>
+                    <span class="qq-text">客服QQ</span>
+                </div>
+                <div class="kefu-list">
+                    <a target="_blank" href="http://crm2.qq.com/page/portalpage/wpa.php?uin=800171736&amp;aty=0&amp;a=0&amp;curl=&amp;ty=1">
+                        <img src="%E6%9E%81%E9%80%9F16%E6%8A%95%E6%B3%A8_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/pa.gif" alt="点击这里给我发消息" title="点击这里给我发消息" border="0"></a>
+                    <span class="qq-text">客服QQ</span>
+                </div>
+                <div class="kefu-list">
+                    <a target="_blank" href="http://crm2.qq.com/page/portalpage/wpa.php?uin=800171736&amp;aty=0&amp;a=0&amp;curl=&amp;ty=1">
+                        <img src="%E6%9E%81%E9%80%9F16%E6%8A%95%E6%B3%A8_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/pa.gif" alt="点击这里给我发消息" title="点击这里给我发消息" border="0"></a>
+                    <span class="qq-text">客服QQ</span>
+                </div>
+                <div class="qq-qun">
+                    <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=06957eaabeaaf7a35b8f8f129be63b05b1a3448398034a4b71e2de0d3f7947a2">
+                        <img src="%E6%9E%81%E9%80%9F16%E6%8A%95%E6%B3%A8_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/group.png" alt="game3799棋牌官方群" title="game3799棋牌官方群" border="0"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="fuceng-common-box">
+            <div class="fuceng-box">
+                <div class="fc-ttl-box clear-fix">
+                    <h6 class="ttl-sp">提示信息</h6>
+                    <a href="#" class="fc-close J_closefc"></a>
+                </div>
+                <div class="fc-main-box">
+                </div>
+            </div>
+        </div>
+    <style type="text/css">
+        #bw {
+            position: absolute;
+            width: 324px;
+            height: 308px;
+            top: 0px;
+            left: 0px;
+            z-index: 9999;
+            cursor: pointer;
+            display: none;
+        }
+
+        .blueWC {
+            background: url(http://test123img.73dou.com/3799/abw/black.png) left no-repeat;
+            background-position: 1px 42px;
+        }
+
+        .whiteWC {
+            background: url(http://test123img.73dou.com/3799/abw/white.png) left no-repeat;
+            background-position: 1px 42px;
+        }
+
+        .no {
+            background: url(http://test123img.73dou.com/3799/abw/no.png) left no-repeat;
+        }
+
+        .yes {
+            background: url(http://test123img.73dou.com/3799/abw/yes.png) left no-repeat;
+        }
+    </style>
+   
+    <script src="%E6%9E%81%E9%80%9F16%E6%8A%95%E6%B3%A8_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/common.js"></script>
+    
+    <script src="%E6%9E%81%E9%80%9F16%E6%8A%95%E6%B3%A8_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/touzhu-cz.js"></script>
+    <script src="%E6%9E%81%E9%80%9F16%E6%8A%95%E6%B3%A8_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/touzhu.js"></script>
+    <script src="%E6%9E%81%E9%80%9F16%E6%8A%95%E6%B3%A8_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/swfobject.js"></script>
+
+    <div style="display: none">
+        <script src="%E6%9E%81%E9%80%9F16%E6%8A%95%E6%B3%A8_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/q_stat.php" language="JavaScript"></script><script src="%E6%9E%81%E9%80%9F16%E6%8A%95%E6%B3%A8_%E7%9B%8A%E6%99%BA%E7%AB%9E%E7%8C%9C_game3799_%E7%8E%A9%E7%AB%9E%E7%8C%9C_%E8%B5%9A%E9%87%91%E8%B1%86_files/core.php" charset="utf-8" type="text/javascript"></script><a href="http://quanjing.cnzz.com/" target="_blank" title="全景统计">全景统计</a>
+    </div>
+    
+
+
+</body></html>
