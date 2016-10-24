@@ -166,7 +166,6 @@
                                         <td>
 											<?php echo ($data["num1"]); ?>+<?php echo ($data["num2"]); ?>+<?php echo ($data["num3"]); ?>=
 											<span class="js-ball b-pc28"><?php echo ($data['num1']+$data['num2']+$data['num3']); ?></span>
-                                            <a target="&#39;_blank&#39;" href="http://game3799.com/lucky28/verification/785251" class="go-yz">验证</a>
                                         </td>
                                     <?php else: ?>
                                         <td><span class="js-qus qus-pc28"></span></td><?php endif; ?>

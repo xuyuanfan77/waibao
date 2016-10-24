@@ -48,11 +48,32 @@ class GuessController extends Controller {
 	
 	//初始化内容
 	private function initContent() {
+		switch ($_GET['game'])
+		{
+		case 'pc28':
+			$begin_num = 0;
+			$number_num = 28;
+			break;  
+		case 'js28':
+			$begin_num = 0;
+			$number_num = 28;
+			break;
+		case 'js16':
+			$begin_num = 3;
+			$number_num = 16;
+			break;
+		case 'fksc':
+			$begin_num = 1;
+			$number_num = 10;
+			break;
+		default:
+		}
+		
 		$Game = M('Game');
 		$condition['name'] = array('eq',$this->getGameStyle());
 		$condition['issue'] = array('eq',$_GET['issue']);
 		$gameData = $Game->where($condition)->find();
-		for($index=0;$index<=27;$index++) {
+		for($index=$begin_num;$index<=$begin_num+$number_num;$index++) {
 			$moneyIndex = 'money'.$index;
 			if($gameData[$moneyIndex]==0){
 				$gameOdds[$index] = '--';
@@ -65,7 +86,7 @@ class GuessController extends Controller {
 		$condition['name'] = array('eq',$this->getGameStyle());
 		$condition['issue'] = array('eq',$_GET['issue']-1);
 		$preGameData = $Game->where($condition)->find();
-		for($index=0;$index<=27;$index++) {
+		for($index=$begin_num;$index<=$begin_num+$number_num;$index++) {
 			$moneyIndex = 'money'.$index;
 			if($preGameData[$moneyIndex]==0){
 				$preGameOdds[$index] = '--';
@@ -114,6 +135,27 @@ class GuessController extends Controller {
 			$this->ajaxReturn($data);
 		}
 		
+		switch ($_POST['game_style'])
+		{
+		case 'pc28':
+			$begin_num = 0;
+			$number_num = 28;
+			break;  
+		case 'js28':
+			$begin_num = 0;
+			$number_num = 28;
+			break;
+		case 'js16':
+			$begin_num = 3;
+			$number_num = 16;
+			break;
+		case 'fksc':
+			$begin_num = 1;
+			$number_num = 10;
+			break;
+		default:
+		}
+		
 		//修改用户表
 		$userData['money'] = $userData['money'] - $_POST['total'];
 		$User->save($userData);
@@ -125,8 +167,8 @@ class GuessController extends Controller {
 		$guessData['gamename'] = $_POST['game_style'];
 		$guessData['gameissue'] = $_POST['period_no'];
 		$bet_num = explode(',',$_POST['bet_num']);
-		for($index=0;$index<28;$index++) {
-			$guessData['money'.$index] = $bet_num[$index];
+		for($index=$begin_num;$index<$begin_num+$number_num;$index++) {
+			$guessData['money'.$index] = $bet_num[$index-$begin_num];
 		}
 		$guessData['input']= $_POST['total'];
 		$guessData['output']= 0;
@@ -141,8 +183,8 @@ class GuessController extends Controller {
 		$condition['issue'] = $_POST['period_no'];
 		$gameData = $Game->where($condition)->find();
 		$bet_num = explode(',',$_POST['bet_num']);
-		for($index=0;$index<28;$index++) {
-			$gameData['money'.$index] = $gameData['money'.$index]+$bet_num[$index];
+		for($index=$begin_num;$index<$begin_num+$number_num;$index++) {
+			$gameData['money'.$index] = $gameData['money'.$index]+$bet_num[$index-$begin_num];
 		}
 		
 		$Guess = M("Guess");																//修改总人数

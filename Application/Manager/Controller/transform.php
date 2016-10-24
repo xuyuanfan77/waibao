@@ -16,7 +16,22 @@ class Transform {
 			$gameData['statu'] = 3;
 			$Game->save($gameData);
 			
-			$gameNum = $gameData['num1']+$gameData['num2']+$gameData['num3'];
+			switch ($config['name'])
+			{
+			case 'pc28':
+				$gameNum = $gameData['num1']+$gameData['num2']+$gameData['num3'];
+				break;  
+			case 'js28':
+				$gameNum = $gameData['num1']+$gameData['num2']+$gameData['num3'];
+				break;
+			case 'js16':
+				$gameNum = $gameData['num1']+$gameData['num2']+$gameData['num3'];
+				break;
+			case 'fksc':
+				$gameNum = $gameData['num1'];
+				break;
+			default:
+			}
 			$gameOdds = round($gameData['jackpot']/$gameData['money'.$gameNum],2);
 			$Guess = M("Guess");
 			unset($condition);

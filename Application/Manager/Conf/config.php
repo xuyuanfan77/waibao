@@ -47,7 +47,7 @@ return array(
 				for($index=1;$index<=20;$index++){
 					$data['num'][$index-1]=$json_data['S'.$index];
 				}
-				$data['runtime'] = date("Y-m-d H:i:s",$json_data['cDate']);
+				$data['runtime'] = date("Y-m-d H:i:s",strtotime('-1 hour',$json_data['cDate']));
 				return $data;
 			},
 			'period_begin'=>'00:00:00',
