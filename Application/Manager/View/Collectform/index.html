@@ -1,0 +1,16 @@
+<script>
+function submitForm() {
+	var information = document.getElementById("information");
+	information.submit()
+}
+</script>
+
+<div class="col-md-10">
+	<a type="button" class="btn btn-default" href="{:U('Collect/index')}" style="float:right;margin:15px 0px">取消修改</a>
+	<button type="button" class="btn btn-default" onclick="submitForm()" style="float:right;margin:15px 0px">保存配置</button>
+	<form id="information" enctype="multipart/form-data" action="{:U('Collectform/save')}" method="post" role="form">
+		<div class="form-group">
+			<textarea class="form-control" name="config" rows="20">{$configData}</textarea>
+		</div>
+	</form>
+</div>

@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="/waibao/Public/front/touzhu-new.css">
         <link rel="stylesheet" href="/waibao/Public/front/touzhu-js28.css">
         <script type="text/javascript">
-            var nub = new Array(1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 63, 69, 73, 75, 75, 73, 69, 63, 55, 45, 36, 28, 21, 15, 10, 6, 3, 1);
+            var nub = new Array(<?php echo ($configData); ?>);
             var nub1 = new Array(1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 63, 69, 73, 75, 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 63, 69, 73, 75);
             var mode = new Array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27], //全包
             [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27], //单
@@ -195,6 +195,78 @@
                 <!-- 公正提示 -->
                 <!-- 导航 end -->
                 <!-- 内容 start -->
+				<div class="new_betting_form">
+					<div class="new_betting_form_left">
+						<div class="new_betting_form_left_cap">
+							<a id="m_a0" class="sel" onclick="modes_easy_all(0)">简易模式</a><a id="m_a1" onclick="modes_easy_all(1)">标准模式</a>
+						</div>
+						<!--简易模式-->
+						<div id="modes_easy" class="new_betting_simple_model">
+							<p>
+								<a href="javascript:void(0);" attr="3" class="a1 mode_lottery1">压大<span>(14到27)</span></a>
+								<a href="javascript:void(0);" attr="4" style="cursor: pointer" class="a1 mode_lottery1">压小<span>(0到13)</span></a>
+							</p>
+							<p>
+								<a href="javascript:void(0);" attr="1" class="a2 mode_lottery1">单<br><span>奇数1.3.5…27</span></a>
+								<a href="javascript:void(0);" attr="2" class="a2 mode_lottery1">双<br><span>偶数0.2.4…26</span></a>
+								<a href="javascript:void(0);" attr="5" class="a2 mode_lottery1">中<br><span>10到17</span></a>
+								<a href="javascript:void(0);" attr="6" class="a2 mode_lottery1">边<br><span>0-9到18-27</span></a>
+							</p>
+						</div>
+						<!--标准模式-->
+						<div id="modes_all" class="new_standard" style="display: none;">
+							<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="0">全包</a>
+							<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="1">单</a>
+							<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="7">大单</a>
+							<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="8">小单</a>
+							<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="13">单边</a>
+							<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="2">双</a>
+							<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="9">大双</a>
+							<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="10">小双</a>
+							<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="14">双边</a>
+							<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="3">大</a>
+							<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="4">小</a>
+							<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="5">中</a>
+							<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="6">边</a>
+							<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="11">大边</a>
+							<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="12">小边</a>
+							<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="15">0尾</a>
+							<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="16">1尾</a>
+							<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="17">2尾</a>
+							<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="18">3尾</a>
+							<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="19">4尾</a>
+							<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="21">5尾</a>
+							<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="22">6尾</a>
+							<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="23">7尾</a>
+							<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="24">8尾</a>
+							<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="25">9尾</a>
+							<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="20">小尾</a>
+							<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="26">大尾</a>
+							<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="27">3余0</a>
+							<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="28">3余1</a>
+							<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="29">3余2</a>
+							<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="30">4余0</a>
+							<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="31">4余1</a>
+							<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="32">4余2</a>
+							<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="33">4余3</a>
+							<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="34">5余0</a>
+							<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="35">5余1</a>
+							<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="36">5余2</a>
+							<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="37">5余3</a>
+							<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="38">5余4</a>
+							<a href="javascript:void(0);" class="standard_bg1 mode_lottery">清空</a>
+						</div>
+					</div>
+					<div class="new_betting_form_right">
+						<div class="new_betting_form_right_cap">
+							自定义模式
+							<a id="add_mode" class="a1" href="#">+添加新模式</a>
+						</div>
+						<div class="new_betting_from_name">
+							<ul id="my_modes_name clear-fix"></ul>
+						</div>
+					</div>
+				</div>
                 <div class="luck_insert">
                     <!--加倍和赔率-->
                     <div class="insert_par1">
@@ -219,7 +291,7 @@
                     </div>
                     <div class="across clear-fix" id="panel">
                         <div class="across_par1 ">
-                            <?php $__FOR_START_3147__=0;$__FOR_END_3147__=10;for($i=$__FOR_START_3147__;$i < $__FOR_END_3147__;$i+=1){ ?><div class="across_par1_no clear-fix">
+                            <?php $__FOR_START_27151__=0;$__FOR_END_27151__=10;for($i=$__FOR_START_27151__;$i < $__FOR_END_27151__;$i+=1){ ?><div class="across_par1_no clear-fix">
                                     <div class="across_par1_no_left">
                                         <div id="click_number<?php echo ($i); ?>" class="click_number no_left_bg" style="cursor: pointer;"><?php echo ($i); ?></div>
                                     </div>
@@ -252,7 +324,7 @@
                                 </div><?php } ?>
                         </div>
                         <div class="across_par1 ">
-                            <?php $__FOR_START_17960__=10;$__FOR_END_17960__=18;for($i=$__FOR_START_17960__;$i < $__FOR_END_17960__;$i+=1){ ?><div class="across_par1_no clear-fix">
+                            <?php $__FOR_START_27292__=10;$__FOR_END_27292__=18;for($i=$__FOR_START_27292__;$i < $__FOR_END_27292__;$i+=1){ ?><div class="across_par1_no clear-fix">
                                     <div class="across_par1_no_left">
                                         <div id="click_number<?php echo ($i); ?>" class="click_number no_left_bg" style="cursor: pointer;"><?php echo ($i); ?></div>
                                     </div>
@@ -285,7 +357,7 @@
                                 </div><?php } ?>
                         </div>
                         <div class="across_par1 ">
-                            <?php $__FOR_START_16193__=18;$__FOR_END_16193__=28;for($i=$__FOR_START_16193__;$i < $__FOR_END_16193__;$i+=1){ ?><div class="across_par1_no clear-fix">
+                            <?php $__FOR_START_7333__=18;$__FOR_END_7333__=28;for($i=$__FOR_START_7333__;$i < $__FOR_END_7333__;$i+=1){ ?><div class="across_par1_no clear-fix">
                                     <div class="across_par1_no_left">
                                         <div id="click_number<?php echo ($i); ?>" class="click_number no_left_bg" style="cursor: pointer;"><?php echo ($i); ?></div>
                                     </div>

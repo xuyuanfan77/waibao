@@ -165,6 +165,36 @@
                 <!-- 公正提示 -->
                 <!-- 导航 end -->
                 <!-- 内容 start -->
+				<div class="new_betting_form">
+					<div class="new_betting_form_left">
+						<div class="new_betting_form_left_cap">
+							<a id="m_a0" class="sel" onclick="modes_easy_all(0)">简易模式</a>
+						</div>
+						<!--简易模式-->
+						<div id="modes_easy" class="new_betting_simple_model">
+							<p>
+								<a href="javascript:void(0);" attr="3" class="a1 mode_lottery1">压大<span>(14到27)</span></a>
+								<a href="javascript:void(0);" attr="4" style="cursor: pointer" class="a1 mode_lottery1">压小<span>(0到13)</span></a>
+							</p>
+							<p>
+								<a href="javascript:void(0);" attr="1" class="a2 mode_lottery1">单<br><span>奇数1.3.5…27</span></a>
+								<a href="javascript:void(0);" attr="2" class="a2 mode_lottery1">双<br><span>偶数0.2.4…26</span></a>
+								<a href="javascript:void(0);" attr="5" class="a2 mode_lottery1">中<br><span>10到17</span></a>
+								<a href="javascript:void(0);" attr="6" class="a2 mode_lottery1">边<br><span>0-9到18-27</span></a>
+							</p>
+						</div>
+						<!--标准模式-->
+					</div>
+					<div class="new_betting_form_right">
+						<div class="new_betting_form_right_cap">
+							自定义模式
+							<a id="add_mode" class="a1" href="#">+添加新模式</a>
+						</div>
+						<div class="new_betting_from_name">
+							<ul id="my_modes_name clear-fix"></ul>
+						</div>
+					</div>
+				</div>
                 <div class="luck_insert">
                     <!--加倍和赔率-->
                     <div class="insert_par1">
@@ -189,7 +219,7 @@
                     </div>
                     <div class="across clear-fix" id="panel">
                         <div class="across_par1 across_par_fksc">
-                            <?php $__FOR_START_12788__=1;$__FOR_END_12788__=6;for($i=$__FOR_START_12788__;$i < $__FOR_END_12788__;$i+=1){ ?><div class="across_par1_no across_par1_width clear-fix">
+                            <?php $__FOR_START_20601__=1;$__FOR_END_20601__=6;for($i=$__FOR_START_20601__;$i < $__FOR_END_20601__;$i+=1){ ?><div class="across_par1_no across_par1_width clear-fix">
                                     <div class="across_par1_no_left">
                                         <div id="click_number<?php echo ($i); ?>" class="click_number sc_left_logo sc_logo_0<?php echo ($i); ?>" style="cursor: pointer;"></div>
                                     </div>
@@ -220,7 +250,7 @@
                                 </div><?php } ?>
                         </div>
                         <div class="across_par1 across_par_fksc">
-                            <?php $__FOR_START_19741__=6;$__FOR_END_19741__=11;for($i=$__FOR_START_19741__;$i < $__FOR_END_19741__;$i+=1){ ?><div class="across_par1_no across_par1_width clear-fix">
+                            <?php $__FOR_START_20926__=6;$__FOR_END_20926__=11;for($i=$__FOR_START_20926__;$i < $__FOR_END_20926__;$i+=1){ ?><div class="across_par1_no across_par1_width clear-fix">
                                     <div class="across_par1_no_left">
 										<?php if($i != 10): ?><div id="click_number<?php echo ($i); ?>" class="click_number sc_left_logo sc_logo_0<?php echo ($i); ?>" style="cursor: pointer;"></div>
 										<?php else: ?>

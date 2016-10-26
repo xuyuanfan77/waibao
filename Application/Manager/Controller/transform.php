@@ -27,6 +27,9 @@ class Transform {
 			case 'js16':
 				$gameNum = $gameData['num1']+$gameData['num2']+$gameData['num3'];
 				break;
+			case 'fk28':
+				$gameNum = $gameData['num1']+$gameData['num2']+$gameData['num3'];
+				break;
 			case 'fksc':
 				$gameNum = $gameData['num1'];
 				break;

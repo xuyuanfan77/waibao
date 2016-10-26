@@ -1,0 +1,36 @@
+<style type="text/css">
+.pages {position:relative;width:700px;padding:10px 0px;background-color:#FFF;}
+.num,.prev,.next,.current{width:60px;line-height:30px;display:inline-block;margin:0px 2px 0px 2px;text-align:center;}
+.num,.prev,.next{color:#000;background-color:#eee;}
+.current {color:#FFF;background-color:#008cba;}
+.num:hover,.prev:hover,.next:hover{background-color:#008cba;color:#FFF;}
+</style>
+
+<div class="col-md-10">
+	<a type="button" class="btn btn-default" href="{:U('Transformform/index')}" style="float:right;margin:15px 0px">修改配置</a>
+	<table class="table table-hover" style="margin:0px">
+		<tr>
+			<th>名称</th>
+			<th>数据源</th>
+			<th>抽水</th>
+			<th>间隔</th>
+			<th>提前写入期数</th>
+			<th>提前截至时间</th>
+			<th>延迟开奖时间</th>
+		</tr>
+		<foreach name="configData" item="config" >
+			<tr>
+				<td>{$config.name}</td>
+				<td>{$config.lotteryname}</td>
+				<td>{$config.water}</td>
+				<td>{$config.interval}</td>
+				<td>{$config.aheadissue}</td>
+				<td>{$config.aheaddeadline}</td>
+				<td>{$config.delayruntime}</td>
+			</tr>
+		</foreach>
+	</table>
+	<div class="pages">
+		{$pageShow}
+	</div>
+</div>

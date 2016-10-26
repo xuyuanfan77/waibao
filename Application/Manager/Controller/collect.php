@@ -22,7 +22,7 @@ class Collect {
 				$newData = Collect::web_collect($config);
 				break;
 			case 2:
-				$newData = Collect::produce_collect();
+				$newData = Collect::produce_collect($config);
 				break;
 			default:
 				break;
@@ -58,8 +58,13 @@ class Collect {
 	}
 	
 	// 自动生成数据
-	public function produce_collect(){
-		
+	public function produce_collect($config){
+		//产生20位随机数据
+		for($index=0;$index<20;$index++){
+			$content[$index] = mt_rand(0,100);
+		}
+		$data = $config['handle']($content);
+		return $data;
 	}
 	
 	// 数据写入数据库

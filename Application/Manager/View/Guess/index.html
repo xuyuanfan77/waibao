@@ -1,0 +1,26 @@
+<style type="text/css">
+.pages {position:relative;width:700px;padding:10px 0px;background-color:#FFF;}
+.num,.prev,.next,.current{width:60px;line-height:30px;display:inline-block;margin:0px 2px 0px 2px;text-align:center;}
+.num,.prev,.next{color:#000;background-color:#eee;}
+.current {color:#FFF;background-color:#008cba;}
+.num:hover,.prev:hover,.next:hover{background-color:#008cba;color:#FFF;}
+</style>
+
+<div class="col-md-10">
+	<a type="button" class="btn btn-default" href="{:U('Guessform/index')}" style="float:right;margin:15px 0px">修改配置</a>
+	<table class="table table-hover" style="margin:0px">
+		<tr>
+			<th>名称</th>
+			<th>配置</th>
+		</tr>
+		<foreach name="configData" item="config" >
+			<tr>
+				<td>{$key}</td>
+				<td>{$config|implode=", ", ###}</td>
+			</tr>
+		</foreach>
+	</table>
+	<div class="pages">
+		{$pageShow}
+	</div>
+</div>

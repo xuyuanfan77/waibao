@@ -12,7 +12,6 @@
         <script src="/waibao/Public/front/exporting.js"></script>
 		<link rel="stylesheet" href="/waibao/Public/front/common.css">
         <link rel="stylesheet" href="/waibao/Public/front/game-comp.css">
-        <link rel="stylesheet" href="/waibao/Public/front/guess.css">
         <link rel="stylesheet" href="/waibao/Public/front/mybet.css">
     </head>
     
@@ -213,6 +212,7 @@
         <div class="black-cover"></div>
         <script src="/waibao/Public/front/common.js"></script>
         <script src="/waibao/Public/front/mybet.js"></script>
+		<script src="/waibao/Public/front/touzhu.js"></script>
         <script src="/waibao/Public/front/swfobject.js"></script>
     </body>
 </html>

@@ -46,6 +46,13 @@ class GuessController extends Controller {
 		$this->assign('tipData',$tipData);
 	}
 	
+	// 初始化竞猜模式
+	private function initMode() {
+		$guessConfig = C('GUESS_MODE');
+		$configData = $guessConfig[$_GET['game']];
+		$this->assign('configData',implode(', ',$configData));
+	}
+	
 	//初始化内容
 	private function initContent() {
 		switch ($_GET['game'])
@@ -62,6 +69,10 @@ class GuessController extends Controller {
 			$begin_num = 3;
 			$number_num = 16;
 			break;
+		case 'fk28':
+			$begin_num = 0;
+			$number_num = 28;
+			break; 
 		case 'fksc':
 			$begin_num = 1;
 			$number_num = 10;
@@ -103,6 +114,7 @@ class GuessController extends Controller {
 		if(cookie('PHPSESSID') && session('id') && cookie('PHPSESSID') == session('id')) {
 			$this->initUser();
 			$this->initTip();
+			$this->initMode();
 			$this->initContent();
 			$this->display('Guess:'.$this->getGameStyle());
 		} else {
@@ -149,6 +161,10 @@ class GuessController extends Controller {
 			$begin_num = 3;
 			$number_num = 16;
 			break;
+		case 'fk28':
+			$begin_num = 0;
+			$number_num = 28;
+			break;  
 		case 'fksc':
 			$begin_num = 1;
 			$number_num = 10;
