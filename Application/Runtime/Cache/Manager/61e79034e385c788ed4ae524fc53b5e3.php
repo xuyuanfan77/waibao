@@ -38,7 +38,7 @@
 </style>
 
 <div class="col-md-10">
-	<a type="button" class="btn btn-default" href="<?php echo U('Guessform/index');?>" style="float:right;margin:15px 0px">修改配置</a>
+	<a type="button" class="btn btn-default" href="<?php echo U('Robotform/index');?>" style="float:right;margin:15px 0px">新增配置</a>
 	<table class="table table-hover" style="margin:0px">
 		<tr>
 			<th>游戏名称</th>
@@ -56,23 +56,25 @@
 			<th>号码<br/>22-23</th>
 			<th>号码<br/>24-25</th>
 			<th>号码<br/>26-27</th>
+			<th>操作</th>
 		</tr>
 		<?php if(is_array($configData)): foreach($configData as $key=>$config): ?><tr>
-				<td><?php echo ($key); ?></td>
-				<td><?php echo ($config["0"]); ?><br/><?php echo ($config["1"]); ?></td>
-				<td><?php echo ($config["2"]); ?><br/><?php echo ($config["3"]); ?></td>
-				<td><?php echo ($config["4"]); ?><br/><?php echo ($config["5"]); ?></td>
-				<td><?php echo ($config["6"]); ?><br/><?php echo ($config["7"]); ?></td>
-				<td><?php echo ($config["8"]); ?><br/><?php echo ($config["9"]); ?></td>
-				<td><?php echo ($config["10"]); ?><br/><?php echo ($config["11"]); ?></td>
-				<td><?php echo ($config["12"]); ?><br/><?php echo ($config["13"]); ?></td>
-				<td><?php echo ($config["14"]); ?><br/><?php echo ($config["15"]); ?></td>
-				<td><?php echo ($config["16"]); ?><br/><?php echo ($config["17"]); ?></td>
-				<td><?php echo ($config["18"]); ?><br/><?php echo ($config["19"]); ?></td>
-				<td><?php echo ($config["20"]); ?><br/><?php echo ($config["21"]); ?></td>
-				<td><?php echo ($config["22"]); ?><br/><?php echo ($config["23"]); ?></td>
-				<td><?php echo ($config["24"]); ?><br/><?php echo ($config["25"]); ?></td>
-				<td><?php echo ($config["26"]); ?><br/><?php echo ($config["27"]); ?></td>
+				<td><?php echo ($config["gamename"]); ?></td>
+				<td><?php echo ($config["money0"]); ?><br/><?php echo ($config["money1"]); ?></td>
+				<td><?php echo ($config["money2"]); ?><br/><?php echo ($config["money3"]); ?></td>
+				<td><?php echo ($config["money4"]); ?><br/><?php echo ($config["money5"]); ?></td>
+				<td><?php echo ($config["money6"]); ?><br/><?php echo ($config["money7"]); ?></td>
+				<td><?php echo ($config["money8"]); ?><br/><?php echo ($config["money9"]); ?></td>
+				<td><?php echo ($config["money10"]); ?><br/><?php echo ($config["money11"]); ?></td>
+				<td><?php echo ($config["money12"]); ?><br/><?php echo ($config["money13"]); ?></td>
+				<td><?php echo ($config["money14"]); ?><br/><?php echo ($config["money15"]); ?></td>
+				<td><?php echo ($config["money16"]); ?><br/><?php echo ($config["money17"]); ?></td>
+				<td><?php echo ($config["money18"]); ?><br/><?php echo ($config["money19"]); ?></td>
+				<td><?php echo ($config["money20"]); ?><br/><?php echo ($config["money21"]); ?></td>
+				<td><?php echo ($config["money22"]); ?><br/><?php echo ($config["money23"]); ?></td>
+				<td><?php echo ($config["money24"]); ?><br/><?php echo ($config["money25"]); ?></td>
+				<td><?php echo ($config["money26"]); ?><br/><?php echo ($config["money27"]); ?></td>
+				<td><a href="<?php echo U('Robotform/index', array('gamename'=>$config['gamename']));?>">修改</a> <a href="<?php echo U('Robot/del', array('gamename'=>$config['gamename']));?>">删除</a></td>
 			</tr><?php endforeach; endif; ?>
 	</table>
 	<div class="pages">

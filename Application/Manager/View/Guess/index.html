@@ -10,13 +10,39 @@
 	<a type="button" class="btn btn-default" href="{:U('Guessform/index')}" style="float:right;margin:15px 0px">修改配置</a>
 	<table class="table table-hover" style="margin:0px">
 		<tr>
-			<th>名称</th>
-			<th>配置</th>
+			<th>游戏名称</th>
+			<th>号码<br/>0-1</th>
+			<th>号码<br/>2-3</th>
+			<th>号码<br/>4-5</th>
+			<th>号码<br/>6-7</th>
+			<th>号码<br/>8-9</th>
+			<th>号码<br/>10-11</th>
+			<th>号码<br/>12-13</th>
+			<th>号码<br/>14-15</th>
+			<th>号码<br/>16-17</th>
+			<th>号码<br/>18-19</th>
+			<th>号码<br/>20-21</th>
+			<th>号码<br/>22-23</th>
+			<th>号码<br/>24-25</th>
+			<th>号码<br/>26-27</th>
 		</tr>
 		<foreach name="configData" item="config" >
 			<tr>
 				<td>{$key}</td>
-				<td>{$config|implode=", ", ###}</td>
+				<td>{$config["0"]}<br/>{$config["1"]}</td>
+				<td>{$config["2"]}<br/>{$config["3"]}</td>
+				<td>{$config["4"]}<br/>{$config["5"]}</td>
+				<td>{$config["6"]}<br/>{$config["7"]}</td>
+				<td>{$config["8"]}<br/>{$config["9"]}</td>
+				<td>{$config["10"]}<br/>{$config["11"]}</td>
+				<td>{$config["12"]}<br/>{$config["13"]}</td>
+				<td>{$config["14"]}<br/>{$config["15"]}</td>
+				<td>{$config["16"]}<br/>{$config["17"]}</td>
+				<td>{$config["18"]}<br/>{$config["19"]}</td>
+				<td>{$config["20"]}<br/>{$config["21"]}</td>
+				<td>{$config["22"]}<br/>{$config["23"]}</td>
+				<td>{$config["24"]}<br/>{$config["25"]}</td>
+				<td>{$config["26"]}<br/>{$config["27"]}</td>
 			</tr>
 		</foreach>
 	</table>

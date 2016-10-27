@@ -4,6 +4,64 @@ namespace Service;
 header("Content-Type: text/html;charset=utf-8");
 
 class Transform {
+	// 机器人投注
+	public function robotGuess($gameData) {		
+		$Robotconfig = M("Robotconfig");
+		$configData = $Robotconfig->select();
+		foreach ($configData as $value) {
+			switch ($value['gamename'])
+			{
+			case 'pc28':
+				$begin_num = 0;
+				$number_num = 28;
+				break;  
+			case 'js28':
+				$begin_num = 0;
+				$number_num = 28;
+				break;
+			case 'js16':
+				$begin_num = 3;
+				$number_num = 16;
+				break;
+			case 'fk28':
+				$begin_num = 0;
+				$number_num = 28;
+				break;  
+			case 'fksc':
+				$begin_num = 1;
+				$number_num = 10;
+				break;
+			default:
+			}
+			//修改竞猜表
+			if($gameData['name']==$value['gamename']){
+				$Guess = M('Guess');
+				$guessData['id'] = uniqid();
+				$guessData['gamename'] = $value['gamename'];
+				$guessData['gameissue'] = $gameData['issue'];
+				$total = 0;
+				for($index=$begin_num;$index<$begin_num+$number_num;$index++) {
+					$guessData['money'.$index] = $value['money'.$index];
+					$total = $total + $value['money'.$index];
+				}
+				$guessData['input']= $total;
+				$guessData['output']= 0;
+				$guessData['createtime'] = date('Y-m-d H:i:s');
+				$Guess->create($guessData);
+				$Guess->add();
+				
+				//修改游戏表
+				for($index=$begin_num;$index<$begin_num+$number_num;$index++) {						//修改每个数字的下注
+					$gameData['money'.$index] = $gameData['money'.$index]+$value['money'.$index];
+				}		
+				$gameData['peoplenum'] = $gameData['peoplenum']+1;									//修改总人数
+				$gameData['jackpot'] = $gameData['jackpot']+$total;									//修改奖金池
+				$Game = M("Game");
+				$Game->save($gameData);
+			}
+		}
+	}
+	
 	// 计算号码开奖的游戏数据
 	public function calculate($data,$config){		
 		$Game = M('Game');
@@ -127,6 +185,9 @@ class Transform {
 				
 				if ($Game->create($gameData)){
 					$Game->add();
+					
+					// 机器人投注
+					Transform::robotGuess($gameData);
 				}
 			}
 		}	

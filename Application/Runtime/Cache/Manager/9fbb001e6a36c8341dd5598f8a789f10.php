@@ -23,8 +23,8 @@
 				<ul class="nav nav-pills nav-stacked" role="tablist" style="text-align:center;">
 					<li role="presentation" style="background:<?php echo ($navbarColor[0]); ?>"><a href="<?php echo U('Collect/index');?>">采集配置</a></li>
 					<li role="presentation" style="background:<?php echo ($navbarColor[1]); ?>"><a href="<?php echo U('Transform/index');?>">转换配置</a></li>
-					<li role="presentation" style="background:<?php echo ($navbarColor[2]); ?>"><a href="#">投注配置</a></li>
-					<li role="presentation" style="background:<?php echo ($navbarColor[3]); ?>"><a href="#">机器人</a></li>
+					<li role="presentation" style="background:<?php echo ($navbarColor[2]); ?>"><a href="<?php echo U('Guess/index');?>">投注配置</a></li>
+					<li role="presentation" style="background:<?php echo ($navbarColor[3]); ?>"><a href="<?php echo U('Robot/index');?>">机器人</a></li>
 					<li role="presentation" style="background:<?php echo ($navbarColor[4]); ?>"><a href="#">风控管理</a></li>
 				</ul>
 			</div>

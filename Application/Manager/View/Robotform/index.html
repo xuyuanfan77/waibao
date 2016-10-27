@@ -1,0 +1,120 @@
+<script>
+function submitForm() {
+	var information = document.getElementById("information");
+	information.submit()
+}
+</script>
+
+<div class="col-md-10">
+	<a type="button" class="btn btn-default" href="{:U('Robot/index')}" style="float:right;margin:15px 0px">取消修改</a>
+	<button type="button" class="btn btn-default" onclick="submitForm()" style="float:right;margin:15px 0px">保存配置</button>
+	<div class="panel panel-default" style="margin:60px 0px">
+		<div class="panel-body">
+			<form id="information" enctype="multipart/form-data" action="{:U('Robotform/save')}" method="post" role="form">
+				<div class="form-group">
+					<label>游戏名称：</label>
+					<input type="text" class="form-control" name="gamename" placeholder="游戏名称" value="{$configData['gamename']}">
+				</div>
+				<label>号码0至5：</label>
+				<div class="row">
+					<div class="col-md-2">
+						<input type="text" class="form-control" name="money0" placeholder="号码0" value="{$configData['money0']}">
+					</div>
+					<div class="col-md-2">
+						<input type="text" class="form-control" name="money1" placeholder="号码1" value="{$configData['money1']}">
+					</div>
+					<div class="col-md-2">
+						<input type="text" class="form-control" name="money2" placeholder="号码2" value="{$configData['money2']}">
+					</div>
+					<div class="col-md-2">
+						<input type="text" class="form-control" name="money3" placeholder="号码3" value="{$configData['money3']}">
+					</div>
+					<div class="col-md-2">
+						<input type="text" class="form-control" name="money4" placeholder="号码4" value="{$configData['money4']}">
+					</div>
+					<div class="col-md-2">
+						<input type="text" class="form-control" name="money5" placeholder="号码5" value="{$configData['money5']}">
+					</div>
+				</div>
+				<label>号码6至11：</label>
+				<div class="row">
+					<div class="col-md-2">
+						<input type="text" class="form-control" name="money6" placeholder="号码6" value="{$configData['money6']}">
+					</div>
+					<div class="col-md-2">
+						<input type="text" class="form-control" name="money7" placeholder="号码7" value="{$configData['money7']}">
+					</div>
+					<div class="col-md-2">
+						<input type="text" class="form-control" name="money8" placeholder="号码8" value="{$configData['money8']}">
+					</div>
+					<div class="col-md-2">
+						<input type="text" class="form-control" name="money9" placeholder="号码9" value="{$configData['money9']}">
+					</div>
+					<div class="col-md-2">
+						<input type="text" class="form-control" name="money10" placeholder="号码10" value="{$configData['money10']}">
+					</div>
+					<div class="col-md-2">
+						<input type="text" class="form-control" name="money11" placeholder="号码11" value="{$configData['money11']}">
+					</div>
+				</div>
+				<label>号码12至17：</label>
+				<div class="row">
+					<div class="col-md-2">
+						<input type="text" class="form-control" name="money12" placeholder="号码12" value="{$configData['money12']}">
+					</div>
+					<div class="col-md-2">
+						<input type="text" class="form-control" name="money13" placeholder="号码13" value="{$configData['money13']}">
+					</div>
+					<div class="col-md-2">
+						<input type="text" class="form-control" name="money14" placeholder="号码14" value="{$configData['money14']}">
+					</div>
+					<div class="col-md-2">
+						<input type="text" class="form-control" name="money15" placeholder="号码15" value="{$configData['money15']}">
+					</div>
+					<div class="col-md-2">
+						<input type="text" class="form-control" name="money16" placeholder="号码16" value="{$configData['money16']}">
+					</div>
+					<div class="col-md-2">
+						<input type="text" class="form-control" name="money17" placeholder="号码17" value="{$configData['money17']}">
+					</div>
+				</div>
+				<label>号码18至23：</label>
+				<div class="row">
+					<div class="col-md-2">
+						<input type="text" class="form-control" name="money18" placeholder="号码18" value="{$configData['money18']}">
+					</div>
+					<div class="col-md-2">
+						<input type="text" class="form-control" name="money19" placeholder="号码19" value="{$configData['money19']}">
+					</div>
+					<div class="col-md-2">
+						<input type="text" class="form-control" name="money20" placeholder="号码20" value="{$configData['money20']}">
+					</div>
+					<div class="col-md-2">
+						<input type="text" class="form-control" name="money21" placeholder="号码21" value="{$configData['money21']}">
+					</div>
+					<div class="col-md-2">
+						<input type="text" class="form-control" name="money22" placeholder="号码22" value="{$configData['money22']}">
+					</div>
+					<div class="col-md-2">
+						<input type="text" class="form-control" name="money23" placeholder="号码23" value="{$configData['money23']}">
+					</div>
+				</div>
+				<label>号码24至27：</label>
+				<div class="row">
+					<div class="col-md-2">
+						<input type="text" class="form-control" name="money24" placeholder="号码24" value="{$configData['money24']}">
+					</div>
+					<div class="col-md-2">
+						<input type="text" class="form-control" name="money25" placeholder="号码25" value="{$configData['money25']}">
+					</div>
+					<div class="col-md-2">
+						<input type="text" class="form-control" name="money26" placeholder="号码26" value="{$configData['money26']}">
+					</div>
+					<div class="col-md-2">
+						<input type="text" class="form-control" name="money27" placeholder="号码27" value="{$configData['money27']}">
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

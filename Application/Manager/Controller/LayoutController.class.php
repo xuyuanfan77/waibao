@@ -17,7 +17,16 @@ class LayoutController extends Controller {
 			$this->assign('logoutDispaly',"inherit");
 			$navbarColor = array("#fff","#eee","#fff","#fff","#fff","#fff");
 			$this->assign('navbarColor',$navbarColor);
+		}elseif($page == "guess"){
+			$this->assign('navbarDispaly',"inherit");
+			$this->assign('logoutDispaly',"inherit");
+			$navbarColor = array("#fff","#fff","#eee","#fff","#fff","#fff");
+			$this->assign('navbarColor',$navbarColor);
+		}elseif($page == "robot"){
+			$this->assign('navbarDispaly',"inherit");
+			$this->assign('logoutDispaly',"inherit");
+			$navbarColor = array("#fff","#fff","#fff","#eee","#fff","#fff");
+			$this->assign('navbarColor',$navbarColor);
 		}
-			
 	}
 }

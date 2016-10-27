@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50714
 File Encoding         : 65001
 
-Date: 2016-10-26 17:51:04
+Date: 2016-10-27 17:29:57
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -90,7 +90,7 @@ CREATE TABLE `game` (
 DROP TABLE IF EXISTS `guess`;
 CREATE TABLE `guess` (
   `id` char(13) NOT NULL,
-  `userid` char(13) NOT NULL,
+  `userid` char(13) DEFAULT NULL,
   `gamename` char(20) NOT NULL,
   `gameissue` int(10) unsigned NOT NULL,
   `money0` int(10) unsigned DEFAULT NULL,
@@ -216,6 +216,48 @@ INSERT INTO `redpacket` VALUES ('57d10a61003d0', '57d10a4c9abbd', 'xuyuanfan1', 
 INSERT INTO `redpacket` VALUES ('57d10ad3c52c1', '57d10abaf2f2d', 'xuyuanfan4', '48', '1', '002', '000', '2016-09-08 14:53:31', '2016-09-08 14:53:07');
 
 -- ----------------------------
+-- Table structure for robotconfig
+-- ----------------------------
+DROP TABLE IF EXISTS `robotconfig`;
+CREATE TABLE `robotconfig` (
+  `gamename` char(20) NOT NULL,
+  `money0` int(10) unsigned DEFAULT NULL,
+  `money1` int(10) unsigned DEFAULT NULL,
+  `money2` int(10) unsigned DEFAULT NULL,
+  `money3` int(10) unsigned DEFAULT NULL,
+  `money4` int(10) unsigned DEFAULT NULL,
+  `money5` int(10) unsigned DEFAULT NULL,
+  `money6` int(10) unsigned DEFAULT NULL,
+  `money7` int(10) unsigned DEFAULT NULL,
+  `money8` int(10) unsigned DEFAULT NULL,
+  `money9` int(10) unsigned DEFAULT NULL,
+  `money10` int(10) unsigned DEFAULT NULL,
+  `money11` int(10) unsigned DEFAULT NULL,
+  `money12` int(10) unsigned DEFAULT NULL,
+  `money13` int(10) unsigned DEFAULT NULL,
+  `money14` int(10) unsigned DEFAULT NULL,
+  `money15` int(10) unsigned DEFAULT NULL,
+  `money16` int(10) unsigned DEFAULT NULL,
+  `money17` int(10) unsigned DEFAULT NULL,
+  `money18` int(10) unsigned DEFAULT NULL,
+  `money19` int(10) unsigned DEFAULT NULL,
+  `money20` int(10) unsigned DEFAULT NULL,
+  `money21` int(10) unsigned DEFAULT NULL,
+  `money22` int(10) unsigned DEFAULT NULL,
+  `money23` int(10) unsigned DEFAULT NULL,
+  `money24` int(10) unsigned DEFAULT NULL,
+  `money25` int(10) unsigned DEFAULT NULL,
+  `money26` int(10) unsigned DEFAULT NULL,
+  `money27` int(10) unsigned DEFAULT NULL,
+  PRIMARY KEY (`gamename`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of robotconfig
+-- ----------------------------
+INSERT INTO `robotconfig` VALUES ('pc28', '200', '300', '600', '1000', '1500', '2100', '2800', '3600', '4500', '5500', '6300', '6900', '7300', '7500', '7500', '7300', '6900', '6300', '5500', '4500', '3600', '2800', '2100', '1500', '1000', '600', '300', '100');
+
+-- ----------------------------
 -- Table structure for user
 -- ----------------------------
 DROP TABLE IF EXISTS `user`;
@@ -232,11 +274,11 @@ CREATE TABLE `user` (
 -- Records of user
 -- ----------------------------
 INSERT INTO `user` VALUES ('57d1049d88231', 'xuyuanfan5', '123', '100000000', '2016-09-08 14:26:37');
-INSERT INTO `user` VALUES ('57d10a4c9abbd', 'xuyuanfan1', '123', '99686288', '2016-09-08 14:50:52');
+INSERT INTO `user` VALUES ('57d10a4c9abbd', 'xuyuanfan1', '123', '99686883', '2016-09-08 14:50:52');
 INSERT INTO `user` VALUES ('57d10a83b5acc', 'xuyuanfan2', '123', '100000000', '2016-09-08 14:51:47');
 INSERT INTO `user` VALUES ('57d10a9ba983f', 'xuyuanfan3', '123', '100000000', '2016-09-08 14:52:11');
 INSERT INTO `user` VALUES ('57d10abaf2f2d', 'xuyuanfan4', '123', '100000000', '2016-09-08 14:52:42');
-INSERT INTO `user` VALUES ('5800e148ab58f', 'root', '123456', '100000000', '2016-10-14 21:44:40');
+INSERT INTO `user` VALUES ('5800e148ab58f', 'robot', '123456', '0', '2016-10-14 21:44:40');
 
 -- ----------------------------
 -- Procedure structure for overtimeCheck

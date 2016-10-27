@@ -4,7 +4,7 @@ header("Content-Type: text/html;charset=utf-8");
 class GuessformController extends LayoutController {
     public function index(){
 		if(cookie('PHPSESSID') && session('admin_id') && cookie('PHPSESSID') == session('admin_id')) {
-			$this->initLayout("collect");
+			$this->initLayout("guess");
 			$configData = file_get_contents("./Application/Common/Conf/guessConfig.php");
 			$this->assign('configData',$configData);
 			$this->display();

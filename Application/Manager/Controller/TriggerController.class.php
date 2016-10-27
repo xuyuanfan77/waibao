@@ -18,7 +18,7 @@ class TriggerController extends Controller {
 		$sleep_time = 5;				//多长时间执行一次
 		while(true){
 			$this->trigger();
-			//sleep($sleep_time);			//等待时间，进行下一次操作。
+			//sleep($sleep_time);		//等待时间，进行下一次操作。
 		}
 		exit();
 	}
