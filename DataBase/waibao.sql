@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50714
 File Encoding         : 65001
 
-Date: 2016-10-27 17:29:57
+Date: 2016-10-28 17:36:45
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -255,7 +255,7 @@ CREATE TABLE `robotconfig` (
 -- ----------------------------
 -- Records of robotconfig
 -- ----------------------------
-INSERT INTO `robotconfig` VALUES ('pc28', '200', '300', '600', '1000', '1500', '2100', '2800', '3600', '4500', '5500', '6300', '6900', '7300', '7500', '7500', '7300', '6900', '6300', '5500', '4500', '3600', '2800', '2100', '1500', '1000', '600', '300', '100');
+INSERT INTO `robotconfig` VALUES ('pc28', '100', '300', '600', '1000', '1500', '2100', '2800', '3600', '4500', '5500', '6300', '6900', '7300', '7500', '7500', '7300', '6900', '6300', '5500', '4500', '3600', '2800', '2100', '1500', '1000', '600', '300', '100');
 
 -- ----------------------------
 -- Table structure for user
@@ -274,11 +274,13 @@ CREATE TABLE `user` (
 -- Records of user
 -- ----------------------------
 INSERT INTO `user` VALUES ('57d1049d88231', 'xuyuanfan5', '123', '100000000', '2016-09-08 14:26:37');
-INSERT INTO `user` VALUES ('57d10a4c9abbd', 'xuyuanfan1', '123', '99686883', '2016-09-08 14:50:52');
-INSERT INTO `user` VALUES ('57d10a83b5acc', 'xuyuanfan2', '123', '100000000', '2016-09-08 14:51:47');
-INSERT INTO `user` VALUES ('57d10a9ba983f', 'xuyuanfan3', '123', '100000000', '2016-09-08 14:52:11');
-INSERT INTO `user` VALUES ('57d10abaf2f2d', 'xuyuanfan4', '123', '100000000', '2016-09-08 14:52:42');
+INSERT INTO `user` VALUES ('57d10a4c9abbd', 'xuyuanfan1', '123', '99681904', '2016-09-08 14:50:52');
+INSERT INTO `user` VALUES ('57d10a83b5acc', 'xuyuanfan2', '123', '100021646', '2016-09-08 14:51:47');
+INSERT INTO `user` VALUES ('57d10a9ba983f', 'xuyuanfan3', '123', '99949203', '2016-09-08 14:52:11');
+INSERT INTO `user` VALUES ('57d10abaf2f2d', 'xuyuanfan4', '123', '99955584', '2016-09-08 14:52:42');
 INSERT INTO `user` VALUES ('5800e148ab58f', 'robot', '123456', '0', '2016-10-14 21:44:40');
+INSERT INTO `user` VALUES ('5812c71a92cf1', 'xuyuanfan3', '123', '100000000', '2016-10-28 11:33:46');
+INSERT INTO `user` VALUES ('5812c7226add1', 'xuyuanfan4', '123', '100000000', '2016-10-28 11:33:54');
 
 -- ----------------------------
 -- Procedure structure for overtimeCheck

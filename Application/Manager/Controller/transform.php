@@ -5,109 +5,69 @@ header("Content-Type: text/html;charset=utf-8");
 
 class Transform {
 	// 机器人投注
-	public function robotGuess($gameData) {		
+	public function robotGuess($gameData) {	
+		$numArea = array('pc28'=>array(0,28),'js28'=>array(0,28),'js16'=>array(3,16),'fk28'=>array(0,28),'fksc'=>array(1,10));
+		
+		// 取出机器人配置信息
+		unset($condition);
+		$condition['gamename'] = array('eq',$gameData['name']);
 		$Robotconfig = M("Robotconfig");
-		$configData = $Robotconfig->select();
-		foreach ($configData as $value) {
-			switch ($value['gamename'])
-			{
-			case 'pc28':
-				$begin_num = 0;
-				$number_num = 28;
-				break;  
-			case 'js28':
-				$begin_num = 0;
-				$number_num = 28;
-				break;
-			case 'js16':
-				$begin_num = 3;
-				$number_num = 16;
-				break;
-			case 'fk28':
-				$begin_num = 0;
-				$number_num = 28;
-				break;  
-			case 'fksc':
-				$begin_num = 1;
-				$number_num = 10;
-				break;
-			default:
-			}
-			//修改竞猜表
-			if($gameData['name']==$value['gamename']){
-				$Guess = M('Guess');
-				$guessData['id'] = uniqid();
-				$guessData['gamename'] = $value['gamename'];
-				$guessData['gameissue'] = $gameData['issue'];
-				$total = 0;
-				for($index=$begin_num;$index<$begin_num+$number_num;$index++) {
-					$guessData['money'.$index] = $value['money'.$index];
-					$total = $total + $value['money'.$index];
-				}
-				$guessData['input']= $total;
-				$guessData['output']= 0;
-				$guessData['createtime'] = date('Y-m-d H:i:s');
-				$Guess->create($guessData);
-				$Guess->add();
-				
-				//修改游戏表
-				for($index=$begin_num;$index<$begin_num+$number_num;$index++) {						//修改每个数字的下注
-					$gameData['money'.$index] = $gameData['money'.$index]+$value['money'.$index];
-				}		
-				$gameData['peoplenum'] = $gameData['peoplenum']+1;									//修改总人数
-				$gameData['jackpot'] = $gameData['jackpot']+$total;									//修改奖金池
-				$Game = M("Game");
-				$Game->save($gameData);
-			}
+		$config = $Robotconfig->where($condition)->find();
+		if(!$config)return;
+
+		// 竞猜表添加一条记录
+		$guessData['id'] = uniqid();
+		$guessData['gamename'] = $config['gamename'];
+		$guessData['gameissue'] = $gameData['issue'];
+		$guessData['input'] = 0;
+		for($index=$numArea[$config['gamename']][0]; $index<$numArea[$config['gamename']][0]+$numArea[$config['gamename']][1]; $index++) {
+			$guessData['money'.$index] = $config['money'.$index];
+			$guessData['input'] = $guessData['input'] + $config['money'.$index];
 		}
+		$guessData['output']= 0;
+		$guessData['createtime'] = date('Y-m-d H:i:s');
+		$Guess = M('Guess');
+		$Guess->create($guessData);
+		$Guess->add();
+		
+		// 修改游戏表对应数据
+		for($index=$numArea[$config['gamename']][0]; $index<$numArea[$config['gamename']][0]+$numArea[$config['gamename']][1]; $index++) {						//修改每个数字的下注
+			$gameData['money'.$index] = $gameData['money'.$index]+$config['money'.$index];
+			$gameData['jackpot'] = $gameData['jackpot']+$config['money'.$index];
+		}
+		$Game = M("Game");
+		$Game->save($gameData);
 	}
 	
 	// 计算号码开奖的游戏数据
 	public function calculate($data,$config){		
-		$Game = M('Game');
 		unset($condition);
 		$condition['name'] = array('eq',$config['name']);
 		$condition['issue'] = array('eq',$data['issue']);
+		$Game = M('Game');
 		$gameData = $Game->where($condition)->find();
 		
 		if($gameData) {
-			$gameData['statu'] = 3;
-			$Game->save($gameData);
-			
-			switch ($config['name'])
-			{
-			case 'pc28':
-				$gameNum = $gameData['num1']+$gameData['num2']+$gameData['num3'];
-				break;  
-			case 'js28':
-				$gameNum = $gameData['num1']+$gameData['num2']+$gameData['num3'];
-				break;
-			case 'js16':
-				$gameNum = $gameData['num1']+$gameData['num2']+$gameData['num3'];
-				break;
-			case 'fk28':
-				$gameNum = $gameData['num1']+$gameData['num2']+$gameData['num3'];
-				break;
-			case 'fksc':
+			// 修改竞猜表的数据（所获金豆）、修改用户表的数据（总金豆数）
+			if($config['name']=='fksc'){																// 对最后开奖号码进行处理（除了疯狂赛车，其他的游戏最后的开奖号码都是三个开奖号码之和）
 				$gameNum = $gameData['num1'];
-				break;
-			default:
+			}else{
+				$gameNum = $gameData['num1']+$gameData['num2']+$gameData['num3'];
 			}
-			$gameOdds = round($gameData['jackpot']/$gameData['money'.$gameNum],2);
-			$Guess = M("Guess");
+			$gameOdds = floor($gameData['jackpot']/$gameData['money'.$gameNum]*100)/100;				// 计算开奖号码所对应的赔率
 			unset($condition);
 			$condition['gamename'] = array('eq',$config['name']);
 			$condition['gameissue'] = array('eq',$data['issue']);
 			$condition['money'.$gameNum] = array('neq',0);
-			$guessData = $Guess->where($condition)->select();
+			$guessData = M("Guess")->where($condition)->select();
 			if($guessData){
-				foreach ($guessData as $key=>$value) {
-					$value['output'] = $value['money'.$gameNum]*$gameOdds;
-					$Guess->save($value);
-					
-					$User = M('User');
-					unset($condition);
+				foreach ($guessData as $key=>$value) {													// 针对每一次竞猜记录进行开奖
+					$value['output'] = $value['money'.$gameNum]*$gameOdds;								// 修改每次竞猜的所获金豆
+					M("Guess")->save($value);
+
+					unset($condition);																	// 修改对应用户的总金豆数
 					$condition['id'] = array('eq',$value['userid']);
+					$User = M('User');
 					$userData = $User->where($condition)->find();
 					if($userData){
 						$userData['money']=$userData['money']+$value['output'];
@@ -115,6 +75,16 @@ class Transform {
 					}
 				}
 			}
+			
+			// 修改游戏表的数据（开奖状态、中奖人数）
+			unset($condition);
+			$condition['gamename'] = array('eq',$config['name']);
+			$condition['gameissue'] = array('eq',$data['issue']);
+			$condition['money'.$gameNum] = array('neq',0);
+			$guessData = M("Guess")->field('userid')->where($condition)->group('userid')->select();
+			$gameData['statu'] = 3;																		// 将游戏状态修改为已开奖
+			$gameData['peoplenum'] = count($guessData);													// 统计总共的中奖人数
+			$Game->save($gameData);
 		}
 	}
 	

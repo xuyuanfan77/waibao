@@ -72,7 +72,7 @@
                         金豆：<?php echo ($userData['money']); ?>
                         <span class="kdou"></span>
                         <a class="kdou-c">兑</a>
-                        <a class="login-out" href="javascript:document.getElementById(&#39;logoutFormTop&#39;).submit()">[退出]</a>
+                        <a class="login-out" href="<?php echo U('Index/index', array('page'=>'login'));?>">[退出]</a>
                         <a class="site-nav-list" href="#">保存到桌面</a>
                         <a class="site-nav-list bor-r J_shoucang" href="#">收藏本站</a>
                     </p>
@@ -289,7 +289,7 @@
                     </div>
                     <div class="across clear-fix" id="panel">
                         <div class="across_par1 ">
-                            <?php $__FOR_START_13962__=0;$__FOR_END_13962__=10;for($i=$__FOR_START_13962__;$i < $__FOR_END_13962__;$i+=1){ ?><div class="across_par1_no clear-fix">
+                            <?php $__FOR_START_13434__=0;$__FOR_END_13434__=10;for($i=$__FOR_START_13434__;$i < $__FOR_END_13434__;$i+=1){ ?><div class="across_par1_no clear-fix">
                                     <div class="across_par1_no_left">
                                         <div id="click_number<?php echo ($i); ?>" class="click_number no_left_bg" style="cursor: pointer;"><?php echo ($i); ?></div>
                                     </div>
@@ -322,7 +322,7 @@
                                 </div><?php } ?>
                         </div>
                         <div class="across_par1 ">
-                            <?php $__FOR_START_29947__=10;$__FOR_END_29947__=18;for($i=$__FOR_START_29947__;$i < $__FOR_END_29947__;$i+=1){ ?><div class="across_par1_no clear-fix">
+                            <?php $__FOR_START_13355__=10;$__FOR_END_13355__=18;for($i=$__FOR_START_13355__;$i < $__FOR_END_13355__;$i+=1){ ?><div class="across_par1_no clear-fix">
                                     <div class="across_par1_no_left">
                                         <div id="click_number<?php echo ($i); ?>" class="click_number no_left_bg" style="cursor: pointer;"><?php echo ($i); ?></div>
                                     </div>
@@ -355,7 +355,7 @@
                                 </div><?php } ?>
                         </div>
                         <div class="across_par1 ">
-                            <?php $__FOR_START_31000__=18;$__FOR_END_31000__=28;for($i=$__FOR_START_31000__;$i < $__FOR_END_31000__;$i+=1){ ?><div class="across_par1_no clear-fix">
+                            <?php $__FOR_START_136__=18;$__FOR_END_136__=28;for($i=$__FOR_START_136__;$i < $__FOR_END_136__;$i+=1){ ?><div class="across_par1_no clear-fix">
                                     <div class="across_par1_no_left">
                                         <div id="click_number<?php echo ($i); ?>" class="click_number no_left_bg" style="cursor: pointer;"><?php echo ($i); ?></div>
                                     </div>
