@@ -120,7 +120,7 @@ class Transform {
 			$readyData['issue'] = $data['issue'];
 			$readyData['peoplenum'] = 0;
 			$readyData['jackpot'] = 0;
-			$runtime = strtotime($data['runtime']);
+			$runtime = Transform::getRuntime($readyData['issue'],$config);
 			$readyData['deadline'] = date('Y-m-d H:i:s',strtotime('-'.$config['aheaddeadline'].' seconds',$runtime));
 			$readyData['runtime'] = date('Y-m-d H:i:s',strtotime('+'.$config['delayruntime'].' seconds',$runtime));
 			$readyData['statu'] = 3;
@@ -132,10 +132,48 @@ class Transform {
 		}
 	}
 	
+	// 根据期号计算开奖时间
+	public function getRuntime($issue,$config){
+		$time = explode(':',$config['period_begin']);
+		$begin_time = $time[0]*60*60+$time[1]*60+$time[2];
+		$time = explode(':',$config['period_end']);
+		$end_time = $time[0]*60*60+$time[1]*60+$time[2];
+		$time = explode(':',date('H:i:s',strtotime($config['basetime'])));
+		$base_time = $time[0]*60*60+$time[1]*60+$time[2];
+		$interval = $config['interval'];
+
+		$dayIssues = ($end_time - $begin_time)/$interval+1;
+		$firstDayIssues = ($end_time - $base_time)/$interval+1;
+		$diffIssues = $issue - $config['baseissue'] + 1;
+		
+		if($diffIssues<=$firstDayIssues){
+			$days = 0;
+			$seconds = ($diffIssues-1)*$interval;
+			$runtime = date('Y-m-d H:i:s',strtotime($config['basetime'])+$seconds);
+		}else{
+			$days = floor(($diffIssues-$firstDayIssues)/$dayIssues)+1;
+			$seconds = (($diffIssues-$firstDayIssues)%$dayIssues-1)*$interval;
+			$runtime = date('Y-m-d H:i:s',strtotime($config['basetime'])-$base_time+$days*24*60*60+$begin_time+$seconds);
+		}
+
+		dump('begin_time:'.$begin_time);
+		dump('end_time:'.$end_time);
+		dump('base_time:'.$base_time);
+		dump('interval:'.$interval);
+		dump('dayIssues:'.$dayIssues);
+		dump('firstDayIssues:'.$firstDayIssues);
+		dump('diffIssues:'.$diffIssues);
+		dump('days:'.$days);
+		dump('seconds:'.$seconds);
+		dump('runtime:'.$runtime);
+		return $runtime;
+	}
+	
 	// 写入尚未开奖的游戏数据
 	public function prewrite($data,$config){
 		$Game = M('Game');
 		$condition['name'] = array('eq',$config['name']);
+		dump('name'.$config['name']);		
 		for($index=1;$index<=$config['aheadissue'];$index++){
 			$condition['issue'] = array('eq',$data['issue']+$index);
 			$gameData = $Game->where($condition)->find();
@@ -143,13 +181,12 @@ class Transform {
 				$gameData['id'] = uniqid();
 				$gameData['lotteryname'] = $config['lotteryname'];
 				$gameData['name'] = $config['name'];
-				
 				$gameData['issue'] = $data['issue']+$index;
 				$gameData['peoplenum'] = 0;
 				$gameData['jackpot'] = 0;
-				$runtime = strtotime('+'.$config['interval']*$index.' seconds',strtotime($data['runtime']));
-				$gameData['deadline'] = date('Y-m-d H:i:s',strtotime('-'.$config['aheaddeadline'].' seconds',$runtime));
-				$gameData['runtime'] = date('Y-m-d H:i:s',strtotime('+'.$config['delayruntime'].' seconds',$runtime));
+				$runtime = Transform::getRuntime($gameData['issue'],$config);
+				$gameData['deadline'] = date('Y-m-d H:i:s',strtotime('-'.$config['aheaddeadline'].' seconds',strtotime($runtime)));
+				$gameData['runtime'] = date('Y-m-d H:i:s',strtotime('+'.$config['delayruntime'].' seconds',strtotime($runtime)));
 				$gameData['statu'] = 0;
 				$gameData['createtime'] = date('Y-m-d H:i:s');
 				

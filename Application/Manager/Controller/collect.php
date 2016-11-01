@@ -47,8 +47,15 @@ class Collect {
 		$respone = curl_exec($ch);
 		curl_close($ch);
 		
-		$respone = substr($respone,$config['range_begin'],$config['range_lenght']);
-		preg_match($config['rules'],$respone,$content);
+		
+		if($config['range_lenght']){
+			$respone = substr($respone,$config['range_begin'],$config['range_lenght']);
+		}
+		if($config['rules']){
+			preg_match($config['rules'],$respone,$content);
+		}else{
+			$content = $respone;
+		}
 		if(!empty($content)){
 			$data = $config['handle']($content);
 			return $data;

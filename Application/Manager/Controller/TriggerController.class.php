@@ -15,10 +15,10 @@ class TriggerController extends Controller {
     public function index(){
 		ignore_user_abort();			//关闭浏览器后，继续执行php代码
 		set_time_limit(0);				//程序执行时间无限制
-		$sleep_time = 5;				//多长时间执行一次
+		$sleep_time = 3;				//多长时间执行一次
 		while(true){
 			$this->trigger();
-			//sleep($sleep_time);		//等待时间，进行下一次操作。
+			sleep($sleep_time);		//等待时间，进行下一次操作。
 		}
 		exit();
 	}
@@ -41,8 +41,8 @@ class TriggerController extends Controller {
 			}
 		}
 		
-		//dump($this->cacheData);
-		dump('采集中……');
+		dump($this->cacheData);
+		//dump('采集中……');
 		
 		// 循环所有转换配置，不需要转换即放弃
 		$transformConfig = C('transform');
