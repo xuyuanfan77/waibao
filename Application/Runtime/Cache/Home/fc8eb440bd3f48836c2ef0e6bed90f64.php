@@ -117,7 +117,7 @@
                         <li class="game-nav-list ">
                             <div class="game-logo-box game-logo-jnd28">
                                 <span class="top-jt"></span>
-                                <a class="game-img" href="#"></a>
+                                <a class="game-img" href="<?php echo U('Num/index', array('game'=>'jnd28'));?>"></a>
                             </div>
                         </li>
                     </ul>
@@ -291,7 +291,7 @@
                     </div>
                     <div class="across clear-fix" id="panel">
                         <div class="across_par1 ">
-                            <?php $__FOR_START_14504__=0;$__FOR_END_14504__=10;for($i=$__FOR_START_14504__;$i < $__FOR_END_14504__;$i+=1){ ?><div class="across_par1_no clear-fix">
+                            <?php $__FOR_START_19978__=0;$__FOR_END_19978__=10;for($i=$__FOR_START_19978__;$i < $__FOR_END_19978__;$i+=1){ ?><div class="across_par1_no clear-fix">
                                     <div class="across_par1_no_left">
                                         <div id="click_number<?php echo ($i); ?>" class="click_number no_left_bg" style="cursor: pointer;"><?php echo ($i); ?></div>
                                     </div>
@@ -324,7 +324,7 @@
                                 </div><?php } ?>
                         </div>
                         <div class="across_par1 ">
-                            <?php $__FOR_START_32705__=10;$__FOR_END_32705__=18;for($i=$__FOR_START_32705__;$i < $__FOR_END_32705__;$i+=1){ ?><div class="across_par1_no clear-fix">
+                            <?php $__FOR_START_30331__=10;$__FOR_END_30331__=18;for($i=$__FOR_START_30331__;$i < $__FOR_END_30331__;$i+=1){ ?><div class="across_par1_no clear-fix">
                                     <div class="across_par1_no_left">
                                         <div id="click_number<?php echo ($i); ?>" class="click_number no_left_bg" style="cursor: pointer;"><?php echo ($i); ?></div>
                                     </div>
@@ -357,7 +357,7 @@
                                 </div><?php } ?>
                         </div>
                         <div class="across_par1 ">
-                            <?php $__FOR_START_25446__=18;$__FOR_END_25446__=28;for($i=$__FOR_START_25446__;$i < $__FOR_END_25446__;$i+=1){ ?><div class="across_par1_no clear-fix">
+                            <?php $__FOR_START_7320__=18;$__FOR_END_7320__=28;for($i=$__FOR_START_7320__;$i < $__FOR_END_7320__;$i+=1){ ?><div class="across_par1_no clear-fix">
                                     <div class="across_par1_no_left">
                                         <div id="click_number<?php echo ($i); ?>" class="click_number no_left_bg" style="cursor: pointer;"><?php echo ($i); ?></div>
                                     </div>

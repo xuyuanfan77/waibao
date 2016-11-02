@@ -13,7 +13,7 @@ class TriggerController extends Controller {
 	private $cacheData;
 	
     public function index(){
-		ignore_user_abort();			//关闭浏览器后，继续执行php代码
+		ignore_user_abort(true);			//关闭浏览器后，继续执行php代码
 		set_time_limit(0);				//程序执行时间无限制
 		$sleep_time = 3;				//多长时间执行一次
 		while(true){
