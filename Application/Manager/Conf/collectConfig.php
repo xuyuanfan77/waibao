@@ -13,8 +13,8 @@ return array(
 			$data['runtime'] = $arg[4];
 			return $data;
 		},
-		'period_begin'=>'09:05:00',
-		'period_end'=>'23:55:00',
+		'period_begin'=>'09:00:00',
+		'period_end'=>'23:59:59',
 	),
 	/*'北京快乐8'=>array(
 		'type'=>'1',
@@ -49,8 +49,8 @@ return array(
 			$data['runtime'] = $arg[3];
 			return $data;
 		},
-		'period_begin'=>'09:08:00',
-		'period_end'=>'23:58:00',
+		'period_begin'=>'09:00:00',
+		'period_end'=>'23:59:59',
 	),
 	'韩国快乐8'=>array(
 		'type'=>'1',

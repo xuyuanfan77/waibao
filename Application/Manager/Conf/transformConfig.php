@@ -15,8 +15,8 @@ return array(
 		},
 		'water'=>30,
 		'interval'=>300,
-		'baseissue'=>789669,
-		'basetime'=>'2016-10-31 23:50:00',
+		'baseissue'=>789853,
+		'basetime'=>'2016-11-02 09:20:00',
 		'aheadissue'=>4,
 		'aheaddeadline'=>60,
 		'delayruntime'=>60,
@@ -108,5 +108,28 @@ return array(
 		'delayruntime'=>60,
 		'period_begin'=>'09:07:00',
 		'period_end'=>'23:57:00',
+	),
+	'jnd28'=>array(
+		'name'=>'jnd28',
+		'lotteryname'=>'北京快乐8',
+		'handle'=>function($arg){
+			for($index=1;$index<=20;$index++){
+				$number[$index-1]=$arg['num'.$index];
+			}
+			sort($number);
+			$data['num1'] = ($number[0]+$number[1]+$number[2]+$number[3]+$number[4]+$number[5])%10;
+			$data['num2'] = ($number[6]+$number[7]+$number[8]+$number[9]+$number[10]+$number[11])%10;
+			$data['num3'] = ($number[12]+$number[13]+$number[14]+$number[15]+$number[16]+$number[17])%10;
+			return $data;
+		},
+		'water'=>30,
+		'interval'=>300,
+		'baseissue'=>789853,
+		'basetime'=>'2016-11-02 09:20:00',
+		'aheadissue'=>4,
+		'aheaddeadline'=>60,
+		'delayruntime'=>60,
+		'period_begin'=>'09:05:00',
+		'period_end'=>'23:55:00',
 	),
 );

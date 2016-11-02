@@ -6,7 +6,7 @@ header("Content-Type: text/html;charset=utf-8");
 class Transform {
 	// 机器人投注
 	public function robotGuess($gameData) {	
-		$numArea = array('pc28'=>array(0,28),'js28'=>array(0,28),'js16'=>array(3,16),'fk28'=>array(0,28),'fksc'=>array(1,10));
+		$numArea = array('pc28'=>array(0,28),'js28'=>array(0,28),'js16'=>array(3,16),'fk28'=>array(0,28),'fksc'=>array(1,10),'jnd28'=>array(0,28));
 		
 		// 取出机器人配置信息
 		unset($condition);
@@ -120,9 +120,10 @@ class Transform {
 			$readyData['issue'] = $data['issue'];
 			$readyData['peoplenum'] = 0;
 			$readyData['jackpot'] = 0;
+			dump('新插入');
 			$runtime = Transform::getRuntime($readyData['issue'],$config);
-			$readyData['deadline'] = date('Y-m-d H:i:s',strtotime('-'.$config['aheaddeadline'].' seconds',$runtime));
-			$readyData['runtime'] = date('Y-m-d H:i:s',strtotime('+'.$config['delayruntime'].' seconds',$runtime));
+			$readyData['deadline'] = date('Y-m-d H:i:s',$runtime-$config['aheaddeadline']);
+			$readyData['runtime'] = date('Y-m-d H:i:s',$runtime+$config['delayruntime']);
 			$readyData['statu'] = 3;
 			$readyData['createtime'] = date('Y-m-d H:i:s');
 			
@@ -147,16 +148,15 @@ class Transform {
 		$diffIssues = $issue - $config['baseissue'] + 1;
 		
 		if($diffIssues<=$firstDayIssues){
-			$days = 0;
 			$seconds = ($diffIssues-1)*$interval;
-			$runtime = date('Y-m-d H:i:s',strtotime($config['basetime'])+$seconds);
+			$runtime = strtotime($config['basetime']) + $seconds;
 		}else{
 			$days = floor(($diffIssues-$firstDayIssues)/$dayIssues)+1;
 			$seconds = (($diffIssues-$firstDayIssues)%$dayIssues-1)*$interval;
-			$runtime = date('Y-m-d H:i:s',strtotime($config['basetime'])-$base_time+$days*24*60*60+$begin_time+$seconds);
+			$runtime = strtotime($config['basetime']) + $days*24*60*60 - $base_time + $begin_time + $seconds;
 		}
 
-		dump('begin_time:'.$begin_time);
+		/*dump('begin_time:'.$begin_time);
 		dump('end_time:'.$end_time);
 		dump('base_time:'.$base_time);
 		dump('interval:'.$interval);
@@ -165,7 +165,7 @@ class Transform {
 		dump('diffIssues:'.$diffIssues);
 		dump('days:'.$days);
 		dump('seconds:'.$seconds);
-		dump('runtime:'.$runtime);
+		dump('runtime:'.$runtime);*/
 		return $runtime;
 	}
 	
@@ -185,8 +185,8 @@ class Transform {
 				$gameData['peoplenum'] = 0;
 				$gameData['jackpot'] = 0;
 				$runtime = Transform::getRuntime($gameData['issue'],$config);
-				$gameData['deadline'] = date('Y-m-d H:i:s',strtotime('-'.$config['aheaddeadline'].' seconds',strtotime($runtime)));
-				$gameData['runtime'] = date('Y-m-d H:i:s',strtotime('+'.$config['delayruntime'].' seconds',strtotime($runtime)));
+				$gameData['deadline'] = date('Y-m-d H:i:s',$runtime-$config['aheaddeadline']);
+				$gameData['runtime'] = date('Y-m-d H:i:s',$runtime+$config['delayruntime']);
 				$gameData['statu'] = 0;
 				$gameData['createtime'] = date('Y-m-d H:i:s');
 				

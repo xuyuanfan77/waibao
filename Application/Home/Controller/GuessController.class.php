@@ -55,7 +55,7 @@ class GuessController extends Controller {
 	
 	//初始化内容
 	private function initContent() {
-		$numArea = array('pc28'=>array(0,28),'js28'=>array(0,28),'js16'=>array(3,16),'fk28'=>array(0,28),'fksc'=>array(1,10));
+		$numArea = array('pc28'=>array(0,28),'js28'=>array(0,28),'js16'=>array(3,16),'fk28'=>array(0,28),'fksc'=>array(1,10),'jnd28'=>array(0,28));
 		$Game = M('Game');
 		$condition['name'] = array('eq',$this->getGameStyle());
 		$condition['issue'] = array('eq',$_GET['issue']);
@@ -123,7 +123,7 @@ class GuessController extends Controller {
 			$this->ajaxReturn($data);
 		}
 		
-		$numArea = array('pc28'=>array(0,28),'js28'=>array(0,28),'js16'=>array(3,16),'fk28'=>array(0,28),'fksc'=>array(1,10));		
+		$numArea = array('pc28'=>array(0,28),'js28'=>array(0,28),'js16'=>array(3,16),'fk28'=>array(0,28),'fksc'=>array(1,10),'jnd28'=>array(0,28));		
 		//修改用户表
 		$userData['money'] = $userData['money'] - $_POST['total'];
 		$User->save($userData);

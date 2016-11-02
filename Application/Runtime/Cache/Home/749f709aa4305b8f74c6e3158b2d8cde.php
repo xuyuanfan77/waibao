@@ -56,7 +56,7 @@
                                 <a class="game-img" href="<?php echo U('Num/index', array('game'=>'js16'));?>"></a>
                             </div>
                         </li>
-                        <li class="game-nav-list selected">
+                        <li class="game-nav-list ">
                             <div class="game-logo-box game-logo-fk28">
                                 <span class="top-jt"></span>
                                 <a class="game-img" href="<?php echo U('Num/index', array('game'=>'fk28'));?>"></a>
@@ -68,7 +68,7 @@
                                 <a class="game-img" href="<?php echo U('Num/index', array('game'=>'fksc'));?>"></a>
                             </div>
                         </li>
-                        <li class="game-nav-list ">
+                        <li class="game-nav-list selected">
                             <div class="game-logo-box game-logo-jnd28">
                                 <span class="top-jt"></span>
                                 <a class="game-img" href="<?php echo U('Num/index', array('game'=>'jnd28'));?>"></a>
@@ -90,20 +90,20 @@
                         </p>
                     </div>
                 </div>
-                <div class="fk28-nav-box game-two-nav">
+                <div class="jnd28-nav-box game-two-nav">
                     <div class="two-nav-head">
-                        <a class="head-list sel-color"><strong>疯狂28首页</strong></a>
+                        <a class="head-list sel-color"><strong>加拿大28首页</strong></a>
                         <p class="my-touzhu-box clear-fix">
-                            <a class="my-touzhu-list " href="<?php echo U('Record/index', array('game'=>'fk28'));?>">我的投注</a>
+                            <a class="my-touzhu-list " href="<?php echo U('Record/index', array('game'=>'jnd28'));?>">我的投注</a>
                         </p>
                     </div>
                 </div>
                 <!-- 公正提示 -->
-                <div class="kaijiang-box kaijiang-fk28">
+                <div class="kaijiang-box kaijiang-jnd28">
                     <div class="chengxin-box">
                         <span class="chengxin-logo"></span>
                         <div class="chengxin-text-box">
-                            <p class="chengxin-text-01">疯狂28开奖采用系统随机开奖</p>
+                            <p class="chengxin-text-01">加拿大28开奖采用加拿大第三方数据</p>
                             <p class="chengxin-text-02">公平公正 无法作弊</p>
                         </div>
                     </div>
@@ -123,7 +123,8 @@
                                 <strong><?php echo ($tipData["issue"]); ?></strong>
                                 期开奖结果：<?php echo ($tipData["num1"]); ?>+<?php echo ($tipData["num2"]); ?>+<?php echo ($tipData["num3"]); ?>=
                                 <span class="now-jieguo"><?php echo ($tipData['num1']+$tipData['num2']+$tipData['num3']); ?></span>
-                                <a href="http://www.game3799.com/Crazy28/guide">[游戏帮助]</a>
+                                <a target="_blank" href="http://www.bwlc.gov.cn/bulletin/keno.html">[官方查询]</a>
+                                <a href="http://game3799.com/lucky28/guide">[游戏帮助]</a>
                             </p>
                         </div>
                         <p class="kaijiang-time-text line-h J_kjIng" style="display: none">
@@ -145,7 +146,7 @@
                 <!-- 公正提示 -->
                 <!-- 导航 end -->
                 <!-- 内容 start -->
-                <div class="guess-box fk28-box">
+                <div class="guess-box jnd28-box">
                     <table>
                         <tbody>
                             <tr>
@@ -160,14 +161,14 @@
                             <?php if(is_array($gameData)): foreach($gameData as $key=>$data): ?><tr>
                                     <td><?php echo ($data["issue"]); ?></td>
                                     <td><?php echo ($data["runtime"]); ?></td>
-                                    <?php if($data['statu'] == 0): ?><td><span class="js-qus qus-fk28"></span></td>
+                                    <?php if($data['statu'] == 0): ?><td><span class="js-qus qus-jnd28"></span></td>
                                     <?php elseif($data['statu'] == 3): ?>
                                         <td>
 											<?php echo ($data["num1"]); ?>+<?php echo ($data["num2"]); ?>+<?php echo ($data["num3"]); ?>=
-											<span class="js-ball b-fk28"><?php echo ($data['num1']+$data['num2']+$data['num3']); ?></span>
+											<span class="js-ball b-jnd28"><?php echo ($data['num1']+$data['num2']+$data['num3']); ?></span>
                                         </td>
                                     <?php else: ?>
-                                        <td><span class="js-qus qus-fk28"></span></td><?php endif; ?>
+                                        <td><span class="js-qus qus-jnd28"></span></td><?php endif; ?>
                                     <td><?php echo ($data["jackpot"]); ?><i class="kdou"></i></td>
                                     <?php if($data['statu'] == 3): ?><td><?php echo ($data["peoplenum"]); ?></td>
                                     <?php else: ?>
@@ -175,7 +176,7 @@
                                     <?php if($data['statu'] == 3): ?><td><span class="green">0</span><i class="kdou"></i></td>
                                     <?php else: ?>
                                         <td>-</td><?php endif; ?>
-                                    <?php if($data['statu'] == 0): ?><td><a href="<?php echo U('Guess/index', array('game'=>'fk28', 'issue'=>$data['issue']));?>" class="go-jc jc-fk28">竞猜</a></td>
+                                    <?php if($data['statu'] == 0): ?><td><a href="<?php echo U('Guess/index', array('game'=>'jnd28', 'issue'=>$data['issue']));?>" class="go-jc jc-jnd28">竞猜</a></td>
                                     <?php elseif($data['statu'] == 1): ?>
                                         <td><a class="go-ta">截止竞猜</a></td>
                                     <?php elseif($data['statu'] == 2): ?>

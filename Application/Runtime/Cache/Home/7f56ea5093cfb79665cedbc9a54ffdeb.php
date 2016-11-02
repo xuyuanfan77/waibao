@@ -71,7 +71,7 @@
                         <li class="game-nav-list ">
                             <div class="game-logo-box game-logo-jnd28">
                                 <span class="top-jt"></span>
-                                <a class="game-img" href="#"></a>
+                                <a class="game-img" href="<?php echo U('Num/index', array('game'=>'jnd28'));?>"></a>
                             </div>
                         </li>
                     </ul>
@@ -209,6 +209,7 @@
                     </table>
                 </div>
                 <!-- 内容 end -->
+				
                 <div class="list-page-box clear-fix">
                     <?php echo ($pageShow); ?>
                 </div>
