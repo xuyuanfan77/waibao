@@ -16,7 +16,6 @@ class Transform {
 		if(!$config)return;
 
 		// 竞猜表添加一条记录
-		$guessData['id'] = uniqid();
 		$guessData['gamename'] = $config['gamename'];
 		$guessData['gameissue'] = $gameData['issue'];
 		$guessData['input'] = 0;
@@ -39,7 +38,7 @@ class Transform {
 		$Game->save($gameData);
 	}
 	
-	// 计算号码开奖的游戏数据
+	// 号码开奖
 	public function calculate($data,$config){		
 		unset($condition);
 		$condition['name'] = array('eq',$config['name']);
@@ -108,7 +107,6 @@ class Transform {
 			$Game->save($readyData);
 		} else {
 		// 新插入
-			$readyData['id'] = uniqid();
 			$readyData['lotteryname'] = $config['lotteryname'];
 			$readyData['name'] = $config['name'];
 			
@@ -178,7 +176,6 @@ class Transform {
 			$condition['issue'] = array('eq',$data['issue']+$index);
 			$gameData = $Game->where($condition)->find();
 			if(!$gameData){
-				$gameData['id'] = uniqid();
 				$gameData['lotteryname'] = $config['lotteryname'];
 				$gameData['name'] = $config['name'];
 				$gameData['issue'] = $data['issue']+$index;
@@ -191,7 +188,7 @@ class Transform {
 				$gameData['createtime'] = date('Y-m-d H:i:s');
 				
 				if ($Game->create($gameData)){
-					$Game->add();
+					$gameData['id'] = $Game->add();
 					
 					// 机器人投注
 					Transform::robotGuess($gameData);

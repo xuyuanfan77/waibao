@@ -76,7 +76,6 @@ class Collect {
 	
 	// 数据写入数据库
 	public function data_write($data,$config){
-		$lotteryData['id'] = uniqid();
 		$lotteryData['name'] = $config['name'];
 		$lotteryData['issue'] = $data['issue'];
 		for ($index=1; $index<=20; $index++) {

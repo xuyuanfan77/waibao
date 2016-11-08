@@ -53,8 +53,27 @@ class NumController extends Controller {
 		$condition['name'] = array('eq',$this->getGameStyle());
 		$gameData = $Game->where($condition)->page($pageNum .',20')->order('issue desc')->select();
 		
+		$Guess = M('Guess');
 		$Lottery = M('Lottery');
 		foreach ($gameData as $key=>$value) {
+			
+			unset($condition);
+			$condition['userid'] = array('eq',session('userId'));
+			$condition['gamename'] = array('eq',$this->getGameStyle());
+			$condition['gameissue'] = array('eq',$value['issue']);
+			$guessData = $Guess->where($condition)->select();
+			if($guessData){
+				$input = 0;
+				$output = 0;
+				foreach($guessData as $index=>$data){
+					$input = $input + $data['input'];
+					$output = $output + $data['output'];
+				}
+				$gameData[$key]['inputoutput'] = $input . '/' . $output;
+			}else{
+				$gameData[$key]['inputoutput']=0;
+			}
+		
 			if($value['statu']==0){
 				if($value['runtime'] < date('Y-m-d H:i:s')){
 					$gameData[$key]['statu']=2;

@@ -173,7 +173,7 @@
                                     <?php if($data['statu'] == 3): ?><td><?php echo ($data["peoplenum"]); ?></td>
                                     <?php else: ?>
                                         <td>-</td><?php endif; ?>
-                                    <?php if($data['statu'] == 3): ?><td><span class="green">0</span><i class="kdou"></i></td>
+                                    <?php if($data['statu'] == 3): ?><td><span class="green"><?php echo ($data["inputoutput"]); ?></span><i class="kdou"></i></td>
                                     <?php else: ?>
                                         <td>-</td><?php endif; ?>
                                     <?php if($data['statu'] == 0): ?><td><a href="<?php echo U('Guess/index', array('game'=>'pc28', 'issue'=>$data['issue']));?>" class="go-jc jc-pc28">竞猜</a></td>

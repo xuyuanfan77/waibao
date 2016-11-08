@@ -141,7 +141,6 @@ class GuessController extends Controller {
 		
 		//修改竞猜表
 		$Guess = M('Guess');
-		$guessData['id'] = uniqid();
 		$guessData['userid'] = session('userId');
 		$guessData['gamename'] = $_POST['game_style'];
 		$guessData['gameissue'] = $_POST['period_no'];
