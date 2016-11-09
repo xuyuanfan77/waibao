@@ -148,13 +148,17 @@ class Transform {
 		if($diffIssues<=$firstDayIssues){
 			$seconds = ($diffIssues-1)*$interval;
 			$runtime = strtotime($config['basetime']) + $seconds;
+		}elseif(($diffIssues-$firstDayIssues)%$dayIssues==0){
+			$days = floor(($diffIssues-$firstDayIssues)/$dayIssues);
+			$seconds = (($diffIssues-$firstDayIssues)%$dayIssues-1)*$interval;
+			$runtime = strtotime($config['basetime']) + $days*24*60*60 - $base_time + $end_time;//+ $begin_time + $seconds;
 		}else{
 			$days = floor(($diffIssues-$firstDayIssues)/$dayIssues)+1;
 			$seconds = (($diffIssues-$firstDayIssues)%$dayIssues-1)*$interval;
 			$runtime = strtotime($config['basetime']) + $days*24*60*60 - $base_time + $begin_time + $seconds;
 		}
 
-		/*dump('begin_time:'.$begin_time);
+		dump('begin_time:'.$begin_time);
 		dump('end_time:'.$end_time);
 		dump('base_time:'.$base_time);
 		dump('interval:'.$interval);
@@ -163,7 +167,7 @@ class Transform {
 		dump('diffIssues:'.$diffIssues);
 		dump('days:'.$days);
 		dump('seconds:'.$seconds);
-		dump('runtime:'.$runtime);*/
+		dump('runtime:'.$runtime);
 		return $runtime;
 	}
 	
