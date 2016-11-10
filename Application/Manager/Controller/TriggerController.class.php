@@ -41,7 +41,7 @@ class TriggerController extends Controller {
 			}
 		}
 		
-		dump($this->cacheData);
+		//dump($this->cacheData);
 		//dump('采集中……');
 		
 		// 循环所有转换配置，不需要转换即放弃

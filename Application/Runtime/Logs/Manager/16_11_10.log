@@ -1,0 +1,23 @@
+[ 2016-11-10T09:20:17+08:00 ] 127.0.0.1 /waibao/index.php/Manager/Trigger/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.016121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.020381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.020554s ]
+NOTIC: [8192] Non-static method Service\Transform::getRuntime() should not be called statically, assuming $this from incompatible context D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 65 行.
+NOTIC: [8] Undefined variable: days D:\wamp64\www\waibao\Application\Manager\Controller\transform.php 第 168 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008654s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008805s ]
+
+[ 2016-11-10T10:36:45+08:00 ] 127.0.0.1 /waibao/index.php/Manager/Trigger/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001191s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001513s ]
+NOTIC: [2048] Non-static method Manager\Controller\TriggerController::trigger() should not be called statically D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 70 行.
+NOTIC: [2048] Non-static method Service\Collect::period_check() should not be called statically D:\wamp64\www\waibao\Application\Manager\Controller\TriggerController.class.php 第 31 行.
+

@@ -158,7 +158,7 @@ class Transform {
 			$runtime = strtotime($config['basetime']) + $days*24*60*60 - $base_time + $begin_time + $seconds;
 		}
 
-		dump('begin_time:'.$begin_time);
+		/*dump('begin_time:'.$begin_time);
 		dump('end_time:'.$end_time);
 		dump('base_time:'.$base_time);
 		dump('interval:'.$interval);
@@ -167,7 +167,7 @@ class Transform {
 		dump('diffIssues:'.$diffIssues);
 		dump('days:'.$days);
 		dump('seconds:'.$seconds);
-		dump('runtime:'.$runtime);
+		dump('runtime:'.$runtime);*/
 		return $runtime;
 	}
 	
