@@ -8,14 +8,14 @@ class Transform {
 	public function robotGuess($gameData) {	
 		$numArea = array('pc28'=>array(0,28),'js28'=>array(0,28),'js16'=>array(3,16),'fk28'=>array(0,28),'fksc'=>array(1,10),'jnd28'=>array(0,28));
 		
-		// 取出机器人配置信息
+		// 从数据库读取出机器人配置信息
 		unset($condition);
 		$condition['gamename'] = array('eq',$gameData['name']);
 		$Robotconfig = M("Robotconfig");
 		$config = $Robotconfig->where($condition)->find();
 		if(!$config)return;
 
-		// 竞猜表添加一条记录
+		// 往竞猜表添加一条新的投注记录
 		$guessData['gamename'] = $config['gamename'];
 		$guessData['gameissue'] = $gameData['issue'];
 		$guessData['input'] = 0;
@@ -31,8 +31,8 @@ class Transform {
 		
 		// 修改游戏表对应数据
 		for($index=$numArea[$config['gamename']][0]; $index<$numArea[$config['gamename']][0]+$numArea[$config['gamename']][1]; $index++) {						//修改每个数字的下注
-			$gameData['money'.$index] = $gameData['money'.$index]+$config['money'.$index];
-			$gameData['jackpot'] = $gameData['jackpot']+$config['money'.$index];
+			$gameData['money'.$index] = $gameData['money'.$index]+$config['money'.$index];			// 修改游戏表每个号码的投注总金额
+			$gameData['jackpot'] = $gameData['jackpot']+$config['money'.$index];					// 修改游戏表奖金池的总金额
 		}
 		$Game = M("Game");
 		$Game->save($gameData);
@@ -118,8 +118,7 @@ class Transform {
 			$readyData['issue'] = $data['issue'];
 			$readyData['peoplenum'] = 0;
 			$readyData['jackpot'] = 0;
-			dump('新插入');
-			$runtime = Transform::getRuntime($readyData['issue'],$config);
+			$runtime = Transform::getRuntime($readyData['issue'],$config);								// 计算本应开奖时间
 			$readyData['deadline'] = date('Y-m-d H:i:s',$runtime-$config['aheaddeadline']);
 			$readyData['runtime'] = date('Y-m-d H:i:s',$runtime+$config['delayruntime']);
 			$readyData['statu'] = 3;
@@ -131,43 +130,33 @@ class Transform {
 		}
 	}
 	
-	// 根据期号计算开奖时间
+	// 根据期号计算本应开奖时间
 	public function getRuntime($issue,$config){
 		$time = explode(':',$config['period_begin']);
-		$begin_time = $time[0]*60*60+$time[1]*60+$time[2];
+		$begin_time = $time[0]*60*60+$time[1]*60+$time[2];												// 计算一天中第一期开奖时间距离00:00:00的秒数
 		$time = explode(':',$config['period_end']);
-		$end_time = $time[0]*60*60+$time[1]*60+$time[2];
+		$end_time = $time[0]*60*60+$time[1]*60+$time[2];												// 计算一天中最后一期开奖时间距离00:00:00的秒数
 		$time = explode(':',date('H:i:s',strtotime($config['basetime'])));
-		$base_time = $time[0]*60*60+$time[1]*60+$time[2];
+		$base_time = $time[0]*60*60+$time[1]*60+$time[2];												// 计算一天中基准期开奖时间距离00:00:00的秒数
 		$interval = $config['interval'];
 
-		$dayIssues = ($end_time - $begin_time)/$interval+1;
-		$firstDayIssues = ($end_time - $base_time)/$interval+1;
-		$diffIssues = $issue - $config['baseissue'] + 1;
+		$dayIssues = ($end_time - $begin_time)/$interval+1;												// 计算一天中总共开奖期数
+		$firstDayIssues = ($end_time - $base_time)/$interval+1;											// 计算一天中基准期之后还剩下的开奖期数
+		$diffIssues = $issue - $config['baseissue'] + 1;												// 计算当前期数与基准期数相差的开奖期数
 		
-		if($diffIssues<=$firstDayIssues){
+		if($diffIssues<=$firstDayIssues){																// 当前期数距离基准期数小于一天的情况
 			$seconds = ($diffIssues-1)*$interval;
 			$runtime = strtotime($config['basetime']) + $seconds;
-		}elseif(($diffIssues-$firstDayIssues)%$dayIssues==0){
+		}elseif(($diffIssues-$firstDayIssues)%$dayIssues==0){											// 当前基数正好是一天中最后一期的情况
 			$days = floor(($diffIssues-$firstDayIssues)/$dayIssues);
 			$seconds = (($diffIssues-$firstDayIssues)%$dayIssues-1)*$interval;
-			$runtime = strtotime($config['basetime']) + $days*24*60*60 - $base_time + $end_time;//+ $begin_time + $seconds;
-		}else{
+			$runtime = strtotime($config['basetime']) + $days*24*60*60 - $base_time + $end_time;
+		}else{																							// 其他情况
 			$days = floor(($diffIssues-$firstDayIssues)/$dayIssues)+1;
 			$seconds = (($diffIssues-$firstDayIssues)%$dayIssues-1)*$interval;
 			$runtime = strtotime($config['basetime']) + $days*24*60*60 - $base_time + $begin_time + $seconds;
 		}
 
-		/*dump('begin_time:'.$begin_time);
-		dump('end_time:'.$end_time);
-		dump('base_time:'.$base_time);
-		dump('interval:'.$interval);
-		dump('dayIssues:'.$dayIssues);
-		dump('firstDayIssues:'.$firstDayIssues);
-		dump('diffIssues:'.$diffIssues);
-		dump('days:'.$days);
-		dump('seconds:'.$seconds);
-		dump('runtime:'.$runtime);*/
 		return $runtime;
 	}
 	

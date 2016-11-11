@@ -1,4 +1,19 @@
 <?php
+/*
+转换配置字段解释：
+name：			转换名称
+lotteryname：	采集名称
+handle：		处理函数（传入为号码数组，返回为转换后的开奖号码数组）
+water：			抽水
+interval：		开奖时间间隔（以秒为单位）
+baseissue：		基准期数
+basetime：		基准开奖时间（只接受年月日时分秒，如：2016-11-02 09:20:00）
+aheadissue：	提前写入期数
+aheaddeadline：	开奖提前截至竞猜秒数
+delayruntime：	延迟开奖秒数
+period_begin：	一天中第一期开奖时间（只接受时分秒，如：09:00:00）
+period_end：	一天中最后一期开奖时间（只接受时分秒，如：23:59:59）
+*/
 return array(
 	'pc28'=>array(
 		'name'=>'pc28',

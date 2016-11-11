@@ -95,6 +95,7 @@ class RecordController extends Controller {
 		}
 	}
 	
+	//获取系统时间
 	public function getServerTime() {
 		$data['hour'] = date('H');
 		$data['min'] = date('i');

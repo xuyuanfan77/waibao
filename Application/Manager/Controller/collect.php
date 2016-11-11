@@ -4,7 +4,7 @@ namespace Service;
 header("Content-Type: text/html;charset=utf-8");
 
 class Collect {
-	// 检测是否时间段合法
+	// 检测是否在采集时间段内
 	public function period_check($config){
 		$curtime = date("H:i:s");
 		if($curtime>=$config['period_begin'] && $curtime<=$config['period_end']){
@@ -14,7 +14,7 @@ class Collect {
 		}
 	}
 	
-	// 检测是否新数据
+	// 采集或者随机生成数据，并检测是否是新数据
 	public function data_check($cacheData,$config){
 		switch ($config['type'])
 		{
@@ -30,7 +30,7 @@ class Collect {
 		if($newData){
 			$lotteryName = $config['name'];
 			$oldData = $cacheData[$lotteryName];
-			if($oldData['issue']!=$newData['issue']){
+			if($oldData['issue']!=$newData['issue']){					// 如果采集回来的期号与内存中保存的期号不一致，则为新数据
 				return $newData;
 			}
 		}	
@@ -44,20 +44,20 @@ class Collect {
 		curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 10);
 		curl_setopt($ch, CURLOPT_TIMEOUT, 10);
 		curl_setopt($ch, CURLOPT_HEADER, 0);
-		$respone = curl_exec($ch);
+		$respone = curl_exec($ch);										// 根据采集配置中的page获取网页内容
 		curl_close($ch);
 		
 		
-		if($config['range_lenght']){
-			$respone = substr($respone,$config['range_begin'],$config['range_lenght']);
+		if($config['range_lenght']){									// 根据采集配置中的range_begin和range_lenght截取网页内容包含有用数据的区域
+			$respone = substr($respone,$config['range_begin'],$config['range_lenght']);		
 		}
 		if($config['rules']){
-			preg_match($config['rules'],$respone,$content);
+			preg_match($config['rules'],$respone,$content);				// 根据采集配置中的rules匹配出有用数据
 		}else{
 			$content = $respone;
 		}
 		if(!empty($content)){
-			$data = $config['handle']($content);
+			$data = $config['handle']($content);						// 根据采集配置中的handle将有用数据转换成号码数组
 			return $data;
 		}else{
 			return false;
@@ -70,7 +70,7 @@ class Collect {
 		for($index=0;$index<20;$index++){
 			$content[$index] = mt_rand(0,100);
 		}
-		$data = $config['handle']($content);
+		$data = $config['handle']($content);							// 根据采集配置中的handle将有用数据转换成号码数组
 		return $data;
 	}
 	

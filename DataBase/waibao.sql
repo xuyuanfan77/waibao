@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50714
 File Encoding         : 65001
 
-Date: 2016-11-08 11:56:07
+Date: 2016-11-11 17:31:27
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -20,9 +20,9 @@ SET FOREIGN_KEY_CHECKS=0;
 -- ----------------------------
 DROP TABLE IF EXISTS `admin`;
 CREATE TABLE `admin` (
-  `id` char(255) NOT NULL,
-  `username` varchar(255) DEFAULT NULL,
-  `password` varchar(255) DEFAULT NULL,
+  `id` char(255) NOT NULL COMMENT 'ID号',
+  `username` varchar(255) DEFAULT NULL COMMENT '用户名',
+  `password` varchar(255) DEFAULT NULL COMMENT '密码',
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
@@ -36,47 +36,47 @@ INSERT INTO `admin` VALUES ('1', 'admin', '123');
 -- ----------------------------
 DROP TABLE IF EXISTS `game`;
 CREATE TABLE `game` (
-  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
-  `name` char(20) NOT NULL,
-  `lotteryname` char(20) NOT NULL,
-  `issue` int(11) unsigned NOT NULL,
-  `num1` tinyint(4) unsigned DEFAULT NULL,
-  `num2` tinyint(4) unsigned DEFAULT NULL,
-  `num3` tinyint(4) unsigned DEFAULT NULL,
-  `money0` int(10) unsigned DEFAULT '0',
-  `money1` int(10) unsigned DEFAULT '0',
-  `money2` int(10) unsigned DEFAULT '0',
-  `money3` int(10) unsigned DEFAULT '0',
-  `money4` int(10) unsigned DEFAULT '0',
-  `money5` int(10) unsigned DEFAULT '0',
-  `money6` int(10) unsigned DEFAULT '0',
-  `money7` int(10) unsigned DEFAULT '0',
-  `money8` int(10) unsigned DEFAULT '0',
-  `money9` int(10) unsigned DEFAULT '0',
-  `money10` int(10) DEFAULT '0',
-  `money11` int(10) unsigned DEFAULT '0',
-  `money12` int(10) unsigned DEFAULT '0',
-  `money13` int(10) unsigned DEFAULT '0',
-  `money14` int(10) unsigned DEFAULT '0',
-  `money15` int(10) unsigned DEFAULT '0',
-  `money16` int(10) unsigned DEFAULT '0',
-  `money17` int(10) unsigned DEFAULT '0',
-  `money18` int(10) unsigned DEFAULT '0',
-  `money19` int(10) unsigned DEFAULT '0',
-  `money20` int(10) unsigned DEFAULT '0',
-  `money21` int(10) unsigned DEFAULT '0',
-  `money22` int(10) unsigned DEFAULT '0',
-  `money23` int(10) unsigned DEFAULT '0',
-  `money24` int(10) unsigned DEFAULT '0',
-  `money25` int(10) unsigned DEFAULT '0',
-  `money26` int(10) unsigned DEFAULT '0',
-  `money27` int(10) unsigned DEFAULT '0',
-  `peoplenum` bigint(20) unsigned NOT NULL DEFAULT '0',
-  `jackpot` bigint(20) unsigned NOT NULL DEFAULT '0',
-  `deadline` datetime NOT NULL,
-  `runtime` datetime NOT NULL,
-  `statu` tinyint(3) unsigned NOT NULL DEFAULT '0' COMMENT '0、竞猜，1、封盘，2、开奖',
-  `createtime` datetime NOT NULL,
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT COMMENT 'ID号',
+  `name` char(20) NOT NULL COMMENT '游戏名称',
+  `lotteryname` char(20) NOT NULL COMMENT '福彩名称',
+  `issue` int(11) unsigned NOT NULL COMMENT '期号',
+  `num1` tinyint(4) unsigned DEFAULT NULL COMMENT '开奖号码1',
+  `num2` tinyint(4) unsigned DEFAULT NULL COMMENT '开奖号码2',
+  `num3` tinyint(4) unsigned DEFAULT NULL COMMENT '开奖号码3',
+  `money0` int(10) unsigned DEFAULT '0' COMMENT '号码0的投注金额',
+  `money1` int(10) unsigned DEFAULT '0' COMMENT '号码1的投注金额',
+  `money2` int(10) unsigned DEFAULT '0' COMMENT '号码2的投注金额',
+  `money3` int(10) unsigned DEFAULT '0' COMMENT '号码3的投注金额',
+  `money4` int(10) unsigned DEFAULT '0' COMMENT '号码4的投注金额',
+  `money5` int(10) unsigned DEFAULT '0' COMMENT '号码5的投注金额',
+  `money6` int(10) unsigned DEFAULT '0' COMMENT '号码6的投注金额',
+  `money7` int(10) unsigned DEFAULT '0' COMMENT '号码7的投注金额',
+  `money8` int(10) unsigned DEFAULT '0' COMMENT '号码8的投注金额',
+  `money9` int(10) unsigned DEFAULT '0' COMMENT '号码9的投注金额',
+  `money10` int(10) DEFAULT '0' COMMENT '号码10的投注金额',
+  `money11` int(10) unsigned DEFAULT '0' COMMENT '号码11的投注金额',
+  `money12` int(10) unsigned DEFAULT '0' COMMENT '号码12的投注金额',
+  `money13` int(10) unsigned DEFAULT '0' COMMENT '号码13的投注金额',
+  `money14` int(10) unsigned DEFAULT '0' COMMENT '号码14的投注金额',
+  `money15` int(10) unsigned DEFAULT '0' COMMENT '号码15的投注金额',
+  `money16` int(10) unsigned DEFAULT '0' COMMENT '号码16的投注金额',
+  `money17` int(10) unsigned DEFAULT '0' COMMENT '号码17的投注金额',
+  `money18` int(10) unsigned DEFAULT '0' COMMENT '号码18的投注金额',
+  `money19` int(10) unsigned DEFAULT '0' COMMENT '号码19的投注金额',
+  `money20` int(10) unsigned DEFAULT '0' COMMENT '号码20的投注金额',
+  `money21` int(10) unsigned DEFAULT '0' COMMENT '号码21的投注金额',
+  `money22` int(10) unsigned DEFAULT '0' COMMENT '号码22的投注金额',
+  `money23` int(10) unsigned DEFAULT '0' COMMENT '号码23的投注金额',
+  `money24` int(10) unsigned DEFAULT '0' COMMENT '号码24的投注金额',
+  `money25` int(10) unsigned DEFAULT '0' COMMENT '号码25的投注金额',
+  `money26` int(10) unsigned DEFAULT '0' COMMENT '号码6的投注金额',
+  `money27` int(10) unsigned DEFAULT '0' COMMENT '号码27的投注金额',
+  `peoplenum` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT '中奖人数',
+  `jackpot` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT '奖金池金额',
+  `deadline` datetime NOT NULL COMMENT '竞猜截至时间',
+  `runtime` datetime NOT NULL COMMENT '开奖时间',
+  `statu` tinyint(3) unsigned NOT NULL DEFAULT '0' COMMENT '0、竞猜，1、封盘，2、正在开奖，3、已开奖',
+  `createtime` datetime NOT NULL COMMENT '记录创建时间',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=296 DEFAULT CHARSET=utf8;
 
@@ -89,41 +89,41 @@ CREATE TABLE `game` (
 -- ----------------------------
 DROP TABLE IF EXISTS `guess`;
 CREATE TABLE `guess` (
-  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
-  `userid` char(13) DEFAULT NULL,
-  `gamename` char(20) NOT NULL,
-  `gameissue` int(10) unsigned NOT NULL,
-  `money0` int(10) unsigned DEFAULT NULL,
-  `money1` int(10) unsigned DEFAULT NULL,
-  `money2` int(10) unsigned DEFAULT NULL,
-  `money3` int(10) unsigned DEFAULT NULL,
-  `money4` int(10) unsigned DEFAULT NULL,
-  `money5` int(10) unsigned DEFAULT NULL,
-  `money6` int(10) unsigned DEFAULT NULL,
-  `money7` int(10) unsigned DEFAULT NULL,
-  `money8` int(10) unsigned DEFAULT NULL,
-  `money9` int(10) unsigned DEFAULT NULL,
-  `money10` int(10) unsigned DEFAULT NULL,
-  `money11` int(10) unsigned DEFAULT NULL,
-  `money12` int(10) unsigned DEFAULT NULL,
-  `money13` int(10) unsigned DEFAULT NULL,
-  `money14` int(10) unsigned DEFAULT NULL,
-  `money15` int(10) unsigned DEFAULT NULL,
-  `money16` int(10) unsigned DEFAULT NULL,
-  `money17` int(10) unsigned DEFAULT NULL,
-  `money18` int(10) unsigned DEFAULT NULL,
-  `money19` int(10) unsigned DEFAULT NULL,
-  `money20` int(10) unsigned DEFAULT NULL,
-  `money21` int(10) unsigned DEFAULT NULL,
-  `money22` int(10) unsigned DEFAULT NULL,
-  `money23` int(10) unsigned DEFAULT NULL,
-  `money24` int(10) unsigned DEFAULT NULL,
-  `money25` int(10) unsigned DEFAULT NULL,
-  `money26` int(10) unsigned DEFAULT NULL,
-  `money27` int(10) unsigned DEFAULT NULL,
-  `input` int(10) unsigned DEFAULT NULL,
-  `output` int(10) unsigned DEFAULT NULL,
-  `createtime` datetime DEFAULT NULL,
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT COMMENT 'ID号',
+  `userid` char(13) DEFAULT NULL COMMENT '用户ID号',
+  `gamename` char(20) NOT NULL COMMENT '游戏名称',
+  `gameissue` int(10) unsigned NOT NULL COMMENT '期号',
+  `money0` int(10) unsigned DEFAULT NULL COMMENT '号码0投注金额',
+  `money1` int(10) unsigned DEFAULT NULL COMMENT '号码1投注金额',
+  `money2` int(10) unsigned DEFAULT NULL COMMENT '号码2投注金额',
+  `money3` int(10) unsigned DEFAULT NULL COMMENT '号码3投注金额',
+  `money4` int(10) unsigned DEFAULT NULL COMMENT '号码4投注金额',
+  `money5` int(10) unsigned DEFAULT NULL COMMENT '号码5投注金额',
+  `money6` int(10) unsigned DEFAULT NULL COMMENT '号码6投注金额',
+  `money7` int(10) unsigned DEFAULT NULL COMMENT '号码7投注金额',
+  `money8` int(10) unsigned DEFAULT NULL COMMENT '号码8投注金额',
+  `money9` int(10) unsigned DEFAULT NULL COMMENT '号码9投注金额',
+  `money10` int(10) unsigned DEFAULT NULL COMMENT '号码10投注金额',
+  `money11` int(10) unsigned DEFAULT NULL COMMENT '号码11投注金额',
+  `money12` int(10) unsigned DEFAULT NULL COMMENT '号码12投注金额',
+  `money13` int(10) unsigned DEFAULT NULL COMMENT '号码13投注金额',
+  `money14` int(10) unsigned DEFAULT NULL COMMENT '号码14投注金额',
+  `money15` int(10) unsigned DEFAULT NULL COMMENT '号码15投注金额',
+  `money16` int(10) unsigned DEFAULT NULL COMMENT '号码16投注金额',
+  `money17` int(10) unsigned DEFAULT NULL COMMENT '号码17投注金额',
+  `money18` int(10) unsigned DEFAULT NULL COMMENT '号码18投注金额',
+  `money19` int(10) unsigned DEFAULT NULL COMMENT '号码19投注金额',
+  `money20` int(10) unsigned DEFAULT NULL COMMENT '号码20投注金额',
+  `money21` int(10) unsigned DEFAULT NULL COMMENT '号码21投注金额',
+  `money22` int(10) unsigned DEFAULT NULL COMMENT '号码22投注金额',
+  `money23` int(10) unsigned DEFAULT NULL COMMENT '号码23投注金额',
+  `money24` int(10) unsigned DEFAULT NULL COMMENT '号码24投注金额',
+  `money25` int(10) unsigned DEFAULT NULL COMMENT '号码25投注金额',
+  `money26` int(10) unsigned DEFAULT NULL COMMENT '号码26投注金额',
+  `money27` int(10) unsigned DEFAULT NULL COMMENT '号码27投注金额',
+  `input` int(10) unsigned DEFAULT NULL COMMENT '投入金额总额',
+  `output` int(10) unsigned DEFAULT NULL COMMENT '产出金额总额',
+  `createtime` datetime DEFAULT NULL COMMENT '记录创建时间',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8;
 
@@ -136,31 +136,31 @@ CREATE TABLE `guess` (
 -- ----------------------------
 DROP TABLE IF EXISTS `lottery`;
 CREATE TABLE `lottery` (
-  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
-  `name` char(20) NOT NULL,
-  `issue` int(10) unsigned NOT NULL,
-  `num1` tinyint(3) unsigned NOT NULL,
-  `num2` tinyint(3) unsigned DEFAULT NULL,
-  `num3` tinyint(3) unsigned DEFAULT NULL,
-  `num4` tinyint(3) unsigned DEFAULT NULL,
-  `num5` tinyint(3) unsigned DEFAULT NULL,
-  `num6` tinyint(3) unsigned DEFAULT NULL,
-  `num7` tinyint(3) unsigned DEFAULT NULL,
-  `num8` tinyint(3) unsigned DEFAULT NULL,
-  `num9` tinyint(3) unsigned DEFAULT NULL,
-  `num10` tinyint(3) unsigned DEFAULT NULL,
-  `num11` tinyint(3) unsigned DEFAULT NULL,
-  `num12` tinyint(3) unsigned DEFAULT NULL,
-  `num13` tinyint(3) unsigned DEFAULT NULL,
-  `num14` tinyint(3) unsigned DEFAULT NULL,
-  `num15` tinyint(3) unsigned DEFAULT NULL,
-  `num16` tinyint(3) unsigned DEFAULT NULL,
-  `num17` tinyint(3) unsigned DEFAULT NULL,
-  `num18` tinyint(3) unsigned DEFAULT NULL,
-  `num19` tinyint(3) unsigned DEFAULT NULL,
-  `num20` tinyint(3) unsigned DEFAULT NULL,
-  `runtime` datetime NOT NULL,
-  `createtime` datetime NOT NULL,
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT COMMENT 'ID号',
+  `name` char(20) NOT NULL COMMENT '福彩名称',
+  `issue` int(10) unsigned NOT NULL COMMENT '期号',
+  `num1` tinyint(3) unsigned NOT NULL COMMENT '号码1',
+  `num2` tinyint(3) unsigned DEFAULT NULL COMMENT '号码2',
+  `num3` tinyint(3) unsigned DEFAULT NULL COMMENT '号码3',
+  `num4` tinyint(3) unsigned DEFAULT NULL COMMENT '号码4',
+  `num5` tinyint(3) unsigned DEFAULT NULL COMMENT '号码5',
+  `num6` tinyint(3) unsigned DEFAULT NULL COMMENT '号码6',
+  `num7` tinyint(3) unsigned DEFAULT NULL COMMENT '号码7',
+  `num8` tinyint(3) unsigned DEFAULT NULL COMMENT '号码8',
+  `num9` tinyint(3) unsigned DEFAULT NULL COMMENT '号码9',
+  `num10` tinyint(3) unsigned DEFAULT NULL COMMENT '号码10',
+  `num11` tinyint(3) unsigned DEFAULT NULL COMMENT '号码11',
+  `num12` tinyint(3) unsigned DEFAULT NULL COMMENT '号码12',
+  `num13` tinyint(3) unsigned DEFAULT NULL COMMENT '号码13',
+  `num14` tinyint(3) unsigned DEFAULT NULL COMMENT '号码14',
+  `num15` tinyint(3) unsigned DEFAULT NULL COMMENT '号码15',
+  `num16` tinyint(3) unsigned DEFAULT NULL COMMENT '号码16',
+  `num17` tinyint(3) unsigned DEFAULT NULL COMMENT '号码17',
+  `num18` tinyint(3) unsigned DEFAULT NULL COMMENT '号码18',
+  `num19` tinyint(3) unsigned DEFAULT NULL COMMENT '号码19',
+  `num20` tinyint(3) unsigned DEFAULT NULL COMMENT '号码20',
+  `runtime` datetime NOT NULL COMMENT '开奖时间',
+  `createtime` datetime NOT NULL COMMENT '记录创建时间',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=186 DEFAULT CHARSET=utf8;
 
@@ -169,86 +169,39 @@ CREATE TABLE `lottery` (
 -- ----------------------------
 
 -- ----------------------------
--- Table structure for receiver
--- ----------------------------
-DROP TABLE IF EXISTS `receiver`;
-CREATE TABLE `receiver` (
-  `id` char(14) NOT NULL COMMENT 'ID号（唯一标识）',
-  `receiver` char(14) NOT NULL COMMENT '抢红包者ID号',
-  `redpacket` char(14) NOT NULL COMMENT '红包ID号',
-  `money` bigint(20) NOT NULL COMMENT '所抢积分',
-  `createtime` datetime NOT NULL COMMENT '创建时间',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of receiver
--- ----------------------------
-INSERT INTO `receiver` VALUES ('57d107b636990', '57d102b3280de', '57d10776a5f07', '1', '2016-09-08 14:39:50');
-INSERT INTO `receiver` VALUES ('57d10a6890f56', '57d10a4c9abbd', '57d10a61003d0', '6', '2016-09-08 14:51:20');
-INSERT INTO `receiver` VALUES ('57d10a8d5f5e1', '57d10a83b5acc', '57d10a61003d0', '0', '2016-09-08 14:51:57');
-INSERT INTO `receiver` VALUES ('57d10aa5ef9c5', '57d10a9ba983f', '57d10a61003d0', '7', '2016-09-08 14:52:21');
-INSERT INTO `receiver` VALUES ('57d10ac1df28e', '57d10abaf2f2d', '57d10a61003d0', '7', '2016-09-08 14:52:49');
-INSERT INTO `receiver` VALUES ('57d10ad875104', '57d10abaf2f2d', '57d10ad3c52c1', '34', '2016-09-08 14:53:12');
-INSERT INTO `receiver` VALUES ('57d10aeb3fe56', '57d10a4c9abbd', '57d10ad3c52c1', '18', '2016-09-08 14:53:31');
-
--- ----------------------------
--- Table structure for redpacket
--- ----------------------------
-DROP TABLE IF EXISTS `redpacket`;
-CREATE TABLE `redpacket` (
-  `id` char(14) NOT NULL COMMENT 'ID号（唯一标识）',
-  `publisher` char(14) NOT NULL COMMENT '发红包者ID号',
-  `username` varchar(255) NOT NULL COMMENT '用户名',
-  `money` bigint(20) NOT NULL COMMENT '红包总积分',
-  `number` int(11) NOT NULL COMMENT '红包个数',
-  `distribution` tinyint(3) unsigned zerofill NOT NULL COMMENT '分配方式（1：平均，2：随机）',
-  `overtime` tinyint(3) unsigned zerofill NOT NULL COMMENT '红包是否超时（0：未超时，1：超时）',
-  `lasttime` datetime NOT NULL COMMENT '最后一次被抢时间',
-  `createtime` datetime NOT NULL COMMENT '创建时间',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of redpacket
--- ----------------------------
-INSERT INTO `redpacket` VALUES ('57d10a61003d0', '57d10a4c9abbd', 'xuyuanfan1', '0', '0', '001', '000', '2016-09-08 14:52:49', '2016-09-08 14:51:13');
-INSERT INTO `redpacket` VALUES ('57d10ad3c52c1', '57d10abaf2f2d', 'xuyuanfan4', '48', '1', '002', '000', '2016-09-08 14:53:31', '2016-09-08 14:53:07');
-
--- ----------------------------
 -- Table structure for robotconfig
 -- ----------------------------
 DROP TABLE IF EXISTS `robotconfig`;
 CREATE TABLE `robotconfig` (
-  `gamename` char(20) NOT NULL,
-  `money0` int(10) unsigned DEFAULT NULL,
-  `money1` int(10) unsigned DEFAULT NULL,
-  `money2` int(10) unsigned DEFAULT NULL,
-  `money3` int(10) unsigned DEFAULT NULL,
-  `money4` int(10) unsigned DEFAULT NULL,
-  `money5` int(10) unsigned DEFAULT NULL,
-  `money6` int(10) unsigned DEFAULT NULL,
-  `money7` int(10) unsigned DEFAULT NULL,
-  `money8` int(10) unsigned DEFAULT NULL,
-  `money9` int(10) unsigned DEFAULT NULL,
-  `money10` int(10) unsigned DEFAULT NULL,
-  `money11` int(10) unsigned DEFAULT NULL,
-  `money12` int(10) unsigned DEFAULT NULL,
-  `money13` int(10) unsigned DEFAULT NULL,
-  `money14` int(10) unsigned DEFAULT NULL,
-  `money15` int(10) unsigned DEFAULT NULL,
-  `money16` int(10) unsigned DEFAULT NULL,
-  `money17` int(10) unsigned DEFAULT NULL,
-  `money18` int(10) unsigned DEFAULT NULL,
-  `money19` int(10) unsigned DEFAULT NULL,
-  `money20` int(10) unsigned DEFAULT NULL,
-  `money21` int(10) unsigned DEFAULT NULL,
-  `money22` int(10) unsigned DEFAULT NULL,
-  `money23` int(10) unsigned DEFAULT NULL,
-  `money24` int(10) unsigned DEFAULT NULL,
-  `money25` int(10) unsigned DEFAULT NULL,
-  `money26` int(10) unsigned DEFAULT NULL,
-  `money27` int(10) unsigned DEFAULT NULL,
+  `gamename` char(20) NOT NULL COMMENT '游戏名称',
+  `money0` int(10) unsigned DEFAULT NULL COMMENT '号码0投注金额',
+  `money1` int(10) unsigned DEFAULT NULL COMMENT '号码1投注金额',
+  `money2` int(10) unsigned DEFAULT NULL COMMENT '号码2投注金额',
+  `money3` int(10) unsigned DEFAULT NULL COMMENT '号码3投注金额',
+  `money4` int(10) unsigned DEFAULT NULL COMMENT '号码4投注金额',
+  `money5` int(10) unsigned DEFAULT NULL COMMENT '号码5投注金额',
+  `money6` int(10) unsigned DEFAULT NULL COMMENT '号码6投注金额',
+  `money7` int(10) unsigned DEFAULT NULL COMMENT '号码7投注金额',
+  `money8` int(10) unsigned DEFAULT NULL COMMENT '号码8投注金额',
+  `money9` int(10) unsigned DEFAULT NULL COMMENT '号码9投注金额',
+  `money10` int(10) unsigned DEFAULT NULL COMMENT '号码10投注金额',
+  `money11` int(10) unsigned DEFAULT NULL COMMENT '号码11投注金额',
+  `money12` int(10) unsigned DEFAULT NULL COMMENT '号码12投注金额',
+  `money13` int(10) unsigned DEFAULT NULL COMMENT '号码13投注金额',
+  `money14` int(10) unsigned DEFAULT NULL COMMENT '号码14投注金额',
+  `money15` int(10) unsigned DEFAULT NULL COMMENT '号码15投注金额',
+  `money16` int(10) unsigned DEFAULT NULL COMMENT '号码16投注金额',
+  `money17` int(10) unsigned DEFAULT NULL COMMENT '号码17投注金额',
+  `money18` int(10) unsigned DEFAULT NULL COMMENT '号码18投注金额',
+  `money19` int(10) unsigned DEFAULT NULL COMMENT '号码19投注金额',
+  `money20` int(10) unsigned DEFAULT NULL COMMENT '号码20投注金额',
+  `money21` int(10) unsigned DEFAULT NULL COMMENT '号码21投注金额',
+  `money22` int(10) unsigned DEFAULT NULL COMMENT '号码22投注金额',
+  `money23` int(10) unsigned DEFAULT NULL COMMENT '号码23投注金额',
+  `money24` int(10) unsigned DEFAULT NULL COMMENT '号码24投注金额',
+  `money25` int(10) unsigned DEFAULT NULL COMMENT '号码25投注金额',
+  `money26` int(10) unsigned DEFAULT NULL COMMENT '号码26投注金额',
+  `money27` int(10) unsigned DEFAULT NULL COMMENT '号码27投注金额',
   PRIMARY KEY (`gamename`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
@@ -266,7 +219,7 @@ CREATE TABLE `user` (
   `username` varchar(255) NOT NULL COMMENT '用户名',
   `password` varchar(255) NOT NULL COMMENT '密码',
   `money` bigint(20) unsigned NOT NULL COMMENT '用户总积分',
-  `createtime` datetime NOT NULL COMMENT '创建时间',
+  `createtime` datetime NOT NULL COMMENT '记录创建时间',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 

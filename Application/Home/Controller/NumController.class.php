@@ -61,7 +61,7 @@ class NumController extends Controller {
 			$condition['userid'] = array('eq',session('userId'));
 			$condition['gamename'] = array('eq',$this->getGameStyle());
 			$condition['gameissue'] = array('eq',$value['issue']);
-			$guessData = $Guess->where($condition)->select();
+			$guessData = $Guess->where($condition)->select();											// 生成亏盈数据
 			if($guessData){
 				$input = 0;
 				$output = 0;
@@ -76,12 +76,12 @@ class NumController extends Controller {
 		
 			if($value['statu']==0){
 				if($value['runtime'] < date('Y-m-d H:i:s')){
-					$gameData[$key]['statu']=2;
+					$gameData[$key]['statu']=2;															// 数据尚未开奖，当前时间大于开奖时间，设为正在开奖状态
 				}elseif($value['deadline'] < date('Y-m-d H:i:s')){
-					$gameData[$key]['statu']=1;
+					$gameData[$key]['statu']=1;															// 数据尚未开奖，当前时间大于截至时间小于开奖时间，设为截至竞猜状态
 				}
 			}
-			//疯狂赛车游戏特殊处理
+			//疯狂赛车游戏特殊处理，因为疯狂赛车需要原始的10个采集号码显示赛车
 			if($this->getGameStyle()=='fksc'){
 				unset($condition);
 				$condition['name'] = array('eq',$value['lotteryname']);
@@ -130,6 +130,7 @@ class NumController extends Controller {
 		}
 	}
 	
+	//获取系统时间
 	public function getServerTime() {
 		$data['hour'] = date('H');
 		$data['min'] = date('i');

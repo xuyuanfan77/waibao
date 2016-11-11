@@ -60,7 +60,7 @@ class GuessController extends Controller {
 		$condition['name'] = array('eq',$this->getGameStyle());
 		$condition['issue'] = array('eq',$_GET['issue']);
 		$gameData = $Game->where($condition)->find();
-		for($index=$numArea[$_GET['game']][0]; $index<$numArea[$_GET['game']][0]+$numArea[$_GET['game']][1]; $index++) {
+		for($index=$numArea[$_GET['game']][0]; $index<$numArea[$_GET['game']][0]+$numArea[$_GET['game']][1]; $index++) {	//生成本期所有号码的赔率
 			$moneyIndex = 'money'.$index;
 			if($gameData[$moneyIndex]==0){
 				$gameOdds[$index] = '--';
@@ -73,7 +73,7 @@ class GuessController extends Controller {
 		$condition['name'] = array('eq',$this->getGameStyle());
 		$condition['issue'] = array('eq',$_GET['issue']-1);
 		$preGameData = $Game->where($condition)->find();
-		for($index=$numArea[$_GET['game']][0]; $index<$numArea[$_GET['game']][0]+$numArea[$_GET['game']][1]; $index++) {
+		for($index=$numArea[$_GET['game']][0]; $index<$numArea[$_GET['game']][0]+$numArea[$_GET['game']][1]; $index++) {	//生成上一期所有号码的赔率
 			$moneyIndex = 'money'.$index;
 			if($preGameData[$moneyIndex]==0){
 				$preGameOdds[$index] = '--';
@@ -155,7 +155,7 @@ class GuessController extends Controller {
 		$Guess->add();
 
 		//修改游戏表
-		$Game = M("Game");																	//修改每个数字的下注
+		$Game = M("Game");																	//修改每个号码的下注总金额
 		unset($condition);
 		$condition['name'] = $_POST['game_style'];
 		$condition['issue'] = $_POST['period_no'];
