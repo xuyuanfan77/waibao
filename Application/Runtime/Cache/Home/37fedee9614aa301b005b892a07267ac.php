@@ -184,7 +184,7 @@
                                     <?php else: ?>
                                         <td>-</td><?php endif; ?>
                                     <?php if($data['statu'] == 3): ?><td>
-                                            <span class="green">0</span>
+                                            <span class="green"><?php echo ($data["inputoutput"]); ?></span>
                                             <i class="kdou"></i>
                                         </td>
                                     <?php else: ?>

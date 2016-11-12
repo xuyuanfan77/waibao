@@ -61,7 +61,7 @@ class Transform {
 			$guessData = M("Guess")->where($condition)->select();
 			if($guessData){
 				foreach ($guessData as $key=>$value) {													// 针对每一次竞猜记录进行开奖
-					$value['output'] = $value['money'.$gameNum]*$gameOdds;								// 修改每次竞猜的所获金豆
+					$value['output'] = floor($value['money'.$gameNum]*$gameOdds);						// 修改每次竞猜的所获金豆
 					M("Guess")->save($value);
 
 					unset($condition);																	// 修改对应用户的总金豆数

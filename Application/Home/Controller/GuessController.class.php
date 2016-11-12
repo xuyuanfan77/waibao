@@ -125,14 +125,14 @@ class GuessController extends Controller {
 		}
 		
 		//检测投注是否整百
-		$bet_num = explode(',',$_POST['bet_num']);
+		/*$bet_num = explode(',',$_POST['bet_num']);
 		foreach($bet_num as $value){
 			if($value%100!=0) {
 				$data['code_num'] = 10002;
 				$data['msg'] = '投注金豆必须要整百！';
 				$this->ajaxReturn($data);
 			}
-		}
+		}*/
 		
 		$numArea = array('pc28'=>array(0,28),'js28'=>array(0,28),'js16'=>array(3,16),'fk28'=>array(0,28),'fksc'=>array(1,10),'jnd28'=>array(0,28));		
 		//修改用户表
@@ -144,7 +144,7 @@ class GuessController extends Controller {
 		$guessData['userid'] = session('userId');
 		$guessData['gamename'] = $_POST['game_style'];
 		$guessData['gameissue'] = $_POST['period_no'];
-		//$bet_num = explode(',',$_POST['bet_num']);
+		$bet_num = explode(',',$_POST['bet_num']);
 		for($index=$numArea[$_POST['game_style']][0]; $index<$numArea[$_POST['game_style']][0]+$numArea[$_POST['game_style']][1]; $index++) {
 			$guessData['money'.$index] = $bet_num[$index-$numArea[$_POST['game_style']][0]];
 		}
