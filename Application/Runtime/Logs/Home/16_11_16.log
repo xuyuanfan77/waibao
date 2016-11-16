@@ -1,0 +1,432 @@
+[ 2016-11-16T17:29:53+08:00 ] 127.0.0.1 /waibao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001023s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001946s ]
+NOTIC: [8] Undefined index: page D:\wamp64\www\waibao\Application\Home\Controller\IndexController.class.php 第 7 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.014727s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.014894s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.189186s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.189414s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.022422s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.022563s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009203s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009349s ]
+
+[ 2016-11-16T17:30:03+08:00 ] 127.0.0.1 /waibao/index.php/Home/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000816s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000858s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001130s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'xuyuanfan1' AND `password` = '123' LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2016-11-16T17:30:03+08:00 ] 127.0.0.1 /waibao/index.php/Home/Num/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000583s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `user` WHERE `id` = '57d10a4c9abbd' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0028s ]
+NOTIC: [8] Undefined index: game D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 8 行.
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `statu` = 3 ORDER BY issue desc LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: game D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 8 行.
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = 792457 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: p D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 100 行.
+NOTIC: [8] Undefined index: game D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 8 行.
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' ORDER BY issue desc LIMIT 0,20   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `guess` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `lottery` [ RunTime:0.0017s ]
+NOTIC: [8] Undefined index: game D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 8 行.
+SQL: SELECT * FROM `guess` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28' AND `gameissue` = '792460'  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: game D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 8 行.
+NOTIC: [8] Undefined index: game D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 8 行.
+SQL: SELECT * FROM `guess` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28' AND `gameissue` = '792459'  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: game D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 8 行.
+NOTIC: [8] Undefined index: game D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 8 行.
+SQL: SELECT * FROM `guess` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28' AND `gameissue` = '792458'  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: game D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 8 行.
+NOTIC: [8] Undefined index: game D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 8 行.
+SQL: SELECT * FROM `guess` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28' AND `gameissue` = '792457'  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: game D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 8 行.
+NOTIC: [8] Undefined index: game D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 8 行.
+SQL: SELECT * FROM `guess` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28' AND `gameissue` = '792456'  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: game D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 8 行.
+NOTIC: [8] Undefined index: game D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 8 行.
+SQL: SELECT * FROM `guess` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28' AND `gameissue` = '792455'  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: game D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 8 行.
+NOTIC: [8] Undefined index: game D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 8 行.
+SQL: SELECT * FROM `guess` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28' AND `gameissue` = '792454'  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: game D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 8 行.
+NOTIC: [8] Undefined index: game D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 8 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `game` WHERE `name` = 'pc28' LIMIT 1   [ RunTime:0.0660s ]
+NOTIC: [2] urlencode() expects parameter 1 to be string, array given D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 115 行.
+NOTIC: [8] Undefined index: game D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 8 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000811s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001404s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.207156s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.207432s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000594s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000845s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001087s ]
+
+[ 2016-11-16T17:30:03+08:00 ] 127.0.0.1 /waibao/index.php/Home/Num/getServerTime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000809s ]
+
+[ 2016-11-16T17:30:09+08:00 ] 127.0.0.1 /waibao/index.php/Home/Guess/index/game/pc28/issue/792458.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000587s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `user` WHERE `id` = '57d10a4c9abbd' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `statu` = 3 ORDER BY issue desc LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = 792457 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = '792458' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = 792457 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000382s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000614s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.159104s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.159264s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000564s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001546s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001861s ]
+
+[ 2016-11-16T17:30:09+08:00 ] 127.0.0.1 /waibao/index.php/Home/Num/getServerTime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000805s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000999s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001251s ]
+
+[ 2016-11-16T17:30:22+08:00 ] 127.0.0.1 /waibao/index.php/Home/Guess/guess
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000768s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = 792458 AND `statu` = 3 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `user` WHERE `id` = '57d10a4c9abbd' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `username`='xuyuanfan1',`password`='123',`money`='99256789',`createtime`='2016-09-08 14:50:52' WHERE `id` = '57d10a4c9abbd' [ RunTime:0.0530s ]
+SQL: SHOW COLUMNS FROM `guess` [ RunTime:0.0048s ]
+NOTIC: [8] Undefined index: validate D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `guess` (`userid`,`gamename`,`gameissue`,`money0`,`money1`,`money2`,`money3`,`money4`,`money5`,`money6`,`money7`,`money8`,`money9`,`money10`,`money11`,`money12`,`money13`,`money14`,`money15`,`money16`,`money17`,`money18`,`money19`,`money20`,`money21`,`money22`,`money23`,`money24`,`money25`,`money26`,`money27`,`input`,`output`,`createtime`) VALUES ('57d10a4c9abbd','pc28','792458','100','300','600','1000','1500','2100','2800','3600','4500','5500','6300','6900','7300','7500','7500','7300','6900','6300','5500','4500','3600','2800','2100','1500','1000','600','300','100','100000','0','2016-11-16 17:30:22') [ RunTime:0.0294s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = 792458 LIMIT 1   [ RunTime:0.0012s ]
+SQL: UPDATE `game` SET `name`='pc28',`lotteryname`='北京快乐8',`issue`='792458',`num1`=NULL,`num2`=NULL,`num3`=NULL,`money0`='200',`money1`='600',`money2`='1200',`money3`='2000',`money4`='3000',`money5`='4200',`money6`='5600',`money7`='7200',`money8`='9000',`money9`='11000',`money10`='12600',`money11`='13800',`money12`='14600',`money13`='15000',`money14`='15000',`money15`='14600',`money16`='13800',`money17`='12600',`money18`='11000',`money19`='9000',`money20`='7200',`money21`='5600',`money22`='4200',`money23`='3000',`money24`='2000',`money25`='1200',`money26`='600',`money27`='200',`peoplenum`='0',`jackpot`='200000',`deadline`='2016-11-16 17:34:00',`runtime`='2016-11-16 17:36:00',`statu`='0',`createtime`='2016-11-16 17:16:41' WHERE `id` = '300' [ RunTime:0.0163s ]
+
+[ 2016-11-16T17:30:23+08:00 ] 127.0.0.1 /waibao/index.php/Home/Num/index/game/pc28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000638s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `user` WHERE `id` = '57d10a4c9abbd' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `statu` = 3 ORDER BY issue desc LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = 792457 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: p D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 100 行.
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' ORDER BY issue desc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `guess` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `lottery` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `guess` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28' AND `gameissue` = '792460'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `guess` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28' AND `gameissue` = '792459'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `guess` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28' AND `gameissue` = '792458'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `guess` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28' AND `gameissue` = '792457'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `guess` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28' AND `gameissue` = '792456'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `guess` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28' AND `gameissue` = '792455'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `guess` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28' AND `gameissue` = '792454'  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `game` WHERE `name` = 'pc28' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] urlencode() expects parameter 1 to be string, array given D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 115 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000317s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073627s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073777s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001072s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001373s ]
+
+[ 2016-11-16T17:30:23+08:00 ] 127.0.0.1 /waibao/index.php/Home/Num/getServerTime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000641s ]
+
+[ 2016-11-16T17:30:27+08:00 ] 127.0.0.1 /waibao/index.php/Home/Guess/index/game/pc28/issue/792459.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000586s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `user` WHERE `id` = '57d10a4c9abbd' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `statu` = 3 ORDER BY issue desc LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = 792457 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = '792459' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = 792458 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000297s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000440s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.101192s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.101346s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000553s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000985s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001193s ]
+
+[ 2016-11-16T17:30:27+08:00 ] 127.0.0.1 /waibao/index.php/Home/Num/getServerTime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000617s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+
+[ 2016-11-16T17:30:33+08:00 ] 127.0.0.1 /waibao/index.php/Home/Guess/guess
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = 792459 AND `statu` = 3 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `user` WHERE `id` = '57d10a4c9abbd' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `username`='xuyuanfan1',`password`='123',`money`='99156789',`createtime`='2016-09-08 14:50:52' WHERE `id` = '57d10a4c9abbd' [ RunTime:0.0477s ]
+SQL: SHOW COLUMNS FROM `guess` [ RunTime:0.0023s ]
+NOTIC: [8] Undefined index: validate D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `guess` (`userid`,`gamename`,`gameissue`,`money0`,`money1`,`money2`,`money3`,`money4`,`money5`,`money6`,`money7`,`money8`,`money9`,`money10`,`money11`,`money12`,`money13`,`money14`,`money15`,`money16`,`money17`,`money18`,`money19`,`money20`,`money21`,`money22`,`money23`,`money24`,`money25`,`money26`,`money27`,`input`,`output`,`createtime`) VALUES ('57d10a4c9abbd','pc28','792459','100','300','600','1000','1500','2100','2800','3600','4500','5500','6300','6900','7300','7500','7500','7300','6900','6300','5500','4500','3600','2800','2100','1500','1000','600','300','100','100000','0','2016-11-16 17:30:33') [ RunTime:0.0166s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = 792459 LIMIT 1   [ RunTime:0.0006s ]
+SQL: UPDATE `game` SET `name`='pc28',`lotteryname`='北京快乐8',`issue`='792459',`num1`=NULL,`num2`=NULL,`num3`=NULL,`money0`='200',`money1`='600',`money2`='1200',`money3`='2000',`money4`='3000',`money5`='4200',`money6`='5600',`money7`='7200',`money8`='9000',`money9`='11000',`money10`='12600',`money11`='13800',`money12`='14600',`money13`='15000',`money14`='15000',`money15`='14600',`money16`='13800',`money17`='12600',`money18`='11000',`money19`='9000',`money20`='7200',`money21`='5600',`money22`='4200',`money23`='3000',`money24`='2000',`money25`='1200',`money26`='600',`money27`='200',`peoplenum`='0',`jackpot`='200000',`deadline`='2016-11-16 17:39:00',`runtime`='2016-11-16 17:41:00',`statu`='0',`createtime`='2016-11-16 17:20:30' WHERE `id` = '333' [ RunTime:0.0110s ]
+
+[ 2016-11-16T17:30:34+08:00 ] 127.0.0.1 /waibao/index.php/Home/Num/index/game/pc28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000601s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `user` WHERE `id` = '57d10a4c9abbd' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `statu` = 3 ORDER BY issue desc LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = 792458 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: p D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 100 行.
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' ORDER BY issue desc LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `guess` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `lottery` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `guess` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28' AND `gameissue` = '792461'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `guess` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28' AND `gameissue` = '792460'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `guess` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28' AND `gameissue` = '792459'  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `guess` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28' AND `gameissue` = '792458'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `guess` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28' AND `gameissue` = '792457'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `guess` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28' AND `gameissue` = '792456'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `guess` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28' AND `gameissue` = '792455'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `guess` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28' AND `gameissue` = '792454'  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `game` WHERE `name` = 'pc28' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] urlencode() expects parameter 1 to be string, array given D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 115 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000284s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073427s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073576s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000710s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000862s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001239s ]
+
+[ 2016-11-16T17:30:34+08:00 ] 127.0.0.1 /waibao/index.php/Home/Num/getServerTime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+
+[ 2016-11-16T17:34:18+08:00 ] 127.0.0.1 /waibao/index.php/Home/Num/index/game/pc28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000781s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000762s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `user` WHERE `id` = '57d10a4c9abbd' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `statu` = 3 ORDER BY issue desc LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = 792458 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: p D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 100 行.
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' ORDER BY issue desc LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `guess` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `lottery` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `guess` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28' AND `gameissue` = '792461'  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `guess` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28' AND `gameissue` = '792460'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `guess` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28' AND `gameissue` = '792459'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `guess` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28' AND `gameissue` = '792458'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `guess` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28' AND `gameissue` = '792457'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `guess` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28' AND `gameissue` = '792456'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `guess` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28' AND `gameissue` = '792455'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `guess` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28' AND `gameissue` = '792454'  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `game` WHERE `name` = 'pc28' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2] urlencode() expects parameter 1 to be string, array given D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 115 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000291s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080301s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080449s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001296s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001187s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001550s ]
+
+[ 2016-11-16T17:34:19+08:00 ] 127.0.0.1 /waibao/index.php/Home/Num/getServerTime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000960s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000974s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001210s ]
+
+[ 2016-11-16T17:36:01+08:00 ] 127.0.0.1 /waibao/index.php/Home/Num/index/game/pc28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000704s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `user` WHERE `id` = '57d10a4c9abbd' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `statu` = 3 ORDER BY issue desc LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = 792459 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: p D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 100 行.
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' ORDER BY issue desc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `guess` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `lottery` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `guess` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28' AND `gameissue` = '792462'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `guess` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28' AND `gameissue` = '792461'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `guess` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28' AND `gameissue` = '792460'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `guess` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28' AND `gameissue` = '792459'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `guess` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28' AND `gameissue` = '792458'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `guess` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28' AND `gameissue` = '792457'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `guess` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28' AND `gameissue` = '792456'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `guess` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28' AND `gameissue` = '792455'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `guess` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28' AND `gameissue` = '792454'  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `game` WHERE `name` = 'pc28' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] urlencode() expects parameter 1 to be string, array given D:\wamp64\www\waibao\Application\Home\Controller\NumController.class.php 第 115 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000296s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082074s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082219s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001077s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001340s ]
+
+[ 2016-11-16T17:36:01+08:00 ] 127.0.0.1 /waibao/index.php/Home/Num/getServerTime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002005s ]
+
+[ 2016-11-16T17:36:09+08:00 ] 127.0.0.1 /waibao/index.php/Home/Record/index/game/pc28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000705s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000739s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `user` WHERE `id` = '57d10a4c9abbd' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `statu` = 3 ORDER BY issue desc LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = 792459 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: p D:\wamp64\www\waibao\Application\Home\Controller\RecordController.class.php 第 63 行.
+SQL: SHOW COLUMNS FROM `guess` [ RunTime:0.0015s ]
+SQL: SELECT Guess.gameissue AS gameissue,Guess.input AS input,Guess.output AS output,Game.num1 AS num1,Game.num2 AS num2,Game.num3 AS num3,Game.runtime AS runtime,Game.statu AS statu FROM guess Guess LEFT JOIN game Game ON Guess.gamename=Game.name AND Guess.gameissue=Game.issue WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28' AND Game.statu = 3 ORDER BY Guess.gameissue desc LIMIT 0,10   [ RunTime:0.0264s ]
+SQL: SELECT COUNT(*) AS tp_count FROM guess Guess LEFT JOIN game Game ON Guess.gamename=Game.name AND Guess.gameissue=Game.issue WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28' AND Game.statu = 3 LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [2] urlencode() expects parameter 1 to be string, array given D:\wamp64\www\waibao\Application\Home\Controller\RecordController.class.php 第 80 行.
+NOTIC: [2] urlencode() expects parameter 1 to be string, array given D:\wamp64\www\waibao\Application\Home\Controller\RecordController.class.php 第 80 行.
+NOTIC: [2] urlencode() expects parameter 1 to be string, array given D:\wamp64\www\waibao\Application\Home\Controller\RecordController.class.php 第 80 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000338s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.118524s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.118730s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000860s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001103s ]
+
+[ 2016-11-16T17:36:09+08:00 ] 127.0.0.1 /waibao/index.php/Home/Num/getServerTime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000730s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001087s ]
+

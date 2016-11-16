@@ -53,7 +53,7 @@ class Transform {
 			}else{
 				$gameNum = $gameData['num1']+$gameData['num2']+$gameData['num3'];
 			}
-			$gameOdds = floor($gameData['jackpot']/$gameData['money'.$gameNum]*100)/100;				// 计算开奖号码所对应的赔率
+			$gameOdds = floor($gameData['jackpot']*(100-$config['water'])/$gameData['money'.$gameNum])/100;				// 计算开奖号码所对应的赔率
 			unset($condition);
 			$condition['gamename'] = array('eq',$config['name']);
 			$condition['gameissue'] = array('eq',$data['issue']);
