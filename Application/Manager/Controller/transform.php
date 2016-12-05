@@ -47,7 +47,7 @@ class Transform {
 		$gameData = $Game->where($condition)->find();
 		
 		if($gameData) {
-			// 修改竞猜表的数据（所获金豆）、修改用户表的数据（总金豆数）
+			// 对非风控用户进行开奖（修改竞猜表的所获金豆、修改用户表的总金豆数）
 			if($config['name']=='fksc'){																// 对最后开奖号码进行处理（除了疯狂赛车，其他的游戏最后的开奖号码都是三个开奖号码之和）
 				$gameNum = $gameData['num1'];
 			}else{
@@ -61,19 +61,74 @@ class Transform {
 			$guessData = M("Guess")->where($condition)->select();
 			if($guessData){
 				foreach ($guessData as $key=>$value) {													// 针对每一次竞猜记录进行开奖
-					$value['output'] = floor($value['money'.$gameNum]*$gameOdds);						// 修改每次竞猜的所获金豆
-					M("Guess")->save($value);
-
-					unset($condition);																	// 修改对应用户的总金豆数
+					unset($condition);
 					$condition['id'] = array('eq',$value['userid']);
 					$User = M('User');
-					$userData = $User->where($condition)->find();
-					if($userData){
-						$userData['money']=$userData['money']+$value['output'];
+					$userData = M("User")->where($condition)->find();
+					if($userData && $userData['control']==0){
+						$value['output'] = floor($value['money'.$gameNum]*$gameOdds);					// 修改每次竞猜的所获金豆
+						M("Guess")->save($value);
+						$userData['money']=$userData['money']+$value['output'];							// 修改对应用户的总金豆数
 						$User->save($userData);
 					}
 				}
 			}
+			// 对风控用户进行开奖（修改竞猜表的所获金豆、修改用户表的总金豆数）
+			if($config['name']=='fksc'){																// 对最后开奖号码进行处理（除了疯狂赛车，其他的游戏最后的开奖号码都是三个开奖号码之和）
+				$gameNum = $gameData['fknum1'];
+			}else{
+				$gameNum = $gameData['fknum1']+$gameData['fknum2']+$gameData['fknum3'];
+			}
+			$gameOdds = floor($gameData['jackpot']*(100-$config['water'])/$gameData['money'.$gameNum])/100;				// 计算开奖号码所对应的赔率
+			unset($condition);
+			$condition['gamename'] = array('eq',$config['name']);
+			$condition['gameissue'] = array('eq',$data['issue']);
+			$condition['money'.$gameNum] = array('neq',0);
+			$guessData = M("Guess")->where($condition)->select();
+			if($guessData){
+				foreach ($guessData as $key=>$value) {													// 针对每一次竞猜记录进行开奖
+					unset($condition);
+					$condition['id'] = array('eq',$value['userid']);
+					$User = M('User');
+					$userData = M("User")->where($condition)->find();
+					if($userData && $userData['control']==1){
+						$value['output'] = floor($value['money'.$gameNum]*$gameOdds);					// 修改每次竞猜的所获金豆
+						M("Guess")->save($value);
+						$userData['money']=$userData['money']+$value['output'];							// 修改对应用户的总金豆数
+						$User->save($userData);
+					}
+				}
+			}
+			
+			
+			
+			
+			// 修改竞猜表的数据（所获金豆）、修改用户表的数据（总金豆数）
+			/*if($config['name']=='fksc'){																// 对最后开奖号码进行处理（除了疯狂赛车，其他的游戏最后的开奖号码都是三个开奖号码之和）
+				$gameNum = $gameData['num1'];
+			}else{
+				$gameNum = $gameData['num1']+$gameData['num2']+$gameData['num3'];
+			}
+			$gameOdds = floor($gameData['jackpot']*(100-$config['water'])/$gameData['money'.$gameNum])/100;				// 计算开奖号码所对应的赔率
+			unset($condition);
+			$condition['gamename'] = array('eq',$config['name']);
+			$condition['gameissue'] = array('eq',$data['issue']);
+			$condition['money'.$gameNum] = array('neq',0);
+			$guessData = M("Guess")->where($condition)->select();
+			if($guessData){
+				foreach ($guessData as $key=>$value) {													// 针对每一次竞猜记录进行开奖
+					unset($condition);
+					$condition['id'] = array('eq',$value['userid']);
+					$User = M('User');
+					$userData = M("User")->where($condition)->find();
+					if($userData && $userData['control']==0){
+						$value['output'] = floor($value['money'.$gameNum]*$gameOdds);					// 修改每次竞猜的所获金豆
+						M("Guess")->save($value);
+						$userData['money']=$userData['money']+$value['output'];							// 修改对应用户的总金豆数
+						$User->save($userData);
+					}
+				}
+			}*/
 			
 			// 修改游戏表的数据（开奖状态、中奖人数）
 			unset($condition);

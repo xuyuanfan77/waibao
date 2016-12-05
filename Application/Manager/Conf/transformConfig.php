@@ -26,6 +26,9 @@ return array(
 			$data['num1'] = ($number[0]+$number[1]+$number[2]+$number[3]+$number[4]+$number[5])%10;
 			$data['num2'] = ($number[6]+$number[7]+$number[8]+$number[9]+$number[10]+$number[11])%10;
 			$data['num3'] = ($number[12]+$number[13]+$number[14]+$number[15]+$number[16]+$number[17])%10;
+			$data['fknum1'] = $data['num1'];
+			$data['fknum2'] = $data['num2'];
+			$data['fknum3'] = ($data['num3']+1)%10;
 			return $data;
 		},
 		'water'=>30,
@@ -49,6 +52,9 @@ return array(
 			$data['num1'] = ($number[0]+$number[1]+$number[2]+$number[3]+$number[4]+$number[5])%10;
 			$data['num2'] = ($number[6]+$number[7]+$number[8]+$number[9]+$number[10]+$number[11])%10;
 			$data['num3'] = ($number[12]+$number[13]+$number[14]+$number[15]+$number[16]+$number[17])%10;
+			$data['fknum1'] = $data['num1'];
+			$data['fknum2'] = $data['num2'];
+			$data['fknum3'] = ($data['num3']+1)%10;
 			return $data;
 		},
 		'water'=>30,
@@ -72,6 +78,9 @@ return array(
 			$data['num1'] = ($number[0]+$number[1]+$number[2]+$number[3]+$number[4]+$number[5])%6+1;
 			$data['num2'] = ($number[6]+$number[7]+$number[8]+$number[9]+$number[10]+$number[11])%6+1;
 			$data['num3'] = ($number[12]+$number[13]+$number[14]+$number[15]+$number[16]+$number[17])%6+1;
+			$data['fknum1'] = $data['num1'];
+			$data['fknum2'] = $data['num2'];
+			$data['fknum3'] = $data['num3']%6+1;
 			return $data;
 		},
 		'water'=>30,
@@ -95,6 +104,9 @@ return array(
 			$data['num1'] = ($number[0]+$number[1]+$number[2]+$number[3]+$number[4]+$number[5])%10;
 			$data['num2'] = ($number[6]+$number[7]+$number[8]+$number[9]+$number[10]+$number[11])%10;
 			$data['num3'] = ($number[12]+$number[13]+$number[14]+$number[15]+$number[16]+$number[17])%10;
+			$data['fknum1'] = $data['num1'];
+			$data['fknum2'] = $data['num2'];
+			$data['fknum3'] = ($data['num3']+1)%10;
 			return $data;
 		},
 		'water'=>30,
@@ -111,7 +123,8 @@ return array(
 		'name'=>'fksc',
 		'lotteryname'=>'北京PK10',
 		'handle'=>function($arg){
-			$data['num1'] = $arg['num1'];;
+			$data['num1'] = $arg['num1'];
+			$data['fknum1'] = $arg['num2'];
 			return $data;
 		},
 		'water'=>30,
@@ -135,6 +148,9 @@ return array(
 			$data['num1'] = ($number[0]+$number[1]+$number[2]+$number[3]+$number[4]+$number[5])%10;
 			$data['num2'] = ($number[6]+$number[7]+$number[8]+$number[9]+$number[10]+$number[11])%10;
 			$data['num3'] = ($number[12]+$number[13]+$number[14]+$number[15]+$number[16]+$number[17])%10;
+			$data['fknum1'] = $data['num1'];
+			$data['fknum2'] = $data['num2'];
+			$data['fknum3'] = ($data['num3']+1)%10;
 			return $data;
 		},
 		'water'=>30,

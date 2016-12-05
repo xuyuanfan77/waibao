@@ -121,8 +121,13 @@
                             <p class="kaijiang-time-text">
                                 第
                                 <strong>{$tipData.issue}</strong>
-                                期开奖结果：{$tipData.num1}+{$tipData.num2}+{$tipData.num3}=
-                                <span class="now-jieguo">{$tipData['num1']+$tipData['num2']+$tipData['num3']}</span>
+								<if condition="$userData['control'] eq 0">
+									期开奖结果：{$tipData.num1}+{$tipData.num2}+{$tipData.num3}=
+									<span class="now-jieguo">{$tipData['num1']+$tipData['num2']+$tipData['num3']}</span>
+								<else />
+									期开奖结果：{$tipData.fknum1}+{$tipData.fknum2}+{$tipData.fknum3}=
+									<span class="now-jieguo">{$tipData['fknum1']+$tipData['fknum2']+$tipData['fknum3']}</span>
+								</if>
                                 <a target="_blank" href="http://www.bwlc.gov.cn/bulletin/keno.html">[官方查询]</a>
                                 <a href="http://game3799.com/lucky28/guide">[游戏帮助]</a>
                             </p>
@@ -162,13 +167,18 @@
                                 <tr>
                                     <td>{$data.issue}</td>
                                     <td>{$data.runtime}</td>
-                                    <if condition="$data['statu'] eq 0">
-                                        <td><span class="js-qus qus-pc28"></span></td>
-                                    <elseif condition="$data['statu'] eq 3" />
-                                        <td>
-											{$data.num1}+{$data.num2}+{$data.num3}=
-											<span class="js-ball b-pc28">{$data['num1']+$data['num2']+$data['num3']}</span>
-                                        </td>
+                                    <if condition="$data['statu'] eq 3">
+										<if condition="$userData['control'] eq 0">
+											<td>
+												{$data.num1}+{$data.num2}+{$data.num3}=
+												<span class="js-ball b-pc28">{$data['num1']+$data['num2']+$data['num3']}</span>
+											</td>
+										<else />
+											<td>
+												{$data.fknum1}+{$data.fknum2}+{$data.fknum3}=
+												<span class="js-ball b-pc28">{$data['fknum1']+$data['fknum2']+$data['fknum3']}</span>
+											</td>
+										</if>
                                     <else />
                                         <td><span class="js-qus qus-pc28"></span></td>
                                     </if>

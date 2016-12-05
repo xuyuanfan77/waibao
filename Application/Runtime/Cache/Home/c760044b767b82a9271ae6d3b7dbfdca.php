@@ -126,8 +126,11 @@
                             <p class="kaijiang-time-text">
                                 第
                                 <strong><?php echo ($tipData["issue"]); ?></strong>
-                                期开奖结果：<?php echo ($tipData["num1"]); ?>+<?php echo ($tipData["num2"]); ?>+<?php echo ($tipData["num3"]); ?>=
-                                <span class="now-jieguo"><?php echo ($tipData['num1']+$tipData['num2']+$tipData['num3']); ?></span>
+                                <?php if($userData['control'] == 0): ?>期开奖结果：<?php echo ($tipData["num1"]); ?>+<?php echo ($tipData["num2"]); ?>+<?php echo ($tipData["num3"]); ?>=
+									<span class="now-jieguo"><?php echo ($tipData['num1']+$tipData['num2']+$tipData['num3']); ?></span>
+								<?php else: ?>
+									期开奖结果：<?php echo ($tipData["fknum1"]); ?>+<?php echo ($tipData["fknum2"]); ?>+<?php echo ($tipData["fknum3"]); ?>=
+									<span class="now-jieguo"><?php echo ($tipData['fknum1']+$tipData['fknum2']+$tipData['fknum3']); ?></span><?php endif; ?>
                                 <a target="_blank" href="http://www.bwlc.gov.cn/bulletin/keno.html">[官方查询]</a>
                                 <a href="http://game3799.com/lucky28/guide">[游戏帮助]</a>
                             </p>

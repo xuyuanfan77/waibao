@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50714
 File Encoding         : 65001
 
-Date: 2016-11-11 17:31:27
+Date: 2016-12-05 11:48:58
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -43,6 +43,9 @@ CREATE TABLE `game` (
   `num1` tinyint(4) unsigned DEFAULT NULL COMMENT '开奖号码1',
   `num2` tinyint(4) unsigned DEFAULT NULL COMMENT '开奖号码2',
   `num3` tinyint(4) unsigned DEFAULT NULL COMMENT '开奖号码3',
+  `fknum1` tinyint(4) unsigned DEFAULT NULL COMMENT '风控号码1',
+  `fknum2` tinyint(4) unsigned DEFAULT NULL COMMENT '风控号码2',
+  `fknum3` tinyint(4) unsigned DEFAULT NULL COMMENT '风控号码3',
   `money0` int(10) unsigned DEFAULT '0' COMMENT '号码0的投注金额',
   `money1` int(10) unsigned DEFAULT '0' COMMENT '号码1的投注金额',
   `money2` int(10) unsigned DEFAULT '0' COMMENT '号码2的投注金额',
@@ -78,7 +81,7 @@ CREATE TABLE `game` (
   `statu` tinyint(3) unsigned NOT NULL DEFAULT '0' COMMENT '0、竞猜，1、封盘，2、正在开奖，3、已开奖',
   `createtime` datetime NOT NULL COMMENT '记录创建时间',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=296 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=479 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of game
@@ -125,7 +128,7 @@ CREATE TABLE `guess` (
   `output` int(10) unsigned DEFAULT NULL COMMENT '产出金额总额',
   `createtime` datetime DEFAULT NULL COMMENT '记录创建时间',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=50 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of guess
@@ -162,7 +165,7 @@ CREATE TABLE `lottery` (
   `runtime` datetime NOT NULL COMMENT '开奖时间',
   `createtime` datetime NOT NULL COMMENT '记录创建时间',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=186 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=310 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of lottery
@@ -219,6 +222,7 @@ CREATE TABLE `user` (
   `username` varchar(255) NOT NULL COMMENT '用户名',
   `password` varchar(255) NOT NULL COMMENT '密码',
   `money` bigint(20) unsigned NOT NULL COMMENT '用户总积分',
+  `control` set('1','0') NOT NULL DEFAULT '0' COMMENT '风控用户标识',
   `createtime` datetime NOT NULL COMMENT '记录创建时间',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -226,14 +230,11 @@ CREATE TABLE `user` (
 -- ----------------------------
 -- Records of user
 -- ----------------------------
-INSERT INTO `user` VALUES ('57d1049d88231', 'xuyuanfan5', '123', '100000000', '2016-09-08 14:26:37');
-INSERT INTO `user` VALUES ('57d10a4c9abbd', 'xuyuanfan1', '123', '99356789', '2016-09-08 14:50:52');
-INSERT INTO `user` VALUES ('57d10a83b5acc', 'xuyuanfan2', '123', '100021646', '2016-09-08 14:51:47');
-INSERT INTO `user` VALUES ('57d10a9ba983f', 'xuyuanfan3', '123', '99949203', '2016-09-08 14:52:11');
-INSERT INTO `user` VALUES ('57d10abaf2f2d', 'xuyuanfan4', '123', '99955584', '2016-09-08 14:52:42');
-INSERT INTO `user` VALUES ('5800e148ab58f', 'robot', '123456', '0', '2016-10-14 21:44:40');
-INSERT INTO `user` VALUES ('5812c71a92cf1', 'xuyuanfan3', '123', '100000000', '2016-10-28 11:33:46');
-INSERT INTO `user` VALUES ('5812c7226add1', 'xuyuanfan4', '123', '100000000', '2016-10-28 11:33:54');
+INSERT INTO `user` VALUES ('57d1049d88231', 'xuyuanfan5', '123', '100000000', '0', '2016-09-08 14:26:37');
+INSERT INTO `user` VALUES ('57d10a4c9abbd', 'xuyuanfan1', '123', '100000000', '0', '2016-09-08 14:50:52');
+INSERT INTO `user` VALUES ('57d10a83b5acc', 'xuyuanfan2', '123', '100000000', '1', '2016-09-08 14:51:47');
+INSERT INTO `user` VALUES ('57d10a9ba983f', 'xuyuanfan3', '123', '100000000', '0', '2016-09-08 14:52:11');
+INSERT INTO `user` VALUES ('57d10abaf2f2d', 'xuyuanfan4', '123', '100000000', '0', '2016-09-08 14:52:42');
 
 -- ----------------------------
 -- Procedure structure for overtimeCheck

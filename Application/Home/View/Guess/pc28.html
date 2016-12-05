@@ -168,8 +168,13 @@
                             <p class="kaijiang-time-text">
                                 第
                                 <strong>{$tipData.issue}</strong>
-                                期开奖结果：{$tipData.num1}+{$tipData.num2}+{$tipData.num3}=
-                                <span class="now-jieguo">{$tipData['num1']+$tipData['num2']+$tipData['num3']}</span>
+                                <if condition="$userData['control'] eq 0">
+									期开奖结果：{$tipData.num1}+{$tipData.num2}+{$tipData.num3}=
+									<span class="now-jieguo">{$tipData['num1']+$tipData['num2']+$tipData['num3']}</span>
+								<else />
+									期开奖结果：{$tipData.fknum1}+{$tipData.fknum2}+{$tipData.fknum3}=
+									<span class="now-jieguo">{$tipData['fknum1']+$tipData['fknum2']+$tipData['fknum3']}</span>
+								</if>
                                 <a target="_blank" href="http://www.bwlc.gov.cn/bulletin/keno.html">[官方查询]</a>
                                 <a href="http://game3799.com/lucky28/guide">[游戏帮助]</a>
                             </p>

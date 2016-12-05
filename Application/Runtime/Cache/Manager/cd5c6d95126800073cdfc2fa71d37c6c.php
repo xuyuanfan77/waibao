@@ -38,25 +38,21 @@
 </style>
 
 <div class="col-md-10">
-	<a type="button" class="btn btn-default" href="<?php echo U('Transformform/index');?>" style="float:right;margin:15px 0px">修改配置</a>
+	<a type="button" class="btn btn-default" href="<?php echo U('Fengkongform/index');?>" style="float:right;margin:15px 0px">新增用户</a>
 	<table class="table table-hover" style="margin:0px">
 		<tr>
-			<th>名称</th>
-			<th>数据源</th>
-			<th>抽水</th>
-			<th>间隔</th>
-			<th>提前写入期数</th>
-			<th>提前截至时间</th>
-			<th>延迟开奖时间</th>
+			<th>用户ID</th>
+			<th>用户名称</th>
+			<th>用户金额</th>
+			<th>注册时间</th>
+			<th>操作</th>
 		</tr>
-		<?php if(is_array($configData)): foreach($configData as $key=>$config): ?><tr>
-				<td><?php echo ($config["name"]); ?></td>
-				<td><?php echo ($config["lotteryname"]); ?></td>
-				<td><?php echo ($config["water"]); ?></td>
-				<td><?php echo ($config["interval"]); ?></td>
-				<td><?php echo ($config["aheadissue"]); ?></td>
-				<td><?php echo ($config["aheaddeadline"]); ?></td>
-				<td><?php echo ($config["delayruntime"]); ?></td>
+		<?php if(is_array($userData)): foreach($userData as $key=>$user): ?><tr>
+				<td><?php echo ($user["id"]); ?></td>
+				<td><?php echo ($user["username"]); ?></td>
+				<td><?php echo ($user["money"]); ?></td>
+				<td><?php echo ($user["createtime"]); ?></td>
+				<td><a href="<?php echo U('Fengkong/del', array('userid'=>$user['id']));?>">删除</a></td>
 			</tr><?php endforeach; endif; ?>
 	</table>
 	<div class="pages">

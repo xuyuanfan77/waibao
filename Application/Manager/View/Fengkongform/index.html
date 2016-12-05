@@ -1,0 +1,21 @@
+<script>
+function submitForm() {
+	var information = document.getElementById("information");
+	information.submit()
+}
+</script>
+
+<div class="col-md-10">
+	<a type="button" class="btn btn-default" href="{:U('Fengkong/index')}" style="float:right;margin:15px 0px">取消</a>
+	<button type="button" class="btn btn-default" onclick="submitForm()" style="float:right;margin:15px 0px">保存</button>
+	<div class="panel panel-default" style="margin:60px 0px">
+		<div class="panel-body">
+			<form id="information" enctype="multipart/form-data" action="{:U('Fengkongform/save')}" method="post" role="form">
+				<div class="form-group">
+					<label>用户名称：</label>
+					<input type="text" class="form-control" name="username" placeholder="用户名称">
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

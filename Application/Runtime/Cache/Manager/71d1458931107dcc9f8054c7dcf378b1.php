@@ -29,38 +29,25 @@
 				</ul>
 			</div>
 		</div>
-		<style type="text/css">
-.pages {position:relative;width:700px;padding:10px 0px;background-color:#FFF;}
-.num,.prev,.next,.current{width:60px;line-height:30px;display:inline-block;margin:0px 2px 0px 2px;text-align:center;}
-.num,.prev,.next{color:#000;background-color:#eee;}
-.current {color:#FFF;background-color:#008cba;}
-.num:hover,.prev:hover,.next:hover{background-color:#008cba;color:#FFF;}
-</style>
+		<script>
+function submitForm() {
+	var information = document.getElementById("information");
+	information.submit()
+}
+</script>
 
 <div class="col-md-10">
-	<a type="button" class="btn btn-default" href="<?php echo U('Transformform/index');?>" style="float:right;margin:15px 0px">修改配置</a>
-	<table class="table table-hover" style="margin:0px">
-		<tr>
-			<th>名称</th>
-			<th>数据源</th>
-			<th>抽水</th>
-			<th>间隔</th>
-			<th>提前写入期数</th>
-			<th>提前截至时间</th>
-			<th>延迟开奖时间</th>
-		</tr>
-		<?php if(is_array($configData)): foreach($configData as $key=>$config): ?><tr>
-				<td><?php echo ($config["name"]); ?></td>
-				<td><?php echo ($config["lotteryname"]); ?></td>
-				<td><?php echo ($config["water"]); ?></td>
-				<td><?php echo ($config["interval"]); ?></td>
-				<td><?php echo ($config["aheadissue"]); ?></td>
-				<td><?php echo ($config["aheaddeadline"]); ?></td>
-				<td><?php echo ($config["delayruntime"]); ?></td>
-			</tr><?php endforeach; endif; ?>
-	</table>
-	<div class="pages">
-		<?php echo ($pageShow); ?>
+	<a type="button" class="btn btn-default" href="<?php echo U('Fengkong/index');?>" style="float:right;margin:15px 0px">取消</a>
+	<button type="button" class="btn btn-default" onclick="submitForm()" style="float:right;margin:15px 0px">保存</button>
+	<div class="panel panel-default" style="margin:60px 0px">
+		<div class="panel-body">
+			<form id="information" enctype="multipart/form-data" action="<?php echo U('Fengkongform/save');?>" method="post" role="form">
+				<div class="form-group">
+					<label>用户名称：</label>
+					<input type="text" class="form-control" name="username" placeholder="用户名称">
+				</div>
+			</form>
+		</div>
 	</div>
 </div>
 	</div>
