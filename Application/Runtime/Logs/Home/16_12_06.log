@@ -1,0 +1,1032 @@
+[ 2016-12-06T18:06:42+08:00 ] 127.0.0.1 /waibao/index.php/Home/Mode/select
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000776s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000845s ]
+SQL: SHOW COLUMNS FROM `mode` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `mode` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: gamename D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 175 行.
+NOTIC: [8] Undefined index:  D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 175 行.
+NOTIC: [8] Undefined variable: gamename D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 175 行.
+NOTIC: [8] Undefined index:  D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 175 行.
+NOTIC: [8] Undefined variable: gamename D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 175 行.
+NOTIC: [8] Undefined index:  D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 175 行.
+
+[ 2016-12-06T18:07:45+08:00 ] 127.0.0.1 /waibao/index.php/Home/Mode/index/game/pc28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000993s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001244s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `user` WHERE `id` = '57d10a4c9abbd' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `statu` = 3 ORDER BY issue desc LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = 796045 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `mode` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`modename` FROM `mode` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28'  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 67 行.
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = null LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 80 行.
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = -1 LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 92 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000566s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000735s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.156633s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.156802s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002761s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003050s ]
+
+[ 2016-12-06T18:07:45+08:00 ] 127.0.0.1 /waibao/index.php/Home/Num/getServerTime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000699s ]
+
+[ 2016-12-06T18:07:47+08:00 ] 127.0.0.1 /waibao/index.php/Home/Mode/select
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+SQL: SHOW COLUMNS FROM `mode` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `mode` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: game D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 8 行.
+
+[ 2016-12-06T18:08:15+08:00 ] 127.0.0.1 /waibao/index.php/Home/Mode/index/game/pc28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000722s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000657s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `user` WHERE `id` = '57d10a4c9abbd' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `statu` = 3 ORDER BY issue desc LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = 796045 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `mode` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`modename` FROM `mode` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28'  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 67 行.
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = null LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 80 行.
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = -1 LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 92 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000901s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001162s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.146291s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.146440s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002012s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002355s ]
+
+[ 2016-12-06T18:08:16+08:00 ] 127.0.0.1 /waibao/index.php/Home/Num/getServerTime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000919s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+
+[ 2016-12-06T18:08:30+08:00 ] 127.0.0.1 /waibao/index.php/Home/Mode/save
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000760s ]
+SQL: SHOW COLUMNS FROM `mode` [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: game D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 8 行.
+NOTIC: [8] Undefined index: validate D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `mode` (`userid`,`gamename`,`modename`,`money0`,`money1`,`money2`,`money3`,`money4`,`money5`,`money6`,`money7`,`money8`,`money9`,`money10`,`money11`,`money12`,`money13`,`money14`,`money15`,`money16`,`money17`,`money18`,`money19`,`money20`,`money21`,`money22`,`money23`,`money24`,`money25`,`money26`,`money27`,`totalmoney`,`createtime`) VALUES ('57d10a4c9abbd','pc28','新模式','1','3','6','10','15','21','28','36','45','55','63','69','73','75','75','73','69','63','55','45','36','28','21','15','10','6','3','1','1','2016-12-06 18:08:30') [ RunTime:0.0005s ]
+
+[ 2016-12-06T18:08:31+08:00 ] 127.0.0.1 /waibao/index.php/Home/Mode/index/game/pc28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000809s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000922s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001172s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `user` WHERE `id` = '57d10a4c9abbd' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `statu` = 3 ORDER BY issue desc LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = 796045 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `mode` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`modename` FROM `mode` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28'  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 67 行.
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = null LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 80 行.
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = -1 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 92 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000596s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000841s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.132208s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.132353s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000538s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000682s ]
+
+[ 2016-12-06T18:08:32+08:00 ] 127.0.0.1 /waibao/index.php/Home/Num/getServerTime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000761s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000656s ]
+
+[ 2016-12-06T18:08:36+08:00 ] 127.0.0.1 /waibao/index.php/Home/Mode/select
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000573s ]
+SQL: SHOW COLUMNS FROM `mode` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `mode` WHERE `id` = '4' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: game D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 8 行.
+
+[ 2016-12-06T18:08:39+08:00 ] 127.0.0.1 /waibao/index.php/Home/Mode/select
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000787s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000793s ]
+SQL: SHOW COLUMNS FROM `mode` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `mode` WHERE `id` = '2' LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: game D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 8 行.
+
+[ 2016-12-06T18:08:41+08:00 ] 127.0.0.1 /waibao/index.php/Home/Mode/select
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000578s ]
+SQL: SHOW COLUMNS FROM `mode` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `mode` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: game D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 8 行.
+
+[ 2016-12-06T18:08:52+08:00 ] 127.0.0.1 /waibao/index.php/Home/Mode/save
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000898s ]
+SQL: SHOW COLUMNS FROM `mode` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mode` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: gamename D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 123 行.
+NOTIC: [8] Undefined index:  D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 123 行.
+NOTIC: [8] Undefined variable: gamename D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 123 行.
+NOTIC: [8] Undefined index:  D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 123 行.
+NOTIC: [8] Undefined variable: gamename D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 123 行.
+NOTIC: [8] Undefined index:  D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 123 行.
+SQL: UPDATE `mode` SET `userid`='57d10a4c9abbd',`gamename`='pc28',`modename`='许远帆',`money0`='1',`money1`='3',`money2`='6',`money3`='10',`money4`='15',`money5`='21',`money6`='28',`money7`='36',`money8`='45',`money9`='55',`money10`='63',`money11`='69',`money12`='73',`money13`='75',`money14`='0',`money15`='0',`money16`='0',`money17`='0',`money18`='0',`money19`='0',`money20`='0',`money21`='0',`money22`='0',`money23`='0',`money24`='0',`money25`='0',`money26`='0',`money27`='0',`totalmoney`='501',`createtime`='2016-12-06 17:30:43' WHERE `id` = '1' [ RunTime:0.0005s ]
+
+[ 2016-12-06T18:08:53+08:00 ] 127.0.0.1 /waibao/index.php/Home/Mode/index/game/pc28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000697s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000702s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `id` = '57d10a4c9abbd' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `statu` = 3 ORDER BY issue desc LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = 796045 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `mode` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`modename` FROM `mode` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28'  [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 67 行.
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = null LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 80 行.
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = -1 LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 92 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000575s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000795s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.132970s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.133198s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000767s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001010s ]
+
+[ 2016-12-06T18:08:54+08:00 ] 127.0.0.1 /waibao/index.php/Home/Num/getServerTime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000466s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000592s ]
+
+[ 2016-12-06T18:08:56+08:00 ] 127.0.0.1 /waibao/index.php/Home/Mode/select
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000699s ]
+SQL: SHOW COLUMNS FROM `mode` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `mode` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: game D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 8 行.
+
+[ 2016-12-06T18:09:02+08:00 ] 127.0.0.1 /waibao/index.php/Home/Mode/index/game/pc28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000896s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001178s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `user` WHERE `id` = '57d10a4c9abbd' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `statu` = 3 ORDER BY issue desc LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = 796045 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mode` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`modename` FROM `mode` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28'  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 67 行.
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = null LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 80 行.
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = -1 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 92 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000664s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000844s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.134108s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.134290s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000666s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001393s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001987s ]
+
+[ 2016-12-06T18:09:02+08:00 ] 127.0.0.1 /waibao/index.php/Home/Num/getServerTime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+
+[ 2016-12-06T18:09:08+08:00 ] 127.0.0.1 /waibao/index.php/Home/Mode/select
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000735s ]
+SQL: SHOW COLUMNS FROM `mode` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `mode` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: game D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 8 行.
+
+[ 2016-12-06T18:09:16+08:00 ] 127.0.0.1 /waibao/index.php/Home/Mode/save
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000897s ]
+SQL: SHOW COLUMNS FROM `mode` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `mode` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: gamename D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 123 行.
+NOTIC: [8] Undefined index:  D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 123 行.
+NOTIC: [8] Undefined variable: gamename D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 123 行.
+NOTIC: [8] Undefined index:  D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 123 行.
+NOTIC: [8] Undefined variable: gamename D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 123 行.
+NOTIC: [8] Undefined index:  D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 123 行.
+SQL: UPDATE `mode` SET `userid`='57d10a4c9abbd',`gamename`='pc28',`modename`='许远帆',`money0`='1',`money1`='3',`money2`='6',`money3`='10',`money4`='15',`money5`='21',`money6`='28',`money7`='36',`money8`='45',`money9`='55',`money10`='63',`money11`='69',`money12`='73',`money13`='75',`money14`='0',`money15`='0',`money16`='0',`money17`='0',`money18`='0',`money19`='0',`money20`='0',`money21`='0',`money22`='0',`money23`='0',`money24`='0',`money25`='0',`money26`='0',`money27`='0',`totalmoney`='501',`createtime`='2016-12-06 17:30:43' WHERE `id` = '1' [ RunTime:0.0006s ]
+
+[ 2016-12-06T18:09:17+08:00 ] 127.0.0.1 /waibao/index.php/Home/Mode/index/game/pc28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000618s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `id` = '57d10a4c9abbd' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `statu` = 3 ORDER BY issue desc LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = 796045 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mode` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`modename` FROM `mode` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28'  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 67 行.
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = null LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 80 行.
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = -1 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 92 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000533s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000694s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.134363s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.134513s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000845s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001172s ]
+
+[ 2016-12-06T18:09:18+08:00 ] 127.0.0.1 /waibao/index.php/Home/Num/getServerTime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000769s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001011s ]
+
+[ 2016-12-06T18:09:19+08:00 ] 127.0.0.1 /waibao/index.php/Home/Mode/select
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+SQL: SHOW COLUMNS FROM `mode` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `mode` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: game D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 8 行.
+
+[ 2016-12-06T18:11:01+08:00 ] 127.0.0.1 /waibao/index.php/Home/Mode/index/game/pc28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000913s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `user` WHERE `id` = '57d10a4c9abbd' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `statu` = 3 ORDER BY issue desc LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = 796046 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `mode` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`modename` FROM `mode` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28'  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 67 行.
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = null LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 80 行.
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = -1 LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 92 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000540s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000686s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.135027s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.135181s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000605s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001193s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001503s ]
+
+[ 2016-12-06T18:11:01+08:00 ] 127.0.0.1 /waibao/index.php/Home/Num/getServerTime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000801s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001077s ]
+
+[ 2016-12-06T18:11:56+08:00 ] 127.0.0.1 /waibao/index.php/Home/Mode/select
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000552s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+SQL: SHOW COLUMNS FROM `mode` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mode` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: game D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 8 行.
+
+[ 2016-12-06T18:12:03+08:00 ] 127.0.0.1 /waibao/index.php/Home/Mode/save
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000573s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000880s ]
+SQL: SHOW COLUMNS FROM `mode` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `mode` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: gamename D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 123 行.
+NOTIC: [8] Undefined index:  D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 123 行.
+NOTIC: [8] Undefined variable: gamename D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 123 行.
+NOTIC: [8] Undefined index:  D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 123 行.
+NOTIC: [8] Undefined variable: gamename D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 123 行.
+NOTIC: [8] Undefined index:  D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 123 行.
+SQL: UPDATE `mode` SET `userid`='57d10a4c9abbd',`gamename`='pc28',`modename`='许远帆',`money0`='1',`money1`='3',`money2`='6',`money3`='10',`money4`='15',`money5`='21',`money6`='28',`money7`='36',`money8`='45',`money9`='55',`money10`='63',`money11`='69',`money12`='73',`money13`='75',`money14`='0',`money15`='0',`money16`='0',`money17`='0',`money18`='0',`money19`='0',`money20`='0',`money21`='0',`money22`='0',`money23`='0',`money24`='0',`money25`='0',`money26`='0',`money27`='0',`totalmoney`='501',`createtime`='2016-12-06 17:30:43' WHERE `id` = '1' [ RunTime:0.0005s ]
+
+[ 2016-12-06T18:12:36+08:00 ] 127.0.0.1 /waibao/index.php/Home/Mode/index/game/pc28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001122s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `user` WHERE `id` = '57d10a4c9abbd' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `statu` = 3 ORDER BY issue desc LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = 796046 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `mode` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`modename` FROM `mode` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28'  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 67 行.
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = null LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 80 行.
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = -1 LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 92 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000544s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000696s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.152350s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.152508s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000927s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001206s ]
+
+[ 2016-12-06T18:12:37+08:00 ] 127.0.0.1 /waibao/index.php/Home/Num/getServerTime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+
+[ 2016-12-06T18:12:40+08:00 ] 127.0.0.1 /waibao/index.php/Home/Mode/select
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+SQL: SHOW COLUMNS FROM `mode` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mode` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: game D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 8 行.
+
+[ 2016-12-06T18:12:48+08:00 ] 127.0.0.1 /waibao/index.php/Home/Mode/save
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000466s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000585s ]
+SQL: SHOW COLUMNS FROM `mode` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `mode` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: gamename D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 123 行.
+NOTIC: [8] Undefined index:  D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 123 行.
+NOTIC: [8] Undefined variable: gamename D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 123 行.
+NOTIC: [8] Undefined index:  D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 123 行.
+NOTIC: [8] Undefined variable: gamename D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 123 行.
+NOTIC: [8] Undefined index:  D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 123 行.
+SQL: UPDATE `mode` SET `userid`='57d10a4c9abbd',`gamename`='pc28',`modename`='许远帆',`money0`='1',`money1`='3',`money2`='6',`money3`='10',`money4`='15',`money5`='21',`money6`='28',`money7`='36',`money8`='45',`money9`='55',`money10`='63',`money11`='69',`money12`='73',`money13`='75',`money14`='0',`money15`='0',`money16`='0',`money17`='0',`money18`='0',`money19`='0',`money20`='0',`money21`='0',`money22`='0',`money23`='0',`money24`='0',`money25`='0',`money26`='0',`money27`='0',`totalmoney`='501',`createtime`='2016-12-06 17:30:43' WHERE `id` = '1' [ RunTime:0.0005s ]
+
+[ 2016-12-06T18:14:07+08:00 ] 127.0.0.1 /waibao/index.php/Home/Mode/index/game/pc28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000543s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002009s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002726s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `user` WHERE `id` = '57d10a4c9abbd' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `statu` = 3 ORDER BY issue desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = 796046 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `mode` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`modename` FROM `mode` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28'  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 67 行.
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = null LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 80 行.
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = -1 LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 92 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000842s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001178s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.153731s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.153885s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000791s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000992s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001321s ]
+
+[ 2016-12-06T18:14:07+08:00 ] 127.0.0.1 /waibao/index.php/Home/Num/getServerTime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000466s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+
+[ 2016-12-06T18:14:10+08:00 ] 127.0.0.1 /waibao/index.php/Home/Mode/select
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000846s ]
+SQL: SHOW COLUMNS FROM `mode` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mode` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: game D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 8 行.
+
+[ 2016-12-06T18:14:16+08:00 ] 127.0.0.1 /waibao/index.php/Home/Mode/save
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000626s ]
+SQL: SHOW COLUMNS FROM `mode` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `mode` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: gamename D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 123 行.
+NOTIC: [8] Undefined index:  D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 123 行.
+NOTIC: [8] Undefined variable: gamename D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 123 行.
+NOTIC: [8] Undefined index:  D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 123 行.
+NOTIC: [8] Undefined variable: gamename D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 123 行.
+NOTIC: [8] Undefined index:  D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 123 行.
+SQL: UPDATE `mode` SET `userid`='57d10a4c9abbd',`gamename`='pc28',`modename`='许远帆',`money0`='1',`money1`='3',`money2`='6',`money3`='10',`money4`='15',`money5`='21',`money6`='28',`money7`='36',`money8`='45',`money9`='55',`money10`='63',`money11`='69',`money12`='73',`money13`='75',`money14`='0',`money15`='0',`money16`='0',`money17`='0',`money18`='0',`money19`='0',`money20`='0',`money21`='0',`money22`='0',`money23`='0',`money24`='0',`money25`='0',`money26`='0',`money27`='0',`totalmoney`='524',`createtime`='2016-12-06 17:30:43' WHERE `id` = '1' [ RunTime:0.0006s ]
+
+[ 2016-12-06T18:15:45+08:00 ] 127.0.0.1 /waibao/index.php/Home/Mode/index/game/pc28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001558s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `user` WHERE `id` = '57d10a4c9abbd' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `statu` = 3 ORDER BY issue desc LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = 796047 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mode` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`modename` FROM `mode` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28'  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 67 行.
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = null LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 80 行.
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = -1 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 92 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000850s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001118s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.155660s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.155812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000843s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001109s ]
+
+[ 2016-12-06T18:15:45+08:00 ] 127.0.0.1 /waibao/index.php/Home/Num/getServerTime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000572s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000681s ]
+
+[ 2016-12-06T18:15:49+08:00 ] 127.0.0.1 /waibao/index.php/Home/Mode/select
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000583s ]
+SQL: SHOW COLUMNS FROM `mode` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `mode` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: game D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 8 行.
+
+[ 2016-12-06T18:15:55+08:00 ] 127.0.0.1 /waibao/index.php/Home/Mode/save
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000753s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000763s ]
+SQL: SHOW COLUMNS FROM `mode` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `mode` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: gamename D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 123 行.
+NOTIC: [8] Undefined index:  D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 123 行.
+NOTIC: [8] Undefined variable: gamename D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 123 行.
+NOTIC: [8] Undefined index:  D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 123 行.
+NOTIC: [8] Undefined variable: gamename D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 123 行.
+NOTIC: [8] Undefined index:  D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 123 行.
+SQL: UPDATE `mode` SET `userid`='57d10a4c9abbd',`gamename`='pc28',`modename`='许远帆',`money0`='1',`money1`='3',`money2`='6',`money3`='10',`money4`='15',`money5`='21',`money6`='28',`money7`='36',`money8`='45',`money9`='55',`money10`='63',`money11`='69',`money12`='73',`money13`='75',`money14`='0',`money15`='0',`money16`='0',`money17`='0',`money18`='0',`money19`='0',`money20`='0',`money21`='0',`money22`='0',`money23`='0',`money24`='0',`money25`='0',`money26`='0',`money27`='0',`totalmoney`='524',`createtime`='2016-12-06 17:30:43' WHERE `id` = '1' [ RunTime:0.0008s ]
+
+[ 2016-12-06T18:16:00+08:00 ] 127.0.0.1 /waibao/index.php/Home/Mode/index/game/pc28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000597s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000771s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `user` WHERE `id` = '57d10a4c9abbd' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `statu` = 3 ORDER BY issue desc LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = 796047 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `mode` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`modename` FROM `mode` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28'  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 67 行.
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = null LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 80 行.
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = -1 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 92 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000862s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.150649s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.150802s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002878s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003164s ]
+
+[ 2016-12-06T18:16:01+08:00 ] 127.0.0.1 /waibao/index.php/Home/Num/getServerTime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000645s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000717s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000914s ]
+
+[ 2016-12-06T18:16:03+08:00 ] 127.0.0.1 /waibao/index.php/Home/Mode/select
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000630s ]
+SQL: SHOW COLUMNS FROM `mode` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `mode` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: game D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 8 行.
+
+[ 2016-12-06T18:18:40+08:00 ] 127.0.0.1 /waibao/index.php/Home/Mode/select
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000499s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000686s ]
+SQL: SHOW COLUMNS FROM `mode` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `mode` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: game D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 8 行.
+
+[ 2016-12-06T18:18:46+08:00 ] 127.0.0.1 /waibao/index.php/Home/Mode/save
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000593s ]
+SQL: SHOW COLUMNS FROM `mode` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mode` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: gamename D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 123 行.
+NOTIC: [8] Undefined index:  D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 123 行.
+NOTIC: [8] Undefined variable: gamename D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 123 行.
+NOTIC: [8] Undefined index:  D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 123 行.
+NOTIC: [8] Undefined variable: gamename D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 123 行.
+NOTIC: [8] Undefined index:  D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 123 行.
+SQL: UPDATE `mode` SET `userid`='57d10a4c9abbd',`gamename`='pc28',`modename`='许远帆',`money0`='1',`money1`='3',`money2`='6',`money3`='10',`money4`='15',`money5`='21',`money6`='28',`money7`='36',`money8`='45',`money9`='55',`money10`='63',`money11`='69',`money12`='73',`money13`='75',`money14`='0',`money15`='0',`money16`='0',`money17`='0',`money18`='0',`money19`='0',`money20`='0',`money21`='0',`money22`='0',`money23`='0',`money24`='0',`money25`='0',`money26`='0',`money27`='0',`totalmoney`='524',`createtime`='2016-12-06 17:30:43' WHERE `id` = '1' [ RunTime:0.0007s ]
+
+[ 2016-12-06T18:20:03+08:00 ] 127.0.0.1 /waibao/index.php/Home/Mode/index/game/pc28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000655s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `user` WHERE `id` = '57d10a4c9abbd' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `statu` = 3 ORDER BY issue desc LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = 796047 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mode` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`modename` FROM `mode` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28'  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 67 行.
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = null LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 80 行.
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = -1 LIMIT 1   [ RunTime:0.0017s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 92 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000810s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000988s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.159538s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.159740s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003097s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003480s ]
+
+[ 2016-12-06T18:20:03+08:00 ] 127.0.0.1 /waibao/index.php/Home/Num/getServerTime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001219s ]
+
+[ 2016-12-06T18:20:05+08:00 ] 127.0.0.1 /waibao/index.php/Home/Mode/select
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+SQL: SHOW COLUMNS FROM `mode` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mode` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: game D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 8 行.
+
+[ 2016-12-06T18:20:11+08:00 ] 127.0.0.1 /waibao/index.php/Home/Mode/save
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000818s ]
+NOTIC: [8] Undefined index: game D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `mode` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `mode` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `mode` SET `userid`='57d10a4c9abbd',`gamename`='pc28',`modename`='许远帆',`money0`='1',`money1`='3',`money2`='6',`money3`='10',`money4`='15',`money5`='21',`money6`='28',`money7`='36',`money8`='45',`money9`='55',`money10`='63',`money11`='69',`money12`='73',`money13`='99',`money14`='0',`money15`='0',`money16`='0',`money17`='0',`money18`='0',`money19`='0',`money20`='0',`money21`='0',`money22`='0',`money23`='0',`money24`='0',`money25`='0',`money26`='0',`money27`='0',`totalmoney`='524',`createtime`='2016-12-06 17:30:43' WHERE `id` = '1' [ RunTime:0.0006s ]
+
+[ 2016-12-06T18:20:12+08:00 ] 127.0.0.1 /waibao/index.php/Home/Mode/index/game/pc28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000644s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `id` = '57d10a4c9abbd' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `statu` = 3 ORDER BY issue desc LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = 796047 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mode` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`modename` FROM `mode` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28'  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 67 行.
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = null LIMIT 1   [ RunTime:0.0015s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 80 行.
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = -1 LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 92 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000540s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000703s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.136479s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.136639s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000776s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001019s ]
+
+[ 2016-12-06T18:20:12+08:00 ] 127.0.0.1 /waibao/index.php/Home/Num/getServerTime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000765s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000951s ]
+
+[ 2016-12-06T18:20:14+08:00 ] 127.0.0.1 /waibao/index.php/Home/Mode/select
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000617s ]
+SQL: SHOW COLUMNS FROM `mode` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `mode` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: game D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 8 行.
+
+[ 2016-12-06T18:20:19+08:00 ] 127.0.0.1 /waibao/index.php/Home/Mode/select
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000768s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000657s ]
+SQL: SHOW COLUMNS FROM `mode` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `mode` WHERE `id` = '2' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: game D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 8 行.
+
+[ 2016-12-06T18:20:23+08:00 ] 127.0.0.1 /waibao/index.php/Home/Mode/del
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001031s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000629s ]
+SQL: SHOW COLUMNS FROM `mode` [ RunTime:0.0012s ]
+SQL: DELETE FROM `mode` WHERE `id` = '2' [ RunTime:0.0003s ]
+
+[ 2016-12-06T18:20:23+08:00 ] 127.0.0.1 /waibao/index.php/Home/Mode/index/game/pc28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `user` WHERE `id` = '57d10a4c9abbd' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `statu` = 3 ORDER BY issue desc LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = 796047 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mode` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`modename` FROM `mode` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28'  [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 67 行.
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = null LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 80 行.
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = -1 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 92 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000583s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000739s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.137995s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.138143s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001023s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001284s ]
+
+[ 2016-12-06T18:20:23+08:00 ] 127.0.0.1 /waibao/index.php/Home/Num/getServerTime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000783s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000619s ]
+
+[ 2016-12-06T18:20:27+08:00 ] 127.0.0.1 /waibao/index.php/Home/Mode/select
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000567s ]
+SQL: SHOW COLUMNS FROM `mode` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `mode` WHERE `id` = '4' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: game D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 8 行.
+
+[ 2016-12-06T18:20:28+08:00 ] 127.0.0.1 /waibao/index.php/Home/Mode/select
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000640s ]
+SQL: SHOW COLUMNS FROM `mode` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `mode` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: game D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 8 行.
+
+[ 2016-12-06T18:20:30+08:00 ] 127.0.0.1 /waibao/index.php/Home/Mode/index/game/pc28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000703s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `user` WHERE `id` = '57d10a4c9abbd' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `statu` = 3 ORDER BY issue desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = 796047 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `mode` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`modename` FROM `mode` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28'  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 67 行.
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = null LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 80 行.
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = -1 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 92 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001779s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.159142s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.159381s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000632s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000773s ]
+
+[ 2016-12-06T18:20:30+08:00 ] 127.0.0.1 /waibao/index.php/Home/Num/getServerTime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000803s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001011s ]
+
+[ 2016-12-06T18:20:43+08:00 ] 127.0.0.1 /waibao/index.php/Home/Mode/save
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000665s ]
+NOTIC: [8] Undefined index: game D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `mode` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: validate D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp64\www\waibao\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `mode` (`userid`,`gamename`,`modename`,`money0`,`money1`,`money2`,`money3`,`money4`,`money5`,`money6`,`money7`,`money8`,`money9`,`money10`,`money11`,`money12`,`money13`,`money14`,`money15`,`money16`,`money17`,`money18`,`money19`,`money20`,`money21`,`money22`,`money23`,`money24`,`money25`,`money26`,`money27`,`totalmoney`,`createtime`) VALUES ('57d10a4c9abbd','pc28','新模式43','0','0','0','0','0','0','0','0','0','0','63','69','73','75','75','73','69','63','0','0','0','0','0','0','0','0','0','0','560','2016-12-06 18:20:43') [ RunTime:0.0006s ]
+
+[ 2016-12-06T18:20:44+08:00 ] 127.0.0.1 /waibao/index.php/Home/Mode/index/game/pc28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000635s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `id` = '57d10a4c9abbd' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `game` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `statu` = 3 ORDER BY issue desc LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = 796048 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `mode` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`modename` FROM `mode` WHERE `userid` = '57d10a4c9abbd' AND `gamename` = 'pc28'  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 67 行.
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = null LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 80 行.
+SQL: SELECT * FROM `game` WHERE `name` = 'pc28' AND `issue` = -1 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: issue D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 92 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000588s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000744s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.135713s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.135870s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001321s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001585s ]
+
+[ 2016-12-06T18:20:44+08:00 ] 127.0.0.1 /waibao/index.php/Home/Num/getServerTime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000695s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000842s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001073s ]
+
+[ 2016-12-06T18:20:46+08:00 ] 127.0.0.1 /waibao/index.php/Home/Mode/select
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000774s ]
+SQL: SHOW COLUMNS FROM `mode` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mode` WHERE `id` = '5' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: game D:\wamp64\www\waibao\Application\Home\Controller\ModeController.class.php 第 8 行.
+

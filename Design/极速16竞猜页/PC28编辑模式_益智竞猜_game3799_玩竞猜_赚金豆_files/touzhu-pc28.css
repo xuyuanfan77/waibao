@@ -1,0 +1,107 @@
+.new_betting_form_left_cap a.sel {
+	background: #fc898c;
+}
+
+.new_betting_simple_model a.a1 {
+	color: #fb9800
+}
+
+.new_betting_simple_model a.a2 {
+	color: #ff696c;
+}
+
+.new_betting_form_right_cap {
+	background: #fc898c;
+}
+
+.new_betting_from_name a.a3 {
+	border-color: #ff696c;
+	color: #ff696c;
+}
+
+.new_betting_from_name li:hover a.a3 {
+	background: #ff696c;
+	color: #fff;
+}
+
+.new_betting_from_name a.del-moshi {
+	border-color: #fc898c;
+	color: #fc898c;
+}
+
+.new_betting_from_name .selected a.a3 {
+	background: #fc898c;
+	color: #fff;
+}
+
+.insert_par1 {
+	color: #ff696c;
+}
+
+.double_insert:hover {
+	color: #ff696c;
+}
+
+.insert_par1 .total_md #total_md_lottery {
+	color: #ff696c;
+}
+
+.insert_par1 .total_md_btn {
+	background: #ff696c;
+}
+
+.the_odds:hover {
+	border-color: #ff696c;
+	color: #ff696c;
+}
+
+.suer_insert {
+	background: #ff686b;
+}
+
+.suer_insert:hover {
+	background: #ff5256;
+	text-decoration: none;
+}
+
+.across_par2 p strong {
+	color: #ea544a;
+}
+
+.no_left_bg {
+	/*background: url('../img/touzhu_num_bg.png') no-repeat 0 0;*/
+	background: url('../img/touzhu_num_bg.png') no-repeat 0 -216px;
+}
+
+.no_left_bg_02 {
+	background: url('../img/touzhu_num_bg.png') no-repeat 0 0;
+	background-position: 0 -36px;
+}
+
+.multiple:hover {
+	background: #ff696c;
+	text-decoration: none;
+}
+
+.standard_bg1:hover {
+	color: #ff696c;
+	text-decoration: none;
+	border-color: #ff696c;
+}
+
+.standard_bg2 {
+	color: #ff676a;
+	border-color: #ff676a;
+}
+
+.across_par2 .mode_save {
+	background: #fc898c;
+	border-color: #fc898c;
+}
+
+.across_par2 .mode_save_anthor {
+	background: #7eb9df;
+	border-color: #7eb9df;
+	margin: 0 0 0 10px;
+}
+

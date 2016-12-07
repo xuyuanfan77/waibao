@@ -10,7 +10,7 @@
         <script src="__PUBLIC__/front/slide.js"></script>
 		<link rel="stylesheet" href="__PUBLIC__/front/common.css">
         <link rel="stylesheet" href="__PUBLIC__/front/game-comp.css">
-        <link rel="stylesheet" href="__PUBLIC__/front/guess.css">
+        <link rel="stylesheet" href="__PUBLIC__/front/autobet.css">
     </head>
     
     <body>
@@ -96,7 +96,7 @@
                         <p class="my-touzhu-box clear-fix">
                             <a class="my-touzhu-list" href="{:U('Record/index', array('game'=>'pc28'))}">我的投注</a>
 							<a class="my-touzhu-list" href="{:U('Mode/index', array('game'=>'pc28'))}">投注模式编辑</a>
-							<a class="my-touzhu-list bor-r" href="{:U('Automatic/index', array('game'=>'pc28'))}">自动投注</a>
+							<a class="my-touzhu-list bor-r sel-color" href="{:U('Automatic/index', array('game'=>'pc28'))}">自动投注</a>
                         </p>
                     </div>
                 </div>
@@ -130,8 +130,8 @@
 									期开奖结果：{$tipData.fknum1}+{$tipData.fknum2}+{$tipData.fknum3}=
 									<span class="now-jieguo">{$tipData['fknum1']+$tipData['fknum2']+$tipData['fknum3']}</span>
 								</if>
-                                <a target="_blank" href="http://www.bwlc.gov.cn/bulletin/keno.html">[官方查询]</a>
-                                <a href="http://game3799.com/lucky28/guide">[游戏帮助]</a>
+                                <a target="_blank" href="#">[官方查询]</a>
+                                <a href="#">[游戏帮助]</a>
                             </p>
                         </div>
                         <p class="kaijiang-time-text line-h J_kjIng" style="display: none">
@@ -153,70 +153,95 @@
                 <!-- 公正提示 -->
                 <!-- 导航 end -->
                 <!-- 内容 start -->
-                <div class="guess-box pc28-box">
-                    <table>
-                        <tbody>
-                            <tr>
-                                <th>游戏期号</th>
-                                <th>开奖时间</th>
-                                <th>开奖号码</th>
-                                <th>奖池总额</th>
-                                <th>中奖人数</th>
-                                <th>盈亏</th>
-                                <th>参与</th>
-                            </tr>
-                            <foreach name="gameData" item="data">
-                                <tr>
-                                    <td>{$data.issue}</td>
-                                    <td>{$data.runtime}</td>
-                                    <if condition="$data['statu'] eq 3">
-										<if condition="$userData['control'] eq 0">
-											<td>
-												{$data.num1}+{$data.num2}+{$data.num3}=
-												<span class="js-ball b-pc28">{$data['num1']+$data['num2']+$data['num3']}</span>
-											</td>
-										<else />
-											<td>
-												{$data.fknum1}+{$data.fknum2}+{$data.fknum3}=
-												<span class="js-ball b-pc28">{$data['fknum1']+$data['fknum2']+$data['fknum3']}</span>
-											</td>
-										</if>
-                                    <else />
-                                        <td><span class="js-qus qus-pc28"></span></td>
-                                    </if>
-                                    <td>{$data.jackpot}<i class="kdou"></i></td>
-                                    <if condition="$data['statu'] eq 3">
-                                        <td>{$data.peoplenum}</td>
-                                    <else />
-                                        <td>-</td>
-                                    </if>
-                                    <if condition="$data['statu'] eq 3">
-                                        <td><span class="green">{$data.inputoutput}</span><i class="kdou"></i></td>
-                                    <else />
-                                        <td>-</td>
-                                    </if>
-                                    <if condition="$data['statu'] eq 0">
-                                        <td><a href="{:U('Guess/index', array('game'=>'pc28', 'issue'=>$data['issue']))}" class="go-jc jc-pc28">竞猜</a></td>
-                                    <elseif condition="$data['statu'] eq 1" />
-                                        <td><a class="go-ta">截止竞猜</a></td>
-                                    <elseif condition="$data['statu'] eq 2" />
-                                        <td><a class="go-ta">正在开奖</a></td>
-                                    <else />
-                                        <td><a class="go-ta">已开奖</a></td>
-                                    </if>
-                                </tr>
-                            </foreach>
-                        </tbody>
-                    </table>
-                </div>
-                <!-- 内容 end -->
-                <div class="list-page-box clear-fix">
-                    {$pageShow}
-                </div>
-                <div id="sound_bet" style="display: none"></div>
-            </div>
-        </div>
-        <div class="fuceng-html-box suoha-html-box"></div>
+
+				<div class="tips-box">
+					<p class="tips-p"><strong class="tips-s">自动投注：</strong>网站根据您的要求，开奖前自动帮您投注。完成以下设置即可开始自动投注，而且您随时可以停止自动投注。</p>
+				</div>
+				<div class="set-out-box pc28-box">
+					<h4 class="set-h4">设置自动投注期数并开始投注</h4>
+					<div class="set-box clear-fix">
+						<ul>
+							<li class="set-li">
+								<p class="set-lil">开始投注设置</p>
+								<div class="set-lir">
+									<p class="lir-c1">
+										开始模式
+											<select name="" id="drop_modes" class="lir-sel color0">
+												<foreach name="modeData" item="data" >
+													<if condition="($data['id'] eq $automaticData['modeid'])">
+														<option value="{$data['id']}" selected="selected">{$data['modename']}</option>
+													<else />
+														<option value="{$data['id']}">{$data['modename']}</option>
+													</if>
+												</foreach>
+											</select>
+										<a href="{:U('Mode/index', array('game'=>'pc28'))}" class="add-mod"><i class="tri"></i><strong>+</strong>添加模式</a>
+										选择自动投注的开始模式自动投注将从这个模式开始
+									</p>
+									<p class="lir-c2">
+										投注期号：
+										<input id="issue" class="lir-inp color0" value="{$automaticData['issuebg']}" type="text">
+										当前已经是第<span id="issue_now" class="color0"> {$tipData['issue']} </span>期，开始期号必须大于或等于 <span class="color0">{$tipData['issue']+2}</span>
+									</p>
+								</div>
+							</li>
+							<li class="set-li li-bor">
+								<p class="set-lil">停止投注设置</p>
+								<div class="set-lir">
+									<p class="lir-p">
+										投注期数达到：
+										<input id="play_num" class="inp-dd" value="{$automaticData['issuenum']}" type="text">（不能超过5000）<span> 或 </span>金豆 ≥ 
+										<input id="kdou_up" class="inp-dd dd-wd" value="{$automaticData['moneymin']}" type="text">（0就不限制）<span> 或 </span>金豆 ≤ 
+										<input id="kdou_down" class="inp-dd dd-wd" value="{$automaticData['moneymax']}" type="text"><span> 或 </span>金豆不够投注
+									</p>
+									<p class="lir-p"><span>*以上几项达到任意一项即马上停止自动投注</span></p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="model-out-box pc28-box">
+					<h4 class="set-h4">设置自动投注期数并开始投注</h4>
+					<p class="model-p">自动投注开启后，系统会根据您的设置进行循环投注，直到达到停止投注的条件。</p>
+					<div class="model-box clear-fix" id="my_modes">
+						<ul class="md-th clear-fix">
+							<li class="bet0 bet-01">投注模式</li>
+							<li class="bet0 bet-02">投注金豆数量</li>
+							<li class="bet0 bet-05">状态</li>
+						</ul>
+
+						<foreach name="modeData" item="data" >
+							<ul class="clear-fix">
+								<li id="lk_tri_4" class="bet0 bet-tri"><i class="tri"></i></li>
+								<li class="bet0 bet-06">
+									<strong class="lk-win">{$data['modename']}</strong>
+								</li>
+								<li class="bet0 bet-02">
+									<label class="k-color1">{$data['totalmoney']}<i class="kdou"></i></label>
+									<span style="display: none">{$data['id']}</span>
+								</li>
+								<li class="bet0 bet-05">
+									<a href="#" class="bet-on"></a>
+								</li>
+							</ul>
+						</foreach>
+					</div>
+					<p class="add-p"><a href="{:U('Mode/index', array('game'=>'pc28'))}" class="add-btn color0">+添加模式</a></p>
+					<a href="#" class="autobet-btn J_autobtn" data-url="/waibao/index.php/Home/Automatic/updateAutoStatus">
+						<if condition="($automaticData['status'] eq 1)">
+							结束自动投注
+						<else />
+							开始自动投注
+						</if>
+					</a>
+				</div>
+				<div class="fuceng-html-box"></div>
+			</div>
+		</div>
+		<!-- 内容  end	 -->
+		<div class="black-cover"></div>
+		<div class="fuceng-html-box suoha-html-box"></div>
         <div class="footer-box">
             <div class="width-1000">
                 <p class="text-02 mar-t">申明：游戏中使用到的游戏币等均为游戏道具，不具有任何财产性功能，只限用户本人在游戏中使用。</p>
@@ -225,6 +250,7 @@
         </div>
         <script src="__PUBLIC__/front/common.js"></script>
 		<script src="__PUBLIC__/front/touzhu.js"></script>
+		<script src="__PUBLIC__/front/autoplay.js"></script>
         <script src="__PUBLIC__/front/swfobject.js"></script>
-    </body>
+	</body>
 </html>

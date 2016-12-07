@@ -1,18 +1,16 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
-<html> 
+<html>
     <head>
-        <title>益智竞猜游戏</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>益智竞猜游戏</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="renderer" content="webkit">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		
+        
         <script src="/waibao/Public/front/jquery-1.11.1.min.js"></script>
         <script src="/waibao/Public/front/slide.js"></script>
-        <script src="/waibao/Public/front/highcharts.js"></script>
-        <script src="/waibao/Public/front/exporting.js"></script>
-        <link rel="stylesheet" href="/waibao/Public/front/common.css">
+		<link rel="stylesheet" href="/waibao/Public/front/common.css">
         <link rel="stylesheet" href="/waibao/Public/front/game-comp.css">
-        <link rel="stylesheet" href="/waibao/Public/front/mybet.css">
+        <link rel="stylesheet" href="/waibao/Public/front/autobet.css">
     </head>
     
     <body>
@@ -80,17 +78,14 @@
                     <div class="my-account">
                         <span class="my-account-logo"></span>
                         <span class="my-account-text">我的账户</span>
-                        <div class="fenge-box">
-                            <span class="jt-01"></span>
-                        </div>
+                        <div class="fenge-box"><span class="jt-01"></span></div>
                         <p class="my-yuanbao-box">
                             <span class="my-yuanbao-text">元宝：0</span>
                             <span class="yuanbao-logo"></span>
                             <a target="_blank" class="chong-url">充</a>
                         </p>
                         <p class="my-yuanbao-box">
-                            <span class="my-yuanbao-text">金豆：<?php echo ($userData['money']); ?></span>
-                            <span class="jindou-logo"></span>
+                            <span class="my-yuanbao-text">金豆：<?php echo ($userData['money']); ?></span><span class="jindou-logo"></span>
                             <a class="dui-url">兑</a>
                         </p>
                     </div>
@@ -99,9 +94,9 @@
                     <div class="two-nav-head">
                         <a class="head-list sel-color"><strong>PC28首页</strong></a>
                         <p class="my-touzhu-box clear-fix">
-                            <a class="my-touzhu-list sel-color" href="<?php echo U('Record/index', array('game'=>'pc28'));?>">我的投注</a>
+                            <a class="my-touzhu-list" href="<?php echo U('Record/index', array('game'=>'pc28'));?>">我的投注</a>
 							<a class="my-touzhu-list" href="<?php echo U('Mode/index', array('game'=>'pc28'));?>">投注模式编辑</a>
-							<a class="my-touzhu-list bor-r" href="<?php echo U('Automatic/index', array('game'=>'pc28'));?>">自动投注</a>
+							<a class="my-touzhu-list bor-r sel-color" href="<?php echo U('Automatic/index', array('game'=>'pc28'));?>">自动投注</a>
                         </p>
                     </div>
                 </div>
@@ -128,13 +123,13 @@
                             <p class="kaijiang-time-text">
                                 第
                                 <strong><?php echo ($tipData["issue"]); ?></strong>
-                                <?php if($userData['control'] == 0): ?>期开奖结果：<?php echo ($tipData["num1"]); ?>+<?php echo ($tipData["num2"]); ?>+<?php echo ($tipData["num3"]); ?>=
+								<?php if($userData['control'] == 0): ?>期开奖结果：<?php echo ($tipData["num1"]); ?>+<?php echo ($tipData["num2"]); ?>+<?php echo ($tipData["num3"]); ?>=
 									<span class="now-jieguo"><?php echo ($tipData['num1']+$tipData['num2']+$tipData['num3']); ?></span>
 								<?php else: ?>
 									期开奖结果：<?php echo ($tipData["fknum1"]); ?>+<?php echo ($tipData["fknum2"]); ?>+<?php echo ($tipData["fknum3"]); ?>=
 									<span class="now-jieguo"><?php echo ($tipData['fknum1']+$tipData['fknum2']+$tipData['fknum3']); ?></span><?php endif; ?>
-                                <a target="_blank" href="http://www.bwlc.gov.cn/bulletin/keno.html">[官方查询]</a>
-                                <a href="http://game3799.com/lucky28/guide">[游戏帮助]</a>
+                                <a target="_blank" href="#">[官方查询]</a>
+                                <a href="#">[游戏帮助]</a>
                             </p>
                         </div>
                         <p class="kaijiang-time-text line-h J_kjIng" style="display: none">
@@ -156,53 +151,87 @@
                 <!-- 公正提示 -->
                 <!-- 导航 end -->
                 <!-- 内容 start -->
-                <div class="td-box">
-                    <div class="bet-ttlbox clear-fix">
-                        <h2 class="bt-h2">我的投注</h2>
-                        <a href="<?php echo U('Num/index', array('game'=>'pc28'));?>" class="bt-a">继续竞猜 &gt;</a>
-                    </div>
-                </div>
-                <div class="array-box pc28-box">
-                    <div class="amain-box" id="amain" data-url="/lucky28/automodel">
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <th>期号</th>
-                                    <th>开奖时间</th>
-                                    <th>竞猜结果</th>
-                                    <th>投入金豆</th>
-                                    <th>获得金豆</th>
-                                    <th>该期盈亏</th>
-                                </tr>
-                                <?php if(is_array($guessData)): foreach($guessData as $key=>$data): ?><tr>
-                                        <td><?php echo ($data["gameissue"]); ?></td>
-                                        <td><?php echo ($data["runtime"]); ?></td>
-                                        <td><?php echo ($data["num1"]); ?>+<?php echo ($data["num2"]); ?>+<?php echo ($data["num3"]); ?>=<?php echo ($data['num1']+$data['num2']+$data['num3']); ?></td>
-                                        <td><?php echo ($data["input"]); ?></td>
-                                        <td><?php echo ($data["output"]); ?></td>
-                                        <td><?php echo ($data['output']-$data['input']); ?></td>
-                                    </tr><?php endforeach; endif; ?>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <!-- 内容 end -->
-                <div class="list-page-box clear-fix">
-                    <?php echo ($pageShow); ?>
-                </div>
-                <div id="sound_bet" style="display: none"></div>
-                <div class="fuceng-html-box">
-                    <div class="fuceng-box">
-                        <div class="fc-ttl-box clear-fix">
-                            <h6 class="ttl-sp">提示信息</h6>
-                            <a href="#" class="fc-close J_closefc"></a>
-                        </div>
-                        <div class="fc-main-box"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="fuceng-html-box suoha-html-box"></div>
+
+				<div class="tips-box">
+					<p class="tips-p"><strong class="tips-s">自动投注：</strong>网站根据您的要求，开奖前自动帮您投注。完成以下设置即可开始自动投注，而且您随时可以停止自动投注。</p>
+				</div>
+				<div class="set-out-box pc28-box">
+					<h4 class="set-h4">设置自动投注期数并开始投注</h4>
+					<div class="set-box clear-fix">
+						<ul>
+							<li class="set-li">
+								<p class="set-lil">开始投注设置</p>
+								<div class="set-lir">
+									<p class="lir-c1">
+										开始模式
+											<select name="" id="drop_modes" class="lir-sel color0">
+												<?php if(is_array($modeData)): foreach($modeData as $key=>$data): if(($data['id'] == $automaticData['modeid'])): ?><option value="<?php echo ($data['id']); ?>" selected="selected"><?php echo ($data['modename']); ?></option>
+													<?php else: ?>
+														<option value="<?php echo ($data['id']); ?>"><?php echo ($data['modename']); ?></option><?php endif; endforeach; endif; ?>
+											</select>
+										<a href="<?php echo U('Mode/index', array('game'=>'pc28'));?>" class="add-mod"><i class="tri"></i><strong>+</strong>添加模式</a>
+										选择自动投注的开始模式自动投注将从这个模式开始
+									</p>
+									<p class="lir-c2">
+										投注期号：
+										<input id="issue" class="lir-inp color0" value="<?php echo ($automaticData['issuebg']); ?>" type="text">
+										当前已经是第<span id="issue_now" class="color0"> <?php echo ($tipData['issue']); ?> </span>期，开始期号必须大于或等于 <span class="color0"><?php echo ($tipData['issue']+2); ?></span>
+									</p>
+								</div>
+							</li>
+							<li class="set-li li-bor">
+								<p class="set-lil">停止投注设置</p>
+								<div class="set-lir">
+									<p class="lir-p">
+										投注期数达到：
+										<input id="play_num" class="inp-dd" value="<?php echo ($automaticData['issuenum']); ?>" type="text">（不能超过5000）<span> 或 </span>金豆 ≥ 
+										<input id="kdou_up" class="inp-dd dd-wd" value="<?php echo ($automaticData['moneymin']); ?>" type="text">（0就不限制）<span> 或 </span>金豆 ≤ 
+										<input id="kdou_down" class="inp-dd dd-wd" value="<?php echo ($automaticData['moneymax']); ?>" type="text"><span> 或 </span>金豆不够投注
+									</p>
+									<p class="lir-p"><span>*以上几项达到任意一项即马上停止自动投注</span></p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="model-out-box pc28-box">
+					<h4 class="set-h4">设置自动投注期数并开始投注</h4>
+					<p class="model-p">自动投注开启后，系统会根据您的设置进行循环投注，直到达到停止投注的条件。</p>
+					<div class="model-box clear-fix" id="my_modes">
+						<ul class="md-th clear-fix">
+							<li class="bet0 bet-01">投注模式</li>
+							<li class="bet0 bet-02">投注金豆数量</li>
+							<li class="bet0 bet-05">状态</li>
+						</ul>
+
+						<?php if(is_array($modeData)): foreach($modeData as $key=>$data): ?><ul class="clear-fix">
+								<li id="lk_tri_4" class="bet0 bet-tri"><i class="tri"></i></li>
+								<li class="bet0 bet-06">
+									<strong class="lk-win"><?php echo ($data['modename']); ?></strong>
+								</li>
+								<li class="bet0 bet-02">
+									<label class="k-color1"><?php echo ($data['totalmoney']); ?><i class="kdou"></i></label>
+									<span style="display: none"><?php echo ($data['id']); ?></span>
+								</li>
+								<li class="bet0 bet-05">
+									<a href="#" class="bet-on"></a>
+								</li>
+							</ul><?php endforeach; endif; ?>
+					</div>
+					<p class="add-p"><a href="<?php echo U('Mode/index', array('game'=>'pc28'));?>" class="add-btn color0">+添加模式</a></p>
+					<a href="#" class="autobet-btn J_autobtn" data-url="/waibao/index.php/Home/Automatic/updateAutoStatus">
+						<?php if(($automaticData['status'] == 1)): ?>结束自动投注
+						<?php else: ?>
+							开始自动投注<?php endif; ?>
+					</a>
+				</div>
+				<div class="fuceng-html-box"></div>
+			</div>
+		</div>
+		<!-- 内容  end	 -->
+		<div class="black-cover"></div>
+		<div class="fuceng-html-box suoha-html-box"></div>
         <div class="footer-box">
             <div class="width-1000">
                 <p class="text-02 mar-t">申明：游戏中使用到的游戏币等均为游戏道具，不具有任何财产性功能，只限用户本人在游戏中使用。</p>
@@ -210,8 +239,8 @@
             </div>
         </div>
         <script src="/waibao/Public/front/common.js"></script>
-        <script src="/waibao/Public/front/mybet.js"></script>
 		<script src="/waibao/Public/front/touzhu.js"></script>
+		<script src="/waibao/Public/front/autoplay.js"></script>
         <script src="/waibao/Public/front/swfobject.js"></script>
-    </body>
+	</body>
 </html>

@@ -126,7 +126,7 @@ $(".shuaxin-btn,.shuaxin-btn-close").click(function(e){
 	}
 
 	var z = $(".J_ServerTime"),
-	serverTime_url = z.attr("data-url");
+		serverTime_url = z.attr("data-url");
     if (z.length > 0){
     	var timeAnim;
     	var _time = function(hour,min,sec){
@@ -237,19 +237,15 @@ $(document).ready(function(){
 				}
 				$(".J_kjTimeBox").hide();
 				$(".J_kjIng").show();
-					
-				setTimeout(function(){
-					window.location.reload();
-				},5000);
-				
-				//if(reload_num == 0){
-				//	setTimeout(function(){
-				//		window.location.reload();
-				//	},15000);
-				//	setTimeout(function(){
-				//		window.location.reload();
-				//	},70000);
-				//}
+
+				if(reload_num == 0){
+					setTimeout(function(){
+						window.location.reload();
+					},15000);
+					setTimeout(function(){
+						window.location.reload();
+					},70000);
+				}
 			}
 		}
 		_cDown1();
@@ -324,11 +320,10 @@ $(".fc-main-box").delegate("#J_touzhuBtn","click",function(e){
 	e.preventDefault();
 
 	var	_url = $(".suer_insert").attr("data-url"),
-		_issue = $(".suer_insert").attr("data-issue"),
-		_game = $(".suer_insert").attr("data-game"),
+		_pid = $(".suer_insert").attr("data-pid"),
 		_id = $("#rwnum").attr("data-id"),
-		all_val = sum_val(),
-	    _val = _zuhe($("#total_md_lottery2").text());
+		all_val = sum_val();
+	    _val = parseInt($("#total_md_lottery2").text());
 
 	if(_val > 0 ){
 		if(touzhu_key == 1){
@@ -337,7 +332,7 @@ $(".fc-main-box").delegate("#J_touzhuBtn","click",function(e){
 				url: _url,
 				dataType: "json",
 				type: "post",
-				data: {game_style:_game,total:_val,bet_num:all_val,period_no:_issue,race_id:_id},
+				data: {total:_val,bet_num:all_val,period_no:_pid,race_id:_id},
 				success: function(data){
 
 					if(data.code_num <= 10001){
@@ -504,7 +499,7 @@ $(".fc-main-box").delegate(".J_moshi_ajax","click",function(e){
 
 	var all_val = sum_val(),
 		_url = $(".J_moshi_save").eq(0).attr("data-url"),
-		_val = _zuhe($("#total_md_lottery2").text()),
+		_val = parseInt($("#total_md_lottery2").text()),
 		_id = $(".J_moshi_save").eq(0).attr("data-id"),
 		_name = $(".fuceng-box .moshi_name_input").val();
 
