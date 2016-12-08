@@ -181,7 +181,7 @@
 									<p class="lir-c2">
 										投注期号：
 										<input id="issue" class="lir-inp color0" value="{$automaticData['issuebg']}" type="text">
-										当前已经是第<span id="issue_now" class="color0"> {$tipData['issue']} </span>期，开始期号必须大于或等于 <span class="color0">{$tipData['issue']+2}</span>
+										当前已经是第<span class="color0"> {$tipData['issue']} </span>期，开始期号必须大于或等于 <span id="issue_now" class="color0">{$tipData['issue']+4}</span>
 									</p>
 								</div>
 							</li>
@@ -191,8 +191,8 @@
 									<p class="lir-p">
 										投注期数达到：
 										<input id="play_num" class="inp-dd" value="{$automaticData['issuenum']}" type="text">（不能超过5000）<span> 或 </span>金豆 ≥ 
-										<input id="kdou_up" class="inp-dd dd-wd" value="{$automaticData['moneymin']}" type="text">（0就不限制）<span> 或 </span>金豆 ≤ 
-										<input id="kdou_down" class="inp-dd dd-wd" value="{$automaticData['moneymax']}" type="text"><span> 或 </span>金豆不够投注
+										<input id="kdou_up" class="inp-dd dd-wd" value="{$automaticData['moneymax']}" type="text">（0就不限制）<span> 或 </span>金豆 ≤ 
+										<input id="kdou_down" class="inp-dd dd-wd" value="{$automaticData['moneymin']}" type="text"><span> 或 </span>金豆不够投注
 									</p>
 									<p class="lir-p"><span>*以上几项达到任意一项即马上停止自动投注</span></p>
 								</div>

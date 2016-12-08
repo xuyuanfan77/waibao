@@ -5,8 +5,15 @@ header("Content-Type: text/html;charset=utf-8");
 
 class Transform {
 	// 机器人投注
-	public function robotGuess($gameData) {	
+	public function robotGuess($gameId) {	
 		$numArea = array('pc28'=>array(0,28),'js28'=>array(0,28),'js16'=>array(3,16),'fk28'=>array(0,28),'fksc'=>array(1,10),'jnd28'=>array(0,28));
+		unset($condition);
+		$condition['id'] = array('eq',$gameId);
+		$Game = M("Game");
+		$gameData = $Game->where($condition)->find();
+		if(!$gameData){
+			return;
+		}
 		
 		// 从数据库读取出机器人配置信息
 		unset($condition);
@@ -36,6 +43,78 @@ class Transform {
 		}
 		$Game = M("Game");
 		$Game->save($gameData);
+	}
+	
+	// 用户投注
+	public function userGuess($gameId) {
+		$numArea = array('pc28'=>array(0,28),'js28'=>array(0,28),'js16'=>array(3,16),'fk28'=>array(0,28),'fksc'=>array(1,10),'jnd28'=>array(0,28));
+		unset($condition);
+		$condition['id'] = array('eq',$gameId);
+		$Game = M("Game");
+		$gameData = $Game->where($condition)->find();
+		if(!$gameData){
+			return;
+		}
+		
+		// 从数据库读取出用户自动投注配置信息
+		unset($condition);
+		$condition['gamename'] = array('eq',$gameData['name']);
+		$condition['status'] = array('eq',1);
+		$ModeAutoView = D("ModeAutoView");
+		$modeAutoData = $ModeAutoView->where($condition)->select();
+		
+		if($modeAutoData){
+			foreach ($modeAutoData as $key=>$value) {
+				// 符合停止自动投注的记录
+				if($gameData['issue']>($value['issuebg']+$value['issuenum']) ||
+					$value['money']<$value['moneymin'] ||
+					($value['money']>$value['moneymax'] && $value['moneymax']!=0) ||
+					$value['money']<$value['totalmoney']){
+					unset($condition);
+					$condition['id'] = array('eq',$value['id']);
+					$Automatic = M('Automatic');
+					$automaticData = $Automatic->where($condition)->find();
+					if($automaticData){
+						$automaticData['status'] = 0;
+						$Automatic->save($automaticData);
+					}
+				// 符合自动投注的记录
+				}else{
+					// 修改用户表
+					$User = M("User");
+					unset($condition);
+					$condition['id'] = $value['userid'];
+					$userData = $User->where($condition)->find();
+					if($userData){
+						$userData['money'] = $userData['money'] - $value['totalmoney'];
+						$User->save($userData);
+					}
+
+					// 竞猜表添加一条新的投注记录
+					$guessData['userid'] = $value['userid'];
+					$guessData['gamename'] = $value['gamename'];
+					$guessData['gameissue'] = $gameData['issue'];
+					
+					for($index=$numArea[$value['gamename']][0]; $index<$numArea[$value['gamename']][0]+$numArea[$value['gamename']][1]; $index++) {
+						$guessData['money'.$index] = $value['money'.$index];
+					}
+					$guessData['input'] = $value['totalmoney'];;
+					$guessData['output']= 0;
+					$guessData['createtime'] = date('Y-m-d H:i:s');
+					$Guess = M('Guess');
+					$Guess->create($guessData);
+					$Guess->add();
+		
+					// 修改游戏表对应数据
+					for($index=$numArea[$value['gamename']][0]; $index<$numArea[$value['gamename']][0]+$numArea[$value['gamename']][1]; $index++) {						//修改每个数字的下注
+						$gameData['money'.$index] = $gameData['money'.$index]+$value['money'.$index];
+					}
+					$gameData['jackpot'] = $gameData['jackpot']+$value['totalmoney'];
+					$Game = M("Game");
+					$Game->save($gameData);
+				}
+			}
+		}
 	}
 	
 	// 号码开奖
@@ -236,10 +315,9 @@ class Transform {
 				$gameData['createtime'] = date('Y-m-d H:i:s');
 				
 				if ($Game->create($gameData)){
-					$gameData['id'] = $Game->add();
-					
-					// 机器人投注
-					Transform::robotGuess($gameData);
+					$gameId = $Game->add();
+					Transform::robotGuess($gameId);
+					Transform::userGuess($gameId);
 				}
 			}
 		}	

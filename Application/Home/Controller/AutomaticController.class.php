@@ -112,17 +112,6 @@ class AutomaticController extends Controller {
 			$Automatic->create($automaticData);
 			$Automatic->add();
 		}
-		
-		/*foreach ($_POST['id_arr'] as $key=>$value) {
-			$Mode = M('Mode');
-			unset($condition);
-			$condition['id'] = array('eq',$value);
-			$modeData = $Mode->where($condition)->find();
-			if($modeData){
-				$modeData['status'] = $_POST['state_arr'][$key];
-				$Mode->save($modeData);
-			}
-		}*/
 
 		$data['code_num'] = 10000;
 		$this->ajaxReturn($data);
