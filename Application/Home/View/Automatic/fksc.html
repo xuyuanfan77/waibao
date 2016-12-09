@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>益智竞猜游戏</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>益智竞猜游戏</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="renderer" content="webkit">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         
         <script src="__PUBLIC__/front/jquery-1.11.1.min.js"></script>
         <script src="__PUBLIC__/front/slide.js"></script>
-        <script src="__PUBLIC__/front/highcharts.js"></script>
-        <script src="__PUBLIC__/front/exporting.js"></script>
 		<link rel="stylesheet" href="__PUBLIC__/front/common.css">
         <link rel="stylesheet" href="__PUBLIC__/front/game-comp.css">
-        <link rel="stylesheet" href="__PUBLIC__/front/mybet.css">
+        <link rel="stylesheet" href="__PUBLIC__/front/autobet.css">
     </head>
     
     <body>
@@ -80,30 +78,25 @@
                     <div class="my-account">
                         <span class="my-account-logo"></span>
                         <span class="my-account-text">我的账户</span>
-                        <div class="fenge-box">
-                            <span class="jt-01"></span>
-                        </div>
+                        <div class="fenge-box"><span class="jt-01"></span></div>
                         <p class="my-yuanbao-box">
                             <span class="my-yuanbao-text">元宝：0</span>
                             <span class="yuanbao-logo"></span>
                             <a target="_blank" class="chong-url">充</a>
                         </p>
                         <p class="my-yuanbao-box">
-                            <span class="my-yuanbao-text">金豆：{$userData['money']}</span>
-                            <span class="jindou-logo"></span>
+                            <span class="my-yuanbao-text">金豆：{$userData['money']}</span><span class="jindou-logo"></span>
                             <a class="dui-url">兑</a>
                         </p>
                     </div>
                 </div>
                 <div class="fksc-nav-box game-two-nav">
                     <div class="two-nav-head">
-                        <a class="head-list sel-color">
-                            <strong>疯狂赛车首页</strong>
-                        </a>
+                        <a class="head-list sel-color"><strong>疯狂赛车首页</strong></a>
                         <p class="my-touzhu-box clear-fix">
-							<a class="my-touzhu-list sel-color" href="{:U('Record/index', array('game'=>'fksc'))}">我的投注</a>
+                            <a class="my-touzhu-list" href="{:U('Record/index', array('game'=>'fksc'))}">我的投注</a>
 							<a class="my-touzhu-list" href="{:U('Mode/index', array('game'=>'fksc'))}">投注模式编辑</a>
-							<a class="my-touzhu-list bor-r" href="{:U('Automatic/index', array('game'=>'fksc'))}">自动投注</a>
+							<a class="my-touzhu-list bor-r sel-color" href="{:U('Automatic/index', array('game'=>'fksc'))}">自动投注</a>
                         </p>
                     </div>
                 </div>
@@ -132,7 +125,7 @@
                                 <strong>{$tipData.issue}</strong>
                                 期开奖结果：
                                 <span class="fk-car car{$tipData['num1']}"></span>
-                                <a target="_blank" href="http://www.bwlc.gov.cn/bulletin/keno.html">[官方查询]</a>
+                                <a target="_blank" href="http://www.bwlc.net/bulletin/trax.html">[官方查询]</a>
                                 <a href="http://game3799.com/lucky28/guide">[游戏帮助]</a>
                             </p>
                         </div>
@@ -155,68 +148,104 @@
                 <!-- 公正提示 -->
                 <!-- 导航 end -->
                 <!-- 内容 start -->
-                <div class="td-box">
-                    <div class="bet-ttlbox clear-fix">
-                        <h2 class="bt-h2">我的投注</h2>
-                        <a href="{:U('Num/index', array('game'=>'fksc'))}" class="bt-a">继续竞猜 &gt;</a>
-                    </div>
-                </div>
-                <div class="array-box fksc-box">
-                    <div class="amain-box" id="amain" data-url="/lucky28/automodel">
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <th>期号</th>
-                                    <th>开奖时间</th>
-                                    <th>竞猜结果</th>
-                                    <th>投入金豆</th>
-                                    <th>获得金豆</th>
-                                    <th>该期盈亏</th>
-                                </tr>
-                                <foreach name="guessData" item="data">
-                                    <tr>
-                                        <td>{$data.gameissue}</td>
-                                        <td>{$data.runtime}</td>
-                                        <td>
-                                            <span class="fk-car car{$data['num1']}"></span>
-                                        </td>
-                                        <td>{$data.input}</td>
-                                        <td>{$data.output}</td>
-                                        <td>{$data['output']-$data['input']}</td>
-                                    </tr>
-                                </foreach>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <!-- 内容 end -->
-                <div class="list-page-box clear-fix">
-                    {$pageShow}
-                </div>
-                <div id="sound_bet" style="display: none"></div>
-                <div class="fuceng-html-box">
-                    <div class="fuceng-box">
-                        <div class="fc-ttl-box clear-fix">
-                            <h6 class="ttl-sp">提示信息</h6>
-                            <a href="#" class="fc-close J_closefc"></a>
-                        </div>
-                        <div class="fc-main-box"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="fuceng-html-box suoha-html-box">
-        </div>
+
+				<div class="tips-box">
+					<p class="tips-p"><strong class="tips-s">自动投注：</strong>网站根据您的要求，开奖前自动帮您投注。完成以下设置即可开始自动投注，而且您随时可以停止自动投注。</p>
+				</div>
+				<div class="set-out-box fksc-box">
+					<h4 class="set-h4">设置自动投注期数并开始投注</h4>
+					<div class="set-box clear-fix">
+						<ul>
+							<li class="set-li">
+								<p class="set-lil">开始投注设置</p>
+								<div class="set-lir">
+									<p class="lir-c1">
+										开始模式
+											<select name="" id="drop_modes" class="lir-sel color0">
+												<foreach name="modeData" item="data" >
+													<if condition="($data['id'] eq $automaticData['modeid'])">
+														<option value="{$data['id']}" selected="selected">{$data['modename']}</option>
+													<else />
+														<option value="{$data['id']}">{$data['modename']}</option>
+													</if>
+												</foreach>
+											</select>
+										<a href="{:U('Mode/index', array('game'=>'fksc'))}" class="add-mod"><i class="tri"></i><strong>+</strong>添加模式</a>
+										选择自动投注的开始模式自动投注将从这个模式开始
+									</p>
+									<p class="lir-c2">
+										投注期号：
+										<input id="issue" class="lir-inp color0" value="{$automaticData['issuebg']}" type="text">
+										当前已经是第<span class="color0"> {$tipData['issue']} </span>期，开始期号必须大于或等于 <span id="issue_now" class="color0">{$tipData['issue']+4}</span>
+									</p>
+								</div>
+							</li>
+							<li class="set-li li-bor">
+								<p class="set-lil">停止投注设置</p>
+								<div class="set-lir">
+									<p class="lir-p">
+										投注期数达到：
+										<input id="play_num" class="inp-dd" value="{$automaticData['issuenum']}" type="text">（不能超过5000）<span> 或 </span>金豆 ≥ 
+										<input id="kdou_up" class="inp-dd dd-wd" value="{$automaticData['moneymax']}" type="text">（0就不限制）<span> 或 </span>金豆 ≤ 
+										<input id="kdou_down" class="inp-dd dd-wd" value="{$automaticData['moneymin']}" type="text"><span> 或 </span>金豆不够投注
+									</p>
+									<p class="lir-p"><span>*以上几项达到任意一项即马上停止自动投注</span></p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="model-out-box fksc-box">
+					<h4 class="set-h4">设置自动投注期数并开始投注</h4>
+					<p class="model-p">自动投注开启后，系统会根据您的设置进行循环投注，直到达到停止投注的条件。</p>
+					<div class="model-box clear-fix" id="my_modes">
+						<ul class="md-th clear-fix">
+							<li class="bet0 bet-01">投注模式</li>
+							<li class="bet0 bet-02">投注金豆数量</li>
+							<li class="bet0 bet-05">状态</li>
+						</ul>
+
+						<foreach name="modeData" item="data" >
+							<ul class="clear-fix">
+								<li id="lk_tri_4" class="bet0 bet-tri"><i class="tri"></i></li>
+								<li class="bet0 bet-06">
+									<strong class="lk-win">{$data['modename']}</strong>
+								</li>
+								<li class="bet0 bet-02">
+									<label class="k-color1">{$data['totalmoney']}<i class="kdou"></i></label>
+									<span style="display: none">{$data['id']}</span>
+								</li>
+								<li class="bet0 bet-05">
+									<a href="#" class="bet-on"></a>
+								</li>
+							</ul>
+						</foreach>
+					</div>
+					<p class="add-p"><a href="{:U('Mode/index', array('game'=>'fksc'))}" class="add-btn color0">+添加模式</a></p>
+					<a href="#" class="autobet-btn J_autobtn" data-url="/waibao/index.php/Home/Automatic/updateAutoStatus" data-game="fksc">
+						<if condition="($automaticData['status'] eq 1)">
+							结束自动投注
+						<else />
+							开始自动投注
+						</if>
+					</a>
+				</div>
+				<div class="fuceng-html-box"></div>
+			</div>
+		</div>
+		<!-- 内容  end	 -->
+		<div class="black-cover"></div>
+		<div class="fuceng-html-box suoha-html-box"></div>
         <div class="footer-box">
             <div class="width-1000">
                 <p class="text-02 mar-t">申明：游戏中使用到的游戏币等均为游戏道具，不具有任何财产性功能，只限用户本人在游戏中使用。</p>
                 <p class="text-02">健康游戏忠告：抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防受骗上当 适度游戏益脑 沉迷游戏伤身 合理安排时间 享受健康生活</p>
             </div>
         </div>
-        <div class="black-cover"></div>
         <script src="__PUBLIC__/front/common.js"></script>
-        <script src="__PUBLIC__/front/mybet.js"></script>
 		<script src="__PUBLIC__/front/touzhu.js"></script>
+		<script src="__PUBLIC__/front/autoplay.js"></script>
         <script src="__PUBLIC__/front/swfobject.js"></script>
-    </body>
+	</body>
 </html>

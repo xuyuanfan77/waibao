@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50714
 File Encoding         : 65001
 
-Date: 2016-12-09 14:24:43
+Date: 2016-12-09 17:19:34
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -47,14 +47,16 @@ CREATE TABLE `automatic` (
   `status` set('1','0') NOT NULL DEFAULT '1',
   `createtime` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of automatic
 -- ----------------------------
-INSERT INTO `automatic` VALUES ('3', '57d10a4c9abbd', 'pc28', '18', '796538', '10', '5', '0', '1', '2016-12-08 13:55:22');
-INSERT INTO `automatic` VALUES ('4', '57d10a4c9abbd', 'jnd28', '21', '796538', '10', '4', '0', '1', '2016-12-09 14:12:52');
+INSERT INTO `automatic` VALUES ('3', '57d10a4c9abbd', 'pc28', '18', '796538', '10', '5', '0', '0', '2016-12-08 13:55:22');
+INSERT INTO `automatic` VALUES ('4', '57d10a4c9abbd', 'jnd28', '21', '796538', '10', '4', '0', '0', '2016-12-09 14:12:52');
 INSERT INTO `automatic` VALUES ('5', '57d10a4c9abbd', 'js28', '19', '177376', '5', '10000', '0', '0', '2016-12-09 14:16:42');
+INSERT INTO `automatic` VALUES ('6', '57d10a4c9abbd', 'js16', '23', '177436', '5000', '1', '0', '1', '2016-12-09 15:21:38');
+INSERT INTO `automatic` VALUES ('7', '57d10a4c9abbd', 'fksc', '24', '591131', '333', '90', '0', '1', '2016-12-09 15:44:42');
 
 -- ----------------------------
 -- Table structure for game
@@ -106,7 +108,7 @@ CREATE TABLE `game` (
   `statu` tinyint(3) unsigned NOT NULL DEFAULT '0' COMMENT '0、竞猜，1、封盘，2、正在开奖，3、已开奖',
   `createtime` datetime NOT NULL COMMENT '记录创建时间',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1211 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1312 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of game
@@ -153,7 +155,7 @@ CREATE TABLE `guess` (
   `output` int(10) unsigned DEFAULT NULL COMMENT '产出金额总额',
   `createtime` datetime DEFAULT NULL COMMENT '记录创建时间',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=138 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of guess
@@ -190,7 +192,7 @@ CREATE TABLE `lottery` (
   `runtime` datetime NOT NULL COMMENT '开奖时间',
   `createtime` datetime NOT NULL COMMENT '记录创建时间',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1222 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1481 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of lottery
@@ -236,16 +238,19 @@ CREATE TABLE `mode` (
   `totalmoney` int(10) unsigned DEFAULT NULL,
   `createtime` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=23 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=27 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of mode
 -- ----------------------------
+INSERT INTO `mode` VALUES ('23', '57d10a4c9abbd', 'js16', '极速16', '0', '0', '0', '0', '3', '0', '10', '0', '21', '0', '27', '0', '0', '0', '90', '0', '0', '0', '90', '0', '0', '0', '0', '0', '0', '0', '0', '0', '241', '2016-12-09 15:04:04');
 INSERT INTO `mode` VALUES ('22', '57d10a4c9abbd', 'pc28', 'PC281', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '75', '0', '69', '0', '55', '0', '36', '0', '21', '0', '10', '0', '3', '0', '269', '2016-12-09 14:14:16');
 INSERT INTO `mode` VALUES ('20', '57d10a4c9abbd', 'fk28', '疯狂28', '0', '3', '0', '0', '0', '0', '28', '0', '0', '0', '0', '69', '0', '0', '0', '0', '69', '0', '0', '0', '0', '28', '0', '0', '0', '0', '3', '0', '200', '2016-12-09 14:00:48');
 INSERT INTO `mode` VALUES ('19', '57d10a4c9abbd', 'js28', '极速28', '1', '0', '6', '0', '15', '0', '28', '0', '45', '0', '63', '0', '73', '0', '75', '0', '69', '0', '55', '0', '36', '0', '21', '0', '10', '0', '3', '0', '500', '2016-12-09 13:57:21');
 INSERT INTO `mode` VALUES ('18', '57d10a4c9abbd', 'pc28', 'PC28', '1', '3', '6', '10', '15', '21', '28', '36', '45', '55', '0', '0', '0', '0', '0', '0', '0', '0', '55', '45', '36', '28', '21', '15', '10', '6', '3', '1', '440', '2016-12-09 13:50:16');
 INSERT INTO `mode` VALUES ('21', '57d10a4c9abbd', 'jnd28', '加拿大28', '0', '3', '0', '0', '0', '0', '0', '0', '0', '0', '0', '69', '0', '0', '0', '0', '0', '0', '0', '0', '0', '28', '0', '0', '0', '0', '0', '0', '100', '2016-12-09 14:06:00');
+INSERT INTO `mode` VALUES ('24', '57d10a4c9abbd', 'fksc', '疯狂赛车1', '0', '0', '10', '0', '10', '0', '10', '0', '10', '0', '10', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '50', '2016-12-09 15:36:17');
+INSERT INTO `mode` VALUES ('26', '57d10a4c9abbd', 'fksc', '疯狂赛车', '0', '10', '10', '10', '10', '10', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '50', '2016-12-09 15:44:05');
 
 -- ----------------------------
 -- Table structure for robotconfig
@@ -307,7 +312,7 @@ CREATE TABLE `user` (
 -- Records of user
 -- ----------------------------
 INSERT INTO `user` VALUES ('57d1049d88231', 'xuyuanfan5', '123', '100000000', '0', '2016-09-08 14:26:37');
-INSERT INTO `user` VALUES ('57d10a4c9abbd', 'xuyuanfan1', '123', '99840888', '0', '2016-09-08 14:50:52');
+INSERT INTO `user` VALUES ('57d10a4c9abbd', 'xuyuanfan1', '123', '99826642', '0', '2016-09-08 14:50:52');
 INSERT INTO `user` VALUES ('57d10a83b5acc', 'xuyuanfan2', '123', '99729972', '0', '2016-09-08 14:51:47');
 INSERT INTO `user` VALUES ('57d10a9ba983f', 'xuyuanfan3', '123', '100000000', '1', '2016-09-08 14:52:11');
 INSERT INTO `user` VALUES ('57d10abaf2f2d', 'xuyuanfan4', '123', '100000000', '1', '2016-09-08 14:52:42');

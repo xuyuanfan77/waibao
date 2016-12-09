@@ -126,6 +126,7 @@ class Transform {
 		$gameData = $Game->where($condition)->find();
 		
 		if($gameData) {
+			/*
 			// 对非风控用户进行开奖（修改竞猜表的所获金豆、修改用户表的总金豆数）
 			if($config['name']=='fksc'){																// 对最后开奖号码进行处理（除了疯狂赛车，其他的游戏最后的开奖号码都是三个开奖号码之和）
 				$gameNum = $gameData['num1'];
@@ -177,13 +178,10 @@ class Transform {
 						$User->save($userData);
 					}
 				}
-			}
-			
-			
-			
-			
+			}*/
+
 			// 修改竞猜表的数据（所获金豆）、修改用户表的数据（总金豆数）
-			/*if($config['name']=='fksc'){																// 对最后开奖号码进行处理（除了疯狂赛车，其他的游戏最后的开奖号码都是三个开奖号码之和）
+			if($config['name']=='fksc'){																// 对最后开奖号码进行处理（除了疯狂赛车，其他的游戏最后的开奖号码都是三个开奖号码之和）
 				$gameNum = $gameData['num1'];
 			}else{
 				$gameNum = $gameData['num1']+$gameData['num2']+$gameData['num3'];
@@ -207,7 +205,7 @@ class Transform {
 						$User->save($userData);
 					}
 				}
-			}*/
+			}
 			
 			// 修改游戏表的数据（开奖状态、中奖人数）
 			unset($condition);

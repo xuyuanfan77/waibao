@@ -164,7 +164,6 @@ class ModeController extends Controller {
 	
 	//选择模式
 	public function select(){
-		$numArea = array('pc28'=>array(0,28),'js28'=>array(0,28),'js16'=>array(3,16),'fk28'=>array(0,28),'fksc'=>array(1,10),'jnd28'=>array(0,28));	
 		$Mode = M('Mode');
 		unset($condition);
 		$condition['id'] = $_POST['model_id'];
@@ -172,7 +171,7 @@ class ModeController extends Controller {
 		
 		$data['bet_num'] = "";
 		$gamename = $modeData['gamename'];
-		for($index=$numArea[$gamename][0]; $index<$numArea[$gamename][0]+$numArea[$gamename][1]; $index++) {
+		for($index=0; $index<28; $index++) {
 			$data['bet_num'] = $data['bet_num'] . $modeData['money'.$index] . ',';
 		}
 		

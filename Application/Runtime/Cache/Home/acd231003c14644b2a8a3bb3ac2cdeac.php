@@ -12,49 +12,49 @@
         <link rel="stylesheet" href="/waibao/Public/front/game-comp.css">
         <link rel="stylesheet" href="/waibao/Public/front/guess.css">
         <link rel="stylesheet" href="/waibao/Public/front/touzhu-new.css">
-        <link rel="stylesheet" href="/waibao/Public/front/touzhu-jnd28.css">
+        <link rel="stylesheet" href="/waibao/Public/front/touzhu-js16.css">
         <script type="text/javascript">
             var nub = new Array(<?php echo ($configData); ?>);
-            var nub1 = new Array(1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 63, 69, 73, 75, 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 63, 69, 73, 75);
-            var mode = new Array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27], //全包
-            [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27], //单
-            [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26], //双
-            [14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27], //大
-            [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13], //小
-            [10, 11, 12, 13, 14, 15, 16, 17], //中
-            [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27], //边
-            [15, 17, 19, 21, 23, 25, 27], //大单
-            [1, 3, 5, 7, 9, 11, 13], //小单
-            [14, 16, 18, 20, 22, 24, 26], //大双
-            [0, 2, 4, 6, 8, 10, 12], //小双
-            [18, 19, 20, 21, 22, 23, 24, 25, 26, 27], //大边
-            [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], //小边
-            [1, 3, 5, 7, 9, 19, 21, 23, 25, 27], //单边
-            [0, 2, 4, 6, 8, 18, 20, 22, 24, 26], //双边
-            [0, 10, 20], //0尾
-            [1, 11, 21], //1尾
-            [2, 12, 22], //2尾
-            [3, 13, 23], //3尾
-            [4, 14, 24], //4尾
-            [0, 1, 2, 3, 4, 10, 11, 12, 13, 14, 20, 21, 22, 23, 24], //小尾
-            [5, 15, 25], //5尾
-            [6, 16, 26], //6尾
-            [7, 17, 27], //7尾
+            var nub1 = new Array(0, 0, 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 63);
+            var mode = new Array([3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18], //全包
+            [3, 5, 7, 9, 11, 13, 15, 17], //单
+            [4, 6, 8, 10, 12, 14, 16, 18], //双
+            [11, 12, 13, 14, 15, 16, 17, 18], //大
+            [3, 4, 5, 6, 7, 8, 9, 10], //小
+            [9, 10, 11, 12, 8, 13, ], //中
+            [3, 4, 5, 6, 7, 14, 15, 16, 17, 18], //边
+            [11, 13, 15, 17], //大单
+            [3, 5, 7, 9], //小单
+            [12, 14, 16, 18], //大双
+            [4, 6, 8, 10], //小双
+            [14, 15, 16, 17, 18], //大边
+            [3, 4, 5, 6, 7], //小边
+            [3, 5, 7, 15, 17], //单边
+            [4, 6, 14, 16, 18], //双边
+            [10], //0尾
+            [11], //1尾
+            [12], //2尾
+            [3, 13], //3尾
+            [4, 14], //4尾
+            [3, 4, 5, 10, 11, 12, 13, 14], //小尾
+            [5, 15], //5尾
+            [6, 16], //6尾
+            [7, 17], //7尾
             [8, 18], //8尾
-            [9, 19], //9尾
-            [5, 6, 7, 8, 9, 15, 16, 17, 18, 19, 25, 26, 27], //大尾
-            [0, 3, 6, 9, 12, 15, 18, 21, 24, 27], //3余0
-            [1, 4, 7, 10, 13, 16, 19, 22, 25], //3余1
-            [2, 5, 8, 11, 14, 17, 20, 23, 26], //3余2
-            [0, 4, 8, 12, 16, 20, 24], //4余0
-            [1, 5, 9, 13, 17, 21, 25], //4余1
-            [2, 6, 10, 14, 18, 22, 26], //4余2
-            [3, 7, 11, 15, 19, 23, 27], //4余3
-            [0, 5, 10, 15, 20, 25], //5余0
-            [1, 6, 11, 16, 21, 26], //5余1
-            [2, 7, 12, 17, 22, 27], //5余2
-            [3, 8, 13, 18, 23], //5余3
-            [4, 9, 14, 19, 24] //5余4
+            [9], //9尾
+            [5, 6, 7, 8, 9, 15, 16, 17, 18], //大尾
+            [3, 6, 9, 12, 15, 18], //3余0
+            [4, 7, 10, 13, 16], //3余1
+            [5, 8, 11, 14, 17], //3余2
+            [4, 8, 12, 16], //4余0
+            [5, 9, 13, 17], //4余1
+            [6, 10, 14, 18], //4余2
+            [7, 11, 15], //4余3
+            [5, 10, 15], //5余0
+            [6, 11, 16], //5余1
+            [7, 12, 17], //5余2
+            [8, 13, 18], //5余3
+            [9, 14] //5余4
             );
         </script>
     </head>
@@ -96,7 +96,7 @@
                                 <a class="game-img" href="<?php echo U('Num/index', array('game'=>'js28'));?>"></a>
                             </div>
                         </li>
-                        <li class="game-nav-list ">
+                        <li class="game-nav-list selected">
                             <div class="game-logo-box game-logo-jnd16">
                                 <span class="top-jt"></span>
                                 <a class="game-img" href="<?php echo U('Num/index', array('game'=>'js16'));?>"></a>
@@ -114,7 +114,7 @@
                                 <a class="game-img" href="<?php echo U('Num/index', array('game'=>'fksc'));?>"></a>
                             </div>
                         </li>
-                        <li class="game-nav-list selected">
+                        <li class="game-nav-list ">
                             <div class="game-logo-box game-logo-jnd28">
                                 <span class="top-jt"></span>
                                 <a class="game-img" href="<?php echo U('Num/index', array('game'=>'jnd28'));?>"></a>
@@ -137,22 +137,22 @@
                         </p>
                     </div>
                 </div>
-                <div class="jnd28-nav-box game-two-nav">
+                <div class="js16-nav-box game-two-nav">
                     <div class="two-nav-head">
-                        <a class="head-list sel-color"><strong>加拿大28首页</strong></a>
+                        <a class="head-list sel-color"><strong>极速28首页</strong></a>
                         <p class="my-touzhu-box clear-fix">
-                            <a class="my-touzhu-list " href="<?php echo U('Record/index', array('game'=>'jnd28'));?>">我的投注</a>
-							<a class="my-touzhu-list sel-color" href="<?php echo U('Mode/index', array('game'=>'jnd28'));?>">投注模式编辑</a>
-							<a class="my-touzhu-list bor-r" href="<?php echo U('Automatic/index', array('game'=>'jnd28'));?>">自动投注</a>
+                            <a class="my-touzhu-list " href="<?php echo U('Record/index', array('game'=>'js16'));?>">我的投注</a>
+							<a class="my-touzhu-list sel-color" href="<?php echo U('Mode/index', array('game'=>'js16'));?>">投注模式编辑</a>
+							<a class="my-touzhu-list bor-r" href="<?php echo U('Automatic/index', array('game'=>'js16'));?>">自动投注</a>
                         </p>
                     </div>
                 </div>
                 <!-- 公正提示 -->
-                <div class="kaijiang-box kaijiang-jnd28">
+                <div class="kaijiang-box kaijiang-js16">
                     <div class="chengxin-box">
                         <span class="chengxin-logo"></span>
                         <div class="chengxin-text-box">
-                            <p class="chengxin-text-01">加拿大28开奖采用加拿大第三方数据</p>
+                            <p class="chengxin-text-01">极速16开奖采用新韩国第三方数据</p>
                             <p class="chengxin-text-02">公平公正 无法作弊</p>
                         </div>
                     </div>
@@ -265,7 +265,7 @@
 					</div>
 				</div>
 				<div class="new_betting_form_right">
-					<div class="new_betting_form_right_cap">自定义模式<a id="add_mode" class="a1" href="<?php echo U('Mode/index', array('game'=>'jnd28'));?>">+添加新模式</a></div>
+					<div class="new_betting_form_right_cap">自定义模式<a id="add_mode" class="a1" href="<?php echo U('Mode/index', array('game'=>'js16'));?>">+添加新模式</a></div>
 					<div class="new_betting_from_name">
 						<ul id="my_modes_name clear-fix">
 							<?php if(is_array($modeData)): foreach($modeData as $key=>$data): ?><li>
@@ -298,7 +298,7 @@
 
 				<div class="across clear-fix" id="panel">
 					<div class="across_par1 ">
-						<?php $__FOR_START_2357__=0;$__FOR_END_2357__=10;for($i=$__FOR_START_2357__;$i < $__FOR_END_2357__;$i+=1){ ?><div class="across_par1_no clear-fix">
+						<?php $__FOR_START_30697__=3;$__FOR_END_30697__=9;for($i=$__FOR_START_30697__;$i < $__FOR_END_30697__;$i+=1){ ?><div class="across_par1_no clear-fix">
 								<div class="across_par1_no_left">
 									<div id="click_number<?php echo ($i); ?>" class="click_number no_left_bg" style="cursor: pointer;"><?php echo ($i); ?></div>
 								</div>
@@ -331,7 +331,7 @@
 							</div><?php } ?>
 					</div>
 					<div class="across_par1 ">
-						<?php $__FOR_START_16842__=10;$__FOR_END_16842__=18;for($i=$__FOR_START_16842__;$i < $__FOR_END_16842__;$i+=1){ ?><div class="across_par1_no clear-fix">
+						<?php $__FOR_START_15470__=9;$__FOR_END_15470__=13;for($i=$__FOR_START_15470__;$i < $__FOR_END_15470__;$i+=1){ ?><div class="across_par1_no clear-fix">
 								<div class="across_par1_no_left">
 									<div id="click_number<?php echo ($i); ?>" class="click_number no_left_bg" style="cursor: pointer;"><?php echo ($i); ?></div>
 								</div>
@@ -364,7 +364,7 @@
 							</div><?php } ?>
 					</div>
 					<div class="across_par1 ">
-						<?php $__FOR_START_16187__=18;$__FOR_END_16187__=28;for($i=$__FOR_START_16187__;$i < $__FOR_END_16187__;$i+=1){ ?><div class="across_par1_no clear-fix">
+						<?php $__FOR_START_28431__=13;$__FOR_END_28431__=19;for($i=$__FOR_START_28431__;$i < $__FOR_END_28431__;$i+=1){ ?><div class="across_par1_no clear-fix">
 								<div class="across_par1_no_left">
 									<div id="click_number<?php echo ($i); ?>" class="click_number no_left_bg" style="cursor: pointer;"><?php echo ($i); ?></div>
 								</div>
@@ -400,7 +400,7 @@
 						<p class="color_03" align="center">我的总投注金豆</p>
 						<p align="center"><strong><span id="total_md_lottery2">0</span></strong><span class="jindou-logo"></span></p>
 						<p>
-							<a href="javascript:void(0);" data-url="/waibao/index.php/Home/Mode/save" data-id="" data-game="jnd28" class="save_btn mode_save J_moshi_save">保存</a>
+							<a href="javascript:void(0);" data-url="/waibao/index.php/Home/Mode/save" data-id="" data-game="js16" class="save_btn mode_save J_moshi_save">保存</a>
 							<a href="javascript:void(0);" class="save_btn mode_save_anthor J_moshi_save">另保存</a>
 						</p>
 					</div>

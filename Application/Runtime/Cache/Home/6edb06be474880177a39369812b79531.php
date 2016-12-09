@@ -12,49 +12,17 @@
         <link rel="stylesheet" href="/waibao/Public/front/game-comp.css">
         <link rel="stylesheet" href="/waibao/Public/front/guess.css">
         <link rel="stylesheet" href="/waibao/Public/front/touzhu-new.css">
-        <link rel="stylesheet" href="/waibao/Public/front/touzhu-jnd28.css">
+        <link rel="stylesheet" href="/waibao/Public/front/touzhu-fksc.css">
         <script type="text/javascript">
             var nub = new Array(<?php echo ($configData); ?>);
-            var nub1 = new Array(1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 63, 69, 73, 75, 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 63, 69, 73, 75);
-            var mode = new Array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27], //全包
-            [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27], //单
-            [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26], //双
-            [14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27], //大
-            [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13], //小
-            [10, 11, 12, 13, 14, 15, 16, 17], //中
-            [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27], //边
-            [15, 17, 19, 21, 23, 25, 27], //大单
-            [1, 3, 5, 7, 9, 11, 13], //小单
-            [14, 16, 18, 20, 22, 24, 26], //大双
-            [0, 2, 4, 6, 8, 10, 12], //小双
-            [18, 19, 20, 21, 22, 23, 24, 25, 26, 27], //大边
-            [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], //小边
-            [1, 3, 5, 7, 9, 19, 21, 23, 25, 27], //单边
-            [0, 2, 4, 6, 8, 18, 20, 22, 24, 26], //双边
-            [0, 10, 20], //0尾
-            [1, 11, 21], //1尾
-            [2, 12, 22], //2尾
-            [3, 13, 23], //3尾
-            [4, 14, 24], //4尾
-            [0, 1, 2, 3, 4, 10, 11, 12, 13, 14, 20, 21, 22, 23, 24], //小尾
-            [5, 15, 25], //5尾
-            [6, 16, 26], //6尾
-            [7, 17, 27], //7尾
-            [8, 18], //8尾
-            [9, 19], //9尾
-            [5, 6, 7, 8, 9, 15, 16, 17, 18, 19, 25, 26, 27], //大尾
-            [0, 3, 6, 9, 12, 15, 18, 21, 24, 27], //3余0
-            [1, 4, 7, 10, 13, 16, 19, 22, 25], //3余1
-            [2, 5, 8, 11, 14, 17, 20, 23, 26], //3余2
-            [0, 4, 8, 12, 16, 20, 24], //4余0
-            [1, 5, 9, 13, 17, 21, 25], //4余1
-            [2, 6, 10, 14, 18, 22, 26], //4余2
-            [3, 7, 11, 15, 19, 23, 27], //4余3
-            [0, 5, 10, 15, 20, 25], //5余0
-            [1, 6, 11, 16, 21, 26], //5余1
-            [2, 7, 12, 17, 22, 27], //5余2
-            [3, 8, 13, 18, 23], //5余3
-            [4, 9, 14, 19, 24] //5余4
+            var nub1 = new Array(0, 1, 3, 6, 10, 15, 21, 28, 36, 45, 55);
+            var mode = new Array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], //全包
+            [1, 3, 5, 7, 9], //单
+            [2, 4, 6, 8, 10], //双
+            [6, 7, 8, 9, 10], //大
+            [1, 2, 3, 4, 5], //小
+            [4, 5, 6, 7], //中
+            [1, 2, 3, 8, 9, 10] //边
             );
         </script>
     </head>
@@ -108,13 +76,13 @@
                                 <a class="game-img" href="<?php echo U('Num/index', array('game'=>'fk28'));?>"></a>
                             </div>
                         </li>
-                        <li class="game-nav-list ">
+                        <li class="game-nav-list selected">
                             <div class="game-logo-box game-logo-fksc">
                                 <span class="top-jt"></span>
                                 <a class="game-img" href="<?php echo U('Num/index', array('game'=>'fksc'));?>"></a>
                             </div>
                         </li>
-                        <li class="game-nav-list selected">
+                        <li class="game-nav-list ">
                             <div class="game-logo-box game-logo-jnd28">
                                 <span class="top-jt"></span>
                                 <a class="game-img" href="<?php echo U('Num/index', array('game'=>'jnd28'));?>"></a>
@@ -137,26 +105,26 @@
                         </p>
                     </div>
                 </div>
-                <div class="jnd28-nav-box game-two-nav">
+                <div class="fksc-nav-box game-two-nav">
                     <div class="two-nav-head">
-                        <a class="head-list sel-color"><strong>加拿大28首页</strong></a>
+                        <a class="head-list sel-color"><strong>疯狂赛车首页</strong></a>
                         <p class="my-touzhu-box clear-fix">
-                            <a class="my-touzhu-list " href="<?php echo U('Record/index', array('game'=>'jnd28'));?>">我的投注</a>
-							<a class="my-touzhu-list sel-color" href="<?php echo U('Mode/index', array('game'=>'jnd28'));?>">投注模式编辑</a>
-							<a class="my-touzhu-list bor-r" href="<?php echo U('Automatic/index', array('game'=>'jnd28'));?>">自动投注</a>
+                            <a class="my-touzhu-list " href="<?php echo U('Record/index', array('game'=>'fksc'));?>">我的投注</a>
+							<a class="my-touzhu-list sel-color" href="<?php echo U('Mode/index', array('game'=>'fksc'));?>">投注模式编辑</a>
+							<a class="my-touzhu-list bor-r" href="<?php echo U('Automatic/index', array('game'=>'fksc'));?>">自动投注</a>
                         </p>
                     </div>
                 </div>
                 <!-- 公正提示 -->
-                <div class="kaijiang-box kaijiang-jnd28">
+                <div class="kaijiang-box kaijiang-fksc">
                     <div class="chengxin-box">
                         <span class="chengxin-logo"></span>
                         <div class="chengxin-text-box">
-                            <p class="chengxin-text-01">加拿大28开奖采用加拿大第三方数据</p>
+                            <p class="chengxin-text-01">疯狂赛车开奖采用北京PK10第三方数据</p>
                             <p class="chengxin-text-02">公平公正 无法作弊</p>
                         </div>
                     </div>
-                    <div class="kaijiang-time-box">
+                    <div class="kaijiang-time-box fksc-box">
                         <div class="J_kjTimeBox">
                             <p class="kaijiang-time-text mar-t">
                                 距离第
@@ -170,12 +138,9 @@
                             <p class="kaijiang-time-text">
                                 第
                                 <strong><?php echo ($tipData["issue"]); ?></strong>
-                                <?php if($userData['control'] == 0): ?>期开奖结果：<?php echo ($tipData["num1"]); ?>+<?php echo ($tipData["num2"]); ?>+<?php echo ($tipData["num3"]); ?>=
-									<span class="now-jieguo"><?php echo ($tipData['num1']+$tipData['num2']+$tipData['num3']); ?></span>
-								<?php else: ?>
-									期开奖结果：<?php echo ($tipData["fknum1"]); ?>+<?php echo ($tipData["fknum2"]); ?>+<?php echo ($tipData["fknum3"]); ?>=
-									<span class="now-jieguo"><?php echo ($tipData['fknum1']+$tipData['fknum2']+$tipData['fknum3']); ?></span><?php endif; ?>
-                                <a target="_blank" href="http://www.bwlc.gov.cn/bulletin/keno.html">[官方查询]</a>
+                                期开奖结果：
+                                <span class="fk-car car<?php echo ($tipData['num1']); ?>"></span>
+                                <a target="_blank" href="http://www.bwlc.net/bulletin/trax.html">[官方查询]</a>
                                 <a href="http://game3799.com/lucky28/guide">[游戏帮助]</a>
                             </p>
                         </div>
@@ -201,78 +166,37 @@
 				<div class="new_betting_form">
 					<div class="new_betting_form_left">
 						<div class="new_betting_form_left_cap">
-							<a id="m_a0" class="sel" onclick="modes_easy_all(0)">简易模式</a><a id="m_a1" onclick="modes_easy_all(1)">标准模式</a>
+							<a id="m_a0" class="sel" onclick="modes_easy_all(0)">简易模式</a>
 						</div>
 						<!--简易模式-->
 						<div id="modes_easy" class="new_betting_simple_model">
-						<p>
-							<a href="javascript:void(0);" attr="3" class="a1 mode_lottery1">压大<span>(14到27)</span></a>
-							<a href="javascript:void(0);" attr="4" style="cursor: pointer" class="a1 mode_lottery1">压小<span>(0到13)</span></a>
-						</p>
-						<p>
-							<a href="javascript:void(0);" attr="1" class="a2 mode_lottery1">单<br>
-								<span>奇数1.3.5…27</span></a>
-							<a href="javascript:void(0);" attr="2" class="a2 mode_lottery1">双<br>
-								<span>偶数0.2.4…26</span></a>
-							<a href="javascript:void(0);" attr="5" class="a2 mode_lottery1">中<br>
-								<span>10到17</span></a>
-							<a href="javascript:void(0);" attr="6" class="a2 mode_lottery1">边<br>
-								<span>0-9到18-27</span></a>
-						</p>
+							<p>
+								<a href="javascript:void(0);" attr="3" class="a1 mode_lottery1">压大<span>(14到27)</span></a>
+								<a href="javascript:void(0);" attr="4" style="cursor: pointer" class="a1 mode_lottery1">压小<span>(0到13)</span></a>
+							</p>
+							<p>
+								<a href="javascript:void(0);" attr="1" class="a2 mode_lottery1">单<br>
+									<span>奇数1.3.5…27</span></a>
+								<a href="javascript:void(0);" attr="2" class="a2 mode_lottery1">双<br>
+									<span>偶数0.2.4…26</span></a>
+								<a href="javascript:void(0);" attr="5" class="a2 mode_lottery1">中<br>
+									<span>10到17</span></a>
+								<a href="javascript:void(0);" attr="6" class="a2 mode_lottery1">边<br>
+									<span>0-9到18-27</span></a>
+							</p>
+						</div>
+						<!--标准模式-->
 					</div>
-					<!--标准模式-->
-					<div id="modes_all" class="new_standard" style="display: none;">
-						<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="0">全包</a>
-						<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="1">单</a>
-						<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="7">大单</a>
-						<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="8">小单</a>
-						<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="13">单边</a>
-						<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="2">双</a>
-						<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="9">大双</a>
-						<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="10">小双</a>
-						<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="14">双边</a>
-						<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="3">大</a>
-						<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="4">小</a>
-						<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="5">中</a>
-						<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="6">边</a>
-						<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="11">大边</a>
-						<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="12">小边</a>
-						<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="15">0尾</a>
-						<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="16">1尾</a>
-						<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="17">2尾</a>
-						<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="18">3尾</a>
-						<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="19">4尾</a>
-						<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="21">5尾</a>
-						<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="22">6尾</a>
-						<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="23">7尾</a>
-						<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="24">8尾</a>
-						<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="25">9尾</a>
-						<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="20">小尾</a>
-						<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="26">大尾</a>
-						<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="27">3余0</a>
-						<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="28">3余1</a>
-						<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="29">3余2</a>
-						<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="30">4余0</a>
-						<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="31">4余1</a>
-						<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="32">4余2</a>
-						<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="33">4余3</a>
-						<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="34">5余0</a>
-						<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="35">5余1</a>
-						<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="36">5余2</a>
-						<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="37">5余3</a>
-						<a href="javascript:void(0);" class="standard_bg1 mode_lottery" attr="38">5余4</a>
-						<a href="javascript:void(0);" class="standard_bg1 mode_lottery">清空</a>
-					</div>
-				</div>
-				<div class="new_betting_form_right">
-					<div class="new_betting_form_right_cap">自定义模式<a id="add_mode" class="a1" href="<?php echo U('Mode/index', array('game'=>'jnd28'));?>">+添加新模式</a></div>
-					<div class="new_betting_from_name">
-						<ul id="my_modes_name clear-fix">
-							<?php if(is_array($modeData)): foreach($modeData as $key=>$data): ?><li>
-									<a class="a3 J_moshi_list" data-url="/waibao/index.php/Home/Mode/select" data-id="<?php echo ($data['id']); ?>" href="#"><?php echo ($data['modename']); ?></a>
-									<a class="del-moshi J_delMoshi" data-url="/waibao/index.php/Home/Mode/del" href="#">x</a>
-								</li><?php endforeach; endif; ?>
-						</ul>
+					<div class="new_betting_form_right">
+						<div class="new_betting_form_right_cap">自定义模式<a id="add_mode" class="a1" href="<?php echo U('Mode/index', array('game'=>'fksc'));?>">+添加新模式</a></div>
+						<div class="new_betting_from_name">
+							<ul id="my_modes_name clear-fix">
+								<?php if(is_array($modeData)): foreach($modeData as $key=>$data): ?><li>
+										<a class="a3 J_moshi_list" data-url="/waibao/index.php/Home/Mode/select" data-id="<?php echo ($data['id']); ?>" href="#"><?php echo ($data['modename']); ?></a>
+										<a class="del-moshi J_delMoshi" data-url="/waibao/index.php/Home/Mode/del" href="#">x</a>
+									</li><?php endforeach; endif; ?>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -297,10 +221,10 @@
 				</div>
 
 				<div class="across clear-fix" id="panel">
-					<div class="across_par1 ">
-						<?php $__FOR_START_2357__=0;$__FOR_END_2357__=10;for($i=$__FOR_START_2357__;$i < $__FOR_END_2357__;$i+=1){ ?><div class="across_par1_no clear-fix">
+					<div class="across_par1 across_par_fksc">
+						<?php $__FOR_START_20710__=1;$__FOR_END_20710__=6;for($i=$__FOR_START_20710__;$i < $__FOR_END_20710__;$i+=1){ ?><div class="across_par1_no across_par1_width clear-fix">
 								<div class="across_par1_no_left">
-									<div id="click_number<?php echo ($i); ?>" class="click_number no_left_bg" style="cursor: pointer;"><?php echo ($i); ?></div>
+									<div id="click_number<?php echo ($i); ?>" class="click_number sc_left_logo sc_logo_0<?php echo ($i); ?>" style="cursor: pointer;"></div>
 								</div>
 								<div style="display: none;">
 									<input name="checkboxd" id="checkboxd<?php echo ($i); ?>" value="checkbox" type="checkbox">
@@ -310,9 +234,7 @@
 										<input class="downhhhh input_modou_txt_null" name="mdp_coin" id="txt<?php echo ($i); ?>"
 										onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
 										maxlength="15" type="text">
-										<a style="display: none;" class="sack_02" href="javascript:void(0);" onclick="clear_input('txt<?php echo ($i); ?>',this);"
-										id="clear_this_val<?php echo ($i); ?>">
-										</a>
+										<a style="display: none;" class="sack_02" href="javascript:void(0);" onclick="clear_input('txt<?php echo ($i); ?>',this);" id="clear_this_val<?php echo ($i); ?>"></a>
 										<span style="display: none;" id="peilv<?php echo ($i); ?>">
 											<label>×</label>
 											<a href="javascript:void(0);" class="multiple" id="<?php echo ($i); ?>" val="0.1">.1</a>
@@ -325,15 +247,17 @@
 										当前赔率:
 										<span class="color_02" id="this_lottery_odds<?php echo ($i); ?>"><?php echo ($gameOdds[$i]); ?></span>
 										| 上期赔率:
-										<span id="last_lottery_odds<?php echo ($i); ?>"><?php echo ($preGameOdds[$i]); ?></span>
+										<span id="last_lottery_odds<?php echo ($i); ?>"><?php echo ($preGameOdds[$i-1]); ?></span>
 									</p>
 								</div>
 							</div><?php } ?>
 					</div>
-					<div class="across_par1 ">
-						<?php $__FOR_START_16842__=10;$__FOR_END_16842__=18;for($i=$__FOR_START_16842__;$i < $__FOR_END_16842__;$i+=1){ ?><div class="across_par1_no clear-fix">
+					<div class="across_par1 across_par_fksc">
+						<?php $__FOR_START_13863__=6;$__FOR_END_13863__=11;for($i=$__FOR_START_13863__;$i < $__FOR_END_13863__;$i+=1){ ?><div class="across_par1_no across_par1_width clear-fix">
 								<div class="across_par1_no_left">
-									<div id="click_number<?php echo ($i); ?>" class="click_number no_left_bg" style="cursor: pointer;"><?php echo ($i); ?></div>
+									<?php if($i != 10): ?><div id="click_number<?php echo ($i); ?>" class="click_number sc_left_logo sc_logo_0<?php echo ($i); ?>" style="cursor: pointer;"></div>
+									<?php else: ?>
+										<div id="click_number<?php echo ($i); ?>" class="click_number sc_left_logo sc_logo_<?php echo ($i); ?>" style="cursor: pointer;"></div><?php endif; ?>
 								</div>
 								<div style="display: none;">
 									<input name="checkboxd" id="checkboxd<?php echo ($i); ?>" value="checkbox" type="checkbox">
@@ -343,9 +267,7 @@
 										<input class="downhhhh input_modou_txt_null" name="mdp_coin" id="txt<?php echo ($i); ?>"
 										onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
 										maxlength="15" type="text">
-										<a style="display: none;" class="sack_02" href="javascript:void(0);" onclick="clear_input('txt<?php echo ($i); ?>',this);"
-										id="clear_this_val<?php echo ($i); ?>">
-										</a>
+										<a style="display: none;" class="sack_02" href="javascript:void(0);" onclick="clear_input('txt<?php echo ($i); ?>',this);" id="clear_this_val<?php echo ($i); ?>"></a>
 										<span style="display: none;" id="peilv<?php echo ($i); ?>">
 											<label>×</label>
 											<a href="javascript:void(0);" class="multiple" id="<?php echo ($i); ?>" val="0.1">.1</a>
@@ -358,40 +280,7 @@
 										当前赔率:
 										<span class="color_02" id="this_lottery_odds<?php echo ($i); ?>"><?php echo ($gameOdds[$i]); ?></span>
 										| 上期赔率:
-										<span id="last_lottery_odds<?php echo ($i); ?>"><?php echo ($preGameOdds[$i]); ?></span>
-									</p>
-								</div>
-							</div><?php } ?>
-					</div>
-					<div class="across_par1 ">
-						<?php $__FOR_START_16187__=18;$__FOR_END_16187__=28;for($i=$__FOR_START_16187__;$i < $__FOR_END_16187__;$i+=1){ ?><div class="across_par1_no clear-fix">
-								<div class="across_par1_no_left">
-									<div id="click_number<?php echo ($i); ?>" class="click_number no_left_bg" style="cursor: pointer;"><?php echo ($i); ?></div>
-								</div>
-								<div style="display: none;">
-									<input name="checkboxd" id="checkboxd<?php echo ($i); ?>" value="checkbox" type="checkbox">
-								</div>
-								<div class="across_par1_no_right">
-									<p>
-										<input class="downhhhh input_modou_txt_null" name="mdp_coin" id="txt<?php echo ($i); ?>"
-										onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
-										maxlength="15" type="text">
-										<a style="display: none;" class="sack_02" href="javascript:void(0);" onclick="clear_input('txt<?php echo ($i); ?>',this);"
-										id="clear_this_val<?php echo ($i); ?>">
-										</a>
-										<span style="display: none;" id="peilv<?php echo ($i); ?>">
-											<label>×</label>
-											<a href="javascript:void(0);" class="multiple" id="<?php echo ($i); ?>" val="0.1">.1</a>
-											<a href="javascript:void(0);" id="<?php echo ($i); ?>" val="0.5" class="multiple">.5</a>
-											<a href="javascript:void(0);" id="<?php echo ($i); ?>" val="2" class="multiple">2</a>
-											<a href="javascript:void(0);" id="<?php echo ($i); ?>" val="10" class="multiple">10</a>
-										</span>
-									</p>
-									<p>
-										当前赔率:
-										<span class="color_02" id="this_lottery_odds<?php echo ($i); ?>"><?php echo ($gameOdds[$i]); ?></span>
-										| 上期赔率:
-										<span id="last_lottery_odds<?php echo ($i); ?>"><?php echo ($preGameOdds[$i]); ?></span>
+										<span id="last_lottery_odds<?php echo ($i); ?>"><?php echo ($preGameOdds[$i-1]); ?></span>
 									</p>
 								</div>
 							</div><?php } ?>
@@ -400,7 +289,7 @@
 						<p class="color_03" align="center">我的总投注金豆</p>
 						<p align="center"><strong><span id="total_md_lottery2">0</span></strong><span class="jindou-logo"></span></p>
 						<p>
-							<a href="javascript:void(0);" data-url="/waibao/index.php/Home/Mode/save" data-id="" data-game="jnd28" class="save_btn mode_save J_moshi_save">保存</a>
+							<a href="javascript:void(0);" data-url="/waibao/index.php/Home/Mode/save" data-id="" data-game="fksc" class="save_btn mode_save J_moshi_save">保存</a>
 							<a href="javascript:void(0);" class="save_btn mode_save_anthor J_moshi_save">另保存</a>
 						</p>
 					</div>
