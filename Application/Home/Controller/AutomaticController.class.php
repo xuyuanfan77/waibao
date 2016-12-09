@@ -87,7 +87,7 @@ class AutomaticController extends Controller {
 		$Automatic = M('Automatic');
 		unset($condition);
 		$condition['userid'] = array('eq',session('userId'));
-		$condition['gamename'] = array('eq',$this->getGameStyle());
+		$condition['gamename'] = array('eq',$_POST['game']);
 		$automaticData = $Automatic->where($condition)->find();
 		if($automaticData){
 			//如果有数据，修改自动投注数据
@@ -101,7 +101,7 @@ class AutomaticController extends Controller {
 		}else{
 			//如果没有数据，增加自动投注数据
 			$automaticData['userid'] = session('userId');
-			$automaticData['gamename'] = $this->getGameStyle();
+			$automaticData['gamename'] = $_POST['game'];
 			$automaticData['modeid'] = $_POST['start_model_id'];
 			$automaticData['issuebg'] = $_POST['start_no'];
 			$automaticData['issuenum'] = $_POST['bet_count'];

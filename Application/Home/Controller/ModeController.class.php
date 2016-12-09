@@ -111,7 +111,7 @@ class ModeController extends Controller {
 		$bet_num	= $_POST['bet_num'];													//模式内容
 		$total		= $_POST['total'];														//模式总额
 		$model_id	= $_POST['model_id'];													//模式id
-		$gamename = $this->getGameStyle();
+		$gamename = $_POST['game'];															//模式游戏类型
 		if($model_id){
 			$Mode = M('Mode');
 			unset($condition);
@@ -171,7 +171,7 @@ class ModeController extends Controller {
 		$modeData = $Mode->where($condition)->find();
 		
 		$data['bet_num'] = "";
-		$gamename = $this->getGameStyle();
+		$gamename = $modeData['gamename'];
 		for($index=$numArea[$gamename][0]; $index<$numArea[$gamename][0]+$numArea[$gamename][1]; $index++) {
 			$data['bet_num'] = $data['bet_num'] . $modeData['money'.$index] . ',';
 		}

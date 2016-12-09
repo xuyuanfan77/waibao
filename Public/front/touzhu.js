@@ -504,6 +504,7 @@ $(".fc-main-box").delegate(".J_moshi_ajax","click",function(e){
 
 	var all_val = sum_val(),
 		_url = $(".J_moshi_save").eq(0).attr("data-url"),
+		_game = $(".J_moshi_save").eq(0).attr("data-game"),
 		_val = _zuhe($("#total_md_lottery2").text()),
 		_id = $(".J_moshi_save").eq(0).attr("data-id"),
 		_name = $(".fuceng-box .moshi_name_input").val();
@@ -521,7 +522,7 @@ $(".fc-main-box").delegate(".J_moshi_ajax","click",function(e){
 				url: _url,
 				type: "post",
 				dataType: "json",
-				data: {name:_name,bet_num:all_val,total:_val,model_id:_id},
+				data: {name:_name,game:_game,bet_num:all_val,total:_val,model_id:_id},
 				success: function(data){
 					error_fc1(data.msg);
 					moshi_save_key = 1;

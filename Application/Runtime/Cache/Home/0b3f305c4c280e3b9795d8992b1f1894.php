@@ -38,7 +38,7 @@
                 <!-- 导航 start -->
                 <div class="game-nav-box clear-fix">
                     <ul class="game-nav">
-                        <li class="game-nav-list selected">
+                        <li class="game-nav-list">
                             <div class="game-logo-box game-logo-pc28">
                                 <span class="top-jt"></span>
                                 <a class="game-img" href="<?php echo U('Num/index', array('game'=>'pc28'));?>"></a>
@@ -68,7 +68,7 @@
                                 <a class="game-img" href="<?php echo U('Num/index', array('game'=>'fksc'));?>"></a>
                             </div>
                         </li>
-                        <li class="game-nav-list ">
+                        <li class="game-nav-list selected">
                             <div class="game-logo-box game-logo-jnd28">
                                 <span class="top-jt"></span>
                                 <a class="game-img" href="<?php echo U('Num/index', array('game'=>'jnd28'));?>"></a>
@@ -90,22 +90,22 @@
                         </p>
                     </div>
                 </div>
-                <div class="pc28-nav-box game-two-nav">
+                <div class="jnd28-nav-box game-two-nav">
                     <div class="two-nav-head">
-                        <a class="head-list sel-color"><strong>PC28首页</strong></a>
+                        <a class="head-list sel-color"><strong>加拿大28首页</strong></a>
                         <p class="my-touzhu-box clear-fix">
-                            <a class="my-touzhu-list" href="<?php echo U('Record/index', array('game'=>'pc28'));?>">我的投注</a>
-							<a class="my-touzhu-list" href="<?php echo U('Mode/index', array('game'=>'pc28'));?>">投注模式编辑</a>
-							<a class="my-touzhu-list bor-r sel-color" href="<?php echo U('Automatic/index', array('game'=>'pc28'));?>">自动投注</a>
+                            <a class="my-touzhu-list" href="<?php echo U('Record/index', array('game'=>'jnd28'));?>">我的投注</a>
+							<a class="my-touzhu-list" href="<?php echo U('Mode/index', array('game'=>'jnd28'));?>">投注模式编辑</a>
+							<a class="my-touzhu-list bor-r sel-color" href="<?php echo U('Automatic/index', array('game'=>'jnd28'));?>">自动投注</a>
                         </p>
                     </div>
                 </div>
                 <!-- 公正提示 -->
-                <div class="kaijiang-box kaijiang-pc28">
+                <div class="kaijiang-box kaijiang-jnd28">
                     <div class="chengxin-box">
                         <span class="chengxin-logo"></span>
                         <div class="chengxin-text-box">
-                            <p class="chengxin-text-01">PC28开奖采用北京快乐8第三方数据</p>
+                            <p class="chengxin-text-01">加拿大28开奖采用加拿大第三方数据</p>
                             <p class="chengxin-text-02">公平公正 无法作弊</p>
                         </div>
                     </div>
@@ -155,7 +155,7 @@
 				<div class="tips-box">
 					<p class="tips-p"><strong class="tips-s">自动投注：</strong>网站根据您的要求，开奖前自动帮您投注。完成以下设置即可开始自动投注，而且您随时可以停止自动投注。</p>
 				</div>
-				<div class="set-out-box pc28-box">
+				<div class="set-out-box jnd28-box">
 					<h4 class="set-h4">设置自动投注期数并开始投注</h4>
 					<div class="set-box clear-fix">
 						<ul>
@@ -169,7 +169,7 @@
 													<?php else: ?>
 														<option value="<?php echo ($data['id']); ?>"><?php echo ($data['modename']); ?></option><?php endif; endforeach; endif; ?>
 											</select>
-										<a href="<?php echo U('Mode/index', array('game'=>'pc28'));?>" class="add-mod"><i class="tri"></i><strong>+</strong>添加模式</a>
+										<a href="<?php echo U('Mode/index', array('game'=>'jnd28'));?>" class="add-mod"><i class="tri"></i><strong>+</strong>添加模式</a>
 										选择自动投注的开始模式自动投注将从这个模式开始
 									</p>
 									<p class="lir-c2">
@@ -195,7 +195,7 @@
 					</div>
 				</div>
 
-				<div class="model-out-box pc28-box">
+				<div class="model-out-box jnd28-box">
 					<h4 class="set-h4">设置自动投注期数并开始投注</h4>
 					<p class="model-p">自动投注开启后，系统会根据您的设置进行循环投注，直到达到停止投注的条件。</p>
 					<div class="model-box clear-fix" id="my_modes">
@@ -219,8 +219,8 @@
 								</li>
 							</ul><?php endforeach; endif; ?>
 					</div>
-					<p class="add-p"><a href="<?php echo U('Mode/index', array('game'=>'pc28'));?>" class="add-btn color0">+添加模式</a></p>
-					<a href="#" class="autobet-btn J_autobtn" data-url="/waibao/index.php/Home/Automatic/updateAutoStatus" data-game="pc28">
+					<p class="add-p"><a href="<?php echo U('Mode/index', array('game'=>'jnd28'));?>" class="add-btn color0">+添加模式</a></p>
+					<a href="#" class="autobet-btn J_autobtn" data-url="/waibao/index.php/Home/Automatic/updateAutoStatus" data-game="jnd28">
 						<?php if(($automaticData['status'] == 1)): ?>结束自动投注
 						<?php else: ?>
 							开始自动投注<?php endif; ?>

@@ -231,6 +231,7 @@
 				var issue_now = parseInt($.trim($("#issue_now").text()));
 				if(issue >= issue_now){
 					var _url = $(".autobet-btn").attr("data-url"),
+						_game = $(".autobet-btn").attr("data-game"),
 						kdou_up = $("#kdou_up").val(),
 						kdou_down = $("#kdou_down").val();
 
@@ -251,6 +252,7 @@
 						data:{
 							start_model_id:id,
 							start_no:issue,
+							game:_game,
 							bet_count:play_num,
 							max_f:kdou_up,
 							min_f:kdou_down,

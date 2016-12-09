@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="/waibao/Public/front/game-comp.css">
         <link rel="stylesheet" href="/waibao/Public/front/guess.css">
         <link rel="stylesheet" href="/waibao/Public/front/touzhu-new.css">
-        <link rel="stylesheet" href="/waibao/Public/front/touzhu-pc28.css">
+        <link rel="stylesheet" href="/waibao/Public/front/touzhu-js28.css">
         <script type="text/javascript">
             var nub = new Array(<?php echo ($configData); ?>);
             var nub1 = new Array(1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 63, 69, 73, 75, 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 63, 69, 73, 75);
@@ -84,13 +84,13 @@
                 <!-- 导航 start -->
                 <div class="game-nav-box clear-fix">
                     <ul class="game-nav">
-                        <li class="game-nav-list selected">
+                        <li class="game-nav-list">
                             <div class="game-logo-box game-logo-pc28">
                                 <span class="top-jt"></span>
                                 <a class="game-img" href="<?php echo U('Num/index', array('game'=>'pc28'));?>"></a>
                             </div>
                         </li>
-                        <li class="game-nav-list ">
+                        <li class="game-nav-list selected">
                             <div class="game-logo-box game-logo-js28">
                                 <span class="top-jt"></span>
                                 <a class="game-img" href="<?php echo U('Num/index', array('game'=>'js28'));?>"></a>
@@ -137,22 +137,22 @@
                         </p>
                     </div>
                 </div>
-                <div class="pc28-nav-box game-two-nav">
+                <div class="js28-nav-box game-two-nav">
                     <div class="two-nav-head">
-                        <a class="head-list sel-color"><strong>PC28首页</strong></a>
+                        <a class="head-list sel-color"><strong>极速28首页</strong></a>
                         <p class="my-touzhu-box clear-fix">
-                            <a class="my-touzhu-list " href="<?php echo U('Record/index', array('game'=>'pc28'));?>">我的投注</a>
-							<a class="my-touzhu-list sel-color" href="<?php echo U('Mode/index', array('game'=>'pc28'));?>">投注模式编辑</a>
-							<a class="my-touzhu-list bor-r" href="<?php echo U('Automatic/index', array('game'=>'pc28'));?>">自动投注</a>
+                            <a class="my-touzhu-list " href="<?php echo U('Record/index', array('game'=>'js28'));?>">我的投注</a>
+							<a class="my-touzhu-list sel-color" href="<?php echo U('Mode/index', array('game'=>'js28'));?>">投注模式编辑</a>
+							<a class="my-touzhu-list bor-r" href="<?php echo U('Automatic/index', array('game'=>'js28'));?>">自动投注</a>
                         </p>
                     </div>
                 </div>
                 <!-- 公正提示 -->
-                <div class="kaijiang-box kaijiang-pc28">
+                <div class="kaijiang-box kaijiang-js28">
                     <div class="chengxin-box">
                         <span class="chengxin-logo"></span>
                         <div class="chengxin-text-box">
-                            <p class="chengxin-text-01">PC28开奖采用北京快乐8第三方数据</p>
+                            <p class="chengxin-text-01">极速28开奖采用新韩国第三方数据</p>
                             <p class="chengxin-text-02">公平公正 无法作弊</p>
                         </div>
                     </div>
@@ -265,7 +265,7 @@
 					</div>
 				</div>
 				<div class="new_betting_form_right">
-					<div class="new_betting_form_right_cap">自定义模式<a id="add_mode" class="a1" href="<?php echo U('Mode/index', array('game'=>'pc28'));?>">+添加新模式</a></div>
+					<div class="new_betting_form_right_cap">自定义模式<a id="add_mode" class="a1" href="<?php echo U('Mode/index', array('game'=>'js28'));?>">+添加新模式</a></div>
 					<div class="new_betting_from_name">
 						<ul id="my_modes_name clear-fix">
 							<?php if(is_array($modeData)): foreach($modeData as $key=>$data): ?><li>
@@ -298,7 +298,7 @@
 
 				<div class="across clear-fix" id="panel">
 					<div class="across_par1 ">
-						<?php $__FOR_START_5557__=0;$__FOR_END_5557__=10;for($i=$__FOR_START_5557__;$i < $__FOR_END_5557__;$i+=1){ ?><div class="across_par1_no clear-fix">
+						<?php $__FOR_START_9671__=0;$__FOR_END_9671__=10;for($i=$__FOR_START_9671__;$i < $__FOR_END_9671__;$i+=1){ ?><div class="across_par1_no clear-fix">
 								<div class="across_par1_no_left">
 									<div id="click_number<?php echo ($i); ?>" class="click_number no_left_bg" style="cursor: pointer;"><?php echo ($i); ?></div>
 								</div>
@@ -331,7 +331,7 @@
 							</div><?php } ?>
 					</div>
 					<div class="across_par1 ">
-						<?php $__FOR_START_5194__=10;$__FOR_END_5194__=18;for($i=$__FOR_START_5194__;$i < $__FOR_END_5194__;$i+=1){ ?><div class="across_par1_no clear-fix">
+						<?php $__FOR_START_26612__=10;$__FOR_END_26612__=18;for($i=$__FOR_START_26612__;$i < $__FOR_END_26612__;$i+=1){ ?><div class="across_par1_no clear-fix">
 								<div class="across_par1_no_left">
 									<div id="click_number<?php echo ($i); ?>" class="click_number no_left_bg" style="cursor: pointer;"><?php echo ($i); ?></div>
 								</div>
@@ -364,7 +364,7 @@
 							</div><?php } ?>
 					</div>
 					<div class="across_par1 ">
-						<?php $__FOR_START_24507__=18;$__FOR_END_24507__=28;for($i=$__FOR_START_24507__;$i < $__FOR_END_24507__;$i+=1){ ?><div class="across_par1_no clear-fix">
+						<?php $__FOR_START_19229__=18;$__FOR_END_19229__=28;for($i=$__FOR_START_19229__;$i < $__FOR_END_19229__;$i+=1){ ?><div class="across_par1_no clear-fix">
 								<div class="across_par1_no_left">
 									<div id="click_number<?php echo ($i); ?>" class="click_number no_left_bg" style="cursor: pointer;"><?php echo ($i); ?></div>
 								</div>
@@ -400,7 +400,7 @@
 						<p class="color_03" align="center">我的总投注金豆</p>
 						<p align="center"><strong><span id="total_md_lottery2">0</span></strong><span class="jindou-logo"></span></p>
 						<p>
-							<a href="javascript:void(0);" data-url="/waibao/index.php/Home/Mode/save" data-id="" data-game="pc28" class="save_btn mode_save J_moshi_save">保存</a>
+							<a href="javascript:void(0);" data-url="/waibao/index.php/Home/Mode/save" data-id="" data-game="js28" class="save_btn mode_save J_moshi_save">保存</a>
 							<a href="javascript:void(0);" class="save_btn mode_save_anthor J_moshi_save">另保存</a>
 						</p>
 					</div>
