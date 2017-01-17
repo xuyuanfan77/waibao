@@ -1,22 +1,22 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : xuyuanfan
-Source Server Version : 50714
+Source Server         : localhost
+Source Server Version : 50617
 Source Host           : localhost:3306
 Source Database       : waibao
 
 Target Server Type    : MYSQL
-Target Server Version : 50714
+Target Server Version : 50617
 File Encoding         : 65001
 
-Date: 2016-12-09 17:19:34
+Date: 2017-01-17 15:23:32
 */
 
 SET FOREIGN_KEY_CHECKS=0;
 
 -- ----------------------------
--- Table structure for admin
+-- Table structure for `admin`
 -- ----------------------------
 DROP TABLE IF EXISTS `admin`;
 CREATE TABLE `admin` (
@@ -32,7 +32,7 @@ CREATE TABLE `admin` (
 INSERT INTO `admin` VALUES ('1', 'admin', '123');
 
 -- ----------------------------
--- Table structure for automatic
+-- Table structure for `automatic`
 -- ----------------------------
 DROP TABLE IF EXISTS `automatic`;
 CREATE TABLE `automatic` (
@@ -52,18 +52,19 @@ CREATE TABLE `automatic` (
 -- ----------------------------
 -- Records of automatic
 -- ----------------------------
-INSERT INTO `automatic` VALUES ('3', '57d10a4c9abbd', 'pc28', '18', '796538', '10', '5', '0', '0', '2016-12-08 13:55:22');
+INSERT INTO `automatic` VALUES ('3', '57d10a4c9abbd', 'pc28', '18', '803519', '10', '5', '0', '0', '2016-12-08 13:55:22');
 INSERT INTO `automatic` VALUES ('4', '57d10a4c9abbd', 'jnd28', '21', '796538', '10', '4', '0', '0', '2016-12-09 14:12:52');
 INSERT INTO `automatic` VALUES ('5', '57d10a4c9abbd', 'js28', '19', '177376', '5', '10000', '0', '0', '2016-12-09 14:16:42');
-INSERT INTO `automatic` VALUES ('6', '57d10a4c9abbd', 'js16', '23', '177436', '5000', '1', '0', '1', '2016-12-09 15:21:38');
-INSERT INTO `automatic` VALUES ('7', '57d10a4c9abbd', 'fksc', '24', '591131', '333', '90', '0', '1', '2016-12-09 15:44:42');
+INSERT INTO `automatic` VALUES ('6', '57d10a4c9abbd', 'js16', '23', '177436', '5000', '1', '0', '0', '2016-12-09 15:21:38');
+INSERT INTO `automatic` VALUES ('7', '57d10a4c9abbd', 'fksc', '24', '591131', '333', '90', '0', '0', '2016-12-09 15:44:42');
 
 -- ----------------------------
--- Table structure for game
+-- Table structure for `game`
 -- ----------------------------
 DROP TABLE IF EXISTS `game`;
 CREATE TABLE `game` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT COMMENT 'ID号',
+  `type` tinyint(4) unsigned NOT NULL DEFAULT '1' COMMENT '1：动态赔率类型、2：固定赔率类型',
   `name` char(20) NOT NULL COMMENT '游戏名称',
   `lotteryname` char(20) NOT NULL COMMENT '福彩名称',
   `issue` int(11) unsigned NOT NULL COMMENT '期号',
@@ -101,6 +102,16 @@ CREATE TABLE `game` (
   `money25` int(10) unsigned DEFAULT '0' COMMENT '号码25的投注金额',
   `money26` int(10) unsigned DEFAULT '0' COMMENT '号码6的投注金额',
   `money27` int(10) unsigned DEFAULT '0' COMMENT '号码27的投注金额',
+  `spmoney0` int(10) unsigned DEFAULT '0' COMMENT '单',
+  `spmoney1` int(10) unsigned DEFAULT '0' COMMENT '双',
+  `spmoney2` int(10) unsigned DEFAULT '0' COMMENT '大',
+  `spmoney3` int(10) unsigned DEFAULT '0' COMMENT '小',
+  `spmoney4` int(10) unsigned DEFAULT '0' COMMENT '小单',
+  `spmoney5` int(10) unsigned DEFAULT '0' COMMENT '小双',
+  `spmoney6` int(10) unsigned DEFAULT '0' COMMENT '大单',
+  `spmoney7` int(10) unsigned DEFAULT '0' COMMENT '大双',
+  `spmoney8` int(10) unsigned DEFAULT '0' COMMENT '极大',
+  `spmoney9` int(10) unsigned DEFAULT '0' COMMENT '极小',
   `peoplenum` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT '中奖人数',
   `jackpot` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT '奖金池金额',
   `deadline` datetime NOT NULL COMMENT '竞猜截至时间',
@@ -108,14 +119,14 @@ CREATE TABLE `game` (
   `statu` tinyint(3) unsigned NOT NULL DEFAULT '0' COMMENT '0、竞猜，1、封盘，2、正在开奖，3、已开奖',
   `createtime` datetime NOT NULL COMMENT '记录创建时间',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1312 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=708 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of game
 -- ----------------------------
 
 -- ----------------------------
--- Table structure for guess
+-- Table structure for `guess`
 -- ----------------------------
 DROP TABLE IF EXISTS `guess`;
 CREATE TABLE `guess` (
@@ -151,18 +162,28 @@ CREATE TABLE `guess` (
   `money25` int(10) unsigned DEFAULT NULL COMMENT '号码25投注金额',
   `money26` int(10) unsigned DEFAULT NULL COMMENT '号码26投注金额',
   `money27` int(10) unsigned DEFAULT NULL COMMENT '号码27投注金额',
+  `spmoney0` int(10) unsigned DEFAULT '0',
+  `spmoney1` int(10) unsigned DEFAULT '0',
+  `spmoney2` int(10) unsigned DEFAULT '0',
+  `spmoney3` int(10) unsigned DEFAULT '0',
+  `spmoney4` int(10) unsigned DEFAULT '0',
+  `spmoney5` int(10) unsigned DEFAULT '0',
+  `spmoney6` int(10) unsigned DEFAULT '0',
+  `spmoney7` int(10) unsigned DEFAULT '0',
+  `spmoney8` int(10) unsigned DEFAULT '0',
+  `spmoney9` int(10) unsigned DEFAULT '0',
   `input` int(10) unsigned DEFAULT NULL COMMENT '投入金额总额',
   `output` int(10) unsigned DEFAULT NULL COMMENT '产出金额总额',
   `createtime` datetime DEFAULT NULL COMMENT '记录创建时间',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=78 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of guess
 -- ----------------------------
 
 -- ----------------------------
--- Table structure for lottery
+-- Table structure for `lottery`
 -- ----------------------------
 DROP TABLE IF EXISTS `lottery`;
 CREATE TABLE `lottery` (
@@ -192,14 +213,14 @@ CREATE TABLE `lottery` (
   `runtime` datetime NOT NULL COMMENT '开奖时间',
   `createtime` datetime NOT NULL COMMENT '记录创建时间',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1481 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=440 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of lottery
 -- ----------------------------
 
 -- ----------------------------
--- Table structure for mode
+-- Table structure for `mode`
 -- ----------------------------
 DROP TABLE IF EXISTS `mode`;
 CREATE TABLE `mode` (
@@ -253,7 +274,106 @@ INSERT INTO `mode` VALUES ('24', '57d10a4c9abbd', 'fksc', '疯狂赛车1', '0', 
 INSERT INTO `mode` VALUES ('26', '57d10a4c9abbd', 'fksc', '疯狂赛车', '0', '10', '10', '10', '10', '10', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '50', '2016-12-09 15:44:05');
 
 -- ----------------------------
--- Table structure for robotconfig
+-- Table structure for `odds`
+-- ----------------------------
+DROP TABLE IF EXISTS `odds`;
+CREATE TABLE `odds` (
+  `gamename` char(20) NOT NULL COMMENT '游戏名称',
+  `odds0` float unsigned NOT NULL DEFAULT '0',
+  `odds1` float unsigned DEFAULT '0',
+  `odds2` float unsigned DEFAULT '0',
+  `odds3` float unsigned DEFAULT '0',
+  `odds4` float unsigned DEFAULT '0',
+  `odds5` float unsigned DEFAULT '0',
+  `odds6` float unsigned DEFAULT '0',
+  `odds7` float unsigned DEFAULT '0',
+  `odds8` float unsigned DEFAULT '0',
+  `odds9` float unsigned DEFAULT '0',
+  `odds10` float unsigned DEFAULT '0',
+  `odds11` float unsigned DEFAULT '0',
+  `odds12` float unsigned DEFAULT '0',
+  `odds13` float unsigned DEFAULT '0',
+  `odds14` float unsigned DEFAULT '0',
+  `odds15` float unsigned DEFAULT '0',
+  `odds16` float unsigned DEFAULT '0',
+  `odds17` float unsigned DEFAULT '0',
+  `odds18` float unsigned DEFAULT '0',
+  `odds19` float unsigned DEFAULT '0',
+  `odds20` float unsigned DEFAULT '0',
+  `odds21` float unsigned DEFAULT '0',
+  `odds22` float unsigned DEFAULT '0',
+  `odds23` float unsigned DEFAULT '0',
+  `odds24` float unsigned DEFAULT '0',
+  `odds25` float unsigned DEFAULT '0',
+  `odds26` float unsigned DEFAULT '0',
+  `odds27` float unsigned DEFAULT '0',
+  `odds28` float unsigned DEFAULT '0',
+  `odds29` float unsigned DEFAULT '0',
+  `odds30` float unsigned DEFAULT '0',
+  `odds31` float unsigned DEFAULT '0',
+  `odds32` float unsigned DEFAULT '0',
+  `odds33` float unsigned DEFAULT '0',
+  `odds34` float unsigned DEFAULT '0',
+  `odds35` float unsigned DEFAULT '0',
+  `odds36` float unsigned DEFAULT '0',
+  `odds37` float unsigned DEFAULT '0',
+  PRIMARY KEY (`gamename`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of odds
+-- ----------------------------
+INSERT INTO `odds` VALUES ('jnd28', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38');
+
+-- ----------------------------
+-- Table structure for `receiver`
+-- ----------------------------
+DROP TABLE IF EXISTS `receiver`;
+CREATE TABLE `receiver` (
+  `id` char(14) NOT NULL COMMENT 'ID号（唯一标识）',
+  `receiver` char(14) NOT NULL COMMENT '抢红包者ID号',
+  `redpacket` char(14) NOT NULL COMMENT '红包ID号',
+  `money` bigint(20) NOT NULL COMMENT '所抢积分',
+  `createtime` datetime NOT NULL COMMENT '创建时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of receiver
+-- ----------------------------
+INSERT INTO `receiver` VALUES ('57d107b636990', '57d102b3280de', '57d10776a5f07', '1', '2016-09-08 14:39:50');
+INSERT INTO `receiver` VALUES ('57d10a6890f56', '57d10a4c9abbd', '57d10a61003d0', '6', '2016-09-08 14:51:20');
+INSERT INTO `receiver` VALUES ('57d10a8d5f5e1', '57d10a83b5acc', '57d10a61003d0', '0', '2016-09-08 14:51:57');
+INSERT INTO `receiver` VALUES ('57d10aa5ef9c5', '57d10a9ba983f', '57d10a61003d0', '7', '2016-09-08 14:52:21');
+INSERT INTO `receiver` VALUES ('57d10ac1df28e', '57d10abaf2f2d', '57d10a61003d0', '7', '2016-09-08 14:52:49');
+INSERT INTO `receiver` VALUES ('57d10ad875104', '57d10abaf2f2d', '57d10ad3c52c1', '34', '2016-09-08 14:53:12');
+INSERT INTO `receiver` VALUES ('57d10aeb3fe56', '57d10a4c9abbd', '57d10ad3c52c1', '18', '2016-09-08 14:53:31');
+
+-- ----------------------------
+-- Table structure for `redpacket`
+-- ----------------------------
+DROP TABLE IF EXISTS `redpacket`;
+CREATE TABLE `redpacket` (
+  `id` char(14) NOT NULL COMMENT 'ID号（唯一标识）',
+  `publisher` char(14) NOT NULL COMMENT '发红包者ID号',
+  `username` varchar(255) NOT NULL COMMENT '用户名',
+  `money` bigint(20) NOT NULL COMMENT '红包总积分',
+  `number` int(11) NOT NULL COMMENT '红包个数',
+  `distribution` tinyint(3) unsigned zerofill NOT NULL COMMENT '分配方式（1：平均，2：随机）',
+  `overtime` tinyint(3) unsigned zerofill NOT NULL COMMENT '红包是否超时（0：未超时，1：超时）',
+  `lasttime` datetime NOT NULL COMMENT '最后一次被抢时间',
+  `createtime` datetime NOT NULL COMMENT '创建时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of redpacket
+-- ----------------------------
+INSERT INTO `redpacket` VALUES ('57d10a61003d0', '57d10a4c9abbd', 'xuyuanfan1', '0', '0', '001', '000', '2016-09-08 14:52:49', '2016-09-08 14:51:13');
+INSERT INTO `redpacket` VALUES ('57d10ad3c52c1', '57d10abaf2f2d', 'xuyuanfan4', '48', '1', '002', '000', '2016-09-08 14:53:31', '2016-09-08 14:53:07');
+
+-- ----------------------------
+-- Table structure for `robotconfig`
 -- ----------------------------
 DROP TABLE IF EXISTS `robotconfig`;
 CREATE TABLE `robotconfig` (
@@ -286,16 +406,26 @@ CREATE TABLE `robotconfig` (
   `money25` int(10) unsigned DEFAULT NULL COMMENT '号码25投注金额',
   `money26` int(10) unsigned DEFAULT NULL COMMENT '号码26投注金额',
   `money27` int(10) unsigned DEFAULT NULL COMMENT '号码27投注金额',
+  `spmoney0` int(10) unsigned DEFAULT '0',
+  `spmoney1` int(10) unsigned DEFAULT '0',
+  `spmoney2` int(10) unsigned DEFAULT '0',
+  `spmoney3` int(10) unsigned DEFAULT '0',
+  `spmoney4` int(10) unsigned DEFAULT '0',
+  `spmoney5` int(10) unsigned DEFAULT '0',
+  `spmoney6` int(10) unsigned DEFAULT '0',
+  `spmoney7` int(10) unsigned DEFAULT '0',
+  `spmoney8` int(10) unsigned DEFAULT '0',
+  `spmoney9` int(10) unsigned DEFAULT '0',
   PRIMARY KEY (`gamename`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of robotconfig
 -- ----------------------------
-INSERT INTO `robotconfig` VALUES ('pc28', '100', '300', '600', '1000', '1500', '2100', '2800', '3600', '4500', '5500', '6300', '6900', '7300', '7500', '7500', '7300', '6900', '6300', '5500', '4500', '3600', '2800', '2100', '1500', '1000', '600', '300', '100');
+INSERT INTO `robotconfig` VALUES ('pc28', '100', '300', '600', '1000', '1500', '2100', '2800', '3600', '4500', '5500', '6300', '6900', '7300', '7500', '7500', '7300', '6900', '6300', '5500', '4500', '3600', '2800', '2100', '1500', '1000', '600', '300', '100', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
 
 -- ----------------------------
--- Table structure for user
+-- Table structure for `user`
 -- ----------------------------
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user` (
@@ -312,13 +442,13 @@ CREATE TABLE `user` (
 -- Records of user
 -- ----------------------------
 INSERT INTO `user` VALUES ('57d1049d88231', 'xuyuanfan5', '123', '100000000', '0', '2016-09-08 14:26:37');
-INSERT INTO `user` VALUES ('57d10a4c9abbd', 'xuyuanfan1', '123', '99826642', '0', '2016-09-08 14:50:52');
+INSERT INTO `user` VALUES ('57d10a4c9abbd', 'xuyuanfan1', '123', '99821184', '0', '2016-09-08 14:50:52');
 INSERT INTO `user` VALUES ('57d10a83b5acc', 'xuyuanfan2', '123', '99729972', '0', '2016-09-08 14:51:47');
 INSERT INTO `user` VALUES ('57d10a9ba983f', 'xuyuanfan3', '123', '100000000', '1', '2016-09-08 14:52:11');
 INSERT INTO `user` VALUES ('57d10abaf2f2d', 'xuyuanfan4', '123', '100000000', '1', '2016-09-08 14:52:42');
 
 -- ----------------------------
--- Procedure structure for overtimeCheck
+-- Procedure structure for `overtimeCheck`
 -- ----------------------------
 DROP PROCEDURE IF EXISTS `overtimeCheck`;
 DELIMITER ;;
@@ -348,7 +478,7 @@ END
 DELIMITER ;
 
 -- ----------------------------
--- Event structure for overtimeCheck
+-- Event structure for `overtimeCheck`
 -- ----------------------------
 DROP EVENT IF EXISTS `overtimeCheck`;
 DELIMITER ;;

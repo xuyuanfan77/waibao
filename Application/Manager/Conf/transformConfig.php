@@ -1,6 +1,7 @@
 <?php
 /*
 转换配置字段解释：
+type：			1：动态赔率类型、2：固定赔率类型
 name：			转换名称
 lotteryname：	采集名称
 handle：		处理函数（传入为号码数组，返回为转换后的开奖号码数组）
@@ -16,6 +17,7 @@ period_end：	一天中最后一期开奖时间（只接受时分秒，如：23:
 */
 return array(
 	'pc28'=>array(
+		'type'=>'1',
 		'name'=>'pc28',
 		'lotteryname'=>'北京快乐8',
 		'handle'=>function($arg){
@@ -42,6 +44,7 @@ return array(
 		'period_end'=>'23:55:00',
 	),
 	'js28'=>array(
+		'type'=>'1',
 		'name'=>'js28',
 		'lotteryname'=>'韩国快乐8',
 		'handle'=>function($arg){
@@ -68,6 +71,7 @@ return array(
 		'period_end'=>'23:58:30',
 	),
 	'js16'=>array(
+		'type'=>'1',
 		'name'=>'js16',
 		'lotteryname'=>'韩国快乐8',
 		'handle'=>function($arg){
@@ -94,6 +98,7 @@ return array(
 		'period_end'=>'23:58:30',
 	),
 	'fk28'=>array(
+		'type'=>'1',
 		'name'=>'fk28',
 		'lotteryname'=>'随机奖号',
 		'handle'=>function($arg){
@@ -120,6 +125,7 @@ return array(
 		'period_end'=>'23:58:30',
 	),
 	'fksc'=>array(
+		'type'=>'1',
 		'name'=>'fksc',
 		'lotteryname'=>'北京PK10',
 		'handle'=>function($arg){
@@ -138,6 +144,7 @@ return array(
 		'period_end'=>'23:57:00',
 	),
 	'jnd28'=>array(
+		'type'=>'2',
 		'name'=>'jnd28',
 		'lotteryname'=>'北京快乐8',
 		'handle'=>function($arg){

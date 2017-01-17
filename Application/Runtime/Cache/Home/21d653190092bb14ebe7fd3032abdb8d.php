@@ -113,7 +113,9 @@
                             <strong>疯狂赛车首页</strong>
                         </a>
                         <p class="my-touzhu-box clear-fix">
-                            <a class="my-touzhu-list " href="<?php echo U('Record/index', array('game'=>'fksc'));?>">我的投注</a>
+							<a class="my-touzhu-list" href="<?php echo U('Record/index', array('game'=>'fksc'));?>">我的投注</a>
+							<a class="my-touzhu-list" href="<?php echo U('Mode/index', array('game'=>'fksc'));?>">投注模式编辑</a>
+							<a class="my-touzhu-list bor-r" href="<?php echo U('Automatic/index', array('game'=>'fksc'));?>">自动投注</a>
                         </p>
                     </div>
                 </div>
@@ -219,7 +221,7 @@
                     </div>
                     <div class="across clear-fix" id="panel">
                         <div class="across_par1 across_par_fksc">
-                            <?php $__FOR_START_20443__=1;$__FOR_END_20443__=6;for($i=$__FOR_START_20443__;$i < $__FOR_END_20443__;$i+=1){ ?><div class="across_par1_no across_par1_width clear-fix">
+                            <?php $__FOR_START_11743__=1;$__FOR_END_11743__=6;for($i=$__FOR_START_11743__;$i < $__FOR_END_11743__;$i+=1){ ?><div class="across_par1_no across_par1_width clear-fix">
                                     <div class="across_par1_no_left">
                                         <div id="click_number<?php echo ($i); ?>" class="click_number sc_left_logo sc_logo_0<?php echo ($i); ?>" style="cursor: pointer;"></div>
                                     </div>
@@ -250,7 +252,7 @@
                                 </div><?php } ?>
                         </div>
                         <div class="across_par1 across_par_fksc">
-                            <?php $__FOR_START_27256__=6;$__FOR_END_27256__=11;for($i=$__FOR_START_27256__;$i < $__FOR_END_27256__;$i+=1){ ?><div class="across_par1_no across_par1_width clear-fix">
+                            <?php $__FOR_START_10796__=6;$__FOR_END_10796__=11;for($i=$__FOR_START_10796__;$i < $__FOR_END_10796__;$i+=1){ ?><div class="across_par1_no across_par1_width clear-fix">
                                     <div class="across_par1_no_left">
 										<?php if($i != 10): ?><div id="click_number<?php echo ($i); ?>" class="click_number sc_left_logo sc_logo_0<?php echo ($i); ?>" style="cursor: pointer;"></div>
 										<?php else: ?>

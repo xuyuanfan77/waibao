@@ -1,14 +1,14 @@
 <?php
 namespace Manager\Controller;
 header("Content-Type: text/html;charset=utf-8");
-class RobotformController extends LayoutController {
+class OddsformController extends LayoutController {
     public function index(){
 		if(cookie('PHPSESSID') && session('admin_id') && cookie('PHPSESSID') == session('admin_id')) {
-			$this->initLayout("robot");
+			$this->initLayout("odds");
 			if($_GET['gamename']){
-				$Robotconfig = M('Robotconfig');
+				$Odds = M('Odds');
 				$condition['gamename'] = array('eq',$_GET['gamename']);
-				$configData = $Robotconfig->where($condition)->find();
+				$configData = $Odds->where($condition)->find();
 				if($configData) {
 					$this->assign('configData',$configData);
 				}
@@ -20,22 +20,19 @@ class RobotformController extends LayoutController {
 	}
 	
 	public function save(){
-		$Robotconfig = M('Robotconfig');
+		$Odds = M('Odds');
 		$condition['gamename'] = array('eq',$_POST['gamename']);
-		$configData = $Robotconfig->where($condition)->find();
+		$configData = $Odds->where($condition)->find();
 		if($configData){
 			$configData['gamename'] = $_POST['gamename'];
-			for($index=0; $index<28; $index++){
-				$configData['money'.$index] = $_POST['money'.$index];
+			for($index=0; $index<38; $index++){
+				$configData['odds'.$index] = $_POST['odds'.$index];
 			}
-			for($index=0; $index<10; $index++){
-				$configData['spmoney'.$index] = $_POST['spmoney'.$index];
-			}
-			$Robotconfig->save($configData);
+			$Odds->save($configData);
 		}else{
-			$Robotconfig->data($_POST)->add();
+			$Odds->data($_POST)->add();
 		}
 		
-		$this->redirect('Robot/index');
+		$this->redirect('Odds/index');
 	}
 }

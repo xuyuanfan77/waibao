@@ -3,7 +3,7 @@ namespace Home\Controller;
 use Think\Controller;
 header("Content-Type: text/html;charset=utf-8");
 class AutomaticController extends Controller {
-	//获取游戏类型
+
 	private function getGameStyle() {
 		if($_GET['game']) {
 			$gameStyle = $_GET['game'];
@@ -12,16 +12,14 @@ class AutomaticController extends Controller {
 		}
 		return $gameStyle;
 	}
-	
-	//初始化用户数据
+
 	private function initUser() {
 		$User = M('User');
 		$condition['id'] = array('eq',session('userId'));
 		$userData = $User->where($condition)->find();
 		$this->assign('userData',$userData);
 	}
-	
-	//初始化提示
+
 	private function initTip() {
 		$Game = M('Game');
 		$condition1['name'] = array('eq',$this->getGameStyle());
@@ -45,8 +43,7 @@ class AutomaticController extends Controller {
 		}
 		$this->assign('tipData',$tipData);
 	}
-	
-	//初始化内容
+
 	private function initContent() {
 		$Automatic = M('Automatic');
 		unset($condition);
@@ -73,16 +70,14 @@ class AutomaticController extends Controller {
 			$this->redirect('Index/index', array('page'=>'login'));
 		}
 	}
-	
-	//获取系统时间
+
 	public function getServerTime() {
 		$data['hour'] = date('H');
 		$data['min'] = date('i');
 		$data['sec'] = date('s');
 		$this->ajaxReturn($data);
 	}
-	
-	//修改自动投注
+
 	public function updateAutoStatus(){
 		$Automatic = M('Automatic');
 		unset($condition);
@@ -90,7 +85,6 @@ class AutomaticController extends Controller {
 		$condition['gamename'] = array('eq',$_POST['game']);
 		$automaticData = $Automatic->where($condition)->find();
 		if($automaticData){
-			//如果有数据，修改自动投注数据
 			$automaticData['modeid'] = $_POST['start_model_id'];
 			$automaticData['issuebg'] = $_POST['start_no'];
 			$automaticData['issuenum'] = $_POST['bet_count'];
@@ -99,7 +93,6 @@ class AutomaticController extends Controller {
 			$automaticData['status'] = ($automaticData['status']+1)%2;
 			$Automatic->save($automaticData);
 		}else{
-			//如果没有数据，增加自动投注数据
 			$automaticData['userid'] = session('userId');
 			$automaticData['gamename'] = $_POST['game'];
 			$automaticData['modeid'] = $_POST['start_model_id'];

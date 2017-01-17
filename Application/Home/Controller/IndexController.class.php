@@ -12,7 +12,6 @@ class IndexController extends Controller {
 		$this->display($page);
 	}
 	
-	/* 登录 */
 	public function login(){
 		$User = M('User');
 		$condition['username'] = $_POST['username'];
@@ -28,7 +27,6 @@ class IndexController extends Controller {
 		}
 	}
 	
-	/* 注册 */
 	public function register(){
 		$postData = $_POST;
 		$postData['id'] = uniqid();
@@ -40,7 +38,6 @@ class IndexController extends Controller {
 		$this->redirect('Index/index', array('page'=>'login'));
 	}
 	
-	/* 退出 */
 	public function logout(){
 		session('[destroy]');
 		$this->redirect('Index/index', array('page'=>'login'));

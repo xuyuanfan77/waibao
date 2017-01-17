@@ -1,0 +1,640 @@
+[ 2017-01-17T14:32:05+08:00 ] ::1 /waibao/index.php/Manager/Account/index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: navbarColor G:\wamp\www\waibao\Application\Runtime\Cache\Manager\60db7d3fe1a79d4805f39def7d288eff.php 第 24 行.
+NOTIC: [8] Undefined variable: navbarColor G:\wamp\www\waibao\Application\Runtime\Cache\Manager\60db7d3fe1a79d4805f39def7d288eff.php 第 25 行.
+NOTIC: [8] Undefined variable: navbarColor G:\wamp\www\waibao\Application\Runtime\Cache\Manager\60db7d3fe1a79d4805f39def7d288eff.php 第 26 行.
+NOTIC: [8] Undefined variable: navbarColor G:\wamp\www\waibao\Application\Runtime\Cache\Manager\60db7d3fe1a79d4805f39def7d288eff.php 第 27 行.
+NOTIC: [8] Undefined variable: navbarColor G:\wamp\www\waibao\Application\Runtime\Cache\Manager\60db7d3fe1a79d4805f39def7d288eff.php 第 28 行.
+NOTIC: [8] Undefined variable: navbarColor G:\wamp\www\waibao\Application\Runtime\Cache\Manager\60db7d3fe1a79d4805f39def7d288eff.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.077004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-17T14:32:13+08:00 ] ::1 /waibao/index.php/Manager/Account/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `admin` WHERE `username` = 'admin' AND `password` = '123' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-01-17T14:32:14+08:00 ] ::1 /waibao/index.php/Manager/Collect/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: pageShow G:\wamp\www\waibao\Application\Runtime\Cache\Manager\5dcb3baa0ed527d598adceedf305806e.php 第 70 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.114006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.114006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-17T14:32:17+08:00 ] ::1 /waibao/index.php/Manager/Robot/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `robotconfig` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `robotconfig`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: pageShow G:\wamp\www\waibao\Application\Runtime\Cache\Manager\61e79034e385c788ed4ae524fc53b5e3.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.101006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.102006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-01-17T14:32:23+08:00 ] ::1 /waibao/index.php/Manager/Robotform/index/gamename/pc28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `robotconfig` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `robotconfig` WHERE `gamename` = 'pc28' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-17T14:32:37+08:00 ] ::1 /waibao/index.php/Manager/Odds/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `odds` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `odds`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pageShow G:\wamp\www\waibao\Application\Runtime\Cache\Manager\601ac18dfdb6e6eb31f70c63c4ea3402.php 第 92 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-17T14:32:41+08:00 ] ::1 /waibao/index.php/Manager/Oddsform/index/gamename/jnd28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `odds` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `odds` WHERE `gamename` = 'jnd28' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.110006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.110006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-01-17T14:43:30+08:00 ] ::1 /waibao/index.php/Manager/Robot/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `robotconfig` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `robotconfig`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: money28 G:\wamp\www\waibao\Application\Runtime\Cache\Manager\61e79034e385c788ed4ae524fc53b5e3.php 第 83 行.
+NOTIC: [8] Undefined index: money29 G:\wamp\www\waibao\Application\Runtime\Cache\Manager\61e79034e385c788ed4ae524fc53b5e3.php 第 83 行.
+NOTIC: [8] Undefined index: money30 G:\wamp\www\waibao\Application\Runtime\Cache\Manager\61e79034e385c788ed4ae524fc53b5e3.php 第 84 行.
+NOTIC: [8] Undefined index: money31 G:\wamp\www\waibao\Application\Runtime\Cache\Manager\61e79034e385c788ed4ae524fc53b5e3.php 第 84 行.
+NOTIC: [8] Undefined index: money32 G:\wamp\www\waibao\Application\Runtime\Cache\Manager\61e79034e385c788ed4ae524fc53b5e3.php 第 85 行.
+NOTIC: [8] Undefined index: money33 G:\wamp\www\waibao\Application\Runtime\Cache\Manager\61e79034e385c788ed4ae524fc53b5e3.php 第 85 行.
+NOTIC: [8] Undefined index: money34 G:\wamp\www\waibao\Application\Runtime\Cache\Manager\61e79034e385c788ed4ae524fc53b5e3.php 第 86 行.
+NOTIC: [8] Undefined index: money35 G:\wamp\www\waibao\Application\Runtime\Cache\Manager\61e79034e385c788ed4ae524fc53b5e3.php 第 86 行.
+NOTIC: [8] Undefined index: money36 G:\wamp\www\waibao\Application\Runtime\Cache\Manager\61e79034e385c788ed4ae524fc53b5e3.php 第 87 行.
+NOTIC: [8] Undefined index: money37 G:\wamp\www\waibao\Application\Runtime\Cache\Manager\61e79034e385c788ed4ae524fc53b5e3.php 第 87 行.
+NOTIC: [8] Undefined variable: pageShow G:\wamp\www\waibao\Application\Runtime\Cache\Manager\61e79034e385c788ed4ae524fc53b5e3.php 第 92 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-17T14:43:38+08:00 ] ::1 /waibao/index.php/Manager/Robotform/index/gamename/pc28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `robotconfig` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `robotconfig` WHERE `gamename` = 'pc28' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: money28 G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 152 行.
+NOTIC: [8] Undefined index: money29 G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 155 行.
+NOTIC: [8] Undefined index: money30 G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 158 行.
+NOTIC: [8] Undefined index: money31 G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 161 行.
+NOTIC: [8] Undefined index: money32 G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 167 行.
+NOTIC: [8] Undefined index: money33 G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 170 行.
+NOTIC: [8] Undefined index: money34 G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 173 行.
+NOTIC: [8] Undefined index: money35 G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 176 行.
+NOTIC: [8] Undefined index: money36 G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 182 行.
+NOTIC: [8] Undefined index: money37 G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 185 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-01-17T14:43:55+08:00 ] ::1 /waibao/index.php/Manager/Robotform/save.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `robotconfig` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `robotconfig` WHERE `gamename` = 'pc28' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `robotconfig` SET `money0`='100',`money1`='300',`money2`='600',`money3`='1000',`money4`='1500',`money5`='2100',`money6`='2800',`money7`='3600',`money8`='4500',`money9`='5500',`money10`='6300',`money11`='6900',`money12`='7300',`money13`='7500',`money14`='7500',`money15`='7300',`money16`='6900',`money17`='6300',`money18`='5500',`money19`='4500',`money20`='3600',`money21`='2800',`money22`='2100',`money23`='1500',`money24`='1000',`money25`='600',`money26`='300',`money27`='100',`spmoney0`='0',`spmoney1`='0',`spmoney2`='0',`spmoney3`='0',`spmoney4`='0',`spmoney5`='0',`spmoney6`='0',`spmoney7`='0',`spmoney8`='0',`spmoney9`='0' WHERE `gamename` = 'pc28' [ RunTime:0.0010s ]
+
+[ 2017-01-17T14:43:55+08:00 ] ::1 /waibao/index.php/Manager/Robot/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `robotconfig` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `robotconfig`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: money28 G:\wamp\www\waibao\Application\Runtime\Cache\Manager\61e79034e385c788ed4ae524fc53b5e3.php 第 83 行.
+NOTIC: [8] Undefined index: money29 G:\wamp\www\waibao\Application\Runtime\Cache\Manager\61e79034e385c788ed4ae524fc53b5e3.php 第 83 行.
+NOTIC: [8] Undefined index: money30 G:\wamp\www\waibao\Application\Runtime\Cache\Manager\61e79034e385c788ed4ae524fc53b5e3.php 第 84 行.
+NOTIC: [8] Undefined index: money31 G:\wamp\www\waibao\Application\Runtime\Cache\Manager\61e79034e385c788ed4ae524fc53b5e3.php 第 84 行.
+NOTIC: [8] Undefined index: money32 G:\wamp\www\waibao\Application\Runtime\Cache\Manager\61e79034e385c788ed4ae524fc53b5e3.php 第 85 行.
+NOTIC: [8] Undefined index: money33 G:\wamp\www\waibao\Application\Runtime\Cache\Manager\61e79034e385c788ed4ae524fc53b5e3.php 第 85 行.
+NOTIC: [8] Undefined index: money34 G:\wamp\www\waibao\Application\Runtime\Cache\Manager\61e79034e385c788ed4ae524fc53b5e3.php 第 86 行.
+NOTIC: [8] Undefined index: money35 G:\wamp\www\waibao\Application\Runtime\Cache\Manager\61e79034e385c788ed4ae524fc53b5e3.php 第 86 行.
+NOTIC: [8] Undefined index: money36 G:\wamp\www\waibao\Application\Runtime\Cache\Manager\61e79034e385c788ed4ae524fc53b5e3.php 第 87 行.
+NOTIC: [8] Undefined index: money37 G:\wamp\www\waibao\Application\Runtime\Cache\Manager\61e79034e385c788ed4ae524fc53b5e3.php 第 87 行.
+NOTIC: [8] Undefined variable: pageShow G:\wamp\www\waibao\Application\Runtime\Cache\Manager\61e79034e385c788ed4ae524fc53b5e3.php 第 92 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-01-17T14:48:48+08:00 ] ::1 /waibao/index.php/Manager/Robotform/index/gamename/pc28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `robotconfig` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `robotconfig` WHERE `gamename` = 'pc28' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-17T14:48:54+08:00 ] ::1 /waibao/index.php/Manager/Robotform/save.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `robotconfig` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `robotconfig` WHERE `gamename` = 'pc28' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: money28 G:\wamp\www\waibao\Application\Manager\Controller\RobotformController.class.php 第 29 行.
+NOTIC: [8] Undefined index: money29 G:\wamp\www\waibao\Application\Manager\Controller\RobotformController.class.php 第 29 行.
+NOTIC: [8] Undefined index: money30 G:\wamp\www\waibao\Application\Manager\Controller\RobotformController.class.php 第 29 行.
+NOTIC: [8] Undefined index: money31 G:\wamp\www\waibao\Application\Manager\Controller\RobotformController.class.php 第 29 行.
+NOTIC: [8] Undefined index: money32 G:\wamp\www\waibao\Application\Manager\Controller\RobotformController.class.php 第 29 行.
+NOTIC: [8] Undefined index: money33 G:\wamp\www\waibao\Application\Manager\Controller\RobotformController.class.php 第 29 行.
+NOTIC: [8] Undefined index: money34 G:\wamp\www\waibao\Application\Manager\Controller\RobotformController.class.php 第 29 行.
+NOTIC: [8] Undefined index: money35 G:\wamp\www\waibao\Application\Manager\Controller\RobotformController.class.php 第 29 行.
+NOTIC: [8] Undefined index: money36 G:\wamp\www\waibao\Application\Manager\Controller\RobotformController.class.php 第 29 行.
+NOTIC: [8] Undefined index: money37 G:\wamp\www\waibao\Application\Manager\Controller\RobotformController.class.php 第 29 行.
+SQL: UPDATE `robotconfig` SET `money0`='100',`money1`='300',`money2`='600',`money3`='1000',`money4`='1500',`money5`='2100',`money6`='2800',`money7`='3600',`money8`='4500',`money9`='5500',`money10`='6300',`money11`='6900',`money12`='7300',`money13`='7500',`money14`='7500',`money15`='7300',`money16`='6900',`money17`='6300',`money18`='5500',`money19`='4500',`money20`='3600',`money21`='2800',`money22`='2100',`money23`='1500',`money24`='1000',`money25`='600',`money26`='300',`money27`='100',`spmoney0`='0',`spmoney1`='0',`spmoney2`='0',`spmoney3`='0',`spmoney4`='0',`spmoney5`='0',`spmoney6`='0',`spmoney7`='0',`spmoney8`='0',`spmoney9`='0' WHERE `gamename` = 'pc28' [ RunTime:0.0010s ]
+
+[ 2017-01-17T14:48:54+08:00 ] ::1 /waibao/index.php/Manager/Robot/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `robotconfig` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `robotconfig`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: pageShow G:\wamp\www\waibao\Application\Runtime\Cache\Manager\61e79034e385c788ed4ae524fc53b5e3.php 第 92 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-01-17T14:48:59+08:00 ] ::1 /waibao/index.php/Manager/Robot/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `robotconfig` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `robotconfig`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: pageShow G:\wamp\www\waibao\Application\Runtime\Cache\Manager\61e79034e385c788ed4ae524fc53b5e3.php 第 92 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-17T14:50:08+08:00 ] ::1 /waibao/index.php/Manager/Robotform/index/gamename/pc28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `robotconfig` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `robotconfig` WHERE `gamename` = 'pc28' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-17T14:50:13+08:00 ] ::1 /waibao/index.php/Manager/Robotform/save.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `robotconfig` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `robotconfig` WHERE `gamename` = 'pc28' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `robotconfig` SET `money0`='100',`money1`='300',`money2`='600',`money3`='1000',`money4`='1500',`money5`='2100',`money6`='2800',`money7`='3600',`money8`='4500',`money9`='5500',`money10`='6300',`money11`='6900',`money12`='7300',`money13`='7500',`money14`='7500',`money15`='7300',`money16`='6900',`money17`='6300',`money18`='5500',`money19`='4500',`money20`='3600',`money21`='2800',`money22`='2100',`money23`='1500',`money24`='1000',`money25`='600',`money26`='300',`money27`='100',`spmoney0`='1',`spmoney1`='0',`spmoney2`='0',`spmoney3`='0',`spmoney4`='0',`spmoney5`='0',`spmoney6`='0',`spmoney7`='0',`spmoney8`='0',`spmoney9`='0' WHERE `gamename` = 'pc28' [ RunTime:0.0010s ]
+
+[ 2017-01-17T14:50:14+08:00 ] ::1 /waibao/index.php/Manager/Robot/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `robotconfig` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `robotconfig`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: pageShow G:\wamp\www\waibao\Application\Runtime\Cache\Manager\61e79034e385c788ed4ae524fc53b5e3.php 第 92 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-17T14:50:31+08:00 ] ::1 /waibao/index.php/Manager/Robotform/index/gamename/pc28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `robotconfig` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `robotconfig` WHERE `gamename` = 'pc28' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-17T14:50:37+08:00 ] ::1 /waibao/index.php/Manager/Robotform/save.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `robotconfig` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `robotconfig` WHERE `gamename` = 'pc28' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `robotconfig` SET `money0`='100',`money1`='300',`money2`='600',`money3`='1000',`money4`='1500',`money5`='2100',`money6`='2800',`money7`='3600',`money8`='4500',`money9`='5500',`money10`='6300',`money11`='6900',`money12`='7300',`money13`='7500',`money14`='7500',`money15`='7300',`money16`='6900',`money17`='6300',`money18`='5500',`money19`='4500',`money20`='3600',`money21`='2800',`money22`='2100',`money23`='1500',`money24`='1000',`money25`='600',`money26`='300',`money27`='100',`spmoney0`='0',`spmoney1`='0',`spmoney2`='0',`spmoney3`='0',`spmoney4`='0',`spmoney5`='0',`spmoney6`='0',`spmoney7`='0',`spmoney8`='0',`spmoney9`='0' WHERE `gamename` = 'pc28' [ RunTime:0.0010s ]
+
+[ 2017-01-17T14:50:37+08:00 ] ::1 /waibao/index.php/Manager/Robot/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `robotconfig` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `robotconfig`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pageShow G:\wamp\www\waibao\Application\Runtime\Cache\Manager\61e79034e385c788ed4ae524fc53b5e3.php 第 92 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-17T14:50:41+08:00 ] ::1 /waibao/index.php/Manager/Robotform/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: gamename G:\wamp\www\waibao\Application\Manager\Controller\RobotformController.class.php 第 8 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: configData G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 48 行.
+NOTIC: [8] Undefined variable: configData G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 53 行.
+NOTIC: [8] Undefined variable: configData G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 56 行.
+NOTIC: [8] Undefined variable: configData G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 59 行.
+NOTIC: [8] Undefined variable: configData G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 62 行.
+NOTIC: [8] Undefined variable: configData G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 65 行.
+NOTIC: [8] Undefined variable: configData G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 68 行.
+NOTIC: [8] Undefined variable: configData G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 74 行.
+NOTIC: [8] Undefined variable: configData G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 77 行.
+NOTIC: [8] Undefined variable: configData G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 80 行.
+NOTIC: [8] Undefined variable: configData G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 83 行.
+NOTIC: [8] Undefined variable: configData G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 86 行.
+NOTIC: [8] Undefined variable: configData G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 89 行.
+NOTIC: [8] Undefined variable: configData G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 95 行.
+NOTIC: [8] Undefined variable: configData G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 98 行.
+NOTIC: [8] Undefined variable: configData G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 101 行.
+NOTIC: [8] Undefined variable: configData G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 104 行.
+NOTIC: [8] Undefined variable: configData G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 107 行.
+NOTIC: [8] Undefined variable: configData G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 110 行.
+NOTIC: [8] Undefined variable: configData G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 116 行.
+NOTIC: [8] Undefined variable: configData G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 119 行.
+NOTIC: [8] Undefined variable: configData G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 122 行.
+NOTIC: [8] Undefined variable: configData G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 125 行.
+NOTIC: [8] Undefined variable: configData G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 128 行.
+NOTIC: [8] Undefined variable: configData G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 131 行.
+NOTIC: [8] Undefined variable: configData G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 137 行.
+NOTIC: [8] Undefined variable: configData G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 140 行.
+NOTIC: [8] Undefined variable: configData G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 143 行.
+NOTIC: [8] Undefined variable: configData G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 146 行.
+NOTIC: [8] Undefined variable: configData G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 152 行.
+NOTIC: [8] Undefined variable: configData G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 155 行.
+NOTIC: [8] Undefined variable: configData G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 158 行.
+NOTIC: [8] Undefined variable: configData G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 161 行.
+NOTIC: [8] Undefined variable: configData G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 167 行.
+NOTIC: [8] Undefined variable: configData G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 170 行.
+NOTIC: [8] Undefined variable: configData G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 173 行.
+NOTIC: [8] Undefined variable: configData G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 176 行.
+NOTIC: [8] Undefined variable: configData G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 182 行.
+NOTIC: [8] Undefined variable: configData G:\wamp\www\waibao\Application\Runtime\Cache\Manager\7edf1d8301553ea0854cdb474015a65e.php 第 185 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-01-17T14:52:10+08:00 ] ::1 /waibao/index.php/Manager/Robotform/save.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `robotconfig` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `robotconfig` WHERE `gamename` = 'jnd28' LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `robotconfig` (`gamename`,`money0`,`money1`,`money2`,`money3`,`money4`,`money5`,`money6`,`money7`,`money8`,`money9`,`money10`,`money11`,`money12`,`money13`,`money14`,`money15`,`money16`,`money17`,`money18`,`money19`,`money20`,`money21`,`money22`,`money23`,`money24`,`money25`,`money26`,`money27`,`spmoney0`,`spmoney1`,`spmoney2`,`spmoney3`,`spmoney4`,`spmoney5`,`spmoney6`,`spmoney7`,`spmoney8`,`spmoney9`) VALUES ('jnd28','100','100','100','100','100','100','100','100','100','100','100','100','100','100','100','100','100','100','100','100','100','100','100','100','100','100','100','100','100','100','100','100','100','100','100','100','100','100') [ RunTime:0.0010s ]
+
+[ 2017-01-17T14:52:10+08:00 ] ::1 /waibao/index.php/Manager/Robot/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `robotconfig` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `robotconfig`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pageShow G:\wamp\www\waibao\Application\Runtime\Cache\Manager\61e79034e385c788ed4ae524fc53b5e3.php 第 92 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-17T14:52:24+08:00 ] ::1 /waibao/index.php/Manager/Robotform/index/gamename/jnd28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `robotconfig` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `robotconfig` WHERE `gamename` = 'jnd28' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-17T14:52:33+08:00 ] ::1 /waibao/index.php/Manager/Robotform/save.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `robotconfig` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `robotconfig` WHERE `gamename` = 'jnd28' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `robotconfig` SET `money0`='100',`money1`='100',`money2`='100',`money3`='100',`money4`='100',`money5`='100',`money6`='100',`money7`='100',`money8`='100',`money9`='100',`money10`='100',`money11`='100',`money12`='100',`money13`='100',`money14`='100',`money15`='100',`money16`='100',`money17`='100',`money18`='100',`money19`='100',`money20`='100',`money21`='100',`money22`='100',`money23`='100',`money24`='100',`money25`='100',`money26`='100',`money27`='100',`spmoney0`='10',`spmoney1`='100',`spmoney2`='100',`spmoney3`='100',`spmoney4`='100',`spmoney5`='100',`spmoney6`='100',`spmoney7`='100',`spmoney8`='100',`spmoney9`='100' WHERE `gamename` = 'jnd28' [ RunTime:0.0010s ]
+
+[ 2017-01-17T14:52:33+08:00 ] ::1 /waibao/index.php/Manager/Robot/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `robotconfig` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `robotconfig`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pageShow G:\wamp\www\waibao\Application\Runtime\Cache\Manager\61e79034e385c788ed4ae524fc53b5e3.php 第 92 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-17T14:52:50+08:00 ] ::1 /waibao/index.php/Manager/Robot/del/gamename/jnd28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `robotconfig` [ RunTime:0.0050s ]
+SQL: DELETE FROM `robotconfig` WHERE `gamename` = 'jnd28' [ RunTime:0.0420s ]
+
+[ 2017-01-17T14:52:51+08:00 ] ::1 /waibao/index.php/Manager/Robot/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `robotconfig` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `robotconfig`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: pageShow G:\wamp\www\waibao\Application\Runtime\Cache\Manager\61e79034e385c788ed4ae524fc53b5e3.php 第 92 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

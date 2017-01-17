@@ -3,7 +3,7 @@ namespace Home\Controller;
 use Think\Controller;
 header("Content-Type: text/html;charset=utf-8");
 class ModeController extends Controller {
-	//获取游戏类型
+
 	private function getGameStyle() {
 		if($_GET['game']) {
 			$gameStyle = $_GET['game'];
@@ -12,16 +12,14 @@ class ModeController extends Controller {
 		}
 		return $gameStyle;
 	}
-	
-	//初始化用户数据
+
 	private function initUser() {
 		$User = M('User');
 		$condition['id'] = array('eq',session('userId'));
 		$userData = $User->where($condition)->find();
 		$this->assign('userData',$userData);
 	}
-	
-	//初始化提示
+
 	private function initTip() {
 		$Game = M('Game');
 		$condition1['name'] = array('eq',$this->getGameStyle());
@@ -45,8 +43,7 @@ class ModeController extends Controller {
 		}
 		$this->assign('tipData',$tipData);
 	}
-	
-	// 初始化竞猜模式
+
 	private function initMode() {
 		$guessConfig = C('GUESS_MODE');
 		$configData = $guessConfig[$_GET['game']];
@@ -58,15 +55,14 @@ class ModeController extends Controller {
 		$modeData = $Mode->field('id,modename')->where($condition)->select();
 		$this->assign('modeData',$modeData);
 	}
-	
-	//初始化内容
+
 	private function initContent() {
 		$numArea = array('pc28'=>array(0,28),'js28'=>array(0,28),'js16'=>array(3,16),'fk28'=>array(0,28),'fksc'=>array(1,10),'jnd28'=>array(0,28));
 		$Game = M('Game');
 		$condition['name'] = array('eq',$this->getGameStyle());
 		$condition['issue'] = array('eq',$_GET['issue']);
 		$gameData = $Game->where($condition)->find();
-		for($index=$numArea[$_GET['game']][0]; $index<$numArea[$_GET['game']][0]+$numArea[$_GET['game']][1]; $index++) {	//生成本期所有号码的赔率
+		for($index=$numArea[$_GET['game']][0]; $index<$numArea[$_GET['game']][0]+$numArea[$_GET['game']][1]; $index++) {
 			$moneyIndex = 'money'.$index;
 			if($gameData[$moneyIndex]==0){
 				$gameOdds[$index] = '--';
@@ -79,7 +75,7 @@ class ModeController extends Controller {
 		$condition['name'] = array('eq',$this->getGameStyle());
 		$condition['issue'] = array('eq',$_GET['issue']-1);
 		$preGameData = $Game->where($condition)->find();
-		for($index=$numArea[$_GET['game']][0]; $index<$numArea[$_GET['game']][0]+$numArea[$_GET['game']][1]; $index++) {	//生成上一期所有号码的赔率
+		for($index=$numArea[$_GET['game']][0]; $index<$numArea[$_GET['game']][0]+$numArea[$_GET['game']][1]; $index++) {
 			$moneyIndex = 'money'.$index;
 			if($preGameData[$moneyIndex]==0){
 				$preGameOdds[$index] = '--';
@@ -104,14 +100,13 @@ class ModeController extends Controller {
 		}
 	}
 
-	//保存模式
 	public function save(){
 		$numArea = array('pc28'=>array(0,28),'js28'=>array(0,28),'js16'=>array(3,16),'fk28'=>array(0,28),'fksc'=>array(1,10),'jnd28'=>array(0,28));	
-		$name		= $_POST['name'];														//模式名称
-		$bet_num	= $_POST['bet_num'];													//模式内容
-		$total		= $_POST['total'];														//模式总额
-		$model_id	= $_POST['model_id'];													//模式id
-		$gamename = $_POST['game'];															//模式游戏类型
+		$name		= $_POST['name'];
+		$bet_num	= $_POST['bet_num'];
+		$total		= $_POST['total'];
+		$model_id	= $_POST['model_id'];
+		$gamename = $_POST['game'];
 		if($model_id){
 			$Mode = M('Mode');
 			unset($condition);
@@ -151,7 +146,6 @@ class ModeController extends Controller {
 		}
 	}
 
-	//删除模式
 	public function del(){
 		$Mode = M('Mode');
 		unset($condition);
@@ -162,7 +156,6 @@ class ModeController extends Controller {
 		$this->ajaxReturn($data);
 	}
 	
-	//选择模式
 	public function select(){
 		$Mode = M('Mode');
 		unset($condition);

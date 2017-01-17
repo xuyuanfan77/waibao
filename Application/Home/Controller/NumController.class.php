@@ -3,7 +3,7 @@ namespace Home\Controller;
 use Think\Controller;
 header("Content-Type: text/html;charset=utf-8");
 class NumController extends Controller {
-	//获取游戏类型
+
 	private function getGameStyle() {
 		if($_GET['game']) {
 			$gameStyle = $_GET['game'];
@@ -12,16 +12,14 @@ class NumController extends Controller {
 		}
 		return $gameStyle;
 	}
-	
-	//初始化用户数据
+
 	private function initUser() {
 		$User = M('User');
 		$condition['id'] = array('eq',session('userId'));
 		$userData = $User->where($condition)->find();
 		$this->assign('userData',$userData);
 	}
-	
-	//初始化提示
+
 	private function initTip() {
 		$Game = M('Game');
 		$condition1['name'] = array('eq',$this->getGameStyle());
@@ -45,8 +43,7 @@ class NumController extends Controller {
 		}
 		$this->assign('tipData',$tipData);
 	}
-	
-	//初始化内容
+
 	private function initContent() {
 		$Game = M('Game');
 		$pageNum = $this->getPageNum();
@@ -61,7 +58,7 @@ class NumController extends Controller {
 			$condition['userid'] = array('eq',session('userId'));
 			$condition['gamename'] = array('eq',$this->getGameStyle());
 			$condition['gameissue'] = array('eq',$value['issue']);
-			$guessData = $Guess->where($condition)->select();											// 生成亏盈数据
+			$guessData = $Guess->where($condition)->select();
 			if($guessData){
 				$input = 0;
 				$output = 0;
@@ -76,12 +73,11 @@ class NumController extends Controller {
 		
 			if($value['statu']==0){
 				if($value['runtime'] < date('Y-m-d H:i:s')){
-					$gameData[$key]['statu']=2;															// 数据尚未开奖，当前时间大于开奖时间，设为正在开奖状态
+					$gameData[$key]['statu']=2;
 				}elseif($value['deadline'] < date('Y-m-d H:i:s')){
-					$gameData[$key]['statu']=1;															// 数据尚未开奖，当前时间大于截至时间小于开奖时间，设为截至竞猜状态
+					$gameData[$key]['statu']=1;
 				}
 			}
-			//疯狂赛车游戏特殊处理，因为疯狂赛车需要原始的10个采集号码显示赛车
 			if($this->getGameStyle()=='fksc'){
 				unset($condition);
 				$condition['name'] = array('eq',$value['lotteryname']);
@@ -95,7 +91,6 @@ class NumController extends Controller {
 		
 	}
 	
-	//获取页数
 	private function getPageNum() {
 		if($_GET['p']) {
 			$pageNum = $_GET['p'];
@@ -105,7 +100,6 @@ class NumController extends Controller {
 		return $pageNum;
 	}
 	
-	//初始化分页
 	private function initPage() {
 		$Game = M('Game');
 		$condition['name'] = array('eq',$this->getGameStyle());
@@ -130,7 +124,6 @@ class NumController extends Controller {
 		}
 	}
 	
-	//获取系统时间
 	public function getServerTime() {
 		$data['hour'] = date('H');
 		$data['min'] = date('i');

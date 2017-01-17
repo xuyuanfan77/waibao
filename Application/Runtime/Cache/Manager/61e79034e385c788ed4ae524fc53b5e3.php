@@ -26,6 +26,7 @@
 					<li role="presentation" style="background:<?php echo ($navbarColor[2]); ?>"><a href="<?php echo U('Guess/index');?>">投注配置</a></li>
 					<li role="presentation" style="background:<?php echo ($navbarColor[3]); ?>"><a href="<?php echo U('Robot/index');?>">机器人</a></li>
 					<li role="presentation" style="background:<?php echo ($navbarColor[4]); ?>"><a href="<?php echo U('Fengkong/index');?>">风控管理</a></li>
+					<li role="presentation" style="background:<?php echo ($navbarColor[5]); ?>"><a href="<?php echo U('Odds/index');?>">赔率管理</a></li>
 				</ul>
 			</div>
 		</div>
@@ -56,6 +57,11 @@
 			<th>号码<br/>22-23</th>
 			<th>号码<br/>24-25</th>
 			<th>号码<br/>26-27</th>
+			<th>单<br/>双</th>
+			<th>大<br/>小</th>
+			<th>小单<br/>小双</th>
+			<th>大单<br/>大双</th>
+			<th>极大<br/>极小</th>
 			<th>操作</th>
 		</tr>
 		<?php if(is_array($configData)): foreach($configData as $key=>$config): ?><tr>
@@ -74,6 +80,11 @@
 				<td><?php echo ($config["money22"]); ?><br/><?php echo ($config["money23"]); ?></td>
 				<td><?php echo ($config["money24"]); ?><br/><?php echo ($config["money25"]); ?></td>
 				<td><?php echo ($config["money26"]); ?><br/><?php echo ($config["money27"]); ?></td>
+				<td><?php echo ($config["spmoney0"]); ?><br/><?php echo ($config["spmoney1"]); ?></td>
+				<td><?php echo ($config["spmoney2"]); ?><br/><?php echo ($config["spmoney3"]); ?></td>
+				<td><?php echo ($config["spmoney4"]); ?><br/><?php echo ($config["spmoney5"]); ?></td>
+				<td><?php echo ($config["spmoney6"]); ?><br/><?php echo ($config["spmoney7"]); ?></td>
+				<td><?php echo ($config["spmoney8"]); ?><br/><?php echo ($config["spmoney9"]); ?></td>
 				<td><a href="<?php echo U('Robotform/index', array('gamename'=>$config['gamename']));?>">修改</a> <a href="<?php echo U('Robot/del', array('gamename'=>$config['gamename']));?>">删除</a></td>
 			</tr><?php endforeach; endif; ?>
 	</table>

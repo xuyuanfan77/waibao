@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
     <head>
         <title>益智竞猜游戏</title>
@@ -6,15 +6,15 @@
         <meta name="renderer" content="webkit">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         
-        <script src="__PUBLIC__/front/jquery-1.11.1.min.js"></script>
-        <script src="__PUBLIC__/front/slide.js"></script>
-        <link rel="stylesheet" href="__PUBLIC__/front/common.css">
-        <link rel="stylesheet" href="__PUBLIC__/front/game-comp.css">
-        <link rel="stylesheet" href="__PUBLIC__/front/guess.css">
-        <link rel="stylesheet" href="__PUBLIC__/front/touzhu-new.css">
-        <link rel="stylesheet" href="__PUBLIC__/front/touzhu-jnd28.css">
+        <script src="/waibao/Public/front/jquery-1.11.1.min.js"></script>
+        <script src="/waibao/Public/front/slide.js"></script>
+        <link rel="stylesheet" href="/waibao/Public/front/common.css">
+        <link rel="stylesheet" href="/waibao/Public/front/game-comp.css">
+        <link rel="stylesheet" href="/waibao/Public/front/guess.css">
+        <link rel="stylesheet" href="/waibao/Public/front/touzhu-new.css">
+        <link rel="stylesheet" href="/waibao/Public/front/touzhu-jnd28.css">
         <script type="text/javascript">
-            var nub = new Array({$configData});
+            var nub = new Array(<?php echo ($configData); ?>);
             var nub1 = new Array(101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 63, 69, 73, 75, 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 63, 69, 73, 75);
             var mode = new Array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37], //全包
             [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27], //单
@@ -65,14 +65,14 @@
                 <form action="http://game3799.com/Account/LogOff" id="logoutFormTop" method="post">
                     <p class="site-nav-con">
                         你好，
-                        <span class="user-name-color">{$userData['username']}</span>
+                        <span class="user-name-color"><?php echo ($userData['username']); ?></span>
                         元宝：0
                         <span class="ingot"></span>
                         <a class="ingot-c">充</a>
-                        金豆：{$userData['money']}
+                        金豆：<?php echo ($userData['money']); ?>
                         <span class="kdou"></span>
                         <a class="kdou-c">兑</a>
-                        <a class="login-out" href="{:U('Index/index', array('page'=>'login'))}">[退出]</a>
+                        <a class="login-out" href="<?php echo U('Index/index', array('page'=>'login'));?>">[退出]</a>
                         <a class="site-nav-list" href="#">保存到桌面</a>
                         <a class="site-nav-list bor-r J_shoucang" href="#">收藏本站</a>
                     </p>
@@ -87,37 +87,37 @@
                         <li class="game-nav-list">
                             <div class="game-logo-box game-logo-pc28">
                                 <span class="top-jt"></span>
-                                <a class="game-img" href="{:U('Num/index', array('game'=>'pc28'))}"></a>
+                                <a class="game-img" href="<?php echo U('Num/index', array('game'=>'pc28'));?>"></a>
                             </div>
                         </li>
                         <li class="game-nav-list ">
                             <div class="game-logo-box game-logo-js28">
                                 <span class="top-jt"></span>
-                                <a class="game-img" href="{:U('Num/index', array('game'=>'js28'))}"></a>
+                                <a class="game-img" href="<?php echo U('Num/index', array('game'=>'js28'));?>"></a>
                             </div>
                         </li>
                         <li class="game-nav-list ">
                             <div class="game-logo-box game-logo-jnd16">
                                 <span class="top-jt"></span>
-                                <a class="game-img" href="{:U('Num/index', array('game'=>'js16'))}"></a>
+                                <a class="game-img" href="<?php echo U('Num/index', array('game'=>'js16'));?>"></a>
                             </div>
                         </li>
                         <li class="game-nav-list ">
                             <div class="game-logo-box game-logo-fk28">
                                 <span class="top-jt"></span>
-                                <a class="game-img" href="{:U('Num/index', array('game'=>'fk28'))}"></a>
+                                <a class="game-img" href="<?php echo U('Num/index', array('game'=>'fk28'));?>"></a>
                             </div>
                         </li>
                         <li class="game-nav-list ">
                             <div class="game-logo-box game-logo-fksc">
                                 <span class="top-jt"></span>
-                                <a class="game-img" href="{:U('Num/index', array('game'=>'fksc'))}"></a>
+                                <a class="game-img" href="<?php echo U('Num/index', array('game'=>'fksc'));?>"></a>
                             </div>
                         </li>
                         <li class="game-nav-list selected">
                             <div class="game-logo-box game-logo-jnd28">
                                 <span class="top-jt"></span>
-                                <a class="game-img" href="{:U('Num/index', array('game'=>'jnd28'))}"></a>
+                                <a class="game-img" href="<?php echo U('Num/index', array('game'=>'jnd28'));?>"></a>
                             </div>
                         </li>
                     </ul>
@@ -131,7 +131,7 @@
                             <a target="_blank" class="chong-url">充</a>
                         </p>
                         <p class="my-yuanbao-box">
-                            <span class="my-yuanbao-text">金豆：{$userData['money']}</span>
+                            <span class="my-yuanbao-text">金豆：<?php echo ($userData['money']); ?></span>
                             <span class="jindou-logo"></span>
                             <a class="dui-url">兑</a>
                         </p>
@@ -141,9 +141,9 @@
                     <div class="two-nav-head">
                         <a class="head-list sel-color"><strong>加拿大28首页</strong></a>
                         <p class="my-touzhu-box clear-fix">
-							<a class="my-touzhu-list" href="{:U('Record/index', array('game'=>'jnd28'))}">我的投注</a>
-							<!--a class="my-touzhu-list" href="{:U('Mode/index', array('game'=>'jnd28'))}">投注模式编辑</a>
-							<a class="my-touzhu-list bor-r" href="{:U('Automatic/index', array('game'=>'jnd28'))}">自动投注</a-->
+							<a class="my-touzhu-list" href="<?php echo U('Record/index', array('game'=>'jnd28'));?>">我的投注</a>
+							<!--a class="my-touzhu-list" href="<?php echo U('Mode/index', array('game'=>'jnd28'));?>">投注模式编辑</a>
+							<a class="my-touzhu-list bor-r" href="<?php echo U('Automatic/index', array('game'=>'jnd28'));?>">自动投注</a-->
                         </p>
                     </div>
                 </div>
@@ -160,25 +160,25 @@
                         <div class="J_kjTimeBox">
                             <p class="kaijiang-time-text mar-t">
                                 距离第
-                                <b>{$tipData['issue']+1}</b>
+                                <b><?php echo ($tipData['issue']+1); ?></b>
                                 期竞猜截止还有
-                                <b class="J_jcTime" data-lasttime="{$tipData['deadlinecd']}">{$tipData['deadlinecd']}</b>
+                                <b class="J_jcTime" data-lasttime="<?php echo ($tipData['deadlinecd']); ?>"><?php echo ($tipData['deadlinecd']); ?></b>
                                 秒 开奖还有
-                                <b class="J_kjTime" data-lasttime="{$tipData['runtimecd']}">{$tipData['runtimecd']}</b>
+                                <b class="J_kjTime" data-lasttime="<?php echo ($tipData['runtimecd']); ?>"><?php echo ($tipData['runtimecd']); ?></b>
                                 秒
                             </p>
                             <p class="kaijiang-time-text">
                                 第
-                                <strong>{$tipData.issue}</strong>
-                                期开奖结果：{$tipData.num1}+{$tipData.num2}+{$tipData.num3}=
-                                <span class="now-jieguo">{$tipData['num1']+$tipData['num2']+$tipData['num3']}</span>
+                                <strong><?php echo ($tipData["issue"]); ?></strong>
+                                期开奖结果：<?php echo ($tipData["num1"]); ?>+<?php echo ($tipData["num2"]); ?>+<?php echo ($tipData["num3"]); ?>=
+                                <span class="now-jieguo"><?php echo ($tipData['num1']+$tipData['num2']+$tipData['num3']); ?></span>
                                 <a target="_blank" href="http://www.bwlc.gov.cn/bulletin/keno.html">[官方查询]</a>
                                 <a href="http://game3799.com/lucky28/guide">[游戏帮助]</a>
                             </p>
                         </div>
                         <p class="kaijiang-time-text line-h J_kjIng" style="display: none">
                             第
-                            <b>{$tipData['issue']+1}</b>
+                            <b><?php echo ($tipData['issue']+1); ?></b>
                             期正在开奖中！
                         </p>
                     </div>
@@ -277,7 +277,7 @@
                         <a href="javascript:void(0);" class="double_insert">5倍</a>
                         <a href="javascript:void(0);" class="double_insert">10倍</a>
                         <a href="javascript:void(0);" class="double_insert mode_lottery" attr="0">全包</a>
-                        <a href="javascript:void(0);" class="double_insert J_suohaBtn" data-val="{$userData['money']}">梭哈</a>
+                        <a href="javascript:void(0);" class="double_insert J_suohaBtn" data-val="<?php echo ($userData['money']); ?>">梭哈</a>
                         <p class="total_md">
                             <strong>
                                 <label>总投注金豆：</label>
@@ -292,167 +292,157 @@
                     <div class="across clear-fix" id="panel">
 					
 							<div class="across_par1 across_par_fksc">
-                            <for start="0" end="5">
-                                <div class="across_par1_no across_par1_width clear-fix">
+                            <?php $__FOR_START_32268__=0;$__FOR_END_32268__=5;for($i=$__FOR_START_32268__;$i < $__FOR_END_32268__;$i+=1){ ?><div class="across_par1_no across_par1_width clear-fix">
                                     <div class="across_par1_no_left">
-                                        <div id="click_number{$i}" class="click_number no_left_bg" style="cursor: pointer;">{$specialNumName[$i]}</div>
+                                        <div id="click_number<?php echo ($i); ?>" class="click_number no_left_bg" style="cursor: pointer;"><?php echo ($specialNumName[$i]); ?></div>
                                     </div>
                                     <div style="display: none;">
-                                        <input name="checkboxd" id="checkboxd{$i}" value="checkbox" type="checkbox">
+                                        <input name="checkboxd" id="checkboxd<?php echo ($i); ?>" value="checkbox" type="checkbox">
                                     </div>
                                     <div class="across_par1_no_right">
                                         <p>
-                                            <input class="downhhhh input_modou_txt_null" name="mdp_coin" id="txt{$i}"
+                                            <input class="downhhhh input_modou_txt_null" name="mdp_coin" id="txt<?php echo ($i); ?>"
                                             onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
                                             maxlength="15" type="text">
-                                            <a style="display: none;" class="sack_02" href="javascript:void(0);" onclick="clear_input('txt{$i}',this);" id="clear_this_val{$i}"></a>
-                                            <span style="display: none;" id="peilv{$i}">
+                                            <a style="display: none;" class="sack_02" href="javascript:void(0);" onclick="clear_input('txt<?php echo ($i); ?>',this);" id="clear_this_val<?php echo ($i); ?>"></a>
+                                            <span style="display: none;" id="peilv<?php echo ($i); ?>">
                                                 <label>×</label>
-                                                <a href="javascript:void(0);" class="multiple" id="{$i}" val="0.1">.1</a>
-                                                <a href="javascript:void(0);" id="{$i}" val="0.5" class="multiple">.5</a>
-                                                <a href="javascript:void(0);" id="{$i}" val="2" class="multiple">2</a>
-                                                <a href="javascript:void(0);" id="{$i}" val="10" class="multiple">10</a>
+                                                <a href="javascript:void(0);" class="multiple" id="<?php echo ($i); ?>" val="0.1">.1</a>
+                                                <a href="javascript:void(0);" id="<?php echo ($i); ?>" val="0.5" class="multiple">.5</a>
+                                                <a href="javascript:void(0);" id="<?php echo ($i); ?>" val="2" class="multiple">2</a>
+                                                <a href="javascript:void(0);" id="<?php echo ($i); ?>" val="10" class="multiple">10</a>
                                             </span>
                                         </p>
                                         <p>
                                             当前赔率:
-                                            <span class="color_02" id="this_lottery_odds{$i}">{$oddsData[$i]}</span>
+                                            <span class="color_02" id="this_lottery_odds<?php echo ($i); ?>"><?php echo ($oddsData[$i]); ?></span>
                                         </p>
                                     </div>
-                                </div>
-                            </for>
+                                </div><?php } ?>
                         </div>
                         <div class="across_par1 across_par_fksc">
-                            <for start="5" end="10">
-                                <div class="across_par1_no across_par1_width clear-fix">
+                            <?php $__FOR_START_853__=5;$__FOR_END_853__=10;for($i=$__FOR_START_853__;$i < $__FOR_END_853__;$i+=1){ ?><div class="across_par1_no across_par1_width clear-fix">
                                     <div class="across_par1_no_left">
-											<div id="click_number{$i}" class="click_number no_left_bg" style="cursor: pointer;">{$specialNumName[$i]}</div>
+											<div id="click_number<?php echo ($i); ?>" class="click_number no_left_bg" style="cursor: pointer;"><?php echo ($specialNumName[$i]); ?></div>
                                     </div>
                                     <div style="display: none;">
-                                        <input name="checkboxd" id="checkboxd{$i}" value="checkbox" type="checkbox">
+                                        <input name="checkboxd" id="checkboxd<?php echo ($i); ?>" value="checkbox" type="checkbox">
                                     </div>
                                     <div class="across_par1_no_right">
                                         <p>
-                                            <input class="downhhhh input_modou_txt_null" name="mdp_coin" id="txt{$i}"
+                                            <input class="downhhhh input_modou_txt_null" name="mdp_coin" id="txt<?php echo ($i); ?>"
                                             onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
                                             maxlength="15" type="text">
-                                            <a style="display: none;" class="sack_02" href="javascript:void(0);" onclick="clear_input('txt{$i}',this);" id="clear_this_val{$i}"></a>
-                                            <span style="display: none;" id="peilv{$i}">
+                                            <a style="display: none;" class="sack_02" href="javascript:void(0);" onclick="clear_input('txt<?php echo ($i); ?>',this);" id="clear_this_val<?php echo ($i); ?>"></a>
+                                            <span style="display: none;" id="peilv<?php echo ($i); ?>">
                                                 <label>×</label>
-                                                <a href="javascript:void(0);" class="multiple" id="{$i}" val="0.1">.1</a>
-                                                <a href="javascript:void(0);" id="{$i}" val="0.5" class="multiple">.5</a>
-                                                <a href="javascript:void(0);" id="{$i}" val="2" class="multiple">2</a>
-                                                <a href="javascript:void(0);" id="{$i}" val="10" class="multiple">10</a>
+                                                <a href="javascript:void(0);" class="multiple" id="<?php echo ($i); ?>" val="0.1">.1</a>
+                                                <a href="javascript:void(0);" id="<?php echo ($i); ?>" val="0.5" class="multiple">.5</a>
+                                                <a href="javascript:void(0);" id="<?php echo ($i); ?>" val="2" class="multiple">2</a>
+                                                <a href="javascript:void(0);" id="<?php echo ($i); ?>" val="10" class="multiple">10</a>
                                             </span>
                                         </p>
                                         <p>
                                             当前赔率:
-                                            <span class="color_02" id="this_lottery_odds{$i}">{$oddsData[$i]}</span>
+                                            <span class="color_02" id="this_lottery_odds<?php echo ($i); ?>"><?php echo ($oddsData[$i]); ?></span>
                                         </p>
                                     </div>
-                                </div>
-                            </for>
+                                </div><?php } ?>
                         </div>
 					
                         <div class="across_par1 ">
-								<for start="10" end="20">
-									<div class="across_par1_no clear-fix">
+								<?php $__FOR_START_362__=10;$__FOR_END_362__=20;for($i=$__FOR_START_362__;$i < $__FOR_END_362__;$i+=1){ ?><div class="across_par1_no clear-fix">
                                     <div class="across_par1_no_left">
-                                        <div id="click_number{$i}" class="click_number no_left_bg" style="cursor: pointer;">{$i-10}</div>
+                                        <div id="click_number<?php echo ($i); ?>" class="click_number no_left_bg" style="cursor: pointer;"><?php echo ($i-10); ?></div>
                                     </div>
                                     <div style="display: none;">
-                                        <input name="checkboxd" id="checkboxd{$i}" value="checkbox" type="checkbox">
+                                        <input name="checkboxd" id="checkboxd<?php echo ($i); ?>" value="checkbox" type="checkbox">
                                     </div>
                                     <div class="across_par1_no_right">
                                         <p>
-                                            <input class="downhhhh input_modou_txt_null" name="mdp_coin" id="txt{$i}"
+                                            <input class="downhhhh input_modou_txt_null" name="mdp_coin" id="txt<?php echo ($i); ?>"
                                             onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
                                             maxlength="15" type="text">
-                                            <a style="display: none;" class="sack_02" href="javascript:void(0);" onclick="clear_input('txt{$i}',this);"
-                                            id="clear_this_val{$i}">
+                                            <a style="display: none;" class="sack_02" href="javascript:void(0);" onclick="clear_input('txt<?php echo ($i); ?>',this);"
+                                            id="clear_this_val<?php echo ($i); ?>">
                                             </a>
-                                            <span style="display: none;" id="peilv{$i}">
+                                            <span style="display: none;" id="peilv<?php echo ($i); ?>">
                                                 <label>×</label>
-                                                <a href="javascript:void(0);" class="multiple" id="{$i}" val="0.1">.1</a>
-                                                <a href="javascript:void(0);" id="{$i}" val="0.5" class="multiple">.5</a>
-                                                <a href="javascript:void(0);" id="{$i}" val="2" class="multiple">2</a>
-                                                <a href="javascript:void(0);" id="{$i}" val="10" class="multiple">10</a>
+                                                <a href="javascript:void(0);" class="multiple" id="<?php echo ($i); ?>" val="0.1">.1</a>
+                                                <a href="javascript:void(0);" id="<?php echo ($i); ?>" val="0.5" class="multiple">.5</a>
+                                                <a href="javascript:void(0);" id="<?php echo ($i); ?>" val="2" class="multiple">2</a>
+                                                <a href="javascript:void(0);" id="<?php echo ($i); ?>" val="10" class="multiple">10</a>
                                             </span>
                                         </p>
                                         <p>
                                             当前赔率:
-                                            <span class="color_02" id="this_lottery_odds{$i}">{$oddsData[$i]}</span>
+                                            <span class="color_02" id="this_lottery_odds<?php echo ($i); ?>"><?php echo ($oddsData[$i]); ?></span>
                                         </p>
                                     </div>
-                                </div>
-                            </for>
+                                </div><?php } ?>
                         </div>
                         <div class="across_par1 ">
-                            <for start="20" end="28">
-                                <div class="across_par1_no clear-fix">
+                            <?php $__FOR_START_5723__=20;$__FOR_END_5723__=28;for($i=$__FOR_START_5723__;$i < $__FOR_END_5723__;$i+=1){ ?><div class="across_par1_no clear-fix">
                                     <div class="across_par1_no_left">
-                                        <div id="click_number{$i}" class="click_number no_left_bg" style="cursor: pointer;">{$i-10}</div>
+                                        <div id="click_number<?php echo ($i); ?>" class="click_number no_left_bg" style="cursor: pointer;"><?php echo ($i-10); ?></div>
                                     </div>
                                     <div style="display: none;">
-                                        <input name="checkboxd" id="checkboxd{$i}" value="checkbox" type="checkbox">
+                                        <input name="checkboxd" id="checkboxd<?php echo ($i); ?>" value="checkbox" type="checkbox">
                                     </div>
                                     <div class="across_par1_no_right">
                                         <p>
-                                            <input class="downhhhh input_modou_txt_null" name="mdp_coin" id="txt{$i}"
+                                            <input class="downhhhh input_modou_txt_null" name="mdp_coin" id="txt<?php echo ($i); ?>"
                                             onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
                                             maxlength="15" type="text">
-                                            <a style="display: none;" class="sack_02" href="javascript:void(0);" onclick="clear_input('txt{$i}',this);"
-                                            id="clear_this_val{$i}">
+                                            <a style="display: none;" class="sack_02" href="javascript:void(0);" onclick="clear_input('txt<?php echo ($i); ?>',this);"
+                                            id="clear_this_val<?php echo ($i); ?>">
                                             </a>
-                                            <span style="display: none;" id="peilv{$i}">
+                                            <span style="display: none;" id="peilv<?php echo ($i); ?>">
                                                 <label>×</label>
-                                                <a href="javascript:void(0);" class="multiple" id="{$i}" val="0.1">.1</a>
-                                                <a href="javascript:void(0);" id="{$i}" val="0.5" class="multiple">.5</a>
-                                                <a href="javascript:void(0);" id="{$i}" val="2" class="multiple">2</a>
-                                                <a href="javascript:void(0);" id="{$i}" val="10" class="multiple">10</a>
+                                                <a href="javascript:void(0);" class="multiple" id="<?php echo ($i); ?>" val="0.1">.1</a>
+                                                <a href="javascript:void(0);" id="<?php echo ($i); ?>" val="0.5" class="multiple">.5</a>
+                                                <a href="javascript:void(0);" id="<?php echo ($i); ?>" val="2" class="multiple">2</a>
+                                                <a href="javascript:void(0);" id="<?php echo ($i); ?>" val="10" class="multiple">10</a>
                                             </span>
                                         </p>
                                         <p>
                                             当前赔率:
-                                            <span class="color_02" id="this_lottery_odds{$i}">{$oddsData[$i]}</span>
+                                            <span class="color_02" id="this_lottery_odds<?php echo ($i); ?>"><?php echo ($oddsData[$i]); ?></span>
                                         </p>
                                     </div>
-                                </div>
-                            </for>
+                                </div><?php } ?>
                         </div>
 							
                         <div class="across_par1 ">
-                            <for start="28" end="38">
-                                <div class="across_par1_no clear-fix">
+                            <?php $__FOR_START_28408__=28;$__FOR_END_28408__=38;for($i=$__FOR_START_28408__;$i < $__FOR_END_28408__;$i+=1){ ?><div class="across_par1_no clear-fix">
                                     <div class="across_par1_no_left">
-                                        <div id="click_number{$i}" class="click_number no_left_bg" style="cursor: pointer;">{$i-10}</div>
+                                        <div id="click_number<?php echo ($i); ?>" class="click_number no_left_bg" style="cursor: pointer;"><?php echo ($i-10); ?></div>
                                     </div>
                                     <div style="display: none;">
-                                        <input name="checkboxd" id="checkboxd{$i}" value="checkbox" type="checkbox">
+                                        <input name="checkboxd" id="checkboxd<?php echo ($i); ?>" value="checkbox" type="checkbox">
                                     </div>
                                     <div class="across_par1_no_right">
                                         <p>
-                                            <input class="downhhhh input_modou_txt_null" name="mdp_coin" id="txt{$i}"
+                                            <input class="downhhhh input_modou_txt_null" name="mdp_coin" id="txt<?php echo ($i); ?>"
                                             onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
                                             maxlength="15" type="text">
-                                            <a style="display: none;" class="sack_02" href="javascript:void(0);" onclick="clear_input('txt{$i}',this);"
-                                            id="clear_this_val{$i}">
+                                            <a style="display: none;" class="sack_02" href="javascript:void(0);" onclick="clear_input('txt<?php echo ($i); ?>',this);"
+                                            id="clear_this_val<?php echo ($i); ?>">
                                             </a>
-                                            <span style="display: none;" id="peilv{$i}">
+                                            <span style="display: none;" id="peilv<?php echo ($i); ?>">
                                                 <label>×</label>
-                                                <a href="javascript:void(0);" class="multiple" id="{$i}" val="0.1">.1</a>
-                                                <a href="javascript:void(0);" id="{$i}" val="0.5" class="multiple">.5</a>
-                                                <a href="javascript:void(0);" id="{$i}" val="2" class="multiple">2</a>
-                                                <a href="javascript:void(0);" id="{$i}" val="10" class="multiple">10</a>
+                                                <a href="javascript:void(0);" class="multiple" id="<?php echo ($i); ?>" val="0.1">.1</a>
+                                                <a href="javascript:void(0);" id="<?php echo ($i); ?>" val="0.5" class="multiple">.5</a>
+                                                <a href="javascript:void(0);" id="<?php echo ($i); ?>" val="2" class="multiple">2</a>
+                                                <a href="javascript:void(0);" id="<?php echo ($i); ?>" val="10" class="multiple">10</a>
                                             </span>
                                         </p>
                                         <p>
                                             当前赔率:
-                                            <span class="color_02" id="this_lottery_odds{$i}">{$oddsData[$i]}</span>
+                                            <span class="color_02" id="this_lottery_odds<?php echo ($i); ?>"><?php echo ($oddsData[$i]); ?></span>
                                         </p>
                                     </div>
-                                </div>
-                            </for>
+                                </div><?php } ?>
                         </div>
                         <div class="across_par2">
 								<p class="color_03" align="center">我的总投注金豆</p>
@@ -461,7 +451,7 @@
 									<span class="jindou-logo"></span>
 								</p>
 								<p>
-									<a href="javascript:void(0);" data-game="jnd28" data-issue="{$issueNum}"
+									<a href="javascript:void(0);" data-game="jnd28" data-issue="<?php echo ($issueNum); ?>"
 									data-url="/waibao/index.php/Home/Guess/guess" class="suer_insert J_TZBtn">
 										确认投注
 									</a>
@@ -501,9 +491,9 @@
             </div>
         </div>
         <div class="black-cover"></div>
-        <script src="__PUBLIC__/front/common.js"></script>
-        <script src="__PUBLIC__/front/touzhu-cz.js"></script>
-        <script src="__PUBLIC__/front/touzhu.js"></script>
-        <script src="__PUBLIC__/front/swfobject.js"></script>
+        <script src="/waibao/Public/front/common.js"></script>
+        <script src="/waibao/Public/front/touzhu-cz.js"></script>
+        <script src="/waibao/Public/front/touzhu.js"></script>
+        <script src="/waibao/Public/front/swfobject.js"></script>
     </body>
 </html>

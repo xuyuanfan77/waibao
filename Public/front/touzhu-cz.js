@@ -605,7 +605,7 @@ function comform() {
 
 function sum_val(){
 	var _val = '';
-	for (var i = 0; i < 28; i++) {
+	for (var i = 0; i < 38; i++) {
 		var txt_value = $.trim($("#txt" + i).val()).replace(/,/gi, "");
 		if($("#txt" + i).length > 0){
 			if(txt_value){

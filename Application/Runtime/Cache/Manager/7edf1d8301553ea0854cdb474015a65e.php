@@ -25,7 +25,8 @@
 					<li role="presentation" style="background:<?php echo ($navbarColor[1]); ?>"><a href="<?php echo U('Transform/index');?>">转换配置</a></li>
 					<li role="presentation" style="background:<?php echo ($navbarColor[2]); ?>"><a href="<?php echo U('Guess/index');?>">投注配置</a></li>
 					<li role="presentation" style="background:<?php echo ($navbarColor[3]); ?>"><a href="<?php echo U('Robot/index');?>">机器人</a></li>
-					<li role="presentation" style="background:<?php echo ($navbarColor[4]); ?>"><a href="#">风控管理</a></li>
+					<li role="presentation" style="background:<?php echo ($navbarColor[4]); ?>"><a href="<?php echo U('Fengkong/index');?>">风控管理</a></li>
+					<li role="presentation" style="background:<?php echo ($navbarColor[5]); ?>"><a href="<?php echo U('Odds/index');?>">赔率管理</a></li>
 				</ul>
 			</div>
 		</div>
@@ -143,6 +144,45 @@ function submitForm() {
 					</div>
 					<div class="col-md-2">
 						<input type="text" class="form-control" name="money27" placeholder="号码27" value="<?php echo ($configData['money27']); ?>">
+					</div>
+				</div>
+				<label>单、双、大、小：</label>
+				<div class="row">
+					<div class="col-md-2">
+						<input type="text" class="form-control" name="spmoney0" placeholder="单" value="<?php echo ($configData['spmoney0']); ?>">
+					</div>
+					<div class="col-md-2">
+						<input type="text" class="form-control" name="spmoney1" placeholder="双" value="<?php echo ($configData['spmoney1']); ?>">
+					</div>
+					<div class="col-md-2">
+						<input type="text" class="form-control" name="spmoney2" placeholder="大" value="<?php echo ($configData['spmoney2']); ?>">
+					</div>
+					<div class="col-md-2">
+						<input type="text" class="form-control" name="spmoney3" placeholder="小" value="<?php echo ($configData['spmoney3']); ?>">
+					</div>
+				</div>
+				<label>小单、小双、大单、大双：</label>
+				<div class="row">
+					<div class="col-md-2">
+						<input type="text" class="form-control" name="spmoney4" placeholder="小单" value="<?php echo ($configData['spmoney4']); ?>">
+					</div>
+					<div class="col-md-2">
+						<input type="text" class="form-control" name="spmoney5" placeholder="小双" value="<?php echo ($configData['spmoney5']); ?>">
+					</div>
+					<div class="col-md-2">
+						<input type="text" class="form-control" name="spmoney6" placeholder="大单" value="<?php echo ($configData['spmoney6']); ?>">
+					</div>
+					<div class="col-md-2">
+						<input type="text" class="form-control" name="spmoney7" placeholder="大双" value="<?php echo ($configData['spmoney7']); ?>">
+					</div>
+				</div>
+				<label>极大、极小：</label>
+				<div class="row">
+					<div class="col-md-2">
+						<input type="text" class="form-control" name="spmoney8" placeholder="极大" value="<?php echo ($configData['spmoney8']); ?>">
+					</div>
+					<div class="col-md-2">
+						<input type="text" class="form-control" name="spmoney9" placeholder="极小" value="<?php echo ($configData['spmoney9']); ?>">
 					</div>
 				</div>
 			</form>

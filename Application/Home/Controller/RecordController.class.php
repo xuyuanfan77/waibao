@@ -3,7 +3,6 @@ namespace Home\Controller;
 use Think\Controller;
 header("Content-Type: text/html;charset=utf-8");
 class RecordController extends Controller {
-	//获取游戏类型
 	private function getGameStyle() {
 		if($_GET['game']) {
 			$gameStyle = $_GET['game'];
@@ -13,15 +12,13 @@ class RecordController extends Controller {
 		return $gameStyle;
 	}
 
-	//初始化用户数据
 	private function initUser() {
 		$User = M('User');
 		$condition['id'] = array('eq',session('userId'));
 		$userData = $User->where($condition)->find();
 		$this->assign('userData',$userData);
 	}
-	
-	//初始化提示
+
 	private function initTip() {
 		$Game = M('Game');
 		$condition1['name'] = array('eq',$this->getGameStyle());
@@ -45,8 +42,7 @@ class RecordController extends Controller {
 		}
 		$this->assign('tipData',$tipData);
 	}
-	
-	//初始化内容
+
 	private function initContent() {
 		$Guess = D('GuessView');
 		unset($condition);
@@ -57,8 +53,7 @@ class RecordController extends Controller {
 		$guessData = $Guess->where($condition)->page($pageNum .',10')->order('gameissue desc')->select();
 		$this->assign('guessData',$guessData);
 	}
-	
-	//获取页数
+
 	private function getPageNum() {
 		if($_GET['p']) {
 			$pageNum = $_GET['p'];
@@ -67,8 +62,7 @@ class RecordController extends Controller {
 		}
 		return $pageNum;
 	}
-	
-	//初始化分页
+
 	private function initPage() {
 		$Guess = D('GuessView');
 		$condition['userid'] = array('eq',session('userId'));
@@ -94,8 +88,7 @@ class RecordController extends Controller {
 			$this->redirect('Index/index', array('page'=>'login'));
 		}
 	}
-	
-	//获取系统时间
+
 	public function getServerTime() {
 		$data['hour'] = date('H');
 		$data['min'] = date('i');

@@ -7,7 +7,6 @@ class AccountController extends LayoutController {
         $this->display();
 	}
 	
-	/* 登录 */
 	public function login(){
 		$Admin = M('Admin');
 		$condition['username'] = $_POST['username'];
@@ -24,7 +23,6 @@ class AccountController extends LayoutController {
 		}
 	}
 	
-	/* 退出 */
 	public function logout(){
 		session('[destroy]');
 		$this->redirect('Account/index');

@@ -1,0 +1,64 @@
+<style type="text/css">
+.pages {position:relative;width:700px;padding:10px 0px;background-color:#FFF;}
+.num,.prev,.next,.current{width:60px;line-height:30px;display:inline-block;margin:0px 2px 0px 2px;text-align:center;}
+.num,.prev,.next{color:#000;background-color:#eee;}
+.current {color:#FFF;background-color:#008cba;}
+.num:hover,.prev:hover,.next:hover{background-color:#008cba;color:#FFF;}
+</style>
+
+<div class="col-md-10">
+	<a type="button" class="btn btn-default" href="{:U('Oddsform/index')}" style="float:right;margin:15px 0px">新增配置</a>
+	<table class="table table-hover" style="margin:0px">
+		<tr>
+			<th>游戏名称</th>
+			<th>号码<br/>0-1</th>
+			<th>号码<br/>2-3</th>
+			<th>号码<br/>4-5</th>
+			<th>号码<br/>6-7</th>
+			<th>号码<br/>8-9</th>
+			<th>号码<br/>10-11</th>
+			<th>号码<br/>12-13</th>
+			<th>号码<br/>14-15</th>
+			<th>号码<br/>16-17</th>
+			<th>号码<br/>18-19</th>
+			<th>号码<br/>20-21</th>
+			<th>号码<br/>22-23</th>
+			<th>号码<br/>24-25</th>
+			<th>号码<br/>26-27</th>
+			<th>单<br/>双</th>
+			<th>大<br/>小</th>
+			<th>小单<br/>小双</th>
+			<th>大单<br/>大双</th>
+			<th>极大<br/>极小</th>
+			<th>操作</th>
+		</tr>
+		<foreach name="configData" item="config" >
+			<tr>
+				<td>{$config["gamename"]}</td>
+				<td>{$config["odds0"]}<br/>{$config["odds1"]}</td>
+				<td>{$config["odds2"]}<br/>{$config["odds3"]}</td>
+				<td>{$config["odds4"]}<br/>{$config["odds5"]}</td>
+				<td>{$config["odds6"]}<br/>{$config["odds7"]}</td>
+				<td>{$config["odds8"]}<br/>{$config["odds9"]}</td>
+				<td>{$config["odds10"]}<br/>{$config["odds11"]}</td>
+				<td>{$config["odds12"]}<br/>{$config["odds13"]}</td>
+				<td>{$config["odds14"]}<br/>{$config["odds15"]}</td>
+				<td>{$config["odds16"]}<br/>{$config["odds17"]}</td>
+				<td>{$config["odds18"]}<br/>{$config["odds19"]}</td>
+				<td>{$config["odds20"]}<br/>{$config["odds21"]}</td>
+				<td>{$config["odds22"]}<br/>{$config["odds23"]}</td>
+				<td>{$config["odds24"]}<br/>{$config["odds25"]}</td>
+				<td>{$config["odds26"]}<br/>{$config["odds27"]}</td>
+				<td>{$config["odds28"]}<br/>{$config["odds29"]}</td>
+				<td>{$config["odds30"]}<br/>{$config["odds31"]}</td>
+				<td>{$config["odds32"]}<br/>{$config["odds33"]}</td>
+				<td>{$config["odds34"]}<br/>{$config["odds35"]}</td>
+				<td>{$config["odds36"]}<br/>{$config["odds37"]}</td>
+				<td><a href="{:U('Oddsform/index', array('gamename'=>$config['gamename']))}">修改</a> <a href="{:U('Odds/del', array('gamename'=>$config['gamename']))}">删除</a></td>
+			</tr>
+		</foreach>
+	</table>
+	<div class="pages">
+		{$pageShow}
+	</div>
+</div>

@@ -395,6 +395,7 @@
 	background: #f4f4f4;
 	position: relative;
 }
+
 .across_par1 {
 	width: 330px;
 	margin-left: 3px;
@@ -437,7 +438,20 @@
 	background: #fb9800;
 	margin: 9px 7px 0 7px;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 24px;
+	/*font-size: 24px;*/
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	line-height: 37px;
+	cursor: pointer;
+}
+
+.no_left_bg1 {
+	width: 36px;
+	height: 36px;
+	background: #fb9800;
+	margin: 9px 7px 0 7px;
+	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bold;
 	color: #fff;
 	text-align: center;
@@ -497,7 +511,7 @@
 	height: 36px;
 	margin: 9px 7px 0 7px;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 24px;
+	/*font-size: 24px;*/
 	font-weight: bold;
 	color: #fff;
 	text-align: center;
@@ -581,6 +595,39 @@
 	margin-top: 6px;
 	color: #a1a1a1;
 	text-indent: 5px;
+}
+
+.across_par3 {
+	width: 310px;
+	height: 100px;
+	background: #f2f2f2;
+	padding-top: 15px;
+	position: relative;
+	bottom: 0px;
+	left: 0px;
+
+}
+
+.across_par3 .jindou-logo {
+	display: inline-block;
+	width: 12px;
+	height: 11px;
+	background: url('kdou.png') no-repeat 0 0;
+	margin: 0 0 0 5px;
+	*display: inline;
+	*zoom: 1;
+}
+
+.across_par3 p {
+	text-align: center;
+	margin: 5px 0 0 0;
+}
+
+.across_par3 p strong {
+	line-height: 20px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #cc0000;
 }
 
 .across_par2 {

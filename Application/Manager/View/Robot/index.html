@@ -25,6 +25,11 @@
 			<th>号码<br/>22-23</th>
 			<th>号码<br/>24-25</th>
 			<th>号码<br/>26-27</th>
+			<th>单<br/>双</th>
+			<th>大<br/>小</th>
+			<th>小单<br/>小双</th>
+			<th>大单<br/>大双</th>
+			<th>极大<br/>极小</th>
 			<th>操作</th>
 		</tr>
 		<foreach name="configData" item="config" >
@@ -44,6 +49,11 @@
 				<td>{$config["money22"]}<br/>{$config["money23"]}</td>
 				<td>{$config["money24"]}<br/>{$config["money25"]}</td>
 				<td>{$config["money26"]}<br/>{$config["money27"]}</td>
+				<td>{$config["spmoney0"]}<br/>{$config["spmoney1"]}</td>
+				<td>{$config["spmoney2"]}<br/>{$config["spmoney3"]}</td>
+				<td>{$config["spmoney4"]}<br/>{$config["spmoney5"]}</td>
+				<td>{$config["spmoney6"]}<br/>{$config["spmoney7"]}</td>
+				<td>{$config["spmoney8"]}<br/>{$config["spmoney9"]}</td>
 				<td><a href="{:U('Robotform/index', array('gamename'=>$config['gamename']))}">修改</a> <a href="{:U('Robot/del', array('gamename'=>$config['gamename']))}">删除</a></td>
 			</tr>
 		</foreach>

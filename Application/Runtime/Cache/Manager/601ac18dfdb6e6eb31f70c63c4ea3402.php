@@ -39,31 +39,53 @@
 </style>
 
 <div class="col-md-10">
-	<a type="button" class="btn btn-default" href="<?php echo U('Collectform/index');?>" style="float:right;margin:15px 0px">修改配置</a>
+	<a type="button" class="btn btn-default" href="<?php echo U('Oddsform/index');?>" style="float:right;margin:15px 0px">新增配置</a>
 	<table class="table table-hover" style="margin:0px">
 		<tr>
-			<th>名称</th>
-			<th>类型</th>
-			<th>URL</th>
-			<th>匹配区域</th>
-			<th>时间段</th>
+			<th>游戏名称</th>
+			<th>号码<br/>0-1</th>
+			<th>号码<br/>2-3</th>
+			<th>号码<br/>4-5</th>
+			<th>号码<br/>6-7</th>
+			<th>号码<br/>8-9</th>
+			<th>号码<br/>10-11</th>
+			<th>号码<br/>12-13</th>
+			<th>号码<br/>14-15</th>
+			<th>号码<br/>16-17</th>
+			<th>号码<br/>18-19</th>
+			<th>号码<br/>20-21</th>
+			<th>号码<br/>22-23</th>
+			<th>号码<br/>24-25</th>
+			<th>号码<br/>26-27</th>
+			<th>单<br/>双</th>
+			<th>大<br/>小</th>
+			<th>小单<br/>小双</th>
+			<th>大单<br/>大双</th>
+			<th>极大<br/>极小</th>
+			<th>操作</th>
 		</tr>
 		<?php if(is_array($configData)): foreach($configData as $key=>$config): ?><tr>
-				<td><?php echo ($config["name"]); ?></td>
-				<?php if(($config['type'] == 1)): ?><td>网页采集</td>
-				<?php elseif(($config['type'] == 2)): ?>
-					<td>自动生成</td>
-				<?php else: ?>
-					<td>——</td><?php endif; ?>
-				
-				<?php if(($config['page'] != '')): ?><td><?php echo ($config["page"]); ?></td>
-				<?php else: ?>
-					<td>——</td><?php endif; ?>
-				
-				<?php if(($config['range_begin'] != '')): ?><td>【<?php echo ($config["range_begin"]); ?>~<?php echo ($config['range_begin']+$config['range_lenght']); ?>】</td>
-				<?php else: ?>
-					<td>——</td><?php endif; ?>	
-				<td><?php echo ($config["period_begin"]); ?>~<?php echo ($config["period_end"]); ?></td>
+				<td><?php echo ($config["gamename"]); ?></td>
+				<td><?php echo ($config["odds0"]); ?><br/><?php echo ($config["odds1"]); ?></td>
+				<td><?php echo ($config["odds2"]); ?><br/><?php echo ($config["odds3"]); ?></td>
+				<td><?php echo ($config["odds4"]); ?><br/><?php echo ($config["odds5"]); ?></td>
+				<td><?php echo ($config["odds6"]); ?><br/><?php echo ($config["odds7"]); ?></td>
+				<td><?php echo ($config["odds8"]); ?><br/><?php echo ($config["odds9"]); ?></td>
+				<td><?php echo ($config["odds10"]); ?><br/><?php echo ($config["odds11"]); ?></td>
+				<td><?php echo ($config["odds12"]); ?><br/><?php echo ($config["odds13"]); ?></td>
+				<td><?php echo ($config["odds14"]); ?><br/><?php echo ($config["odds15"]); ?></td>
+				<td><?php echo ($config["odds16"]); ?><br/><?php echo ($config["odds17"]); ?></td>
+				<td><?php echo ($config["odds18"]); ?><br/><?php echo ($config["odds19"]); ?></td>
+				<td><?php echo ($config["odds20"]); ?><br/><?php echo ($config["odds21"]); ?></td>
+				<td><?php echo ($config["odds22"]); ?><br/><?php echo ($config["odds23"]); ?></td>
+				<td><?php echo ($config["odds24"]); ?><br/><?php echo ($config["odds25"]); ?></td>
+				<td><?php echo ($config["odds26"]); ?><br/><?php echo ($config["odds27"]); ?></td>
+				<td><?php echo ($config["odds28"]); ?><br/><?php echo ($config["odds29"]); ?></td>
+				<td><?php echo ($config["odds30"]); ?><br/><?php echo ($config["odds31"]); ?></td>
+				<td><?php echo ($config["odds32"]); ?><br/><?php echo ($config["odds33"]); ?></td>
+				<td><?php echo ($config["odds34"]); ?><br/><?php echo ($config["odds35"]); ?></td>
+				<td><?php echo ($config["odds36"]); ?><br/><?php echo ($config["odds37"]); ?></td>
+				<td><a href="<?php echo U('Oddsform/index', array('gamename'=>$config['gamename']));?>">修改</a> <a href="<?php echo U('Odds/del', array('gamename'=>$config['gamename']));?>">删除</a></td>
 			</tr><?php endforeach; endif; ?>
 	</table>
 	<div class="pages">
