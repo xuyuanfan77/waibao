@@ -143,7 +143,9 @@
                     <div class="two-nav-head">
                         <a class="head-list sel-color"><strong>极速28首页</strong></a>
                         <p class="my-touzhu-box clear-fix">
-                            <a class="my-touzhu-list " href="<?php echo U('Record/index', array('game'=>'js28'));?>">我的投注</a>
+							<a class="my-touzhu-list" href="<?php echo U('Record/index', array('game'=>'js28'));?>">我的投注</a>
+							<a class="my-touzhu-list" href="<?php echo U('Mode/index', array('game'=>'js28'));?>">投注模式编辑</a>
+							<a class="my-touzhu-list bor-r" href="<?php echo U('Automatic/index', array('game'=>'js28'));?>">自动投注</a>
                         </p>
                     </div>
                 </div>
@@ -291,7 +293,7 @@
                     </div>
                     <div class="across clear-fix" id="panel">
                         <div class="across_par1 ">
-                            <?php $__FOR_START_1476__=0;$__FOR_END_1476__=10;for($i=$__FOR_START_1476__;$i < $__FOR_END_1476__;$i+=1){ ?><div class="across_par1_no clear-fix">
+                            <?php $__FOR_START_30256__=0;$__FOR_END_30256__=10;for($i=$__FOR_START_30256__;$i < $__FOR_END_30256__;$i+=1){ ?><div class="across_par1_no clear-fix">
                                     <div class="across_par1_no_left">
                                         <div id="click_number<?php echo ($i); ?>" class="click_number no_left_bg" style="cursor: pointer;"><?php echo ($i); ?></div>
                                     </div>
@@ -324,7 +326,7 @@
                                 </div><?php } ?>
                         </div>
                         <div class="across_par1 ">
-                            <?php $__FOR_START_23725__=10;$__FOR_END_23725__=18;for($i=$__FOR_START_23725__;$i < $__FOR_END_23725__;$i+=1){ ?><div class="across_par1_no clear-fix">
+                            <?php $__FOR_START_8873__=10;$__FOR_END_8873__=18;for($i=$__FOR_START_8873__;$i < $__FOR_END_8873__;$i+=1){ ?><div class="across_par1_no clear-fix">
                                     <div class="across_par1_no_left">
                                         <div id="click_number<?php echo ($i); ?>" class="click_number no_left_bg" style="cursor: pointer;"><?php echo ($i); ?></div>
                                     </div>
@@ -357,7 +359,7 @@
                                 </div><?php } ?>
                         </div>
                         <div class="across_par1 ">
-                            <?php $__FOR_START_23522__=18;$__FOR_END_23522__=28;for($i=$__FOR_START_23522__;$i < $__FOR_END_23522__;$i+=1){ ?><div class="across_par1_no clear-fix">
+                            <?php $__FOR_START_28718__=18;$__FOR_END_28718__=28;for($i=$__FOR_START_28718__;$i < $__FOR_END_28718__;$i+=1){ ?><div class="across_par1_no clear-fix">
                                     <div class="across_par1_no_left">
                                         <div id="click_number<?php echo ($i); ?>" class="click_number no_left_bg" style="cursor: pointer;"><?php echo ($i); ?></div>
                                     </div>

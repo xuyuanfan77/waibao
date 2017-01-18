@@ -15,46 +15,46 @@
         <link rel="stylesheet" href="/waibao/Public/front/touzhu-jnd28.css">
         <script type="text/javascript">
             var nub = new Array(<?php echo ($configData); ?>);
-            var nub1 = new Array(1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 63, 69, 73, 75, 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 63, 69, 73, 75);
-            var mode = new Array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27], //全包
-            [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27], //单
-            [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26], //双
-            [14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27], //大
-            [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13], //小
-            [10, 11, 12, 13, 14, 15, 16, 17], //中
-            [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27], //边
-            [15, 17, 19, 21, 23, 25, 27], //大单
-            [1, 3, 5, 7, 9, 11, 13], //小单
-            [14, 16, 18, 20, 22, 24, 26], //大双
-            [0, 2, 4, 6, 8, 10, 12], //小双
-            [18, 19, 20, 21, 22, 23, 24, 25, 26, 27], //大边
-            [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], //小边
-            [1, 3, 5, 7, 9, 19, 21, 23, 25, 27], //单边
-            [0, 2, 4, 6, 8, 18, 20, 22, 24, 26], //双边
-            [0, 10, 20], //0尾
-            [1, 11, 21], //1尾
-            [2, 12, 22], //2尾
-            [3, 13, 23], //3尾
-            [4, 14, 24], //4尾
-            [0, 1, 2, 3, 4, 10, 11, 12, 13, 14, 20, 21, 22, 23, 24], //小尾
-            [5, 15, 25], //5尾
-            [6, 16, 26], //6尾
-            [7, 17, 27], //7尾
-            [8, 18], //8尾
-            [9, 19], //9尾
-            [5, 6, 7, 8, 9, 15, 16, 17, 18, 19, 25, 26, 27], //大尾
-            [0, 3, 6, 9, 12, 15, 18, 21, 24, 27], //3余0
-            [1, 4, 7, 10, 13, 16, 19, 22, 25], //3余1
-            [2, 5, 8, 11, 14, 17, 20, 23, 26], //3余2
-            [0, 4, 8, 12, 16, 20, 24], //4余0
-            [1, 5, 9, 13, 17, 21, 25], //4余1
-            [2, 6, 10, 14, 18, 22, 26], //4余2
-            [3, 7, 11, 15, 19, 23, 27], //4余3
-            [0, 5, 10, 15, 20, 25], //5余0
-            [1, 6, 11, 16, 21, 26], //5余1
-            [2, 7, 12, 17, 22, 27], //5余2
-            [3, 8, 13, 18, 23], //5余3
-            [4, 9, 14, 19, 24] //5余4
+            var nub1 = new Array(101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 63, 69, 73, 75, 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 63, 69, 73, 75);
+            var mode = new Array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37], //全包
+            [11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37], //单
+            [10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36], //双
+            [24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37], //大
+            [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23], //小
+            [20, 21, 22, 23, 24, 25, 26, 27], //中
+            [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37], //边
+            [25, 27, 29, 31, 33, 35, 37], //大单
+            [11, 13, 15, 17, 19, 21, 23], //小单
+            [24, 26, 28, 30, 32, 34, 36], //大双
+            [10, 12, 14, 16, 18, 20, 22], //小双
+            [28, 29, 30, 31, 32, 33, 34, 35, 36, 37], //大边
+            [10, 11, 12, 13, 14, 15, 16, 17, 18, 19], //小边
+            [11, 13, 15, 17, 19, 29, 31, 33, 35, 37], //单边
+            [10, 12, 14, 16, 18, 28, 30, 32, 34, 36], //双边
+            [10, 20, 30], //0尾
+            [11, 21, 31], //1尾
+            [12, 22, 32], //2尾
+            [13, 23, 33], //3尾
+            [14, 24, 34], //4尾
+            [10, 11, 12, 13, 14, 20, 21, 22, 23, 24, 30, 31, 32, 33, 34], //小尾
+            [15, 25, 35], //5尾
+            [16, 26, 36], //6尾
+            [17, 27, 37], //7尾
+            [18, 28], //8尾
+            [19, 29], //9尾
+            [15, 16, 17, 18, 19, 25, 26, 27, 28, 29, 35, 36, 37], //大尾
+            [10, 13, 16, 19, 22, 25, 28, 31, 34, 37], //3余0
+            [11, 14, 17, 20, 23, 26, 29, 32, 35], //3余1
+            [12, 15, 18, 21, 24, 27, 30, 33, 36], //3余2
+            [10, 14, 18, 22, 26, 30, 34], //4余0
+            [11, 15, 19, 23, 27, 31, 35], //4余1
+            [12, 16, 20, 24, 28, 32, 36], //4余2
+            [13, 17, 21, 25, 29, 33, 37], //4余3
+            [10, 15, 20, 25, 30, 35], //5余0
+            [11, 16, 21, 26, 31, 36], //5余1
+            [12, 17, 22, 27, 32, 37], //5余2
+            [13, 18, 23, 28, 33], //5余3
+            [14, 19, 24, 29, 34] //5余4
             );
         </script>
     </head>
@@ -297,10 +297,70 @@
 				</div>
 
 				<div class="across clear-fix" id="panel">
-					<div class="across_par1 ">
-						<?php $__FOR_START_2357__=0;$__FOR_END_2357__=10;for($i=$__FOR_START_2357__;$i < $__FOR_END_2357__;$i+=1){ ?><div class="across_par1_no clear-fix">
+				
+					<div class="across_par1 across_par_fksc">
+						<?php $__FOR_START_19746__=0;$__FOR_END_19746__=5;for($i=$__FOR_START_19746__;$i < $__FOR_END_19746__;$i+=1){ ?><div class="across_par1_no across_par1_width clear-fix">
 								<div class="across_par1_no_left">
-									<div id="click_number<?php echo ($i); ?>" class="click_number no_left_bg" style="cursor: pointer;"><?php echo ($i); ?></div>
+									<div id="click_number<?php echo ($i); ?>" class="click_number no_left_bg" style="cursor: pointer;"><?php echo ($specialNumName[$i]); ?></div>
+								</div>
+								<div style="display: none;">
+									<input name="checkboxd" id="checkboxd<?php echo ($i); ?>" value="checkbox" type="checkbox">
+								</div>
+								<div class="across_par1_no_right">
+									<p>
+										<input class="downhhhh input_modou_txt_null" name="mdp_coin" id="txt<?php echo ($i); ?>"
+										onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
+										maxlength="15" type="text">
+										<a style="display: none;" class="sack_02" href="javascript:void(0);" onclick="clear_input('txt<?php echo ($i); ?>',this);" id="clear_this_val<?php echo ($i); ?>"></a>
+										<span style="display: none;" id="peilv<?php echo ($i); ?>">
+											<label>×</label>
+											<a href="javascript:void(0);" class="multiple" id="<?php echo ($i); ?>" val="0.1">.1</a>
+											<a href="javascript:void(0);" id="<?php echo ($i); ?>" val="0.5" class="multiple">.5</a>
+											<a href="javascript:void(0);" id="<?php echo ($i); ?>" val="2" class="multiple">2</a>
+											<a href="javascript:void(0);" id="<?php echo ($i); ?>" val="10" class="multiple">10</a>
+										</span>
+									</p>
+									<p>
+										当前赔率:
+										<span class="color_02" id="this_lottery_odds<?php echo ($i); ?>"><?php echo ($oddsData[$i]); ?></span>
+									</p>
+								</div>
+							</div><?php } ?>
+					</div>
+					<div class="across_par1 across_par_fksc">
+						<?php $__FOR_START_25523__=5;$__FOR_END_25523__=10;for($i=$__FOR_START_25523__;$i < $__FOR_END_25523__;$i+=1){ ?><div class="across_par1_no across_par1_width clear-fix">
+								<div class="across_par1_no_left">
+										<div id="click_number<?php echo ($i); ?>" class="click_number no_left_bg" style="cursor: pointer;"><?php echo ($specialNumName[$i]); ?></div>
+								</div>
+								<div style="display: none;">
+									<input name="checkboxd" id="checkboxd<?php echo ($i); ?>" value="checkbox" type="checkbox">
+								</div>
+								<div class="across_par1_no_right">
+									<p>
+										<input class="downhhhh input_modou_txt_null" name="mdp_coin" id="txt<?php echo ($i); ?>"
+										onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
+										maxlength="15" type="text">
+										<a style="display: none;" class="sack_02" href="javascript:void(0);" onclick="clear_input('txt<?php echo ($i); ?>',this);" id="clear_this_val<?php echo ($i); ?>"></a>
+										<span style="display: none;" id="peilv<?php echo ($i); ?>">
+											<label>×</label>
+											<a href="javascript:void(0);" class="multiple" id="<?php echo ($i); ?>" val="0.1">.1</a>
+											<a href="javascript:void(0);" id="<?php echo ($i); ?>" val="0.5" class="multiple">.5</a>
+											<a href="javascript:void(0);" id="<?php echo ($i); ?>" val="2" class="multiple">2</a>
+											<a href="javascript:void(0);" id="<?php echo ($i); ?>" val="10" class="multiple">10</a>
+										</span>
+									</p>
+									<p>
+										当前赔率:
+										<span class="color_02" id="this_lottery_odds<?php echo ($i); ?>"><?php echo ($oddsData[$i]); ?></span>
+									</p>
+								</div>
+							</div><?php } ?>
+					</div>
+				
+					<div class="across_par1 ">
+						<?php $__FOR_START_11632__=10;$__FOR_END_11632__=20;for($i=$__FOR_START_11632__;$i < $__FOR_END_11632__;$i+=1){ ?><div class="across_par1_no clear-fix">
+								<div class="across_par1_no_left">
+									<div id="click_number<?php echo ($i); ?>" class="click_number no_left_bg" style="cursor: pointer;"><?php echo ($i-10); ?></div>
 								</div>
 								<div style="display: none;">
 									<input name="checkboxd" id="checkboxd<?php echo ($i); ?>" value="checkbox" type="checkbox">
@@ -323,17 +383,15 @@
 									</p>
 									<p>
 										当前赔率:
-										<span class="color_02" id="this_lottery_odds<?php echo ($i); ?>"><?php echo ($gameOdds[$i]); ?></span>
-										| 上期赔率:
-										<span id="last_lottery_odds<?php echo ($i); ?>"><?php echo ($preGameOdds[$i]); ?></span>
+                                   <span class="color_02" id="this_lottery_odds<?php echo ($i); ?>"><?php echo ($oddsData[$i]); ?></span>
 									</p>
 								</div>
 							</div><?php } ?>
 					</div>
 					<div class="across_par1 ">
-						<?php $__FOR_START_16842__=10;$__FOR_END_16842__=18;for($i=$__FOR_START_16842__;$i < $__FOR_END_16842__;$i+=1){ ?><div class="across_par1_no clear-fix">
+						<?php $__FOR_START_10473__=20;$__FOR_END_10473__=28;for($i=$__FOR_START_10473__;$i < $__FOR_END_10473__;$i+=1){ ?><div class="across_par1_no clear-fix">
 								<div class="across_par1_no_left">
-									<div id="click_number<?php echo ($i); ?>" class="click_number no_left_bg" style="cursor: pointer;"><?php echo ($i); ?></div>
+									<div id="click_number<?php echo ($i); ?>" class="click_number no_left_bg" style="cursor: pointer;"><?php echo ($i-10); ?></div>
 								</div>
 								<div style="display: none;">
 									<input name="checkboxd" id="checkboxd<?php echo ($i); ?>" value="checkbox" type="checkbox">
@@ -356,17 +414,15 @@
 									</p>
 									<p>
 										当前赔率:
-										<span class="color_02" id="this_lottery_odds<?php echo ($i); ?>"><?php echo ($gameOdds[$i]); ?></span>
-										| 上期赔率:
-										<span id="last_lottery_odds<?php echo ($i); ?>"><?php echo ($preGameOdds[$i]); ?></span>
+                                   <span class="color_02" id="this_lottery_odds<?php echo ($i); ?>"><?php echo ($oddsData[$i]); ?></span>
 									</p>
 								</div>
 							</div><?php } ?>
 					</div>
 					<div class="across_par1 ">
-						<?php $__FOR_START_16187__=18;$__FOR_END_16187__=28;for($i=$__FOR_START_16187__;$i < $__FOR_END_16187__;$i+=1){ ?><div class="across_par1_no clear-fix">
+						<?php $__FOR_START_6510__=28;$__FOR_END_6510__=38;for($i=$__FOR_START_6510__;$i < $__FOR_END_6510__;$i+=1){ ?><div class="across_par1_no clear-fix">
 								<div class="across_par1_no_left">
-									<div id="click_number<?php echo ($i); ?>" class="click_number no_left_bg" style="cursor: pointer;"><?php echo ($i); ?></div>
+									<div id="click_number<?php echo ($i); ?>" class="click_number no_left_bg" style="cursor: pointer;"><?php echo ($i-10); ?></div>
 								</div>
 								<div style="display: none;">
 									<input name="checkboxd" id="checkboxd<?php echo ($i); ?>" value="checkbox" type="checkbox">
@@ -389,9 +445,7 @@
 									</p>
 									<p>
 										当前赔率:
-										<span class="color_02" id="this_lottery_odds<?php echo ($i); ?>"><?php echo ($gameOdds[$i]); ?></span>
-										| 上期赔率:
-										<span id="last_lottery_odds<?php echo ($i); ?>"><?php echo ($preGameOdds[$i]); ?></span>
+                                   <span class="color_02" id="this_lottery_odds<?php echo ($i); ?>"><?php echo ($oddsData[$i]); ?></span>
 									</p>
 								</div>
 							</div><?php } ?>

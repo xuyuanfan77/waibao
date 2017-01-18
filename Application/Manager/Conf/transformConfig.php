@@ -146,7 +146,7 @@ return array(
 	'jnd28'=>array(
 		'type'=>'2',
 		'name'=>'jnd28',
-		'lotteryname'=>'北京快乐8',
+		'lotteryname'=>'韩国快乐8',
 		'handle'=>function($arg){
 			for($index=1;$index<=20;$index++){
 				$number[$index-1]=$arg['num'.$index];
@@ -161,13 +161,13 @@ return array(
 			return $data;
 		},
 		'water'=>30,
-		'interval'=>300,
-		'baseissue'=>789853,
-		'basetime'=>'2016-11-02 09:20:00',
+		'interval'=>90,
+		'baseissue'=>140871,
+		'basetime'=>'2016-11-01 13:45:00',
 		'aheadissue'=>4,
 		'aheaddeadline'=>60,
 		'delayruntime'=>60,
-		'period_begin'=>'09:05:00',
-		'period_end'=>'23:55:00',
+		'period_begin'=>'00:00:00',
+		'period_end'=>'23:58:30',
 	),
 );
